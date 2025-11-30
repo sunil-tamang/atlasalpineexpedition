@@ -1,0 +1,566 @@
+
+pokhara-valley-bike-tour:
+    name: "Pokhara Mountain Biking"
+    days: "18"
+    nights: "17"
+
+    altitude: "12,467"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Manaslu"
+    # popular: "Y"
+    price: "1787"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    excerpt: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/BRV7xvWwUnQ?start=1326' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+    # download: "//assets/docs/manaslu.pdf"
+    
+    # image: "<img class='map1'>"
+   
+
+    
+    highlights: 
+
+    - content : "Walk through Bhaktapur's ancient city. "
+    - content : "Share tea with farmers on mountain rooftops."
+    - content : "Ride over prayer flag-lined suspension bridges."
+    - content : "Experience life in the Himalayas."
+    - content : "Cycle through the Kali Gandaki Valley."
+    - content : "Stand among the world's highest peaks."
+
+    overview:
+
+    - content: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+    - content: "As you ascend to the base camp of Manaslu, the eighth highest mountain in the world, you'll be treated to stunning panoramic views of the surrounding peaks, including the iconic Mt. Everest. You'll also have the opportunity to explore the famous Larkya La Pass, a high-altitude crossing that offers breathtaking views of the Himalayan range."
+    - content: "The Manaslu Base Camp Trek is an experience that will stay with you forever. Whether you're an experienced hiker or a first-time trekker, this journey is sure to challenge and inspire you in equal measure. So why wait? Book your trek today and discover the magic of the Manaslu region for yourself!"
+   
+    itinerary:
+
+    
+    - title: "DAY 1 - Arrival in Kathmandu, Nepal"
+      content: "Welcome to the vibrant city of Kathmandu, where ancient architecture, rich culture, and warm hospitality await you. Upon arrival at the airport, our representative will greet you with a traditional garland of marigolds and transfer you to your hotel. After settling in, you can explore the city on your own or relax and prepare for your upcoming adventure."
+
+
+
+
+kathmandu-valley-bike-tour:
+    name: "Kathmandu Valley MTB"
+    days: "12"
+    nights: "11"
+    startPoint: 'Kakani'
+    endPoint: 'Lakure'
+    distance: 'Upto 100KM'
+
+
+    dificulty: "Extreme"
+    altitude: "5000m / 14768.81ft"
+    skill : 'Intermediate+'
+    grade: "Moderate"
+
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    
+    groupSize: "2-15 pax"
+    season: "Sep-Dec | Mar-May"
+    region: "Kathmandu"
+    
+    # popular: "Y"
+    price: "1300"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    excerpt: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/BRV7xvWwUnQ?start=1326' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/manaslu.pdf"
+    
+    # image: "<img class='map1'>"
+
+    highlights: 
+
+    - content : "Ride through picturesque Nepali villages and landscapes"
+    - content : "Explore ancient temples and palaces in Kathmandu and Patan"
+    - content : "Experience local culture and cuisine"
+    - content : "Admire stunning views of the Himalayan Mountains"
+    - content : "Challenge yourself with varied terrain and elevations on each ride"
+    - content : "Relax and recharge on a rest day in Nagarkot"
+    - content : "Visit lesser-known sites like the Palanchowk Bhagwati Temple"
+    - content : "Immerse yourself in the beauty of the Nepali countryside"
+    - content : "Take in the vibrant energy and history of Kathmandu city"
+
+
+    overview:
+
+    - content: "The Kathmandu Valley Mountain Bike Tour is a fantastic way to explore the cultural and natural wonders of Nepal's capital city and the surrounding region. With its stunning mountain scenery, rich history, and vibrant culture, Kathmandu is a popular destination for travelers from all over the world."
+    - content: "During this tour, you will have the opportunity to explore some of the most iconic sites in Kathmandu, including the famous Monkey Temple, the bustling streets of Thamel, and the historic Patan Durbar Square. You'll also have the chance to venture beyond the city limits, exploring nearby villages, forests, and hillsides on some of Nepal's best mountain biking trails."
+    - content: "This tour is not just about mountain biking, it's about experiencing the rich culture and natural beauty of Nepal. So what are you waiting for? Join us for the adventure of a lifetime on the Kathmandu Valley Mountain Bike Tour!"
+    - content: ""
+
+   
+    itinerary:
+
+    - title: "Day 1 - Arrival in Kathmandu airport (1345 meters)."
+      content: "Upon arrival at the Tribhuvan International Airport in Kathmandu, you will be greeted by our team and transferred to your hotel. You can spend the rest of the day exploring the vibrant city, tasting local cuisine, and getting used to the Nepalese culture."
+    - title: "Day 2 - Pre-trip meeting and ride from Kathmandu to Kakani (2,100m)"
+      content: "Today, you will have a pre-trip meeting with our tour guide, where you will discuss the itinerary, get introduced to the other team members and have a briefing about the necessary equipment. Afterward, we will start our biking tour and head towards the hill station of Kakani, situated at an altitude of 2,100 meters. The ride will take us through beautiful countryside landscapes, small settlements, and lush green forests. We will stay overnight in a local lodge in Kakani."
+    - title: "Day 3 - Ride from Kakani to Budhanilkantha (1,630m)"
+      content: "After a hearty breakfast, we will continue our journey towards Budhanilkantha, a sacred Hindu site famous for its magnificent statue of Lord Vishnu lying on a bed of serpents. The trail will take us through small villages, terraced fields, and dense forests, and we will have ample opportunities to witness the lifestyle and culture of the Nepalese people. Overnight stay in a local lodge in Budhanilkantha."
+    - title: "Day 4 - Ride from Budhanilkantha to Nagarkot (2,175m)"
+      content: "Today, we will be riding towards the scenic hill station of Nagarkot, located at an altitude of 2,175 meters. Nagarkot offers stunning views of the Himalayan range, and on a clear day, you can witness the majestic Mt. Everest. The ride will take us through beautiful landscapes, terraced fields, and charming villages. Overnight stay in a local lodge in Nagarkot."
+    - title: "Day 5 - Rest day at Nagarkot"
+      content: "Today is a rest day, and you can spend it relaxing, exploring the area, or indulging in some local activities. You can hike to the nearby viewpoint to get a closer look at the Himalayas, visit the nearby temples, or try some local delicacies."
+    - title: "Day 6 - Ride from Nagarkot to Palanchowk (820m)"
+      content: "Today, we will be riding towards Palanchowk, famous for its ancient temple of Goddess Bhagwati. The ride will take us through the scenic countryside, charming villages, and small streams. Overnight stay in a local lodge in Palanchowk."
+    - title: "Day 7 - Ride from Palanchowk to Dhulikhel (1,600m)"
+      content: "We will be riding towards the ancient town of Dhulikhel, famous for its ancient temples, stupas, and cultural heritage. The trail will take us through small settlements, farmlands, and lush green forests. Overnight stay in a local lodge in Dhulikhel."
+    - title: "Day 8 - Ride from Dhulikhel to Balthali (1,445m)"
+      content: "Today, we will be riding towards the beautiful village of Balthali, located at an altitude of 1,445 meters. The ride will take us through picturesque landscapes, traditional villages, and small streams. Overnight stay in a local lodge in Balthali."
+    - title: "Day 9 - Ride to Lakure bhanjyang to (1,545m)"
+      content: "Today's ride will take us to Lakure bhanjyang, situated at an altitude of 1,545 meters. The trail will take us through traditional villages, terraced fields, and scenic countryside. Overnight stay in a local lodge in Lakure bhanjyang."
+    - title: "Day 10 - Ride from Lakure to Kathmandu (1,345), via Patan Durbar Square"
+      content: "Today's ride is an exciting journey through the beautiful countryside and into the ancient city of Patan, known for its stunning Durbar Square. After exploring the historic landmarks and temples in Patan, we will continue our ride to the bustling city of Kathmandu. As we approach the city, we will witness the stark contrast between the traditional architecture of the old city and the modern buildings of the new city."
+    - title: "Day 11 - Sightseeing in Kathmandu"
+      content: "After several days of cycling, we will take a day to explore the rich cultural heritage of the Kathmandu Valley. Our expert guide will take us to some of the most famous landmarks in the city, including the UNESCO World Heritage sites of Swayambhunath Stupa, Pashupatinath Temple, and Boudhanath Stupa. We will also have the opportunity to visit local markets and handicraft shops to purchase souvenirs and gifts for loved ones."
+    - title: "Day 12 - Final departure from Nepal"
+      content: "Today marks the end of our Kathmandu Valley Tour. Depending on your flight schedule, you may have some free time in the morning to do some last-minute shopping or explore the city further. Our team will arrange for your transportation to the airport and ensure a smooth departure from Nepal. We hope you leave with unforgettable memories of your cycling adventure in the Himalayas."
+
+
+
+
+annapurna-circuit-mtb-tour:
+    name: "Annapurna Circuit MTB"
+    days: "13"
+    nights: "12"
+    startPoint: 'Besi Sahar'
+    endPoint: 'Pokhara'
+    distance: 'Upto 200KM'
+
+
+    dificulty: "Extreme"
+    altitude: "5416m / 17768.81ft"
+    skill : 'Intermediate+'
+    grade: "Moderate"
+
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    
+    groupSize: "2-15 pax"
+    season: "Sep-Dec | Mar-May"
+    region: "Annapurna"
+    
+    popular: "Y"
+    price: "2000"
+
+    photos: "assets/css/images/bike-tours/annapurna-circuit-mtb-tour/banner.jpg"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Annapurna Circuit Mountain Biking Tour is a unique way to experience one of the world's most beautiful regions. It provides an opportunity to test one's endurance, experience the local culture, and immerse oneself in the breathtaking beauty of the Himalayas. Whether you are an experienced mountain biker or a beginner, this tour is a must-do for anyone who loves adventure and natural beauty."
+
+    excerpt: "The Annapurna Circuit Mountain Biking Tour is a unique way to experience one of the world's most beautiful regions. It provides an opportunity to test one's endurance, experience the local culture, and immerse oneself in the breathtaking beauty of the Himalayas. Whether you are an experienced mountain biker or a beginner, this tour is a must-do for anyone who loves adventure and natural beauty."
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/BRV7xvWwUnQ?start=1326' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/annapurna-circuit-mtb.pdf"
+    
+    # image: "<img class='map1'>"
+
+
+    highlights: 
+
+    - content : "Staying in teahouses and guesthouses run by local families"
+    - content : "Expert guides ensuring your safety and comfort throughout the tour"
+    - content : "Ride over prayer flag-lined suspension bridges."
+    - content : "Stand among the world's highest peaks."
+    - content : "Ride through picturesque villages, including Taal, Chame, and Manang."
+    - content : "Cross the challenging and rewarding Thorong La Pass at an elevation of 5,416 meters."
+    - content : "Incredible views of the Annapurna mountain range"
+    - content : "Challenging ride through the Thorong La Pass at 5,416 meters"
+    - content : "Experiencing the local culture and cuisine of Nepal"
+
+    
+    overview:
+
+    - content: "Explore the breathtaking landscapes of Nepal, pedal through charming villages, and experience the rich culture of the local communities.Over the course of 12 days, you'll ride through some of the most scenic and challenging terrain in the world. The tour takes you from the bustling city of Kathmandu to the beautiful city of Pokhara, and through the Annapurna mountain range, offering incredible views of snow-capped peaks and lush valleys."
+    - content: " Our experienced guides are passionate about sharing their knowledge of the region and will ensure your safety and comfort throughout the journey. We provide high-quality bikes and gear, as well as support vehicles to carry your luggage and offer assistance when needed. Whether you're an avid cyclist or a beginner, the Annapurna Circuit Mountain Biking Tour is an adventure of a lifetime that you won't want to miss."
+    - content: "So why wait? Book your spot on this incredible mountain biking tour today and experience the beauty and culture of Nepal from a unique and thrilling perspective. We guarantee you won't regret it"
+
+    itinerary:
+    
+    - title: "DAY 1 - Arrival in Kathmandu, Nepal"
+      content: "Upon arrival at Tribhuvan International Airport in Kathmandu, you will be met by a representative will take you to your hotel in Thamel, the heart of the tourist district of Kathmandu. Depending on your arrival time, you may have the opportunity to explore the streets, sights, and shops of Thamel, or to relax after your journey."
+
+    - title: "Day 2 - Kathmandu Sightseeing and Tour Preparation"
+      content: "Today you can choose to explore the sights of Kathmandu, or prepare for your biking tour. You may want to take a guide for the tour of the city's temples, palaces, and markets, or simply wander through the narrow streets and soak up the vibrant atmosphere of the city."
+
+    - title: "Day 3 - Transfer from Kathmandu to Besi Sahar"
+      content: "After breakfast, you will be picked up from your hotel and driven to Besi Sahar, a small town on the banks of the Marsyangdi River. This is where your biking tour begins, and you'll have the opportunity to meet your guides and other members of your group."
+        
+    - title: "Day 4 - Besi Sahar to Taal Biking: 30km Ride, 1400m Ascent"
+      content: "Today we start the biking tour and ride 30km from Besi Sahar to Taal. We'll ascend 1400m, and the road will be relatively easy. The route passes through small villages and terraced farmland, offering a glimpse into the daily life of the locals."
+  
+    - title: "Day 5 - Taal to Chame Biking: 36km Ride, 1300m Ascent"
+      content: "We'll start biking from Taal and ride 36km, ascending 1300m to reach Chame, the headquarters of the Manang district. The route passes through pine and rhododendron forests and offers stunning views of the Annapurna range."
+   
+    - title: "Day 6 - Chame to Manang Biking: 30km Ride, 1250m Ascent"
+      content: "Today, we'll ride 30km and ascend 1250m to reach Manang. The route passes through the Marsyangdi River and the quaint village of Pisang, which is famous for its apple orchards. Manang is a picturesque town situated in a broad valley and surrounded by towering peaks."
+   
+    - title: "Day 7 - Rest Day in Manang"
+      content: "Today is a rest day in Manang, which allows us to acclimatize to the high altitude. You can explore the town and its monasteries, or take a short hike to the nearby hills to enjoy the stunning views."
+   
+    - title: "Day 8 - Manang to Thorong Phedi Biking: 17km Ride, 1240m Ascent"
+      content: "We'll bike 17km and ascend 1240m to reach Thorong Phedi, the last stop before we cross the Thorong La pass. The route passes through alpine landscapes, and we'll be surrounded by snow-capped peaks throughout the day."
+  
+    - title: "Day 9 - Thorong Phedi to Muktinath Biking via the Thorong La Pass: 14km Ride, 1040m Ascent"
+      content: "Today is the most challenging day of the tour as we cross the Thorong La pass, the highest point of the tour. We'll ride 14km and ascend 1040m to reach Muktinath, a holy site for both Hindus and Buddhists. The pass offers spectacular views of the Annapurna and Dhaulagiri ranges."
+  
+    - title: "Day 10 - Muktinath to Marpha Biking via Lubra Valley: 30km Ride, 960m Ascent"
+      content: "Today, you'll continue your journey towards Marpha, a picturesque village located in the Kali Gandaki Valley. The ride will take you through the Lubra Valley, which is known for its beautiful landscapes and traditional way of life. You'll also get to see the stunning Dhaulagiri and Nilgiri mountain ranges in the distance."
+  
+    - title: "Day 11 - Marpha to Tatopani Biking: 32km Ride, 460m Ascent"
+      content: "From Marpha, you'll head towards Tatopani, which means 'hot water' in Nepali. Along the way, you'll pass through charming villages and lush forests, and have the opportunity to soak in the natural hot springs in Tatopani to rejuvenate your muscles after the previous days' rides."
+  
+    - title: "Day 12 - Tatopani to Pokhara Biking: 28km Ride, 400m Ascent"
+      content: "Today's ride takes you through beautiful landscapes and traditional villages as you make your way towards the city of Pokhara. Pokhara is known for its stunning natural beauty, with views of the Annapurna and Dhaulagiri mountain ranges, as well as its laid-back atmosphere. You'll have the rest of the day to explore the city, relax by the lake or take part in various adventure activities, such as paragliding, zip-lining or boating."
+  
+    - title: "Day 13 - Transfer from Pokhara to Kathmandu."
+      content: "Today marks the end of your Annapurna Circuit Biking Tour. You'll transfer back to Kathmandu by private vehicle, and have the rest of the day to explore the city, do some last-minute shopping or simply relax before your departure."
+
+
+
+
+
+manaslu-circuit-mtb-tour:
+    name: "Manaslu Circuit Bike"
+    days: "13"
+    nights: "12"
+    startPoint: 'Aarughat'
+    endPoint: 'Besi Sahar'
+    distance: 'Upto 200KM'
+
+
+    dificulty: "Extreme"
+    altitude: "5000m / 14768.81ft"
+    skill : 'Intermediate+'
+    grade: "Moderate"
+
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    
+    groupSize: "2-15 pax"
+    season: "Sep-Dec | Mar-May"
+    region: "Annapurna"
+    
+    photos: "assets/css/images/bike-tours/manaslu-circuit-mtb-tour/banner01.jpg"
+
+    popular: "Y"
+    price: "3000"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    excerpt: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/BRV7xvWwUnQ?start=1326' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/manaslu.pdf"
+    
+    # image: "<img class='map1'>"
+
+    highlights: 
+    - content : "Staying in teahouses and guesthouses run by local families"
+    - content : "Breathtaking landscapes: towering mountains, deep gorges, lush forests."
+    - content : "Experience Nepali culture, interact with friendly locals."
+    - content : "Steep ascents and thrilling descents: a challenge for all."
+    - content : "Explore remote and pristine areas of Nepal."
+    - content : "Top-quality equipment and expert guides ensure your safety."
+    - content : "13-day adventure: endurance tested, memories made."
+    - content : "Experience the thrill of conquering the infamous Larkya La Pass."
+
+    overview:
+
+    - content: "The Manaslu Circuit Mountain Bike Tour is an epic adventure that takes you through the rugged and remote landscapes of the Manaslu region in Nepal. This 13-day tour offers an unparalleled experience for mountain biking enthusiasts, with challenging trails, stunning scenery, and unique cultural encounters."
+    - content: "Tour begins in Kathmandu, where you'll meet your guides and fellow riders before heading to Arughat, the starting point of the tour. From there, you'll follow the Budhi Gandaki River through lush forests and terraced fields, passing through small villages and encountering the warm hospitality of the local people."
+    - content: "Along the way, you'll have the opportunity to explore ancient monasteries, visit traditional villages, and experience the rich culture of the local people. You'll stay in local teahouses and guesthouses, run by friendly families who will welcome you with delicious Nepali cuisine."
+    - content: "The tour ends in the beautiful city of Pokhara, where you can relax by the tranquil Fewa Lake and reflect on the incredible journey you've just experienced.So why wait? Book your spot on this incredible mountain biking tour today and experience the beauty and culture of Nepal from a unique and thrilling perspective."
+
+    itinerary:
+
+    - title: "Day 1 - Arrival in Kathmandu"
+      content: "Upon arriving in Kathmandu, you will be picked up from the airport and transferred to your hotel. You can spend the rest of the day exploring the city, getting familiar with the local culture, and preparing for the upcoming adventure."
+    - title: "Day 2 - Preparation Day"
+      content: "On this day, you will have some time to prepare for the tour. You can spend the day packing and making sure you have all the necessary gear, equipment, and supplies. You can also do some last-minute shopping for anything you might need."
+    - title: "Day 3 - Transfer to Starting Point"
+      content: "Today you will be driven to the starting point of the tour in Aarughat, which is about a 7-8 hour drive from Kathmandu. Along the way, you will get to see stunning landscapes, traditional villages, and terraced fields. Once you reach Aarughat, you will check into your hotel and prepare for the first day of riding."
+    - title: "Day 4 - Ride from Aarughat to Machha Khola: 25km with 1000m Ascent"
+      content: "The first day of riding will take you from Aarughat to Machha Khola, covering a distance of 25km with an ascent of 1000m. You will ride through dense forests, scenic waterfalls, and across suspension bridges over the Budhi Gandaki River. You will also get to interact with the local people, who are friendly and welcoming."
+    - title: "Day 5 - Ride from Machha Khola to Jagat: 25km with 1050m Ascent"
+      content: "On this day, you will ride from Machha Khola to Jagat, covering a distance of 25km with an ascent of 1050m. You will pass through several small villages, terraced fields, and dense forests. You will also ride along the Budhi Gandaki River and cross several suspension bridges. The route is quite challenging but the stunning scenery makes it all worthwhile."
+    - title: "Day 6 - Ride from Jagat to Dyang: 25km with 1100m Ascent"
+      content: "Today's ride takes you from Jagat to Dyang, covering a distance of 25km with an ascent of 1100m. The route passes through beautiful forests, terraced fields, and small villages. You will also see the impressive Sringi Himal and Ganesh Himal mountain ranges. The terrain is mostly uphill, but you will be rewarded with stunning views of the surrounding landscapes."
+    - title: "Day 7 - Ride from Dyang to Namrung: 20km with 1250m Ascent"
+      content: "This day's ride takes you from Dyang to Namrung, covering a distance of 20km with an ascent of 1250m. You will ride through beautiful forests, terraced fields, and small villages, and pass by a small hot spring. You will also get to see the Himalchuli, Shringi, and Ganesh Himal mountain ranges. The terrain is mostly uphill, but the stunning scenery makes it all worthwhile."
+    - title: "Day 8 - Ride from Namrung to Samagaun: 17km with 1200m Ascent"
+      content: "Today's ride takes you from Namrung to Samagaun, covering a distance of 17km with an ascent of 1200m. You will ride through beautiful forests and small villages and see stunning mountain ranges such as the Himalchuli and Manaslu. Once you reach Samagaun, you will have time to explore the village and learn about the local culture."
+    - title: "Day 9 - Ride from Samagaun to Dharamsala: 13km with 1000m Ascent"
+      content: "Today's ride from Samagaun to Dharamsala is a relatively short distance, but it is crucial in terms of acclimatization as the elevation will increase up to 4460m. The trail starts with a steep climb to a ridge with stunning views of the Manaslu mountain range. As you move forward, the path descends down to a small river before climbing steeply again. The trail continues through a beautiful forest of rhododendrons and junipers, and there is a possibility of spotting some wildlife, including Himalayan tahr, blue sheep, and musk deer."
+    - title: "Day 10 - Ride from Dharamasala to Bhimthang via Larke Pass (5136m): 14.5km with 700m Ascent"
+      content: "Today is the most challenging day of the Manaslu mountain bike tour, as you will be crossing the Larke Pass, which stands at an altitude of 5136m. The trail starts early in the morning, and the ascent is steep and demanding. You will climb up to the pass, which is marked with colorful prayer flags, and offers stunning views of the surrounding mountains. As you reach the top, you will be rewarded with an incredible panoramic view of the entire Manaslu range, including Himlung Himal, Cheo Himal, Kang Guru, and Annapurna II. The descent from the pass is steep and rocky, with a mixture of snow, ice, and scree, making it a challenging ride even for experienced riders. "
+    - title: "Day 11 - Ride from Bhimthang to Chyamche: 32km with 600m Ascent"
+      content: "Today's ride is a mix of challenging climbs and enjoyable descents. The trail descends steeply through a beautiful forest of rhododendrons and pine trees, and you will pass several small villages along the way. The path then follows the Dudh Khola river, and you will ride through lush green fields and terraced farms."
+    - title: "Day 12 - Ride from Chyamche to Besi Sahar: 32km with 700m Ascent"
+      content: "Today is the final day of the Manaslu mountain bike tour, and the trail follows the Marsyangdi river, passing through several small villages and hamlets. The terrain is relatively easy, with some undulating sections and short climbs. The scenery is stunning, with towering peaks, cascading waterfalls, and lush green forests all around. As you approach the town of Besi Sahar, the trail becomes more technical, with rocky sections and narrow single-track paths. "
+    - title: "Day 13 - Departure from Besi Sahar"
+      content: "Transfer to international airport or continue on with own itinerary."
+
+
+
+
+
+upper-mustang-mtb-tour:
+    name: "Upper Mustang Bike"
+    days: "16"
+    nights: "15"
+    startPoint: 'Jomsom'
+    endPoint: 'Maldhunga'
+    distance: 'Upto 300KM'
+
+
+    dificulty: "Extreme"
+    altitude: "5416m / 17768.81ft"
+    skill : 'Intermediate+'
+    grade: "Moderate"
+
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    
+    groupSize: "2-15 pax"
+    season: "Sep-Dec | Mar-May"
+    region: "Upper Mustang"
+    
+    photos: "assets/css/images/bike-tours/upper-mustang-mtb-tour/banner2.jpg"
+    popular: "Y"
+    price: "3000"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    excerpt: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/BRV7xvWwUnQ?start=1326' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/manaslu.pdf"
+    
+    # image: "<img class='map1'>"
+
+    highlights: 
+
+    - content : "Explore the ancient walled city of Lo Manthang"
+    - content : "Experience the unique culture of the Mustang region"
+    - content : "Ride through remote mountain villages"
+    - content : "Witness the daily lives of the friendly locals"
+    - content : "Take in breathtaking views of Annapurna and Dhaulagiri ranges"
+    - content : "Visit the sacred pilgrimage site of Muktinath"
+    - content : "Ride through the Kali Gandaki Gorge, the world's deepest gorge"
+    - content : "Marvel at the red cliffs and ancient cave dwellings of Dhakmar"
+    - content : "Relax in the natural hot springs of Tatopani"
+    - content : "Enjoy the stunning landscapes of the Mustang region"
+    - content : "Challenge yourself with varied terrain and elevation changes"
+    - content : "Experience the hospitality and warmth of Nepalese people."
+
+    overview:
+
+    - content: "The Upper Mustang region in Nepal is a land of mystique, steeped in ancient history and culture. Tucked away in the remote Himalayas, this region remained closed to outsiders until 1992, which has helped preserve its unique heritage and customs. A mountain biking tour of this region is a once-in-a-lifetime experience that is sure to thrill adventure seekers."
+    - content: "Starting from Kathmandu, the tour takes you to Pokhara, the gateway to the Annapurna region. From Pokhara, you'll fly to Jomsom and begin your journey towards the ancient walled city of Lo Manthang. The ride to Lo Manthang takes you through some of the most beautiful landscapes in the world, with stunning views of the Annapurna and Dhaulagiri ranges."
+    - content: "As you continue your adventure, you'll pass through charming villages like Samar, Ghami, and Lo Manthang, where you can immerse yourself in the unique culture and traditions of the Mustang people. You'll also have the opportunity to ride through stunning landscapes, such as the Kimaling-Choser loop and the red cliffs of Dhakmar."
+    - content: "Join us on the Upper Mustang Mountain Bike Tour for an unforgettable adventure through some of the most spectacular terrain in the world. Get ready to push your limits, explore new horizons, and create unforgettable memories."
+
+    itinerary:
+
+    - title: "Day 1 - Arrival in Kathmandu"
+      content: "You will arrive in Kathmandu, the capital city of Nepal, where you'll be greeted by your guide and transferred to your hotel. Depending on your arrival time, you can take some time to relax, explore the hotel, or visit some of the nearby tourist sites such as Swayambhunath Stupa, a UNESCO World Heritage Site that offers panoramic views of the city. In the evening, you'll meet your guide and fellow riders to discuss the upcoming tour."
+    - title: "Day 2 - Preparation and Sightseeing in Kathmandu"
+      content: "This day is for preparing for the tour and exploring the city of Kathmandu. After breakfast, your guide will brief you about the tour, and you'll have the chance to rent or purchase any equipment you need. After that, you can explore the city of Kathmandu, which has a rich cultural and historical heritage. You may want to visit some of the famous tourist sites in Kathmandu such as Durbar Square or the famous temples like Pashupatinath and Boudhanath. In the evening, you'll meet your guide and fellow riders again to finalize the tour preparations."
+    - title: "Day 3 - Journey from Kathmandu to Pokhara"
+      content: "After breakfast, you'll take a scenic flight or drive from Kathmandu to Pokhara, a picturesque lakeside city in the western part of Nepal. Upon arrival, you can take a leisurely stroll around the city or visit the famous Fewa Lake. In the evening, you'll meet your guide to discuss the tour itinerary and any last-minute preparations."
+    - title: "Day 4 - Flight to Jomsom, Ride to Kagbeni: 10km Distance, 250m Elevation Gain"
+      content: "This day starts with an early morning flight from Pokhara to Jomsom, which offers stunning views of the Himalayan mountain range. After landing in Jomsom, the group will start their bike ride towards Kagbeni, a picturesque village situated at the entry of the restricted Upper Mustang region. The ride is about 10km long with a gradual ascent of 250m. Along the way, you will witness the unique landscape of the region with arid desert-like terrain and towering rock formations. Upon arrival in Kagbeni, the group will explore the village and rest for the night."
+    - title: "Day 5 - Kagbeni to Muktinath: 10km Distance, 1100m Elevation Gain"
+      content: "The day starts with a climb to the famous Muktinath temple, one of the most important pilgrimage sites for both Hindus and Buddhists. The ride is about 10km long, but it involves a steep ascent of 1100m, which can be challenging for some. However, the stunning views of the Himalayan peaks and the unique landscape make it all worthwhile. Upon arrival in Muktinath, you will have the opportunity to explore the ancient temple and soak in the spiritual atmosphere."
+    - title: "Day 6 - Muktinath to Samar: 29km Distance, 1350m Elevation Gain"
+      content: "This day is the longest ride of the tour, covering a distance of 29km with an ascent of 1350m. The trail passes through the Kali Gandaki valley, offering stunning views of the surrounding mountains and the unique rock formations. The ride also takes you through several traditional Mustangi villages, where you can witness the local culture and lifestyle. Upon arrival in Samar, you will rest for the night in one of the teahouses."
+    - title: "Day 7 - Samar to Ghami: 28km Distance, 1100m Elevation Gain"
+      content: "The ride from Samar to Ghami is about 28km long with an ascent of 1100m. The trail takes you through several high passes, including the Bhena La pass at 3860m, which offers panoramic views of the Mustang region. The ride also passes through several ancient chortens and monasteries, offering insights into the rich cultural heritage of the region. Upon arrival in Ghami, you will rest for the night in one of the teahouses."
+    - title: "Day 8 - Ghami to Lo Manthang: 26km Distance, 1080m Elevation Gain"
+      content: "This day's ride is about 26km long, with an ascent of 1080m. The trail takes you through several traditional Mustangi villages, offering insights into the local culture and lifestyle. The ride also takes you through several high passes, offering stunning views of the surrounding mountains and the arid desert-like landscape. Upon arrival in Lo Manthang, you will rest for the night in one of the teahouses."
+    - title: "Day 9 - Kimaling; Choser Loop (Lo Manthang): 21km Distance, 600m Elevation Gain"
+      content: "This day is a rest day, but you can choose to take a short ride to the nearby Kimaling village or the Choser Valley. The ride is about 21km long, with an ascent of 600m. The ride offers stunning views of the Himalayan peaks and the unique landscape of the region. Upon returning to Lo Manthang, you can explore the ancient walled city and rest for the night."
+    - title: "Day 10 - Lo Manthang to Ghami via Dhakmar: 21km Distance, 900m Elevation Gain"
+      content: "Today's ride takes us back to Ghami via Dhakmar. We start with a steep descent through the Lo Manthang valley before crossing a river and beginning a steep climb to a ridge. From there, we enjoy some amazing views of the Annapurna and Dhaulagiri ranges before descending towards the village of Dhakmar."
+    - title: "Day 11 - Ghami to Chele: 32km Distance, 1300m Elevation Gain"
+      content: "Today, you'll ride from Ghami to Chele, covering a distance of 32 kilometers with an elevation gain of 1300 meters. The route takes you through several small villages, and you'll ride through the Kali Gandaki river valley. You'll cross a few suspension bridges and ride along the river before starting a steep ascent towards Chele. On the way, you'll get to enjoy the stunning views of the mountains and the valley."
+    - title: "Day 12 - Chele to Marpha: 35km Distance, 950m Elevation Gain"
+      content: "Today's ride takes you from Chele to Marpha, covering a distance of 35 kilometers with an elevation gain of 950 meters. You'll start by climbing up to the pass of Taklam La (3,624m) and continue riding through some of the most beautiful landscapes of the region. You'll pass through some traditional Tibetan villages and apple orchards before reaching Marpha, a beautiful village known for its apple brandy and cider."
+    - title: "Day 13 - Marpha to Tatopani: 43km Distance, 550m Elevation Gain"
+      content: "Today, you'll ride from Marpha to Tatopani, covering a distance of 43 kilometers with an elevation gain of 550 meters. The route takes you through the Kali Gandaki river valley, where you'll ride through some of the deepest gorges in the world. You'll pass through several small villages and cross the river multiple times before reaching Tatopani, a natural hot spring famous for its healing properties."
+    - title: "Day 14 - Tatopani to Maldhunga, Transfer to Pokhara: 28km Distance, 400m Elevation Gain"
+      content: "After breakfast, you'll start your ride from Tatopani to Maldhunga, covering a distance of 28km with an elevation gain of 400m. The ride will take you through scenic terraced farms, forested areas, and traditional villages. After reaching Maldhunga, you'll take a transfer back to Pokhara, where you'll have the rest of the day to relax, explore the city, or indulge in some adventure activities such as paragliding or zip-lining."
+    - title: "Day 15 - Transfer from Pokhara to Kathmandu"
+      content: "After breakfast, you'll take a scenic drive or flight back to Kathmandu, where you'll have the rest of the day to explore the city or do some last-minute shopping. You can also visit some of the famous cultural and historical sites such as Boudhanath Stupa, which is the largest stupa in Nepal and a UNESCO World Heritage Site."
+    - title: "Day 16 - Departure"
+      content: "This day marks the end of the tour, and you'll be transferred to the airport for your onward journey. If you have some time before your flight,"
+
+
+
+
+nagarkot-mtb-tour:
+    name: "Nagarkot Mountain Bike"
+    days: "18"
+    nights: "17"
+    altitude: "12,467"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Manaslu"
+    # popular: "Y"
+    price: "1787"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    excerpt: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/BRV7xvWwUnQ?start=1326' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/manaslu.pdf"
+    
+    # image: "<img class='map1'>"
+
+
+    overview:
+
+    - content: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+    - content: "As you ascend to the base camp of Manaslu, the eighth highest mountain in the world, you'll be treated to stunning panoramic views of the surrounding peaks, including the iconic Mt. Everest. You'll also have the opportunity to explore the famous Larkya La Pass, a high-altitude crossing that offers breathtaking views of the Himalayan range."
+    - content: "The Manaslu Base Camp Trek is an experience that will stay with you forever. Whether you're an experienced hiker or a first-time trekker, this journey is sure to challenge and inspire you in equal measure. So why wait? Book your trek today and discover the magic of the Manaslu region for yourself!"
+   
+    itinerary:
+
+    
+    - title: "DAY 1 - Arrival in Kathmandu, Nepal"
+      content: "Welcome to the vibrant city of Kathmandu, where ancient architecture, rich culture, and warm hospitality await you. Upon arrival at the airport, our representative will greet you with a traditional garland of marigolds and transfer you to your hotel. After settling in, you can explore the city on your own or relax and prepare for your upcoming adventure."
+
+
+
+
+
+
+shivapuri-mtb-tour:
+    name: "Shivapuri National Park Mountain Biking Tour"
+    days: "18"
+    nights: "17"
+    altitude: "12,467"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Manaslu"
+    # popular: "Y"
+    price: "1787"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    excerpt: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/BRV7xvWwUnQ?start=1326' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/manaslu.pdf"
+    
+    # image: "<img class='map1'>"
+
+
+    overview:
+
+    - content: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+    - content: "As you ascend to the base camp of Manaslu, the eighth highest mountain in the world, you'll be treated to stunning panoramic views of the surrounding peaks, including the iconic Mt. Everest. You'll also have the opportunity to explore the famous Larkya La Pass, a high-altitude crossing that offers breathtaking views of the Himalayan range."
+    - content: "The Manaslu Base Camp Trek is an experience that will stay with you forever. Whether you're an experienced hiker or a first-time trekker, this journey is sure to challenge and inspire you in equal measure. So why wait? Book your trek today and discover the magic of the Manaslu region for yourself!"
+   
+    itinerary:
+
+    
+    - title: "DAY 1 - Arrival in Kathmandu, Nepal"
+      content: "Welcome to the vibrant city of Kathmandu, where ancient architecture, rich culture, and warm hospitality await you. Upon arrival at the airport, our representative will greet you with a traditional garland of marigolds and transfer you to your hotel. After settling in, you can explore the city on your own or relax and prepare for your upcoming adventure."
+
+
+
+
+
+
+chitwan-safari-mtb-tour:
+    name: "Chitwan Safari Mountain Biking"
+    days: "18"
+    nights: "17"
+    altitude: "12,467"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Manaslu"
+    # popular: "Y"
+    price: "1787"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    excerpt: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/BRV7xvWwUnQ?start=1326' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/manaslu.pdf"
+    
+    # image: "<img class='map1'>"
+
+
+    overview:
+
+    - content: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+    - content: "As you ascend to the base camp of Manaslu, the eighth highest mountain in the world, you'll be treated to stunning panoramic views of the surrounding peaks, including the iconic Mt. Everest. You'll also have the opportunity to explore the famous Larkya La Pass, a high-altitude crossing that offers breathtaking views of the Himalayan range."
+    - content: "The Manaslu Base Camp Trek is an experience that will stay with you forever. Whether you're an experienced hiker or a first-time trekker, this journey is sure to challenge and inspire you in equal measure. So why wait? Book your trek today and discover the magic of the Manaslu region for yourself!"
+   
+    itinerary:
+
+    
+    - title: "DAY 1 - Arrival in Kathmandu, Nepal"
+      content: "Welcome to the vibrant city of Kathmandu, where ancient architecture, rich culture, and warm hospitality await you. Upon arrival at the airport, our representative will greet you with a traditional garland of marigolds and transfer you to your hotel. After settling in, you can explore the city on your own or relax and prepare for your upcoming adventure."
+
+
+

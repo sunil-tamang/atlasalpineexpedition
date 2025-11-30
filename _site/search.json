@@ -1,0 +1,38 @@
+// ---
+// layout: null
+// ---
+// [
+//   {% assign trek_items = site.data['trek-data'] %}
+//   {% if trek_items == nil %}{% assign trek_items = "" %}{% endif %}
+
+//   {% assign peak_items = site.data['peak-data'] %}
+//   {% if peak_items == nil %}{% assign peak_items = "" %}{% endif %}
+
+//   {% assign bike_items = site.data['bike-data'] %}
+//   {% if bike_items == nil %}{% assign bike_items = "" %}{% endif %}
+
+//   {% assign rock_items = site.data['rock-data'] %}
+//   {% if rock_items == nil %}{% assign rock_items = "" %}{% endif %}
+
+//   {% assign rafting_items = site.data['rafting-data'] %}
+//   {% if rafting_items == nil %}{% assign rafting_items = "" %}{% endif %}
+
+//   {% assign combined_items = trek_items %}
+//   {% assign combined_items = combined_items | concat: peak_items %}
+//   {% assign combined_items = combined_items | concat: bike_items %}
+//   {% assign combined_items = combined_items | concat: rock_items %}
+//   {% assign combined_items = combined_items | concat: rafting_items %}
+
+//   {% for item in combined_items %}
+//     {
+//       "title": "{{ item.name | escape }}",
+//       "category": "{{ item.category | escape }}",
+//       "region": "{{ item.region | escape }}",
+//       "difficulty": "{{ item.difficulty | escape }}",
+//       "days": "{{ item.days | escape }}",
+//       "price": "{{ item.price }}",
+//       "description": "{{ item.description | escape }}",
+//       "url": "/{{ item.category | downcase | replace: ' ', '-' }}/{{ item.name | downcase | replace: ' ', '-' }}.html"
+//     }{% unless forloop.last %},{% endunless %}
+//   {% endfor %}
+// ]

@@ -1,0 +1,198 @@
+---
+layout: default
+title: "Rafting Tours"
+permalink: "/activities/rafting/"
+custom_thumb: "bg/rafting_bg.jpg"
+custom_bg: "bg/rafting_bg.jpg"
+
+description: "Discover thrilling rafting adventures in Nepal with The Alpine Expeditions. Explore our diverse range of river rafting tours, from family-friendly trips to adrenaline-pumping expeditions, all set in breathtaking natural scenery."
+keywords: "rafting in Nepal, Nepal river rafting tours, family rafting adventures, adrenaline rafting expeditions, The Alpine Expeditions, outdoor adventures Nepal, white water rafting Nepal, rafting tours"
+
+productScript: "app.createProducts('rafting');"
+author_name : " THE ALPINE EXPEDITIONS "
+tags : "BikeToursInKulluManali,HimachalPradesh"
+contains_ads : "YES"
+---
+
+
+
+<!----------Blogposts -------->
+
+<!-- <div class="container-wide row--padding-wide">
+
+	<div class="banner" style="background-image: url('/assets/css/images/bg/rafting_booner.jpg');">
+		<span class="banner__overlay"></span>
+		
+		<div class="banner__tagline banner__home" style="opacity: 1;">
+			<p class="tagline" style="text-transform: none;"></p>
+			<br />
+			<p class="sub-tagline" style="display: inline;">
+			
+			</p>
+		</div>
+		<span class="banner__skip">
+			<a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
+		</span>
+	</div>
+  
+  
+  </div> -->
+
+  
+<!-- <div class="slider-wrapper">
+	  <div class="slide banner-slide slide4">
+        <div class="slide-tagline">
+          <span class="tagline-text">
+			<div class="banner_logo" style="position: absolute; left: 0; top:-75%; width: 100%; text-align: center;">
+				<h1 class="trippy-name">White Water Rafting Tours
+					<p class="headline--detail" style="padding: 0; padding-top: 1em; margin: 0; font-style: oblique; letter-spacing: .05em;">Experience the Himalayan Downhill passes with us!</p>
+				</h1>
+			</div>
+          </span>
+
+        </div>
+      </div>
+	<span class="banner__skip">
+            <a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
+	</span>
+</div> -->
+
+    <!-- <div id='content' class="row row--padding-medium content container--white" style="padding-left:0; padding-right: 0;  "> -->
+
+		<!-- <h2 class="content__title content__title-white no-underline" style="padding: 0; margin: 0;">
+			<i class="fas fa-motorcycle"></i> 
+		</h2><br /> -->
+	  
+		<!-- <h1 class="content__title content__title-white" data-aos="zoom-out">Our Rafting Tours </h1> -->
+
+<!--            <br />-->
+			<!-- <div class="row container-wide row--padding-wide content__pg" > -->
+				<!-- <h1 class="content__title content__title-white" data-aos="zoom-out">Soon to be updated</h1> -->
+
+				<!-- <br /><br /> -->
+				<!-- <h2 class="content__sub-title content__title-white">Our Rafting Tours </h2><br /> -->
+				<!-- <br /><br /> -->
+
+					
+				<!-- Uncomment this to view bike tours -->
+					<!-- <div class="productWrapper row--padding-wide">
+							
+							<div class="loader__wrapper"><div></div><div></div></div>
+				   </div> -->
+				
+				   <!-- <br/>
+			</div>
+			<br />
+
+</div> -->
+
+
+<div class="container-wide row--padding-wide">
+
+  <div class="banner" style="background-image: url('/assets/css/images/bg/trek.jpg');">
+      <span class="banner__overlay"></span>
+      
+      <div class="banner__tagline banner__home" style="opacity: 1;">
+          <p class="tagline" style="text-transform: none;"></p>
+          <br />
+          <p class="sub-tagline" style="display: inline;">
+          
+          </p>
+      </div>
+      <span class="banner__skip">
+          <a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
+      </span>
+  </div>
+
+
+</div>
+
+
+
+    <div class="row container-wide row--padding-wide content__pg" >
+                  
+              <!-- <br /><br /> -->
+              <!-- <h2 class="content__sub-title content__title-white">OUR Tours </h2><br /> -->
+              <!-- <br /><br /> -->
+             
+              <!-- Uncomment this to view bike tours -->
+              <!-- <div class="productWrapper row--padding-wide" >
+                      
+                      <div class="loader__wrapper"><div></div><div></div></div>
+              </div> -->
+          
+              <!-- <br/> -->
+
+
+
+              {% for trek_id in site.data.rafting-data %}
+                  {% assign trek = trek_id[1] %}
+                  <!-- Access trek.name, trek.days, trek.region, trek.difficulty, etc. -->
+              {% endfor %}
+
+              <div class="update__page-layout">
+
+                  <div id="update__filters">
+
+                      <h2>Category</h2>
+                      <button
+                          class="update__filter-btn toggle-button"
+                          data-filter="category"
+                          data-value="trekking">Trekking</button>
+                      <button
+                          class="update__filter-btn toggle-button"
+                          data-filter="category"
+                          data-value="climbing">Climbing</button>
+
+                      <h2>Difficulty</h2>
+                      <div class="inline-radio-group">
+                          <label><input type="radio" name="difficulty" value="easy">
+                              Easy</label>
+                          <label><input type="radio" name="difficulty" value="challenging">
+                              Challenging</label>
+                      </div>
+
+                      <h2>Region</h2>
+                      <div class="inline-radio-group">
+                          <label><input type="radio" name="region" value="everest">
+                              Everest</label>
+                          <label><input type="radio" name="region" value="manaslu">
+                              Manaslu</label>
+                      </div>
+
+                      <button id="update__clear-filters">Clear</button>
+                  </div>
+
+                  <div class="update__trek-grid">
+                      {% for trek_id in site.data.rafting-data %}
+                          {% assign trek = trek_id[1] %}
+                          <a href="/activities/rafting/{{ trek_id[0] }}/" class="update__trek-card-link">
+                              <div
+                                  class="update__trek-card"
+                                  data-category="{{ trek.category | downcase }}"
+                                  data-difficulty="{{ trek.difficulty | downcase }}"
+                                  data-region="{{ trek.region | downcase }}">
+
+                                  <div
+                                      class="trek-card__image-wrapper"
+                                      style="background-image: url('/{{ trek.photos }}');">
+                                      <div class="trek-card__overlay">
+                                          <h2>{{ trek.name }}</h2>
+                                          <p>{{ trek.region }}
+                                              •
+                                              {{ trek.days }}
+                                              days</p>
+                                          <p>
+                                              <!-- <strong>${{ trek.price }}</strong> -->
+                                          </p>
+                                      </div>
+                                  </div>
+
+                              </div>
+                          </a>
+                      {% endfor %}
+                  </div>
+
+              </div>
+
+    </div>

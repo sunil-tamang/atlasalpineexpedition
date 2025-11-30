@@ -1,0 +1,219 @@
+---
+layout: default
+title: Send an Enquiry
+permalink: /enquiry/
+custom_css: "inquiry.css"
+---
+
+<div class="inquiry__container">
+  <div class="inquiry__row">
+    
+    <!-- Sidebar (Right on desktop, top on mobile) -->
+    <div class="sidebar-section">
+      <div id="booking-details-sidebar">
+        <h2 id="sidebar-tour-name">Tour Name</h2>
+        <img id="sidebar-tour-image" src="" alt="Tour Image" />
+        <div class="price-row">
+          <span>Total</span>
+          <span id="sidebar-tour-price">$0.00</span>
+        </div>
+        <h4>Highlights</h4>
+        <div id="sidebar-highlights-list">
+        </div>
+      </div>
+    </div>
+
+    <!-- Form (Left on desktop, below on mobile) -->
+    <div class="form-section">
+      <form autocomplete="off" action="https://formsubmit.co/above8000expeditions@gmail.com" method="POST" name="contact_form">
+        <div class="text">
+          <!-- <h1 id="enquiry-title-header">Enquiry Details</h1> -->
+          <!-- <p>Thank you for your interest. Please complete the form below and we’ll get back to you as soon as possible.</p> -->
+        </div>
+
+        <fieldset>
+          <div class="ar-input-set">
+            <input type="text" name="tour_name" required id="id_tour_name" placeholder="Tour Name" />
+          </div>
+
+          <div class="form-grid">
+            <div class="ar-input-set">
+              <input type="text" name="first_name" required id="id_first_name" placeholder="John" />
+              <span class="ar-floating-label">First Name</span>
+            </div>
+
+            <div class="ar-input-set">
+              <input type="text" name="middle_name" id="id_middle_name" placeholder="Brad" />
+              <span class="ar-floating-label">Middle Name</span>
+            </div>
+
+            <div class="ar-input-set">
+              <input type="text" name="last_name" required id="id_last_name" placeholder="Doe" />
+              <span class="ar-floating-label">Last Name</span>
+            </div>
+
+            <div class="ar-input-set">
+              <input type="date" name="date_of_birth" required id="id_date_of_birth" />
+              <span class="ar-floating-label">Date of Birth</span>
+            </div>
+
+            <div class="ar-input-set">
+              <select name="gender" id="id_gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="non-binary">Non-binary</option>
+                <option value="prefer-not-to-say">Prefer Not to Say</option>
+              </select>
+              <span class="ar-floating-label">Gender</span>
+            </div>
+
+            <div class="ar-input-set">
+              <input type="text" name="phone" required id="id_phone" placeholder="+977 123-456-7890" />
+              <span class="ar-floating-label">Contact Number</span>
+            </div>
+
+            <div class="ar-input-set">
+              <input type="email" name="email" id="id_email" required placeholder="youremail@example.com" />
+              <span class="ar-floating-label">E-Mail Address</span>
+            </div>
+
+            <div class="ar-input-set">
+              <textarea rows="1" id="id_user_remarks" name="user_remarks" placeholder="User Remarks"></textarea>
+              <span class="ar-floating-label">Remarks</span>
+            </div>
+          </div>
+
+          <div class="text">
+            <p>Don't worry, we won’t spam you.</p>
+          </div>
+
+          <input type="hidden" name="_next" value="https://above8000.com/thanks">
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="ar-form-btn-span">
+            <button class="book_btn" type="submit" name="sendMsg">
+              <span class="trippy_btn-left"></span>Send An Enquiry<span></span>
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlSlug = urlParams.get('tour_slug');
+    const fallbackSlug = "{{ page.title-slug | default: page.slug | default: page.permalink | split: '/' | last }}";
+    const tourSlug = urlSlug || fallbackSlug;
+
+    const trekData = {
+      {% for slug_key in site.data.trek-data %}
+        "{{ slug_key[0] }}": {
+          slug: "{{ slug_key[0] }}",
+          title: "{{ slug_key[1].name }}",
+          image: "/{{ slug_key[1].photos }}",
+          price: "{{ slug_key[1].price }}",
+          highlights: [
+            "Days: {{ slug_key[1].days }}",
+            "Difficulty: {{ slug_key[1].difficulty }}",
+            "Distance: {{ slug_key[1].distance | default: 'N/A' }}",
+          ]
+        },
+      {% endfor %}
+    };
+
+    const peakData = {
+      {% for slug_key in site.data.peak-data %}
+        "{{ slug_key[0] }}": {
+          slug: "{{ slug_key[0] }}",
+          title: "{{ slug_key[1].name }}",
+          image: "/{{ slug_key[1].photos }}",
+          price: "{{ slug_key[1].price }}",
+          highlights: [
+            "Days: {{ slug_key[1].days }}",
+            "Altitude: {{ slug_key[1].height }} m",
+            "Difficulty: {{ slug_key[1].difficulty }}",
+          ]
+        },
+      {% endfor %}
+    };
+
+    const bikeData = {
+      {% for slug_key in site.data.bike-data %}
+        "{{ slug_key[0] }}": {
+          slug: "{{ slug_key[0] }}",
+          title: "{{ slug_key[1].name }}",
+          image: "/{{ slug_key[1].photos }}",
+          price: "{{ slug_key[1].price }}",
+          highlights: [
+            "Days: {{ slug_key[1].days }}",
+            "Region: {{ slug_key[1].region }}",
+            "Difficulty: {{ slug_key[1].difficulty | default: 'Moderate' }}",
+          ]
+        },
+      {% endfor %}
+    };
+
+    const rockData = {
+      {% for slug_key in site.data.rock-data %}
+        "{{ slug_key[0] }}": {
+          slug: "{{ slug_key[0] }}",
+          title: "{{ slug_key[1].name }}",
+          image: "/{{ slug_key[1].photos }}",
+          price: "{{ slug_key[1].price }}",
+          highlights: [
+            "Location: {{ slug_key[1].location }}",
+            "Duration: {{ slug_key[1].duration }}",
+            "Difficulty: {{ slug_key[1].difficulty | default: 'Moderate' }}",
+          ]
+        },
+      {% endfor %}
+    };
+
+    const raftingData = {
+      {% for slug_key in site.data.rafting-data %}
+        "{{ slug_key[0] }}": {
+          slug: "{{ slug_key[0] }}",
+          title: "{{ slug_key[1].name }}",
+          image: "/{{ slug_key[1].photos }}",
+          price: "{{ slug_key[1].price }}",
+          highlights: [
+            "River: {{ slug_key[1].river }}",
+            "Days: {{ slug_key[1].days }}",
+            "Grade: {{ slug_key[1].grade | default: 'Class III' }}",
+          ]
+        },
+      {% endfor %}
+    };
+
+    const allTours = {
+      ...trekData,
+      ...peakData,
+      ...bikeData,
+      ...rockData,
+      ...raftingData,
+    };
+
+    const currentTour = allTours[tourSlug];
+
+    if (currentTour) {
+      document.getElementById('id_tour_name').value = currentTour.title;
+      document.getElementById('sidebar-tour-name').innerText = currentTour.title;
+      document.getElementById('sidebar-tour-image').src = currentTour.image;
+      document.getElementById('sidebar-tour-price').innerText = `$ ${currentTour.price}`;
+
+      const highlightsList = document.getElementById('sidebar-highlights-list');
+      highlightsList.innerHTML = '';
+      currentTour.highlights.forEach(item => {
+        const p = document.createElement('p');
+        p.textContent = item;
+        highlightsList.appendChild(p);
+      });
+    }
+  });
+</script>

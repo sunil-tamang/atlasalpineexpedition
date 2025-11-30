@@ -1,0 +1,1782 @@
+# Sorted trek by Alphabetic Order
+
+
+everest-base-camp-trek:
+    name: "Everest Base Camp Trek"
+    days: "15"
+    nights: "14"
+    altitude: "12,467"
+    grade: "Moderate"
+    distance: "130 KM"
+    walking: "5-6 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-8 pax"
+    season: "Spring/Autumn"
+    region: "Everest"
+    category: "Trekking"
+    difficulty: "Challenging"
+    popular: "Y"
+    price: "2,500.00"
+    photos: "assets/css/images/treks/everest_base_min.jpg"
+
+    
+    bookLink: "https://imojo.in/STuatw/"
+
+    description: "The Everest Base Camp Trek is a bucket-list adventure that takes you through the stunning Khumbu region of Nepal, providing trekkers with the opportunity to experience the worlds highest mountain range up close. "
+
+    excerpt: "The Everest Base Camp Trek is a bucket-list adventure that takes you through the stunning Khumbu region of Nepal, providing trekkers with the opportunity to experience the worlds highest mountain range up close. "
+
+    video: "<iframe width='100%' height='400' class='vid' src='https://www.youtube.com/embed/DzGapHIflNc?si=FBrn2PUG3qiS7x3Y' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+    gears-list: "//assets/docs/trekking-gears-nepal.pdf"
+
+    download: "//assets/docs/manaslu.pdf"
+    
+    # image: "<img class=' map2'>"
+    map: "/assets/css/images/treks/ebc-trek.jpg"
+
+
+ 
+    overview:
+
+    - content: "
+              The Everest Base Camp Trek is one of the most iconic trekking adventures in the world. Located in the heart of Nepal’s Khumbu region, this journey takes you through breathtaking Himalayan landscapes, vibrant Sherpa villages, and spiritual monasteries, ultimately leading to the foot of Mount Everest (8,848.86m).
+             
+              At an altitude of 5,364 meters, reaching Everest Base Camp is a once-in-a-lifetime achievement that leaves trekkers inspired and humbled by the grandeur of the world’s tallest peak. Along the way, you’ll cross suspension bridges over the Dudh Koshi River, walk through rhododendron forests, acclimatize in Sherpa hubs like Namche Bazaar, and enjoy a hike to Kala Patthar (5,545m) — one of the best vantage points for panoramic Everest views.
+             
+              Whether you are a seasoned trekker or taking on your first big mountain adventure, the Everest Base Camp Trek (EBC Trek) offers a perfect balance of natural beauty, cultural immersion, and personal challenge.
+              "
+
+    # - content: "The Everest Base Camp Trek is not only a physical challenge but also a cultural and spiritual journey. The trek provides a unique opportunity for trekkers to immerse themselves in the local culture, which is deeply rooted in the Sherpa tradition. Trekkers can witness traditional Sherpa dances and songs, sample local cuisine, and visit monasteries and other religious sites, providing an insight into the spiritual beliefs of the region."
+    
+    itinerary:
+  
+
+    - title: "DAY 1 - Arrival in Kathmandu (1400m) & Transfer to Hotel"
+      content: "Arrive at Tribhuvan International Airport in Kathmandu. Our representative will greet you and transfer you to your hotel. Take the evening to rest, recover, and explore the bustling streets of Thamel."
+      img: "/assets/css/images/treks/everest-base-camp/kathmandu.jpg"
+
+    - title: "DAY 2 - Fly from Kathmandu to Lukla and Trek to Phakding (2,800m)"
+      content: "Take a thrilling 35-minute mountain flight to Lukla, the gateway to Everest. Begin trekking through picturesque villages and descend to Phakding."
+      img: "/assets/css/images/treks/everest-base-camp/lukla.jpg"
+
+    - title: "DAY 3 - Trek from Phakding to Namche Bazaar (3,440m)"
+      content: "Follow the Dudh Koshi River, cross suspension bridges, and ascend to Namche Bazaar, the vibrant Sherpa capital and trading hub of the Khumbu."
+      img: "/assets/css/images/treks/everest-base-camp/namche.jpg"
+
+    - title: "DAY 4 - Acclimatization Day in Namche Bazaar with Hike to Everest View Hotel"
+      content: "Stay in Namche to acclimatize. Take a short hike to the Everest View Hotel (3,880m) for panoramic views of Everest, Lhotse, Nuptse, and Ama Dablam."
+      img: "/assets/css/images/treks/everest-base-camp/namchee.jpg"
+
+    - title: "DAY 5 - Trek from Namche Bazaar to Tengboche (3,870m)"
+      content: "Walk through rhododendron forests with spectacular views of Everest before reaching Tengboche Monastery, the spiritual center of the Khumbu."
+      img: "/assets/css/images/treks/everest-base-camp/tengboche.jpg"
+
+    - title: "DAY 6 - Trek from Tengboche to Dingboche (4,243m)"
+      content: "Descend through forests, cross the Imja Khola river, and gradually climb to Dingboche, a high-altitude Sherpa settlement."
+      img: "/assets/css/images/treks/everest-base-camp/dingboche.jpg"
+
+    - title: "DAY 7 - Acclimatization Day in Dingboche"
+      content: "Take a rest day with a hike to Nagarjun Hill (5,100m) for sweeping Himalayan views."
+
+    - title: "DAY 8 - Trek from Dingboche to Lobuche (4,940m)"
+      content: "Continue past glacial valleys to Lobuche, with stunning views of Nuptse and Pumori."
+      img: "/assets/css/images/treks/everest-base-camp/lobuche.jpg"
+
+    - title: "DAY 9 - Trek from Lobuche to Everest Base Camp and Return to Gorak Shep (5,170m)"
+      content: "Reach Everest Base Camp, the highlight of the trek! Take in the atmosphere of mountaineering history before returning to Gorak Shep."
+      img: "/assets/css/images/treks/everest-base-camp/gorakshep.jpg"
+
+    - title: "DAY 10 - Trek from Gorak Shep to Kala Patthar (5,545m) and Back to Pheriche (4,371m)"
+      content: "Climb early morning to Kala Patthar for the best sunrise views of Everest. Descend to Pheriche for overnight."
+
+    - title: "DAY 11 - Trek from Pheriche to Namche Bazaar"
+      content: "Retrace your steps through beautiful landscapes and return to Namche."
+
+    - title: "DAY 12 - Trek from Namche Bazaar to Lukla"
+      content: "Descend through suspension bridges and mountain villages back to Lukla. Celebrate your achievement with the trekking team."
+
+    - title: "DAY 13 - Fly from Lukla to Kathmandu and Transfer to Hotel"
+      content: "Take a morning flight back to Kathmandu and transfer to your hotel. Free day for rest or exploration."
+
+    - title: "DAY 14 - Sightseeing Around Kathmandu Valley"
+      content: "Visit UNESCO World Heritage sites such as Swayambhunath (Monkey Temple), Pashupatinath Temple, and Kathmandu Durbar Square."
+
+    - title: "DAY 15 - Transfer to International Airport for Final Departure"
+      content: "Our team will transfer you to the airport for your international flight. Carry unforgettable memories of your Everest adventure."
+
+
+
+
+manaslu-circuit-trek:
+    name: "Manaslu Circuit Trek"
+    days: "23"
+    nights: "22"
+    altitude: "5,106m / 16,751ft"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Manaslu"
+    price: "8500"
+    photos: "assets/css/images/treks/manaslu_circuit_min.jpg"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Manaslu Circuit Trek is a breathtaking adventure that takes you on a journey through the rugged terrain and awe-inspiring landscapes of the Himalayas. This trek is a unique blend of natural beauty, cultural heritage, and unparalleled adventure, making it a popular choice among trekkers from all over the world."
+    excerpt: "The Manaslu Circuit Trek is a breathtaking adventure that takes you on a journey through the rugged terrain and awe-inspiring landscapes of the Himalayas. This trek is a unique blend of natural beauty, cultural heritage, and unparalleled adventure, making it a popular choice among trekkers from all over the world."
+
+    video: "<iframe width='100%' height='400' class='vid' src='https://www.youtube.com/embed/WH_AgfLedbE' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+    gears-list: "//assets/docs/trekking-gears-nepal.pdf"
+    download: "//assets/docs/manaslu.pdf"
+
+    overview:
+
+    - content: "The Manaslu Circuit Trek is a breathtaking adventure that takes you on a journey through the rugged terrain and awe-inspiring landscapes of the Himalayas. This trek is a unique blend of natural beauty, cultural heritage, and unparalleled adventure, making it a popular choice among trekkers from all over the world."
+    - content: "As you embark on this trek, you will be greeted by towering snow-capped peaks, pristine alpine forests, and cascading waterfalls. The trek takes you through the beautiful Manaslu Conservation Area, which is home to a wide variety of flora and fauna, including the elusive snow leopard, Himalayan Thar, and blue sheep."
+
+    itinerary:
+
+    - title: "DAY 1 - Arrival in Kathmandu (1400m) & Transfer to the Hotel"
+      content: "Namaste! Welcome to Kathmandu - a city rich in culture and history. You will be met at the airport by your tour guide who will take you to your hotel. After checking in and resting for a bit, you can explore the bustling streets of Thamel, the heart of Kathmandu. Later, enjoy a traditional Nepali dinner with live music and cultural performances.."
+
+    - title: "DAY 2 - Sightseeing around Kathmandu Valley"
+      content: "Today, you will visit the UNESCO World Heritage Sites in Kathmandu, including Pashupatinath, Boudhanath, and Swayambhunath. These ancient sites offer an insight into the rich history and culture of Nepal. After a delicious lunch, you will visit the beautiful Durbar Square, which is filled with stunning architecture and traditional crafts. "
+  
+    - title: "DAY 3 - Drive from Kathmandu to Soti Khola"
+      content: " Get ready for an exciting drive to Soti Khola, where the trek begins. The road passes through beautiful landscapes, and you will have a chance to enjoy the scenic views of the Trishuli River and the Himalayas. Upon reaching Soti Khola, you can relax and take a dip in the natural hot springs."
+
+    - title: "DAY 4 - Trek from Soti Khola to Maccha Khola (900m)"
+      content: " The trek starts with a gentle walk along the Budi Gandaki River, passing through beautiful forests and small villages. Cross the suspension bridge over the river and climb up to Machha Khola, where you can enjoy a warm cup of tea while taking in the stunning scenery."
+
+    - title: "DAY 5 - Trek from Maccha Khola to Jagat (1,410m)"
+      content: " Today, the trail leads through narrow valleys and steep gorges, providing a unique experience of trekking in the Himalayas. After crossing the suspension bridge, climb up to Jagat village, where you can see the traditional way of life in the mountains."
+
+    - title: "DAY 6 - Trek from Jagat to Lokpa (2,240m) Dyang (1,804m)"
+      content: " Today's trek is a bit challenging, as you climb up to Lokpa village, where you can enjoy the stunning views of the Himalayas. After a short rest, continue trekking to Dyang, where you can witness the unique culture and lifestyle of the people living in this region."
+
+    - title: "DAY 7 - Trek from Lokpa to Chumling (2,386m)"
+      content: " Today, you will trek through beautiful forests, crossing several suspension bridges over the Budi Gandaki River. The trail leads to Chumling, a small village surrounded by beautiful mountains and terraced fields."
+
+    - title: "DAY 8 - Trek from Chumling to Chekampar (3,031m)"
+      content: " The trail today offers stunning views of the Himalayas and the picturesque landscapes. You will walk through beautiful forests, cross the suspension bridge over the river, and climb up to Chekampar village, where you can witness the unique culture and lifestyle of the people living in this region."
+
+    - title: "DAY 9 - Trek from Chekampar to Nile (3,361m)"
+      content: " The trail today offers breathtaking views of the Himalayas, passing through beautiful forests and small villages. Upon reaching Nile, you can explore the ancient monasteries and stupas in this region."
+
+    - title: "DAY 10 - Hike to Mu Gompa (3,700m)"
+      content: " Today, you will hike to Mu Gompa, one of the most famous monasteries in the region. The trail offers stunning views of the Himalayas, and you can witness the unique culture and traditions of the people living in this remote region.."
+
+    - title: "DAY 11 - Trek from Nile to Chekampar (3,031m)"
+      content: " We will start our trek early in the morning and follow the same trail we took a few days ago. We will cross the suspension bridge over the river and hike up to the village of Domje. From there, we will continue our ascent to the village of Chekampar, where we will stay overnight. Chekampar is a beautiful village that offers stunning views of the Ganesh Himal range."
+
+    - title: "DAY 12 - Trek from Chekampar to Chumling (2,386m)"
+      content: "After breakfast, we will leave Chekampar and follow the trail to Chumling. We will hike through the lush green forests and cross several suspension bridges over the river. We will also pass through the beautiful village of Ripchet, which is known for its rich culture and traditions. After a few hours of hiking, we will finally reach Chumling, where we will spend the night."
+
+    - title: "DAY 13 - Trek from Chumlung to Dyang (1,804m)"
+      content: " Today, we will continue our trek to Dyang. The trail to Dyang is mostly uphill and challenging, but it offers some of the most breathtaking views of the Himalayan range. We will pass through several villages, including Gho, where we can witness the traditional lifestyle of the locals. We will also cross a suspension bridge over the river and hike through dense forests before finally reaching Dyang, where we will stay overnight."
+
+    - title: "DAY 14 - Trek from Dyang to Namrung (2,630m)"
+      content: "Today, we will trek to the beautiful village of Namrung. The trail to Namrung is mostly uphill, and we will pass through several villages and dense forests. We will also come across several Mani walls and chortens, which are sacred to the Buddhists. Namrung is a picturesque village that offers stunning views of the Manaslu and Ganesh Himal ranges."
+
+    - title: "DAY 15 - Trek from Namrung to Samagaon (3,530m)"
+      content: " After breakfast, we will leave Namrung and continue our trek to Samagaon. The trail to Samagaon is mostly uphill, and we will pass through several villages, including Lho, where we can witness the rich culture and traditions of the locals. We will also pass through the beautiful Shyala village, which offers stunning views of the Himalayan range. After a few hours of hiking, we will finally reach Samagaon, where we will stay overnight."
+
+    - title: "DAY 16 - Trek from Samagaon to Pungyen Gumba (4,400m) to Samagaon: 1 hrs exploration day"
+      content: "Today, we will take a rest day in Samagaon and explore the village. We will also hike to Pungyen Gumba, which is a famous monastery located at an altitude of 4,400 meters. The monastery offers stunning views of the Manaslu and Ganesh Himal ranges, and we will also get to witness the traditional rituals and practices of the monks."
+
+    - title: "DAY 17 - Trek from Samagaon to Samdo (3,860m)"
+      content: " After breakfast, we will leave Samagaon and continue our trek to Samdo. The trail to Samdo is mostly uphill, and we will pass through several villages and dense forests. We will also come across several yak herds and mountain goats along the way. After a few hours of hiking, we will finally reach Samdo, where we will stay overnight."
+
+    - title: "DAY 18 - Trek from Samdo to Dharamsala/Larkya B. C. (4,460m)"
+      content: " Today's trek will take us through rocky terrain, with magnificent views of the mountains. The path initially descends to the Budi Gandaki River, where we cross a wooden bridge. The trail then climbs through a dense forest of juniper and crosses a few streams before reaching the village of Larkya Phedi. We continue to trek uphill for a couple of hours until we reach Dharamsala/Larkya Base Camp, where we will spend the night."
+
+    - title: "DAY 19 - Trek from Dharamsala to Larkya La (5,106m) to Bhimthang (3,720m)"
+      content: " Today will be a long and challenging day, but the breathtaking views of the Himalayas will make it all worthwhile. We will start early in the morning to reach Larkya La Pass, which is the highest point of our trek at 5,106 meters. The ascent is steep, and the air is thin, but the view from the top is stunning. From the pass, we can see the snow-capped peaks of Himlung Himal, Cheo Himal, Kang Guru, and Annapurna II. After spending some time at the pass, we descend to Bhimthang, where we will spend the night.."
+
+    - title: "DAY 20 - Trek from Tilije to Dharapani and drive to Besishahar"
+      content: "After breakfast, we start our descent towards Tilije village. The trail descends through a beautiful forest of rhododendron and pine trees, and we cross several small streams and bridges. The path then flattens out as we approach Tilije, a quaint Gurung village with traditional houses and prayer flags."
+
+    - title: "DAY 21 - Drive from Besishahar to Kathmandu & transfer to the Hotel"
+      content: " Today, we will drive from Tilije to Besishahar, where we will spend the night. The drive will take us through beautiful landscapes and rural villages, giving us a glimpse into the local way of life."
+
+    - title: "DAY 22 - Transfer to International Airport for final departure"
+      content: " Today, we will drive from Besishahar to Kathmandu, where we will check into our hotel. The rest of the day is free for us to explore the city, do some last-minute shopping or relax at the hotel"
+
+    - title: "DAY 23 -  Departure"
+      content: " It's time to say goodbye to Nepal as we transfer to the airport for our flight back home. This trek has been an incredible journey, and we have created memories that will last a lifetime."
+
+
+
+langtang-valley-trek:
+    name: "Langtang Valley Trek"
+    days: "11"
+    nights: "10"
+    altitude: "3,850m"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Langtang"
+    popular: "Y"
+    price: "1,300.00"
+    photos: "assets/css/images/treks/langtang_valley_min.jpg"
+    card: assets/css/images/treks/langtang-card.jpg"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Langtang Valley Trek in Nepal is a fantastic adventure that is perfect for nature lovers and outdoor enthusiasts looking for a challenging and rewarding experience. This trek takes you through the stunning Langtang Valley, which is a hidden gem that offers stunning views of the Himalayan range without the crowds of some of the more popular routes."
+
+    excerpt: "The Langtang Valley Trek in Nepal is a fantastic adventure that is perfect for nature lovers and outdoor enthusiasts looking for a challenging and rewarding experience. This trek takes you through the stunning Langtang Valley, which is a hidden gem that offers stunning views of the Himalayan range without the crowds of some of the more popular routes."
+
+    video: "<iframe width='100%' height='400' class='vid' src='https://www.youtube.com/embed/fiBoxFrdokw' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+   
+    gears-list: "//assets/docs/trekking-gears-nepal.pdf"
+    download: "//assets/docs/manaslu.pdf"
+
+    overview:
+
+    - content: "The Langtang Valley Trek in Nepal is a fantastic adventure that is perfect for nature lovers and outdoor enthusiasts looking for a challenging and rewarding experience. This trek takes you through the stunning Langtang Valley, which is a hidden gem that offers stunning views of the Himalayan range without the crowds of some of the more popular routes.The Langtang National Park is home to rare wildlife, including the endangered red panda, snow leopards, Himalayan black bears, and musk deer. You'll get to experience the rich local culture and traditions of the Tamang people, who call this region home. They are known for their warm hospitality and welcoming nature, and you'll have the chance to interact with local communities, visit ancient monasteries, and learn about the history and customs of the region."
+    - content: "The trek itself takes you through lush forests, picturesque rivers, and steep ridges, all while taking in breathtaking views of the surrounding mountains. The ascent to the Kyanjin Ri viewpoint offers unparalleled views of the Himalayan range, including the Langtang Lirung, Ganesh Himal, and Dorje Lakpa. It's an experience that you'll never forget.The Langtang Valley Trek is an unforgettable adventure that will leave you with memories that will last a lifetime. It's challenging, rewarding, and provides a unique opportunity to experience the beauty and culture of the Langtang region. So why wait? Book your trek today and discover the magic of the Langtang Valley for yourself!"
+    itinerary:
+
+    - title: "DAY 1 - Arrival in Kathmandu (1400m) & Transfer to the Hotel"
+      content: "Upon arrival at Tribhuvan International Airport in Kathmandu, you will be greeted by our representative and transferred to your hotel. After checking in and freshening up, you can explore the vibrant city on your own or simply relax and adjust to the altitude."
+
+    - title: "DAY 2 - Drive from Kathmandu to Syabrubesi (1,460m)"
+      content: "After breakfast, we embark on a scenic drive to Syabrubesi, a small town at the base of Langtang Valley. The journey takes around 7-8 hours and offers stunning views of the countryside, mountains, and rivers. "
+ 
+    - title: "DAY 3 - Trek from Syabrubesi to Lama Hotel (2,470m)"
+      content: " Today marks the beginning of our trek as we start from Syabrubesi and trek through the dense forest, crossing several suspension bridges over the Langtang River. We gradually ascend to Lama Hotel, a small settlement surrounded by lush greenery and a serene environment."
+
+    - title: "DAY 4 - Trek from Lama Hotel to Langtang Village (3,430m)"
+      content: " We continue our ascent through the forest and cross several streams and waterfalls as we head towards Langtang Village, a traditional Sherpa village with unique architecture and cultural heritage. Along the way, we also get our first glimpse of the snow-capped mountains in the Langtang range."
+
+    - title: "DAY 5 - Trek from Langtang to Kyangjing Gompa (3,750m)"
+      content: " Today, we trek to Kyanjin Gompa, a picturesque village in the Langtang Valley known for its ancient Buddhist monastery and stunning views of the surrounding mountains. The journey takes us through yak pastures and rugged terrain, with the Langtang Lirung peak looming large in the background."
+
+    - title: "DAY 6 - Explore around Kyanjin Gompa and climb to Tsergo Ri and back to Kyanjin Gompa."
+      content: " We spend the day exploring the area around Kyanjin Gompa, visiting the monastery and interacting with the friendly locals. For the more adventurous, we can also hike up to the top of Tsergo Ri, a challenging but rewarding climb that offers breathtaking panoramic views of the Langtang range."
+
+    - title: "DAY 7 - Trek from Kyanjin Gompa to Lama Hotel."
+      content: "We retrace our steps and make our way back to Lama Hotel, descending through the forest and enjoying the scenic beauty of the Langtang Valley."
+
+    - title: "DAY 8 - Trek from Lama hotel to Syaphrubesi"
+      content: " Our final day of trekking takes us back to Syabrubesi, where we can celebrate our successful journey with a traditional Nepali meal and cultural performances by the locals.."
+
+    - title: "DAY 9 - Drive from Syabrubesi to Kathmandu & Transfer to the Hotel"
+      content: " After breakfast, we drive back to Kathmandu, enjoying the picturesque landscapes and quaint villages along the way. Once we reach the city, we can explore the bustling markets and colorful streets or simply relax at the hotel."
+
+    - title: "DAY 10 - Sight Seeing Around Kathmandu Valley"
+      content: " Today, we explore the cultural and historical landmarks of Kathmandu Valley, visiting UNESCO World Heritage sites like Swayambhunath Stupa, Pashupatinath Temple, and Bhaktapur Durbar Square. We can also indulge in some souvenir shopping and try out the local cuisine.."
+
+    - title: "DAY 11 - Transfer to the Tribhuvan International Airport for final departure"
+      content: " After an eventful trip, it's time to bid farewell to Nepal as we transfer you to Tribhuvan International Airport for your onward journey."
+
+
+
+pikey-peak-trek:
+    name: "Pikey Peak Trek"
+    days: "10"
+    nights: "9"
+    altitude: "4,065"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Solukhumbu"
+    popular: "Y"
+    price: "1200"
+    photos: "assets/css/images/treks/pikey-peak.jpg"
+    photoo: "assets/css/images/treks/pikey-peak.jpg"
+    url: ""
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    excerpt: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    video: "<iframe width='100%' class='vid' height='400' src='https://www.youtube.com/embed/I1Sx_DdHaUE' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/manaslu.pdf"
+    gears-list: "//assets/docs/trekking-gears-nepal.pdf"
+
+    
+    # image: "<img class='map1'>"
+
+
+
+    overview:
+
+    - content: " Pikey Peak is a hidden gem in the Solu region of Nepal, known for its breathtaking views of Everest, Kanchenjunga, and several other Himalayan giants. This trek is perfect for those seeking a short, relatively easy adventure with stunning vistas. Below is a suggested 8-day itinerary for the Pikey Peak trek:"
+    - content: " "
+    - content: " "
+
+    itinerary:
+
+      
+    - title: "Day 01: Arrival in Kathmandu and Transfer to Hotel"
+      content: |
+        Upon arrival at Tribhuvan International airport in Kathmandu, you will be met and welcomed by an officer from Excellent Himalaya Trek and Expedition. He will assist you to transfer to your hotel. You will be briefed about your trip at the hotel. Then, you can relax at your hotel or wander around Thamel, the tourist center of Kathmandu, and do some last-minute shopping. Overnight at a hotel in Kathmandu.
+
+    - title: "Day 02: Drive from Kathmandu to Dhap Bazaar (Altitude 2850 meters)"
+      content: |
+        Driving Distance: 240 km | Duration: 8 hours
+        The first leg of our journey takes you by road from Kathmandu to Dhap Bazaar. The road follows the banks of the Sunkoshi River until you reach Ghurmi Village. Along the way, enjoy the constantly changing Nepali countryside with dense forests, terraced rice fields, and numerous gushing rivers. Upon arrival at Dhap Bazaar, take a leisurely walk around the markets. Overnight at Mountain Lodge.
+
+    - title: "Day 03: Trek from Dhap Bazaar to Japre (Altitude 2815 meters)"
+      content: |
+        Distance: 14 km | Walking Duration: 4/5 hours
+        Begin your trek from Dhap. Near Sigane, you will catch a view of the peaks of the Numbur Himal range. The trail from Sigane follows a road under construction for the first few hours. The first village you reach is Japre (2920 meters), located above a deep valley with lovely views of Everest and Numbur Himal. There’s a small Buddhist Monastery and stupa in Japre. Overnight at Mountain Lodge.
+
+    - title: "Day 04: Trek from Japre to Pikey Base Camp (Altitude 3640 meters)"
+      content: |
+        Distance: 13.73 km | Walking Duration: 5/6 hours
+        After Japre, the trail climbs up to a grassy ridge at Bhulbhule with great views of the Everest range. Shortly after Bhulbhule, the trail splits, leading right towards Pikey Peak. You’ll pass old yak houses and a long mani stone wall, before continuing on a forested trail through rhododendron trees (which bloom in spring). After leaving the forest, it takes around 2 hours to reach Pikey Peak Base Camp. Overnight at Mountain Lodge.
+
+    - title: "Day 05: Rest Day (Optional, if Weather is Bad)"
+      content: |
+        This is a flexible day built into the itinerary in case of bad weather. You can stay at Pikey Base Camp and wait for better conditions to safely continue the trek. Use this day to rest, acclimatize, and explore the surroundings.
+
+    - title: "Day 06: Trek from Pikey Base Camp to Pikey Peak (Altitude 4065 meters) to Jase Bhanjyang (Altitude 3520 meters)"
+      content: |
+        Distance: 5 km | Walking Duration: 4/5 hours
+        Start early in the morning to hike to Pikey Peak. Enjoy breathtaking sunrise views and the panorama of Mt. Everest (8848m), Number Chuli (6959m), Thamserku (6608m), Kangtega (6685m), Khatang (6853m), Kanchenjunga (8586m), Manaslu (8163m), Dhaulagiri (8167m), Gaurishankar (7134m), Dorje Lakpa (6966m), and Langtang. After enjoying the views, descend to Jase Bhanjyang for the night’s rest. Overnight at Mountain Lodge.
+
+    - title: "Day 07: Trek from Jase Bhanjyang to Junbesi (Altitude 2680 meters)"
+      content: |
+        Distance: 11.02 km | Walking Duration: 5/6 hours
+        After breakfast, follow the trail through a forest and then continue through meadows before reaching the village of Taktor. After lunch in Taktor, continue trekking towards Junbesi on a wide dirt road. Before arriving in Junbesi, you can visit a Buddhist Monastery. Junbesi is a beautiful village with a Buddhist Stupa and comfortable tea houses, home to Sherpa, Magar, and Tamang communities. Overnight at Mountain Lodge.
+
+    - title: "Day 08: Trek from Junbesi to Phaplu (Altitude 2380 meters)"
+      content: |
+        Distance: 13.26 km | Walking Duration: 5/6 hours
+        After breakfast, descend along the trail following Junbesi Khola until you reach a steel suspension bridge. Cross the bridge to reach Beni Ghat, then continue along the scenic trail towards Phaplu. At Phaplu, enjoy local cuisine and partake in traditional Sherpa cultural events. Overnight at Mountain Lodge.
+
+    - title: "Day 09: Drive from Phaplu to Kathmandu (Altitude 1350 meters)"
+      content: |
+        Driving Distance: 280 km | Driving Duration: 9/10 hours
+        Drive from Phaplu to Kathmandu via a regular sumo jeep. Upon arrival in Kathmandu, transfer to your hotel. In the evening, enjoy a farewell dinner at an authentic Nepali restaurant featuring traditional cuisine.
+
+    - title: "Day 10: Transfer to International Airport for Final Departure"
+      content: |
+        Today marks the end of your Nepal adventure. Our officer will drive you to the airport approximately 3 hours before your scheduled flight, ensuring a smooth journey to your onward destination.
+
+
+yala-peak-trek:
+    name: "Yala Peak Trek"
+    days: "13"
+    nights: "12"
+    altitude: "5,732m / 18,806ft"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Langtang"
+    # popular: "Y"
+    price: "8500"
+    photos: "assets/css/images/treks/yala_peak_min.jpg"
+
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "Manaslu Base Camp Trek is a magnificent trek that takes you through the remote regions of the Himalayas in Nepal. ."
+
+    excerpt: "Manaslu Base Camp Trek is a magnificent trek that takes you through the remote regions of the Himalayas in Nepal."
+
+    video: "<iframe width='100%' height='400' class='vid' src='https://www.youtube.com/embed/LoXRwMkp0YI' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+    gears-list: "//assets/docs/trekking-gears-nepal.pdf"
+
+    overview:
+
+    - #content: "The Yala Peak Trek is an excellent trekking destination located in the Langtang region of Nepal. It offers a unique opportunity to experience the stunning natural beauty of the Himalayan Mountains and immerse yourself in the local culture and traditions. The trek is suitable for people of all ages and fitness levels, making it a popular choice among trekkers. During the trek, you will pass through small villages, lush forests, and scenic meadows before reaching the base camp of Yala Peak. The climb to the summit of Yala Peak is relatively easy and is a popular choice among beginner climbers. Standing at 5,520 meters, the summit offers breathtaking views of the Langtang region and the surrounding Himalayan Mountains."
+    - #content: "The trek takes you through small villages, where you can interact with the locals and learn about their way of life. The Langtang region, where Yala Peak is located, is also home to the Langtang National Park, which is a UNESCO World Heritage Site. The park is home to a wide range of flora and fauna, including the endangered snow leopard, red panda, musk deer, and Himalayan black bears. Trekking through the park is an excellent opportunity to witness these amazing creatures in their natural habitat."
+    itinerary:
+
+    - title: "DAY 1 - Arrival in Kathmandu (1400m) & Transfer to the Hotel"
+      content: "Upon your arrival at Tribhuvan International Airport, our representative will welcome you and escort you to the hotel in the bustling city of Kathmandu. You can take some rest or explore the vibrant streets of Thamel, the tourist hub of Kathmandu."
+
+    - title: "DAY 2 - Drive from Kathmandu to Syabrubesi (1,460m)"
+      content: "After breakfast, we take a scenic drive to Syabrubesi, which is located in the Langtang Valley. The journey is about 6-7 hours, passing through the lush hills, terraced fields, and rustic villages. We cross the Trishuli River and follow the winding road that leads to the town of Syabrubesi ."
+   
+    - title: "DAY 3 - Trek from Syabrubesi to Lama Hotel (2,470m)"
+      content: " We start our trek by crossing the Bhote Koshi River and follow the Langtang River upstream. The trail gradually ascends through the lush forest, rhododendron bushes, and bamboo groves. We pass by the small settlements of Bamboo and Rimche before reaching Lama Hotel, where we will spend the night"
+
+    - title: "DAY 4 - Trek from Lama Hotel to Langtang Village (3,430m)"
+      content: " Today's trail is mostly uphill, passing through the dense forest of oak and maple trees. We cross several streams and waterfalls before reaching Ghoda Tabela, which is a horse stable. The trail then ascends through the alpine meadow and yak pastures before reaching Langtang Village, where we will stay for the night."
+
+    - title: "DAY 5 - Trek from Langtang to Kyangjing Gompa (3,750m)"
+      content: "The trail today takes us through the yak pastures and glacial moraines, offering spectacular views of the Langtang Lirung (7,234m) and its surrounding peaks. We pass by several mani walls and chortens before reaching Kyangjing Gompa, which is a beautiful monastery nestled in the heart of the valley."
+
+    - title: "DAY 6 - Acclimatization in Kyangjing Gumba (Rest Day)"
+      content: " Today is a rest day, and we will explore the nearby areas of Kyangjing Gompa. We can visit the cheese factory, which produces fresh yak cheese, or hike to the Tserko Ri (5,033m) for a panoramic view of the Langtang Valley. We can also interact with the locals and learn about their culture and lifestyle."
+
+    - title: "DAY 7 - Trek from Kyangjing Gumba to Yala Peak Basecamp (4,800m)"
+      content: "Today, we start our climb to the Yala Peak Basecamp, which is located at an altitude of 4,800m. The trail is steep and challenging, passing through the rocky terrain and moraines. We cross the Langtang Khola and follow the trail that leads to the Basecamp, where we will set up our campsite for the night."
+
+    - title: "DAY 8 - Climbing day [ Basecamp - Summit (5,732m) and return to Kyangjing Gumba "
+      content: " Today is the most challenging day of our trek as we summit the Yala Peak (5,732m). We wake up early in the morning and start our climb, following the trail that leads to the summit. The climb is steep and requires technical skills, but the panoramic view from the top is worth the effort. We spend some time at the summit and then return to the Basecamp before descending to Kyangjing Gompa for the night."
+
+    - title: "DAY 9 - Trek from Kyangjing Gumba to Lama Hotel"
+      content: " We retrace our steps and follow the same trail that leads us back to Lama Hotel. The trail descends gradually, passing through the lush forest of rhododendron and oak trees. We cross several suspension bridges and streams before reaching Lama Hotel, where we will spend the night."
+
+    - title: "DAY 10 - Trek from Lama Hotel to Syabrubesi (1,460m)"
+      content: "Today is the last day of our trek as we descend back to Syabrubesi. The trail is mostly downhill, passing through the terraced fields and rural settlements. We cross the Bhote Koshi River and follow the trail that leads to Syabrubesi, where we will stay for the night."
+
+    - title: "DAY 11 - Drive from Syabrubesi to Kathmandu & Transfer to the Hotel"
+      content: " We take an early morning drive back to Kathmandu, which takes about 6-7 hours. We pass through the scenic countryside and lush hills before reaching the city of Kathmandu. Upon arrival, we check-in at the hotel and take some rest before heading out for a farewell dinner."
+
+    - title: "DAY 12 -Sight Seeing Around Kathmandu Valley"
+      content: "Today, we explore the historical and cultural landmarks of Kathmandu Valley. We visit the UNESCO World Heritage Sites, including Pashupatinath Temple, Boudhanath Stupa, Swayambhunath Stupa, and Kathmandu Durbar Square. We also have some free time to shop for souvenirs or explore the vibrant streets of Thamel."
+
+    - title: "DAY 13 - Transfer to the Tribhuvan International Airport for final departure"
+      content: "Today is the last day of our trip, and we transfer you to the airport for your final departure. We bid farewell to each other, hoping to see you soon on another adventure in the Himalayas."
+
+
+
+
+  
+
+gosai-kunda-trek:
+    name: "Gosai Kund Trek"
+    days: "9"
+    nights: "8"
+    altitude: "4460 m / 14632 ft "
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Langtang"
+    # popular: "Y"
+    price: "8500"
+    photos: "assets/css/images/treks/gosai_kunda_min.jpg"
+
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: ""
+    excerpt: ""
+
+
+    video: "<iframe width='100%' height='400' class='vid' src='https://www.youtube.com/embed/V_57ry3suFQ' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+    gears-list: "//assets/docs/trekking-gears-nepal.pdf"
+
+    overview:
+
+    # - content: "The Gosainkunda Trek is a stunning journey through the heart of the Himalayas. This trek takes you through some of the most breathtaking landscapes in Nepal, including lush forests, picturesque valleys, and snow-capped mountains. However, what makes this trek truly unique is its cultural and spiritual significance. The highlight of the trek is the holy lake of Gosainkunda, which is considered sacred by both Hindus and Buddhists. The lake is surrounded by snow-capped peaks and offers a serene and tranquil atmosphere. It's believed that the lake was created by Lord Shiva, who pierced a glacier with his trident to create the lake."
+    
+    - content: "The Gosainkunda Trek takes you through small villages and settlements, where you can immerse yourself in the local culture and traditions of the region. The friendly and welcoming locals are always happy to share their stories and traditions with visitors. Apart from its cultural significance, the Gosainkunda Trek is also famous for its stunning natural beauty. The trek takes you through lush forests filled with rhododendron and oak trees, offering a stunning display of colors in the spring. The trek also provides magnificent views of the Langtang Himalayas, including Langtang Lirung, Dorje Lakpa, and Ganesh Himal. The Gosainkunda Trek is a moderate trek that's suitable for people of all ages and fitness levels. However, it's important to be prepared for the altitude and to acclimatize properly to avoid altitude sickness. The trek can be done independently or with the help of a reputable trekking company."
+    
+    itinerary:
+
+
+    - title: "DAY 1 - Arrival in Kathmandu"
+      content: "Upon arrival at Tribhuvan International Airport in Kathmandu, you will be greeted by our representative who will assist you with your transfer to your hotel. After you have settled in, you can take some time to explore the vibrant city of Kathmandu, its bustling streets, and colorful markets."
+   
+    - title: "DAY 2 - Kathmandu to Syabrubesi (1,550m)  Drive (7-8 hrs)"
+      content: "After breakfast, we start our journey towards Syabrubesi, a small town situated on the banks of the Langtang River. The drive will take around 7-8 hours and along the way, you will witness some stunning views of the lush green hills, cascading waterfalls, and small villages."
+
+    - title: "DAY 3 - Syabrubesi to Lama Hotel (2,380m)"
+      content: "Today marks the beginning of our trek. We cross the Langtang River and continue our ascent towards Lama Hotel. The trail passes through dense forests, rhododendron trees, and several small streams, providing an ideal habitat for the exotic flora and fauna of the region. "
+
+    - title: "DAY 4 -  Lama Hotel to Thulo Syabru (2,230m) "
+      content: "Today, we continue our trek towards Thulo Syabru. The trail offers stunning views of the Langtang range and the Ganesh Himal. We also pass through several small villages and get to experience the unique culture and lifestyle of the Tamang people.."
+
+    - title: "DAY 5 - Thulo Syabru to Shin Gompa (3,330m)"
+      content: "As we ascend higher, the terrain becomes steeper, and the vegetation starts to thin out. We pass through the beautiful rhododendron forests and eventually arrive at Shin Gompa, a small settlement that is home to a famous Buddhist monastery."
+
+    - title: "DAY 6 - Shin Gompa to Gosaikunda (4,460m)"
+      content: "Today's trek takes us to one of the most sacred lakes in Nepal, Gosaikunda. The trail passes through the rugged terrain and offers breathtaking views of the Himalayas. Upon arrival, we can take a dip in the crystal-clear waters of the lake and explore the surroundings."
+
+    - title: "DAY 7 - Gosaikunda to Chandanbari (3,330m"
+      content: "Today, we descend down to Chandanbari, a small village located in the foothills of the Himalayas. The trail is mostly downhill and takes us through dense forests and several streams."
+
+    - title: "DAY 8 - Chandanbari to Dhunche (1,950m) – Trek (4 hrs) and Drive (2 hrs)"
+      content: "After breakfast, we start our final trekking day towards Dhunche, the headquarters of Rasuwa district. We trek for around 4 hours and then drive for another 2 hours to reach Kathmandu. In the evening, we will have a farewell dinner with the team."
+
+    - title: "DAY 9 -  Departure from Kathmandu"
+      content: "Today, you will be transferred to the airport for your flight back home. We hope you had a wonderful experience trekking in the Langtang region and look forward to welcoming you back to Nepal soon!"
+
+
+tamang-heritage-trail-trek:
+    name: "Tamang Heritage Trail"
+    days: "9"
+    nights: "8"
+    altitude: "3,615m"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Manaslu"
+    # popular: "Y"
+    price: "8500"
+    photos: "assets/css/images/treks/gosai_kunda_min.jpg"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: ""
+
+    excerpt: ""
+
+    # video: "<iframe width='100%' height='400' class='vid' src='https://www.youtube.com/embed/vYi0LrT5bWU' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+    gears-list: "//assets/docs/trekking-gears-nepal.pdf"
+
+    overview:
+
+    - content: "The Tamang Heritage Trail Trek is a unique journey through the heart of the Langtang region of Nepal. This trek takes you through small Tamang villages, allowing you to experience the rich culture and traditions of the Tamang people. The Tamang people are known for their warm hospitality, delicious cuisine, and unique customs that have been preserved for centuries.The Trek begins in the village of Syabrubesi and takes you through lush forests, cascading waterfalls, and picturesque valleys. You will have the opportunity to see stunning views of the Langtang Himalayas, including Langtang Lirung, Ganesh Himal, and Jugal Himal."
+    - content: "Along the way, you will visit traditional Tamang villages like Gatlang, Thuman, and Briddim. These villages are known for their unique architecture, including traditional houses made of stone and wood. The Tamang people are known for their excellent craftsmanship, and you will have the opportunity to witness their skills first-hand.The Tamang Heritage Trail Trek also offers the opportunity to witness traditional Tamang festivals and celebrations. The Tamang people celebrate their culture and traditions through various festivals like the Yartung Festival, which is celebrated in the month of August. During the festival, the Tamang people dress in traditional attire and perform traditional dances and songs."
+
+    itinerary:
+
+    - title: "DAY 1 - Arrival in Kathmandu"
+      content: " Upon your arrival in Kathmandu, our representative will greet you at the airport and transfer you to your hotel. You will have some time to rest and explore the vibrant city of Kathmandu on your own. In the evening, we will have a welcome dinner and briefing session where you will meet your trekking guide and fellow trekkers."
+  
+    - title: "DAY 2 - Drive from Kathmandu to Syabrubesi (1460m)"
+      content: "After an early breakfast, we will depart from Kathmandu and head towards Syabrubesi, which is located on the banks of the Bhote Koshi River. We will drive through scenic countryside, with stunning views of the Himalayas along the way. Upon arrival in Syabrubesi, we will check into our lodge and have some time to explore the village."
+
+    - title: "DAY 3 - Trek from Syabrubesi to Gatlang (2240m)"
+      content: "Today, we will start our trek towards Gatlang, a beautiful Tamang village situated on a hillside with magnificent views of the surrounding mountains. We will pass through lush forests and cross the Bhote Koshi River before arriving at Gatlang. Here, we will stay in a traditional Tamang homestay and experience the local culture and hospitality. "
+
+    - title: "DAY 4 - Trek from Gatlang to Tatopani (2607m)"
+      content: "Today's trek takes us through terraced fields and dense forests to Tatopani, which translates to 'hot water' in Nepali. Here, we can relax in the natural hot springs and soothe our tired muscles after the trek. We will spend the night in a lodge in Tatopani."
+
+    - title: "DAY 5 - Trek from Tatopani to Thuman (2338m) via Nagthali Gyang (3165m)"
+      content: "Today, we will cross over the Nagthali Gyang pass, which offers spectacular views of the Langtang range and the Ganesh Himal. We will then descend to the village of Thuman, which is known for its unique Tibetan culture and architecture. We will stay in a homestay and learn about the local way of life."
+
+    - title: "DAY 6 - Trek from Thuman to Briddim"
+      content: "After breakfast, we will trek to Briddim, a picturesque village located on the ancient trade route to Tibet. We will pass through terraced fields and traditional houses before arriving at Briddim. Here, we will stay in a homestay and interact with the locals to learn more about their customs and traditions."
+
+    - title: "DAY 7 - Trek from Briddim to Syabrubesi "
+      content: "Today, we will trek back to Syabrubesi, our starting point of the trek. We will retrace our steps through the lush forests and terraced fields before reaching Syabrubesi. We will have some time to explore the village and relax before our final day of the trip."
+
+    - title: "DAY 8 - Drive from Syabrubesi to Kathmandu"
+      content: "After breakfast, we will drive back to Kathmandu, where we will say goodbye to our trekking crew and check into our hotel. We will have the rest of the day to explore the city on our own or do some last-minute souvenir shopping"
+
+    - title: "DAY 9 -  Departure from Kathmandu"
+      content : "Our representative will transfer you to the airport for your flight home, or to your next destination. We hope you had a memorable trekking experience with us and look forward to seeing you again in the future."
+
+manaslu-base-camp-trek:
+    name: "Manaslu Base Camp Trek"
+    days: "18"
+    nights: "17"
+    altitude: "12,467"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Manaslu"
+    # popular: "Y"
+    price: "1787"
+    # photos: "assets/css/images/treks/everest_base_min.jpg"
+    photos: "assets/css/images/treks/manasalu_min.jpg"
+    url: ""
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    excerpt: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    video: "<iframe width='100%' class='vid' height='400' src='https://www.youtube.com/embed/I1Sx_DdHaUE' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/manaslu.pdf"
+    gears-list: "//assets/docs/trekking-gears-nepal.pdf"
+
+    
+    # image: "<img class='map1'>"
+
+
+
+    overview:
+
+    - content: "<a class='highlight-link' href='/activities/trekking/manaslu-base-camp-trek/'>Manaslu Base Camp Trek</a> is a remarkable journey for adventure enthusiasts and nature lovers alike. This trek takes you through the unspoiled Manaslu Conservation Area, home to some of the world’s rarest flora and fauna. Along the way, you'll experience the genuine hospitality of local communities, deeply rooted in traditions that have stood the test of time."
+    - content: "As you ascend to the base camp of Manaslu, the eighth highest mountain in the world, you'll be treated to stunning panoramic views of the surrounding peaks, including the iconic Mt. Everest. You'll also have the opportunity to explore the famous Larkya La Pass, a high-altitude crossing that offers breathtaking views of the Himalayan range."
+    - content: "The Manaslu Base Camp Trek is an experience that will stay with you forever. Whether you're an experienced hiker or a first-time trekker, this journey is sure to challenge and inspire you in equal measure. So why wait? Book your trek today and discover the magic of the Manaslu region for yourself!"
+   
+    itinerary:
+
+    
+    - title: "DAY 1 - Arrival in Kathmandu, Nepal"
+      content: "Welcome to the vibrant city of Kathmandu, where ancient architecture, rich culture, and warm hospitality await you. Upon arrival at the airport, our representative will greet you with a traditional garland of marigolds and transfer you to your hotel. After settling in, you can explore the city on your own or relax and prepare for your upcoming adventure."
+
+    - title: "DAY 2 - Rest in Kathmandu, and Preparation"
+      content: "Today is a day for rest and preparation. You can take a stroll around the bustling streets of Thamel, where you will find a variety of restaurants, shops, and markets. You can also visit some of the city's historic landmarks, such as the Swayambhunath Stupa, also known as the  <a class='highlight-link' href='/news/Swayambhunath-Stupa-Discover-the-Spiritual-Hub-of-Nepal/'>Monkey Temple </a>, or the stunning Pashupatinath Temple, one of the most sacred Hindu temples in the world."
+
+    - title: "DAY 3 - Drive from Kathmandu to Besisahar (760m)"
+      content: " After breakfast, we will drive to Besisahar, the starting point of our trek. Along the way, we will pass through scenic landscapes, lush green forests, and traditional Nepalese villages. Upon arrival, we will check into our guesthouse and rest for the night."
+
+    - title: "DAY 4 - Trek from Besisahar to Dharapani (1,860)"
+      content: " We start our trek today, heading towards the village of Dharapani. The trail takes us through terraced fields, forests, and suspension bridges over glistening rivers. We will pass through quaint villages and interact with the friendly locals, immersing ourselves in the culture and traditions of the region."
+
+    - title: "DAY 5 - Trek from Dharapani to Tilije (2,300m)"
+      content: " We continue our journey towards Tilije, a small village nestled in the lap of the Himalayas. The trek offers breathtaking views of towering mountains, lush forests, and cascading waterfalls. We will also come across ancient monasteries and traditional chortens, adding a spiritual touch to our adventure."
+
+    - title: "DAY 6 - Trek from Tilije to Bhimthang (3,720m)"
+      content: " Today is the most challenging day of our trek as we cross the high-altitude Larke Pass at 5,160m. The trek is long and steep, but the panoramic views of the surrounding peaks are worth the effort. We will finally reach Bhimthang, a beautiful village with stunning views of Mount Manaslu, the eighth highest peak in the world."
+
+    - title: "DAY 7 - Acclimatization at Bhimthang (rest day)"
+      content: " Today is a rest day for acclimatization, allowing our bodies to adjust to the high altitude. You can explore the village, interact with the locals, or simply relax and take in the stunning views of the surrounding peaks."
+
+    - title: "DAY 8 - Trek from Bhimthan to Samdo (3,872m) via Larke Pass (5,160m)"
+      content: " We resume our trek and cross the majestic Larke Pass once again, this time from a different direction. We will witness the beauty of the snow-clad mountains and glaciers as we make our way towards Samdo, a picturesque village with traditional houses and a serene atmosphere."
+
+    - title: "DAY 9 - Trek from Samdo to Sama Gaun (3,450m)"
+      content: " The trek today takes us through scenic valleys and serene landscapes as we make our way towards Sama Gaun. We will pass through several traditional villages and encounter local yak herders, adding a unique touch to our adventure."
+
+    - title: "DAY 10 - Acclimatization in Sama Gaun (3,450m) – Rest Day"
+      content: " Today is another rest day for acclimatization. You can explore the village, visit the local monasteries, or simply relax and enjoy the stunning views of Mount Manaslu and its surrounding peaks."
+
+    - title: "DAY 11 - Trek from Sama Gaon to Manaslu Basecamp (5160m) and back to Sama Gaon (3,450m)"
+      content: "Today, we trek to the base camp of Mount Manaslu, the eighth highest peak in the world. The trek is challenging but rewarding, as we are rewarded with panoramic views of the surrounding peaks. After spending some time at the base camp, we will return to Sama Gaon for the night."
+
+    - title: "DAY 12 - Trek from Sama Gaon to Namrung (2,670m)"
+      content: "We start our descent towards Namrung, a traditional village with stunning views of the Himalayas. Along the way, we will pass through lush forests and quaint villages, immersing ourselves in the local culture and traditions."
+
+    - title: "DAY 13 - Trek from Namrung to Philim (1,606m)"
+      content: " The trek today takes us through beautiful valleys and stunning landscapes as we make our way towards Philim, a picturesque village with traditional houses and a serene atmosphere. We will also come across ancient monasteries and traditional chortens, adding a spiritual touch to our adventure."
+
+    - title: "DAY 14 - Trek from Philim to Machha Khola (883m)"
+      content: " We continue our descent towards Machha Khola, a small village located on the banks of the Budi Gandaki River. The trek offers stunning views of the surrounding peaks and landscapes, and we will pass through several traditional villages and suspension bridges over glistening rivers."
+
+    - title: "DAY 15 - Trek from Machha Khola to Arughat (606m)"
+      content: " OToday is the last day of our trek as we make our way towards Arughat, the endpoint of our journey. The trek takes us through scenic landscapes, terraced fields, and traditional villages, giving us a glimpse into the rich culture and traditions of the region."
+
+    - title: "DAY 16 - Drive from Arughat to Kathmandu & transfer to the Hotel"
+      content: "After breakfast, we will drive back to Kathmandu, where you can rest and relax in your hotel or explore the city on your own."
+
+    - title: "DAY 17 - Leisure Day in Kathmandu"
+      content: " Today is a leisure day for you to explore Kathmandu on your own. You can visit some of the city's historic landmarks, such as the Durbar Square or the Boudhanath Stupa, or simply relax and shop for souvenirs in the bustling streets of Thamel."
+
+    - title: "DAY 18 - Transfer to International Airport for final departure"
+      content: "Today is the last day of your adventure, and our representative will transfer you to the airport for your final departure. We hope you had a memorable experience and look forward to welcoming you back to Nepal soon."
+
+
+
+
+
+gokyo-chola-pass-trek:
+    name: "Gokyo Chola Pass Trek"
+    days: "16"
+    nights: "15"
+    altitude: "5643 m / 18513 ft"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Manaslu"
+    # popular: "Y"
+    price: "8500"
+    photos: "assets/css/images/treks/chola_min.jpg"
+
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "Manaslu Base Camp Trek is a magnificent trek that takes you through the remote regions of the Himalayas in Nepal. This trek is gaining popularity due to its stunning landscapes, diverse cultures and pristine natural beauty."
+
+    excerpt: "Manaslu Base Camp Trek is a magnificent trek that takes you through the remote regions of the Himalayas in Nepal. This trek is gaining popularity due to its stunning landscapes, diverse cultures and pristine natural beauty."
+
+    video: "<iframe width='100%' height='400' class='vid' src='https://www.youtube.com/embed/pAIsk0WctXk' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+
+    overview:
+
+    - content: "Gokyo Chola Pass Trek is one of the most popular trekking routes in Nepal that offers a combination of breathtaking scenery and challenging trails. The trek is situated in the Sagarmatha National Park, which is a UNESCO World Heritage Site and is home to some of the highest peaks in the world, including Mt. Everest.The Trek takes you through some of the most stunning landscapes in Nepal, including dense forests, charming villages, and scenic valleys. Along the way, you will have the opportunity to witness some of the most spectacular views of the Himalayan Mountains, including Ama Dablam, Lhotse, and Nuptse."
+    
+    - content: "The trek begins with a flight from Kathmandu to Lukla, followed by a trek through the Dudh Kosi Valley to Namche Bazaar. The route then takes you to Tengboche, where you can visit the famous Tengboche Monastery, before continuing to Dingboche and Chukkung. The highlight of the trek is crossing the challenging Chola Pass, which is situated at an altitude of 5,420 meters. Apart from its stunning natural beauty, the Chola Pass Trek is also significant for its cultural and historical significance. The trek takes you through several Sherpa villages, where you can learn about their unique culture and way of life. You can also visit several ancient monasteries and gompas, which are an important part of the region's cultural heritage."
+   
+    itinerary:
+
+    - title: "DAY 1 -  Arrival in Kathmandu"
+      content: "Welcome to Nepal! Upon arrival at Tribhuvan International Airport, you will be greeted by our friendly staff and escorted to your hotel in Kathmandu. After settling in and freshening up, you can explore the vibrant streets of Kathmandu on your own or simply relax and recover from your journey."
+
+    - title: "DAY 2 - Kathmandu to Lukla (Flight) to Phakding"
+      content: "After an early breakfast, you will be transferred to the airport for a scenic flight to Lukla, the gateway to the Everest region. The flight offers breathtaking views of the Himalayan range, including Mount Everest. Once you land in Lukla, you will meet your trekking crew and begin your journey to Phakding. The trek passes through lush forests, picturesque Sherpa villages, and the stunning Dudh Koshi River."
+
+    - title: "DAY 3 - Phakding to Namche Bazaar"
+      content: "Today's trek takes you through the Sagarmatha National Park, a UNESCO World Heritage Site, and the last resting point for trekkers heading to Mount Everest. You will cross several suspension bridges and climb steep staircases to reach Namche Bazaar, the bustling trading hub of the Khumbu region. Along the way, you will catch glimpses of the towering peaks of Thamserku and Kangtega."
+    
+    - title: "DAY 4 - Acclimatization day"
+      content: "To prevent altitude sickness, you will spend a day in Namche Bazaar acclimatizing to the high altitude. You can explore the town, visit the local markets and bakeries, and hike up to the Everest View Hotel for stunning panoramic views of the Himalayas."
+
+
+    - title: "DAY 5 -  Namche Bazaar to Dole"
+      content: "Today's trek takes you through the picturesque villages of Khumjung and Mong, where you can visit a local school and see the famous Yeti scalp. The trail then climbs steeply to Dole, a tranquil village nestled in the mountains with stunning views of the surrounding peaks."
+
+
+    - title: "DAY 6 -  Dole to Machhermo"
+      content: "The trail today passes through rhododendron forests and crosses several mountain streams before reaching the village of Machhermo. Along the way, you will see several chortens and mani walls, which are sacred to the local Sherpa people."
+
+
+    - title: "DAY 7 - Machhermo to Gokyo (Afternoon hike to Gokyo Ri)"
+      content: "Today, you will climb up to the stunning Gokyo Valley, surrounded by soaring peaks and glacial lakes. After settling in at your lodge, you can hike up to Gokyo Ri for a panoramic view of the Khumbu region, including Mount Everest, Cho Oyu, and Lhotse."
+
+
+    - title: "DAY 8 - Gokyo to Thagnak (Morning hike to Gokyo 4th Lake)"
+      content: "In the morning, you will hike up to the fourth lake of Gokyo, which is known for its stunning turquoise color. After taking in the view, you will descend to Thagnak, a small village nestled in the valley between the Gokyo and Cho La passes."
+
+
+    - title: "DAY 9 - Thagnak to Cho Dzongla via CholaPass"
+      content: Today's trek is challenging but rewarding as you cross the high mountain pass of Cho La, at an altitude of 5,420 meters. The pass offers stunning views of the surrounding peaks, including Ama Dablam and Cholatse. After crossing the pass, you will descend to the village of Cho Dzongla.."
+
+
+    - title: "DAY 10 - Dzongla to Lobuche"
+      content: "Today, you will trek through the Khumbu Glacier and ascend to the village of Lobuche. Along the way, you will see several memorials dedicated to mountaineers who lost their lives on Mount Everest, including the poignant Sherpa memorial.."
+
+
+    - title: "DAY 11 -  Lobuche to Gorakshep (Afternoon hike to Kalapatthar)"
+      content: "Today's trek takes you to the final destination before reaching Everest Base Camp - Gorak Shep. After settling into your lodge, you can take an afternoon hike to Kala Patthar, a stunning viewpoint that offers unparalleled views of Mount Everest and the surrounding peaks.."
+
+
+    - title: "DAY 12- Gorakshep to Pheriche (Morning hike to EBC)"
+      content: "Today is the day you have been waiting for - the trek to Everest Base Camp! After an early morning start, you will trek through the Khumbu Icefall and along the glacial moraine to reach the base camp. You will have time to explore the camp, take photos and soak in the incredible atmosphere. Afterward, you will return to Gorak Shep and then continue on to Pheriche."
+
+
+    - title: "DAY 13 - Pheriche to Namche Bazaar"
+      content: "Today's trek retraces your steps back to Namche Bazaar. You will pass through several Sherpa villages and enjoy stunning views of the Himalayan range along the way.."
+
+
+    - title: "DAY 14 - Namche Bazaar to Lukla"
+      content: "This is the final day of your trekking journey. You will pass through the villages of Monjo and Phakding before reaching Lukla. In the evening, you can celebrate the completion of your trek with your trekking crew."
+
+
+    - title: "DAY 15 - Lukla to Kathmandu (Flight)"
+      content: "After breakfast, you will board a flight back to Kathmandu. Once you land, you can spend the day exploring the city, shopping for souvenirs or just relaxing at your hotel.."
+
+
+    - title: "DAY 16 - Departure"
+      content: "Your amazing Everest Base Camp trek comes to an end today. Our staff will transfer you to the airport for your departure flight. We hope you had an incredible journey and we look forward to seeing you again in Nepal!"
+
+
+
+
+three-pass-trek:
+    name: "The Three Passes Trek"
+    days: "18"
+    nights: "17"
+    altitude: "5,545m / 18,192ft"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Everest"
+    # popular: "Y"
+    price: "2,200.00"
+    photos: "assets/css/images/treks/three_passes_min.jpg"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "Manaslu Base Camp Trek is a magnificent trek that takes you through the remote regions of the Himalayas in Nepal. This trek is gaining popularity due to its stunning landscapes, diverse cultures and pristine natural beauty."
+
+    excerpt: "Manaslu Base Camp Trek is a magnificent trek that takes you through the remote regions of the Himalayas in Nepal. This trek is gaining popularity due to its stunning landscapes, diverse cultures and pristine natural beauty."
+
+    # video: "<iframe width='100%' height='400' class='vid' src='https://www.youtube.com/embed/vYi0LrT5bWU' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+    overview:
+
+    - content: "Manaslu Base Camp Trek is a magnificent trek that takes you through the remote regions of the Himalayas in Nepal. This trek is gaining popularity due to its stunning landscapes, diverse cultures and pristine natural beauty. The trek offers a chance to trek to the base of Mount Manaslu, which is the eighth highest peak in the world with an elevation of 8,163 meters (26,781 ft). The trek route starts from Arughat and ends at Dharapani, taking you through breathtaking valleys, traditional villages and lush forests.The trek can be completed in around 12-16 days, with the highest elevation being 4,200 meters. The route offers breathtaking views of the Himalayas, including the majestic Manaslu, Himlung, Annapurna and Ganesh Himal. As you trek through the route, you will get a chance to interact with the local people, learn about their culture and way of life."
+
+    - content: "In conclusion, Manaslu Base Camp Trek is an ideal trek for adventure seekers and nature lovers who are looking to explore the off-beaten path in the Himalayas. The trek is well-organized and offers a memorable experience that will stay with you for a lifetime. With its breathtaking views, diverse cultures and unparalleled natural beauty, the Manaslu Base Camp Trek is an unforgettable adventure."
+
+    itinerary:
+
+ 
+    - title: "DAY 1 - Arrival in Kathmandu (1400m) & Transfer to the Hotel"
+      content: "Upon arrival at Tribhuvan International Airport in Kathmandu, you will be greeted by a representative from our team and transferred to your hotel. After check-in, you can take some time to rest and explore the city on your own."
+
+    - title: "DAY 2 - Fly from Kathmandu – to Lukla and trek to Phakding (2,800m)"
+      content: "Today, we take a scenic flight to Lukla, the gateway to the Khumbu region. From there, we will start our trek towards Phakding, a small village situated on the banks of the Dudh Koshi River. Along the way, we will pass through beautiful forests, suspension bridges, and traditional Sherpa villages. "
+
+    - title: "DAY 3 - Trek from Phakding to Namche Bazaar (3,440m)"
+      content: " Today's trek will take us through the Sagarmatha National Park, a UNESCO World Heritage Site. We will ascend towards Namche Bazaar, the largest town in the Khumbu region. En route, we will get our first glimpse of Mount Everest and other Himalayan peaks."
+
+    - title: "DAY 4 - Acclimatization at Namche Bazaar: Hike to Khumjung Valley"
+      content: " Today is an acclimatization day, which means we will rest and adjust to the altitude. In the morning, we will hike to the picturesque Khumjung Valley, where we can visit a monastery and a school founded by Sir Edmund Hillary."
+
+    - title: "DAY 5 - Trek from Namche Bazaar to Thame (3,820m)"
+      content: " Leaving Namche Bazaar, we will follow a less traveled path towards the village of Thame. This trail offers stunning views of the Himalayas and the chance to experience the traditional Sherpa culture.."
+
+    - title: "DAY 6 - Trek from Thame to Murlung (4,210m)"
+      content: " Today's trek takes us through a rugged terrain towards the village of Murlung, which is situated in a remote valley. Along the way, we may encounter herds of yaks and see some of the unique wildlife that inhabits this region."
+
+    - title: "DAY 7 - Trek from Murlung to Gokyo (4,790m) Via Renjo Pass (5,340m)"
+      content: " Today is one of the most challenging days of the trek as we cross the Renjo Pass, which offers breathtaking views of the Himalayas. After reaching the top, we will descend towards Gokyo, a beautiful village situated on the shores of a glacial lake."
+
+    - title: "DAY 8 - Acclimatization day: Hike from Gokyo to Gokyo Ri (5,300m) and back to the Gokyo"
+      content: " We will spend today acclimatizing at Gokyo by hiking to Gokyo Ri, a peak that offers panoramic views of the surrounding mountains. After descending back to Gokyo, we can relax and enjoy the stunning scenery. "
+
+    - title: "DAY 9 - Trek from Gokyo to Thagnak (4,750m)"
+      content: " Today, we will trek towards Thagnak, a small village situated on the moraine of the Ngozumpa Glacier. Along the way, we will see the beautiful turquoise waters of Gokyo Lake and pass through high-altitude yak pastures.."
+
+    - title: "DAY 10 - Trek from Thagnak to Zungla (4,620m) via Cho La Pass (5,330m)"
+      content: " Today's trek takes us through the challenging Cho La Pass, which requires some technical climbing skills. However, the reward is worth it as we will see stunning views of Ama Dablam, Makalu, and other Himalayan peaks."
+
+    - title: "DAY 11 - Trek from Zungla to Gorakshep (5,140m)"
+      content: " After breakfast, we begin our trek to Gorakshep, which is the last village before Everest Base Camp. The trail takes us through the rocky and barren terrain of the Khumbu region, and we will also pass by the beautiful glacial lake, Cholatse Tsho. As we approach Gorakshep, we will be able to see the stunning view of Mt. Pumori, Mt. Lingtren, Mt. Khumbutse, and Mt. Everest. Upon reaching Gorakshep, we will check into our teahouse and rest for the day."
+
+    - title: "DAY 12 - Early Morning Trek from Gorakshep to Kalapathar (5,550m) back to Gorakshep (take Lunch)"
+      content: "We will start early in the morning, as it takes around 2-3 hours to reach Kalapatthar. The trail is steep and challenging, but the breathtaking view of Mt. Everest and its surrounding peaks makes it worth the effort. After spending some time at Kalapatthar and taking plenty of photos, we will trek back to Gorakshep for lunch. In the afternoon, we can explore the area around Gorakshep and visit the Everest Base Camp if time permits."
+
+    - title: "DAY 13 - Trek from Lobuche to Chhukung (4,730m) via Kongma la Pass (5,535m)"
+      content: " Today we will cross another high pass, Kongma La (5,535m). We will start early in the morning as the pass can be challenging, especially if there is snow. The trail is steep and rocky, but the view of the surrounding peaks, including Ama Dablam, is breathtaking. After reaching the top of Kongma La, we will descend to the village of Chhukung, where we will stay overnight."
+
+    - title: "DAY 14 - Trek from Chhukung to Pangboche (3,930m)"
+      content: " After breakfast, we will start our trek to Pangboche. The trail takes us through beautiful valleys and rhododendron forests. We will also pass by the traditional Sherpa village of Dingboche and visit the famous Tengboche Monastery, which is one of the most important monasteries in the region. After a short visit, we will continue our trek to Pangboche, where we will stay overnight."
+
+    - title: "DAY 15 - Trek from Pangboche to Namche Bazaar"
+      content: " Today we will retrace our steps and trek back to Namche Bazaar. The trail is mostly downhill, and we will pass through several small Sherpa villages and cross suspension bridges over the Dudh Kosi River. Upon reaching Namche Bazaar, we can relax and enjoy the lively atmosphere of this famous mountain town."
+
+    - title: "DAY 16 - Trek from Namche Bazaar to Lukla"
+      content: "After breakfast, we will start our trek back to Lukla. The trail is mostly downhill, and we will pass through several small villages and forests. Upon reaching Lukla, we can celebrate the successful completion of our trek with our trekking team.."
+
+    - title: "DAY 17 - Fly from Lukla to Kathmandu & Transfer to the Hotel"
+      content: " On this day, you will wake up early and prepare to take the flight from Lukla to Kathmandu. You will say goodbye to your porters and guides, and then head to the airport for the scenic flight back to the capital. The flight takes about 45 minutes and offers breathtaking views of the mountains and valleys. Once you arrive in Kathmandu, our representative will meet you at the airport and transfer you to your hotel. You will have some time to relax and freshen up before going out for a farewell dinner with your team and sharing your experiences of the trek. "
+
+    - title: "DAY 18 - Sightseeing around Kathmandu Valley"
+      content: " This day is reserved for exploring the cultural and historical landmarks of the Kathmandu Valley. You will visit some of the UNESCO World Heritage Sites in Kathmandu, such as Swayambhunath Stupa (also known as the Monkey Temple), Pashupatinath Temple (one of the most sacred Hindu temples in the world), and Boudhanath Stupa (the largest stupa in Nepal).In the afternoon, you can explore the vibrant streets of Thamel, the tourist hub of Kathmandu, and do some souvenir shopping. You can also visit the Garden of Dreams, a beautiful neo-classical garden in the heart of the city, and enjoy some quiet time amidst the hustle and bustle of Kathmandu."
+
+    - title: "DAY 19 - Transfer to the Tribhuvan International Airport for final Departure"
+      content: " On the final day of your trip, we will transfer you to the airport for your flight back home. Our representative will assist you with the check-in process and bid you farewell. You will leave Nepal with unforgettable memories of the majestic mountains, diverse culture, and warm hospitality of the Nepali people."
+
+
+
+
+kanchenjunga-circuit-trek:
+    name: "Kanchenjunga Circuit Trek"
+    days: "26"
+    nights: "25"
+    altitude: "5,143m / 16,873ft"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Kanchenjunga"
+    # popular: "Y"
+    price: "8500"
+    photos: "assets/css/images/treks/kanchenjunga_circuit_min.jpg"
+
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "Manaslu Base Camp Trek is a magnificent trek that takes you through the remote regions of the Himalayas in Nepal. This trek is gaining popularity due to its stunning landscapes, diverse cultures and pristine natural beauty."
+
+    excerpt: "Manaslu Base Camp Trek is a magnificent trek that takes you through the remote regions of the Himalayas in Nepal. This trek is gaining popularity due to its stunning landscapes, diverse cultures and pristine natural beauty."
+
+    # video: "<iframe width='100%' height='400' class='vid' src='https://www.youtube.com/embed/vYi0LrT5bWU' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+    gears-list: "//assets/docs/trekking-gears-nepal.pdf"
+
+    overview:
+
+    - content: "Located in the eastern part of Nepal, the Kanchenjunga trek is an unexplored and virgin trail that offers a peaceful and secluded experience to trekkers. Kanchenjunga is the third highest peak in the world, and the trekking route provides breathtaking views of snow-capped mountains, mesmerizing landscapes, and an exotic scenic view of the Himalayas.The Kanchenjunga trek is a special and unforgettable destination for trekkers due to its landscape, amazing topography, and rich cultural heritage. The region is surrounded by mysterious stories concerning the Himalayan Yeti, the abdominal snowman that is believed to be found in this region. The trekking trail is also home to diverse and rare wildlife, including snow leopards, musk deer, red pandas, and many more."
+    
+    - content: "The trekking trail is situated in the Kanchenjunga Conservation Area, spread over 2,035m sq. km, providing an opportunity for trekkers to immerse themselves in the wildlife diversity, including rare species of birds, amphibians, and mammals such as the Himalayan black bear, red panda, and snow leopard. The trekking route is challenging and exciting, with the ascent of Rathong and Kabru glacial excursion around Ramche being the highlights of the trek. As trekkers follow the Kanchenjunga trekking trail, they can witness remarkable valleys with a rich culture and tradition of the local inhabitants, providing an insight into the unique lifestyle of the region. The Kanchenjunga trekking trail is an extraordinary experience for animal lovers, adventure enthusiasts, and those seeking a peaceful and secluded trekking experience."
+    
+    itinerary:
+
+    - title: "DAY 1 - Arrival in Kathmandu (1400m) & Transfer to the Hotel"
+      content: "Welcome to Nepal! Upon arrival at the Tribhuvan International Airport in Kathmandu, our representative will receive you and transfer you to your hotel. After checking in, take some time to rest and adjust to the new time zone. In the evening, you will have a traditional welcome dinner with your fellow trekkers and your guide."
+
+    - title: "DAY 2 - Preparation and briefing of the Trip"
+      content: "Today, we will have a detailed trip briefing and preparation session. Your guide will give you all the information about the trek, including the route, altitude, weather, and safety precautions. You will also have the opportunity to rent or buy any trekking equipment you may need. In the evening, you can explore the vibrant streets of Thamel, the tourist hub of Kathmandu. "
+   
+    - title: "DAY 3 - Fly from Kathmandu to Bhadrapur and Drive to Illam (1,205m)"
+      content: "After breakfast, we will take a scenic flight to Bhadrapur, a small town in the eastern part of Nepal. From there, we will drive to Illam, a beautiful hill station known for its tea gardens and natural beauty. In the evening, we will explore the local market and taste some delicious local tea."
+
+    - title: "DAY 4 - Drive to Taplejung and trek to Mitlung (921m)"
+      content: "After breakfast, we will drive to Taplejung, a small town at the foothills of the Himalayas. From there, we will start our trek to Mitlung, a small village located on the banks of the Tamor River. The trek is easy and mostly downhill, and we will pass through lush green forests and small settlements."
+
+    - title: "DAY 5 - Trek from Mitlung to Chirwa (1,270m)"
+      content: " Today, we will continue our trek along the Tamor River to Chirwa, a small town located on the border between Nepal and India. The trail is mostly flat, and we will pass through beautiful forests of rhododendron and oak trees. In the evening, we will explore the town and interact with the local people."
+
+    - title: "DAY 6 - Trek from Chhirwa to Sekathum (1,660m)"
+      content: "After breakfast, we will start our trek to Sekathum, a small village located on the banks of the Sisne River. The trail is steep and challenging, and we will pass through several small villages and dense forests. In the evening, we will relax and enjoy the beautiful scenery."
+
+    - title: "DAY 7 - Trek from Sekathum to Amjilosa (2,308m)"
+      content: "Today, we will continue our trek along the Sisne River to Amjilosa, a small village located at an altitude of 2,308 meters. The trail is steep and challenging, and we will pass through beautiful forests and rocky terrain. In the evening, we will rest and enjoy the stunning views of the surrounding mountains."
+
+    - title: "DAY 8 - Trek from Amjilosa to Gyabla (2,730m)"
+      content: "After breakfast, we will start our trek to Gyabla, a small village located at an altitude of 2,730 meters. The trail is steep and challenging, and we will pass through dense forests and rocky terrain. In the evening, we will relax and enjoy the beautiful scenery.."
+
+    - title: "DAY 9 - Trek from Gyabla to Ghunsa (3,550m)"
+      content: "After breakfast, you'll start trekking towards Ghunsa. The trail goes through a beautiful forest of rhododendron and pine trees, passing by several waterfalls. You'll also get to see stunning views of the snowy peaks of Mt. Jannu (7,710m) and Mt. Khumbhakarna (7,710m) along the way. As you approach Ghunsa, you'll notice the change in the landscape as it becomes more rugged and barren."
+
+    - title: "DAY 10 - Acclimatization at Ghunsa (Rest day)"
+      content: "Today is a rest day for acclimatization. You'll spend the day exploring the village and interacting with the locals, who are mainly of Tibetan descent. You can also visit the local monastery, which is one of the oldest and most important monasteries in the region. In the evening, you can attend a cultural show performed by the locals, showcasing their traditional dances and songs."
+
+    - title: "DAY 11 - Trek from Ghunsa to Khambachen (4,050m)"
+      content: " Leaving Ghunsa behind, you'll continue your journey towards Khambachen. The trail climbs steeply through the beautiful forest of rhododendron and pine trees, offering stunning views of the surrounding peaks. You'll also cross the river at several points, and pass by yak pastures and small settlements along the way. As you approach Khambachen, you'll notice the dramatic change in the landscape, as it becomes more barren and rocky."
+
+    - title: "DAY 12 - Trek from Khambachen to Lhonak (4,780m)"
+      content: "Today's trek takes you to the beautiful village of Lhonak. The trail passes through the rocky terrain of the Kanchenjunga Glacier, with stunning views of the snow-capped peaks of Mt. Kanchenjunga (8,586m) and Mt. Jannu (7,710m). You'll also pass by several small glacial lakes, and the trail becomes steeper and more challenging as you approach Lhonak."
+
+    - title: "DAY 13 - Hike to the Pangpema viewpoint (5,388m) and back to Lhonak"
+      content: "Today, you'll take a short hike to the Pangpema viewpoint, which offers stunning panoramic views of the Kanchenjunga massif. The hike is challenging and steep, but the views from the top are truly breathtaking. After spending some time at the viewpoint, you'll trek back to Lhonak for the night."
+
+    - title: "DAY 14 - Trek from Lhonak to Ghunsa"
+      content: "Leaving Lhonak behind, you'll start your return journey towards Ghunsa. The trail retraces the same path that you took to reach Lhonak, but the views are just as stunning. You'll pass by several small glacial lakes, and the terrain becomes more rugged and rocky as you descend towards Ghunsa."
+
+    - title: "DAY 15 - Trek from Ghunsa to Sele La Base Camp (4,200m)"
+      content: " Today, you'll start your journey towards the high mountain pass of Sele La. The trail passes through a beautiful forest of rhododendron and pine trees, with stunning views of the surrounding peaks. You'll also pass by several small settlements and yak pastures along the way. As you approach the base camp of Sele La, the terrain becomes more rugged and challenging."
+
+    - title: "DAY 16 - Trek from Sere La to Tseram (3,870m) via crossing High pass"
+      content: "Today will be a challenging day as we cross the high Sele La Pass, which stands at an altitude of 4,290 meters. The trek to the top of the pass takes around 3-4 hours, and we will be rewarded with magnificent views of the towering peaks of Kanchenjunga, Jannu, and Makalu. After taking in the breathtaking views, we will start our descent towards the village of Tseram, which will take around 5-6 hours. Tseram is a small village located at an altitude of 3,870 meters, surrounded by towering peaks and dense forests. We will spend the night at a campsite in Tseram.."
+
+    - title: "DAY 17 - Trek from Tseram to Ramche (4,580m)"
+      content: " Today, we will head towards Ramche, located at an altitude of 4,580 meters. The trek takes around 4-5 hours, and we will pass through the beautiful Yalung Glacier and the Lapsang La Pass, which stands at an altitude of 4,540 meters.As we reach Ramche, we will be greeted by stunning views of the towering peaks of Kanchenjunga, Jannu, and Yalung Kang. We will spend the night at a campsite in Ramche."
+
+    - title: "DAY 18 - Trek from Tseram to Oktang Temple and return to Tseram"
+      content: "Today, we will trek to the Okthang Temple, located at an altitude of 4,730 meters, which is one of the highest points of our trek. The trek takes around 4-5 hours, and we will pass through beautiful meadows, streams, and forests. As we reach the Okthang Temple, we will be rewarded with stunning views of the surrounding peaks and the pristine blue waters of the glacial lake. After spending some time exploring the area, we will trek back to Tseram for an overnight stay at the campsite."
+
+    - title: "DAY 19 - Trek from Cheram to Tortong (2,995m)"
+      content: " Today, we will start our descent towards Tortong, located at an altitude of 2,995 meters. The trek takes around 5-6 hours, and we will pass through the beautiful forests of rhododendron and pine trees. As we reach Tortong, we will be greeted by stunning views of the surrounding peaks and the quaint village. We will spend the night at a campsite in Tortong. "
+
+    - title: "DAY 20 - Trek from Tortong to Yamphudin (2,080m)"
+      content: "Today's trek is relatively easy and shorter, providing a chance to rest and recover from the previous day's trek. After breakfast, we start our journey towards Yamphudin. The trail passes through the lush forest of rhododendrons and magnolias, and we might spot some rare wildlife species such as the red panda, Himalayan black bear, or musk deer.After trekking for about 4-5 hours, we reach Yamphudin, a small village with traditional houses and a colorful local market. We will have plenty of time to explore the village, interact with locals, and learn about their unique culture and traditions. In the evening, we will enjoy a hot dinner and spend the night in a local teahouse.."
+
+    - title: "DAY 21 - Trek from Yamphudin to Khewang"
+      content: " Today's trek is relatively long and challenging, as we will be walking uphill for most of the time. After breakfast, we will begin our trek towards Khewang, a small village located at an altitude of 2,785m. The trail passes through several small villages, lush forests, and terraced fields. Along the way, we will witness some breathtaking views of the snow-capped mountains and the surrounding landscape. After trekking for about 7-8 hours, we finally reach Khewang, where we will stay in a local teahouse and enjoy a hot meal."
+
+    - title: "DAY 22 - Trek from Khewang to Khandenba"
+      content: "After breakfast, we start our trek towards Khandenba, a small village located at an altitude of 2,670m. The trail passes through dense forests of rhododendron and bamboo, and we might encounter some rare wildlife species such as the Himalayan tahr, snow leopard, or the Himalayan monal. We will also cross several suspension bridges over the roaring rivers and climb steep hills. After trekking for about 6-7 hours, we finally reach Khandenba, where we will stay in a local teahouse and enjoy a hot meal. In the evening, we can explore the village and interact with the friendly locals."
+
+    - title: "DAY 23 - Drive from Khandenba to Bhadrapur & Transfer to the Hotel: via Phidim"
+      content: " After breakfast, we bid farewell to the beautiful mountains and start our journey back to Bhadrapur. We will drive through the scenic route passing through the beautiful small town of Phidim. We will have lunch at Phidim, a bustling commercial hub of Panchthar district. After lunch, we will continue our drive towards Bhadrapur. Upon arrival at Bhadrapur, we will check-in to our hotel and rest for the night."
+
+    - title: "DAY 24 - Fly from Bhadrapur to Kathmandu & Transfer to the Hotel"
+      content: "After breakfast, we will head to the airport to catch a flight back to Kathmandu. Upon arrival at the airport, we will transfer to our hotel and freshen up. In the afternoon, we can explore the bustling streets of Thamel, a popular tourist destination known for its vibrant markets, cafes, and restaurants. We can also visit some of the famous landmarks in the city, such as the Kathmandu Durbar Square, Swayambhunath Stupa, or the Pashupatinath temple. In the evening, we will have a farewell dinner at a local restaurant and celebrate the successful completion of our trek."
+
+    - title: "DAY 25 - Sightseeing around Kathmandu Valley"
+      content: " Today is a free day for you to explore the historical and cultural highlights of the Kathmandu Valley. You can visit the UNESCO World Heritage Sites, including Kathmandu Durbar Square, Swayambhunath Stupa (also known as the Monkey Temple), Pashupatinath Temple, and Boudhanath Stupa. Each site is steeped in history and culture, and your local guide will provide in-depth information about the significance and stories behind each place. In the evening, you can enjoy a farewell dinner with your guide and fellow trekkers to celebrate the successful completion of the trek."
+
+    - title: "DAY 26 - Transfer to International Airport for final departure"
+      content: "After breakfast, our representative will pick you up from your hotel and transfer you to the Tribhuvan International Airport for your departure flight. We hope you had a memorable and enjoyable time in Nepal, and we look forward to serving you again in the future. Have a safe journey!."
+
+
+makalu-sherpani-col-pass-trek:
+    name: "Makalu Sherpanu Col Pass Trek"
+    days: "22"
+    nights: "21"
+    altitude: "6,150m / 20,200ft"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Makalu"
+    # popular: "Y"
+    price: "8500"
+    photos: "assets/css/images/treks/makalu_sherpani_min.jpg"
+
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Makalu Sherpani Col Pass Trek is one of the most challenging and adventurous treks in Nepal. This trek is known for its stunning natural beauty, diverse landscapes, and unique cultural experiences. It is an off-the-beaten-path trek that takes you through remote villages, high mountain passes, and lush forests."
+
+    excerpt: "The Makalu Sherpani Col Pass Trek is one of the most challenging and adventurous treks in Nepal. This trek is known for its stunning natural beauty, diverse landscapes, and unique cultural experiences. It is an off-the-beaten-path trek that takes you through remote villages, high mountain passes, and lush forests."
+
+    # video: "<iframe width='100%' height='400' class='vid' src='https://www.youtube.com/embed/vYi0LrT5bWU' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+    gears-list: "//assets/docs/trekking-gears-nepal.pdf"
+
+
+    overview:
+
+    - content: "The Makalu Sherpani Col Pass Trek is one of the most challenging and adventurous treks in Nepal. This trek is known for its stunning natural beauty, diverse landscapes, and unique cultural experiences. It is an off-the-beaten-path trek that takes you through remote villages, high mountain passes, and lush forests. The trek starts in Tumlingtar and goes through various villages such as Seduwa, Tashigaon, Khongma, and Dobate before reaching the Sherpani Col Pass. The pass is located at an altitude of 6,145 meters and is one of the highest mountain passes in Nepal. The trek also takes you through the Barun Valley, which is home to rare and endangered species such as the Red Panda and Snow Leopard."
+
+    - content: "Makalu Sherpani Col Pass Trek is the cultural experience it offers. The trek takes you through the traditional Sherpa villages where you can experience the Sherpa culture and way of life. You can also visit monasteries and gompas and learn about the unique Buddhist practices of the region. The trek offers breathtaking views of the Himalayan mountain range, including Mount Everest, Makalu, Lhotse, and Kanchenjunga. The trek also takes you through various landscapes such as forests, alpine meadows, and glaciers, making it a photographer's paradise."
+
+    itinerary:
+
+  
+    - title: "DAY 1 - Arrival in Kathmandu (1400m) & Transfer to the Hotel"
+      content: "Welcome to Kathmandu, the bustling capital city of Nepal. Our representative will pick you up from the airport and transfer you to your hotel. After you have checked in and rested for a while, our trekking guide will meet you and give you a briefing about your upcoming adventure. You can spend the rest of the day exploring the colorful streets of Thamel, the popular tourist hub of Kathmandu."
+
+    - title: "DAY 2 - Fly from Kathmandu to Tumlingtar and drive to Num (1,560m)"
+      content: "After breakfast, we will take a scenic flight to Tumlingtar, which offers stunning views of the Himalayas. From Tumlingtar, we will drive to Num, a small village situated on a hilltop. We will spend the night at a guesthouse in Num. "
+
+    - title: "DAY 3 - Trek from Num to Sheduwa (1,510m)"
+      content: "We will start our trek from Num and descend through a dense forest to the Arun River. After crossing the river, we will ascend through terraced fields to the Gurung village of Seduwa. We will stay at a guesthouse in Seduwa for the night.."
+
+    - title: "DAY 4 - Trek from Sheduwa to Tashi Gaun (2,070m)"
+      content: "The trek from Seduwa to Tashi Gaun is a steady climb through beautiful rhododendron forests. Tashi Gaun is a traditional Sherpa village with stunning views of Makalu and its neighboring peaks. We will spend the night at a guesthouse in Tashi Gaun."
+
+    - title: "DAY 5 - Acclimatization at Tashi Gaun (rest day)"
+      content: " We will take a rest day in Tashi Gaun to acclimatize to the altitude. You can explore the village and interact with the locals to learn about their culture and way of life."
+
+    - title: "DAY 6 - Trek from Tashi Gaun to Khongma (3,760m)"
+      content: " Today's trek is a challenging one as we will ascend to a high altitude. The trail is steep and rocky, and we will pass through alpine meadows and yak pastures. Khongma is a small settlement with basic guesthouses where we will spend the night."
+
+    - title: "DAY 7 - Trek from Khongma to Mumbuk (3,520m)"
+      content: " The trek from Khongma to Mumbuk is a steep ascent through a rocky and barren terrain. We will cross the Keke La Pass (4,152m), which offers spectacular views of Chamlang, Makalu, and Baruntse. We will spend the night at a guesthouse in Mumbuk."
+
+    - title: "DAY 8 - Trek from Mumbuk to Nehe Kharka (4,320m)"
+      content: " The trail from Mumbuk to Nehe Kharka is a gradual ascent through rhododendron forests and alpine meadows. We will cross the Barun River and follow its course towards the upper valley. We will spend the night at a guesthouse in Nehe Kharka."
+
+    - title: "DAY 9 - Trek from Nehe Kharka to Makalu Base Camp (4,870m)"
+      content: "The trek from Nehe Kharka to Makalu Base Camp is a challenging one as we will ascend to a high altitude. We will cross the Shipton La Pass (4,220m) and follow the trail to the base camp. The views of Makalu, Baruntse, and other peaks from the base camp are breathtaking. We will spend the night at a campsite in Makalu Base Camp."
+
+    - title: "DAY 10 - Trek from Makalu Basecamp to Hillary Camp"
+      content: " After breakfast at the base camp, we will start trekking towards Hillary Camp. The trail leads us through the beautiful and scenic valley, with Makalu towering above us. As we ascend, we will pass through several small streams and rocky terrain, before finally reaching Hillary Camp. Hillary Camp is situated at an altitude of 5,300 meters and is named after Sir Edmund Hillary, the first person to summit Mount Everest. Here, we will have some refreshments and enjoy the stunning views of the Himalayan range."
+
+    - title: "DAY 11 - Trek from Hillary Camp to High Camp (5,650m)"
+      content: "Today, we will make our way to High Camp, which is located at an altitude of 5,650 meters. This part of the trek is challenging, as the trail becomes steeper and the air thinner. As we ascend, we will be rewarded with breathtaking views of the surrounding mountains, including Makalu and Everest. We will reach High Camp by late afternoon and rest for the night, enjoying the beautiful scenery and the silence of the mountains."
+
+    - title: "DAY 12 - Acclimatization at High Camp (Rest day)"
+      content: "Today is a rest day, allowing our bodies to acclimatize to the high altitude. We will spend the day relaxing and enjoying the spectacular views of the mountains from our campsite. "
+
+    - title: "DAY 13 - Trek to Baruntse Base Camp (5,700m) via Crossing Sherpani Col (6,146m) and West Col (6,143m)"
+      content: " Today, we will start early and cross two high passes, Sherpani Col (6,146m) and West Col (6,143m), before reaching Baruntse Base Camp. The trail is steep and challenging, with steep ascents and descents, but the views are incredible."
+
+    - title: "DAY 14 - Acclimatization at Baruntse Basecamp (Rest Day)"
+      content: " Today is a rest day, allowing our bodies to acclimatize to the high altitude. We will spend the day relaxing and enjoying the spectacular views of the surrounding mountains."
+
+    - title: "DAY 15 - Trek from Baruntse Basecamp to Amphu Labste Base (5,400m)"
+      content: " Today, we will trek to Amphu Labste Base, which is located at an altitude of 5,400 meters. The trail leads us through a beautiful valley, with stunning views of the surrounding mountains.."
+
+    - title: "DAY 16 - Trek from the Base to Imja Lake camp (5,100m) Via Crossing Amphu Laptsa pass (5,850m)"
+      content: " Today, you will embark on one of the most challenging parts of the trek. You will begin the day by crossing the formidable Amphu Laptsa Pass, which is at an altitude of 5,850 meters. The trail will be steep and strenuous, with challenging sections that require the use of ropes and crampons. As you reach the top of the pass, you will be rewarded with breathtaking views of the surrounding peaks and glaciers. After taking some time to rest and soak in the scenery, you will begin the descent towards Imja Lake Camp."
+   
+    - title: "DAY 17 - Trek from Chhukung to Pangboche (3,985m)"
+      content: " Today, you will begin your descent towards lower altitudes. You will trek from Chhukung to Pangboche, a small village located at an altitude of 3,985 meters. The trail will take you through beautiful forests and traditional Sherpa settlements."
+
+    - title: "DAY 18 - Trek from Pangboche to Namche Bazaar"
+      content: "Today, you will continue your descent towards Namche Bazaar. The trail will take you through beautiful forests and small villages, offering stunning views of the surrounding mountains and valleys."
+
+    - title: "DAY 19 - Trek from Namche Bazaar to Lukla"
+      content: "Today, you will trek from Namche Bazaar to Lukla, the town where you started your trek. The trail will take you through beautiful forests and small villages, offering stunning views of the surrounding mountains and valleys."
+
+    - title: "DAY 20 - Fly from Lukla to Kathmandu and Transfer to the Hotel"
+      content: " Today, you will take a short flight from Lukla to Kathmandu. The flight will offer stunning views of the mountains and valleys that you have been trekking through for the past few weeks. Once you reach Kathmandu, you can rest and relax at your hotel."
+
+    - title: "DAY 21 - Sightseeing around Kathmandu Valley"
+      content: "Today, you will have a full day to explore the rich cultural and historical heritage of the Kathmandu Valley. You can visit famous landmarks such as the Boudhanath Stupa, Swayambhunath Temple, and Pashupatinath Temple."
+
+    - title: "DAY 22 - Transfer to the International Airport for Final Departure"
+      content: " On Day 22, after breakfast at the hotel, you will be transferred to Tribhuvan International Airport for your flight back home. As you fly back, you will have memories of an incredible journey filled with natural beauty, adventure, and cultural experiences that will last a lifetime."
+
+
+makalu-base-camp-trek:
+    name: "Makalu Base Camp Trek"
+    days: "16"
+    nights: "15"
+    altitude: "4,870m / 15,978ft"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Makalu"
+    # popular: "Y"
+    price: "8500"
+    photos: "assets/css/images/treks/makalu_base_camp_min.jpg"
+
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "Manaslu Base Camp Trek is a magnificent trek that takes you through the remote regions of the Himalayas in Nepal. This trek is gaining popularity due to its stunning landscapes, diverse cultures and pristine natural beauty."
+
+    excerpt: "Manaslu Base Camp Trek is a magnificent trek that takes you through the remote regions of the Himalayas in Nepal. This trek is gaining popularity due to its stunning landscapes, diverse cultures and pristine natural beauty."
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/GpxnRfbf7dg' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+    gears-list: "//assets/docs/trekking-gears-nepal.pdf"
+
+    overview:
+
+    - content: "The Makalu Base Camp Trek is a journey to explore the beauty of Nepal's Makalu Barun National Park, a region filled with diverse flora and fauna. The park is home to rare and endangered species like the snow leopard, Himalayan black bear, red panda, and musk deer. The trek is also famous for the amazing view of the world's highest mountains, including Mount Everest, Lhotse, and Chamlang, which will leave you awestruck.The Makalu Base Camp Trek is considered one of the most challenging treks in Nepal and requires a high level of physical fitness. The trek starts with a flight from Kathmandu to Tumlingtar, followed by a scenic trail that leads through the beautiful Arun River basin. The route includes two challenging high passes, Keke La pass (4230m) and Tutu La pass (4200m), that offer an excellent opportunity to test your mountaineering skills."
+
+    - content: "The trail also provides an excellent chance to experience the unique culture of the region's local people, their traditional lifestyles, and customs. The trek takes you through picturesque villages, past beautiful monasteries, and across stunning landscapes. Walking along the Barun River valley, you'll get to see the snow-fed streams, glacial lakes, and waterfalls that make this region a heaven for nature lovers.The Makalu Base Camp Trek is a journey of a lifetime that offers you an unforgettable adventure to explore the natural wonders of Nepal. It is a perfect choice for those who seek an exciting and challenging trekking experience amidst the world's highest mountain ranges."
+    itinerary:
+
+   
+    - title: "DAY 1 - Arrival in Kathmandu (1400m) & Transfer to the Hotel"
+      content: "Welcome to Kathmandu, the capital city of Nepal! On your arrival, you will be greeted by our team at the airport and transferred to your hotel. You can spend the rest of the day exploring the bustling streets of Thamel or relaxing at your hotel."
+
+    - title: "DAY 2 - Fly from Kathmandu to Tumlingtar and Drive to Num (1,560m)"
+      content: "After breakfast, we will take a scenic flight to Tumlingtar, where we'll meet our trekking crew. From there, we'll drive to Num, the starting point of our trek. The drive itself is an adventure, offering breathtaking views of the Himalayan landscape and lush green hills. "
+
+    - title: "DAY 3 - Trek from Num to Seduwa (1,510m)"
+      content: " Today, we'll begin our trek by crossing the Arun River and ascending through dense forests. As we reach Seduwa, we'll witness the first glimpse of the magnificent Himalayan ranges"
+
+    - title: "DAY 4 - Trek from Seduwa to Tashi Gaun (2,070m)"
+      content: " As we continue our trek, the trail becomes steeper, but the views get more rewarding. We'll cross several small villages and dense forests before reaching Tashi Gaun, a picturesque village surrounded by towering mountains."
+
+    - title: "DAY 5 - Acclimatization at Tashi Gaun (rest day)"
+      content: " Today is a rest day, allowing us to acclimatize to the high altitude and prepare for the next few days of trekking. You can spend the day exploring the village or taking short hikes to nearby viewpoints."
+
+    - title: "DAY 6 - Trek from Tashi Gaun to Khongma (3,760m)"
+      content: " The trail gradually ascends through rhododendron forests and meadows. As we reach Khongma, we'll be rewarded with stunning views of Makalu and other surrounding peaks."
+
+    - title: "DAY 7 - Trek from Khongma to Mumbuk (3,520m)"
+      content: " Today's trail is challenging, as we'll be crossing several high passes and traversing steep ridges. However, the views are breathtaking, and the sense of achievement is unmatched."
+
+    - title: "DAY 8 - Trek from Mumbuk to Nehe Kharka (4,320m)"
+      content: " As we ascend higher, the landscape changes drastically, and we'll notice the alpine vegetation becoming sparse. We'll cross the Barun Glacier and reach Nehe Kharka, a beautiful meadow surrounded by towering peaks.."
+
+    - title: "DAY 9 - Trek from Nehe Kharka to Makalu Base Camp (4,870m)"
+      content: " Today's trail takes us to the highlight of our trek, the Makalu Base Camp. We'll walk on the rocky terrain and moraines of the glacier, offering stunning views of the surrounding mountains."
+
+    - title: "DAY 10 - Trek from MaKalu Base Camp to Yangle Kharka"
+      content: " After spending some time at the base camp, we'll retrace our steps and begin our descent. We'll reach Yangle Kharka, a beautiful meadow surrounded by the mighty Himalayan peaks."
+
+    - title: "DAY 11 - TTrek from Yangle Kharka to Khongma"
+      content: " Today, we'll cross several high passes and steep ridges before reaching Khongma. The trail is challenging but incredibly rewarding, offering stunning views of the mountains."
+
+    - title: "DAY 12 - Trek from Khongma to Seduwa"
+      content: "As we descend, the trail becomes easier, and we'll pass through several small villages and dense forests. We'll reach Seduwa, where we'll spend the night."
+
+    - title: "DAY 13 - Trek from Seduwa to Num and drive to Khadbari or Tumlingtar"
+      content: " Today, we'll complete our trek as we descend to Num and drive to Khandbari or Tumlingtar. We'll spend the night at a guesthouse or hotel."
+
+    - title: "DAY 14 - Drive from Khandbari to Tumlingtar Fly to Kathmandu & Transfer to the Hotel"
+      content: " We'll drive from Khandbari to Tumlingtar and take a flight back to Kathmandu. On arrival, we'll transfer you to your hotel, where you can rest or explore the city."
+
+    - title: "DAY 15 - Sightseeing around Kathmandu Valley"
+      content: " Today, we'll explore the cultural and historical landmarks of Kathmandu valley. We'll visit UNESCO World Heritage Sites such as Pashupatinath, Boudhanath, and Swayambhunath, and experience the rich cultural diversity of Nepal."
+
+    - title: "DAY 16 - Transfer to International Airport for final departure"
+      content: " Our team will transfer you to the airport for your final departure, marking the end of an incredible journey to the beautiful Himalayas of Nepal."
+
+
+
+dhaulagiri-circuit-trek:
+    name: "Dhaulagiri Circuit Trek"
+    days: "16"
+    nights: "15"
+    altitude: "5,416m / 17,772ft"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Dhaulagiri"
+    # popular: "Y"
+    price: "8500"
+    photos: "assets/css/images/treks/dhaulagiri_circuit_min.jpg"
+
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: ""
+
+    excerpt: ""
+
+    # video: "<iframe width='100%' height='400'  class='vid' src='https://www.youtube.com/embed/vYi0LrT5bWU' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+    gears-list: "//assets/docs/trekking-gears-nepal.pdf"
+
+    overview:
+
+    - content: "The Dhaulagiri Circuit Trek is one of the most challenging and remote trekking experiences in Nepal. This trek is known for its breathtaking views of the Dhaulagiri Mountain, which stands at an elevation of 8,167 meters and is the seventh highest peak in the world. The trek starts from the town of Beni, which is easily accessible from Pokhara, and takes around three weeks to complete. The Dhaulagiri Circuit Trek is a challenging adventure that requires a high level of fitness and experience in trekking at high altitudes. Trekkers must be prepared for long days of hiking, steep ascents and descents, and camping in remote areas. However, the effort is well worth it for the stunning views and the unique cultural experiences that this trek provides."
+
+    - content: "The trail of the Dhaulagiri Circuit Trek winds through lush forests, picturesque villages, and high mountain passes, offering trekkers a chance to experience the diverse landscapes and cultures of the region. The trek also takes you through various ethnic groups such as the Gurung, Magar, and Thakali people who have their unique customs and traditions. The trek also takes you through ancient trade routes that were once used to connect Nepal and Tibet, providing a glimpse into the rich history of the region.The Dhaulagiri Circuit Trek is an excellent choice for experienced trekkers who are looking for a challenging and rewarding adventure in Nepal. This trek is also significant for its contribution t"
+
+    itinerary:
+
+    - title: "DAY 1 - Arrival in Kathmandu (1400m) & Transfer to the Hotel"
+      content: "Upon arrival at Tribhuvan International Airport in Kathmandu, you will be greeted by our representative and transferred to your hotel. You can spend the rest of the day exploring the bustling city of Kathmandu and its vibrant streets."
+
+    - title: "DAY 2 - Fly from Kathmandu to Pokhara"
+      content: "In the morning, you will take a scenic flight to Pokhara. Upon arrival, you will check into your hotel and explore the lakeside city at your leisure. You can take a boat ride on Phewa Lake, visit the famous World Peace Pagoda, or relax in one of the many lakeside cafes. "
+
+    - title: "DAY 3 - Drive from Pokhara to Takam (1,500m)"
+      content: " After breakfast, we will drive to Takam, a small village located at the foot of the Dhaulagiri massif. The drive takes us through picturesque countryside and gives us a glimpse of rural life in Nepal. Upon reaching Takam, we will settle into our teahouse and enjoy a traditional Nepali dinner."
+
+    - title: "DAY 4 - Trek from Takam to Muri (1,850m)"
+      content: "Our trek begins today as we make our way from Takam to Muri. The trail takes us through dense forests and along rushing rivers, with stunning views of the snow-capped peaks in the distance. We will stop for lunch at a local teahouse and then continue on to Muri, where we will spend the night."
+
+    - title: "DAY 5 - Trek from Muri to Bagar (2,080m)"
+      content: " Today's trek takes us from Muri to Bagar, a small village nestled in the heart of the Dhaulagiri massif. Along the way, we will pass through quaint mountain villages and get a taste of the local culture. We will reach Bagar in the late afternoon and settle into our teahouse for the night."
+
+    - title: "DAY 6 - Trek from Bagar to Dovan (2,520m)"
+      content: " We will start our day with a hearty breakfast and then hit the trail, making our way from Bagar to Dovan. The trail takes us through dense forests and along rushing rivers, with stunning views of the snow-capped peaks in the distance. We will stop for lunch at a local teahouse and then continue on to Dovan, where we will spend the night."
+
+    - title: "DAY 7 - Trek from Dovan to Italian Base Camp (3,660m)"
+      content: " Today's trek takes us from Dovan to Italian Base Camp, located at the foot of the towering Dhaulagiri massif. Along the way, we will pass through alpine meadows and get breathtaking views of the surrounding peaks. We will reach Italian Base Camp in the late afternoon and settle into our teahouse for the night."
+
+    - title: "DAY 8 -Acclimatization at Italian Base Camp (Rest day)"
+      content: "Today is a rest day, allowing our bodies to adjust to the higher altitude. We can spend the day exploring the area around Italian Base Camp, taking short walks and enjoying the stunning mountain scenery."
+
+    - title: "DAY 9 - Trek from Italian Base Camp to Dhaulagiri Base Camp (4,750m)"
+      content: "Our trek continues today as we make our way from Italian Base Camp to Dhaulagiri Base Camp. The trail takes us through rocky terrain and along steep ridges, with stunning views of the surrounding peaks. We will reach Dhaulagiri Base Camp in the late afternoon and settle into our teahouse for the night."
+
+    - title: "DAY 10 - Trek from Base Camp to Hidden Valley (5,050m) via French Col (5,360m)"
+      content: "Today's trek is the most challenging of the trip as we make our way from Base Camp to Hidden Valley via French Col. The climb to French Col is steep and strenuous, but the breathtaking views from the top make it all worthwhile. We will cross the pass and descend into the Hidden Valley, where we will spend the night in a teahouse."
+
+    - title: "DAY 11 - Trek from Hidden Valley to Yak Kharka (3,680m) via Dhampus Pass (5,240m)"
+      content: "Today, we will cross another high mountain pass, the Dhampus Pass, which offers stunning views of the Annapurna and Dhaulagiri ranges. The descent from the pass takes us through a beautiful valley and past small villages. We will reach Yak Kharka in the late afternoon and settle into our teahouse for the night.."
+
+    - title: "DAY 12 - Trek from Yak Kharka to Jomsom (2,720m) Or Marpha"
+      content: "Today's trek takes us through the Kali Gandaki Valley, a desert-like landscape with stunning mountain views. We will pass through the picturesque village of Marpha, known for its apple orchards and traditional architecture, before reaching Jomsom. We will spend the night in a teahouse in Jomsom."
+
+    - title: "DAY 13 - Fly / Drive to Pokhara and transfer to the Hotel"
+      content: "In the morning, we will take a short flight or drive to Pokhara, where we will check into our hotel. You can spend the rest of the day exploring the city or relaxing by the lake."
+
+    - title: "DAY 14 - Fly from Pokhara to Kathmandu"
+      content: " After breakfast, we will take a short flight back to Kathmandu. Upon arrival, we will check into our hotel and have the rest of the day to explore the city or do some last-minute shopping.."
+
+    - title: "DAY 15 - Sightseeing around Kathmandu Valley"
+      content: " Today, we will explore the rich cultural heritage of the Kathmandu Valley. We will visit historic temples, shrines, and monuments, including the famous Swayambhunath Stupa, also known as the Monkey Temple. We will also have the opportunity to explore the vibrant markets and bustling streets of the city."
+
+    - title: "DAY 16 - Transfer to International Airport for final departure."
+      content: " Today is the last day of our trip. After breakfast, we will transfer you to the airport for your flight home or to your next destination. We hope you had an unforgettable experience trekking in the Dhaulagiri region and exploring the cultural wonders of Nepal."
+
+
+
+upper-mustang-trek:
+    name: "Upper Mustang Trek"
+    days: "19"
+    nights: "18"
+    altitude: "3,810m / 12,500ft"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Mustang"
+    # popular: "Y"
+    price: "3,995.00"
+    photos: "assets/css/images/treks/dhaulagiri_circuit_min.jpg"
+
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: ""
+
+    excerpt: ""
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/qGZBPBWvHo4' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+ 
+    gears-list: "//assets/docs/trekking-gears-nepal.pdf"
+
+    overview:
+
+    - content: "The Upper Mustang Trek is a popular and remote trekking destination located in the north-central part of Nepal. This trek takes you through the heart of the Upper Mustang region, offering breathtaking views of the Himalayan Mountains and stunning landscapes, including vast arid valleys, high cliffs, and unique rock formations. The region has a significant cultural heritage, having once been a part of the Tibetan Empire, and the Tibetan influence is evident in the local culture and traditions. Additionally, the Upper Mustang region is home to several ancient monasteries, including the famous Lo Gekar Monastery, which dates back to the 8th century."
+
+    - content: "The Upper Mustang Trek is a moderate trek that requires a good level of fitness and endurance. The trek takes you to high altitudes, so proper acclimatization is essential to avoid altitude sickness. Trekking in the region is best done during the spring and autumn months when the weather is clear, and the temperatures are mild. The Upper Mustang Trek offers a unique and rewarding experience, providing a perfect blend of adventure, culture, and natural beauty. With the right preparation and mindset, this trek is sure to leave you with memories that will last a lifetime. Whether you're an experienced trekker or a beginner looking for a new adventure, the Upper Mustang Trek is definitely worth considering."
+
+    itinerary:
+
+    - title: "DAY 1 - Arrival in Kathmandu (1400m) & Transfer to the Hotel"
+      content: "Upon arrival in Kathmandu, you will be warmly welcomed by our representative at the airport. From there, you will be transferred to your hotel. After checking in and getting refreshed, you can take some time to rest and adjust to the altitude. In the evening, you will have a welcome dinner with the team and receive a briefing about the upcoming trek."
+   
+    - title: "DAY 2 - Preparation Day & Sightseeing around Kathmandu"
+      content: "Today is a preparation day for your trek. After breakfast, we will take you on a sightseeing tour of Kathmandu. You will visit some of the UNESCO World Heritage Sites in Kathmandu, including Swayambhunath Stupa (also known as the Monkey Temple), Boudhanath Stupa, Pashupatinath Temple, and Kathmandu Durbar Square. In the evening, you can do some last-minute shopping and preparation for the trek."
+   
+    - title: "DAY 3 - Fly/Drive from Kathmandu to Pokhara (823m): Fly 30minutes/Drive 5-6 hours"
+      content: " After breakfast, you will take a scenic flight or drive to Pokhara, a beautiful lake city nestled in the lap of the Himalayas. Upon arrival in Pokhara, you will check into your hotel and have the rest of the day to explore the city. You can go for a boat ride on Phewa Lake or take a walk around the lakeside."
+
+    - title: "DAY 4 - Fly from Pokhara to Jomsom (2760m) & Trek to Kagbeni (2810m)"
+      content: "Today, you will take a short flight from Pokhara to Jomsom, a gateway to the Mustang region. From Jomsom, you will start your trek to Kagbeni, a charming medieval village that lies at the confluence of two rivers. Along the way, you will see stunning views of the Nilgiri and Dhaulagiri mountain ranges.."
+
+    - title: "DAY 5 - Trek from Kagbeni to Chuksacng (2920m)"
+      content: " After breakfast, you will start your trek to Chuksang, a small village situated on the bank of the Kali Gandaki River. On the way, you will cross a suspension bridge and pass through several small settlements. You will also see the ancient red-walled monastery of Tangbe and the stunning landscape of the Mustang region."
+
+    - title: "DAY 6 - Trek from Chuksang to Samar (3290m)"
+      content: " Today, you will trek to Samar, a small village surrounded by beautiful mountains. The trail takes you through a narrow gorge with colorful rock formations and views of the Annapurna and Nilgiri ranges. Along the way, you will pass through the village of Syangboche, where you can take a break and enjoy some tea."
+
+    - title: "DAY 7 - Trek from Samar to Gelling (3440m) via Chungsi Gompa"
+      content: " After breakfast, you will start your trek to Gelling, a village known for its barley and wheat fields. Along the way, you will visit Chungsi Gompa, an ancient monastery that dates back to the 13th century. From the monastery, you will see stunning views of the Mustang region."
+
+    - title: "DAY 8 - Trek from Gelling to Tsarang (3490m)"
+      content: " Today, you will trek to Tsarang, a village that was once the capital of the Mustang kingdom. Along the way, you will see the stunning red cliffs and views of the Annapurna and Nilgiri ranges. You will also visit the ancient monastery of Ghami and the village of Charang, known for its white-walled houses and narrow alleys."
+
+    - title: "DAY 9 - Trek from Tsarang to Lo Manthang (3840m) via Lo Gekar (3825m)"
+      content: " On this day, after having breakfast, we will continue our trek from Tsarang to Lo Manthang, which is the capital of the Mustang region. The trail passes through the Lo Gekar monastery, which is one of the oldest monasteries in Nepal, dating back to the 8th century. The monastery is known for its beautiful murals, statues, and frescoes. As we trek towards Lo Manthang, we will see the barren landscape gradually transform into a green and fertile valley, with the Kali Gandaki River meandering through it. The landscape becomes more enchanting as we approach Lo Manthang, with the majestic Himalayas looming in the distance. "
+
+    - title: "DAY 10 - Explore Lo Manthang: visit Chhosar, Chonup, Namgyal, etc."
+      content: " Today, we will spend the day exploring the ancient city of Lo Manthang. We will visit various historical and cultural sites, including the Chhosar Cave, which is believed to have been used as a meditation chamber by Guru Rinpoche, one of the most revered figures in Tibetan Buddhism."
+
+    - title: "DAY 11 - Trek from Lo Manthang to Dakmar (3820m) via Ghar gompa"
+      content: " Today, we will leave Lo Manthang and head towards Dakmar, a small village that is known for its unique red cliffs. On the way, we will visit the Ghar Gompa, which is one of the oldest and most important monasteries in the region. The monastery is famous for its beautiful frescoes and murals that depict the life of Buddha.."
+
+    - title: "DAY 12 - Trek from Dakmar to Syangbochen"
+      content: "Today, we will leave Dakmar and trek towards Syangbochen. The trail passes through several small villages, where we will have the opportunity to interact with the local people and learn about their way of life."
+
+    - title: "DAY 13 - Trek from Syangbochen to Chuksang"
+      content: " Today, we will leave Syangbochen and trek towards Chhuksang. The trail passes through several small villages and beautiful landscapes, including the Kali Gandaki River and the Mustang Khola River. We will also pass through several beautiful apple orchards, which are a major source of income for the local people. We will have the opportunity to taste some of the delicious apples and other fruits that are grown in the region."
+
+    - title: "DAY 14 - Trek from Chuksang to Muktinath (3800m)"
+      content: " Today, we will leave Chhuksang and trek towards Muktinath, one of the most sacred places for both Hindus and Buddhists. The trail passes through several beautiful landscapes, including the Kagbeni village, the Jharkot village, and the beautiful Kali Gandaki River."
+
+    - title: "DAY 15 - Trek from Muktinath to Jomsom (via Kagbeni)"
+      content: " After visiting the sacred temple of Muktinath and enjoying the serene beauty of the place, we will make our way back to Jomsom via Kagbeni. We will take our time and soak in the stunning views of the Annapurna range and the surrounding landscapes as we make our way back to Jomsom. We will spend the night in Jomsom and prepare for our return journey to Pokhara the next day."
+
+    - title: "DAY 16 - Fly/Drive from Jomsom to Pokhara"
+      content: " After breakfast, we will take a scenic flight back to Pokhara, where we will spend the rest of the day exploring the beautiful city. Pokhara is known for its serene lakes, beautiful mountain views, and adventure activities like paragliding and bungee jumping. We will spend the night in Pokhara."
+
+    - title: "DAY 17 - Fly/ Drive from Pokhara to Kathmandu"
+      content: "After breakfast, we will drive/fly back to Kathmandu. Once we reach Kathmandu, we will check into our hotel and spend the rest of the day exploring the vibrant city. We will visit some of the popular tourist attractions like Pashupatinath Temple, Boudhanath Stupa, and Swayambhunath Stupa. In the evening, we will enjoy a farewell dinner with our trekking team and share our experiences of the trek."
+
+    - title: "DAY 18 - Rest Day in Kathmandu"
+      content: " After a strenuous trek, we will take a well-deserved rest day in Kathmandu. We can spend the day exploring the city, shopping for souvenirs, or simply relaxing at the hotel. In the evening, we can enjoy a cultural show or take a cooking class to learn about Nepali cuisine."
+
+    - title: "DAY 19 - Transfer to International Airport for final departure"
+      content: " Our incredible trek to Upper Mustang comes to an end today. After breakfast, we will be transferred to the international airport for our final departure. We will bid farewell to our trekking team and take back unforgettable memories of the beautiful Mustang region."
+
+
+
+
+tashi-lapcha-pass-trek:
+    name: "Tashi Lapcha Pass Trek"
+    days: "17"
+    nights: "16"
+    altitude: "5,755m / 18,882ft"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Rolwaling"
+    # popular: "Y"
+    price: "8500"
+    photos: "assets/css/images/treks/tashi_lapcha_min.jpg"
+
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: " "
+    excerpt: " "
+
+    # video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/vYi0LrT5bWU' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+    overview:
+
+    - content: "The Tashi Lapcha Pass Trek is a challenging and thrilling trek in Nepal that takes you through the stunning landscapes of the Solu Khumbu and Rolwaling regions. The trek is not for the faint-hearted, as it involves crossing the Tashi Lapcha Pass, located at an altitude of 5,755 meters.The trek starts in Kathmandu and takes you through picturesque Sherpa villages, where you'll get to experience the unique culture and lifestyle of the local people. As you ascend higher, you'll witness stunning views of Mt. Everest, Cho Oyu, and other majestic peaks. You'll also get to explore the Rolwaling Valley, known for its rich biodiversity and unique flora and fauna."
+
+    - content: ""
+
+    itinerary:
+
+    - title: "DAY 1 - Arrival in Kathmandu (1400m) & Transfer to the Hotel"
+      content: "Welcome to the exotic and vibrant city of Kathmandu! Upon arrival at Tribhuvan International Airport, you will be met by our representative and transferred to your hotel. After checking in, you will have some time to rest and freshen up before meeting with your guide for a trip briefing. In the evening, you can explore the bustling streets of Kathmandu and enjoy a delicious Nepalese dinner."
+
+    - title: "DAY 2 - Sightseeing around Kathmandu Valley and Trip Briefing"
+      content: "Today we will explore the cultural and historical highlights of Kathmandu. We will visit UNESCO World Heritage sites such as Pashupatinath Temple, Boudhanath Stupa, and Swayambhunath Stupa, also known as the Monkey Temple. These landmarks will give you a glimpse into Nepal's rich cultural and religious heritage. In the evening, we will have a trip briefing where we will go over the itinerary and answer any questions you may have. "
+
+    - title: "DAY 3 - Drive from Kathmandu to Gonggar Khola (1,440m)"
+      content: " After breakfast, we will embark on a scenic drive to Gonggar Khola, a small village located at an altitude of 1,440 meters. Along the way, we will pass through lush forests, terraced fields, and traditional villages. We will stay overnight in a guesthouse in Gonggar Khola, where we will enjoy a hearty dinner and rest for the night."
+
+    - title: "DAY 4 - Trek from Gonggar Khola to Simigaon (2,000m)"
+      content: " We will start our trek today by following the trail that meanders through beautiful rhododendron forests and along the Bhotekoshi River. We will stop for lunch in a picturesque village called Dovan and continue our trek to Simigaon, a Sherpa village located at an altitude of 2,000 meters. Here we will stay in a teahouse and enjoy a warm dinner.."
+
+    - title: "DAY 5 - Trek from Simigaon to Dongkang (3,010m)"
+      content: " Today's trek takes us through stunning mountain landscapes and pastures dotted with yaks and sheep. We will cross the Tashi Lapsa river and ascend through forests of fir and rhododendron to reach the beautiful village of Dongkang at an altitude of 3,010 meters. We will stay overnight in a teahouse and enjoy a warm meal.."
+
+    - title: "DAY 6 - Trek from Dongkang to Beding (3,693m)"
+      content: " Today's trek is quite challenging as we climb steeply up the valley to reach Beding, a beautiful village located at an altitude of 3,693 meters. Along the way, we will pass through the summer pastures of yak herders and take in stunning views of the surrounding peaks. In Beding, we will stay in a cozy teahouse and enjoy a warm dinner."
+
+    - title: "DAY 7 - Trek from Beding to Na Gaon (4,200m)"
+      content: "Today we will continue our ascent towards the Nangpa La Pass and reach Na Gaon, a small village located at an altitude of 4,200 meters. Along the way, we will pass through pristine forests and glacial valleys, taking in stunning views of the towering peaks that surround us. We will stay in a teahouse in Na Gaon and rest for the night."
+
+    - title: "DAY 8 - Acclimatization at Na (Rest Day)"
+      content: " Today we will take a rest day to acclimatize to the high altitude. We can explore the village, visit the local monastery, or hike up to a nearby viewpoint for stunning panoramic views of the surrounding peaks. We will have dinner and spend the night in our teahouse in Na."
+
+    - title: "DAY 9 - Trek from Na to Chugima (4,920m)"
+      content: " oday's trek takes us to Chugima, a small village located at an altitude of 4,920 meters. The trail will take us through high-altitude landscapes and past pristine glacial lakes. We will cross the Tso Rolpa Lake, which is a stunning turquoise blue color, and reach Chugima, where we will stay in a teahouse and enjoy a warm dinner."
+
+    - title: "DAY 10 - Trek from Chugima to Jaboo Glacier"
+      content: " Today we will trek to the Jaboo Glacier, where we will witness the awe-inspiring beauty of this natural wonder. The trail will take us through rocky terrain and past rugged mountains, and we will take in the stunning views of the surrounding peaks. We will stay in a tented campsite near the Jaboo Glacier and enjoy a delicious dinner under the stars."
+
+    - title: "DAY 11 - Trek from Jaboo Glacier to Tashi Phuk (5,110m) crossing Tashi Lapcha (5,755m)"
+      content: " Today's trek is the most challenging part of our journey as we cross the high-altitude Tashi Lapcha Pass at an altitude of 5,755 meters. The trail will take us through rocky terrain, and we will need to use ropes and crampons to cross the glacier safely. However, the stunning views from the top of the pass will make it all worthwhile. We will then descend to Tashi Phuk, a small village located at an altitude of 5,110 meters, where we will stay in a teahouse and enjoy a warm dinner."
+
+    - title: "DAY 12 - Trek from Tashi Phuk to Thengbo (4,230m)"
+      content: "Today we will descend to Thengbo, a small village located at an altitude of 4,230 meters. Along the way, we will pass through rocky terrain and take in stunning views of the surrounding peaks. We will stay in a teahouse in Thengbo and enjoy a warm dinner."
+
+    - title: "DAY 13 - Trek from Thengba to Thame (3,800m)"
+      content: " Today's trek takes us to the picturesque village of Thame, located at an altitude of 3,800 meters. We will pass through beautiful landscapes and forests of rhododendron and juniper trees. Thame is a historic village and is known for its beautiful monastery and stunning views of the surrounding peaks. We will stay in a teahouse in Thame and enjoy a warm dinner."
+
+    - title: "DAY 14 - Trek from Thame to Namche Bazaar (3,750m)"
+      content: " Today we will descend to Namche Bazaar, a bustling town located at an altitude of 3,750 meters. Along the way, we will pass through beautiful forests and traditional villages. Namche Bazaar is a popular stopover for trekkers and is known for its colorful markets and stunning views of Mount Everest. We will stay in a teahouse in Namche Bazaar and enjoy a warm dinner."
+
+    - title: "DAY 15 - Trek from Namche Bazaar to Lukla (2,860m)"
+      content: " Today we will descend to Lukla, where we will catch a flight back to Kathmandu. Along the way, we will pass through beautiful landscapes and traditional villages. In Lukla, we will say goodbye to our porters and trekking staff and catch our flight back to Kathmandu. Upon arrival in Kathmandu, we will transfer to our hotel and enjoy a warm dinner."
+
+    - title: "DAY 16 - Fly from Lukla to Kathmandu & Transfer to the Hotel"
+      content: " Today we will catch our flight back to Kathmandu and transfer to our hotel. We will have some time to rest and freshen up before exploring the city or doing some last-minute souvenir shopping. In the evening, we will enjoy a farewell dinner together and reflect on our incredible journey."
+
+    - title: "DAY 17 - Transfer to International Airport for final departure"
+      content: " Today marks the end of our journey together. After breakfast, we will transfer to the international airport for our final departure. We hope you have had a fantastic time and look forward to seeing you again soon for another adventure in the Himalayas."
+
+
+
+mardi-himal-trek:
+    name: "Mardi Himal Trek"
+    days: "12"
+    nights: "11"
+    altitude: "4,500m / 14,763ft"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Annapurna"
+    # popular: "Y"
+    price: "8500"
+    photos: "assets/css/images/treks/mardi_himal_min.jpg"
+    photoos: "assets/css/images/treks/mardi_himal_min.jpg"
+
+
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: ""
+
+    excerpt: ""
+
+    video: "<iframe width='100%' height='400' class='vid' src='https://www.youtube.com/embed/iMvgjOhdAl8' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+    download: "//assets/docs/manaslu.pdf"
+
+    overview:
+
+    - content: "The Mardi Himal Trek is a trekking experience that takes you deep into the heart of the Himalayas. This stunning journey presents an overwhelming and picturesque adventure to Mardi Himal, where you will be completely soaked with the views of snowcapped peaks, green rolling hills, and pristine forests of lovely rhododendron-magnolia-pines and oak tree lines. Located in the Annapurna region of Nepal, the Mardi Himal Trek is a moderate to adventurous trek that offers a perfect blend of natural beauty, cultural experience, and adventure. The trek takes you through picturesque landscapes, high ridges, and offers ample time for acclimatization to prevent AMS (Acute Mountain Sickness). The trek starts in Kathmandu, where you will be briefed about the trek, and then transferred to Pokhara, the starting point of the trek. From here, you will drive to Phedi, where you will begin your trek. The trek takes you through traditional Gurung and Magar villages, where you will be greeted with the warm hospitality of the locals."
+
+    - content: "As you walk through the lush rhododendron-magnolia-pines and oak tree lines, you'll be greeted by stunning views of snow-capped peaks and green rolling hills. The trail is well-maintained, and you'll come across simple guesthouses and homestays, which offer a comfortable stay.The highlight of the trek is the High Camp (3700m), from where you can climb up to Mardi Himal Base Camp in about 3-4 hours. This climb offers spectacular close-up views of the entire Annapurna Range, including the towering South Face of Mt. Machhapuchare, also known as the 'Fish Tail.' The views from the top are simply breathtaking, and the experience is sure to leave you spellbound. The Mardi Himal Trek is a truly memorable adventure that offers a perfect blend of natural beauty, cultural experience, and adventure. The trek is best done between September to November and March to May when the weather is clear, and the skies are blue."
+
+    itinerary:
+
+    - title: "DAY 1 - Arrival in Kathmandu (1400m) & Transfer to the Hotel"
+      content: "Welcome to the beautiful city of Kathmandu, the capital of Nepal! As soon as you land, our friendly and knowledgeable tour guide will greet you and escort you to your hotel. After check-in, take some time to relax and adjust to the new environment. You may also explore the lively streets of Thamel, a popular tourist hub, and try some local cuisine."
+
+    - title: "DAY 2 - Drive / Fly to Pokhara & transfer to the Hotel (820m)"
+      content: "After breakfast, we will embark on a scenic drive or a short flight to the beautiful city of Pokhara, situated at the foothills of the majestic Annapurna mountain range. Upon arrival, check into your hotel and enjoy the stunning views of the Phewa Lake. In the evening, take a leisurely walk along the lake and soak in the peaceful atmosphere."
+
+    - title: "DAY 3 - Drive to Kande and Trek to Pitam Deurali (2,100m)"
+      content: " After a hearty breakfast, we will take a scenic drive to Kande and start our trek to Pitam Deurali, a small village situated at an altitude of 2,100 meters. Along the way, you will witness the stunning landscapes of the Annapurna range and the lush green forests. We will stay overnight in a cozy teahouse in Pitam Deurali."
+
+    - title: "DAY 4 - Trek from Pitam Deurali to Forest Camp (2,500m)"
+      content: " Today, we will trek to Forest Camp, situated at an altitude of 2,500 meters. The trail takes us through dense forests and picturesque waterfalls. The stunning views of the snow-capped peaks and the fresh mountain air will leave you mesmerized. We will stay overnight in a teahouse in Forest Camp."
+
+    - title: "DAY 5 - Trek from Forest Camp to Low Camp (2,990m)"
+      content: " After breakfast, we will continue our trek to Low Camp, situated at an altitude of 2,990 meters. The trail takes us through scenic meadows and rhododendron forests. You will also witness the stunning views of the Machhapuchhre (Fishtail) mountain. We will stay overnight in a cozy teahouse in Low Camp.."
+
+    - title: "DAY 6 - Trek from Low Camp to High Camp (3,580m)"
+      content: "  Today, we will trek to High Camp, situated at an altitude of 3,580 meters. The trail takes us through the alpine forests and offers panoramic views of the Annapurna range. As we reach High Camp, you will witness the stunning views of the majestic Machhapuchhre and the surrounding snow-capped peaks. We will stay overnight in a cozy teahouse in High Camp."
+
+    - title: "DAY 7 - Trek from High Camp to Madri Himal Basecamp (4,500m) and Back to High Camp"
+      content: " Today, we will trek to the Madri Himal Basecamp, situated at an altitude of 4,500 meters. As we reach the basecamp, you will witness the stunning views of the Annapurna range, the Machhapuchhre, and the Madri Himal. We will then trek back to High Camp and stay overnight in a teahouse."
+
+    - title: "DAY 8 - Trek from High to Siding Village (1,700m) via Low Camp"
+      content: " After breakfast, we will trek down to Siding Village, situated at an altitude of 1,700 meters, via Low Camp. The trail takes us through scenic meadows and forests. Upon arrival in Siding Village, we will stay overnight in a cozy teahouse and experience the local culture."
+
+    - title: "DAY 9 - Drive from Siding to Pokhara & transfer to the Hotel"
+      content: " OToday, we'll drive from Siding Village to Pokhara. You can relax and unwind at your hotel or explore the beautiful lakeside city."
+
+    - title: "DAY 10 - Drive / Fly from Pokhara to Kathmandu & Transfer to the Hotel"
+      content: " After breakfast, we'll drive/fly back to Kathmandu. Upon arrival, we'll transfer you to your hotel, where you can relax and rejuvenate."
+
+    - title: "DAY 11 - Sightseeing around Kathmandu Valley"
+      content: " Today, we'll explore the rich cultural heritage of Kathmandu Valley. We'll visit the UNESCO World Heritage Sites of Pashupatinath Temple, Boudhanath Stupa, and Swayambhunath Stupa. We'll also explore the vibrant streets of Thamel and"
+
+    - title: "DAY 12 - Transfer to the International Airport for final departure"
+      content: "Today is the last day of our trekking journey. After breakfast, we check out of our hotel and transfer to the Tribhuvan International Airport for our flight back home or to our next destination. Our representatives will assist us with the airport formalities and bid us farewell, marking the end of our amazing Everest Base Camp Trek."
+
+
+
+
+annapurna-base-camp-trek:
+    name: "Annapurna Base Camp Trek"
+    days: "13"
+    nights: "12"
+    altitude: "4130m / 13,545ft"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Annapurna"
+    # popular: "Y"
+    price: "1,415.00"
+    photos: "assets/css/images/treks/annapurna_base_camp_min.jpg"
+
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Annapurna Base Camp Trek in Nepal offers stunning views of the Annapurna massif, dense forests, and charming villages. With moderate difficulty, it's great for all levels. Highlights include Poon Hill, Machhapuchhre Base Camp, and experiencing Gurung culture. A must-do on any Nepal itinerary."
+
+    excerpt: "The Annapurna Base Camp Trek in Nepal offers stunning views of the Annapurna massif, dense forests, and charming villages. With moderate difficulty, it's great for all levels. Highlights include Poon Hill, Machhapuchhre Base Camp, and experiencing Gurung culture. A must-do on any Nepal itinerary."
+
+    # video: "<iframe width='100%' height='400' src=' https://www.youtube.com/embed/sEIhc_ozhr8' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+ 
+    download: "//assets/docs/manaslu.pdf"
+    
+ 
+    overview:
+
+    - content: "The Annapurna Base Camp Trek is a journey that offers a truly unforgettable adventure into the heart of the Himalayas. This trek takes you through some of the most beautiful landscapes in Nepal, including lush green forests, quaint villages, and high-altitude mountains.Starting in the vibrant city of Pokhara, the trek begins with a picturesque drive to Nayapul, where the real adventure begins. As you trek through charming Gurung villages and lush forests, you'll be greeted by stunning views of the majestic Annapurna range, including Annapurna South, Annapurna I, Hiunchuli, and Machhapuchhre (Fishtail Mountain). Along the way, you'll come across natural hot springs, terraced fields, and cascading waterfalls that create a truly breathtaking experience. The highlight of the trek is reaching the Annapurna Base Camp, which sits at an altitude of 4130 meters. From here, you'll be surrounded by a panoramic view of towering mountains that seem to touch the sky. "
+
+    - content: "suitable for trekkers with a good level of fitness and prior trekking experience. The trekking route is well-maintained, and there are plenty of guesthouses and teahouses along the way, providing a comfortable stay for travelers. The best time to go on this trek is from September to November and March to May when the weather is clear, and the skies are blue, offering perfect conditions for trekking. The trek can be completed in 7-10 days, depending on the route taken and acclimatization time required."
+
+    itinerary:
+
+    - title: "DAY 1 - Arrival in Kathmandu (1400m) & Transfer to the Hotel"
+      content: "Upon your arrival at the Tribhuvan International Airport in Kathmandu, you will be met by our representative who will transfer you to your hotel in the city. After check-in, you can rest for a while and then explore the vibrant city of Kathmandu. You can visit some of the famous attractions like Swayambhunath Stupa, Pashupatinath Temple, Boudhanath Stupa, and Durbar Square. In the evening, we will have a brief orientation about the trek."
+   
+    - title: "DAY 2 - Fly / Drive from Kathmandu to Pokhara (823m): Fly 30 minutes, / Drive 5-6 hours"
+      content: "After breakfast, we will take a scenic flight or drive to Pokhara, which is known for its natural beauty and serene atmosphere. The flight from Kathmandu to Pokhara takes around 30 minutes, and you will be rewarded with spectacular views of the Himalayan range, including Annapurna and Dhaulagiri. Alternatively, you can opt for a scenic drive that takes around 5-6 hours. Upon arrival in Pokhara, we will check into our hotel and spend the rest of the day exploring the town, boating on the serene Fewa Lake, and soaking in the stunning views of the Annapurna range."
+
+    - title: "DAY 3 - Drive from pokhara to Nayapul and trek to Ghandruk (1,940m)"
+      content: " After an early breakfast, we will drive to Nayapul, which is the starting point of our trek. From Nayapul, we will trek towards Ghandruk, a beautiful village that offers spectacular views of the Annapurna range. The trek will take around 6-7 hours, and we will pass through scenic villages, dense forests, and terraced fields. We will spend the night in a teahouse in Ghandruk."
+
+    - title: "DAY 4 - Trek from Ghandruk to Chhomrong (2,170m)"
+      content: " After breakfast, we will trek to Chhomrong, which is the gateway to the upper Modi Khola valley. Along the way, we will pass through scenic villages, dense forests, and terraced fields. We will also cross the Chhomrong Khola on a suspension bridge. The trek will take around 5-6 hours, and we will spend the night in a teahouse in Chhomrong."
+
+    - title: "DAY 5 - Trek from Chhomrong to Bamboo (2310m)"
+      content: " After breakfast, we will continue our trek through a dense bamboo forest towards Bamboo, where we will spend the night. Along the way, we will have stunning views of the Annapurna range. The trek will take around 4-5 hours, and we will be staying in a teahouse in Bamboo."
+
+    - title: "DAY 6 - Trek from Bamboo to Deurali (3,230m)"
+      content: " After breakfast, we will trek to Deurali, which is a small village situated at the junction of the Modi Khola and the Annapurna Base Camp trail. Along the way, we will pass through a beautiful rhododendron forest and cross the Modi Khola several times. The trek will take around 3-4 hours, and we will spend the night in a teahouse in Deurali."
+
+    - title: "DAY 7 - Trek from Deurali to Annapurna Base Camp (4,130m) via Machhapuchhre Base Camp (3,700m)"
+      content: " After breakfast, we will trek towards Annapurna Base Camp via Machhapuchhre Base Camp. We will pass through a beautiful valley, surrounded by snow-capped mountains, and will have stunning views of Mt. Hiunchuli, Annapurna South, Annapurna I, Annapurna III, Gandharvachuli, and Machhapuchhre (Fishtail). The trek will take around 5-6 hours, and we will spend the night in a teahouse in Annapurna Base Camp.."
+
+    - title: "DAY 8 - Trek from Annapurna Base Camp to Bamboo"
+      content: " After breakfast, we will start our descent towards Bamboo, retracing our steps back through the same trail. The trek will take around 6-7 hours, and we will spend the night in a teahouse in Bamboo."
+
+    - title: "DAY 9 - Trek from Bamboo to Jhinu Danda (1,760m)"
+      content: " After breakfast, we will continue our descent towards Jhinu Danda, which is known for its natural hot springs. Along the way, we will have stunning views of the Annapurna range, and we will cross several suspension bridges. The trek will take around 5-6 hours, and we will spend the night in a teahouse in Jhinu Danda."
+
+    - title: "DAY 10 - Trek from Jhinu to Naya Pul and drive to Pokhara"
+      content: " After breakfast, we will trek towards Nayapul, which is the end point of our trek. From Nayapul, we will drive back to Pokhara, where we will check into our hotel and relax for the rest of the day. The trek will take around 6-7 hours, and we will have lunch on the way."
+
+    - title: "DAY 11 - Fly / Drive from Pokhara to Kathmandu & transfer to the Hotel"
+      content: " After breakfast, we will fly or drive back to Kathmandu, where we will check into our hotel. We will have some free time in the afternoon to explore the city, do some last-minute shopping, or just relax at the hotel."
+
+    - title: "DAY 12 - Sightseeing around Kathmandu Valley"
+      content: "After breakfast, we will go on a sightseeing tour of the Kathmandu Valley, which is known for its rich cultural heritage and ancient architecture. We will visit some of the famous attractions like Patan Durbar Square, Bhaktapur Durbar Square, and Kathmandu Durbar Square. We will also visit some famous temples like Swayambhunath, Pashupatinath, and Boudhanath."
+
+    - title: "DAY 13 - Transfer to International Airport for final departure"
+      content: "After breakfast, our representative will transfer you to the Tribhuvan International Airport for your final departure. We hope that you had an amazing trekking experience with us and will cherish the memories for a lifetime."
+
+
+
+annapurna-circuit-trek:
+    name: "Annapurna Circuit Trek"
+    days: "16"
+    nights: "15"
+    altitude: "5,416m / 17,769ft"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Annapurna"
+    popular: "Y"
+    price: "2,020.00"
+    photos: "assets/css/images/treks/annapurna_circuit_min.jpg"
+
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: " "
+
+    excerpt: " "
+
+    # video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/vYi0LrT5bWU' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+
+    overview:
+
+    - content: "The Annapurna Circuit Trek is one of the most popular and iconic treks in Nepal, renowned for its stunning natural beauty and cultural diversity. This 15 to 20-day trek takes you through the picturesque landscapes of the Annapurna region, offering breathtaking views of snow-capped peaks, crystal-clear lakes, pristine forests, and lush green valleys. The trek begins in Besisahar and takes you through the Marsyangdi River Valley, passing through lush green forests, traditional villages, and terraced fields. As you trek higher, you'll cross the Thorong La Pass, located at an altitude of 5,416 meters, which offers panoramic views of the surrounding peaks, including Annapurna and Dhaulagiri. "
+
+    - content: "One of the highlights of the trek is the diverse culture and warm hospitality of the local people. Along the way, you'll get to meet people from different ethnic groups, including Gurung, Thakali, and Manangi, and experience their unique customs and traditions. You'll also get to explore the ancient monasteries, chortens, and temples that dot the landscape, providing a glimpse into the rich cultural heritage of the region. The Annapurna Circuit Trek is a moderate to strenuous trek that requires a good level of fitness and prior trekking experience. The best time to go on this trek is from March to May and from September to November when the weather is clear and the skies are blue."
+
+
+    itinerary:
+    - title: "DAY 1 - Arrival in Kathmandu (1400m) & Transfer to the Hotel"
+      content: "arrival at Tribhuvan International Airport, our representative will welcome you and transfer you to your hotel. After some rest, you can explore the vibrant streets of Thamel, the tourist hub of Kathmandu. In the evening, enjoy a traditional Nepalese dinner with a cultural show."
+
+    - title: "DAY 2 - Drive from Kathmandu to Bulbule via Besishahar (760m)"
+      content: "After breakfast, drive to Bulbule, a small town situated on the banks of the Marshyangdi River. En route, you'll pass through the town of Besishahar and get a glimpse of rural Nepal. Upon arrival, explore the village and stay overnight in a teahouse.  "
+   
+    - title: "DAY 3 - Trek from Bulbule to Tal (1,700m)"
+      content: " Today, you'll start your trek to Tal, a small village situated at the base of a large waterfall. You'll cross suspension bridges, walk through dense forests, and enjoy panoramic views of the surrounding mountains. Overnight stay in a teahouse.."
+
+    - title: "DAY 4 - Trek from Tal to Chame (2,630m)"
+      content: " After breakfast, you will continue your trekking journey to Chame, the district headquarters of the Manang district. You will pass through the villages of Dharapani, Bagarchhap, and Danakyu before reaching Chame. The trail offers breathtaking views of the Annapurna and Lamjung Himal ranges."
+
+    - title: "DAY 5 - Trek from Chame to Pisang (3,300m)"
+      content: " Today, you will trek towards Pisang, a small village located in the Manang district. The trail takes you through dense forests and picturesque villages, where you can experience the unique culture and lifestyle of the locals."
+
+    - title: "DAY 6 - Trek from Pisang to Manang (3,500m)"
+      content: "After breakfast, you will continue your trekking journey towards Manang, one of the highest villages in the Manang district. The trail offers stunning views of the Annapurna range and the Chulu peak. You will also pass through the beautiful village of Braga, famous for its ancient Buddhist monastery."
+   
+    - title: "DAY 7 - Acclimatization at Manang (Rest Day)"
+      content: " Today, you will take a day off from trekking to acclimatize to the high altitude. You can explore the beautiful village of Manang, visit the local monastery, or go on short hikes to nearby hills."
+
+    - title: "DAY 8 - Trek from Manang to Tilicho Base Camp (4,140m)"
+      content: " After breakfast, you will start your trek towards Tilicho Base Camp, located at an altitude of 4,140m. The trail takes you through the beautiful village of Khangsar, where you can see the ruins of an old fort. From Khangsar, you will follow the trail that leads to the Tilicho lake."
+
+    - title: "DAY 9 - Trek from Tilicho Base Camp - Tilicho Lake (4,919m) to Shree Kharka (4,060m)"
+      content: " Today, you will wake up early in the morning and start your trek towards the Tilicho Lake, one of the highest lakes in the world. The trail offers breathtaking views of the Annapurna and Dhaulagiri ranges. After spending some time at the lake, you will trek down to Shree Kharka for an overnight stay.."
+
+    - title: "DAY 10 - Trek from Shree Kharka to Thorong Phedi (4,600m)"
+      content: "After breakfast, you will start your trek towards Thorong Phedi, the last stop before crossing the Thorong La Pass. The trail is steep and challenging, and you will need to be cautious and take your time to avoid altitude sickness. The views of the surrounding peaks are stunning, and you will pass through several small settlements along the way."
+
+    - title: "DAY 11 - Trek from Thorong Phedi to Muktinath (3,800m) via Thorong La Pass (5,416m)"
+      content: " Today is one of the most challenging and rewarding days of the trek, as you will cross the Thorong La Pass, the highest point of the trek at 5,416m. You will start early in the morning to avoid the strong winds that often pick up in the afternoon. The climb is steep and challenging, but the panoramic views of the Himalayan ranges from the top are breathtaking. After crossing the pass, you will trek down to Muktinath, a sacred pilgrimage site for both Hindus and Buddhists."
+
+    - title: "DAY 12 - Trek from Muktinath to Jomson (2,720m)."
+      content: "After breakfast, you will trek towards Jomsom, a beautiful village located on the banks of the Kali Gandaki river. The trail takes you through several small villages, and you will have the opportunity to see the unique culture and lifestyle of the Thakali people."
+
+    - title: "DAY 13 - Drive from Jomsom to Pokhara via Beni"
+      content: "Today, you will take a jeep ride from Jomsom to Beni and then to Pokhara, a beautiful lakeside city known for its stunning views of the Annapurna range. You can spend the rest of the day relaxing by the lake, exploring the city, or shopping for souvenirs."
+
+    - title: "DAY 14 - Fly / Drive from Pokhara to Kathmandu"
+      content: " After breakfast, you will either take a flight or drive back to Kathmandu, depending on your preference. The flight takes around 25 minutes, while the drive takes around 6-7 hours. Once you arrive in Kathmandu, you can spend the rest of the day relaxing at your hotel or exploring the city."
+
+    - title: "DAY 15 - Sightseeing around Kathmandu Valley"
+      content: "Today, you will explore the cultural and historical sites of the Kathmandu Valley. You will visit the famous UNESCO World Heritage Sites such as Pashupatinath, Boudhanath, Swayambhunath, and Kathmandu Durbar Square, where you can experience the rich culture and heritage of Nepal."
+
+    - title: "DAY 16 - Transfer to International Airport for final departure"
+      content: "Today is the last day of your trek, and you will be transferred to the Tribhuvan International Airport for your final departure. As you leave Nepal, you will take with you memories that will last a lifetime, and a deep appreciation for the natural beauty and cultural richness of this amazing country."
+
+
+
+annapurna-base-camp-north-trek:
+    name: "Annapurna Base Camp Trek North"
+    days: "14"
+    nights: "13"
+    altitude: "4,190m"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Annapurna"
+    # popular: "Y"
+    price: "8500"
+    photos: "assets/css/images/treks/dhaulagiri_circuit_min.jpg"
+
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: ""
+
+    excerpt: ""
+
+    # video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/vYi0LrT5bWU' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+
+    
+    overview:
+
+    - content: "Nestled in the heart of the Annapurna region lies a trek that is as diverse in its scenery as it is in its cultural experiences. The Annapurna Base Camp Trek from North is a journey that takes you through charming villages, lush forests, and towering mountains that have captivated adventurers for generations.The Annapurna region is located in central Nepal and is the largest conservation area in the country, spanning over 7,639 sq km. It is a protected area and home to several ethnic groups such as Gurungs, Magars, Thakalis, and Manangis, each with their own distinct culture and traditions. The region's cultural significance is as rich as its natural beauty, making it a unique and memorable destination for any traveler."
+
+    - content: "As you trek higher, you'll be welcomed with breathtaking views of the snow-capped peaks, including Annapurna III, Gangapurna, and Machhapuchhre, known as Fishtail Mountain. You'll also have the opportunity to explore the Annapurna Sanctuary, a natural amphitheater surrounded by towering peaks that is one of the world's most spectacular trekking destinations.The trek is moderate in difficulty and can be accomplished by trekkers with a good level of fitness. The route is 12-13 days long, depending on your walking speed, and takes you through picturesque villages such as Tal, Dharapani, and Chame. You'll need to be prepared for long days of hiking, with some steep uphill and downhill sections, but the experience is worth it."
+
+    itinerary:
+
+    - title: "DAY 1 - Arrival in Kathmandu (1400m) & Transfer to the Hotel"
+      content: "Namaste! Welcome to Kathmandu, the vibrant capital city of Nepal. Our representative will receive you at the airport and escort you to your hotel. Take some rest to recover from jetlag and enjoy the local cuisine in the evening."
+
+    - title: "DAY 2 - Sightseeing around Kathmandu Valley"
+      content: "After breakfast, we will embark on a full-day tour of Kathmandu valley. Visit the UNESCO World Heritage Sites, including Swayambhunath, Pashupatinath, Boudhanath, and Kathmandu Durbar Square. Immerse yourself in the rich history, culture, and spirituality of the valley. "
+
+    - title: "DAY 3 - Fly from Kathmandu to Pokhara & transfer to the Hotel"
+      content: " Early morning, take a scenic flight to Pokhara, the gateway to Annapurna region. Upon arrival, check-in at the hotel and relax. In the evening, stroll around the tranquil Fewa Lake and enjoy the breathtaking views of Machhapuchhre and Annapurna range."
+
+    - title: "DAY 4 - Drive from Pokhara to Tatopani (1,190m)"
+      content: " Today, we will drive to Tatopani, a hot spring town located on the banks of the Kali Gandaki River. Enjoy the stunning views of Dhaulagiri and Annapurna ranges along the way. Relax in the natural hot springs in the evening and rejuvenate your body and mind."
+
+    - title: "DAY 5 - Trek from Tatopani to Ghopte Odaar (3,110m)"
+      content: " Our trek begins today! We will follow the Kali Gandaki River upstream, crossing suspension bridges and passing through picturesque villages like Ghara and Sikha. Enjoy the stunning views of Nilgiri and Annapurna ranges from Ghopte Odar."
+
+    - title: "DAY 6 - Trek from Ghopte Odaar to Phulbari (3,560m): crossing Hum Khola"
+      content: " After breakfast, we will trek through dense rhododendron forests and cross the Hum Khola. Enjoy the panoramic views of the snow-capped peaks, including Annapurna South and Hiunchuli. Reach Phulbari and stay overnight."
+
+    - title: "DAY 7 - Trek from Phulbari to Annapurna I Basecamp (4,190m)"
+      content: " Today, we will trek to the Annapurna I Basecamp, the highlight of our trip. Enjoy the stunning views of Annapurna massif, including Annapurna I, Annapurna South, Gangapurna, and Hiunchuli. The feeling of standing at the foot of the majestic Annapurna I is unparalleled."
+
+    - title: "DAY 8 - Rest Day in Annapurna Basecamp (Acclimatization day)"
+      content: "Take a rest day to acclimatize and explore the Annapurna Basecamp. Enjoy the sunrise over the Annapurna range and take a short hike to the nearby glaciers. Interact with fellow trekkers and locals and learn about their culture and way of life."
+
+    - title: "DAY 9 - Trek from Basecamp to Ghopte Odaar)"
+      content: " Today, we will retrace our steps and trek back to Ghopte Odar. Enjoy the stunning views of the Annapurna range and the Kali Gandaki River valley along the way."
+
+    - title: "DAY 10 - Trek from Ghopte Odaar to Tatopani"
+      content: " We will trek downhill through the lush forests and cross the suspension bridges to reach Tatopani. Enjoy the natural hot springs and relax in the evening."
+
+    - title: "DAY 11 - Drive from Tatopani to Pokhara"
+      content: " After breakfast, we will drive back to Pokhara. Relax in the afternoon and explore the lakeside bazaar. You can also try paragliding or zip-lining to add some adventure to your trip.."
+
+    - title: "DAY 12 - Sightseeing in Pokhara ."
+      content: "Today, we will explore Pokhara city, known as the 'city of lakes'. We will visit the Bindabasini Temple, Seti Gorge, Davis Falls, and the World Peace Pagoda. Take a boat ride on the serene Fewa Lake and enjoy the spectacular views of the Annapurna range."
+
+    - title: "DAY 13 - Fly from Pokhara to Kathmandu & transfer to the hotel"
+      content: "After breakfast, take a short flight back to Kathmandu. Upon arrival, check-in at the hotel and relax. You can visit the Thamel area, known for its vibrant nightlife and shopping."
+
+    - title: "DAY 14 - Transfer to the International Airport for final departure"
+      content: " Your memorable trip to the Annapurna region comes to an end today. Our representative will transfer you to the airport for your final departure. Fly back home with unforgettable memories of the majestic Annapurna range, the warm hospitality of Nepalese people, and the spiritual aura of Kathmandu valleys."
+
+
+
+# PanchPokhari Trek
+
+panch-pokhari-trek:
+    name: "Panch Pokhari Trek"
+    days: "5"
+    nights: "4"
+    altitude: "4,190m"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Sindhupalchowk"
+    popular: "Y"
+    price: "500"
+    photos: "assets/css/images/treks/panch_min.jpg"
+
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: ""
+
+    excerpt: ""
+
+    video: "<iframe width='100%' height='400'  class='vid' src='https://www.youtube.com/embed/ib5x2VcuDAk' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+  
+    overview:
+
+    - content: "The Panch Pokhari Trek is an exciting, off-the-beaten-path journey located in the Sindhupalchowk district of Nepal, which takes adventurers through beautiful rhododendron forests, traditional Tamang and Sherpa villages, and scenic terraced fields. The trek is named after the group of five holy lakes, known as Panch Pokhari, located at an altitude of 4,100 meters. This site is one of the less explored trekking destinations in Nepal, and it offers a rare cultural experience alongside breathtaking mountain views."
+    
+    - content: " "
+
+    itinerary:
+
+    - title: "DAY 1 - Drive to Bhotang Village (1800 meters)"
+      content: "You will begin your journey from Kathmandu early in the morning after breakfast. The drive to Bhotang Village will take approximately 6-8 hours, depending on road conditions and traffic. Along the way, you will be treated to stunning views of green terrains, beautiful mountains, and local settlements. <br /> <br /> Upon arriving in Bhotang Village, take some time to explore the surroundings and get acquainted with the local culture and lifestyle. You will be staying overnight at a local guest house, where you can enjoy a traditional Nepalese dinner."
+  
+    - title: "DAY 2 - Trek to Nasimpati"
+      content: " After breakfast, start your trek towards Nasimpati. The trek will take you through lush greenery, terraced fields, and picturesque landscapes. Enjoy the natural beauty of the region as you make your way to Nasimpati. <br /> You will have a lunch break at a scenic spot along the way. Afterward, continue your trek, relishing the stunning views of the mountains and the peaceful ambiance of the trail. <br /> In the evening, you will arrive at Nasimpati, where you will spend the night in tents under the starry sky."
+
+    - title: "DAY 3 - Trek to Panch Pokhari Lakes (4100 meters)"
+      content: " After breakfast, set out on a slightly challenging trek to Panch Pokhari. The trail will involve some elevation gain, but the reward will be the breathtaking views of the five sacred lakes at Panch Pokhari. Take your time to enjoy the serene beauty of the azure blue lakes and the majestic Himalayan range in the background. This area holds significant religious and cultural importance for the locals. <br /> You will spend the night camping near the lakes, surrounded by nature's tranquility."
+
+    - title: "DAY 4 - Trek down to Bhotang village"
+      content: "In the morning, wake up to a mesmerizing sunrise over the lakes. After breakfast, begin your descent back to Bhotang Village. The trek downhill will be less demanding, allowing you to soak in the scenic beauty along the way. Take breaks as needed and enjoy the peaceful environment of the mountains. "
+   
+    - title: "DAY 5 - Drive to Kathmandu"
+      content: "Start your day with a hearty breakfast before embarking on your return journey to Kathmandu. As you drive through the scenic countryside, make sure to capture the last glimpses of the tranquil landscapes that have been your home for the past few days. "
+

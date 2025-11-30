@@ -1,0 +1,213 @@
+---
+layout: 'default'
+slick_css: 'Yes'
+slick_js: 'Yes'
+author_name : " THE ALPINE EXPEDITIONS "
+tags : "CampingInKulluManali,HimachalPradesh"
+---
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "TouristInformationCenter",
+	  "name": "The Alpine Expeditions",
+	  "image": "{{ site.url }}/assets/images/{{ page.custom_bg | default: site.img }}",
+	  "url": "{{ site.url }}{{ page.url }}",
+	  "telephone": "+977-9863683851",
+	  "priceRange": "$1000 - $10000",
+	  "address": {
+		"@type": "PostalAddress",
+		"streetAddress": "Makalbari",
+		"addressLocality": "Kathmandu",
+		"postalCode": "44600",
+		"addressCountry": "NP"
+	  },
+	  "geo": {
+		"@type": "GeoCoordinates",
+		"latitude": 27.7172, 
+		"longitude": 85.3240  
+	  },
+	  "hasMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13525.534262300927!2d85.3240!3d27.7172!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c9c798dbeb6e498!2sTHE%20ALPINE%20EXPEDITIONS!5e0!3m2!1sen!2snp!4v1579107517725!5m2!1sen!2snp",
+	  "sameAs": [
+		"{{ site.url }}/activities/paragliding/",
+		"https://www.facebook.com/thealpineexpeditions/",
+		"https://twitter.com/thealpineexpeditions",
+		"https://www.instagram.com/thealpineexpeditions/",
+		"https://www.linkedin.com/in/thealpineexpeditions/",
+		"https://www.pinterest.com/thealpineexpeditions/",
+		"{{ site.url }}/"
+	  ]
+	}
+	</script>
+
+
+<style> body{ height: 100% !important; }</style>
+
+
+<div class="container-wide row--padding-wide">
+{% if page.custom_bg %}
+    {% for img in page.custom_bg %}
+        {% assign path = 'assets/css/images/' | append: img | relative_url%}
+        <div class="banner__trek parallax" style="background-image:url('{{ path }}');">
+    {% endfor %}
+{% else %}
+    {% assign path = 'assets/css/images/welcome.jpeg' | relative_url%}
+        <div class="banner__trek parallax" style="background-image: url('{{ path }}')">
+{% endif %}
+			<span class="banner__overlay"></span>
+			<div class="banner__trek-overview">
+				<p class="trek-name" style="font-family:'Bowlby one sc',sans-serif !important;">{{ page.title }}</p>
+				<p class="trek-time">
+					{% if page.days %}
+					<span class="trek-time--part1">
+						<span class="trek-span"><span class="counter">{{ page.days }}</span><span>&nbsp;Days</span></span>
+					</span>
+					<span class="trek-time--part2">
+						<span class="trek-span"><span class="counter">{{ page.nights }}</span><span>&nbsp;Nights</span></span>
+<!--						<span><span class="counter">{{ page.days }}</span><span>&nbsp;Days</span></span>-->
+<!--						<span class="counter">{{ page.nights }}</span><span>&nbsp;Nights</span>-->
+					</span><br />
+					{% endif %}
+<!--					<span class="trek-price"><span style="font-size: 90%;">From</span> INR 7,000</span>-->
+					<span class="trek-slide--price trek-price"><span style="font-size: 60%;">From</span> <i class="fa fa-rupee-sign"></i> {{ page.price }}/-</span>
+				</p>
+
+			</div>
+
+			<!-- <div class="banner__trek-book">
+				<p class="trek-book">
+					<span class="trek-book--btn">
+						<a href="javascript:void(0);" style="display: block; margin-top: 3em;">
+							<button class="trippy_btn more-trippy_btn" type="submit" name="sendMsg">
+								<span class="trippy_btn-left"></span>Book Now<span class="trippy_btn-right"></span>
+							</button>
+						</a>
+					</span>
+				</p>
+			</div> -->
+
+			<span class="banner__skip">
+					<a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
+			</span>
+		</div>
+
+<!-- Camping related content here -->
+<div class="two-col-layout" id="twoCol">
+	<div class="row row--padding-medium content container--white content__left" id="content">
+	<span style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('{{ 'assets/css/images/static.gif' | absolute_url }}') repeat center; opacity: .05; z-index: -1;"></span>
+
+		<div style="max-width: 50em; margin: auto;">
+			<!-- OVERVIEW -->
+			<!-- <div class="row container-wide" style="padding-bottom: 3em;">
+			</div> -->
+
+			<div class="material">
+
+				{{ content }}
+
+				<!--GALLERY-->
+        <!--
+				<div class="row row--padding-medium">
+					<p class="content__sub-title">CAMPING GALLERY&nbsp;<i class="fas fa-camera"></i></p>
+					<section class="img-gallery-magnific">
+
+					{% for i in (1..5) %}
+						{% assign subPath = page.title | remove: "Trek" | slugify | append: "/" %}
+						{% assign path = 'assets/css/images/camping/' | append: subPath | relative_url %}
+						<div class="magnific-img">
+							<a class="image-popup-vertical-fit" href="{{ path }}{{i}}.jpg" title="{{ page.title }}">
+								<img src="{{ path }}{{i}}.jpg" alt="{{ page.title }}" />
+							</a>
+						</div>
+					{% endfor %}
+
+					</section>
+					<div class="clear"></div>
+				</div>
+				<br /><br />
+        -->
+
+
+			<!-- What We Don't Provide -->
+			<!-- <div class="trek--section list-light" style="text-align: left;">
+				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-times"></i>&nbsp;What's Not Included</h2>
+                <p class="content__list-item"><i class="fas fa-times-circle"></i>&nbsp;&nbsp;All The Things That Are NOT Mentioned above as "Inclusions"<br /></p>
+
+                <p class="content__list-item"><i class="fas fa-times-circle"></i>&nbsp;&nbsp;Personal Expenses <br /></p>
+                <p class="content__list-item"><i class="fas fa-times-circle"></i>&nbsp;&nbsp;Travel Insurance <br /></p>
+			</div> -->
+
+            <!-- Things To Pack -->
+            <!-- <div class="trek--section list-light" style="text-align: left;">
+                <h2 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-suitcase"></i>&nbsp;Things To Pack</h2>
+
+                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span style="font-weight: bold;"> </span>Flip-Flops<br /></p>
+                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span style="font-weight: bold;"> </span> Extra set of clothes<br /></p>
+                <p class="content__list-item" style="text-indent: 2em; padding-top: 1em;">
+
+                </p>
+            </div> -->
+
+				<!-- Mandatory Documents -->
+				<!-- <div class="trek--section" style="text-align: left;">
+					<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="far fa-file-alt"></i>&nbsp;Mandatory Documents</h2>
+              <p class="content__list-item"><i class="far fa-list-alt"></i>&nbsp;&nbsp;Identification document<br /></p>
+              <p class="content__list-item"><i class="far fa-list-alt"></i>&nbsp;&nbsp;Booking Receipt, if Booked Online (PDF will work)<br /></p>
+
+					<p class="content__list-item" style="text-indent: 2em; padding-top: 1em;"></p>
+				</div> -->
+
+        <!-- Cancellation Policy -->
+        <!-- <div class="trek--section" style="text-align: left;">
+            <h2 class="content__sub-title" style="padding-bottom: 0;"><i class="far fa-file-alt"></i>&nbsp;Cancellation Policy</h2>
+            <p class="content__list-item"><i class="far fa-list-alt"></i>&nbsp;&nbsp;More than 30-days prior to departure - 50% refund.<br /></p>
+            <p class="content__list-item"><i class="far fa-list-alt"></i>&nbsp;&nbsp;In Between 15-30-days prior to departure - 25% refund.<br /></p>
+            <p class="content__list-item"><i class="far fa-list-alt"></i>&nbsp;&nbsp;Less than 15-days prior to departure - No Refund.<br /></p>
+
+            <p class="content__list-item" style="text-indent: 2em; padding-top: 1em;"></p>
+        </div> -->
+			</div>
+
+			<!-- Note -->
+			<!-- <div class="row row--padding-medium" style="margin: 1em 0; border: 1px solid #cacaca; border-left: 0; border-right: 0;">
+				<p class="content__pg" style="clear: both; padding-bottom: 0em; background: red;"><strong style="font-weight: bold; color: #fff;padding-left: 1.5em;">NOTE <i class="fas fa-bullhorn"></i> </strong></p><br />
+				<ul class="content__list">
+          <li class="content__list-item">
+            Please be attentive to your guides and listen carefully to what is being instructed.
+          </li>
+					<li class="content__list-item">
+						Please be sure of the risks included in the adventure
+					</li>
+					<li class="content__list-item">
+						Bring your medications, if you are on one.
+					</li>
+          <li class="content__list-item">
+						Consumption of alcohol or any other intoxicant is not allowed
+					</li>
+                    <div class="columns download">
+
+                   </div>
+				</ul>
+			</div> -->
+    	</div>
+	</div>
+
+	<!--SideBar-->
+	<div class="content__right" id="scroll-to">
+		<div class="floater">
+				<span class="priceTag">FROM Rs.<!--<i class="fa fa-rupee-sign"></i>-->{{ page.price }}</span>
+				<!-- <button class="book_btn" onclick="imPop();" type="submit" style="width: 100%;  font-size: 1.5em; box-shadow: 0 0 13px #2f2f2f; border-radius: 360px;">BOOK NOW</button> -->
+				<!-- <br /><br /> -->
+				<button class="book_btn enquiry" onclick="javascript:alert('Contact Form NOT Found!');" type="submit" style="width: 100%;  font-size: 1.5em; border-radius: 360px;">SEND AN ENQUIRY</button>
+				<br /><br />
+		</div>
+	</div>
+</div>
+
+<!-- 
+<script src="https://js.instamojo.com/v1/checkout.js"></script>
+
+<script>
+function imPop(){
+    Instamojo.open('{{ page.bookLink}}');
+}
+</script> -->

@@ -1,0 +1,105 @@
+---
+layout: 'default'
+author_name : " THE TRIPPY FROG "
+tags : "EscapePackages,HimachalPradesh"
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "The Alpine Expeditions",
+  "image": "{{ site.url }}/assets/css/images/{{ page.custom_bg | default: site.img }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "telephone": "+977-9863683851",
+  "priceRange": "$1000 - $10000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Makalbari",
+    "addressLocality": "KATHMANDU",
+    "postalCode": "44600",
+    "addressCountry": "NEPAL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 32.039375,
+    "longitude": 77.1324272
+},
+"hasMap": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13525.534262300927!2d77.1349239!3d32.0588729!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c9c798dbeb6e498!2sTHE%20TRIPPY%20FROG!5e0!3m2!1sen!2sin!4v1579107517725!5m2!1sen!2sin\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\"></iframe>",
+"sameAs": [
+    "https://thetrippyfrog.com/activities/trekking/",
+    "https://www.facebook.com/thetrippyfrog/",
+    "https://twitter.com/thetrippyfrog",
+    "https://www.instagram.com/thetrippyfrog/",
+    "https://www.linkedin.com/in/thetrippyfrog/",
+    "https://in.pinterest.com/thetrippyfrog/",
+    "https://thetrippyfrog.com/"
+  ]
+}
+</script>
+
+
+{% if page.custom_bg %}
+    {% for img in page.custom_bg %}
+        {% assign path = 'assets/css/images/' | append: img | relative_url%}
+        <div class="banner__trek parallax" style="background-image:url('{{ path }}');">
+    {% endfor %}
+{% else %}
+    {% assign path = 'assets/css/images/welcome.jpeg' | relative_url%}
+        <div class="banner__trek parallax" style="background-image: url('{{ path }}')">
+{% endif %}
+			<span class="banner__overlay"></span>
+			<div class="banner__trek-overview">
+				<p class="trek-name">{{ page.subtitle0 }}</p>
+				<p class="trek-time">
+					{% if page.days %}
+					<span class="trek-time--part1">
+						<span class="trek-span"><span class="counter">{{ page.days }}</span><span>&nbsp;Days</span></span>
+					</span>
+					<span class="trek-time--part2">
+						<span class="trek-span"><span class="counter">{{ page.nights }}</span><span>&nbsp;Nights</span></span>
+					</span><br />
+					{% endif %}
+					<span class="trek-slide--price trek-price"><span style="font-size: 60%;">From</span> <i class="fa fa-rupee-sign"></i> {{ page.price }}/-</span>
+				</p>
+
+			</div>
+
+			<!-- <div class="banner__trek-book">
+				<p class="trek-book">
+					<span class="trek-book--btn">
+						<a href="javascript:void(0);" style="display: block; margin-top: 3em;">
+							<button class="trippy_btn more-trippy_btn" type="submit" name="sendMsg">
+								<span class="trippy_btn-left"></span>Book Now<span class="trippy_btn-right"></span>
+							</button>
+						</a>
+					</span>
+				</p>
+			</div> -->
+
+			<span class="banner__skip">
+					<a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
+			</span>
+		</div>
+
+<!--	CONTENT		-->
+
+	<!-- <div class="row row--padding-medium" style="background: #000; color: #fff; padding-top: 4em;" id="content"> -->
+<div class="row row--padding-medium" style="background: #e8e0e0; color: #333; padding-top: 4em;" id="content">
+		<div class="row container-wide">
+			<div class="trek-slide--meta" style="text-align: center;">
+			{% for item in page.activity %}
+				<div class="">
+					<span>{{ item.name }}</span>
+					<span class="meta-type"><i class="{{ item.icon }}"></i></span>
+				</div>
+			{% endfor %}
+			</div>
+		</div>
+
+	</div>
+
+	<div style="position: relative;" class="row row--padding-medium content container--white">
+	<span style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('{{ 'assets/css/images/static.gif' | absolute_url }}') repeat center; opacity: .05; z-index: -1;"></span>
+		{{ content }}
+	</div>

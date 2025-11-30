@@ -1,0 +1,66 @@
+---
+layout: default
+title: Lakpa Tenjen Sherpa - Climbing Guide
+description: Detailed profile of John Doe, our experienced Climbing Guide.
+permalink: /team/:slug/
+excerpt: "Your custom excerpt here..."
+
+---
+
+<div class="member-banner">
+  {% for member in site.data.team %}
+    {% if member.slug == page.slug %}
+      <!-- Background Image -->
+      <div class="banner-background" style="background-image: url('{{ site.baseurl }}/{{ member.photos }}')"></div>
+
+      <!-- Profile Picture and Name -->
+      <div class="member-profile">
+        <img src="{{ site.baseurl }}/{{ member.photos }}" alt="{{ member.name }}" class="profile-image">
+        <h2 class="member-title">{{ member.name }}</h2>
+        <p>{{ member.role }}</p>
+      </div>
+
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+
+<div class="row row--padding-medium container-wide ">
+   
+  <div class="member-details">
+      <!-- <h1>{{ page.title }}</h1> -->
+      {% for member in site.data.team %}
+        {% if member.slug == page.slug %}
+          
+          <p class="content__pg-black">{{ member.description }}</p>
+        
+          <h2>Mountains Summitted by: {{member.name}}</h2>
+        
+          <table class="mountains-table">
+          <thead>
+            <tr>
+              <th>S.N.</th>
+              <th>Name of Mountain</th>
+              <th>Total Summited</th>
+              <th>Summitted Year(s)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for mountain in member.mountains %}
+            <tr>
+              <td>{{ forloop.index }}</td>
+              <td>{{ mountain.name }}</td>
+              <td>{{ mountain.summited }} times</td>
+              <td>{{ mountain.years | join: ', ' }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+</div>
+
+

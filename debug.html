@@ -1,0 +1,11 @@
+---
+layout: null
+---
+
+<!-- DEBUG START -->
+Trek: {% assign trek = site.data['trek-data'] | values %}{{ trek.size }}<br>
+Peak: {% assign peak = site.data['peak-data'] | values %}{{ peak.size }}<br>
+Bike: {% assign bike = site.data['bike-data'] | values %}{{ bike.size }}<br>
+Rock: {% assign rock = site.data['rock-data'] | values %}{{ rock.size }}<br>
+Rafting: {% assign rafting = site.data['rafting-data'] | values %}{{ rafting.size }}<br>
+<!-- DEBUG END -->

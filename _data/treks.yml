@@ -1,0 +1,9 @@
+manaslu-base-camp-trek:
+  name: "Manaslu Base Camp Trek"
+  location: "Nepal"
+  difficulty: "Moderate"
+
+manaslu-circuit-trek:
+  name: "Manaslu Circuit Trek"
+  location: "Nepal"
+  difficulty: "Challenging"

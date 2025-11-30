@@ -1,0 +1,548 @@
+lobuche-peak:
+  name: "Lobuche Peak Climbing"
+  days: "18"
+  nights: "17"
+  startPoint: "Lukla"
+  endPoint: "Kathmandu"
+  distance: "Varies"
+  difficulty: "Extreme"
+  altitude: "6,119m / 20,075ft"
+  skill: "Professional"
+  grade: "Challenging"
+  walking: "5-7 hours"
+  accommodation: "Hotel + Lodge"
+  groupSize: "2-15 pax"
+  season: "Sep-Dec | Mar-May"
+  region: "Khumbu"
+  photos: "assets/css/images/peak-climbing/lobuche-peak/banner.jpg"
+  popular: "Y"
+  price: "3,150.00"
+  bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+  description: "Lobuche East Peak (6,119m) is a bit more challenging than other trekking peaks, located in the Khumbu region of Nepal. This peak requires professional mountaineering skills. Climbers will navigate steep rocky terraces and snow slopes just below the main glaciers on the southwest face of Lobuche East. The route follows a sharp snow ridge to the summit ridge, then continues northwest towards the main summit, passing several small snow bumps and reaching a notch. The final ascent involves climbing steep and quite difficult snow slopes to the summit. The view from the summit is superb, with many mountains of the Rongbuk side of Tibet visible as well."
+  excerpt: "Lobuche East Peak (6,119m) is a challenging climb in the Khumbu region of Nepal, requiring professional mountaineering skills. The ascent involves steep rocky terraces, snow slopes, and a sharp snow ridge leading to a stunning summit view of surrounding peaks and the Rongbuk side of Tibet."
+  video: "<iframe width='100%' class='vid' height='400' src='https://www.youtube.com/embed/AveNKYI7p3I?si=Jd-FEVrs8AujeXpC' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+  download: "//assets/docs/lobuche-peak.pdf"
+  image: "<img class='map1'>"
+  highlights:
+    - content: "Navigating steep rocky terraces and snow slopes"
+    - content: "Following a sharp snow ridge to the summit ridge"
+    - content: "Climbing steep and challenging snow slopes to the summit"
+    - content: "Stunning views of surrounding peaks and the Rongbuk side of Tibet"
+    - content: "Expert guides ensuring your safety and comfort throughout the trek"
+    - content: "Experiencing the local culture and cuisine of Nepal"
+  overview:
+    - content: "Lobuche East Peak, standing at an altitude of 6,119 meters (20,075 feet), is a more challenging trekking peak located in the Khumbu region of Nepal. It requires professional mountaineering skills and offers climbers an exhilarating and demanding adventure."
+    - content: "The climb involves navigating steep rocky terraces and snow slopes, following a sharp snow ridge to the summit ridge, and ascending steep and quite difficult snow slopes to the summit."
+    - content: "The view from the summit is superb, offering a breathtaking panorama of surrounding peaks and the Rongbuk side of Tibet."
+  itinerary:
+    - title: "Day 1 - Pick up at the airport and transfer to Hotel"
+      content: "Arrive at Tribhuvan International Airport, where you will be greeted by our team. Transfer to your hotel in Kathmandu, where you can relax and prepare for the adventure ahead. Enjoy a welcome dinner and trek briefing in the evening."
+    - title: "Day 2 - Guided tour around Kathmandu valley. Prepare for the trek"
+      content: "Take a guided tour of Kathmandu Valley, visiting key cultural sites such as Swayambhunath (Monkey Temple), Boudhanath Stupa, and Pashupatinath Temple. Spend the rest of the day preparing your gear and finalizing details for the trek."
+    - title: "Day 3 - Fly to Lukla (2,800m) and trek to Phakding (2,652m)"
+      content: "Fly from Kathmandu to Lukla, where you'll start your trek. After landing, begin your trek to Phakding. Enjoy the beautiful landscapes and the peaceful atmosphere of this Sherpa village. Overnight in Phakding."
+    - title: "Day 4 - Trek to Namche Bazaar (3,440m)"
+      content: "Trek from Phakding to Namche Bazaar, the gateway to the Khumbu region. The trail ascends through lush forests and crosses several suspension bridges over the Dudh Koshi River. Arrive in Namche Bazaar and enjoy the vibrant local market. Overnight in Namche Bazaar."
+    - title: "Day 5 - Acclimatization day at Namche Bazaar"
+      content: "Spend a day acclimatizing in Namche Bazaar. Explore the town, visit the Everest View Hotel for panoramic views of Everest and other peaks, and take short hikes to aid in acclimatization. Overnight in Namche Bazaar."
+    - title: "Day 6 - Trek to Tengboche (3,870m)"
+      content: "Trek from Namche Bazaar to Tengboche, passing through beautiful rhododendron forests. Visit the Tengboche Monastery, one of the most important in the Khumbu region, and enjoy stunning views of Everest, Lhotse, and Ama Dablam. Overnight in Tengboche."
+    - title: "Day 7 - Trek to Pheriche (4,200m)"
+      content: "Continue your trek to Pheriche, a small village in the valley. The trail offers great views of the surrounding mountains and includes a gradual ascent. Overnight in Pheriche."
+    - title: "Day 8 - Trek to Lobuche (4,930m)"
+      content: "Trek from Pheriche to Lobuche, passing through the Thukla Pass with memorials dedicated to climbers who lost their lives on Everest. Enjoy impressive views of the surrounding peaks. Overnight in Lobuche."
+    - title: "Day 9 - Trek to Gorakshep (5,170m), hike to Everest Base Camp (5,364m) in the afternoon and back to Gorakshep"
+      content: "Trek to Gorakshep, the last stop before Everest Base Camp. After lunch, hike to Everest Base Camp for a glimpse of the base of the world’s highest peak. Return to Gorakshep for overnight stay."
+    - title: "Day 10 - Ascend to Kalapathar (5,545m) and trek to Lobuche East Base Camp (4,950m)"
+      content: "Early morning hike to Kalapathar for spectacular sunrise views of Everest and the surrounding peaks. Return to Gorakshep for breakfast, then trek to Lobuche East Base Camp. Overnight in Base Camp."
+    - title: "Day 11 - Trek to Lobuche East High Camp (5,400m)"
+      content: "Ascend from Base Camp to Lobuche East High Camp. The trek involves climbing steep sections and setting up camp at a higher altitude for the upcoming summit attempt. Overnight in High Camp."
+    - title: "Day 12 - Summit to Lobuche East (6,119m) and back to Base Camp"
+      content: "Summit Lobuche East early in the morning. The climb involves navigating steep and challenging snow slopes. After reaching the summit, descend back to Base Camp for overnight rest."
+    - title: "Day 13 - Return to Pangboche (3,900m)"
+      content: "Descend from Lobuche Base Camp to Pangboche. The trek offers a chance to enjoy the beautiful landscapes and relax in the village. Overnight in Pangboche."
+    - title: "Day 14 - Return to Namche Bazaar"
+      content: "Continue your descent from Pangboche to Namche Bazaar. Enjoy the familiar surroundings and relax after the climb. Overnight in Namche Bazaar."
+    - title: "Day 15 - Return to Lukla (2,800m)"
+      content: "Trek back to Lukla, where you can celebrate the successful completion of your climb. Overnight in Lukla."
+    - title: "Day 16 - Fly back to Kathmandu"
+      content: "Fly from Lukla back to Kathmandu. Enjoy the remainder of the day at leisure, exploring the city or relaxing after your trek. Overnight in Kathmandu."
+    - title: "Day 17 - Leisure in Kathmandu"
+      content: "Spend a day at leisure in Kathmandu. Explore local markets, relax, or take part in optional sightseeing tours. Overnight in Kathmandu."
+    - title: "Day 18 - Departure from Nepal to destination country"
+      content: "Transfer to Tribhuvan International Airport for your departure. Fly back to your home country, concluding your Lobuche Peak adventure."
+
+
+
+
+mera-peak:
+  name: "Mera Peak Climbing"
+  days: "18"
+  nights: "17"
+  startPoint: "Kathmandu"
+  endPoint: "Kathmandu"
+  distance: "Varies"
+  difficulty: "Extreme"
+  altitude: "6,654m / 21,831ft"
+  skill: "Professional"
+  grade: "Challenging"
+  walking: "5-7 hours"
+  accommodation: "Hotel + Lodge"
+  groupSize: "2-15 pax"
+  season: "Sep-Dec | Mar-May"
+  region: "Hinku Valley"
+  photos: "assets/css/images/peak-climbing/mera-peak/banner.jpg"
+  popular: "Y"
+  price: "3,100.00"
+  bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+  description: "Mera Peak (6,654m) is the highest peak among the trekking peaks listed by the Nepal Mountaineering Association (NMA). Located in the Hinku Valley, it offers a true mountaineering experience with stunning panoramic views. Various routes access Mera Peak, but we offer the most dramatic one, providing adventurers with an unforgettable journey. From the summit, you'll enjoy breathtaking vistas including Chamlang, Kangchenjunga, Makalu, Baruntse to the east, and Cho-Oyu, Ama Dablam, Kangtega to the west. Everest can be seen to the north over the massive unclimbed south face of Lhotse and the Nuptse ridge."
+  excerpt: "Mera Peak (6,654m) stands as the highest among Nepal's trekking peaks, offering adventurers a true mountaineering experience. With stunning panoramic views of surrounding peaks, it promises an unforgettable journey through the Hinku Valley."
+  video: "<iframe width='100%' class='vid' height='400' src='https://www.youtube.com/embed/9jSCnohR6DE?si=N7SSD0m7KvoOekVs' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+  download: "//assets/docs/mera-peak.pdf"
+  image: "<img class='map1'>"
+  highlights:
+    - content:  "Dramatic route offering a true mountaineering experience"
+    - content:  "Panoramic views of Chamlang, Kangchenjunga, Makalu, and Baruntse to the east"
+    - content:  "Spectacular views of Cho-Oyu, Ama Dablam, and Kangtega to the west"
+    - content:  "Stunning vista of Everest to the north"
+    - content:  "Expert guides ensuring safety and comfort throughout the trek"
+    - content:  "Experiencing the local culture and cuisine of Nepal"
+  overview:
+    - content:  "Mera Peak (6,654m) stands as the highest peak among Nepal's trekking peaks, located in the Hinku Valley. It offers adventurers a true mountaineering experience with stunning panoramic views."
+    - content:  "Various routes access Mera Peak, but our offered route provides the most dramatic experience, promising an unforgettable journey through the Himalayas."
+    - content:  "From the summit, you'll enjoy breathtaking vistas of surrounding peaks, including Chamlang, Kangchenjunga, Makalu, Baruntse to the east, and Cho-Oyu, Ama Dablam, Kangtega to the west, with Everest visible to the north over the massive unclimbed south face of Lhotse and the Nuptse ridge."
+  itinerary:
+    - title: "Day 1 - Pick up at the airport and transfer to Hotel"
+      content: "Arrive at Tribhuvan International Airport in Kathmandu, where you will be met by our team. Transfer to your hotel, check-in, and have a briefing about the trek. Enjoy a welcome dinner with your guide."
+    - title: "Day 2 - Guided tour around Kathmandu valley. Prepare for the trek"
+      content: "Explore Kathmandu Valley with guided tours to Swayambhunath (Monkey Temple), Boudhanath Stupa, and Pashupatinath Temple. Prepare your gear and finalize trek arrangements. Overnight stay in Kathmandu."
+    - title: "Day 3 - Fly to Lukla and trek to Chutanga (4,155m)"
+      content: "Fly from Kathmandu to Lukla, the gateway to the Everest region. Begin your trek to Chutanga, a small village surrounded by lush forests and mountain views. Overnight in Chutanga."
+    - title: "Day 4 - Trek to Tuli Kharka (4,400m) after Crossing Zatra La pass"
+      content: "Cross the Zatra La Pass (4,610m) and descend to Tuli Kharka. This day includes a challenging ascent and descent, offering stunning mountain views. Overnight in Tuli Kharka."
+    - title: "Day 5 - Trek to Tashing Dingma (3,600m)"
+      content: "Descend from Tuli Kharka to Tashing Dingma. Enjoy the beautiful landscapes as you trek through traditional villages and scenic meadows. Overnight in Tashing Dingma."
+    - title: "Day 6 - Trek to Thanngnak (4,350m)"
+      content: "Continue your trek to Thanngnak, located in a picturesque setting. This village offers beautiful views of the surrounding mountains and glaciers. Overnight in Thanngnak."
+    - title: "Day 7 - Trek to Khare (5,100m)"
+      content: "Ascend to Khare, the last village before reaching Mera Peak Base Camp. This higher altitude helps with acclimatization. Overnight in Khare."
+    - title: "Day 8 - Acclimatization Day at Khare, enjoy the fascinating mountain panorama and walk around"
+      content: "Spend the day acclimatizing in Khare. Explore the area, enjoy panoramic views, and take short hikes to help your body adjust to the altitude. Overnight in Khare."
+    - title: "Day 9 - Trek to Mera Base Camp (5,415m) after crossing Mera La"
+      content: "Trek to Mera Base Camp, crossing the Mera La Pass (5,415m). The path offers breathtaking views of the surrounding peaks and glaciers. Overnight at Base Camp."
+    - title: "Day 10 - Trek to Mera High Camp (5,800m)"
+      content: "Ascend from Base Camp to Mera High Camp. This higher altitude camp prepares you for the summit push. Overnight at High Camp."
+    - title: "Day 11 - Summit Mera Peak (6,476m) and trek back to Mera Base Camp"
+      content: "Early morning summit attempt on Mera Peak. Enjoy the stunning summit views before descending back to Mera Base Camp. Overnight at Base Camp."
+    - title: "Day 12 - Return to Thangnag (4,350m)"
+      content: "Descend from Base Camp to Thangnag, retracing your steps through the beautiful Hinku Valley. Overnight in Thangnag."
+    - title: "Day 13 - Return to Tashing Dingma (3,600m)"
+      content: "Continue your descent to Tashing Dingma. Relax and enjoy the serene environment as you make your way back. Overnight in Tashing Dingma."
+    - title: "Day 14 - Trek to Tuli Kharka (4,400m)"
+      content: "Trek back to Tuli Kharka, crossing the Zatra La Pass once more. Enjoy the views and rest for the night. Overnight in Tuli Kharka."
+    - title: "Day 15 - Return to Lukla (2,800m)"
+      content: "Descend from Tuli Kharka to Lukla. Celebrate the successful completion of the trek and enjoy a final evening in the village. Overnight in Lukla."
+    - title: "Day 16 - Fly back to Kathmandu"
+      content: "Fly from Lukla to Kathmandu. Transfer to your hotel and relax. Enjoy the rest of the day at leisure. Overnight in Kathmandu."
+    - title: "Day 17 - Leisure in Kathmandu"
+      content: "Spend a day exploring Kathmandu at your own pace. You can visit local markets, enjoy a spa day, or take optional sightseeing tours. Overnight in Kathmandu."
+    - title: "Day 18 - Departure from Nepal to destination country"
+      content: "Transfer to Tribhuvan International Airport for your departure. Fly back to your home country, concluding your Mera Peak adventure."
+
+ama-dablam:
+    name: "Ama Dablam Expedition"
+    days: "30"
+    nights: "29"
+    startPoint: "Kathmandu"
+    endPoint: "Kathmandu"
+    distance: "Varies"
+
+    difficulty: "Extreme"
+    altitude: "6,812m / 22,349ft"
+    skill: "Professional"
+    grade: "Technical"
+
+    walking: "5-8 hours"
+    accommodation: "Hotel + Lodge + Camping"
+
+    groupSize: "2-10 pax"
+    season: "Sep-Dec | Mar-May"
+    region: "Khumbu Region"
+
+    popular: "Y"
+    price: "7,500.00"
+    photos: "assets/css/images/peak-climbing/ama-dablam/banner.jpg"
+
+    bookLink: "https://www.instamojo.com/thetrippyfrog/ama-dablam-expedition/"
+
+    description: "Ama Dablam, standing at 6,812 meters, is one of Nepal's most iconic and beautiful peaks, often called the 'Matterhorn of the Himalayas.' Located in the Khumbu region near Everest, Ama Dablam offers a blend of high-altitude experience and technical rock, snow, and ice climbing. The standard South-West Ridge route, first ascended in 1961, is the most popular and requires excellent physical conditioning and technical skills. This expedition not only presents a climbing challenge but also offers cultural immersion as trekkers pass through picturesque Sherpa villages, ancient monasteries, and lush rhododendron forests. The panoramic views from the summit include Everest, Lhotse, and Makalu, making this a truly unforgettable adventure."
+
+    excerpt: "Ama Dablam, at 6,812 meters, is an iconic Himalayan peak offering a challenging and rewarding climbing experience. This expedition provides both technical climbing and cultural immersion in the Khumbu region."
+
+    video: "<iframe width='100%' class='vid'  height='400' src='https://www.youtube.com/embed/D55lIz_9dc8?si=LXlPp__EUESVdC4q' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+    download: "//assets/docs/ama-dablam.pdf"
+
+    # image: "<img class='map1'>"
+
+    highlights: 
+      - content: "Stunning peak known as the 'Matterhorn of the Himalayas'"
+      - content: "Technical climbing on rock, snow, and ice"
+      - content: "Scenic trekking through Sherpa villages and rhododendron forests"
+      - content: "Panoramic views of Everest, Lhotse, and Makalu"
+      - content: "Expert guides ensuring safety and comfort throughout the expedition"
+      - content: "Cultural immersion in the Khumbu region with visits to ancient monasteries"
+
+    overview:
+      - content: "Ama Dablam, standing at 6,812 meters, is one of Nepal's most iconic peaks, known for its stunning beauty and technical climbing challenges."
+      - content: "The standard South-West Ridge route offers a combination of rock, snow, and ice climbing, requiring excellent physical conditioning and technical skills."
+      - content: "This expedition not only provides a significant climbing achievement but also cultural immersion, as the trek to Ama Dablam Base Camp passes through picturesque Sherpa villages, ancient monasteries, and lush rhododendron forests."
+      - content: "From the summit, climbers enjoy breathtaking panoramic views of Everest, Lhotse, Makalu, and the surrounding Himalayan peaks, making this a truly unforgettable adventure."
+
+    itinerary:
+      - title: "Day 1 - Arrival in Kathmandu"
+        content: "Upon arrival at Tribhuvan International Airport, you will be met by our representative and transferred to your hotel in Kathmandu. Enjoy a welcome dinner and briefing on the upcoming expedition."
+      - title: "Day 2 - Kathmandu Valley Tour and Preparation"
+        content: "Explore the cultural highlights of Kathmandu Valley, including historic temples and bustling markets. Use this day to finalize your preparations for the expedition and acquire any last-minute gear."
+      - title: "Day 3 - Fly to Lukla and Trek to Phakding (2,610m)"
+        content: "Early morning flight to Lukla. After landing, begin your trek to Phakding, passing through lush forests and crossing suspension bridges. Overnight stay in a lodge."
+      - title: "Day 4 - Trek to Namche Bazaar (3,440m)"
+        content: "Ascend through beautiful landscapes to Namche Bazaar, the main hub of the Khumbu region. Enjoy the views of the surrounding peaks and acclimatize with a gradual ascent."
+      - title: "Day 5 - Acclimatization Day in Namche Bazaar"
+        content: "Spend the day acclimatizing by exploring Namche Bazaar and its surroundings. Optional hikes to Everest Viewpoint or Khumjung village to aid in acclimatization."
+      - title: "Day 6 - Trek to Tengboche (3,860m)"
+        content: "Trek to Tengboche, home to the famous Tengboche Monastery. Enjoy panoramic views of Everest, Lhotse, and Ama Dablam as you ascend through beautiful rhododendron forests."
+      - title: "Day 7 - Trek to Dingboche (4,410m)"
+        content: "Continue your trek to Dingboche, passing through picturesque landscapes and small villages. Dingboche offers excellent views of the surrounding peaks."
+      - title: "Day 8 - Acclimatization Day in Dingboche"
+        content: "Take a rest day in Dingboche to acclimatize. Optional hike to Chhukung Valley or climb to a nearby ridge for stunning views of the Himalayan peaks."
+      - title: "Day 9 - Trek to Ama Dablam Base Camp (4,570m)"
+        content: "Ascend to Ama Dablam Base Camp, the starting point for your climbing period. Settle into your camp and prepare for the climbing phase."
+      - title: "Day 10-24 - Climbing Period for Ama Dablam (6,812m)"
+        content: "Engage in a series of acclimatization climbs and technical training to prepare for the summit push. Follow the guidance of your expert guides and acclimatize gradually to ensure a safe ascent."
+      - title: "Day 25 - Return to Pangboche (3,985m)"
+        content: "Descend from Base Camp to Pangboche, enjoying the trek through familiar landscapes and reflecting on your climbing experience."
+      - title: "Day 26 - Trek to Namche Bazaar (3,440m)"
+        content: "Continue your descent to Namche Bazaar, where you can relax and recover from your expedition."
+      - title: "Day 27 - Trek to Lukla (2,860m)"
+        content: "Complete your trek back to Lukla. Enjoy the final views of the mountains and prepare for your return flight to Kathmandu."
+      - title: "Day 28 - Fly Back to Kathmandu"
+        content: "Fly back to Kathmandu from Lukla. Transfer to your hotel and enjoy a free day for leisure, shopping, or sightseeing."
+      - title: "Day 29 - Leisure in Kathmandu"
+        content: "Spend a relaxing day in Kathmandu. Explore the city's vibrant culture, visit local attractions, or simply rest after your expedition."
+      - title: "Day 30 - Departure from Nepal"
+        content: "Transfer to Tribhuvan International Airport for your departure flight. Bid farewell to Nepal and head to your next destination."
+
+
+
+island-peak:
+  name: "Island Peak Climbing"
+  days: "19"
+  nights: "18"
+  startPoint: "Lukla"
+  endPoint: "Kathmandu"
+  distance: "Varies"
+
+  dificulty: "Extreme"
+  altitude: "6,160m / 20,210ft"
+  skill: "Intermediate+"
+  grade: "Moderate"
+
+  walking: "5-7 hours"
+  accomodation: "Hotel + Lodge"
+
+  groupSize: "2-15 pax"
+  season: "Sep-Dec | Mar-May"
+  region: "Khumbu"
+
+  photos: "assets/css/images/peak-climbing/island-peak/banner.jpg"
+
+  popular: "Y"
+  price: "3,150.00"
+
+  bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+  description: "Island Peak, also known as Imja Tse, is one of the most popular trekking peaks. Located in the heart of the Khumbu region, it offers climbers an exhilarating experience with stunning views of the Himalayas. Named Island Peak by Eric Shipton's team in 1951 due to its appearance as an island in a sea of ice, it was later renamed Imja Tse in 1983. The peak was first summited by a Swiss team in 1956 as a training exercise for Mount Everest and Lhotse."
+
+  excerpt: "Island Peak, also known as Imja Tse, is a popular trekking peak in the Khumbu region. Named in 1951 by Eric Shipton's team, it was first summited by a Swiss team in 1956 as training for Everest and Lhotse. Offering stunning views and an exhilarating climbing experience, it remains a top choice for adventurers."
+
+  video: "<iframe width='100%' class='vid' height='400' src='https://www.youtube.com/embed/BRV7xvWwUnQ?start=1326' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+  # download: "//assets/docs/island-peak.pdf"
+
+  # image: "<img class='map1'>"
+
+  highlights:
+    - content: "Staying in teahouses and guesthouses run by local families"
+    - content: "Expert guides ensuring your safety and comfort throughout the trek"
+    - content: "Crossing suspension bridges lined with prayer flags"
+    - content: "Standing among the world's highest peaks"
+    - content: "Trekking through picturesque villages like Namche Bazaar and Tengboche"
+    - content: "Ascending Island Peak with fixed ropes and glacier travel"
+    - content: "Incredible views of Everest, Lhotse, Makalu, and Ama Dablam"
+    - content: "Experiencing the local culture and cuisine of Nepal"
+
+  overview:
+    - content: "Island Peak, standing at an altitude of 6,160 meters (20,210 feet), is one of Nepal's most popular trekking peaks. Located in the Khumbu region, it offers climbers an exhilarating experience combined with stunning views of the Himalayas."
+    - content: "Island Peak was named by Eric Shipton's team in 1951, appearing as an island in a sea of ice when viewed from Dingboche. The peak was later renamed Imja Tse in 1983, but Island Peak remains the popular choice."
+    - content: "First summited by a Swiss team in 1956 as a training exercise for Everest and Lhotse, Island Peak continues to attract climbers looking for a challenging but rewarding adventure."
+
+  itinerary:
+    - title: "Day 1 - Pick up at the airport and transfer to Hotel"
+      content: "Upon arrival at Kathmandu's Tribhuvan International Airport, you will be met by our representative and transferred to your hotel. Relax and prepare for the adventure ahead."
+
+    - title: "Day 2 - Guided tour around Kathmandu valley. Prepare for the trek"
+      content: "Explore the cultural heritage sites of Kathmandu Valley, including UNESCO World Heritage Sites such as Swayambhunath Stupa (Monkey Temple), Boudhanath Stupa, and Pashupatinath Temple. Use this day to finalize your trek preparations and acquire any last-minute gear."
+
+    - title: "Day 3 - Fly to Lukla (2,800m) and trek to Phakding (2,652m)"
+      content: "Take a scenic flight from Kathmandu to Lukla. Begin your trek to Phakding, passing through picturesque villages and enjoying views of the surrounding mountains. The trek today is relatively short to allow for acclimatization."
+
+    - title: "Day 4 - Trek to Namche Bazaar (3,440m)"
+      content: "Continue your trek to Namche Bazaar, the main trading hub of the Khumbu region. The trail involves a steep ascent with magnificent views of the Everest region. Spend the night in Namche Bazaar, where you can explore local shops and cafes."
+
+    - title: "Day 5 - Acclimatization day at Namche Bazaar"
+      content: "Spend the day acclimatizing to the altitude. Take a short hike to the Everest View Hotel for stunning views of Mount Everest and other peaks. Explore the local area and prepare for the trek ahead."
+
+    - title: "Day 6 - Trek to Tengboche (3,870m)"
+      content: "Trek through lush forests and cross suspension bridges to reach Tengboche. Visit the famous Tengboche Monastery and enjoy panoramic views of Everest, Lhotse, and Ama Dablam."
+
+    - title: "Day 7 - Trek to Pheriche (4,200m)"
+      content: "Descend through beautiful landscapes to the village of Pheriche. This day involves gradual ascents and descents, allowing you to adjust to the increasing altitude."
+
+    - title: "Day 8 - Trek to Lobuche (4,930m)"
+      content: "Continue your trek to Lobuche, passing through the memorials dedicated to climbers who have lost their lives in the mountains. The landscape becomes more rugged as you approach Lobuche."
+
+    - title: "Day 9 - Trek to Gorakshep (5,170m), hike to Everest Base Camp (5,364m) in the afternoon and back to Gorakshep"
+      content: "Trek to Gorakshep, the last stop before Everest Base Camp. After lunch, hike to Everest Base Camp for a close-up view of the world's highest peak and then return to Gorakshep for the night."
+
+    - title: "Day 10 - Ascend to Kalapathar (5,545m) and trek back to Lobuche"
+      content: "Early morning ascent to Kalapathar for breathtaking sunrise views over Mount Everest and surrounding peaks. Return to Gorakshep for breakfast and then trek back to Lobuche."
+
+    - title: "Day 11 - Trek to Chhukung (4,730m) after Crossing Khongma La (5,535m)"
+      content: "Cross the challenging Khongma La Pass and descend to Chhukung. This is a strenuous day with high-altitude trekking, but the views of the Himalayas are spectacular."
+
+    - title: "Day 12 - Trek to Island Peak Base camp (5,200m)"
+      content: "Make your way to Island Peak Base Camp. Set up camp and prepare for the upcoming summit attempt. Enjoy the beautiful alpine scenery around you."
+
+    - title: "Day 13 - Summit Island Peak (6,160m) and back to Base Camp"
+      content: "Early morning ascent to the summit of Island Peak. Enjoy stunning views of Everest, Lhotse, and Makalu before descending back to Base Camp."
+
+    - title: "Day 14 - Return to Pangboche (3,985m)"
+      content: "Descend from Island Peak Base Camp to Pangboche. Enjoy a more leisurely trek and take in the beautiful landscapes of the Khumbu region."
+
+    - title: "Day 15 - Return to Namche Bazaar"
+      content: "Trek back to Namche Bazaar, retracing your steps through the picturesque villages and enjoying the comforts of the vibrant town."
+
+    - title: "Day 16 - Return to Lukla (2,800m)"
+      content: "Complete your trek by returning to Lukla. Celebrate the successful completion of your climb and prepare for your flight back to Kathmandu."
+
+    - title: "Day 17 - Fly back to Kathmandu"
+      content: "Fly from Lukla to Kathmandu. Transfer to your hotel and enjoy some free time in the city for relaxation and exploration."
+
+    - title: "Day 18 - Leisure in Kathmandu"
+      content: "Spend a day at leisure in Kathmandu. Explore more of the city, shop for souvenirs, or relax after your trekking adventure."
+
+    - title: "Day 19 - Departure from Nepal to destination country"
+      content: "Transfer to the airport for your departure flight. Bid farewell to Nepal and take with you unforgettable memories of your Island Peak climbing adventure."
+
+
+pisang-peak:
+    name: "Pisang Peak Climbing"
+    days: "20"
+    nights: "19"
+    startPoint: "Besisahar"
+    endPoint: "Kathmandu"
+    distance: "Varies"
+
+    difficulty: "Extreme"
+    altitude: "6,091m / 19,984ft"
+    skill: "Intermediate+"
+    grade: "Challenging"
+
+    walking: "5-7 hours"
+    accommodation: "Hotel + Lodge"
+
+    groupSize: "2-15 pax"
+    season: "Sep-Dec | Mar-May"
+    region: "Annapurna"
+    photos: "assets/css/images/peak-climbing/pisang-peak/banner.jpg"
+    popular: "Y"
+    price: "3,500.00"
+
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "Pisang Peak (6,091m) is a popular trekking peak located in the Annapurna region of Nepal. The climb involves navigating rocky trails and steep snow slopes. The ascent offers stunning views of the surrounding Annapurna range and the beautiful landscapes of the region. Pisang Peak is an excellent choice for those looking to advance their mountaineering skills in the Himalayas."
+
+    excerpt: "Pisang Peak (6,091m) offers climbers a thrilling ascent with stunning views of the Annapurna range. Ideal for intermediate mountaineers, this trek combines challenging trails and breathtaking scenery in the heart of Nepal."
+
+    video: "<iframe width='100%' class='vid'  height='400' src='https://www.youtube.com/embed/BRV7xvWwUnQ?start=1326' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+    # download: "//assets/docs/pisang-peak.pdf"
+
+    # image: "<img class='map1'>"
+
+    highlights: 
+      - content: "Navigating rocky trails and steep snow slopes"
+      - content: "Stunning views of the Annapurna range"
+      - content: "Acclimatization day in Pisang"
+      - content: "Reaching the summit of Pisang Peak at 6,091m"
+      - content: "Experienced guides ensuring your safety and comfort throughout the trek"
+      - content: "Experiencing the local culture and cuisine of Nepal"
+
+    overview:
+      - content: "Pisang Peak, standing at an altitude of 6,091 meters (19,984 feet), is a popular trekking peak located in the Annapurna region of Nepal. The climb involves navigating rocky trails and steep snow slopes, offering climbers an exhilarating adventure combined with stunning views of the surrounding Annapurna range."
+      - content: "The trek starts with a drive to Besisahar and progresses through various beautiful landscapes, including stops at Ghermu, Dharapani, and Chame. The journey includes a crucial acclimatization day in Pisang before proceeding to the Base Camp and High Camp."
+      - content: "The ascent to the summit is challenging, but the rewarding views and the experience of climbing in the Himalayas make it a memorable adventure."
+
+    itinerary:
+      - title: "Day 1 - Pick up at the airport and transfer to Hotel"
+        content: "Upon arrival at Tribhuvan International Airport in Kathmandu, you will be met by our representative and transferred to your hotel. Spend the day resting and adjusting to the new environment."
+
+      - title: "Day 2 - Guided tour around Kathmandu valley. Prepare for the trek"
+        content: "Enjoy a guided tour of Kathmandu Valley, including visits to significant cultural and historical sites. This day will also be used to finalize your trek preparations, including obtaining necessary permits and checking gear."
+
+      - title: "Day 3 - Drive to Besisahar (800m) - Bhulbule (840m)"
+        content: "Drive from Kathmandu to Besisahar, the starting point of the trek. From Besisahar, continue by jeep or on foot to Bhulbule, where you will spend the night."
+
+      - title: "Day 4 - Trek to Ghermu (1,140m)"
+        content: "Begin your trek from Bhulbule to Ghermu. The trail will take you through lush forests and scenic villages. Upon arrival in Ghermu, rest and prepare for the next day's trek."
+
+      - title: "Day 5 - Trek to Dharapani (1,960m)"
+        content: "Continue your trek to Dharapani, crossing several suspension bridges and walking through charming villages. Dharapani offers beautiful views of the surrounding mountains."
+
+      - title: "Day 6 - Trek to Chame (2,710m)"
+        content: "Trek from Dharapani to Chame, the administrative center of the Manang District. The trail provides views of the majestic Annapurna range and the Marsyangdi River."
+
+      - title: "Day 7 - Trek to Pisang (3,240m)"
+        content: "Proceed to Pisang, where you will experience a change in landscape and culture. Pisang is known for its stunning views and Tibetan-style architecture."
+
+      - title: "Day 8 - Day for relax and Acclimatization"
+        content: "Spend a day in Pisang for acclimatization. This is important to adjust to the higher altitude and prepare for the challenging days ahead. Explore the local area and relax."
+
+      - title: "Day 9 - Trek to Pisang Peak Base Camp (4,380m)"
+        content: "Trek to the Base Camp of Pisang Peak. The route is scenic, with views of the surrounding peaks. Set up camp and prepare for the ascent."
+
+      - title: "Day 10 - Trek to Pisang Peak High Camp (5,400m)"
+        content: "Continue your trek to the High Camp of Pisang Peak. The path is steeper and requires careful navigation. At High Camp, prepare for the summit attempt."
+
+      - title: "Day 11 - Summit Pisang Peak (6,091m) and back to Base Camp"
+        content: "Make the summit attempt of Pisang Peak early in the morning. Enjoy panoramic views from the top before descending back to Base Camp."
+
+      - title: "Day 12 - Trek to Manang (3,450m)"
+        content: "Descend from Base Camp to Manang. The trek will take you through beautiful landscapes and traditional villages."
+
+      - title: "Day 13 - Trek to Yak Kharka (4,110m)"
+        content: "Continue your trek to Yak Kharka, a small settlement in the high altitude. The trek is gradual, with views of the surrounding peaks."
+
+      - title: "Day 14 - Trek to Throng Phedi (4,540m)"
+        content: "Trek to Throng Phedi, the base camp for crossing the Thorong La Pass. This is a crucial stop before the high-altitude pass."
+
+      - title: "Day 15 - Trek to Muktinath (3,800m) over crossing Throngla (5,416m)"
+        content: "Cross the Thorong La Pass early in the morning and descend to Muktinath. The pass offers spectacular views and the descent takes you through diverse landscapes."
+
+      - title: "Day 16 - Trek to Jomsom (2,760m)"
+        content: "Trek from Muktinath to Jomsom. The route follows the Kali Gandaki River and offers a change in scenery as you move towards lower altitudes."
+
+      - title: "Day 17 - Fly to Pokhara"
+        content: "Fly from Jomsom to Pokhara, enjoying aerial views of the Himalayas. Spend the rest of the day exploring Pokhara and relaxing."
+
+      - title: "Day 18 - Drive back to Kathmandu"
+        content: "Drive from Pokhara back to Kathmandu. The journey will take you through scenic roads and rural landscapes."
+
+      - title: "Day 19 - Leisure in Kathmandu"
+        content: "Spend the day at leisure in Kathmandu. You can shop for souvenirs, explore more of the city, or rest after your trek."
+
+      - title: "Day 20 - Departure from Nepal to destination country"
+        content: "Transfer to Tribhuvan International Airport for your departure flight. Bid farewell to Nepal and head to your next destination."
+
+
+
+tharpu-peak:
+    name: "Tharpu Chuli (Tent Peak) Climbing"
+    days: "20"
+    nights: "19"
+    startPoint: "Kathmandu"
+    endPoint: "Kathmandu"
+    distance: "Varies"
+
+    dificulty: "Extreme"
+    altitude: "5,663m / 18,579ft"
+    skill: "Intermediate+"
+    grade: "Challenging"
+
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+
+    groupSize: "2-15 pax"
+    season: "Sep-Dec | Mar-May"
+    region: "Annapurna"
+
+    # popular: "Y"
+    price: "2200"
+
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "Tharpu Chuli, also known as Tent Peak, is situated in the Annapurna Region. The base of this peak is a short walk through the stunningly beautiful route to Annapurna Base Camp. The normal route to the summit is relatively easy but requires basic climbing techniques. The summit offers superb views of the entire Annapurna massif as well as Machhapuchhare (Fish Tail), Hiunchuli, Singu Chuli, and Gangapurna."
+
+    excerpt: "Tharpu Chuli (Tent Peak) offers climbers an accessible ascent with breathtaking views of the Annapurna massif. Ideal for intermediate mountaineers, this trek combines challenging trails and stunning scenery in the heart of Nepal."
+
+    video: "<iframe width='100%' class='vid'  height='400' src='https://www.youtube.com/embed/BRV7xvWwUnQ?start=1326' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+    # download: "//assets/docs/tharpu-chuli.pdf"
+
+    # image: "<img class='map1'>"
+
+    highlights: 
+      - content: "Short walk through the stunning route to Annapurna Base Camp"
+      - content: "Accessible summit with basic climbing techniques required"
+      - content: "Breathtaking views of the Annapurna massif and surrounding peaks"
+      - content: "Acclimatization day at Annapurna Base Camp"
+      - content: "Experienced guides ensuring your safety and comfort throughout the trek"
+      - content: "Experiencing the local culture and cuisine of Nepal"
+
+    overview:
+      - content: "Tharpu Chuli, also known as Tent Peak, is situated in the Annapurna Region. The base of this peak is a short walk through the stunningly beautiful route to Annapurna Base Camp. The climb involves navigating relatively easy routes that require basic climbing techniques, offering climbers an exhilarating adventure combined with stunning views of the surrounding Annapurna massif."
+      - content: "The trek starts with a drive to Pokhara, followed by a journey through various beautiful landscapes, including stops at Tirkhedhunga, Ghorepani, and Sinuwa Hill. The journey includes an acclimatization day at Annapurna Base Camp before proceeding to Tharpu Chuli Base Camp and High Camp."
+      - content: "The ascent to the summit is accessible, and the rewarding views and the experience of climbing in the Himalayas make it a memorable adventure."
+
+    itinerary:
+      - title: "Day 1 - Pick up at the airport and transfer to Hotel"
+        content: ""
+      - title: "Day 2 - Guided tour around Kathmandu valley. Prepare for the trek"
+        content: ""
+      - title: "Day 3 - Drive to Pokhara (910m)"
+        content: ""
+      - title: "Day 4 - Drive to Naya Pul. Trek to Tirkhedhunga (1,495m)"
+        content: ""
+      - title: "Day 5 - Trek to Ghorepani (2,850m)"
+        content: ""
+      - title: "Day 6 - Early morning hike to Poon Hill for sunrise views. Continue trek to Tadapani (2,520m)"
+        content: ""
+      - title: "Day 7 - Trek to Sinuwa Hill (2,310m)"
+        content: ""
+      - title: "Day 8 - Trek to Deurali (3,150m)"
+        content: ""
+      - title: "Day 9 - Trek to Machapuchare base camp (3,700m)"
+        content: ""
+      - title: "Day 10 - Trek to Annapurna Base Camp (4,130m)"
+        content: ""
+      - title: "Day 11 - Acclimatization day at Annapurna Base Camp"
+        content: ""
+      - title: "Day 12 - Trek to Tharpu Chuli base camp (4,840m)"
+        content: ""
+      - title: "Day 13 - Trek to high camp (5,160m)"
+        content: ""
+      - title: "Day 14 - Ascent of Tharpu Chuli and return to base camp"
+        content: ""
+      - title: "Day 15 - Trek to Bamboo"
+        content: ""
+      - title: "Day 16 - Trek to Jihnu Danda"
+        content: ""
+      - title: "Day 17 - Trek to Nayapul and drive back to Pokhara"
+        content: ""
+      - title: "Day 18 - Drive back to Kathmandu"
+        content: ""
+      - title: "Day 19 - Leisure day in Kathmandu"
+        content: ""
+      - title: "Day 20 - Fly back to destination country"
+        content: ""

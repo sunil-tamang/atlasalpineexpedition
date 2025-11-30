@@ -1,0 +1,163 @@
+form {
+  max-width: 768px;
+  width: 100%;
+}
+
+fieldset {
+  width: 100%;
+  border: 0px;
+  color: #333;
+  text-align: justify;
+}
+
+legend {
+  width: 100%;
+  font-weight: 200;
+  font-family: "Montserrat", sans-serif;
+  -webkit-user-select: none;
+  font-size: 2.4rem;
+  -moz-user-select: none;
+  user-select: none;
+  padding: 0 0 0.2em;
+  border-bottom: 1px solid #dcdcdc;
+  color: #777;
+}
+
+legend i {
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+.ar-input-set {
+  position: relative;
+}
+
+.two-in-one_1,
+.two-in-one_2 {
+  width: 49.4%;
+  float: right;
+  display: inline-block;
+}
+
+.two-in-one_1 {
+  float: left;
+}
+
+input, textarea, select {
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+/* General styles for all form fields */
+textarea,
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=date],
+select {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #cecece;
+  padding: 0.8em;
+  background: #fbfbfb;
+  background: rgba(248, 248, 248, 0.7);
+  color: #555;
+  border-radius: 8px;
+  box-sizing: border-box;
+  /* This line is the fix: apply transitions only to specific properties */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Specific styles for select and date inputs to add the dropdown arrow */
+select,
+input[type=date] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 20px auto;
+}
+
+/* Focus styles */
+textarea:focus,
+input:focus,
+select:focus {
+  outline: none;
+  background: #ffffff;
+  background: rgba(255, 255, 255, 0.75);
+  border-color: #acacac;
+  box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
+  box-shadow: 0 0 5px rgba(142, 142, 142, 0.3);
+  box-shadow: 0 0 7px 0px rgba(142, 142, 142, 0.3);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.ar-form-input {
+  /* This class seems unused but kept for compatibility */
+}
+
+.line-and-text {
+  position: relative;
+  display: block;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+}
+
+.line-and-text span {
+  position: relative;
+  display: inline-block;
+  padding: 1rem;
+  z-index: 1000;
+  background: #fdfdfd;
+  font-size: 1.5rem;
+}
+
+.line-and-text:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background: #8c8c8c;
+  z-index: 0;
+  left: 0;
+}
+
+.ar-form-btn-span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0.5em auto;
+}
+
+/* New CSS to style the select option labels correctly */
+select option:first-of-type {
+  color: #888; /* Placeholder color */
+}
+
+select:valid option:first-of-type,
+select:focus option:first-of-type {
+  color: #555;
+}
+
+.ar-fixed-label {
+  color: #222;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  position: absolute;
+  top: 23px;
+  left: 0px;
+  padding: 13px 18px;
+  background-color: rgba(216, 211, 211, 0);
+  z-index: 1;
+  pointer-events: none;
+}/*# sourceMappingURL=form.css.map */

@@ -1,0 +1,114 @@
+---
+layout: default
+title: Our Team
+permalink: /team/
+subtitle1: "The Journey"
+subtitle2: "Begins"
+custom_bg: bg/about0.jpg
+description: "Meet our dedicated team at The Alpine Expeditions, comprised of experienced guides and adventurers passionate about sharing Nepal's natural beauty and culture."
+keywords: "trekking guides Nepal, expedition leaders, adventure team, experienced guides, Himalayan experts"
+
+---
+
+ <!----------Our Story -------->
+
+
+
+ <!-- <div class="container-wide row--padding-wide">
+
+    <div class="banner" style="background-image: url('/assets/css/images/bg/teambg.jpg');">
+        <span class="banner__overlay"></span>
+        
+        <div class="banner__tagline banner__home" style="opacity: 1;">
+            <p class="tagline" style="text-transform: none;"></p>
+            <br />
+            <p class="sub-tagline" style="display: inline;">
+            
+            </p>
+        </div>
+        <span class="banner__skip">
+            <a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
+        </span>
+    </div>
+
+
+</div> -->
+
+
+
+                        
+    <!-- <input type="text" id="search-box" placeholder="Search treks...">
+
+    <div id="treks" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 1em;">
+       
+        {% for trek in site.data.trek-data %}
+       
+        <div class="trek" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 1em;" >
+            <a href="/activities/trekking/{{ trek[0] }}">{{ trek[1].name }}</a>
+            <h2>{{ trek[1].altitude }}</h2>
+            <h2>{{ trek[1].days }}</h2>
+            <h2>{{ trek[1].nights }}</h2>
+            <img src="{{ site.baseurl }}/{{ trek[1].photos }}" style="width: 200px; height: 200px;">
+        </div>
+        {% endfor %}
+    </div>
+    </div> -->
+
+
+
+
+    <div class="container-wide row--padding-wide" style="padding-bottom: 2em;">
+
+
+        <!-- <div id='content'>
+ 
+
+            <div class="wrapper_story">
+
+
+                <h1 class="content__title content__title-white no-underline">Our Team?</h1> <br />
+                
+            
+                <p class="content__pg-black" style="">&quot;A Himalayan Based Trekking Company that deals with the adventurous
+                  activities like trekking, camping ,white water rafting ,paragliding . Being born in the Himalayas we have the better experience and knowledge of mountains terrain than any other travel company .
+                
+            </p>
+
+
+
+            </div>
+
+
+        </div> -->
+
+      
+
+        <div class="filter-buttons">
+            <button class="book_btn" data-filter="all">All</button>
+            <button                  data-filter="Climbing Guide" class="book_btn active">Climbing Guide</button>
+            <!-- <button class="book_btn" data-filter="Support Climbers">Support Climbers</button> -->
+            <!-- <button class="book_btn" data-filter="High Altitude Cook">High Altitude Cook</button> -->
+            <button class="book_btn" data-filter="Trekking Guide">Trekking Guide</button>
+          </div>
+          
+          <div class="team-members">
+            {% for member in site.data.team %}
+            <!-- <a href="{{ site.baseurl }}{{ member.link }}" data-role="{{ member.role }}"> -->
+            <a class="team-members_link" href="{{ site.baseurl }}{{ member.slug }}" data-role="{{ member.role }}">
+                <div class="team-member" data-role="{{ member.role }}" style="background-image: url('{{ site.baseurl }}/{{ member.photos }}');">
+                <div class="member-content">
+                    <h3>{{ member.name }}</h3>
+                    <p>{{ member.role }}</p>
+                </div>
+                </div>
+            </a>
+            {% endfor %}
+          </div>
+     
+      
+        
+    </div>
+
+
+    
+

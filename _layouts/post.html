@@ -1,0 +1,122 @@
+---
+layout: 'default'
+author_name : " THE ALPINE EXPEDITIONS "
+
+description: "Stay updated with The Alpine Expeditions blog. Read about trekking, expeditions, and travel tips in Nepal. Subscribe for the latest updates."
+keywords: "Alpine Expeditions blog, trekking blog Nepal, Nepal travel tips, expedition stories, adventure travel blog, subscribe travel blog"
+
+tags : ""
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "url": "{{ site.url }}{{ page.url }}",
+  "name": {{ page.title | jsonify }},
+  "headline": {{ page.title | jsonify }},
+  "keywords": {{ page.tags | join: ',' | jsonify }},
+  "description": {{ page.excerpt | strip_newlines | strip | jsonify }},
+  "articleBody": {{ page.content | strip_html | jsonify }},
+  "datePublished": {{ page.date | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ page.author_name | jsonify }},
+    "email": {{ site.email | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "url": "{{ site.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "width": 32,
+      "height": 32,
+      "url": "{{ site.url }}/icon/favicon.ico"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ site.url }}/assets/css/images/{{ page.custom_bg | default: site.img }}"
+},
+  "sameAs": [
+  "{{ site.url }}/activities/paragliding/",
+  "https://www.facebook.com/thealpineexpeditions/",
+  "https://twitter.com/thealpineexpeditions",
+  "https://www.instagram.com/thealpineexpeditions/",
+  "https://www.linkedin.com/in/thealpineexpeditions/",
+  "https://www.pinterest.com/thealpineexpeditions/",
+  "{{ site.url }}/"
+]
+}
+</script>
+
+
+<!--<div class="container--white">-->
+<div class="row row--padding-wide container-wide content__pg content__pg-black" style="padding-top: 16em;" >
+	<!--Main Posts-->
+	<div class="row--pading-medium col--post">
+		{% if page.custom_bg %}
+			{% for img in page.custom_bg %}
+				{% assign path = 'assets/css/images/' | append: img | relative_url%}
+				<img class="post-banner" src="{{ path }}" style="background-image:url('{{ path }}');" alt="{{page.alt}}" title="{{page.title}}">
+			{% endfor %}
+		{% else %}
+			{% assign path = 'assets/css/images/welcome.jpeg' | relative_url%}
+				<img class="post-banner" src="{{ path }}" style="background-image:url('{{ path }}');" alt="{{page.alt}}" title="{{page.title}}" >
+		{% endif %}
+
+		<div class="post">
+			<div class="post-categories-list">
+				{% if post %}
+					{% assign categories = post.categories %}
+				{% else %}
+					{% assign categories = page.categories %}
+				{% endif %}
+				{% for category in categories %}
+<!--					<a class="post-tags" href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>-->
+					<a class="post-tags">{{category}}</a>
+				{% unless forloop.last %}&nbsp;{% endunless %}
+				{% endfor %}
+			</div>
+
+			<h2 class="content__sub-title post-title">{{ page.title }}</h2>
+			<p class="post-meta">{{ page.date | date_to_string }} - {{ page.author }}</p>
+			<br />
+			<hr />
+			<div class="post-content row--padding-medium">
+				<p>{{ content }}</p>
+			</div>
+		</div>
+	</div>
+
+	<!--Recent Posts-->
+	<div class="row--pading-medium col--recent-post" style="padding: 0 1em; text-align: justify;">
+		<h2 class="content__sub-title" style="padding-top: 0; padding-bottom: 0; margin-bottom: 0; color: #333;">RECENT POSTS</h2>
+		{% for post in site.posts offset:0 limit:5 %}
+			{% if post.url != page.url %}
+				{% if post %}
+				<h2 class="content__sub-title blogpost-title" style="font-size: 1em;font-weight: lighter; font-family: 'ANTON', sans-serif; color: #333; opacity: .85;">
+					<a href="{{ post.url }}">
+						<img  src="/assets/css/images/{{ post.custom_bg }}" style="width: 100%; height: 100%;"alt="{{post.alt}}" title="{{post.title}}">
+					</a><br />
+					
+					<a href="{{ post.url }}">{{ post.title }}</a>
+
+					<p>{{ post.description }}</p>
+					<span><a class="blog-read-btn" href="{{ post.url}}" title="READ">Read</a></span>
+			  	</h2>
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>
+
+
+<script>
+ 		document.getElementById("header").className += ' headerBlack';
+</script>

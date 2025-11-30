@@ -1,0 +1,620 @@
+---
+layout: 'default'
+slick_css: 'Yes'
+slick_js: 'Yes'
+author_name: "THE ALPINE EXPEDITIONS"
+tags: "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek, Langtang Valley Trek, Upper Mustang Trek, Manaslu Circuit Trek, Ghorepani Poon Hill Trek ,Gokyo Lakes Trek ,Kanchenjunga Base Camp Trek, Makalu Base Camp Trek"
+---
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "TouristInformationCenter",
+	  "name": "The Alpine Expeditions",
+	  "image": "{{ site.url }}/assets/images/{{ page.custom_bg | default: site.img }}",
+	  "url": "{{ site.url }}{{ page.url }}",
+	  "telephone": "+977-9863683851",
+	  "priceRange": "$1000 - $10000",
+	  "address": {
+		"@type": "PostalAddress",
+		"streetAddress": "Makalbari",
+		"addressLocality": "Kathmandu",
+		"postalCode": "44600",
+		"addressCountry": "NP"
+	  },
+	  "geo": {
+		"@type": "GeoCoordinates",
+		"latitude": 27.7172,  
+		"longitude": 85.3240  
+	  },
+	  "hasMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13525.534262300927!2d85.3240!3d27.7172!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c9c798dbeb6e498!2sTHE%20ALPINE%20EXPEDITIONS!5e0!3m2!1sen!2snp!4v1579107517725!5m2!1sen!2snp",
+	  "sameAs": [
+		"{{ site.url }}/activities/rafting/",
+		"https://www.facebook.com/thealpineexpeditions/",
+		"https://twitter.com/thealpineexpeditions",
+		"https://www.instagram.com/thealpineexpeditions/",
+		"https://www.linkedin.com/in/thealpineexpeditions/",
+		"https://www.pinterest.com/thealpineexpeditions/",
+		"{{ site.url }}/"
+	  ]
+	}
+	</script>
+
+<style>
+	body{
+		height: 100% !important;
+	}
+</style>
+
+
+<!-- VARIABLES -->
+{% assign raft = site.data.rafting-data[page.title-slug] %}
+
+    <!-- <div class="popup_form_wrapper">
+        <div class="popup_form">
+
+
+            <div class="popup_close_btn_wrapper">
+                <svg class="popup_close_btn">
+                    <path d="M35.707,16.293c-0.391-0.391-1.023-0.391-1.414,0L26,24.586l-8.293-8.293c-0.391-0.391-1.023-0.391-1.414,0   s-0.391,1.023,0,1.414L24.586,26l-8.293,8.293c-0.391,0.391-0.391,1.023,0,1.414C16.488,35.902,16.744,36,17,36   s0.512-0.098,0.707-0.293L26,27.414l8.293,8.293C34.488,35.902,34.744,36,35,36s0.512-0.098,0.707-0.293   c0.391-0.391,0.391-1.023,0-1.414L27.414,26l8.293-8.293C36.098,17.316,36.098,16.684,35.707,16.293z" fill="#ffd600"/>
+               </svg>
+            </div>
+
+
+            <div class="popup_background">
+
+             </div>
+
+
+            <div class="form_wrapper">
+
+                <div class="text">
+                    <h2>Enter Your Email Below To Get 20% Off</h2>
+                    <p>Fill the form and get flat 20% Off on your {{ page.title }} + Beas River Rafting Trip.</p>
+                </div>
+
+                <form  action="https://formspree.io/thetrippyfrog@gmail.com" method="POST" name="contact_form">
+
+                <div class="textfield_wrapper">
+                    <input  class="input_box" type="text" placeholder="Your Name" name="name" autocomplete="off" required >
+                </div>
+                <div class="textfield_wrapper">
+                    <input  class="input_box" type="email" placeholder="Email" name="email" autocomplete="off" required>
+                </div>
+                <div class="textfield_wrapper">
+                    <input class="input_box"  type="text" placeholder="Phone Number" autocomplete="off" name="phone" required>
+                </div>
+
+                <div class="textfield_wrapper">
+                    <button class="trippy_btn" type="submit" name=""> SEND </button>
+                </div>
+
+              <br/>  <div class="text">
+                    <p>Don't Worry, We won't spam you..</p>
+                </div>
+
+                </form>
+
+
+
+            </div>
+
+    </div>
+
+    </div> -->
+
+
+	<div class="container-wide row--padding-wide">
+
+{% if page.custom_bg %}
+    {% for img in page.custom_bg %}
+        {% assign path = 'assets/css/images/' | append: img | relative_url%}
+        <div class="banner__trek parallax" style="background-image:url('{{ path }}');">
+    {% endfor %}
+{% else %}
+    {% assign path = 'assets/css/images/welcome.jpeg' | relative_url%}
+        <div class="banner__trek parallax" style="background-image: url('{{ path }}')">
+{% endif %}
+		<span class="banner__overlay"></span>
+			<div class="banner__trek-overview">
+				<h1 class="trek-name" style="font-family:'Bowlby one sc',sans-serif !important;">{{ page.title }}</h1>
+				<p class="trek-time">
+					{% if raft.days %}
+					<span class="trek-time--part1">
+						<span class="trek-span"><span class="counter">{{ raft.days }}</span><span>&nbsp;Days</span></span>
+					</span>
+					<span class="trek-time--part2">
+						<span class="trek-span"><span class="counter">{{ raft.nights }}</span><span>&nbsp;Nights</span></span>
+					</span><br />
+					{% endif %}
+					
+					
+					<span class="trek-slide--price trek-price"><span style="font-size: 60%;">From</span> <i class="fa fa-dollar-sign"></i> {{ raft.price }}/-</span>
+			
+				</p>
+
+			</div>
+
+			<!-- <div class="banner__trek-book">
+				<p class="trek-book">
+					<span class="trek-book--btn">
+							<button class="trippy_btn more-trippy_btn" type="submit" name="sendMsg" onclick="imPop();">
+								<span class="trippy_btn-left"></span>Book Now<span class="trippy_btn-right"></span>
+							</button>
+					</span>
+				</p>
+			</div> -->
+
+			<span class="banner__skip">
+					<a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
+			</span>
+		</div>
+
+
+<!-- Trek related content here -->
+<div class="two-col-layout" id="twoCol">
+	
+	<div class="row row--padding-medium content container--white content__left" id="content">
+	<span style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('{{ 'assets/css/images/static.gif' | absolute_url }}') repeat center; opacity: .05; z-index: -1;"></span>
+
+		<div style="max-width: 50em; margin: auto;">
+			<!-- TREK OVERVIEW -->
+			<div class="row container-wide" style="padding-bottom: 3em; text-align: left; " >
+
+				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="far fa-file-alt"></i>&nbsp;Highlights</h2>
+				
+				{% for lights in raft.lights %}
+							<p><i class="fas fa-check-circle"></i>&nbsp;&nbsp;
+								<span class="holo" style="font-family: 'Anton',sans-serif;"> 
+									{{ lights.list }}
+								</span>
+							  </p>
+				{% endfor %}
+
+				
+				
+				<!-- <p><i class="fas fa-check-circle"></i>&nbsp;&nbsp;<span class="holo" style="font-family: 'Anton',sans-serif;"> {{  raft.highlight2 }} </span> </p> -->
+				<!-- <p><i class="fas fa-check-circle"></i>&nbsp;&nbsp;<span class="holo" style="font-family: 'Anton',sans-serif;"> {{  raft.highlight3 }}</span>   </p> -->
+				<!-- <p><i class="fas fa-check-circle"></i>&nbsp;&nbsp;<span class="holo"> </span>  </p>
+				<p><i class="fas fa-check-circle"></i>&nbsp;&nbsp;<span class="holo">  </span>  </p> -->
+				
+
+				<br />
+				<br />
+			</div>
+
+			<div class="material">
+
+
+
+			<!-- <h2 class="content__title content__title-white no-underline" style="padding: 0; margin: 0;"><i class="fas fa-hiking"></i> </h2><br />
+			<h2 class="content__sub-title content__title-white no-underline" style="padding-top: 0; margin-bottom: 0; padding-bottom: 1em;">About The Trek
+			</h2> -->
+
+
+
+			<div class="trek--section" style="text-align: left;">
+
+				{{ raft.video }}
+
+				<br />
+				<br />
+				<br />
+
+				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="far fa-file-alt"></i>&nbsp;The Complete Guide to {{ raft.name }}</h2>
+				{% for overview in raft.overview %}
+					<p class="content--detail">
+						{{ overview.content }}
+					</p>
+				{% endfor %}
+				
+
+			
+			</div>
+
+
+			<!-- ITINERARY -->
+			<div class="trek--section" style="text-align: left;">
+				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-map-marked-alt"></i>&nbsp;Itinerary</h2>
+
+				<ul class="trek-itinerary">
+
+					{% for i in raft.itinerary %}
+						<li>
+							<h2 class="itinerary-subtitle">
+								{{ i.title }}
+							</h2>
+							<p class="content--detail itinerary-detail">
+								{{ i.content }}
+							</p>
+						</li>
+					{% endfor %}
+
+					<li>
+						<h2 class="itinerary-subtitle">TRIP ENDS HERE!</h2>
+					</li>
+				</ul>
+
+			</div>
+
+				
+			{{ content }}
+					
+			<!--GALLERY-->
+			<!--
+				<div class="row row--padding-medium">
+					<p class="content__sub-title">RAFTING GALLERY&nbsp;<i class="fas fa-camera"></i></p>
+					<section class="img-gallery-magnific">
+
+					{% for i in (1..5) %}
+						{% assign subPath = page.title | remove: "Trek" | slugify | append: "/" %}
+						{% assign path = 'assets/css/images/rafting/' | append: subPath | relative_url %}
+						<div class="magnific-img">
+							<a class="image-popup-vertical-fit" href="{{ path }}{{i}}.jpg" title="{{ page.title }}">
+								<img src="{{ path }}{{i}}.jpg" alt="{{ page.title }}" />
+							</a>
+						</div>
+					{% endfor %}
+
+					</section>
+					<div class="clear"></div>
+				</div>
+				<br /><br />
+            -->
+
+
+
+			<!-- Guide's Inclusions -->
+			<div class="trek--section" style="text-align: left; ">
+				<h2 class="content__sub-title" style="padding-bottom: 0;"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-crown" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-user-crown fa-w-14 fa-2x" style="font-size: 1em; transform: translateY(-2px);"><path fill="currentColor" d="M352 0l-64 32-64-32-64 32L96 0v96h256V0zm-38.4 304h-16.71c-22.24 10.18-46.88 16-72.89 16s-50.65-5.82-72.89-16h234.4C60.17 304 0 364.17 0 438.4V464c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48v-25.6c0-74.23-60.17-134.4-134.4-134.4zM224 272c70.69 0 128-57.31 128-128v-16H96v16c0 70.69 57.31 128 128 128z" class=""></path></svg>&nbsp;Guide's Equipments</h2>
+				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Medical and First-Aid Kit	<br /></p>
+				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Knife and Carabiner <br /></p>
+				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Flip-Line <br /></p>
+				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Throw-Bag (Rope inside, in case of rescue operations) <br /></p>
+				<!-- <p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;GoPro On Demand. (Extra charges apply) <br /></p> -->
+				<p class="content__list-item" style="text-indent: 2em; padding-top: 1em;">
+				</p>
+			</div>
+
+
+			<!-- Person's Inclusions -->
+			<div class="trek--section" style="text-align: left; ">
+				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-user" style="transform: translateY(-2px);"></i>&nbsp;What's Included</h2>
+				<!-- <p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;PFD (Life Jacket)	<br /></p>
+				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Helmet <br /></p>
+                <p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Paddles <br /></p>
+                <p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Dry bag <br /></p>
+                <p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;WetSuit (When Necessary)<br /></p> -->
+
+				<!-- <p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Other Protective Gears <br /></p> -->
+				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;All staff, including highly qualified & licensed Guides and professional Safety Kayakers all fluent in English and holding up to date First Aid Qualifications.</p>
+				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;All camping equipment including toilet tents, shelters, mattresses, sleeping bags, tarps, personal tents etc. No additional charge for sleeping bag hire.</p>
+				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;All meals and water whilst on the river. Tea, coffee, hot chocolate and juice will also be provided.</p>
+				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Transportation to and from the river by bus.</p>
+				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;All equipment, including PFD’s, helmets, dry tops, throw bags, dry bags, pelican boxes, wetsuits, paddles, etc all at international standards and regularly checked.</p>
+				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;If you are kayaking with us, kayak hire is also included in the cost. See which kayaks we have here.</p>
+				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Porters.</p>
+				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;River permits.</p>
+				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Gear Raft support.</p>
+				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Extensive medical kit.</p>
+				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Trip photos *make sure you bring a USB stick along with you.</p>
+
+			
+			</div>
+
+
+			<!-- What We Don't Provide -->
+			<div class="trek--section list-light" style="text-align: left;">
+				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-times"></i>&nbsp;What's Not Included</h2>
+                <!-- <p class="content__list-item"><i class="fas fa-times-circle"></i>&nbsp;&nbsp;<br /></p> -->
+
+                <p class="content__list-item"><i class="fas fa-times-circle"></i>&nbsp;&nbsp;Alcohol and additional snacks. <br /></p>
+                <p class="content__list-item"><i class="fas fa-times-circle"></i>&nbsp;&nbsp;Personal Expenses <br /></p>
+
+                <p class="content__list-item"><i class="fas fa-times-circle"></i>&nbsp;&nbsp;Personal insurance. <br /></p>
+                <p class="content__list-item"><i class="fas fa-times-circle"></i>&nbsp;&nbsp;Travel Insurance <br /></p>
+
+
+			</div>
+
+            <!-- Things To Pack -->
+            <div class="trek--section list-light" style="text-align: left;">
+                <h2 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-suitcase"></i>&nbsp;Things To Pack</h2>
+
+                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span style="font-weight: bold;"> </span>Swimsuit or shorts<br /></p>
+                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span style="font-weight: bold;"> </span>Extra T-shirts<br /></p>
+                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span style="font-weight: bold;"> </span>Sunglasses with a strap<br /></p>
+                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span style="font-weight: bold;"> </span>river sandals that attach securely to your feet<br /></p>
+                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span style="font-weight: bold;"> </span>Sunscreen<br /></p>
+                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span style="font-weight: bold;"> </span> You might want to bring along rain gear and a sweater or jacket.<br /></p>
+                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span style="font-weight: bold;"> </span>Extra Cash is handy for souvenirs and refreshments.<br /></p>
+                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span style="font-weight: bold;"> </span>Small Towel<br /></p>
+
+                <p class="content__list-item" style="text-indent: 2em; padding-top: 1em;">
+
+                </p>
+            </div>
+
+			<!-- Mandatory Documents -->
+			<div class="trek--section" style="text-align: left;">
+				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="far fa-file-alt"></i>&nbsp;Mandatory Documents</h2>
+				<p class="content__list-item"><i class="far fa-list-alt"></i>&nbsp;&nbsp;Identification document<br /></p>
+				<p class="content__list-item"><i class="far fa-list-alt"></i>&nbsp;&nbsp;Booking Receipt, if Booked Online (PDF will work)<br /></p>
+
+				<p class="content__list-item" style="text-indent: 2em; padding-top: 1em;"></p>
+			</div>
+
+
+			<!-- Cancellation Policy -->
+			<div class="trek--section" style="text-align: left;">
+				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="far fa-file-alt"></i>&nbsp;Cancellation Policy</h2>
+				<p class="content__list-item"><i class="far fa-list-alt"></i>&nbsp;&nbsp;More than 30-days prior to departure - 50% refund.<br /></p>
+				<p class="content__list-item"><i class="far fa-list-alt"></i>&nbsp;&nbsp;In Between 15-30-days prior to departure - 25% refund.<br /></p>
+				<p class="content__list-item"><i class="far fa-list-alt"></i>&nbsp;&nbsp;Less than 15-days prior to departure - No Refund.<br /></p>
+
+				<p class="content__list-item" style="text-indent: 2em; padding-top: 1em;"></p>
+			</div>
+			
+			<!-- Frequently Asked question-->
+			<div class="trek--section list-light" style="text-align: left;">
+					<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="fa fa-question-circle"></i>&nbsp;Frequently Asked question</h2>
+
+				<!-- <div id='content' class="row row--padding-medium"> -->
+
+					<!--Itinerary-->
+					<!-- {% for faq in raft.faq %}
+
+						<button class="accordion">{{faq.title}}
+							<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+						</button>
+						<div class="panel">
+							<div style="padding: 1em 0;">
+								<p>  
+									{{ faq.list }}
+								<br /></p>
+							</div>
+						</div>
+
+					{% endfor %} -->
+					<button class="accordion">
+						<p class="content__sub-title_faq">Do I need to know how to swim to go rafting?</p>
+						<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+					</button>
+					<div class="panel">
+						<p>While basic swimming skills are recommended, they are not required. All participants are required to wear a life jacket, and our guides will teach you the necessary safety skills to enjoy the trip.</p>
+					</div>
+				
+					<button class="accordion">
+						<p class="content__sub-title_faq">Can I bring a camera or phone on the raft?</p>
+						<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+					</button>
+					<div class="panel">
+						<p>We recommend leaving electronic devices in a safe, dry location as they may be damaged or lost during the rafting trip. Our guides will take photos and videos of your adventure, which you can purchase after the trip.</p>
+					</div>
+				
+					<button class="accordion">
+						<p class="content__sub-title_faq">Can I bring my own food and drinks on the raft?</p>
+						<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+					</button>
+					<div class="panel">
+						<p>We provide snacks and water on the trip, but you are welcome to bring your own food and drinks if desired. Please let us know in advance if you have any dietary restrictions or preferences.</p>
+					</div>
+				
+					<button class="accordion">
+						<p class="content__sub-title_faq">How far in advance should I book?</p>
+						<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+					</button>
+					<div class="panel">
+						<p>We recommend booking as far in advance as possible. We run at capacity for most of the summer and many trips will sell out well over a month in advance.</p>
+					</div>
+				
+					<button class="accordion">
+						<p class="content__sub-title_faq">Are there age or weight restrictions for rafting?</p>
+						<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+					</button>
+					<div class="panel">
+						<p>Age and weight restrictions may vary depending on the trip's difficulty level and location. Please contact us for more information and to determine the appropriate trip for your group.</p>
+					</div>
+				
+					<button class="accordion">
+						<p class="content__sub-title_faq">Can I request a private rafting trip?</p>
+						<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+					</button>
+					<div class="panel">
+						<p>Yes, we offer private rafting trips for groups of all sizes. Please contact us for more information and to schedule your private trip.</p>
+					</div>
+				
+					<button class="accordion">
+						<p class="content__sub-title_faq">Does The Alpine EXpeditions provide insurance?</p>
+						<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+					</button>
+					<div class="panel">
+						<p>Unfortunately, there is currently no third-party insurance system available for Nepal's whitewater industry, meaning that we are unable to provide insurance coverage for participants. To ensure the safety of all our clients, we require that they have appropriate emergency medical and evacuation insurance that is suitable for the activity and adventure level they are undertaking.</p>
+					</div>
+
+					
+
+
+
+
+				<!-- </div> -->
+
+			</div>
+
+
+
+			</div>
+
+
+    	</div>
+	</div>
+
+
+
+		<!--SideBar-->
+		<div class="content__right" id="scroll-to">
+			<div class="floater" style="z-index:999;">
+				<div class="row" style="text-align: left;" >
+
+
+               <div class="">
+					<p class="trek-overview">
+						<i class="fas fa-calendar"></i>&nbsp; <span class="holo">Best Season :</span> {{ raft.season }}
+					</p>
+				</div>
+
+				<div class="">
+					<p class="trek-overview">
+						<i class="fa fa-user"></i>&nbsp; <span class="holo">Min-Age :</span> {{ raft.minAge }}
+					</p>
+				</div>
+
+				<div class="">
+					<p class="trek-overview">
+						<i class="fa fa-users"></i>&nbsp; <span class="holo">Group Size : </span>{{ raft.groupSize }} 
+					</p>
+				</div>
+
+
+				<div class="">
+					<p class="trek-overview">
+						<i class="fas fa-campground"></i>&nbsp;<span class="holo">River Rating :</span>  {{ raft.rating }}
+					</p>
+				</div>
+
+                <div class="">
+                    <p class="trek-overview">
+                        <i class="fas fa-map-marker"></i>&nbsp; <span class="holo">Start Point :</span> {{ raft.startPoint }}
+                    </p>
+                </div>
+
+
+
+				<div class="">
+					<p class="trek-overview">
+						<i class="fas fa-globe"></i>&nbsp; <span class="holo">End Point:</span> {{ raft.endPoint }}
+					</p>
+				</div>
+
+				<div class="" style="cursor:pointer;">
+					<a target='_blank' href='{{ site.url }}{{ raft.download }}' class='button'>
+						<p class="trek-overview holo" style="font-family: 'ANTON',sans-serif;" ><i class='fa fa-download'></i>&nbsp;&nbsp;Download Pdf Itinerary 	</p>
+						 </a> <br />
+				</div>
+
+
+
+				</div>
+					<!-- <span class="priceTag">FROM Rs.<i class="fa fa-rupee-sign"></i>{{ page.price }}</span> -->
+					<!-- <button class="book_btn" onclick="imPop();" type="submit" style="width: 100%;  font-size: 1.5em; box-shadow: 0 0 13px #2f2f2f; ">BOOK NOW</button> -->
+					<!-- <br /><br /> -->
+					<!-- <button class="book_btn enquiry" onclick="javascript:alert('Contact Form NOT Found!');" type="submit" style="width: 100%;  font-size: 1.5em; border-radius: 360px;">SEND ENQUIRY</button>
+					<br /><br /> -->
+
+                <div class="" id="trigger1">
+                    <button id="enquiry-button" class="book_btn enquiry" type="button" style="width: 100%; font-size: 1.5em; text-align: center; display: block; padding: 10px 20px;">SEND AN ENQUIRY</button>
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const enquiryButton = document.getElementById('enquiry-button');
+                        if (enquiryButton) {
+                            enquiryButton.addEventListener('click', function() {
+                                const tourSlug = "{{ page.title-slug | uri_escape }}"; 
+                                const newUrl = `/enquiry/?tour_slug=${tourSlug}`;
+                                window.location.href = newUrl;
+                            });
+                        }
+                    });
+                </script>
+
+
+
+							
+
+			</div>
+		</div>
+
+
+
+
+
+    	</div>
+
+	</div>
+
+	<div class="row row--padding-medium container-wide" style="margin: 1em 0; border: 1px solid #cacaca; border-left: 0; border-right: 0;">
+		<p class="content__pg" style="clear: both; padding-bottom: 0em; background: red;"><strong style="font-weight: bold; color: #fff;padding-left: 1.5em;">NOTE <i class="fas fa-bullhorn"></i> </strong></p><br />
+		<ul class="content__list">
+			<li class="content__list-item">
+				This itinerary is subject to change based on weather and water conditions, as well as other factors. Your guide will keep you informed and ensure that your trip is safe, enjoyable, and unforgettable.
+			</li>
+			<!-- <li class="content__list-item">
+				Do not panic when you are in the raft
+			</li> -->
+			<li class="content__list-item">
+				The time associated with the ride is the average/approximate time, and may vary.
+			</li>
+		</ul>
+	</div>
+
+	
+
+
+		<!-- <div class=" row--pading-medium col--recent-post" style="padding: 0 1em; text-align: justify;" >
+			
+				
+			<div class="content__right" id="scroll-to">
+				<div class="floater">
+						<span class="priceTag">FROM $.{{ raft.price }}</span>
+						<span class="priceTag">FROM $.<i class="fa fa-rupee-sign"></i>{{ raft.price }}</span>
+						<button class="book_btn" onclick="imPop();" type="submit" style="width: 100%;  font-size: 1.5em; box-shadow: 0 0 13px #2f2f2f; border-radius: 360px;">BOOK NOW</button>
+						<br /><br />
+						<button class="book_btn enquiry" onclick="javascript:alert('please contact us through Contact Page!');" type="submit" style="width: 100%;  font-size: 1.5em; border-radius: 360px;">ENQUIRY</button>
+						<br /><br />
+				</div>
+			</div>
+
+
+
+			</div> -->
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+        <!--<script src="https://js.instamojo.com/v1/button.js"></script>-->
+<!-- 
+    <script src="https://js.instamojo.com/v1/checkout.js"></script>
+
+    <script>
+	function imPop(){
+		Instamojo.open('{{ raft.bookLink}}');
+	}
+
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+
+    </script> -->
+
+
+

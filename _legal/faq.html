@@ -1,0 +1,80 @@
+---
+layout: default
+title: FAQ
+permalink: /faq/
+subtitle1: "The Journey"
+subtitle2: "Begins"
+custom_bg: bg/about0.jpg
+description: "Get answers to common questions about trekking, camping, and adventure tours in Nepal with our FAQ section. Find practical information to plan your expedition."
+keywords: "trekking FAQs Nepal, adventure tour questions, camping queries, expedition information"
+---
+
+ <!----------Our Story -------->
+
+    <div class="slider-wrapper" style="height: 50% !important; ">
+        <div class="slide banner-slide slideBlog">
+        <div class="slide-tagline">
+            <span class="tagline-text">
+            <div class="banner_logo" style="position: absolute; left: 0; top:-75%; width: 100%; text-align: center;">
+                <!-- <h2 class="trippy-name">OUR BL<i class="far fa-compass title-o"></i>G -->
+                <h1 class="trippy-name">FAQ
+
+                    <!-- <p class="headline--detail" style="padding: 0; margin: 0; font-style: oblique; letter-spacing: .05em;">Understand more about the Himalayas and Himachal Pradesh!</p> -->
+                </h1>
+            </div>
+            </span>
+
+        </div>
+        </div>
+    <span class="banner__skip">
+            <a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
+    </span>
+    </div>
+
+
+    <div class="row row--padding-medium container-wide ">
+    
+
+        <!-- <div class="faq-section">
+            <h2 class="faq-title content__sub-title">
+                <i class="fa fa-question-circle"></i>&nbsp;Frequently Asked Questions
+            </h2>
+        
+            {% for item in site.data.faq %}
+            <button class="faq-toggle content__sub-title" style="text-transform: uppercase;">
+                {{ item.question }}
+                <span class="toggle-icon">
+                    <span class="vertical-line"></span>
+                    <span class="horizontal-line"></span>
+                </span>
+            </button>
+            <div class="faq-answer">
+                <div class="answer-content">
+                    <p>{{ item.answer }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div> -->
+
+
+        <div class="faq-section">
+            <h1 class="faq-title content__sub-title">
+                <i class="fa fa-question-circle"></i>&nbsp;Frequently Asked Questions
+            </h1>
+            
+            {% for item in site.data.faq %}
+            <button class="faq-toggle">
+                {{ item.question }}
+            </button>
+            <div class="faq-answer">
+                <div class="answer-content">
+                    <p>{{ item.answer }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        
+    
+    
+    </div>

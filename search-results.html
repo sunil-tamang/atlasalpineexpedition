@@ -1,0 +1,46 @@
+---
+layout: default
+title: Search Results
+---
+
+<h1>Search Results</h1>
+<div id="search-results">Loading...</div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const query = params.get("query")?.toLowerCase() || "";
+
+  fetch("/search.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const results = data.filter((item) => {
+        return (
+          item.title.toLowerCase().includes(query) ||
+          item.region.toLowerCase().includes(query) ||
+          item.category.toLowerCase().includes(query) ||
+          item.description.toLowerCase().includes(query)
+        );
+      });
+
+      const container = document.getElementById("search-results");
+      if (results.length === 0) {
+        container.innerHTML = `<p>No results found for "<strong>${query}</strong>"</p>`;
+        return;
+      }
+
+      container.innerHTML = results
+        .map(
+          (item) => `
+          <div class="search-result-item">
+            <h2>${item.title}</h2>
+            <p><strong>Category:</strong> ${item.category}</p>
+            <p><strong>Region:</strong> ${item.region}</p>
+            <p><strong>Difficulty:</strong> ${item.difficulty}</p>
+            <p><strong>Price:</strong> $${item.price}</p>
+            <a href="${item.url}">View Details</a>
+          </div>
+        `
+        )
+        .join("");
+    });
+</script>

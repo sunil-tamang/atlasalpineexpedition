@@ -1,0 +1,80 @@
+/*+++++++++++++++++++++++++++++++++BASE.CSS+++++++++++++++++++++++++++++++++**/
+html {
+    overflow-x: hidden;
+}
+body,
+html {
+    font-family: 'Lato', 'Montserrat', sans-serif;
+    height: 100%;
+    letter-spacing: 0.05em;
+    /*font-variant: small-caps;*/
+}
+h1 {
+    // font-size: 1.7em;
+    // font-family: 'Lato',sans-serif;
+    // font-weight: 200;
+    font-size: 1.7em;
+    font-family: 'Bowlby one sc', sans-serif;
+    font-weight: 200;
+}
+
+h2{
+
+    // font-size: 1.7em;
+    font-family: 'Bowlby one sc', sans-serif;
+    font-weight: 200;
+
+}
+p {
+    line-height: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    letter-spacing: 0.035em;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus {
+    outline: 0;
+}
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.no-select,
+a {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+*::selection {
+    background-color: #fb4a4a;
+    color: #fff;
+}
+.highlight {
+    line-height: 1.6em;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 0.9em;
+    font-style: normal;
+    color: #00b7ff;
+}
+.holo {
+    font-size: 1em;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+}
+.hover:hover {
+    color: #428bca;
+}

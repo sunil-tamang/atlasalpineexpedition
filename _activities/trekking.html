@@ -1,0 +1,139 @@
+---
+layout: "default"
+title: "Trekking"
+title_img: "fa fa-hiking"
+permalink: "/activities/trekking/"
+subtitle0: "Trekking"
+subtitle1: "The"
+subtitle2: "Himalayas"
+custom_bg: "bg/trek_min.jpg"
+productScript: "app.createProducts('trekking');"
+author_name : " THE ALPINE EXPEDITIONS"
+
+tags : "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek, Langtang Valley Trek, Upper Mustang Trek, Manaslu Circuit Trek, Ghorepani Poon Hill Trek ,Gokyo Lakes Trek ,Kanchenjunga Base Camp Trek, Makalu Base Camp Trek"
+description: "Explore the Himalayas with Alpine Expeditions, a leading trekking and expedition company in Nepal. Discover our range of trekking packages, camping, rafting, bike tours, peak climbing, and paragliding adventures."
+keywords: "trekking in nepal, nepal trekking, himalayan treks, trekking packages, camping, rafting, bike tours, peak climbing, paragliding, alpine expeditions"
+
+contains_ads : "YES"
+
+
+---
+
+<!----------T-R-E-K-K-I-N-G-------->
+<div class="container-wide row--padding-wide">
+
+  <div class="banner" style="background-image: url('/assets/css/images/bg/trek.jpg');">
+      <span class="banner__overlay"></span>
+      
+      <div class="banner__tagline banner__home" style="opacity: 1;">
+          <p class="tagline" style="text-transform: none;"></p>
+          <br />
+          <p class="sub-tagline" style="display: inline;">
+          
+          </p>
+      </div>
+      <span class="banner__skip">
+          <a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
+      </span>
+  </div>
+
+
+</div>
+
+<!-- <div id='content' class="row row--padding-medium content container--white">
+
+
+           <h1 class="content__title content__title-white" data-aos="zoom-out"></h1>
+           <br />
+
+          <div class="row container-wide content__pg"> -->
+    
+    <div class="row container-wide row--padding-wide content__pg" >
+                  
+              <!-- <br /><br /> -->
+              <!-- <h2 class="content__sub-title content__title-white">OUR Tours </h2><br /> -->
+              <!-- <br /><br /> -->
+             
+              <!-- Uncomment this to view bike tours -->
+              <!-- <div class="productWrapper row--padding-wide" >
+                      
+                      <div class="loader__wrapper"><div></div><div></div></div>
+              </div> -->
+          
+              <!-- <br/> -->
+
+
+
+              {% for trek_id in site.data.trek-data %}
+                  {% assign trek = trek_id[1] %}
+                  <!-- Access trek.name, trek.days, trek.region, trek.difficulty, etc. -->
+              {% endfor %}
+
+              <div class="update__page-layout">
+
+                  <div id="update__filters">
+
+                      <h2>Category</h2>
+                      <button
+                          class="update__filter-btn toggle-button"
+                          data-filter="category"
+                          data-value="trekking">Trekking</button>
+                      <button
+                          class="update__filter-btn toggle-button"
+                          data-filter="category"
+                          data-value="climbing">Climbing</button>
+
+                      <h2>Difficulty</h2>
+                      <div class="inline-radio-group">
+                          <label><input type="radio" name="difficulty" value="easy">
+                              Easy</label>
+                          <label><input type="radio" name="difficulty" value="challenging">
+                              Challenging</label>
+                      </div>
+
+                      <h2>Region</h2>
+                      <div class="inline-radio-group">
+                          <label><input type="radio" name="region" value="everest">
+                              Everest</label>
+                          <label><input type="radio" name="region" value="manaslu">
+                              Manaslu</label>
+                      </div>
+
+                      <button id="update__clear-filters">Clear</button>
+                  </div>
+
+                  <div class="update__trek-grid">
+                      {% for trek_id in site.data.trek-data %}
+                          {% assign trek = trek_id[1] %}
+                          <a href="/activities/trekking/{{ trek_id[0] }}/" class="update__trek-card-link">
+                              <div
+                                  class="update__trek-card"
+                                  data-category="{{ trek.category | downcase }}"
+                                  data-difficulty="{{ trek.difficulty | downcase }}"
+                                  data-region="{{ trek.region | downcase }}">
+
+                                  <div
+                                      class="trek-card__image-wrapper"
+                                      style="background-image: url('/{{ trek.photos }}');">
+                                      <div class="trek-card__overlay">
+                                          <h2>{{ trek.name }}</h2>
+                                          <p>{{ trek.region }}
+                                              •
+                                              {{ trek.days }}
+                                              days</p>
+                                          <p>
+                                              <!-- <strong>${{ trek.price }}</strong> -->
+                                          </p>
+                                      </div>
+                                  </div>
+
+                              </div>
+                          </a>
+                      {% endfor %}
+                  </div>
+
+              </div>
+
+    </div>
+
+

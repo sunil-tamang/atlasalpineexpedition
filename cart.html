@@ -1,0 +1,71 @@
+---
+layout: default
+title: "Cart"
+permalink: "/cart/"
+productScript: app.getProducts();
+no-index: "yes"
+author_name : " THE ALPINE EXPEDITIONS "
+tags : "CartPage,Nepal"
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "The Alpine Expeditions",
+  "image": "{{ site.url }}/assets/css/images/{{ page.custom_bg | default: site.img }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "telephone": "+977-9863683851",
+  "priceRange": "$1000 - $10000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Makalbari",
+    "addressLocality": "KATHMANDU",
+    "postalCode": "44600",
+    "addressCountry": "NEPAL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 32.039375,
+    "longitude": 77.1324272
+},
+"hasMap": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13525.534262300927!2d77.1349239!3d32.0588729!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c9c798dbeb6e498!2sTHE%20TRIPPY%20FROG!5e0!3m2!1sen!2sin!4v1579107517725!5m2!1sen!2sin\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\"></iframe>",
+"sameAs": [
+		"https://www.facebook.com/thealpineexpeditions/",
+		"https://twitter.com/thealpineexpeditions",
+		"https://www.instagram.com/thealpineexpeditions/",
+		"https://www.linkedin.com/in/thealpineexpeditions/",
+		"https://www.pinterest.com/thealpineexpeditions/",
+		"{{ site.url }}/"
+  ]
+}
+</script>
+
+<!-- Shopping Cart -->
+<div id='content' class="row row--padding-medium container-wide content container--white">
+	<div id='content' class="row row--padding-medium">
+		<h1 class="content__title content__title-white no-underline" style="padding: 0; margin: 0;">
+			<i class="fas fa-shopping-cart"></i> </h1><br />
+		<h1 class="content__sub-title content__title-white no-underline" style="padding-top: 0; margin-bottom: 0; padding-bottom: 0;">CART
+<!--		<p class="headline--detail" style="padding: 0; margin: 0; font-style: oblique; letter-spacing: .05em; color: #333;">""</p>-->
+		</h1>
+		<br /><br /><br />
+		<div class="productWrapper">
+			<div class="row">
+				<span class="hr-line"></span>
+				<!-- Product List -->
+				<div class="row cart">
+					<!--Loading Products-->
+					<div class="loader__wrapper"><div></div><div></div></div>
+				</div>
+				<span class="row hr-line"></span>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Shopping Cart -->
+
+
+<script>
+	document.getElementById("header").className += ' headerBlack';
+</script>

@@ -1,0 +1,65 @@
+hattiban:
+  name: "Hattiban Rock Climbing"
+  days: "1"
+  nights: "0"
+
+  altitude: "2,300 m"
+  grade: "Moderate"
+  skill: "Suitable for beginners to intermediate climbers"
+  walking: "35 Mintues"
+  accommodation: "Hotel + Lodge"
+  groupSize: "2-15 pax"
+  season: "Spring/Autumn"
+  region: "Dollu"
+
+  popular: "Y"
+  price: "50"
+  photos: "assets/css/images/rock-climbing/bg.jpg"
+
+  bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+  description: "  Discover the thrill of rock climbing at Hattiban, one of Nepal’s most iconic climbing destinations, located near the serene village of Pharping. Surrounded by breathtaking landscapes and rich cultural heritage, Hattiban is the perfect getaway for adventure enthusiasts. <br/> <br/> Our expertly crafted Hattiban Rock Climbing package caters to climbers of all levels, from complete beginners eager to conquer their first climb to experienced adventurers seeking new challenges. With routes designed to test both your skills and determination, this experience promises an unforgettable blend of adrenaline and nature. Whether you're scaling the beginner-friendly rocks or tackling advanced climbing routes, our team of certified guides ensures your safety and success every step of the way. Plus, you'll get to enjoy the spectacular views, fresh mountain air, and the camaraderie of fellow climbers. "
+  excerpt: " Discover the thrill of rock climbing at Hattiban, one of Nepal’s most iconic climbing destinations, located near the serene village of Pharping. Surrounded by breathtaking landscapes and rich cultural heritage, Hattiban is the perfect getaway for adventure enthusiasts. <br/> <br/> Our expertly crafted Hattiban Rock Climbing package caters to climbers of all levels, from complete beginners eager to conquer their first climb to experienced adventurers seeking new challenges. With routes designed to test both your skills and determination, this experience promises an unforgettable blend of adrenaline and nature. Whether you're scaling the beginner-friendly rocks or tackling advanced climbing routes, our team of certified guides ensures your safety and success every step of the way. Plus, you'll get to enjoy the spectacular views, fresh mountain air, and the camaraderie of fellow climbers. "
+
+  video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/ZHCL_qkrCGE' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+  download: "//assets/docs/rock.pdf"
+
+  image: "assets/css/images/bg/rock_climbing.jpg"
+
+
+  highlights: 
+    - content: "Experience the thrill of rock climbing at Parphing."
+    - content: "Climbing for all skill levels."
+    - content: "Enjoy the stunning landscapes."
+
+  overview:
+    - content: " Discover the thrill of rock climbing at Hattiban, one of Nepal’s most iconic climbing destinations, located near the serene village of Pharping. Surrounded by breathtaking landscapes and rich cultural heritage, Hattiban is the perfect getaway for adventure enthusiasts. <br/> <br/> Our expertly crafted Hattiban Rock Climbing package caters to climbers of all levels, from complete beginners eager to conquer their first climb to experienced adventurers seeking new challenges. With routes designed to test both your skills and determination, this experience promises an unforgettable blend of adrenaline and nature. Whether you're scaling the beginner-friendly rocks or tackling advanced climbing routes, our team of certified guides ensures your safety and success every step of the way. Plus, you'll get to enjoy the spectacular views, fresh mountain air, and the camaraderie of fellow climbers. "
+
+
+  whatsIncluded:
+    - content: "Expert Climbing Guides – Certified, experienced guides for all skill levels."
+    - content: "Comprehensive Gear – All essential climbing equipment provided."
+    - content: "Safety First – Guides trained in wilderness first aid and CPR."
+    - content: "Simple Lunch – Refresh yourself with light snacks, including fresh fruits and juice, to keep you energized throughout the day."
+
+  whatsNotIncluded:
+    - content: "Personal Insurance – Can be arranged at an additional cost."
+    - content: "Transportation – Available upon request for an extra fee."
+    - content: "Photos & Videos – Professional capture available for an extra charge."
+
+  whyChooseUs:
+    - content: "Expert Guides: Our team of certified guides has extensive experience in rock climbing and is dedicated to ensuring a safe and enjoyable experience for all participants."
+    - content: "Top-notch Equipment: We provide high-quality climbing gear that meets international safety standards."
+    - content: "Personalized Experience: We keep our group sizes small to offer personalized attention and a better climbing experience."
+
+  thingsToPack:
+    - content: "Weather-appropriate Clothing."
+    - content: "Personal First-aid Kit."
+    - content: "Reusable Water Bottle."
+    - content: "Snacks/Energy Bars."
+
+  cancellationPolicy:
+    - content: "Full refund if cancelled 30 days before the trip."
+    - content: "50% refund if cancelled 15-29 days before the trip."
+    - content: "No refund if cancelled within 14 days of the trip."

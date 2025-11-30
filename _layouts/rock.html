@@ -1,0 +1,586 @@
+---
+layout: 'default'
+slick_css: 'Yes'
+slick_js: 'Yes'
+author_name: "THE ALPINE EXPEDITIONS"
+tags: ""
+
+---
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "TouristInformationCenter",
+	  "name": "The Alpine Expeditions",
+	  "image": "{{ site.url }}/assets/images/{{ page.custom_bg | default: site.img }}",
+	  "url": "{{ site.url }}{{ page.url }}",
+	  "telephone": "+977-9863683851",
+	  "priceRange": "$1000 - $10000",
+	  "address": {
+		"@type": "PostalAddress",
+		"streetAddress": "Makalbari",
+		"addressLocality": "Kathmandu",
+		"postalCode": "44600",
+		"addressCountry": "NP"
+	  },
+	  "geo": {
+		"@type": "GeoCoordinates",
+		"latitude": 27.7172,  
+		"longitude": 85.3240 
+	  },
+	  "hasMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13525.534262300927!2d85.3240!3d27.7172!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c9c798dbeb6e498!2sTHE%20ALPINE%20EXPEDITIONS!5e0!3m2!1sen!2snp!4v1579107517725!5m2!1sen!2snp",
+	  "sameAs": [
+		"{{ site.url }}/activities/rock-climbing/",
+		"https://www.facebook.com/thealpineexpeditions/",
+		"https://twitter.com/thealpineexpeditions",
+		"https://www.instagram.com/thealpineexpeditions/",
+		"https://www.linkedin.com/in/thealpineexpeditions/",
+		"https://www.pinterest.com/thealpineexpeditions/",
+		"{{ site.url }}/"
+	  ]
+	}
+	</script>
+	
+
+<style>
+	body{
+		height: 100% !important;
+	}
+</style>
+
+
+<!-- VARIABLES -->
+{% assign rock = site.data.rock-data[page.title-slug] %}
+
+    <!-- <div class="popup_form_wrapper">
+        <div class="popup_form">
+
+
+            <div class="popup_close_btn_wrapper">
+                <svg class="popup_close_btn">
+                    <path d="M35.707,16.293c-0.391-0.391-1.023-0.391-1.414,0L26,24.586l-8.293-8.293c-0.391-0.391-1.023-0.391-1.414,0   s-0.391,1.023,0,1.414L24.586,26l-8.293,8.293c-0.391,0.391-0.391,1.023,0,1.414C16.488,35.902,16.744,36,17,36   s0.512-0.098,0.707-0.293L26,27.414l8.293,8.293C34.488,35.902,34.744,36,35,36s0.512-0.098,0.707-0.293   c0.391-0.391,0.391-1.023,0-1.414L27.414,26l8.293-8.293C36.098,17.316,36.098,16.684,35.707,16.293z" fill="#ffd600"/>
+               </svg>
+            </div>
+
+
+            <div class="popup_background">
+
+             </div>
+
+
+            <div class="form_wrapper">
+
+                <div class="text">
+                    <h1>Enter Your Email Below To Get 20% Off</h1>
+                    <p>Fill the form and get flat 20% Off on your {{ page.title }} + Beas River Rafting Trip.</p>
+                </div>
+
+                <form  action="https://formspree.io/thetrippyfrog@gmail.com" method="POST" name="contact_form">
+
+                <div class="textfield_wrapper">
+                    <input  class="input_box" type="text" placeholder="Your Name" name="name" autocomplete="off" required >
+                </div>
+                <div class="textfield_wrapper">
+                    <input  class="input_box" type="email" placeholder="Email" name="email" autocomplete="off" required>
+                </div>
+                <div class="textfield_wrapper">
+                    <input class="input_box"  type="text" placeholder="Phone Number" autocomplete="off" name="phone" required>
+                </div>
+
+                <div class="textfield_wrapper">
+                    <button class="trippy_btn" type="submit" name=""> SEND </button>
+                </div>
+
+              <br/>  <div class="text">
+                    <p>Don't Worry, We won't spam you..</p>
+                </div>
+
+                </form>
+
+
+
+            </div>
+
+    </div>
+
+    </div> -->
+
+
+	<div class="container-wide row--padding-wide">
+
+{% if page.custom_bg %}
+    {% for img in page.custom_bg %}
+        {% assign path = 'assets/css/images/' | append: img | relative_url%}
+        <div class="banner__trek parallax" style="background-image:url('{{ path }}');">
+    {% endfor %}
+{% else %}
+    {% assign path = 'assets/css/images/welcome.jpeg' | relative_url%}
+        <div class="banner__trek parallax" style="background-image: url('{{ path }}')">
+{% endif %}
+		<span class="banner__overlay"></span>
+			<div class="banner__trek-overview">
+				<h1 class="trek-name" style="font-family:'Bowlby one sc',sans-serif !important;">{{ page.title }}</h1>
+				<p class="trek-time">
+					{% if rock.days %}
+					<span class="trek-time--part1">
+						<span class="trek-span"><span class="counter">{{ rock.days }}</span><span>&nbsp;Days</span></span>
+					</span>
+					<span class="trek-time--part2">
+						<span class="trek-span"><span class="counter">{{ rock.nights }}</span><span>&nbsp;Nights</span></span>
+					</span><br />
+					{% endif %}
+					
+					
+					<span class="trek-slide--price trek-price"><span style="font-size: 60%;">From</span> <i class="fa fa-dollar-sign"></i> {{ rock.price }}/-</span>
+			
+				</p>
+
+			</div>
+
+			<!-- <div class="banner__trek-book">
+				<p class="trek-book">
+					<span class="trek-book--btn">
+							<button class="trippy_btn more-trippy_btn" type="submit" name="sendMsg" onclick="imPop();">
+								<span class="trippy_btn-left"></span>Book Now<span class="trippy_btn-right"></span>
+							</button>
+					</span>
+				</p>
+			</div> -->
+
+			<span class="banner__skip">
+					<a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
+			</span>
+		</div>
+
+
+<!-- Trek related content here -->
+<div class="two-col-layout" id="twoCol">
+	
+	<div class="row row--padding-medium content container--white content__left" id="content">
+	<span style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('{{ 'assets/css/images/static.gif' | absolute_url }}') repeat center; opacity: .05; z-index: -1;"></span>
+
+		<div style="max-width: 50em; margin: auto;">
+		
+			<!-- TREK OVERVIEW -->
+			<!-- <div class="row container-wide" style="padding-bottom: 3em; text-align: left; " >
+
+				<h1 class="content__sub-title" style="padding-bottom: 0;"><i class="far fa-file-alt"></i>&nbsp;Highlights</h1>
+				
+				{% for high in rock.highlights %}
+			  		
+							<p><i class="fas fa-check-circle"></i>&nbsp;&nbsp;<span class="holo" style="font-family: 'Anton',sans-serif;"> {{  high.content }}</span>  </p>
+				
+						{% endfor %}
+				
+
+
+				<br />
+				<br />
+			</div> -->
+
+			<div class="material">
+
+
+
+			<!-- <h1 class="content__title content__title-white no-underline" style="padding: 0; margin: 0;"><i class="fas fa-hiking"></i> </h1><br />
+			<h1 class="content__sub-title content__title-white no-underline" style="padding-top: 0; margin-bottom: 0; padding-bottom: 1em;">About The Trek
+			</h1> -->
+
+
+
+			<div class="trek--section" style="text-align: left;">
+
+				<!-- {{ rock.video }} -->
+
+				<br />
+				<br />
+				<br />
+
+				<h1 class="content__sub-title" style="padding-bottom: 0;"><i class="far fa-file-alt"></i>&nbsp;The Complete Guide to {{ rock.name }}</h1>
+				{% for overview in rock.overview %}
+					<p class="content--detail">
+						{{ overview.content }}
+					</p>
+				{% endfor %}
+				
+
+			
+			</div>
+
+
+			<!-- ITINERARY -->
+			<!-- <div class="trek--section" style="text-align: left;">
+				<h1 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-map-marked-alt"></i>&nbsp;Itinerary</h1>
+
+				<ul class="trek-itinerary">
+
+					{% for i in rock.itinerary %}
+						<li>
+							<h3 class="itinerary-subtitle">
+								{{ i.title }}
+							</h3>
+							<p class="content--detail itinerary-detail">
+								{{ i.content }}
+							</p>
+						</li>
+					{% endfor %}
+
+					<li>
+						<h3 class="itinerary-subtitle">TRIP ENDS HERE!</h3>
+					</li>
+				</ul>
+
+			</div> -->
+
+				
+			{{ content }}
+					
+			<!--GALLERY-->
+			
+			
+			<div class="row row--padding-medium"style="text-align: left;">
+					<h1 class="content__sub-title"><i class="fas fa-camera"></i>&nbsp;GALLERY</h1>
+					<section class="img-gallery-magnific">
+
+					{% for i in (1..8) %}
+						{% assign subPath = page.title | remove: "climbing" | slugify | append: "/" %}
+						{% assign path = 'assets/css/images/rock-climbing/' | append: subPath | relative_url %}
+						<div class="magnific-img">
+							<a class="image-popup-vertical-fit" href="{{ path }}{{i}}.jpg" title="{{ page.title }}">
+								<img src="{{ path }}{{i}}.jpg" alt="{{ page.title }}" />
+							</a>
+						</div>
+					{% endfor %}
+
+					</section>
+					<div class="clear"></div>
+				</div>
+				<br /><br />
+           
+	
+			<!-- MAP -->
+			<!-- <div class="trek--section" style="text-align: left;">
+				<h1 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-tasks"></i>&nbsp;Map</h1>
+					{{ rock.image }}	
+			</div> -->
+
+			
+
+			<!-- Person's Inclusions -->
+				<div class="trek--section" style="text-align: left;">
+					<h1 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-user" style="transform: translateY(-2px);"></i>&nbsp;What's Included</h1>
+					{% for item in rock.whatsIncluded %}
+					<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;{{ item.content }}</p>
+					{% endfor %}
+				</div>
+
+				<!-- What's Not Included -->
+				<div class="trek--section list-light" style="text-align: left;">
+					<h1 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-times"></i>&nbsp;What's Not Included</h1>
+					{% for item in rock.whatsNotIncluded %}
+					<p class="content__list-item"><i class="fas fa-times-circle"></i>&nbsp;&nbsp;{{ item.content }}</p>
+					{% endfor %}
+				</div>
+
+
+
+
+
+				<!-- Things To Pack -->
+				<div class="trek--section list-light" style="text-align: left;">
+					<h1 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-suitcase"></i>&nbsp;Things To Pack</h1>
+					{% for item in rock.thingsToPack %}
+					<p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;{{ item.content }}</p>
+					{% endfor %}
+				</div>
+
+				<!-- Cancellation Policy -->
+				<!-- <div class="trek--section" style="text-align: left;">
+					<h1 class="content__sub-title" style="padding-bottom: 0;"><i class="far fa-file-alt"></i>&nbsp;Cancellation Policy</h1>
+					{% for item in rock.cancellationPolicy %}
+					<p class="content__list-item"><i class="far fa-list-alt"></i>&nbsp;&nbsp;{{ item.content }}</p>
+					{% endfor %}
+				</div> -->
+
+					<!-- Frequently Asked Questions -->
+					<div class="trek--section list-light" style="text-align: left;"> 
+						<h1 class="content__sub-title" style="padding-bottom: 0;">
+							<i class="fa fa-question-circle"></i>&nbsp;Frequently Asked Questions
+						</h1>
+						
+						<button class="accordion">
+							<p>What should I wear for the climbing trip?</p>
+							<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+						</button>
+						<div class="panel">
+							<div style="padding: 1em 0;">
+								<p>We recommend wearing comfortable, moisture-wicking clothing suitable for outdoor activities. Sturdy athletic shoes or hiking boots are ideal for approach trails, while climbing shoes will be provided for the climbing itself. Don’t forget to bring layers, a hat, and sunscreen!</p>
+							</div>
+						</div>
+						
+						<button class="accordion">
+							<p>Is food included in the trip?</p>
+							<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+						</button>
+						<div class="panel">
+							<div style="padding: 1em 0;">
+								<p>Yes, lunch is included in the trip package. We provide a hearty lunch, along with snacks throughout the day. However, breakfast and dinner are not included, so participants should plan accordingly. If you have dietary restrictions or allergies, please let us know in advance, and we will do our best to accommodate you.</p>
+							</div>
+						</div>
+						
+						<button class="accordion">
+							<p>What fitness level do I need to participate?</p>
+							<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+						</button>
+						<div class="panel">
+							<div style="padding: 1em 0;">
+								<p>While a basic level of fitness is beneficial, our trips are designed to be accessible to a wide range of fitness levels. If you have specific concerns about your fitness level, feel free to reach out to us for guidance.</p>
+							</div>
+						</div>
+						
+						<button class="accordion">
+							<p>What if the weather is bad?</p>
+							<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+						</button>
+						<div class="panel">
+							<div style="padding: 1em 0;">
+								<p>Safety is our top priority. In the event of severe weather conditions, we will closely monitor the situation and may reschedule or adjust the itinerary as needed. Participants will be notified in advance of any changes.</p>
+							</div>
+						</div>
+						
+						<button class="accordion">
+							<p>Can I bring my camera or phone?</p>
+							<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+						</button>
+						<div class="panel">
+							<div style="padding: 1em 0;">
+								<p>Yes, you are welcome to bring a camera or phone to capture memories! However, we recommend using a secure case to protect your devices while climbing. Our guides can help you find safe opportunities to take photos.</p>
+							</div>
+						</div>
+						
+						<button class="accordion">
+							<p>What is the group size for the climbing trips?</p>
+							<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+						</button>
+						<div class="panel">
+							<div style="padding: 1em 0;">
+								<p>We typically limit our groups to ensure personalized attention and safety. The maximum group size is 15, allowing our guides to provide adequate support and instruction.</p>
+							</div>
+						</div>
+						
+						<button class="accordion">
+							<p>What is the cancellation policy?</p>
+							<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+						</button>
+						<div class="panel">
+							<div style="padding: 1em 0;">
+								<p>Our cancellation policy allows for a full refund if you cancel 3-4 days before the trip. Please refer to our website for more details on our cancellation and rescheduling policies.</p>
+							</div>
+						</div>
+						
+						<button class="accordion">
+							<p>How do I register for the trip?</p>
+							<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span </span>
+						</button>
+						<div class="panel">
+							<div style="padding: 1em 0;">
+								<p>You can register for the trip through our website or by contacting us directly. A deposit is required to secure your spot, with the remaining balance due 2-3 Days before the trip.</p>
+							</div>
+						</div>
+						
+						<button class="accordion">
+							<p>What if I have a medical condition?</p>
+							<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+						</button>
+						<div class="panel">
+							<div style="padding: 1em 0;">
+								<p>If you have any medical conditions that may affect your participation in the trip, please inform us during the registration process. Our guides are trained to accommodate various needs, and we want to ensure a safe experience for everyone.</p>
+							</div>
+						</div>
+						
+						<button class="accordion">
+							<p>Is there an age limit for participants?</p>
+							<span class="accordion-sign"><span class="VLine"></span><span class="HLine"></span></span>
+						</button>
+						<div class="panel">
+							<div style="padding: 1em 0;">
+								<p>Our trips are open to climbers of all ages! However, participants under 18 must be accompanied by an adult. Please reach out if you have specific questions about age requirements.</p>
+							</div>
+						</div>
+					</div>
+		
+			</div>
+    	</div>
+	</div>
+
+	<!--SideBar-->
+		<div class="content__right" id="scroll-to">
+			<div class="floater" style="z-index:999;">
+				<div class="row" style="text-align: left;" >
+					
+
+					
+
+
+
+					<div class="">
+						<p class="trek-overview">
+							<i class="fa fa-users"></i>&nbsp; <span class="holo">Group Size : </span>{{ rock.groupSize }} 
+						</p>
+					</div>
+
+					<div class="">
+						<p class="trek-overview">
+							<i class="fas fa-map-marker"></i>&nbsp; <span class="holo">Max Altitude :</span> {{ rock.altitude }}
+						</p>
+					</div>
+
+
+					<div class="">
+						<p class="trek-overview">
+							<i class="fas fa-campground"></i>&nbsp;<span class="holo">Difficulty :</span>  {{ rock.grade }}
+						</p>
+					</div>
+
+					<div class="">
+						<p class="trek-overview">
+							<i class="fa fa-user"></i>&nbsp; <span class="holo">Distance :</span> {{ rock.distance }}
+						</p>
+					</div>
+
+
+					<div class="">
+						<p class="trek-overview">
+							<i class="fas fa-calendar"></i>&nbsp; <span class="holo">Best Season :</span> {{ rock.season }}
+						</p>
+					</div>
+
+					<div class="">
+						<p class="trek-overview">
+							<i class="fa fa-user"></i>&nbsp; <span class="holo">Region :</span> {{ rock.region }}
+						</p>
+					</div>
+
+
+					<div class="" style="cursor:pointer;">
+						<a target='_blank' href='{{ site.url }}{{ trek.gears-list }}' class='button'>
+							<p class="trek-overview "><i class='fa fa-download'></i>&nbsp;&nbsp;Download Gear List</p>
+							</a>
+					</div>
+
+
+					<div class="" style="cursor:pointer;">
+						<a target='_blank' href='{{ site.url }}{{ trek.download }}' class='button'>
+							<p class="trek-overview holo" style="font-family: 'ANTON',sans-serif;" ><i class='fa fa-download'></i>&nbsp;&nbsp;Download Pdf Itinerary 	</p>
+							</a> <br />
+					</div>
+
+
+
+				</div>
+					<!-- <span class="priceTag">FROM Rs.<i class="fa fa-rupee-sign"></i>{{ page.price }}</span> -->
+					<!-- <button class="book_btn" onclick="imPop();" type="submit" style="width: 100%;  font-size: 1.5em; box-shadow: 0 0 13px #2f2f2f; ">BOOK NOW</button> -->
+					<!-- <br /><br /> -->
+					<!-- <button class="book_btn enquiry" onclick="javascript:alert('Contact Form NOT Found!');" type="submit" style="width: 100%;  font-size: 1.5em; border-radius: 360px;">SEND ENQUIRY</button>
+					<br /><br /> -->
+
+                <div class="" id="trigger1">
+                    <button id="enquiry-button" class="book_btn enquiry" type="button" style="width: 100%; font-size: 1.5em; text-align: center; display: block; padding: 10px 20px;">SEND AN ENQUIRY</button>
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const enquiryButton = document.getElementById('enquiry-button');
+                        if (enquiryButton) {
+                            enquiryButton.addEventListener('click', function() {
+                                const tourSlug = "{{ page.title-slug | uri_escape }}"; 
+                                const newUrl = `/enquiry/?tour_slug=${tourSlug}`;
+                                window.location.href = newUrl;
+                            });
+                        }
+                    });
+                </script>
+
+
+
+							
+
+			</div>
+		</div>
+		
+
+
+
+    	
+		</div>
+
+	</div>
+
+	<div class="row row--padding-medium container-wide" style="margin: 1em 0; border: 1px solid #cacaca; border-left: 0; border-right: 0;">
+		<p class="content__pg" style="clear: both; padding-bottom: 0em; background: red;"><strong style="font-weight: bold; color: #fff;padding-left: 1.5em;">NOTE <i class="fas fa-bullhorn"></i> </strong></p><br />
+		<ul class="content__list">
+
+					<li class="content__list-item">
+						Safety first: Always wear appropriate safety gear, including a helmet, gloves, and protective clothing.
+					</li>
+
+					
+					
+		</ul>
+	</div>
+
+		<!-- <div class=" row--pading-medium col--recent-post" style="padding: 0 1em; text-align: justify;" >
+			
+				
+			<div class="content__right" id="scroll-to">
+				<div class="floater">
+						<span class="priceTag">FROM $.{{ rock.price }}</span>
+						<span class="priceTag">FROM $.<i class="fa fa-rupee-sign"></i>{{ rock.price }}</span>
+						<button class="book_btn" onclick="imPop();" type="submit" style="width: 100%;  font-size: 1.5em; box-shadow: 0 0 13px #2f2f2f; border-radius: 360px;">BOOK NOW</button>
+						<br /><br />
+						<button class="book_btn enquiry" onclick="javascript:alert('please contact us through Contact Page!');" type="submit" style="width: 100%;  font-size: 1.5em; border-radius: 360px;">ENQUIRY</button>
+						<br /><br />
+				</div>
+			</div>
+
+
+
+			</div> -->
+</div>
+
+
+</div>
+
+
+
+
+
+
+        <!--<script src="https://js.instamojo.com/v1/button.js"></script>-->
+<!-- 
+    <script src="https://js.instamojo.com/v1/checkout.js"></script>
+
+    <script>
+	function imPop(){
+		Instamojo.open('{{ rock.bookLink}}');
+	}
+
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+
+    </script> -->
+
+
+

@@ -1,0 +1,99 @@
+title: Above 8000 | Adventures and Tours in the Himalayas
+name: Above 8000
+email: above8000expeditions@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  An official mountaineering company based in Nepal 🇳🇵, organizes trekking and climbing expeditions in the majestic Himalayas. 🏔️ ⛷ 🧗‍♂️
+baseurl: ''
+url: 'https://above8000.com'
+
+permalink: slug
+
+collections:
+  gear-list:
+    output: true
+  team:
+    output: true
+    permalink: /team/:title
+    include: app-assets
+  activities:
+    output: true
+    permalink: /:title
+    include: app-assets
+  escape-trips:
+    output: true
+    permalink: /:title
+    include: app-assets
+  packages:
+    output: false
+    permalink: /:title
+    include: app-assets
+  treks:
+    output: true
+    permalink: /:title
+    include: app-assets
+  rafting:
+    output: true
+    permalink: /:title
+    include: app-assets
+  camping:
+    output: true
+    permalink: /:title
+    include: app-assets
+  paragliding:
+    output: true
+    permalink: /:title
+    include: app-assets
+  legal:
+    output: true
+    permalink: /:title
+    include: app-assets
+  renting:
+    output: false
+    permalink: /:title
+    include: app-assets
+  bike-tours:
+    output: true
+    permalink: /:title
+    include: app-assets
+  rock-climbing:
+    output: true
+    permalink: /:title
+    include: app-assets
+  peaks:
+    output: true
+    permalink: /:title
+    include: app-assets
+
+defaults:
+  - scope:
+      path: ''
+      type: 'activities'
+    values:
+      layout: 'default'
+      image: true
+      type: 'activities'
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - readme.md
+  - license
+  - CNAME
+  - packages.html
+  - "_treks/assets/css/*.scss"
+plugins:
+  - jekyll-sitemap
+strict_front_matter: true
+sass:
+  style: compressed # possible values: nested expanded compact compressed
+
+# Compressing HTML
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []

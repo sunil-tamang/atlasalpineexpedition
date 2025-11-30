@@ -1,0 +1,697 @@
+trishuli-river-rafting:
+    name: "Trishuli River Rafting"
+    days: "1"
+    nights: "0"
+   
+    minAge: '9 years'
+    startPoint: 'Charaudi'
+    endPoint: 'Fishling'
+
+    accomodation: "Hotel + Lodge"
+
+    groupSize: "2-15 pax"
+    season: 'All year round! '
+
+    rating: 'Class III - IV'
+    region: "Manaslu"
+
+    # popular: "Y"
+    price: "100"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: ""
+
+    excerpt: ""
+    link: "trishuli-river-rafting/"
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/ZHCL_qkrCGE' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/manaslu.pdf"
+    
+    # image: "<img class='map1'>"
+
+    photoo: "assets/css/images/bg/rafting_booner.jpg"
+    photos: "assets/css/images/rafting/trishuli-river-rafting/banner.jpg"
+
+
+
+    lights:
+      - list: "Exciting Class III-IV rapids such as Twin Rock, Upset, and Ladies Delight."
+      - list: "Thrilling rapids with varying difficulty levels to challenge all skill levels."
+      - list: "Spectacular views of the Himalayan mountain range and Nepalese countryside."
+      - list: "Opportunities for wildlife sightings including monkeys, birds, and crocodiles."
+      - list: "Delicious Nepalese cuisine cooked over an open fire for lunch."
+      - list: "Expert guides with extensive experience navigating the Trishuli River."
+      - list: "A perfect adventure for both beginners and experienced rafters alike."
+      - list: "A full day of heart-pumping excitement and stunning natural beauty."
+
+    # faq:
+    # - title: "Do I need to know how to swim to go rafting?"
+    #   list: "While basic swimming skills are recommended, they are not required. All participants are required to wear a life jacket, and our guides will teach you the necessary safety skills to enjoy the trip."
+
+    # - title: ""
+    #   list: ""
+
+    # - title: ""
+    #   list: ""
+
+    # - title: ""
+    #   list: ""
+
+    # - title: ""
+    #   list: ""
+
+    # - title: ""
+    #   list: ""
+
+    # - title: ""
+    #   list: ""
+
+    # - title: ""
+    #   list: ""   
+   
+    # - title: ""
+    #   list: ""
+
+    overview:
+
+    - content: "If you're looking for an exhilarating outdoor adventure that's perfect for the whole family or a group of friends, Trishuli River rafting is just what you need! This one-day tour takes you on a thrilling ride down one of Nepal's most famous rivers, surrounded by stunning natural scenery and local culture."
+    - content: "As you make your way down the river, you'll encounter rapids with exhilarating names like 'Ladies Delight,' 'Upset,' and 'Surprise.' Each rapid offers a unique challenge, but fear not - your experienced guides will be with you every step of the way to ensure your safety and enjoyment."
+    - content: "It's an experience that will leave you with unforgettable memories and a newfound appreciation for the beauty and diversity of this incredible country. So don't wait any longer – book your Trishuli River rafting tour today and let the adventure begin!"
+   
+    itinerary:
+
+    - title: "8:00 AM: Arrival at Charaudi"
+      content: "After a 2-hour scenic drive, you will arrive at Charaudi, the starting point of your Trisuli River rafting adventure."
+
+    - title: "8:30 AM: Safety briefing and gear check"
+      content: "Our experienced guide will provide you with a comprehensive safety briefing and check your gear to ensure a safe and enjoyable trip."
+
+    - title: "9:00 AM: Start of the rafting adventure"
+      content: "Your adrenaline-packed journey begins! You'll experience pool and drop rapids, with plenty of time in between to swim, jump off cliffs, and take in the stunning scenery."
+
+    - title: "12:00 PM: Lunch break"
+      content: "We'll take a break for lunch on the riverbank, where you can refuel with a delicious meal and enjoy the serene surroundings."
+
+    - title: "1:00 PM: Resume rafting"
+      content: "After lunch, we'll continue our journey down the river, navigating exciting rapids and taking in the breathtaking views."
+
+    - title: "4:00 PM: End of the trip and return to Kathmandu"
+      content: "Our trip ends at Kuringhat, where we'll pack up our gear and head back to Kathmandu. You'll arrive back at your hotel in the early evening, around 6:00 PM."
+
+
+
+
+
+
+bhote-koshi-river-rafting:
+    name: "Bhote Koshi River Rafting"
+    days: "2"
+    nights: "1"
+
+    minAge: '9 years'
+    startPoint: 'KHADICHOUR'
+    endPoint: 'LAMOSHANGHU'
+
+    accomodation: "Hotel + Lodge"
+
+    groupSize: "2-15 pax"
+    season: 'All year round! '
+
+    rating: 'Class IV - V'
+    region: "Manaslu"
+
+    popular: "Y"
+    price: "200"
+    
+    
+    photos: "assets/css/images/rafting/trishuli-river-rafting/banner1.jpg"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    excerpt: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/ZHCL_qkrCGE' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/manaslu.pdf"
+    
+    # image: "<img class='map1'>"
+
+
+    lights:
+      - list: " Adrenaline-pumping rafting adventure on the Bhote Koshi River."
+      - list: " Mix of intense rapids and calm stretches, with stunning views of the Himalayas."
+      - list: " Riverside camping, falling asleep to the sound of rushing water."
+      - list: " Challenge yourself with class 3-5 rapids, test your skills."
+      - list: " Feel the thrill of conquering powerful rapids."
+      - list: " Unforgettable memories and experiencing Nepal's natural beauty."
+      - list: " Friendly Nepalese people, local culture and customs."
+      - list: " Serene setting to unwind, surrounded by majestic mountains."
+
+    overview:
+
+    - content: "Looking for an adrenaline-pumping adventure? Look no further than the Bhote Koshi River in Nepal. This river is renowned for its intense rapids and stunning natural scenery, making it the perfect destination for thrill-seekers and nature-lovers alike."
+    - content: "The Bhote Koshi River rafting tour is a two-day journey that takes you through a mix of class 3-5 rapids and calm stretches, offering the perfect balance of excitement and relaxation. The tour starts in Kathmandu, where you'll meet your expert guide and fellow rafters before heading to the river."
+    - content: "So, if you're looking for an adventure that combines adrenaline-pumping thrills with stunning natural scenery and cultural immersion, look no further than the Bhote Koshi River rafting tour. Book your trip today and get ready for the adventure of a lifetime!"
+   
+    itinerary:
+
+    
+    - title: "DAY 1 - Drive for 3-4 hours from Kathmandu to Khadichour"
+      content: "Enjoy lunch before embarking on an exciting rafting journey down continuous whitewater rapids to Sukute Village. <br /> <br />Set up camp on a river beach and spend the night under the stars."
+
+    - title: "DAY 2 - Raft the Upper Section, Stop at Lamoshanghu Dam, Return to Kathmandu"
+      content: "Start the day with a delicious breakfast before heading back to the upper section of the river at Baseri. <br /> <br />Encounter thrilling class 4 rapids along the way. <br /> <br />Stop for lunch at Lamoshanghu Dam before returning to Kathmandu via private transportation."
+
+
+
+
+
+
+
+karnali-river-rafting:
+    name: "Karnali River Rafting"
+    days: "10"
+    nights: "9"
+
+    minAge: '9 years'
+    startPoint: 'Surkhet'
+    endPoint: 'Nepalgunj'
+
+    accomodation: "Hotel + Lodge"
+
+    groupSize: "2-15 pax"
+    season: 'All year round! '
+
+    rating: 'Class IV - V'
+    region: "Manaslu"
+
+    # popular: "Y"
+    price: "1400"
+ 
+    photos: "assets/css/images/rafting/trishuli-river-rafting/banner.jpg"
+
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Karnali River rafting expedition also provides a unique opportunity to explore the culture and customs of Nepal's local communities. Along the way, you'll interact with the friendly locals and learn about their way of life. This cultural exchange is an enriching experience that will broaden your perspective and deepen your understanding of the world."
+
+    excerpt: ""
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/ZHCL_qkrCGE' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/karnali-river-rafting.pdf"
+    
+    # image: "<img class='map1'>"
+
+
+    lights:
+      - list: "Conquer Nepal's challenging Karnali River on a 10-day rafting expedition."
+      - list: "Enjoy stunning scenery, remote villages, and interact with locals."
+      - list: "Get your adrenaline pumping as you navigate the Karnali River's rapids."
+      - list: "Expert rafting guides providing safety measures and equipment for a safe and enjoyable experience"
+      - list: "Immerse yourself in Nepal's natural beauty on a 10-day adventure."
+      - list: "Learn local customs and traditions in visited villages"
+        
+    overview:
+
+    - content: "The Karnali River rafting expedition also provides a unique opportunity to explore the culture and customs of Nepal's local communities. Along the way, you'll interact with the friendly locals and learn about their way of life. This cultural exchange is an enriching experience that will broaden your perspective and deepen your understanding of the world."
+    - content: "Expedition is led by experienced guides who are passionate about providing you with a safe and unforgettable adventure. They'll ensure that you're equipped with the necessary skills and knowledge to navigate the river and stay safe throughout the trip."
+    - content: "Book your Karnali River rafting expedition today and get ready to embark on the adventure of a lifetime!"
+  
+    itinerary:
+
+    
+    - title: "DAY 1 - Arrival in Kathmandu, Nepal"
+      content: "Upon your arrival in Kathmandu, you will be welcomed by our representative who will transfer you to your hotel. You can spend the rest of the day exploring the city and getting to know your fellow travelers."
+
+    - title: "DAY 1 - Drive to Surkhet"
+      content: "After breakfast, we will take a scenic drive to Surkhet, which will take approximately 14 hours. During the drive, you will have a chance to see the beautiful landscape of Nepal and interact with the locals."
+
+    - title: "DAY 3 - Drive to Karnali River"
+      content: "After breakfast, we will continue our drive to the Karnali River, which will take about 4-5 hours. Upon arrival, we will set up our campsite and prepare for the rafting expedition."
+
+    - title: "DAY 4-8 - Rafting Expedition"
+      content:  "Over the next five days, we will be rafting down the Karnali River, which is one of the longest and most challenging rivers in Nepal. During this time, you will have a chance to experience some of the most breathtaking scenery in Nepal, as well as challenge yourself physically and mentally. We will also make stops along the way to explore the local villages and interact with the local people."   
+    
+    - title: "DAY 9 - Rafting ends, drive to Nepalgunj"
+      content: "On this day, we will complete our rafting expedition and drive to Nepalgunj, a bustling city in western Nepal. Here, we will spend the night in a hotel and enjoy some well-deserved rest and relaxation."
+
+    - title: "DAY 10 - Fly back to Kathmandu"
+      content: "After breakfast, we will take a short flight back to Kathmandu, where you can spend the rest of the day exploring the city or relaxing in your hotel. In the evening, we will have a farewell dinner to celebrate the end of our amazing journey."
+
+kali-gandaki-river-rafting:
+    name: "Kali Gandaki River Rafting"
+    days: "3"
+    nights: "2"
+
+    minAge: '9 years'
+    startPoint: 'Nayapul'
+    endPoint: 'Pokhara'
+
+    accomodation: "Hotel + Lodge"
+
+    groupSize: "2-15 pax"
+    season: 'All year round! '
+
+    rating: 'Class IV - V'
+    region: "Manaslu"
+
+    popular: "Y"
+    price: "450"
+    
+    photos: "assets/css/images/rafting/kali-gandaki-river-rafting/banner3.jpg"
+
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    excerpt: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/ZHCL_qkrCGE' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/manaslu.pdf"
+    
+    # image: "<img class='map1'>"
+
+    lights:
+      - list: "Thrilling rapids with varying difficulty levels to challenge all skill levels"
+      - list: "Stunning views of the Himalayan mountain range and remote Nepalese countryside"
+      - list: "Unique cultural experiences with visits to traditional villages and temples"
+      - list: "Opportunities for wildlife sightings including freshwater dolphins and exotic bird species"
+      - list: "Expert guides with extensive experience navigating the Kaligandki River"
+      - list: "Camping under the stars with delicious Nepalese cuisine cooked over an open fire"
+
+    overview:
+
+    - content: "Rafting down the Kali Gandaki River is an unforgettable adventure that takes you through some of the most spectacular and remote landscapes of Nepal. The Kali Gandaki River is one of the holiest rivers in Nepal and offers some of the most exhilarating rafting experiences in the country. The river originates from the Mustang region of Nepal and flows through the deepest gorge in the world, separating the Annapurna and Dhaulagiri mountain ranges."
+    # - content: "As you ascend to the base camp of Manaslu, the eighth highest mountain in the world, you'll be treated to stunning panoramic views of the surrounding peaks, including the iconic Mt. Everest. You'll also have the opportunity to explore the famous Larkya La Pass, a high-altitude crossing that offers breathtaking views of the Himalayan range."
+    # - content: "The Manaslu Base Camp Trek is an experience that will stay with you forever. Whether you're an experienced hiker or a first-time trekker, this journey is sure to challenge and inspire you in equal measure. So why wait? Book your trek today and discover the magic of the Manaslu region for yourself!"
+   
+    itinerary:
+
+    
+    - title: "DAY 1 - Arrival and Rafting to Campsite"
+      content: "Meet your guide in Pokhara, Nepal early in the morning. <br /> <br /> Drive to the put-in point for the rafting trip at Nayapul (approximately 3-4 hours). <br /> <br /> Have breakfast and attend a safety briefing and training session. <br /> <br /> Begin rafting down the Kaligandaki River, enjoying the beautiful scenery and exciting rapids. <br /> <br /> Stop for a picnic lunch on the riverbank. <br /> <br /> Continue rafting until reaching the campsite for the night. <br /> <br /> Set up camp, have dinner, and relax around a campfire."
+
+    - title: "DAY 2 - Rafting and Camping on the Riverbank "
+      content: "Have breakfast and pack up camp.<br /> <br />Resume rafting down the Kaligandaki River, encountering more thrilling rapids along the way.<br /> <br />Stop for lunch on the riverbank.<br /> <br />Arrive at the next campsite in the late afternoon.<br /> <br />Set up camp, have dinner, and spend the evening relaxing or exploring the area."
+
+    - title: "DAY 3 -  Final Rafting Stretch and Departure"
+      content: "Have breakfast and pack up camp.<br /> <br />Continue rafting down the Kaligandaki River, enjoying the final stretch of rapids.<br /> <br />Stop for a picnic lunch on the riverbank.<br /> <br />Arrive at the take-out point in the early afternoon.<br /> <br />Transfer back to Pokhara, where the tour ends."
+
+tamur-river-rafting:
+    name: "Tamur River Rafting"
+    days: "12"
+    nights: "11"
+  
+    minAge: '9 years'
+    startPoint: 'DOBHAN'
+    endPoint: 'CHATARA'
+
+    accomodation: "Hotel + Lodge"
+
+    groupSize: "2-15 pax"
+    season: 'All year round! '
+
+    rating: 'Class IV - V'
+    region: "Manaslu"
+
+    popular: "Y"
+    price: "1600"
+    
+    photos: "assets/css/images/rafting/tamur-river-rafting/banner01.jpg"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "Tamur River is one of the most exciting and challenging rivers in Nepal, with rapids ranging from class III to IV+. The river originates in the snow-capped peaks of the Himalayas and flows through dense forests, cascading waterfalls, and remote villages before reaching the lowlands of eastern Nepal."
+    
+    excerpt: ""
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/ZHCL_qkrCGE' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/manaslu.pdf"
+    
+    # image: "<img class='map1'>"
+
+    lights:
+
+      - list: "Explore the vibrant city of Kathmandu and immerse yourself in Nepalese culture."
+      - list: "Trek through dense forests and picturesque villages in the foothills of the Himalayas."
+      - list: "Embark on an exhilarating four-day rafting adventure down the Tamur River."
+      - list: "Rest and recharge in a beautiful riverside camp on a well-deserved rest day."
+      - list: "Create unforgettable memories with like-minded adventure-seekers in one of the beautiful locations."
+      - list: "Experience the rush of adrenaline as you navigate the river's rapids ."
+      - list: "Relax and recharge in a peaceful and tranquil setting, surrounded by the majestic Himalayas."
+      - list: "Get a glimpse of the local culture through interactions with the friendly and hospitable people of Nepal."
+
+    overview:
+
+    - content: "Tamur River is one of the most exciting and challenging rivers in Nepal, with rapids ranging from class III to IV+. The river originates in the snow-capped peaks of the Himalayas and flows through dense forests, cascading waterfalls, and remote villages before reaching the lowlands of eastern Nepal."
+    - content: "Each night, you'll camp under the stars on the banks of the river, enjoying delicious meals cooked over an open fire. You'll have plenty of time to relax and soak in the natural beauty of the area before getting back on the river for another day of adventure."
+    - content: "Tamur River rafting tour is not just an adrenaline-pumping adventure; it's an immersive experience that will stay with you for a lifetime. So, pack your bags, grab your paddles, and get ready for the adventure of a lifetime!"
+   
+    itinerary:
+
+    - title: " Day 1 - Arrival in Kathmandu "
+      content: "Upon arrival in Kathmandu, you'll be greeted by our representative and transferred to your hotel. Spend the rest of the day exploring the vibrant city."
+
+    - title: " Day 2 - Drive to Basantapur "
+      content: "After breakfast, we'll drive to Basantapur, a small village nestled in the foothills of the Himalayas. Along the way, enjoy breathtaking views of the mountains and valleys."
+
+    - title: " Day 3 - Trek to Chauki "
+      content: "Today we'll begin our trek to Chauki, a picturesque village located at an altitude of 2,700 meters. The trail passes through dense forests and offers stunning views of the surrounding landscape."
+
+    - title: " Day 4 - Trek to Gupha Pokhari "
+      content: "We'll continue our trek to Gupha Pokhari, a beautiful lake surrounded by lush forests. This is a great spot for bird watching and taking in the peaceful surroundings."
+
+    - title: " Day 5 - Trek to Dobhan "
+      content: "Today's trek will take us to Dobhan, a small village on the banks of the Tamur River. We'll camp here for the night and prepare for our rafting adventure."
+
+    - title: " Day 6 - 9 Rafting on the Tamur River "
+      content: "Over the next four days, we'll embark on an exciting rafting journey down the Tamur River. The river offers a mix of rapids and calm stretches, and we'll have plenty of opportunities to enjoy the beautiful scenery along the way."
+
+    - title: " Day 10 - Rest day "
+      content: "After four days of rafting, we'll take a well-deserved rest day in a beautiful riverside camp. Enjoy some leisure time or explore the surrounding area on foot."
+
+    - title: " Day 11 - Rafting to Chatara "
+      content: "We'll continue our rafting journey down the Tamur River and eventually reach Chatara, a small town on the banks of the river. Here, we'll bid farewell to our rafting crew and head back to Kathmandu."
+
+    - title: " Day 12 - Departure"
+      content: "Your tour ends today. Depending on your departure time, you may have some free time to explore Kathmandu before being transferred to the airport for your flight home."
+
+
+seti-river-rafting:
+    name: "Seti River Rafting"
+    days: "1"
+    nights: "0"
+
+    minAge: '9 years'
+    startPoint: 'Bamboo Bridge '
+    endPoint: 'Dam '
+
+    accomodation: "Hotel + Lodge"
+
+    groupSize: "2-15 pax"
+    season: 'All year round! '
+
+    rating: 'Class III - IV'
+    region: "Manaslu"
+
+    # popular: "Y"
+    price: "100"
+    
+    photos: "assets/css/images/rafting/trishuli-river-rafting/banner.jpg"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "A thrilling rafting adventure awaits just a short distance away from the popular tourist spot, Pokhara's Lakeside. The Upper Seti River offers a 90-minute adrenaline-packed journey through class III+/IV rapids with stunning views of the Annapurna mountains. Decorated with a suspension bridge and prayer flags, the beautiful gorge adds to the experience. This half-day trip is a favorite among our crew, and we offer two trips a day so you can easily combine it with other activities in Pokhara, known as the adventure capital of Nepal."
+
+    excerpt: "A thrilling rafting adventure awaits just a short distance away from the popular tourist spot, Pokhara's Lakeside. The Upper Seti River offers a 90-minute adrenaline-packed journey through class III+/IV rapids with stunning views of the Annapurna mountains. Decorated with a suspension bridge and prayer flags, the beautiful gorge adds to the experience. This half-day trip is a favorite among our crew, and we offer two trips a day so you can easily combine it with other activities in Pokhara, known as the adventure capital of Nepal."
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/ZHCL_qkrCGE' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+    # download: "//assets/docs/seti-river-rafting.pdf"
+    
+    # image: "<img class='map1'>"
+
+
+    lights:
+      - list: "Non-stop adrenaline rush of class III+/IV rapids in just 90 minutes"
+      - list: "Stunning views of the Annapurna with its suspension bridge and prayer flags"
+      - list: "Expert rafting guides providing safety measures and equipment for a safe and enjoyable experience"
+      - list: "Opportunity to learn about the local flora and fauna from your knowledgeable guide"
+      # - list: "Delicious local Nepalese cuisine for lunch after the rafting adventure"
+      - list: "Easy access from Pokhara's Lakeside area, making it a convenient and exciting half-day trip"
+        
+
+
+    overview:
+    
+    - content: "A thrilling rafting adventure awaits just a short distance away from the popular tourist spot, Pokhara's Lakeside. The Upper Seti River offers a 90-minute adrenaline-packed journey through class III+/IV rapids with stunning views of the Annapurna mountains. Decorated with a suspension bridge and prayer flags, the beautiful gorge adds to the experience. This half-day trip is a favorite among our crew, and we offer two trips a day so you can easily combine it with other activities in Pokhara, known as the adventure capital of Nepal."
+   
+   
+    itinerary:
+
+    
+    - title: " Seti River Rafting Adventure"
+      content: "9:00 AM: Meet your expert rafting guide at the designated meeting point in Pokhara's Lakeside area. <br/> <br/>9:30 AM: Depart for the Upper Seti River, a short distance away from Pokhara. <br/> <br/>10:00 AM: Arrive at the put-in point and receive a safety briefing and instructions on rafting techniques. <br/> <br/>10:30 AM: Begin the 2.5-hour rafting adventure through the continuous Grade III/IV rapids of the Upper Seti River. Experience the thrill of bouncing off rocks in the game of pinball, and take in the stunning scenery of the river gorge. <br/> <br/>1:00 PM: Finish the rafting trip and change into dry clothes. <br/> <br/>1:30 PM: Return to Pokhara's Lakeside area, where your tour ends."
+      # content: "8:00 AM: Meet your expert rafting guide at the designated meeting point in Pokhara's Lakeside area.<br /> <br />8:30 AM: Depart for the Upper Seti River, a short distance away from Pokhara.<br /> <br />9:00 AM: Arrive at the put-in point and receive a safety briefing and instructions on rafting techniques.<br /> <br />9:30 AM: Begin the 90-minute rafting adventure through the class III+/IV rapids of the Seti River. Enjoy stunning views of the Annapurna mountains and the beautiful gorge with its suspension bridge and prayer flags.<br /> <br />11:00 AM: Finish the rafting trip and change into dry clothes.<br /> <br />11:30 AM: Enjoy a delicious lunch of local Nepalese cuisine at a nearby restaurant.<br /> <br />12:30 PM: Return to Pokhara's Lakeside area, where your tour ends."
+
+
+
+
+
+
+
+
+
+
+marshyangdi-river-rafting:
+    name: "Marshyangdi River Rafting"
+    days: "2"
+    nights: "1"
+
+    minAge: '9 years'
+    startPoint: 'https://goo.gl/maps/E6G4LwAar5sez2XX6'
+    endPoint: 'https://goo.gl/maps/rDvk3WkzeDnmf1d67'
+
+    accomodation: "Hotel + Lodge"
+
+    groupSize: "2-15 pax"
+    season: 'All year round! '
+
+    rating: 'Class IV - V'
+    region: "Manaslu"
+
+    popular: "Y"
+    price: "250"
+    
+    photos: "assets/css/images/rafting/marshyangdi-river-rafting/banner6.jpg"
+
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    excerpt: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/ZHCL_qkrCGE' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/marshyangdi-river-rafting.pdf"
+    
+    # image: "<img class='map1'>"
+
+    lights:
+      - list: "Non-stop adrenaline rush of class IV - V rapids in just 90 minutes"
+      # - list: "Stunning views of the Annapurna with its suspension bridge and prayer flags"
+      - list: "Expert rafting guides providing safety measures and equipment for a safe and enjoyable experience"
+      - list: "Opportunity to learn about the local flora and fauna from your knowledgeable guide"
+      # - list: "Delicious local Nepalese cuisine for lunch after the rafting adventure"
+      # - list: "Easy access from Pokhara's Lakeside area, making it a convenient and exciting half-day trip"
+        
+    overview:
+
+    - content: "Whether you are an experienced rafter or a first-time adventurer, the Marshyangdi River Rafting Tour is perfect for anyone looking for an exciting and unforgettable experience. So pack your bags, bring your sense of adventure, and get ready to create memories that will last a lifetime. Book your tour now and let the adventure begin!"
+    - content: "But that's not all - this tour is not just about adrenaline and adventure. It's also an opportunity to immerse yourself in the rich Nepalese culture and traditions. As you glide down the river, you'll pass through charming villages, where locals will welcome you with open arms and share their way of life and delicious cuisine."
+    - content: "At night, you'll gather around a campfire, sharing stories with fellow adventurers and gazing up at the star-filled sky. Or, if you prefer, you can choose to stay in local guesthouses and enjoy the warm hospitality of the locals."
+    - content: "So come join us on this unforgettable journey - let the rush of the rapids, the stunning landscapes, and the warmth of Nepalese hospitality leave you with memories that will last a lifetime!"
+   
+    itinerary:
+    
+    - title: "Day 1: Drive to Starting Point"
+      content: "Early morning departure from Kathmandu to the starting point of the rafting trip at Besisahar (approximately 6-7 hours of drive).<br /> <br /> After reaching Besisahar, we will unload all our rafting equipment and with the help of our carrier and travel guide/chef, we will head to Khudi where we will set up our camp.<br /> <br /> After lunch, we will receive a safety briefing and instruction from our experienced rafting guides.<br /> <br /> Start the rafting trip from Khudi to Besisahar, which will take around 3-4 hours.<br /> <br /> Spend the night camping on the sandy beach below Besisahar."
+
+    - title: "Day 2 : Besisahar to Ngadi on Marshyangdi River"
+      content: "After breakfast, start the second day of rafting from Besisahar to Ngadi.<br /> <br /> Encounter rapids such as Instant Karma, Twinkie, Adrenaline, and Mama's Big Butt.<br /> <br /> Have lunch en route and finish the rafting trip in Ngadi.<br /> <br /> After finishing the rafting, we will drive back to Kathmandu and drop you off at your hotel or preferred location."
+
+ 
+
+
+bheri-river-rafting:
+    name: "Bheri River Rafting"
+    days: "18"
+    nights: "17"
+    altitude: "12,467"
+    grade: "Moderate"
+    walking: "5-7 hours"
+    accomodation: "Hotel + Lodge"
+    groupSize: "2-15 pax"
+    season: "Spring/Autumn"
+    region: "Manaslu"
+    # popular: "Y"
+    price: "1787"
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    excerpt: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/ZHCL_qkrCGE' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/manaslu.pdf"
+    
+    # image: "<img class='map1'>"
+
+
+    overview:
+
+    - content: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+    - content: "As you ascend to the base camp of Manaslu, the eighth highest mountain in the world, you'll be treated to stunning panoramic views of the surrounding peaks, including the iconic Mt. Everest. You'll also have the opportunity to explore the famous Larkya La Pass, a high-altitude crossing that offers breathtaking views of the Himalayan range."
+    - content: "The Manaslu Base Camp Trek is an experience that will stay with you forever. Whether you're an experienced hiker or a first-time trekker, this journey is sure to challenge and inspire you in equal measure. So why wait? Book your trek today and discover the magic of the Manaslu region for yourself!"
+   
+    itinerary:
+
+    
+    - title: "DAY 1 - Arrival in Kathmandu, Nepal"
+      content: "Welcome to the vibrant city of Kathmandu, where ancient architecture, rich culture, and warm hospitality await you. Upon arrival at the airport, our representative will greet you with a traditional garland of marigolds and transfer you to your hotel. After settling in, you can explore the city on your own or relax and prepare for your upcoming adventure."
+
+
+
+
+
+sun-koshi-river-rafting:
+    name: "Sun Koshi River Rafting"
+    days: "9"
+    nights: "8"
+
+    minAge: '9 years'
+    startPoint: 'DOLALGHAT'
+    endPoint: 'BONJOUR GHAT'
+
+    accomodation: "Hotel + Lodge"
+
+    groupSize: "2-15 pax"
+    season: 'All year round! '
+
+    rating: 'Class IV - V'
+    region: "Manaslu"
+
+    # popular: "Y"
+    price: "1250"
+    
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    excerpt: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/ZHCL_qkrCGE' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/marshyangdi-river-rafting.pdf"
+    
+    # image: "<img class='map1'>"
+
+    lights:
+    - list: "Ride thrilling rapids with names like 'Meat Grinder' and 'Jaws' "
+    - list: "Immerse yourself in the rich Nepalese culture as you visit traditional villages and temples"
+    - list: "Relax under the stars and enjoy delicious Nepalese cuisine prepared over an open fire"
+    - list: "Create lifelong memories with a group of like-minded adventurers"
+    - list: "Journey through the breathtaking Mahseer Gorge with towering cliffs and lush forests"
+    - list: "Experience the adventure of a lifetime on Nepal's 'River of Gold'! "
+    
+    overview:
+
+    - content: "The Sun Koshi River is a 270-kilometer long river that originates from the Himalayas and flows through the stunning landscapes of Nepal's mid-hills, before meeting the Ganges in India. The river is famous for its exciting rapids, breathtaking scenery, and diverse cultural experiences ."
+    - content: "Throughout the tour, we will encounter a variety of rapids with varying difficulty levels, ensuring that every day on the river is an exciting challenge. The rapids are interspersed with calm stretches of water, allowing time to relax, soak up the stunning scenery, and appreciate the unique cultural experiences. Some of the most exciting rapids include 'Meat Grinder,' 'Hakapur,' and 'Jaws.' However, the calm stretches of the river are equally enjoyable, offering the chance to swim, relax, and enjoy the company of fellow travelers."
+    - content: " Join us on a nine-day Sun Koshi River rafting tour and experience the adventure of a lifetime. Challenge yourself physically and mentally, immerse yourself in the beauty and diversity of Nepal, and make lifelong memories with a group of like-minded adventurers."
+   
+    itinerary:
+
+    - title: "Day 1 - Kathmandu to Dolalghat"
+      content: "Meet at our office in Kathmandu for a trip briefing and final preparations <br /> <br /> Drive from Kathmandu to Dolalghat, passing through beautiful rural landscapes and small villages along the way <br /> <br /> Upon arrival at Dolalghat, meet your experienced river guides and prepare for your first day of rafting <br /> <br /> Raft from Dolalghat to Tarang Gaon, enjoying the beautiful scenery and thrilling rapids along the way <br /> <br /> Camp overnight on the river bank at Tarang Gaon"
+   
+    - title: "Day 2 - Tarang Gaon to Dumja"
+      content: "After breakfast, pack up camp and continue rafting downstream towards Dumja <br /> <br /> Enjoy the stunning views of lush hills and terraced farms as you navigate through the rapids <br /> <br /> Stop for lunch on the river bank before continuing on to your campsite at Dumja <br /> <br /> Settle in for the night with a delicious dinner and relaxing evening around the campfire"
+   
+    - title: "Day 3 - Dumja to Khurkot"
+      content: "Today's journey will take you through some of the most challenging rapids on the Sun Koshi River <br /> <br /> Raft through rapids with names like 'Jaws' and 'Dead Mans Eddy' before arriving at the beautiful village of Khurkot <br /> <br /> Set up camp on the river bank and enjoy a peaceful evening under the stars"
+   
+    - title: "Day 4 - Khurkot to Likhu Khola confluence"
+      content: "Depart from Khurkot and continue downstream towards the confluence of the Likhu Khola and Sun Koshi rivers <br /> <br /> Navigate through rapids with names like 'High Anxiety' and 'Hakapur' before arriving at your campsite for the night <br /> <br /> Take some time to explore the nearby village and interact with the locals to learn more about the Nepalese culture and way of life"
+   
+    - title: "Day 5 - Likhu Khola confluence to Harkapur"
+      content: "Today's journey will take you through some of the most beautiful and remote areas of the Sun Koshi River <br /> <br /> Enjoy breathtaking views of towering cliffs and dense forests as you navigate through exciting rapids <br /> <br /> Arrive at your campsite at Harkapur and enjoy a delicious dinner and relaxing evening around the campfire"
+   
+    - title: "Day 6 - Harkapur to Rasuwa Ghat"
+      content: "Depart from Harkapur and continue downstream towards Rasuwa Ghat <br /> <br /> Navigate through rapids with names like 'Rhino Rock' and 'Big Dipper' before arriving at your campsite for the night <br /> <br /> Enjoy a peaceful evening on the river bank, surrounded by the stunning natural beauty of Nepal"
+   
+    - title: "Day 7 - Rasuwa Ghat to Jungle Corridor"
+      content: "Today's journey will take you through the beautiful and challenging Jungle Corridor <br /> <br /> Navigate through rapids with names like 'The Great Wall' and 'Black Hole' before arriving at your campsite for the night <br /> <br /> Enjoy a delicious dinner and relaxing evening around the campfire, sharing stories and experiences with your fellow adventurers"
+    
+    - title: "Day 8 - Jungle Corridor to Bonjur Ghat"
+      content: "Continue rafting downstream towards Bonjur Ghat, enjoying the beautiful scenery and exciting rapids along the way <br /> <br /> Arrive at your campsite for the night and enjoy a peaceful evening on the river bank"
+
+
+
+arun-river-rafting:
+    name: "Arun River Rafting"
+    days: "2"
+    nights: "1"
+
+    minAge: '9 years'
+    startPoint: 'https://goo.gl/maps/E6G4LwAar5sez2XX6'
+    endPoint: 'https://goo.gl/maps/rDvk3WkzeDnmf1d67'
+
+    accomodation: "Hotel + Lodge"
+
+    groupSize: "2-15 pax"
+    season: 'All year round! '
+
+    rating: 'Class IV - V'
+    region: "Manaslu"
+
+    # popular: "Y"
+    price: "250"
+    
+    
+    bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
+
+    description: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    excerpt: "The Manaslu Base Camp Trek is a true gem for adventure seekers and nature lovers alike. The trek takes you through the pristine Manaslu Conservation Area, home to some of the rarest flora and fauna in the world. Along the way, you'll get to experience the warm hospitality of local communities, steeped in ancient traditions and customs that have remained unchanged for centuries."
+
+    video: "<iframe width='100%' height='400' src='https://www.youtube.com/embed/ZHCL_qkrCGE' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    
+
+    # download: "//assets/docs/marshyangdi-river-rafting.pdf"
+    
+    # image: "<img class='map1'>"
+
+    lights:
+      - list: "Non-stop adrenaline rush of class IV - V rapids in just 90 minutes"
+      # - list: "Stunning views of the Annapurna with its suspension bridge and prayer flags"
+      - list: "Expert rafting guides providing safety measures and equipment for a safe and enjoyable experience"
+      - list: "Opportunity to learn about the local flora and fauna from your knowledgeable guide"
+      # - list: "Delicious local Nepalese cuisine for lunch after the rafting adventure"
+      # - list: "Easy access from Pokhara's Lakeside area, making it a convenient and exciting half-day trip"
+        
+    overview:
+
+    - content: "Whether you are an experienced rafter or a first-time adventurer, the Marshyangdi River Rafting Tour is perfect for anyone looking for an exciting and unforgettable experience. So pack your bags, bring your sense of adventure, and get ready to create memories that will last a lifetime. Book your tour now and let the adventure begin!"
+    - content: "But that's not all - this tour is not just about adrenaline and adventure. It's also an opportunity to immerse yourself in the rich Nepalese culture and traditions. As you glide down the river, you'll pass through charming villages, where locals will welcome you with open arms and share their way of life and delicious cuisine."
+    - content: "At night, you'll gather around a campfire, sharing stories with fellow adventurers and gazing up at the star-filled sky. Or, if you prefer, you can choose to stay in local guesthouses and enjoy the warm hospitality of the locals."
+    - content: "So come join us on this unforgettable journey - let the rush of the rapids, the stunning landscapes, and the warmth of Nepalese hospitality leave you with memories that will last a lifetime!"
+   
+    itinerary:
+    
+    - title: "Day 1: Drive to Starting Point"
+      content: "Early morning departure from Kathmandu to the starting point of the rafting trip at Besisahar (approximately 6-7 hours of drive).<br /> <br /> After reaching Besisahar, we will unload all our rafting equipment and with the help of our carrier and travel guide/chef, we will head to Khudi where we will set up our camp.<br /> <br /> After lunch, we will receive a safety briefing and instruction from our experienced rafting guides.<br /> <br /> Start the rafting trip from Khudi to Besisahar, which will take around 3-4 hours.<br /> <br /> Spend the night camping on the sandy beach below Besisahar."
+
+    - title: "Day 2 : Besisahar to Ngadi on Marshyangdi River"
+      content: "After breakfast, start the second day of rafting from Besisahar to Ngadi.<br /> <br /> Encounter rapids such as Instant Karma, Twinkie, Adrenaline, and Mama's Big Butt.<br /> <br /> Have lunch en route and finish the rafting trip in Ngadi.<br /> <br /> After finishing the rafting, we will drive back to Kathmandu and drop you off at your hotel or preferred location."
+
+ 

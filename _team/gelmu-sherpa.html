@@ -1,0 +1,80 @@
+---
+layout: default
+title: Gelmu Sherpa - Climbing Guide
+description: Detailed profile of Gelmu Sherpa, our experienced Climbing Guide.
+permalink: /team/:slug/
+excerpt: "Your custom excerpt here..."
+
+---
+
+<div class="container-wide row--padding-wide member-container">
+
+<div class="member-banner">
+  {% for member in site.data.team %}
+    {% if member.slug == page.slug %}
+      <!-- <div class="banner-background" style="background-image: url('{{ site.baseurl }}/{{ member.photos }}')"></div> -->
+
+      <div class="member-profile">
+        <img src="{{ site.baseurl }}/{{ member.photos }}" alt="{{ member.name }}" class="profile-image">
+        <h2 class="member-title">{{ member.name }}</h2>
+        <p>{{ member.role }}</p>
+      </div>
+
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+
+   
+     <div class="member-details">
+          
+            {% for member in site.data.team %}
+                {% if member.slug == page.slug %}
+
+                    <p class="content__pg-black">{{ member.description }}</p>
+
+                    <h2 class="content__sub-title">Mountains Summitted by:
+                        {{ member.name }}</h2>
+
+                    <div class="mountains-cards">
+                        {% for mountain in member.mountains %}
+                            <div class="mountain-card">
+                                <h1 class="mountain-name content__sub-title">{{ mountain.name }}</h1>
+                                <p class="mountain-summited">
+                                    <strong>Total Summited:</strong>
+                                    {{ mountain.summited }}
+                                    times</p>
+                                <p class="mountain-years">
+                                    <strong>Summitted Year(s):</strong>
+                                    {{ mountain.years | join: ', ' }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+
+              <h2 class="content__sub-title">Training Completed by:
+                  {{ member.name }}</h2>
+              <div class="training-cards">
+                  {% for training in member.trainings %}
+                      <div class="training-card">
+                          <h1 class="training-course content__sub-title">{{ training.course }}</h1>
+                          <p class="training-institution">
+                              <strong>Institution:</strong>
+                              {{ training.institution }}</p>
+                          <p class="training-year">
+                              <strong>Year Completed:</strong>
+                              {{ training.year }}</p>
+                      </div>
+
+                  {% endfor %}
+           
+
+
+        </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+    
+    </div>
+

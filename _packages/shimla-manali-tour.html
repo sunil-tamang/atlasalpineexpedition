@@ -1,0 +1,86 @@
+---
+layout: default
+title: "Shimla-Manali Tour"
+permalink: /shimla-manali-tour/
+author_name : " THE TRIPPY FROG "
+tags : "ShimlaManaliTourPackage,HimachalPradesh"
+contains_ads : "YES"
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "url": "{{ site.url }}{{ page.url }}",
+  "name": {{ page.title | jsonify }},
+  "headline": {{ page.title | jsonify }},
+  "keywords": {{ page.tags | join: ',' | jsonify }},
+  "description": {{ page.excerpt | strip_newlines | strip | jsonify }},
+  "articleBody": {{ page.content | strip_html | jsonify }},
+  "datePublished": {{ page.date | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ page.author_name | jsonify }},
+    "email": {{ site.email | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "url": "{{ site.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "width": 32,
+      "height": 32,
+      "url": "{{ site.url }}/icon/favicon.ico"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ site.url }}{{ page.custom_bg | default: site.img }}"
+},
+  "sameAs": [
+   "https://www.facebook.com/thetrippyfrog/",
+   "https://twitter.com/thetrippyfrog",
+   "https://www.instagram.com/thetrippyfrog/",
+   "https://www.linkedin.com/in/thetrippyfrog/",
+   "https://in.pinterest.com/thetrippyfrog/",
+   "https://thetrippyfrog.com/"
+]
+}
+</script>
+<style>
+
+</style>
+{% assign path = 'assets/css/images/manali.jpg' | relative_url%}
+    <div class="banner" style="background-image: url('{{ path }}')">
+        <span class="banner__overlay"></span>
+        <div class="banner__tagline" style="opacity: 1;">
+            <p class="tagline">Shimla-Manali Tour</p>
+<!--
+            <p class="sub-tagline" style="display: inline;">
+				<span class="sub-tagline--part1">&nbsp;Get&nbsp;</span><span class="sub-tagline--part2">&nbsp;In Touch&nbsp;</span><br />
+			</p>
+-->
+        </div>
+        <span class="banner__skip">
+            <a class="banner__skip-trigger" href="#content"></a>
+        </span>
+    </div>
+
+
+    <!----------C-O-N-T-A-C-T-------->
+	<div id="content" class="container--white" style="position: relative;">
+<!--	<span style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('{{ 'assets/css/images/static.gif' | absolute_url }}') repeat center; opacity: .04; z-index: 0;"></span>-->
+
+    <div class="row row--padding-medium content" style="z-index: 1;">
+        <h1 class="content__title content__title-white" data-aos="zoom-out">About The Tour</h1>
+        <br />
+		<div class="row">
+			<p class="content__pg-black">Soon to be updated. Until then, <a style="color: #f5f5f5; background: #FF5722; border-radius: 0.2em; padding: 0.1em 0.2em;" href="{% link contact.html %}">Contact Us</a> directly</p>
+		</div>
+    </div>
+    </div>

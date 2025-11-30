@@ -1,0 +1,11 @@
+---
+---
+
+User-agent: *
+Disallow:
+
+# Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: https://above8000.com/sitemap.xml
+
+
+

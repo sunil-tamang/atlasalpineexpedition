@@ -1,0 +1,56 @@
+---
+layout: default
+title: Legal Documents
+permalink: /legal-documents/
+description: "Explore our certifications and accreditations at The Alpine Expeditions, ensuring safety, professionalism, and quality in every adventure we offer."
+keywords: "trekking certificates Nepal, adventure tour certifications, safety standards, expedition qualifications"
+
+---
+
+
+
+
+
+<div class="slider-wrapper" style="height: 50% !important; ">
+       
+       
+    <div class="slide banner-slide slideBlog">
+           
+        <div class="slide-tagline">
+               
+                <span class="tagline-text">
+               
+                    <div class="banner_logo" style="position: absolute; left: 0; top:-75%; width: 100%; text-align: center;">
+                    <!-- <h2 class="trippy-name">OUR BL<i class="far fa-compass title-o"></i>G -->
+                    <h1 class="trippy-name">Legal Documents
+
+                        <!-- <p class="headline--detail" style="padding: 0; margin: 0; font-style: oblique; letter-spacing: .05em;">Understand more about the Himalayas and Himachal Pradesh!</p> -->
+                    </h1>
+                     </div>
+                </span>
+
+         </div>
+    </div>
+
+
+    <span class="banner__skip">
+            <a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
+    </span>
+
+
+</div>
+
+
+<div class="row row--padding-medium container-wide ">
+    <ul class="legal-docs-list">
+        {% for doc in site.data.documents %}
+           <li>
+              <a href="{{ doc.link | relative_url }}" target="_blank" style="background-image: url('{{ doc.image | relative_url }}');">
+                 <span class="doc-title">{{ doc.title }}</span>
+              </a>
+           </li>
+        {% endfor %}
+    </ul>
+</div>
+
+

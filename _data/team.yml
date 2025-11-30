@@ -1,0 +1,327 @@
+# Climbing Guide 
+
+- name: Gelmu Sherpa
+  slug: gelmu-sherpa
+  role: Climbing Guide
+  photos: "assets/css/images/team/2.jpg"
+  description: "Gelmu Sherpa is a distinguished mountaineer from Nepal, widely recognized for her exceptional achievements in high-altitude climbing. With a career spanning numerous peaks like Mount Everest, Ama Dablam, and Lhotse, she has earned her place among the most respected climbers in the region. <br/><br/> Starting her journey at a young age, Gelmu's passion for exploring the highest mountains drove her to master technical climbing, ice climbing, and high-altitude navigation. Her extensive training and experience have made her a highly skilled guide and a trusted leader on expeditions. <br/><br/> As a professional guide, Gelmu is known for her meticulous planning and ability to make critical decisions in extreme conditions. Her dedication to safety and her deep knowledge of the mountains have earned her the respect of clients and fellow climbers. <br/><br/> Beyond her climbing achievements, Gelmu is an advocate for empowering women in mountaineering. She mentors aspiring climbers, promotes ethical climbing practices, and serves as a role model in the adventure community. "
+  mountains:
+    - name: Everest 
+      summited: 1
+      years: [2025]
+    - name: Mera Peak
+      summited: 12
+      years: [2019, 2020, 2021, 2022]
+    - name: Lobuche Peak
+      summited: 8
+      years: [2019, 2020, 2021, 2022]
+    - name: Island Peak
+      summited: 7
+      years: [2019, 2020, 2021, 2022]
+    - name: Ama Dablam
+      summited: 1
+      years: [2023]
+  trainings:
+    - course: Introductory Rock Climbing Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2022
+    - course: Basic Mountain Rescue Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2022
+    - course: Rock Level-1 
+      institution: Nepal Mountaineering Instructors Association
+      year: 2023
+    - course: ICE Level-1 
+      institution: Nepal Mountaineering Instructors Association
+      year: 2023
+
+    - course: High Mountain Rescue Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2025
+
+    - course: First-Aid
+      institution: Himalyan Medics
+      year: 2022
+
+# - name: Gelmo Sherpa
+#   role: Climbing Guide
+#   photos: "assets/css/images/team/2.jpg"
+#   description: Gelmo Sherpa is a distinguished climber from Nepal, renowned for her remarkable achievements in the world of mountaineering. With a career spanning numerous peaks and mountain ranges, Gelmu has made her mark as one of the most accomplished climbers in the region. Her extensive experience and unwavering dedication have solidified her reputation as a leading guide and mountaineering expert.
+#   mountains:
+#     - name: Mera Peak
+#       summited: 4
+#       years: [2019, 2020, 2021, 2022]
+#     - name: Ama Dablam
+#       summited: 1
+#       years: [2018]
+#   slug: gelmu-sherpa
+
+
+- name: Gelu Sherpa
+  role: Climbing Guide
+  photos: "assets/css/images/team/01.jpg"
+  phone: "123-456-7890"
+  email: "john.doe@email.com"
+  facebook: "https://facebook.com/johndoe"
+  instagram: "https://instagram.com/johndoe"
+  description: Gelu Sherpa is a seasoned climber from Nepal with a unique and inspiring background. Before dedicating his life to the mountains, Gelu was a monk at a monastery, where he cultivated a deep sense of discipline, spirituality, and inner strength. However, his love for the majestic peaks of the Himalayas drew him away from the monastic life and onto the challenging trails that lead to the world’s highest summits. <br /> <br/>  Gelu’s journey from the serene environment of the monastery to the rugged and demanding world of mountaineering has shaped him into a climber with exceptional resilience and a profound respect for nature. His spiritual background brings a unique perspective to his expeditions, allowing him to navigate the mountains with a calm and focused mind, even in the most trying conditions. <br /> <br /> As a member of The Above 8000 team, Gelu’s experience as both a monk and a mountaineer makes him a valuable guide. He has led numerous successful expeditions, where his combination of physical endurance and mental clarity has earned him the trust and admiration of climbers from around the world. <br/> 
+  mountains:
+    - name: Everest 
+      summited: 1
+      years: [2025]
+    - name: Ama Dablam
+      summited: 1
+      years: [2024] 
+    - name: Lobuche
+      summited: 1
+      years: [2024]
+    - name: Island Peak
+      summited: 1
+      years: [2024]
+    - name: Mera Peak
+      summited: 1
+      years: [2021]
+
+  slug: gelu-sherpa
+  trainings:
+    - course: Introductory Rock Climbing Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2022
+    - course: Basic Mountain Rescue Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2022
+    - course: Rock Level-1 
+      institution: Khumbu Climbing Center
+      year: 2023
+    - course: ICE Level-1 
+      institution: Khumbu Climbing Center
+      year: 2023
+    - course: High Mountain Rescue Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2025
+    - course: First-Aid
+      institution: Himalyan Medics
+      year: 2022
+
+- name: Sensai Pema Waiba
+  role: Climbing Guide 
+  photos: "assets/css/images/team/sensai.jpg"
+  phone: "123-456-7890"
+  email: "john.doe@email.com"
+  facebook: "https://facebook.com/johndoe"
+  instagram: "https://instagram.com/johndoe"
+  description: Sensai Pema Waiba is a seasoned climber and filmmaker who has conquered some of the highest peaks in the Himalayas. With a passion for storytelling and adventure, Pema has successfully climbed Mount Everest not once, but twice, and has also stood atop Lobuche, a formidable mountain in the Khumbu region. As a filmmaker, Pema brings a unique perspective to the world of mountaineering, capturing the beauty and drama of the high mountains through his lens. His experience and expertise make him an invaluable asset to our team at Above 8000.
+  mountains:
+    - name: Everest 
+      summited: 2
+      years: [2023,2024]
+    - name: Lobuche Peak
+      summited: 2
+      years: [2023,2024]
+    - name:  Manaslu 
+      summited: 1
+      years: [2024]
+    - name: Sishapangma 
+      summited: 1
+      years: [2024]
+  slug: sensai-pema-waiba
+  trainings:
+    - course: Introductory Rock Climbing Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2022
+    - course: Basic Mountain Rescue Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2022
+    - course: First-Aid
+      institution: Himalyan Medics
+      year: 2024
+ 
+# - name: Lakpa Tenjen Sherpa
+#   role: Climbing Guide
+#   photos: "assets/css/images/team/11.jpg"
+#   description: 
+#   mountains:
+#     - name: Makalu
+#       summited: 1
+#       years: [2024]
+#   slug: lakpa-tenjen-sherpa
+
+
+- name: Prem Mamba
+  role: Climbing Guide
+  photos: "assets/css/images/team/4.jpg"
+  description: Prem Mamba is the legendary force behind Above 8000s’ most daring climbs. With the Himalayas as his playground, Prem has mastered the art of summiting the world's highest peaks, including Everest, Lhotse, Ama Dablam, and Lobuche. His name is synonymous with resilience, precision, and an unyielding passion for mountaineering. As our chief mountaineer, Prem doesn’t just lead expeditions—he crafts unforgettable experiences, pushing the boundaries of adventure while ensuring the utmost safety and success for our clients. At The Above 8000, Prem Mamaba isn’t just a guide; he’s the embodiment of the spirit of exploration that drives us to new heights.
+  mountains:
+    - name: Mount Everest
+      summited: 1
+      years: [2024]
+    - name: Lhotse
+      summited: 1
+      years: [2023]
+    - name: Ama Dablam
+      summited: 1
+      years: [2023]
+  slug: prem-mamba
+  trainings:
+    - course: Introductory Rock Climbing Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2022
+    - course: Basic Mountain Rescue Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2022
+    - course: Rock Level 1
+      institution: Nepal Mountaineering Instructors Association
+      year: 2025
+
+
+- name: Sunil Tamang
+  role: Climbing Guide
+  photos: "assets/css/images/team/7.jpg"
+  description: Sunil Tamang is a highly skilled and ambitious climbing guide at Above 8000, with a strong passion for leading expeditions in the Himalayas. With a impressive climbing resume, Sunil has successfully summited several notable peaks, including Bauntse, Island Peak, and Mera Peak."
+  mountains:
+    - name: Everest
+      summited: 1
+      years: [2025]
+    - name: Baruntse 
+      summited: 1
+      years: [2024]
+    - name: Lobuche
+      summited: 1
+      years: [2024]
+    - name: Island Peak
+      summited: 1
+      years: [2024]
+  slug: sunil-ghalan
+  trainings:
+    - course: Introductory Rock Climbing Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2022
+    - course: Basic Mountain Rescue Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2022
+    - course: Rock Level-1 
+      institution: Khumbu Climbing Center
+      year: 2024
+    - course: High Mountain Rescue Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2025
+    - course: First-Aid
+      institution: Himalyan Medics
+      year: 2024
+
+# - name: Pema Sherpa
+#   role: Climbing Guide
+#   photos: "assets/css/images/team/8.jpg"
+#   description: 
+#   mountains:
+#     - name: Lobuche Peak
+#       summited: 1
+#       years: [2023]
+#   slug: pema-sherpa
+
+
+
+
+
+
+# Support Climbers
+- name: Jane Smith
+  role: Support Climbers
+  photos: "assets/css/images/team/1.jpg"
+  mountains:
+    - name: Mount Everest
+      summited: 3
+      years: [2019, 2020, 2021]
+    - name: K2
+      summited: 2
+      years: [2018, 2020]
+  slug: jane-smith
+
+- name: Emily Blue
+  role: Support Climbers
+  photos: "assets/css/images/team/5.jpg"
+  mountains:
+    - name: 
+      summited: 
+      years: []
+
+- name: Charlotte Grey
+  role: Support Climbers
+  photos: "assets/css/images/team/9.jpg"
+  mountains:
+    - name: 
+      summited: 
+      years: []
+
+
+
+
+
+
+# Trekking guide
+
+- name: Neema Lhamu Sherpa
+  role: Trekking Guide
+  photos: "assets/css/images/team/12.jpg"
+  description: "Neema Sherpa is a distinguished mountaineer from Nepal, widely recognized for her exceptional achievements in high-altitude climbing. With a career spanning numerous peaks like Mount Everest, Ama Dablam, and Lhotse, she has earned her place among the most respected climbers in the region. <br/><br/> Starting her journey at a young age, Gelmu's passion for exploring the highest mountains drove her to master technical climbing, ice climbing, and high-altitude navigation. Her extensive training and experience have made her a highly skilled guide and a trusted leader on expeditions. <br/><br/> As a professional guide, Gelmu is known for her meticulous planning and ability to make critical decisions in extreme conditions. Her dedication to safety and her deep knowledge of the mountains have earned her the respect of clients and fellow climbers. <br/><br/> Beyond her climbing achievements, Gelmu is an advocate for empowering women in mountaineering. She mentors aspiring climbers, promotes ethical climbing practices, and serves as a role model in the adventure community. "
+  mountains:
+    - name: Mera Peak
+      summited: 12
+      years: [2019, 2020, 2021, 2022]
+  trainings:
+    - course: Introductory Rock Climbing Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2022
+    - course: Basic Mountain Rescue Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2022
+    - course: Rock Level-1 
+      institution: Nepal Mountaineering Instructors Association
+      year: 2023
+    - course: ICE Level-1 
+      institution: Nepal Mountaineering Instructors Association
+      year: 2023
+    - course: First-Aid
+      institution: Himalyan Medics
+      year: 2022
+  slug: neema-sherpa
+
+- name: Srijana Tamang
+  role: Trekking Guide
+  photos: "assets/css/images/team/13.jpg"
+  mountains:
+    - name: Mount Everest
+      summited: 3
+      years: [2019, 2020, 2021]
+    - name: K2
+      summited: 2
+      years: [2018, 2020]
+  slug: alice-brown
+
+
+# - name: Baju Ram Gurung
+#   role: Trekking Guide
+#   photos: "assets/css/images/team/14.jpg"
+#   mountains:
+#     - name: Mount Everest
+#       summited: 3
+#       years: [2019, 2020, 2021]
+#     - name: K2
+#       summited: 2
+#       years: [2018, 2020]
+#   slug: alice-brown
+
+# High Altitude Cook
+- name: Michael Red
+  role: High Altitude Cook
+  photos: "assets/css/images/team/6.jpg"
+  mountains:
+    - name: Mount Everest
+      summited: 3
+      years: [2019, 2020, 2021]
+    - name: K2
+      summited: 2
+      years: [2018, 2020]
+      slug: alice-brown
+
+

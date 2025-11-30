@@ -1,0 +1,129 @@
+---
+layout: 'default'
+title: "Activities"
+author_name : " THE ALPINE EXPEDITIONS "
+
+---
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "TouristInformationCenter",
+	  "name": "The Alpine Expeditions",
+	  "image": "{{ site.url }}/assets/images/{{ page.custom_bg | default: site.img }}",
+	  "url": "{{ site.url }}{{ page.url }}",
+	  "telephone": "+977-9863683851",
+	  "priceRange": "$1000 - $10000",
+	  "address": {
+		"@type": "PostalAddress",
+		"streetAddress": "Makalbari",
+		"addressLocality": "Kathmandu",
+		"postalCode": "44600",
+		"addressCountry": "NP"
+	  },
+	  "geo": {
+		"@type": "GeoCoordinates",
+		"latitude": 27.7172, 
+		"longitude": 85.3240  
+	  },
+	  "hasMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13525.534262300927!2d85.3240!3d27.7172!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c9c798dbeb6e498!2sTHE%20ALPINE%20EXPEDITIONS!5e0!3m2!1sen!2snp!4v1579107517725!5m2!1sen!2snp",
+	  "sameAs": [
+		"{{ site.url }}/activities/rock-climbing/",
+		"https://www.facebook.com/thealpineexpeditions/",
+		"https://twitter.com/thealpineexpeditions",
+		"https://www.instagram.com/thealpineexpeditions/",
+		"https://www.linkedin.com/in/thealpineexpeditions/",
+		"https://www.pinterest.com/thealpineexpeditions/",
+		"{{ site.url }}/"
+	  ]
+	}
+	</script>
+
+
+{% if page.custom_bg %}
+    {% for img in page.custom_bg %}
+        {% assign path = 'assets/css/images/' | append: img | relative_url%}
+        <div class="banner parallax" style="background-image:url('{{ path }}');">
+    {% endfor %}
+{% else %}
+    {% assign path = 'assets/css/images/welcome.jpeg' | relative_url%}
+        <div class="banner parallax" style="background-image: url('{{ path }}')">
+{% endif %}
+    <span class="banner__overlay"></span>
+	{% if page.title_img %}
+    <div class="banner__tagline" style="opacity: 1; top:29%;">
+
+		<!-- <div class="slide-tagline" style="background: none !important;">
+			<span class="tagline-text" style="    transform: translate(-50%, -0%);">
+				<h2 class="headline">Trek in the Himalayas</h2>
+			
+			</span>
+		
+		  </div> -->
+
+				<p class="tagline"><i class="{{ page.title_img }}" style="transform: translateY(12px);"></i><br />{{ page.subtitle0 }}</p>
+			{% else %}
+			<div class="banner__tagline" style="opacity: 1;">
+				<p class="tagline">{{ page.title }}</p>
+			{% endif %}
+				<p class="sub-tagline" style="display: inline;">
+					<span class="sub-tagline--part1">&nbsp;{{ page.subtitle1 }}&nbsp;</span><span class="sub-tagline--part2">&nbsp;{{ page.subtitle2 }}&nbsp;</span><br />
+				</p>
+			</div>
+			<span class="banner__skip">
+					<a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
+			</span>
+		</div>
+
+<div style="position: relative;" class="row container--white" id="content">
+<span style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('{{ 'assets/css/images/static.gif' | absolute_url }}') repeat center; opacity: .05; z-index: -1;"></span>
+    {{ content }}
+</div>
+<script>
+
+	//Accordion - all open at a Time
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight){
+		  panel.style.maxHeight = null;
+		} else {
+		  panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	  });
+	}
+
+	//Accordion - open one at a Time
+/*	var acc = document.getElementsByClassName("accordion");
+	var i;
+	openAccordion(acc[0]);
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+		var setClasses = !this.classList.contains('active');
+		for (var i = 0; i < acc.length; i++) {
+			var nextPanel;
+			if (setClasses) {
+				acc[i].classList.remove("active");
+				nextPanel = acc[i].nextElementSibling;
+				nextPanel.style.maxHeight = null;
+			}
+		}
+		if (setClasses) {
+			openAccordion(this);
+		}
+	  });
+	}
+
+	function openAccordion(el){
+		el.classList.toggle("active");
+		  var panel = el.nextElementSibling;
+		  if (panel.style.maxHeight){
+			panel.style.maxHeight = null;
+		  } else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		  }
+	}
+</script>

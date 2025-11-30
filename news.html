@@ -1,0 +1,148 @@
+---
+layout: default
+title: News
+permalink: "/news/"
+custom_bg: "bg/blogbg.jpg"
+author_name : " THE ALPINE EXPEDITIONS "
+tags : "Blogposts,HimachalPradesh"
+
+description: "Stay updated with The Alpine Expeditions blog. Read about trekking, expeditions, and travel tips in Nepal. Subscribe for the latest updates."
+keywords: "Alpine Expeditions blog, trekking blog Nepal, Nepal travel tips, expedition stories, adventure travel blog, subscribe travel blog"
+
+contains_ads : "YES"
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "url": "{{ site.url }}{{ page.url }}",
+  "name": {{ page.title | jsonify }},
+  "headline": {{ page.title | jsonify }},
+  "keywords": {{ page.tags | join: ',' | jsonify }},
+  "description": {{ page.excerpt | strip_newlines | strip | jsonify }},
+  "articleBody": {{ page.content | strip_html | jsonify }},
+  "datePublished": {{ page.date | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ page.author_name | jsonify }},
+    "email": {{ site.email | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "url": "{{ site.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "width": 32,
+      "height": 32,
+      "url": "{{ site.url }}/icon/favicon.ico"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ site.url }}/assets/css/images/{{ page.custom_bg | default: site.img }}"
+},
+"publisher": {
+  "@type": "Organization",
+  "name": {{ page.author_name }},
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ site.url }}{{ page.url }}"
+  }
+},
+
+  "sameAs": [
+  "https://www.facebook.com/thealpineexpeditions/",
+  "https://twitter.com/thealpineexpeditions",
+  "https://www.instagram.com/thealpineexpeditions/",
+  "https://www.linkedin.com/in/thealpineexpeditions/",
+  "https://www.pinterest.com/thealpineexpeditions/",
+  "{{ site.url }}/"
+]
+}
+</script>
+
+<!----------Blogposts -------->
+<div class="slider-wrapper" style="height: 50% !important; ">
+	  <div class="slide banner-slide slideBlog">
+        <div class="slide-tagline">
+          <span class="tagline-text">
+			<div class="banner_logo" style="position: absolute; left: 0; top:-75%; width: 100%; text-align: center;">
+				<!-- <h2 class="trippy-name">OUR BL<i class="far fa-compass title-o"></i>G -->
+				<h1 class="trippy-name">CLIMBING NEWS
+
+					<!-- <p class="headline--detail" style="padding: 0; margin: 0; font-style: oblique; letter-spacing: .05em;">Understand more about the Himalayas and Himachal Pradesh!</p> -->
+				</h1>
+			</div>
+          </span>
+
+        </div>
+      </div>
+	<span class="banner__skip">
+            <a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
+	</span>
+</div>
+
+<div id='content' class="row row--padding-medium content container--white" style="padding-left:0; padding-right: 0; ">
+
+	<!-- <h1 class="content__title content__title-white no-underline" style="padding: 0; margin: 0;">
+		<i class="fas fa-blog"></i> </h1><br /> -->
+	<!-- <h2 class="content__sub-title content__title-white no-underline" style="padding-top: 0; margin-bottom: 0; padding-bottom: 0;">Latest News -->
+<!--	<p class="headline--detail" style="padding: 0; margin: 0; font-style: oblique; letter-spacing: .05em; color: #333;">"!"</p>-->
+	</h2>
+	<br />
+
+<!--    <div id='content' class="row row--padding-medium container--white content">-->
+
+<!--        <div id='content' class="row row--padding-medium">-->
+            <h2 class="content__title content__title-white" data-aos="zoom-out"></h2>
+<!--            <br />-->
+			<div class="row container-wide content__pg">
+					<ul>
+					  {% for post in site.posts %}
+						<li class="post-wrapper wrapper" style="box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1) !important; border-radius:1em;" >
+							<a href="{{ post.url }}">
+								<img  alt="{{post.alt}}" title="{{post.title}}" src="/assets/css/images/{{ post.custom_bg }}" style="width: 100%;  background:url('/assets/css/images/{{ post.custom_bg }}') center no-repeat; padding-bottom: 56.25%; background-size: cover; height: 0;">
+							</a>
+						  <div class="content blogpost-meta" style="text-align: left;">
+							  <h1 class="content__sub-title blogpost-title">
+								  <a href="{{ post.url }}">{{ post.title }}</a>
+							  </h1>
+          
+						  		<div class="headline--detail blogpost-excerpt">
+									<a class="post-tags"  href="">{{ post.date | date: "%Y-%m-%d" }} </a> <br /> {{ post.description }}.....
+							  	</div>
+
+
+								<div class="blogpost-read">
+								<a href="{{post.url}}" style="">
+									<button class="book_btn more-trippy_btn"> READ
+									</button>
+								</a>
+                <!-- <a href="{{post.url}}" style="">
+									<button class="trippy_btn more-trippy_btn">
+										<span class="trippy_btn-left"></span>READ
+										<span class="trippy_btn-right"></span>
+									</button>
+								</a> -->
+								</div>
+						  </div>
+						</li>
+					  {% endfor %}
+					</ul>
+				<br/>
+			</div>
+			<br />
+<!--
+            <div class="row container-wide quote">
+				&quot;Just a bunch of nomads+wanderers helping giving directions to other wanderers.&quot;
+			</div>
+-->
+
+</div>

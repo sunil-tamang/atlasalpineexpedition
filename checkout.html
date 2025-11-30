@@ -1,0 +1,96 @@
+---
+layout: default
+title: "Checkout"
+custom_css: "form.css"
+permalink: "/checkout/"
+productScript: app.getProducts('checkout');
+no-index: "yes"
+---
+
+
+<style>
+	.call_now{
+		display: none;
+	}
+</style>
+{% assign path = 'assets/css/images/dark.jpg' | relative_url%} 
+    
+
+    <!----------C-O-N-T-A-C-T-------->
+
+
+    <div class="container--white" style="position: relative;">
+	<span style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('{{ 'assets/css/images/static.gif' | absolute_url }}') repeat center; opacity: .04; z-index: 0;"></span>
+
+	<!-- Shopping Checkout Form -->
+	<div id='content' class="row row--padding-medium container-wide content" style="position: relative; z-index: 0;">
+		<div id='content' class="row row--padding-medium">
+			<h1 class="content__title content__title-white">Checkout</h1>
+			<br />
+			<div id="formContainer">
+			<form action="https://formspree.io/thealpineexpeditions@gmail.com" method="POST" name="checkout_form"  data-aos="fade-in">
+				<fieldset>
+					<legend style="font-size: 1.5em;"><!--<span style="color:red;">*</span>--> All fields are required</legend>
+					<div class="ar-input-set two-in-one_1">
+						<input type="text" name="name" required id="id_name" />
+						<span class="ar-fixed-label"><i class="fa fa-user"></i></span>
+						<span class="ar-floating-label">Name</span>
+
+					</div>
+					<div class="ar-input-set two-in-one_2">
+						<input type="text" name="phone" required id="id_phone" />
+						<span class="ar-fixed-label"><i class="fa fa-phone"></i></span>
+						<span class="ar-floating-label">Mobile</span>
+
+					</div>
+					<div class="ar-input-set" style="clear:both;">
+					  <!--<input type="email" name="email" required id="id_email" />-->
+					  <input type="email" name="email" required id="id_email" />
+						<span class="ar-fixed-label"><i class="fa fa-envelope"></i></span>
+						<span class="ar-floating-label">E-Mail</span>
+
+					</div>
+					<div class="ar-input-set" style="clear:both;">
+					  	<input type="text" name="address" required id="id_address" />
+						<span class="ar-fixed-label"><i class="fa fa-map-marker-alt"></i></span>
+						<span class="ar-floating-label">Street Address</span>
+					</div>
+					
+					<div class="ar-input-set" style="clear:both;">
+					  	<input type="text" name="city" required id="id_city" />
+						<span class="ar-fixed-label"><i class="fa fa-map-marker"></i></span>
+						<span class="ar-floating-label">City</span>
+					</div>
+					
+					<div class="ar-input-set" style="clear:both;">
+					  	<input type="text" name="state" required id="id_state" />
+						<span class="ar-fixed-label"><i class="fa fa-map"></i></span>
+						<span class="ar-floating-label">State</span>
+					</div>
+					
+					<div class="ar-input-set" style="clear:both;">
+					  	<input type="text" name="country" required id="id_country" />
+						<span class="ar-fixed-label"><i class="fa fa-flag"></i></span>
+						<span class="ar-floating-label">Country</span>
+					</div>
+					
+					<div class="ar-input-set" id="cartItems" style="display: none;">
+					</div>
+
+					<span class="ar-form-btn-span">
+						<input type="hidden" name="_next" value="http://thealpineexpeditions.com/thank-you/" />
+						<input type="hidden" name="_subject" value="Checkout - The Alpine Expeditions!" />
+						<button class="book_btn" type="submit" name="sendMsg"><span class="trippy_btn-left"></span>CHECKOUT<span class="trippy_btn-right"></span></button><br />
+					</span>
+				</fieldset>
+			</form>
+			</div>
+		</div>
+	</div>
+	<!-- End of Shopping Checkout Form -->
+    </div>
+
+
+<script>
+	document.getElementById("header").className += ' headerBlack';
+</script>
