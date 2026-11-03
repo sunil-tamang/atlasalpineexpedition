@@ -324,7 +324,7 @@ blockquote {
  --nav-font-family: var(--aa-font);
  --nav-link-size: 14px;
  --nav-label-size: 11px;
- --nav-card-title-size: 19px;
+ --nav-card-title-size: 18px;
  --nav-weight-regular: 400;
  --nav-weight-medium: 500;
  --nav-weight-semibold: 600;
@@ -336,7 +336,7 @@ blockquote {
 .reference-site .atlas-header .atlas-wordmark span { font-size: 9px; font-weight: 500; letter-spacing: .43em; line-height: 1.8; }
 .reference-site .atlas-header .atlas-navigation > :is(a,button) { font-size: var(--nav-link-size); font-weight: var(--nav-weight-medium); line-height: var(--nav-line-height); text-transform: none; }
 .reference-site .atlas-header .atlas-eyebrow { font-size: var(--nav-label-size); font-weight: var(--nav-weight-semibold); line-height: 1.4; letter-spacing: .1em; text-transform: uppercase; }
-.reference-site .atlas-header .atlas-card h3 { font-family: var(--nav-font-family); font-size: var(--nav-card-title-size); font-weight: var(--nav-weight-medium); line-height: 1.2; letter-spacing: -.02em; }
+.reference-site .atlas-header .atlas-card h3 { font-family: var(--nav-font-family); font-size: var(--nav-card-title-size); font-weight: var(--nav-weight-medium); line-height: 1.25; letter-spacing: -.025em; }
 .reference-site .atlas-header .atlas-card-detail { font-size: 12px; line-height: 1.4; }
 .reference-site .atlas-header .atlas-all { font-weight: var(--nav-weight-medium); }
 @media(max-width:640px) { .reference-site .atlas-header .atlas-wordmark { font-size: 17px; } }
@@ -377,3 +377,24 @@ blockquote {
 .reference-site .expedition-card .directory-card-tags { font-size: 10px; line-height: 1.25; font-weight: 400; letter-spacing: 0; }
 .reference-site .expedition-card .directory-card-facts li { font-size: 10px; line-height: 1.4; font-weight: 400; }
 .reference-site .expedition-card .directory-card-action { font-size: 13px; font-weight: 650; line-height: 1.3; }
+
+/* Navigation-only editorial category hierarchy; other page typography is unchanged. */
+@media(min-width:1024px) {
+ .reference-site .atlas-header .atlas-regions [role=tab] { font-size: 12px; font-weight: var(--nav-weight-medium); line-height: 1.5; letter-spacing: .015em; }
+ .reference-site .atlas-header .atlas-trek-links a { font-size: var(--nav-link-size); font-weight: var(--nav-weight-regular); line-height: 1.5; }
+ .reference-site .atlas-header .atlas-eyebrow { font-weight: var(--nav-weight-medium); letter-spacing: .13em; }
+ .reference-site .atlas-header .atlas-all { font-size: 12px; letter-spacing: .025em; }
+}
+
+/* Homepage editorial hero typography, scoped away from the navigation. */
+.home-main .home-landing h1 { font-family: var(--aa-font); font-size: clamp(68px,9.2vw,156px); font-weight: 300; line-height: .91; letter-spacing: -.045em; }
+.home-main .home-landing-kicker { font-size: 10px; line-height: 1.5; font-weight: 400; letter-spacing: .25em; }
+.home-landing-details dt { font-size: 9px; line-height: 1.5; font-weight: 400; letter-spacing: .25em; }
+.home-landing-details dd { font-size: 11px; line-height: 1.65; font-weight: 400; letter-spacing: .08em; }
+.home-landing-explore, .home-landing-contact { font-size: 10px; line-height: 1.5; font-weight: 400; letter-spacing: .2em; }
+.home-landing-explore span { font-size: 21px; line-height: 1; }
+@media(max-width:600px) {
+ .home-main .home-landing h1 { font-size: clamp(38px,11.6vw,68px); line-height: .97; }
+ .home-main .home-landing-kicker { font-size: 9px; letter-spacing: .15em; }
+ .home-landing-details dd { font-size: 10px; }
+}

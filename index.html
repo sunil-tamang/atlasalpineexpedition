@@ -7,19 +7,20 @@ description: "A Nepal-based expedition company leading thoughtful climbs, treks,
 keywords: "Himalayan expeditions, Nepal climbing, guided expeditions, Ama Dablam expedition, Atlas Alpine Expedition"
 ---
 <main class="home-main" id="main-content">
-  <section class="home-hero home-wrap" aria-labelledby="home-title">
-    <div class="home-hero-copy">
-      <div><h1 id="home-title">Guided<br>Expeditions<br>in the Himalaya.</h1>
-        <div class="home-actions"><a class="home-button" href="#expeditions">Explore Expeditions</a><a class="home-text-link" href="{% link contact.html %}">Get in Touch</a></div>
+  <section class="home-landing" aria-labelledby="home-title">
+    <img class="home-landing-image" src="{{ '/assets/css/images/home.jpg' | relative_url }}" alt="Himalayan mountain peaks rising above the clouds" fetchpriority="high" width="4176" height="3654">
+    <div class="home-landing-content home-wrap">
+      <p class="home-landing-kicker">NEPAL BASED. HIMALAYA BOUND.</p>
+      <h1 id="home-title">EXPEDITIONS<br>IN THE<br>HIMALAYA.</h1>
+      <div class="home-landing-bottom">
+        <dl class="home-landing-details">
+          <div><dt>DISCIPLINE</dt><dd>GUIDED CLIMBS · HIMALAYAN TREKS</dd></div>
+          <div><dt>TERRAIN</dt><dd>NEPAL · HIGH ALTITUDE · ALPINE</dd></div>
+          <div><dt>OUR APPROACH</dt><dd>LOCAL KNOWLEDGE · PERSONAL JOURNEYS</dd></div>
+        </dl>
+        <a class="home-landing-explore" href="#expeditions">EXPLORE EXPEDITIONS<span aria-hidden="true">↓</span></a>
       </div>
-      <p class="home-hero-description">A Nepal-based expedition company leading thoughtful climbs, treks, and wilderness journeys across the Himalaya.</p>
-    </div>
-    <img class="home-hero-image" src="{{ '/assets/css/images/home.jpg' | relative_url }}" alt="An expansive mountain landscape in the Himalaya" fetchpriority="high" width="1600" height="900">
-    <div class="home-facts" aria-label="Our approach">
-      <div><span class="home-symbol" aria-hidden="true">△</span><p><strong>Nepal based</strong><span>Local mountain knowledge</span></p></div>
-      <div><span class="home-symbol" aria-hidden="true">◎</span><p><strong>Personal journeys</strong><span>People, not just itineraries</span></p></div>
-      <div><span class="home-symbol" aria-hidden="true">◇</span><p><strong>Thoughtful planning</strong><span>From the first step to the summit</span></p></div>
-      <div><span class="home-symbol" aria-hidden="true">⌁</span><p><strong>Responsible travel</strong><span>People · Places · Himalaya</span></p></div>
+      <a class="home-landing-contact" href="{% link contact.html %}">GET IN TOUCH</a>
     </div>
   </section>
 
