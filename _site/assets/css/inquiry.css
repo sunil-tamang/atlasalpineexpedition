@@ -1,24 +1,24 @@
 /* Base Styles */
 html {
-  font-size: 16px;
+  
   overflow-x: hidden;
 }
 
 body, html {
-  font-family: "Lato", "Montserrat", sans-serif;
+  
   height: 100%;
-  letter-spacing: 0.05em;
+  
 }
 
 h1, h2, h3 {
-  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+  
 }
 
 p, label, .ar-floating-label,
 .ar-input-set input,
 .ar-input-set select,
 .ar-input-set textarea {
-  font-size: clamp(0.875rem, 1vw + 0.5rem, 1.1rem);
+  
 }
 
 /* Container */
@@ -99,8 +99,8 @@ p, label, .ar-floating-label,
 }
 
 #sidebar-highlights-list li {
-  font-size: 0.9em;
-  font-weight: 400;
+  
+  
 }
 
 /* Input Styles */
@@ -116,7 +116,7 @@ p, label, .ar-floating-label,
   padding: 12px;
   border-radius: 4px;
   border: 1px solid #8a8c8f;
-  font-size: 0.875rem;
+  
   outline: none;
   transition: border 0.3s;
 }
@@ -129,13 +129,13 @@ p, label, .ar-floating-label,
 
 .ar-input-set input::-moz-placeholder, .ar-input-set textarea::-moz-placeholder {
   color: #aaa;
-  font-style: italic;
+  
 }
 
 .ar-input-set input::placeholder,
 .ar-input-set textarea::placeholder {
   color: #aaa;
-  font-style: italic;
+  
 }
 
 /* Floating Labels */
@@ -146,8 +146,8 @@ p, label, .ar-floating-label,
   background: white;
   padding: 0 5px;
   color: #555;
-  font-family: monospace;
-  font-size: clamp(0.7rem, 1vw + 0.3rem, 1rem);
+  
+  
 }
 
 /* Form Grid */
@@ -163,12 +163,12 @@ p, label, .ar-floating-label,
   background: #ffce00;
   border-radius: 5px;
   padding: 0.5em 1em;
-  font-size: 1.1em;
+  
   outline: 0;
   transition: all 0.2s ease;
   cursor: pointer;
-  font-family: "Anton", sans-serif;
-  letter-spacing: 0.1em;
+  
+  
 }
 
 .book_btn:hover {

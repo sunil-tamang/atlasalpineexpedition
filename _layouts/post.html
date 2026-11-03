@@ -57,7 +57,7 @@ tags : ""
 
 
 <!--<div class="container--white">-->
-<div class="row row--padding-wide container-wide content__pg content__pg-black" style="padding-top: 16em;" >
+<div class="row row--padding-wide container-wide content__pg content__pg-black"  >
 	<!--Main Posts-->
 	<div class="row--pading-medium col--post">
 		{% if page.custom_bg %}
@@ -89,7 +89,7 @@ tags : ""
 			<br />
 			<hr />
 			<div class="post-content row--padding-medium">
-				<p>{{ content }}</p>
+				{{ content }}
 			</div>
 		</div>
 	</div>
@@ -100,7 +100,7 @@ tags : ""
 		{% for post in site.posts offset:0 limit:5 %}
 			{% if post.url != page.url %}
 				{% if post %}
-				<h2 class="content__sub-title blogpost-title" style="font-size: 1em;font-weight: lighter; font-family: 'ANTON', sans-serif; color: #333; opacity: .85;">
+				<h2 class="content__sub-title blogpost-title" style="  color: #333; opacity: .85;">
 					<a href="{{ post.url }}">
 						<img  src="/assets/css/images/{{ post.custom_bg }}" style="width: 100%; height: 100%;"alt="{{post.alt}}" title="{{post.title}}">
 					</a><br />

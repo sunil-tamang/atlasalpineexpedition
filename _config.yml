@@ -1,93 +1,112 @@
-title: Atlas Alpine Expedition | Adventures and Tours in the Himalayas
-name: Above 8000
+
+# Atlas Alpine Expedition — Jekyll 4.4.x
+
+title: "Atlas Alpine Expedition | Adventures and Tours in the Himalayas"
+name: "Above 8000"
 email: atlasalpineexpedition@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  An official mountaineering company based in Nepal 🇳🇵, organizes trekking and climbing expeditions in the majestic Himalayas. 🏔️ ⛷ 🧗‍♂️
-baseurl: ''
-url: 'https://atlasalpineexpedition.com'
+
+description: >-
+  An official mountaineering company based in Nepal, organizing trekking
+  and climbing expeditions in the majestic Himalayas.
+
+url: "https://atlasalpineexpedition.com"
+baseurl: ""
 
 permalink: slug
 
+# Collections
 collections:
   gear-list:
     output: true
+
   team:
     output: true
     permalink: /team/:title
-    include: app-assets
+
   activities:
     output: true
     permalink: /:title
-    include: app-assets
+
   escape-trips:
     output: true
     permalink: /:title
-    include: app-assets
+
   packages:
     output: false
     permalink: /:title
-    include: app-assets
+
   treks:
     output: true
     permalink: /:title
-    include: app-assets
+
   rafting:
     output: true
     permalink: /:title
-    include: app-assets
+
   camping:
     output: true
     permalink: /:title
-    include: app-assets
+
   paragliding:
     output: true
     permalink: /:title
-    include: app-assets
+
   legal:
     output: true
-    permalink: /:title
-    include: app-assets
+    permalink: /legal/:name/
+
   renting:
     output: false
     permalink: /:title
-    include: app-assets
+
   bike-tours:
     output: true
     permalink: /:title
-    include: app-assets
+
   rock-climbing:
     output: true
     permalink: /:title
-    include: app-assets
+
   peaks:
     output: true
-    permalink: /:title
-    include: app-assets
+    permalink: /peaks/:name/
 
+# Defaults
 defaults:
   - scope:
-      path: ''
-      type: 'activities'
+      path: ""
+      type: activities
     values:
-      layout: 'default'
+      layout: default
       image: true
-      type: 'activities'
+      type: activities
 
+# Excluded files
 exclude:
   - Gemfile
   - Gemfile.lock
+  - Gemfile.backup
+  - Gemfile.lock.backup
+  - Gemfile.lock.old
   - readme.md
   - license
   - CNAME
   - packages.html
-  - "_treks/assets/css/*.scss"
+  - _treks/assets
+
+# Plugins
 plugins:
   - jekyll-sitemap
-strict_front_matter: true
-sass:
-  style: compressed # possible values: nested expanded compact compressed
 
-# Compressing HTML
+# Front matter
+strict_front_matter: true
+
+# Sass Configuration
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# HTML Compression
 compress_html:
   clippings: all
   comments: all

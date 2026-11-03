@@ -1,0 +1,58 @@
+about:
+  label: About
+  groups:
+    - label: About us
+      links:
+        - {label: Our Story, url: /about/}
+        - {label: Certificates & Documents, url: /legal-documents/}
+    - label: Our Director
+      links:
+        - {label: Singi Lama, url: /team/singi-lama/}
+    - label: Our Team
+      links:
+        - {label: Meet the Team, url: /team/}
+  cards:
+    - {label: THE DIRECTOR, title: Singi Lama, image: /assets/css/images/team/8.jpg, url: /team/singi-lama/}
+resources:
+  label: Resources
+  groups:
+    - label: Information
+      links:
+        - {label: Gear List, url: /gear-list/}
+        - {label: Travel Advisory, url: /travel-advisory/}
+        - {label: Certificates & Documents, url: /legal-documents/}
+        - {label: Terms & Conditions, url: /legal/terms/}
+        - {label: Our Team, url: /team/}
+    - label: Journal
+      links:
+        - {label: News & Stories, url: /news/}
+    - label: FAQs
+      links:
+        - {label: Frequently Asked Questions, url: /faq/}
+    - label: Activities
+      links:
+        - {label: Rock Climbing, url: /activities/rock-climbing/}
+        - {label: River Rafting, url: /activities/rafting/}
+  cards:
+    - {label: JOURNAL, title: Stories from the Himalaya, image: /assets/css/images/blog/everest-base/banner.jpg, url: /news/}
+    - {label: FAQ, title: Frequently Asked Questions, image: /assets/css/images/treks/everest_base_min.jpg, url: /faq/}
+contact:
+  label: Contact
+  groups:
+    - label: Contact us
+      links:
+        - {label: Contact Our Team, url: /contact/}
+        - {label: Send an Enquiry, url: /enquiry/}
+        - {label: Email Atlas Alpine, url: 'mailto:atlasalpineexpedition@gmail.com'}
+        - {label: '+977 9863683851', url: 'tel:+9779863683851'}
+    - label: Expeditions
+      links:
+        - {label: Plan Your Expedition, url: /enquiry/}
+        - {label: Explore Expeditions, url: /activities/expeditions/}
+    - label: Trekking
+      links:
+        - {label: Plan Your Trek, url: /enquiry/}
+        - {label: Explore Trekking, url: /activities/trekking/}
+  cards:
+    - {label: CONTACT, title: Talk to our team, image: /assets/css/images/home.jpg, url: /contact/}
+    - {label: ENQUIRE, title: Plan your journey, image: /assets/css/images/peak-climbing/ama-dablam/banner.jpg, url: /enquiry/}

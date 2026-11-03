@@ -1,0 +1,16 @@
+{% assign menu = site.data.navigation-secondary[include.key] %}
+<section class="atlas-mega atlas-editorial-mega" id="atlas-{{ include.key }}" aria-label="{{ menu.label }}" hidden>
+ <div class="atlas-mega-inner">
+  <div class="atlas-regions"><div role="tablist" aria-label="{{ menu.label }} categories" aria-orientation="vertical">
+   {% for group in menu.groups %}<button role="tab" id="atlas-{{ include.key }}-tab-{{ forloop.index }}" aria-controls="atlas-{{ include.key }}-group-{{ forloop.index }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" tabindex="{% if forloop.first %}0{% else %}-1{% endif %}">{{ group.label }}</button>{% endfor %}
+  </div></div>
+  <div class="atlas-treks">
+   {% for group in menu.groups %}<div role="tabpanel" id="atlas-{{ include.key }}-group-{{ forloop.index }}" aria-labelledby="atlas-{{ include.key }}-tab-{{ forloop.index }}"{% unless forloop.first %} hidden{% endunless %}><div class="atlas-trek-links">
+    {% for link in group.links %}<a href="{% if link.url contains 'mailto:' or link.url contains 'tel:' %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}">{{ link.label }}</a>{% endfor %}
+   </div></div>{% endfor %}
+  </div>
+  <div class="atlas-cards">
+   {% for card in menu.cards %}<a class="atlas-card" href="{{ card.url | relative_url }}"><img src="{{ card.image | relative_url }}" alt="" loading="lazy"><div><p class="atlas-eyebrow">{{ card.label }}</p><h3>{{ card.title }}</h3></div></a>{% endfor %}
+  </div>
+ </div>
+</section>

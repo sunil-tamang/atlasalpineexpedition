@@ -1,139 +1,43 @@
 ---
-layout: "default"
-title: "Trekking"
-title_img: "fa fa-hiking"
-permalink: "/activities/trekking/"
-subtitle0: "Trekking"
-subtitle1: "The"
-subtitle2: "Himalayas"
-custom_bg: "bg/trek_min.jpg"
-productScript: "app.createProducts('trekking');"
-author_name : " THE ALPINE EXPEDITIONS"
-
-tags : "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek, Langtang Valley Trek, Upper Mustang Trek, Manaslu Circuit Trek, Ghorepani Poon Hill Trek ,Gokyo Lakes Trek ,Kanchenjunga Base Camp Trek, Makalu Base Camp Trek"
-description: "Explore the Himalayas with Alpine Expeditions, a leading trekking and expedition company in Nepal. Discover our range of trekking packages, camping, rafting, bike tours, peak climbing, and paragliding adventures."
-keywords: "trekking in nepal, nepal trekking, himalayan treks, trekking packages, camping, rafting, bike tours, peak climbing, paragliding, alpine expeditions"
-
-contains_ads : "YES"
-
-
+layout: default
+title: Trekking
+permalink: /activities/trekking/
+page_class: page-expeditions page-trekking
+custom_css: expeditions.css
+description: "Explore our Himalayan trekking journeys. Find your trail by region and duration, from the Everest and Annapurna regions to Nepal’s remote mountain valleys."
+keywords: "trekking in Nepal, Himalayan treks, Everest trekking, Annapurna trekking, guided treks"
 ---
-
-<!----------T-R-E-K-K-I-N-G-------->
-<div class="container-wide row--padding-wide">
-
-  <div class="banner" style="background-image: url('/assets/css/images/bg/trek.jpg');">
-      <span class="banner__overlay"></span>
-      
-      <div class="banner__tagline banner__home" style="opacity: 1;">
-          <p class="tagline" style="text-transform: none;"></p>
-          <br />
-          <p class="sub-tagline" style="display: inline;">
-          
-          </p>
-      </div>
-      <span class="banner__skip">
-          <a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
-      </span>
+<section class="expeditions-listing" aria-label="Find your trek">
+ <form class="expedition-filters" id="expedition-filters" data-result-singular="Trek" data-result-plural="Treks">
+  <h2>Filter Treks</h2>
+  <fieldset><legend>Region</legend>
+   {% capture region_names %}{% for entry in site.data.trek-data %}{{ entry[1].region }}|{% endfor %}{% endcapture %}
+   {% assign regions = region_names | split: '|' | uniq | sort %}
+   {% for region in regions %}{% unless region == empty %}<label><input type="checkbox" name="region" value="{{ region | slugify }}"> <span>{{ region }} <span data-filter-count="region:{{ region | slugify }}"></span></span></label>{% endunless %}{% endfor %}
+  </fieldset>
+  <fieldset><legend>Duration</legend>
+   <label><input type="checkbox" name="duration" value="up-to-10"> <span>Up to 10 days</span></label>
+   <label><input type="checkbox" name="duration" value="11-15"> <span>11–15 days</span></label>
+   <label><input type="checkbox" name="duration" value="16-20"> <span>16–20 days</span></label>
+   <label><input type="checkbox" name="duration" value="21plus"> <span>21 days or more</span></label>
+  </fieldset>
+  <button class="expedition-clear" type="reset">Clear All</button>
+ </form>
+ <div class="expedition-results">
+  <p class="visually-hidden" id="expedition-result-count" role="status" aria-live="polite">{{ site.data.trek-data.size }} Treks</p>
+  <div class="expedition-grid" id="expedition-grid">
+   {% for entry in site.data.trek-data %}
+    {% assign key = entry[0] %}{% assign trip = entry[1] %}
+    {% assign trek_page = site.treks | where: 'title-slug', key | first %}
+    {% if key == 'dhaulagiri-circuit-trek' %}{% assign trek_page = site.treks | where: 'title-slug', 'dhaulagiri-circuit' | first %}{% endif %}
+    {% assign days = trip.days | plus: 0 %}{% assign duration = '21plus' %}{% if days <= 10 %}{% assign duration = 'up-to-10' %}{% elsif days <= 15 %}{% assign duration = '11-15' %}{% elsif days <= 20 %}{% assign duration = '16-20' %}{% endif %}
+    <a class="expedition-card" href="{{ trek_page.url | relative_url }}" data-region="{{ trip.region | slugify }}" data-duration="{{ duration }}">
+     {% include directory-card.html trip=trip kind="Trekking" index=forloop.index total=site.data.trek-data.size fallback="/assets/css/images/bg/trek.jpg" %}
+    </a>
+   {% endfor %}
   </div>
-
-
-</div>
-
-<!-- <div id='content' class="row row--padding-medium content container--white">
-
-
-           <h1 class="content__title content__title-white" data-aos="zoom-out"></h1>
-           <br />
-
-          <div class="row container-wide content__pg"> -->
-    
-    <div class="row container-wide row--padding-wide content__pg" >
-                  
-              <!-- <br /><br /> -->
-              <!-- <h2 class="content__sub-title content__title-white">OUR Tours </h2><br /> -->
-              <!-- <br /><br /> -->
-             
-              <!-- Uncomment this to view bike tours -->
-              <!-- <div class="productWrapper row--padding-wide" >
-                      
-                      <div class="loader__wrapper"><div></div><div></div></div>
-              </div> -->
-          
-              <!-- <br/> -->
-
-
-
-              {% for trek_id in site.data.trek-data %}
-                  {% assign trek = trek_id[1] %}
-                  <!-- Access trek.name, trek.days, trek.region, trek.difficulty, etc. -->
-              {% endfor %}
-
-              <div class="update__page-layout">
-
-                  <div id="update__filters">
-
-                      <h2>Category</h2>
-                      <button
-                          class="update__filter-btn toggle-button"
-                          data-filter="category"
-                          data-value="trekking">Trekking</button>
-                      <button
-                          class="update__filter-btn toggle-button"
-                          data-filter="category"
-                          data-value="climbing">Climbing</button>
-
-                      <h2>Difficulty</h2>
-                      <div class="inline-radio-group">
-                          <label><input type="radio" name="difficulty" value="easy">
-                              Easy</label>
-                          <label><input type="radio" name="difficulty" value="challenging">
-                              Challenging</label>
-                      </div>
-
-                      <h2>Region</h2>
-                      <div class="inline-radio-group">
-                          <label><input type="radio" name="region" value="everest">
-                              Everest</label>
-                          <label><input type="radio" name="region" value="manaslu">
-                              Manaslu</label>
-                      </div>
-
-                      <button id="update__clear-filters">Clear</button>
-                  </div>
-
-                  <div class="update__trek-grid">
-                      {% for trek_id in site.data.trek-data %}
-                          {% assign trek = trek_id[1] %}
-                          <a href="/activities/trekking/{{ trek_id[0] }}/" class="update__trek-card-link">
-                              <div
-                                  class="update__trek-card"
-                                  data-category="{{ trek.category | downcase }}"
-                                  data-difficulty="{{ trek.difficulty | downcase }}"
-                                  data-region="{{ trek.region | downcase }}">
-
-                                  <div
-                                      class="trek-card__image-wrapper"
-                                      style="background-image: url('/{{ trek.photos }}');">
-                                      <div class="trek-card__overlay">
-                                          <h2>{{ trek.name }}</h2>
-                                          <p>{{ trek.region }}
-                                              •
-                                              {{ trek.days }}
-                                              days</p>
-                                          <p>
-                                              <!-- <strong>${{ trek.price }}</strong> -->
-                                          </p>
-                                      </div>
-                                  </div>
-
-                              </div>
-                          </a>
-                      {% endfor %}
-                  </div>
-
-              </div>
-
-    </div>
-
-
+  <div class="expedition-empty" id="expedition-empty" hidden><h3>No treks match these filters.</h3><p>Try another region or duration, or clear your filters to see all treks.</p><a href="{% link enquiry.html %}">Ask our team about your trek</a></div>
+  <noscript><p>All treks are shown. Enable JavaScript to use the filters.</p></noscript>
+ </div>
+</section>
+<script src="{{ '/assets/js/expeditions.js' | relative_url }}" defer></script>

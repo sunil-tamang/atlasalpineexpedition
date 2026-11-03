@@ -1,167 +1,49 @@
 ---
 layout: default
-title: "Peak Climbing in Nepal"
-permalink: "/activities/peak-climbing/"
-description: "Embark on thrilling peak climbing adventures in Nepal with The Alpine Expeditions. Conquer iconic peaks like Mera Peak, Lobuche Peak, Pisang Peak, and Island Peak amidst the breathtaking Himalayas."
-keywords: "peak climbing Nepal, Himalayan peaks, mountaineering expeditions, Mera Peak climb, Lobuche Peak ascent, Pisang Peak trek, Island Peak summit"
-custom_thumb: "bg/peakbg.jpg"
-custom_bg: "bg/peakbg.jpg"
-productScript: "app.createProducts('peak-climbing');"
-author_name : " THE ALPINE EXPEDITIONS"
-tags : "BikeToursInKulluManali,HimachalPradesh"
-
-contains_ads : "YES"
+title: Expeditions
+permalink: /activities/expeditions/
+page_class: page-expeditions
+custom_css: expeditions.css
+description: "High-altitude expeditions in the Himalaya. Explore our guided climbing journeys and find your mountain by altitude, region, and duration."
+keywords: "Himalayan expeditions, guided climbing Nepal, Ama Dablam, Mera Peak, Island Peak, Lobuche Peak"
 ---
-
-
-
-<!----------Blogposts -------->
-<div class="container-wide row--padding-wide">
-
-	<div class="banner" style="background-image: url('/assets/css/images/bg/peakbg.jpg');">
-		<span class="banner__overlay">
-
-			
-		</span>
-		
-		<div class="banner__tagline banner__home" style="opacity: 1;">
-			<p class="tagline" style="text-transform: none;"></p>
-			<br />
-			<p class="sub-tagline" style="display: inline;">
-			
-			</p>
-		</div>
-		<span class="banner__skip">
-			<a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
-		</span>
-	</div>
-  
-  
+<section class="expeditions-listing" aria-label="Find your expedition">
+ <form class="expedition-filters" id="expedition-filters">
+  <h2>Filter Expeditions</h2>
+  <fieldset><legend>Expedition Altitude</legend>
+   <label><input type="checkbox" name="altitude" value="8000"> <span class="altitude-filter-label">8,000m <span data-filter-count="altitude:8000"></span></span></label>
+   <label><input type="checkbox" name="altitude" value="7000"> <span class="altitude-filter-label">7,000m <span data-filter-count="altitude:7000"></span></span></label>
+   <label><input type="checkbox" name="altitude" value="6000"> <span class="altitude-filter-label">6,000m <span data-filter-count="altitude:6000"></span></span></label>
+   <label><input type="checkbox" name="altitude" value="below6000"> <span class="altitude-filter-label">Below 6,000m <span data-filter-count="altitude:below6000"></span></span></label>
+  </fieldset>
+  <fieldset><legend>Region</legend>
+   <label><input type="checkbox" name="region" value="khumbu"> <span>Everest / Khumbu</span></label>
+   <label><input type="checkbox" name="region" value="annapurna"> <span>Annapurna</span></label>
+   <label><input type="checkbox" name="region" value="hinku"> <span>Hinku Valley</span></label>
+  </fieldset>
+  <fieldset><legend>Duration</legend>
+   <label><input type="checkbox" name="duration" value="under20"> <span>Under 20 days</span></label>
+   <label><input type="checkbox" name="duration" value="20plus"> <span>20 days or more</span></label>
+  </fieldset>
+  <button class="expedition-clear" type="reset">Clear All</button>
+ </form>
+ <div class="expedition-results">
+  <p class="visually-hidden" id="expedition-result-count" role="status" aria-live="polite">{{ site.data.peak-data.size }} Expeditions</p>
+  <div class="expedition-grid" id="expedition-grid">
+   {% for entry in site.data.peak-data %}
+    {% assign key = entry[0] %}{% assign trip = entry[1] %}
+    {% assign peak_page = site.peaks | where: 'title-slug', key | first %}
+    {% assign altitude = trip.altitude | split: '/' | first | remove: ',' | remove: 'm' | strip | plus: 0 %}
+    {% assign altitude_group = 'below6000' %}{% if altitude >= 8000 %}{% assign altitude_group = '8000' %}{% elsif altitude >= 7000 %}{% assign altitude_group = '7000' %}{% elsif altitude >= 6000 %}{% assign altitude_group = '6000' %}{% endif %}
+    {% assign region = 'khumbu' %}{% if trip.region contains 'Annapurna' %}{% assign region = 'annapurna' %}{% elsif trip.region contains 'Hinku' %}{% assign region = 'hinku' %}{% endif %}
+    {% assign duration = 'under20' %}{% assign days = trip.days | plus: 0 %}{% if days >= 20 %}{% assign duration = '20plus' %}{% endif %}
+    <a class="expedition-card" href="{{ peak_page.url | relative_url }}" data-altitude="{{ altitude_group }}" data-region="{{ region }}" data-duration="{{ duration }}">
+     {% include directory-card.html trip=trip kind="Expeditions" index=forloop.index total=site.data.peak-data.size fallback="/assets/css/images/bg/peakbg.jpg" %}
+    </a>
+   {% endfor %}
   </div>
-
-  
-<!-- <div class="slider-wrapper">
-	  <div class="slide banner-slide peakClimbing">
-        <div class="slide-tagline">
-          <span class="tagline-text">
-			<div class="banner_logo" style="position: absolute; left: 0; top:-75%; width: 100%; text-align: center;">
-				<h1 class="trippy-name">Peak Climbing In Nepal
-					<p class="headline--detail" style="padding: 0; margin: 0; font-style: oblique; letter-spacing: .05em;">Experience the Himalayan Downhill passes with us!</p>
-				</h1>
-			</div>
-          </span>
-
-        </div>
-      </div>
-	<span class="banner__skip">
-            <a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
-	</span>
-</div> -->
-
-<!-- <div id='content' class="row row--padding-medium content container--white">
-
-
-		<div class="row container-wide row--padding-wide content__pg" >
-					
-				<h2 class="content__sub-title content__title-white">Peaks </h2><br />
-			
-					<div class="productWrapper row--padding-wide" >
-							
-							<div class="loader__wrapper row--padding-medium"><div></div><div></div></div>
-				   </div>
-				
-				   <br/>
-		</div>
-			<br />
-
-</div> -->
-
-
-
-    <div class="row container-wide row--padding-wide content__pg" >
-                  
-              <!-- <br /><br /> -->
-              <!-- <h2 class="content__sub-title content__title-white">OUR Tours </h2><br /> -->
-              <!-- <br /><br /> -->
-             
-              <!-- Uncomment this to view bike tours -->
-              <!-- <div class="productWrapper row--padding-wide" >
-                      
-                      <div class="loader__wrapper"><div></div><div></div></div>
-              </div> -->
-          
-              <!-- <br/> -->
-
-
-
-              {% for trek_id in site.data.peak-data %}
-                  {% assign trek = trek_id[1] %}
-                  <!-- Access trek.name, trek.days, trek.region, trek.difficulty, etc. -->
-              {% endfor %}
-
-              <div class="update__page-layout">
-
-                  <div id="update__filters">
-
-                      <h2>Category</h2>
-                      <button
-                          class="update__filter-btn toggle-button"
-                          data-filter="category"
-                          data-value="trekking">Trekking</button>
-                      <button
-                          class="update__filter-btn toggle-button"
-                          data-filter="category"
-                          data-value="climbing">Climbing</button>
-
-                      <h2>Difficulty</h2>
-                      <div class="inline-radio-group">
-                          <label><input type="radio" name="difficulty" value="easy">
-                              Easy</label>
-                          <label><input type="radio" name="difficulty" value="challenging">
-                              Challenging</label>
-                      </div>
-
-                      <h2>Region</h2>
-                      <div class="inline-radio-group">
-                          <label><input type="radio" name="region" value="everest">
-                              Everest</label>
-                          <label><input type="radio" name="region" value="manaslu">
-                              Manaslu</label>
-                      </div>
-
-                      <button id="update__clear-filters">Clear</button>
-                  </div>
-
-                  <div class="update__trek-grid">
-                      {% for trek_id in site.data.peak-data %}
-                          {% assign trek = trek_id[1] %}
-                          <a href="/activities/peak-climbing/{{ trek_id[0] }}/" class="update__trek-card-link">
-                              <div
-                                  class="update__trek-card"
-                                  data-category="{{ trek.category | downcase }}"
-                                  data-difficulty="{{ trek.difficulty | downcase }}"
-                                  data-region="{{ trek.region | downcase }}">
-
-                                  <div
-                                      class="trek-card__image-wrapper"
-                                      style="background-image: url('/{{ trek.photos }}');">
-                                      <div class="trek-card__overlay">
-                                          <h2>{{ trek.name }}</h2>
-                                          <p>{{ trek.region }}
-                                              •
-                                              {{ trek.days }}
-                                              days</p>
-                                          <p>
-                                              <!-- <strong>${{ trek.price }}</strong> -->
-                                          </p>
-                                      </div>
-                                  </div>
-
-                              </div>
-                          </a>
-                      {% endfor %}
-                  </div>
-
-              </div>
-
-    </div>
+  <div class="expedition-empty" id="expedition-empty" hidden><h3>No expeditions match these filters.</h3><p>Try another combination or clear your filters to see all expeditions.</p><a href="{% link enquiry.html %}">Contact our team about another mountain</a></div>
+  <noscript><p>All expeditions are shown. Enable JavaScript to use the filters.</p></noscript>
+ </div>
+</section>
+<script src="{{ '/assets/js/expeditions.js' | relative_url }}" defer></script>

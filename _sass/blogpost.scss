@@ -15,10 +15,10 @@
 }
 .post-categories-list{margin: 1em auto 0;}
 .post-tags{
-	font-family: 'ANTON', sans-serif;
-	font-weight: 100;
+	
+	
 	text-transform: uppercase;
-	font-size: 1em;
+	
 	padding: .2em .4em;
 	background: #ffb300;
 	border-radius: .2em;
@@ -28,11 +28,11 @@
 	margin-bottom: .8em;
 }
 .post-title{padding-bottom: .2em !important; margin-bottom: 0 !important;}
-.post-meta{font-size: 1em !important; color: #888;}
+.post-meta{ color: #888;}
 .post-title,
 .post-meta{
 	text-align: left !important;
-	font-weight: bolder;
+	
 }
 .post-content{
 	padding-top: 2em;
@@ -59,16 +59,16 @@
 }
 .blog-read-btn{
 	color: greenyellow;
-    font-weight: normal;
+    
     background: #333;
     padding: 0 8px;
-	font-family: 'ANTON',sans-serif;
+	
 }
 
 @media(min-width:48em)
 {
 	.post-tags{
-		font-size: 1.1em;
+		
 		padding: .6em .8em;
 		border-radius: .2em;
 		margin-bottom: .8em;

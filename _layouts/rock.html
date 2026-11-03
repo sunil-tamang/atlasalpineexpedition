@@ -118,7 +118,7 @@ tags: ""
 {% endif %}
 		<span class="banner__overlay"></span>
 			<div class="banner__trek-overview">
-				<h1 class="trek-name" style="font-family:'Bowlby one sc',sans-serif !important;">{{ page.title }}</h1>
+				<h1 class="trek-name" >{{ page.title }}</h1>
 				<p class="trek-time">
 					{% if rock.days %}
 					<span class="trek-time--part1">
@@ -130,7 +130,7 @@ tags: ""
 					{% endif %}
 					
 					
-					<span class="trek-slide--price trek-price"><span style="font-size: 60%;">From</span> <i class="fa fa-dollar-sign"></i> {{ rock.price }}/-</span>
+					<span class="trek-slide--price trek-price"><span >From</span> <i class="fa fa-dollar-sign"></i> {{ rock.price }}/-</span>
 			
 				</p>
 
@@ -147,7 +147,7 @@ tags: ""
 			</div> -->
 
 			<span class="banner__skip">
-					<a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
+					<a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); "></i></a>
 			</span>
 		</div>
 
@@ -167,7 +167,7 @@ tags: ""
 				
 				{% for high in rock.highlights %}
 			  		
-							<p><i class="fas fa-check-circle"></i>&nbsp;&nbsp;<span class="holo" style="font-family: 'Anton',sans-serif;"> {{  high.content }}</span>  </p>
+							<p><i class="fas fa-check-circle"></i>&nbsp;&nbsp;<span class="holo" > {{  high.content }}</span>  </p>
 				
 						{% endfor %}
 				
@@ -470,7 +470,7 @@ tags: ""
 
 					<div class="" style="cursor:pointer;">
 						<a target='_blank' href='{{ site.url }}{{ trek.download }}' class='button'>
-							<p class="trek-overview holo" style="font-family: 'ANTON',sans-serif;" ><i class='fa fa-download'></i>&nbsp;&nbsp;Download Pdf Itinerary 	</p>
+							<p class="trek-overview holo"  ><i class='fa fa-download'></i>&nbsp;&nbsp;Download Pdf Itinerary 	</p>
 							</a> <br />
 					</div>
 
@@ -478,13 +478,13 @@ tags: ""
 
 				</div>
 					<!-- <span class="priceTag">FROM Rs.<i class="fa fa-rupee-sign"></i>{{ page.price }}</span> -->
-					<!-- <button class="book_btn" onclick="imPop();" type="submit" style="width: 100%;  font-size: 1.5em; box-shadow: 0 0 13px #2f2f2f; ">BOOK NOW</button> -->
+					<!-- <button class="book_btn" onclick="imPop();" type="submit" style="width: 100%;   box-shadow: 0 0 13px #2f2f2f; ">BOOK NOW</button> -->
 					<!-- <br /><br /> -->
-					<!-- <button class="book_btn enquiry" onclick="javascript:alert('Contact Form NOT Found!');" type="submit" style="width: 100%;  font-size: 1.5em; border-radius: 360px;">SEND ENQUIRY</button>
+					<!-- <button class="book_btn enquiry" onclick="javascript:alert('Contact Form NOT Found!');" type="submit" style="width: 100%;   border-radius: 360px;">SEND ENQUIRY</button>
 					<br /><br /> -->
 
                 <div class="" id="trigger1">
-                    <button id="enquiry-button" class="book_btn enquiry" type="button" style="width: 100%; font-size: 1.5em; text-align: center; display: block; padding: 10px 20px;">SEND AN ENQUIRY</button>
+                    <button id="enquiry-button" class="book_btn enquiry" type="button" style="width: 100%;  text-align: center; display: block; padding: 10px 20px;">SEND AN ENQUIRY</button>
                 </div>
 
                 <script>
@@ -516,7 +516,7 @@ tags: ""
 	</div>
 
 	<div class="row row--padding-medium container-wide" style="margin: 1em 0; border: 1px solid #cacaca; border-left: 0; border-right: 0;">
-		<p class="content__pg" style="clear: both; padding-bottom: 0em; background: red;"><strong style="font-weight: bold; color: #fff;padding-left: 1.5em;">NOTE <i class="fas fa-bullhorn"></i> </strong></p><br />
+		<p class="content__pg" style="clear: both; padding-bottom: 0em; background: red;"><strong style=" color: #fff;padding-left: 1.5em;">NOTE <i class="fas fa-bullhorn"></i> </strong></p><br />
 		<ul class="content__list">
 
 					<li class="content__list-item">
@@ -535,9 +535,9 @@ tags: ""
 				<div class="floater">
 						<span class="priceTag">FROM $.{{ rock.price }}</span>
 						<span class="priceTag">FROM $.<i class="fa fa-rupee-sign"></i>{{ rock.price }}</span>
-						<button class="book_btn" onclick="imPop();" type="submit" style="width: 100%;  font-size: 1.5em; box-shadow: 0 0 13px #2f2f2f; border-radius: 360px;">BOOK NOW</button>
+						<button class="book_btn" onclick="imPop();" type="submit" style="width: 100%;   box-shadow: 0 0 13px #2f2f2f; border-radius: 360px;">BOOK NOW</button>
 						<br /><br />
-						<button class="book_btn enquiry" onclick="javascript:alert('please contact us through Contact Page!');" type="submit" style="width: 100%;  font-size: 1.5em; border-radius: 360px;">ENQUIRY</button>
+						<button class="book_btn enquiry" onclick="javascript:alert('please contact us through Contact Page!');" type="submit" style="width: 100%;   border-radius: 360px;">ENQUIRY</button>
 						<br /><br />
 				</div>
 			</div>

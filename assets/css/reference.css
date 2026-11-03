@@ -1,0 +1,164 @@
+/* Shared layout for the reference design. Typography is defined in base.css. */
+.reference-site { color: #111; background-color: #fff; }
+
+
+
+
+
+
+
+.reference-site .home-footer { background: transparent; border: 0; }
+.site-content { width: min(88%,1440px); margin-inline: auto; padding-top: 125px; padding-bottom: 30px; min-height: 65vh; }
+.site-intro { display: grid; grid-template-columns: 1.35fr 1fr; gap: clamp(35px,6vw,100px); align-items: center; padding: 30px 20px 45px; }
+.site-intro h1 { margin: 0; max-width: 950px; overflow-wrap: break-word; }
+.site-intro .site-eyebrow { margin: 0 0 18px; }
+.site-intro-description { max-width: 440px; margin: 0; justify-self: end; }
+.site-page-content { min-width: 0; }
+.site-page-content > .container-wide, .site-page-content > .container-fluid { width: 100%; max-width: none; padding-inline: 0; }
+.site-page-content > .row--padding-wide, .site-page-content > .container-wide:first-of-type { padding-top: 0 !important; }
+.site-page-content .container--white, .site-page-content .container--grey, .site-page-content .row--white, .site-page-content .row--grey { background: transparent; color: #111; }
+.site-page-content .content__pg, .site-page-content .content__pg-black, .site-page-content .content__title, .site-page-content .content__sub-title, .site-page-content .content__title-white { color: #111; text-align: left; text-shadow: none; }
+.site-page-content .content__title::after, .site-page-content .content__sub-title::after { background: #111; }
+.site-page-content .content__pg { padding-inline: 0; }
+.site-page-content .content--full-length { padding-inline: 0; }
+.site-page-content .banner, .site-page-content .banner__trek, .site-page-content .banner-slide, .site-page-content .post-banner { width: 100%; height: 100vh; min-height: 100vh; margin: 0; border-radius: 18px; overflow: hidden; object-fit: cover; background-size: cover; background-position: center; }
+.site-page-content .slider-wrapper:has(.banner-slide) { height: auto !important; min-height: 100vh; border-radius: 18px; }
+.site-page-content .banner__overlay { background: linear-gradient(180deg,transparent 45%,rgba(0,0,0,.6)); }
+.site-page-content .banner__tagline, .site-page-content .banner_logo, .site-page-content .banner__trek-overview .trek-name { display: none; }
+.site-page-content .banner__skip a { background: #111b !important; color: #fff !important; border: 1px solid #ffffff66; }
+.site-page-content .banner__trek-overview { color: #fff; padding: 35px; align-self: flex-start; }
+.site-page-content .two-col-layout { display: grid; grid-template-columns: minmax(0,1fr) minmax(270px,.37fr); align-items: start; gap: clamp(30px,5vw,70px); width: 100%; margin: 60px auto; }
+.site-page-content .two-col-layout .content__left, .site-page-content .two-col-layout .content__right { width: 100%; max-width: none; margin: 0; padding: 0; float: none; flex: auto; }
+.site-page-content .material, .site-page-content .trek--section { background: transparent; color: #111; }
+.site-page-content .trek--section { padding-block: 20px; }
+.site-page-content .trek--section p { text-align: left; }
+.site-page-content .trek--section iframe, .site-page-content .vid { max-width: 100%; border: 0; border-radius: 16px; }
+.site-page-content .floater, .site-page-content #booking-details-sidebar { padding: 28px; background: #fff; color: #111; border: 1px solid #0002; border-radius: 18px; box-shadow: none; }
+.site-page-content .priceTag { display: block; margin-bottom: 20px; color: #111; }
+.site-page-content .book_btn, .site-page-content .trippy_btn, .site-page-content .shelter-button, .site-page-content input[type=submit] { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 44px; padding: 12px 22px; border: 1px solid #111; border-radius: 32px; background: #111; color: #fff; box-shadow: none !important; text-shadow: none; transition: background 180ms,color 180ms,transform 180ms; }
+.site-page-content .book_btn:hover, .site-page-content .trippy_btn:hover { background: #fff; color: #111; transform: translateY(-2px); }
+.site-page-content .trippy_btn-left, .site-page-content .trippy_btn-right { display: none; }
+.site-page-content .book_btn.enquiry { background: #fff; color: #111; }
+.site-page-content input:not([type=checkbox]):not([type=radio]):not([type=submit]), .site-page-content select, .site-page-content textarea { max-width: 100%; min-height: 48px; padding: 12px 15px; background: #fff; color: #111; border: 1px solid #0004; border-radius: 10px; box-shadow: none; }
+.site-page-content input:focus, .site-page-content textarea:focus, .site-page-content select:focus { outline: 2px solid #111; outline-offset: 3px; }
+.site-page-content input[type=checkbox], .site-page-content input[type=radio] { accent-color: #111; }
+.site-page-content .inquiry__container { margin: 20px auto 0; min-height: 0; padding: 0; max-width: none; }
+.site-page-content .inquiry__row { display: grid; grid-template-columns: minmax(240px,.65fr) minmax(0,1.35fr); width: 100%; gap: 50px; }
+.site-page-content .form-section, .site-page-content .sidebar-section { min-width: 0; }
+.site-page-content .ar-input-set { margin-bottom: 24px; }
+.site-page-content .ar-floating-label, .site-page-content .ar-fixed-label { color: #111; background: #fff; }
+.site-page-content .update__page-layout { display: grid; grid-template-columns: 220px minmax(0,1fr); gap: 35px; min-height: 0; margin-top: 25px; }
+.site-page-content #update__filters { width: 100%; max-width: none; padding: 24px; background: #ffffffcf; color: #111; border: 1px solid #0002; border-radius: 16px; top: 25px; }
+.site-page-content #update__filters label { background: #fff; color: #111; border-color: #0003; border-radius: 20px; }
+.site-page-content #update__clear-filters { background: #111; color: #fff; border-radius: 25px; padding: 11px; }
+.site-page-content .update__trek-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 22px; padding: 0; align-content: start; }
+.site-page-content .update__trek-card, .site-page-content .tour-card { border-radius: 16px; overflow: hidden; box-shadow: none; border: 1px solid #0002; background: #fff; }
+.site-page-content .trek-card__image-wrapper { height: 380px; background-size: cover; }
+.site-page-content .trek-card__overlay { background: linear-gradient(transparent 20%,#000e); text-shadow: none; padding: 24px; }
+.site-page-content .trek-card__overlay h2, .site-page-content .trek-card__overlay p { color: white; }
+.site-page-content .filter-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 35px; }
+.site-page-content .member-card, .site-page-content .team-card, .site-page-content .mountain-card, .site-page-content .training-card { border: 1px solid #0002; border-radius: 16px; overflow: hidden; box-shadow: none; background: #fff; }
+.site-page-content .member-profile { padding: 35px; border: 1px solid #0002; border-radius: 18px; background: #fff; color: #111; }
+.site-page-content .member-container { margin-top: 20px; }
+.site-page-content .member-details { max-width: 100%; margin-top: 40px; }
+.site-page-content .profile-image, .site-page-content .team-member img { object-fit: cover; border-radius: 16px; }
+.site-page-content .post-wrapper.wrapper { display: block; float: none; padding: 0; margin: 0; overflow: hidden; border: 1px solid #0002; border-radius: 16px; box-shadow: none !important; background: #fff; }
+.site-page-content .blogpost-meta { padding: 25px; background: #fff; }
+.site-page-content .blogpost-title { margin-top: 0; padding-top: 0; color: #111; }
+.site-page-content .blogpost-excerpt { color: #555; }
+.site-page-content .post-wrapper img { width: 100%; height: 260px; object-fit: cover; }
+.site-page-content .col--post { width: 72%; padding-right: 50px; }
+.site-page-content .col--recent-post { width: 28%; }
+.site-page-content .post { padding-top: 35px; }
+.site-page-content .post-title { display: none; }
+.site-page-content .post-content { padding-top: 20px; }
+.site-page-content .post-content p { max-width: 75ch; }
+.site-page-content .post-content img { max-width: 100%; height: auto; border-radius: 14px; }
+.site-page-content .col--recent-post img { border-radius: 12px; object-fit: cover; }
+.site-page-content .faq-section, .site-page-content .legal-docs-list { background: transparent; color: #111; }
+.site-page-content .faq-toggle, .site-page-content .faq-answer { color: #111; background: #fff; border-color: #0002; }
+.site-page-content .faq-toggle { border-radius: 12px; }
+.site-page-content .faq-toggle::before { color: #111; }
+.site-page-content .legal-docs-list li { border-color: #0002; }
+.site-page-content .legal-docs-list a { color: #111; }
+.site-page-content table { width: 100%; border-collapse: collapse; background: #fff; }
+.site-page-content td, .site-page-content th { padding: 14px; border: 1px solid #0002; text-align: left; }
+.site-page-content a:not([class]):hover { text-decoration: underline; text-underline-offset: 4px; }
+.reference-site .home-footer-grid h2 { color: #111; }
+.reference-site .home-footer p { margin-top: 0; padding-block: 0; }
+.reference-site .home-footer a { color: inherit; }
+.reference-site .home-footer .home-button { color: #fff; }
+.reference-site .home-footer .home-button:hover { color: #111; }
+@media(max-width:1100px) {
+ .site-page-content .update__trek-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+ .site-page-content .two-col-layout { grid-template-columns: minmax(0,1fr) 280px; gap: 30px; }
+}
+@media(max-width:1023px) {
+ .site-content { padding-top: 100px; }
+ .site-intro { padding: 25px 0 35px; gap: 35px; }
+ .site-page-content .two-col-layout { grid-template-columns: 1fr; }
+ .site-page-content .two-col-layout .content__right { max-width: none; }
+ .site-page-content .floater { position: static !important; width: 100% !important; }
+ .site-page-content .inquiry__row { gap: 30px; }
+ .site-page-content .col--post, .site-page-content .col--recent-post { width: 100%; float: none; padding: 0; }
+ .site-page-content .col--recent-post { margin-top: 50px; }
+}
+@media(max-width:700px) {
+ .site-content { width: 90%; }
+ .site-intro { grid-template-columns: 1fr; gap: 20px; }
+ .site-intro-description { justify-self: start; }
+ .site-page-content .update__page-layout { grid-template-columns: 1fr; gap: 25px; }
+ .site-page-content #update__filters { position: static; }
+ .site-page-content .update__trek-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 15px; }
+ .site-page-content .trek-card__image-wrapper { height: 330px; }
+ .site-page-content .trek-card__overlay { padding: 18px; }
+ .site-page-content .inquiry__row { grid-template-columns: 1fr; }
+ .site-page-content .row--padding-medium { padding-block: 35px; }
+ .site-page-content .floater, .site-page-content #booking-details-sidebar { padding: 22px; }
+}
+@media(max-width:480px) {
+ .site-page-content .update__trek-grid { grid-template-columns: 1fr; }
+ .site-page-content .form-grid { grid-template-columns: 1fr; }
+}
+@media(prefers-reduced-motion:reduce) { .reference-site *, .reference-site *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+
+/* Journal and team pages use the same editorial card rhythm as the homepage. */
+.site-page-content .site-journal-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 26px; padding: 0; margin: 0; list-style: none; }
+.site-page-content .site-journal-grid .post-wrapper { width: 100%; max-width: none; }
+.site-page-content .site-journal-image { width: 100%; height: 240px; padding: 0; object-fit: cover; }
+.site-page-content .site-journal-grid .blogpost-meta { padding: 24px; }
+.site-page-content .site-journal-grid .blogpost-title { padding: 0; margin: 0 0 16px; }
+.site-page-content .site-journal-grid .blogpost-title::after { display: none; }
+.site-page-content .team-members { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; }
+.site-page-content .team-members a { width: 100%; display: block; }
+.site-page-content .team-member { width: 100%; height: 420px; border: 1px solid #0002; border-radius: 18px; overflow: hidden; background-size: cover; }
+.site-page-content .team-member:hover { transform: translateY(-4px); }
+.site-page-content .member-content { border-radius: 0; padding: 28px; background: linear-gradient(transparent 35%,#000d); color: #fff; }
+.site-page-content .member-content h2, .site-page-content .member-content h3 { color: #fff; }
+.site-page-content .filter-buttons button.active { color: #111; border-color: #111; background: #fff; }
+.site-page-content .mountain-cards, .site-page-content .training-cards { gap: 24px; }
+.site-page-content .legal-docs-list { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
+.site-page-content .legal-docs-list li { border: 1px solid #0002; border-radius: 16px; overflow: hidden; margin: 0; }
+.site-page-content .legal-docs-list a { border-radius: 16px; }
+@media(max-width:1023px) {
+ .site-page-content .site-journal-grid, .site-page-content .team-members, .site-page-content .legal-docs-list { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:640px) {
+ .site-page-content .site-journal-grid, .site-page-content .team-members, .site-page-content .legal-docs-list { grid-template-columns: 1fr; }
+ .site-page-content .team-member { height: 420px; }
+}
+
+/* One alignment and surface for the top navigation and its active panel. */
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px) and (min-width:1024px) {  }
