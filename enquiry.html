@@ -199,6 +199,7 @@ custom_css: "inquiry.css"
       ...raftingData,
     };
 
+    const requestedMountain = urlParams.get('mountain');
     const currentTour = allTours[tourSlug];
 
     if (currentTour) {
@@ -214,6 +215,12 @@ custom_css: "inquiry.css"
         p.textContent = item;
         highlightsList.appendChild(p);
       });
+    } else if (requestedMountain) {
+      document.getElementById('id_tour_name').value = requestedMountain + ' Expedition';
+      document.getElementById('sidebar-tour-name').textContent = requestedMountain + ' Expedition';
+      document.getElementById('sidebar-tour-price').textContent = 'Contact us for details';
+      document.getElementById('sidebar-tour-image').hidden = true;
+      document.getElementById('id_user_remarks').value = 'I would like to enquire about an expedition to ' + requestedMountain + '.';
     }
   });
 </script>

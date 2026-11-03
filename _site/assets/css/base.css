@@ -1,14 +1,379 @@
-/*=====================BASE========================*/
-html{overflow-x: hidden;}
-html, body{ font-family: Montserrat, 'Montserrat', 'Lato', sans-serif; height: 100%; letter-spacing: 0.05em; font-variant: small-caps;}
-h1{ font-size: 2em; font-family: 'Montserrat',sans-serif; font-weight: 200;}
-p{line-height: 1.8em; font-family: 'Montserrat', sans-serif; font-weight: lighter; font-size: 1.2em;}
-a{ color: inherit; text-decoration: none;}
-a:hover{ text-decoration: none;}
-a:focus{ outline: 0;}
-*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-a,.no-select{ -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
-*::selection {
-    background-color: #fb4a4a;
-    color:#fff;
+/* ========================================================================
+   ATLAS ALPINE EXPEDITION — BASE.CSS
+   Brand: Inter / Pure black & white / topographic linework
+   Note: CSS supplies appearance; mega-menu switching requires HTML + JS.
+   ======================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    color-scheme : light;
+    --aa-black : #000000;
+    --aa-white : #ffffff;
+    --aa-paper : #ffffff;
+    --aa-ink : #000000;
+    --aa-muted : rgba(0, 0, 0, .62);
+    --aa-line : rgba(0, 0, 0, .22);
+    --aa-line-soft : rgba(0, 0, 0, .12);
+    --aa-contour : rgba(0, 0, 0, .12);
+    --aa-font : 'Inter',
+    Arial,
+    sans-serif;
+    --aa-max-width : 1440px;
+    --aa-gutter : clamp(20px, 4vw, 72px);
+    --aa-header-height : 88px;
+    --aa-section-space : clamp(64px, 8vw, 120px);
+    --aa-radius : 2px;
+    --aa-transition : 220ms ease;
 }
+
+/* ---------- Reset & foundation ---------- */ *, *::before, *::after {
+    box-sizing : border-box;
+}
+html {
+    overflow-x : clip;
+    scroll-behavior : smooth;
+    -webkit-text-size-adjust : 100%;
+}
+body,
+html {
+    min-height : 100%;
+}
+body {
+    margin : 0;
+    background : var(--aa-paper);
+    color : var(--aa-ink);
+    font-family : var(--aa-font);
+    font-size : 16px;
+    line-height : 1.65;
+    letter-spacing : 0;
+    -webkit-font-smoothing : antialiased;
+    text-rendering : optimizeLegibility;
+}
+img,
+video,
+svg,
+picture {
+    display : block;
+    max-width : 100%;
+}
+img {
+    height : auto;
+}
+button,
+input,
+select,
+textarea {
+    font : inherit;
+}
+button {
+    cursor : pointer;
+}
+a {
+    color : inherit;
+    text-decoration : none;
+}
+a:hover {
+    text-decoration : none;
+} :focus-visible {
+    outline : 2px solid currentColor;
+    outline-offset : 4px;
+}::selection {
+    background : #000;
+    color : #fff;
+}[hidden]{
+    display: none !important;
+}.no-select {
+    user-select : none;
+}
+
+/* ---------- Typography ---------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top : 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family : var(--aa-font);
+    color : inherit;
+}
+h1 {
+    font-size : clamp(42px, 5.1vw, 76px);
+    line-height : 1.04;
+    font-weight : 800;
+    letter-spacing : -.055em;
+}
+h2 {
+    font-size : clamp(30px, 3.4vw, 48px);
+    line-height : 1.13;
+    font-weight : 700;
+    letter-spacing : -.045em;
+}
+h3 {
+    font-size : clamp(22px, 2vw, 30px);
+    line-height : 1.2;
+    font-weight : 600;
+    letter-spacing : -.035em;
+}
+h4 {
+    font-size : 20px;
+    line-height : 1.3;
+    font-weight : 600;
+    letter-spacing : -.02em;
+}
+h5,
+h6 {
+    font-size : 16px;
+    line-height : 1.4;
+    font-weight : 600;
+}
+p {
+    margin-bottom : 1.25em;
+    font-size : 16px;
+    line-height : 1.7;
+    font-weight : 400;
+    letter-spacing : -.012em;
+}
+small,
+    .small {
+        font-size : 13px;
+    }
+    .display,.aa-display {
+    font-size : clamp(68px, 9vw, 120px);
+    line-height : .98;
+    font-weight : 900;
+    letter-spacing : -.075em;
+    text-transform : uppercase;
+}.lead,.aa-lead {
+    font-size : clamp(17px, 1.45vw, 21px);
+    line-height : 1.6;
+    font-weight : 400;
+}.eyebrow,.aa-label,.section-label {
+    font-size : 11px;
+    line-height : 1.35;
+    font-weight : 600;
+    text-transform : uppercase;
+    letter-spacing : .16em;
+}.highlight,.hover:hover {
+    color : #000;
+}
+    .holo {
+        font-size : 1em;
+        font-weight : 900;
+    }
+    .pull-quote,
+blockquote {
+    margin : 0;
+    font-size : clamp(24px, 2.8vw, 40px);
+    line-height : 1.3;
+    font-weight : 700;
+    letter-spacing : -.035em;
+}
+
+/* ---------- Layout utilities ---------- */
+    .container,.aa-container {
+    width : min(calc(100% - 2 * var(--aa-gutter)), var(--aa-max-width));
+    margin-inline : auto;
+}.section,.aa-section {
+    padding-block : var(--aa-section-space);
+}.visually-hidden {
+    position : absolute;
+    width : 1px;
+    height : 1px;
+    padding : 0;
+    margin : -1px;
+    overflow : hidden;
+    clip : rect(0, 0, 0, 0);
+    white-space : nowrap;
+    border : 0;
+}.aa-divider {
+    border : 0;
+    border-top : 1px solid var(--aa-line);
+    margin : 0;
+}
+
+/* ---------- Buttons & links ---------- */
+    .btn,.aa-btn {
+    display : inline-flex;
+    align-items : center;
+    justify-content : center;
+    gap : 18px;
+    min-height : 48px;
+    padding : 13px 22px;
+    border : 1px solid #000;
+    border-radius : var(--aa-radius);
+    background : #000;
+    color : #fff;
+    font-size : 12px;
+    line-height : 1.2;
+    font-weight : 700;
+    letter-spacing : .06em;
+    text-transform : uppercase;
+    transition : background var(--aa-transition),
+        color var(--aa-transition),
+            border-color var(--aa-transition);
+        }.btn:hover,.aa-btn:hover {
+            background : #fff;
+            color : #000;
+        }.btn-- outline,.aa-btn-- outline {
+            background : transparent;
+            color : #000;
+        }.btn-- outline:hover,.aa-btn-- outline:hover {
+            background : #000;
+            color : #fff;
+        }.aa-link {
+            display : inline-flex;
+            align-items : center;
+            gap : 16px;
+            border-bottom : 1px solid currentColor;
+            padding-bottom : 5px;
+            font-size : 12px;
+            font-weight : 700;
+            text-transform : uppercase;
+            letter-spacing : .1em;
+        }
+
+        /* ---------- Contour texture ----------
+   Seamless visual backdrop for the entire header and mega-menu.
+   Uses ONLY black strokes on white, with opacity through SVG strokes.
+   Override --aa-topo-pattern with your custom topo SVG if you have one.
+*/
+
+        /* Navigation typography: component styles supply layout and colors only. */
+            
+        @media(max-width : 1200px) {
+        }
+        @media(max-width : 1023px) {
+        }
+
+/* Homepage typography: the component stylesheet contains layout only. */
+.home-page { font-family: var(--aa-font); }
+
+
+
+.home-main h1 { font-size: clamp(48px,6.25vw,92px); font-weight: 800; line-height: .96; letter-spacing: -.065em; }
+.home-main h2 { font-size: clamp(28px,3vw,44px); font-weight: 700; line-height: 1.05; letter-spacing: -.045em; }
+.home-main h3 { font-size: 23px; font-weight: 650; line-height: 1.08; letter-spacing: -.035em; }
+.home-main p { font-size: 16px; line-height: 1.45; font-weight: 400; letter-spacing: -.015em; }
+.home-main .home-hero-description { font-size: clamp(17px,1.5vw,21px); line-height: 1.3; }
+.home-main .home-label, .home-footer .home-label { font-size: 10px; font-weight: 600; letter-spacing: .12em; line-height: 1.4; }
+.home-main .home-section-heading .home-label { font-size: 13px; letter-spacing: .1em; }
+.home-button, .home-text-link { font-size: 13px; font-weight: 600; letter-spacing: -.015em; line-height: 1.3; }
+.home-symbol { font-size: 36px; line-height: 1; }
+.home-facts strong { font-size: 17px; font-weight: 700; letter-spacing: -.035em; }
+.home-facts p span { font-size: 12px; line-height: 1.4; }
+.home-slider-controls button { font-size: 23px; }
+.home-main .home-package-copy p { font-size: 14px; line-height: 1.35; }
+.home-package-tag { font-size: 10px; letter-spacing: .04em; font-weight: 600; }
+.home-package-meta { font-size: 10px; font-weight: 500; line-height: 1.3; }
+.home-main .home-team-values p { font-size: 13px; line-height: 1.35; }
+.home-team-values strong { font-size: 14px; font-weight: 700; }
+.home-team-values > div > span { font-size: 27px; line-height: 1; }
+.home-quote blockquote { font-size: clamp(25px,2.5vw,36px); line-height: 1.12; font-weight: 650; letter-spacing: -.025em; }
+.home-main .home-journal-card h3 { font-size: 17px; line-height: 1.15; }
+.home-journal-card time { font-size: 11px; }
+.home-footer { font-size: 12px; line-height: 1.5; }
+.home-footer p { font-size: 12px; line-height: 1.5; }
+.home-footer h2 { font-size: 13px; font-weight: 700; letter-spacing: -.02em; }
+.home-footer .home-wordmark { font-size: 28px; font-weight: 800; line-height: 1; letter-spacing: .12em; }
+.home-wordmark span { font-size: 12px; letter-spacing: .55em; line-height: 1.8; }
+.home-footer .home-footer-plan h2 { font-size: 30px; line-height: .95; font-weight: 750; letter-spacing: -.045em; }
+.home-footer-bottom { font-size: 10px; }
+@media(max-width:640px) {
+ .home-main h1 { font-size: clamp(44px,10.5vw,64px); }
+ .home-main h2 { font-size: 32px; }
+ .home-facts strong { font-size: 14px; } .home-facts p span { font-size: 10px; }
+ .home-symbol { font-size: 27px; }
+ 
+ 
+}
+
+/* Shared reference typography for interior pages. */
+.reference-site { font-family: var(--aa-font); font-variant: normal; }
+.site-content { font-size: 16px; line-height: 1.65; letter-spacing: -.012em; }
+.site-intro h1 { font-size: clamp(40px,5vw,76px); line-height: 1.02; font-weight: 800; letter-spacing: -.055em; }
+.site-content .site-eyebrow { font-size: 10px; font-weight: 600; line-height: 1.4; letter-spacing: .14em; }
+.site-content .site-intro-description { font-size: clamp(16px,1.45vw,20px); line-height: 1.45; letter-spacing: -.02em; }
+.site-content h2, .site-content .content__title, .site-content .content__sub-title { font-size: clamp(26px,2.8vw,40px); line-height: 1.12; font-weight: 700; letter-spacing: -.04em; }
+.site-content h3 { font-size: clamp(20px,2vw,27px); line-height: 1.2; font-weight: 650; letter-spacing: -.03em; }
+.site-content h4, .site-content h5, .site-content h6 { font-size: 17px; line-height: 1.35; font-weight: 600; letter-spacing: -.02em; }
+.site-content p, .site-content li, .site-content .content--detail { font-size: 16px; line-height: 1.7; letter-spacing: -.01em; }
+.site-content .trek-card__overlay h2, .site-content .tour-card h2, .site-content .member-name { font-size: 25px; line-height: 1.12; letter-spacing: -.035em; }
+.site-content .trek-card__overlay p, .site-content .post-meta, .site-content .price-row { font-size: 13px; line-height: 1.45; }
+.site-content .book_btn, .site-content .trippy_btn, .site-content button, .site-content input, .site-content select, .site-content textarea { font-family: var(--aa-font); font-size: 14px; line-height: 1.45; letter-spacing: 0; }
+.site-content .priceTag { font-size: 30px; font-weight: 700; letter-spacing: -.035em; }
+.site-content .blogpost-title { font-size: 24px; line-height: 1.2; letter-spacing: -.035em; }
+.site-content #update__filters h2, .site-content #update__filters h4 { font-size: 14px; font-weight: 650; letter-spacing: .03em; }
+@media(max-width:640px) {
+ .site-intro h1 { font-size: clamp(34px,9vw,48px); }
+ .site-content h2, .site-content .content__title, .site-content .content__sub-title { font-size: 28px; }
+ .site-content .trek-card__overlay h2 { font-size: 25px; }
+}
+
+/* Navigation typography: reuse the single Inter import at the top of this file. */
+:root {
+ --nav-font-family: var(--aa-font);
+ --nav-link-size: 14px;
+ --nav-label-size: 11px;
+ --nav-card-title-size: 19px;
+ --nav-weight-regular: 400;
+ --nav-weight-medium: 500;
+ --nav-weight-semibold: 600;
+ --nav-line-height: 1.45;
+}
+.reference-site .atlas-header { font-family: var(--nav-font-family); font-size: var(--nav-link-size); font-weight: var(--nav-weight-regular); line-height: var(--nav-line-height); letter-spacing: 0; }
+.reference-site .atlas-header :where(a,button,p,span) { font: inherit; letter-spacing: inherit; }
+.reference-site .atlas-header .atlas-wordmark { font-size: 19px; font-weight: 800; line-height: 1.05; letter-spacing: .08em; }
+.reference-site .atlas-header .atlas-wordmark span { font-size: 9px; font-weight: 500; letter-spacing: .43em; line-height: 1.8; }
+.reference-site .atlas-header .atlas-navigation > :is(a,button) { font-size: var(--nav-link-size); font-weight: var(--nav-weight-medium); line-height: var(--nav-line-height); text-transform: none; }
+.reference-site .atlas-header .atlas-eyebrow { font-size: var(--nav-label-size); font-weight: var(--nav-weight-semibold); line-height: 1.4; letter-spacing: .1em; text-transform: uppercase; }
+.reference-site .atlas-header .atlas-card h3 { font-family: var(--nav-font-family); font-size: var(--nav-card-title-size); font-weight: var(--nav-weight-medium); line-height: 1.2; letter-spacing: -.02em; }
+.reference-site .atlas-header .atlas-card-detail { font-size: 12px; line-height: 1.4; }
+.reference-site .atlas-header .atlas-all { font-weight: var(--nav-weight-medium); }
+@media(max-width:640px) { .reference-site .atlas-header .atlas-wordmark { font-size: 17px; } }
+
+/* Mobile navigation list typography. */
+@media(max-width:1023px) {
+ .reference-site .atlas-header .atlas-navigation > .atlas-menu-toggle,
+ .reference-site .atlas-header .atlas-mobile-back { font-size: 18px; line-height: 1.35; font-weight: var(--nav-weight-medium); letter-spacing: .025em; text-transform: uppercase; }
+ .reference-site .atlas-header .atlas-mobile-row,
+ .reference-site .atlas-header .atlas-mobile-rows > a { font-size: 16px; line-height: 1.45; letter-spacing: .02em; text-transform: uppercase; }
+ .reference-site .atlas-header .atlas-mobile-all { font-size: 15px; line-height: 1.4; text-transform: uppercase; }
+ .reference-site .atlas-header .atlas-whatsapp { font-size: 15px; }
+}
+
+/* Expedition directory typography. */
+.page-expeditions .site-intro h1 { font-size: clamp(44px,5.5vw,82px); font-weight: 800; line-height: 1.02; letter-spacing: -.055em; }
+.page-expeditions .site-intro-description { font-size: clamp(16px,1.5vw,21px); line-height: 1.5; }
+.site-content .expeditions-listing h2 { font-size: 25px; font-weight: 700; line-height: 1.2; letter-spacing: -.035em; }
+.site-content .expedition-filters h2 { font-size: 22px; }
+.site-content .expedition-filters legend { font-size: 17px; font-weight: 700; line-height: 1.3; letter-spacing: -.025em; }
+.site-content .expedition-filters label { font-size: 14px; line-height: 1.5; }
+.site-content .expedition-filters button { font-family: var(--aa-font); font-size: 15px; line-height: 1.4; }
+.site-content .expedition-apply { font-weight: 650; }
+.site-content .expedition-card h3 { font-size: clamp(22px,1.8vw,29px); font-weight: 700; line-height: 1.1; letter-spacing: -.035em; }
+.site-content .expedition-card .expedition-altitude { font-size: 16px; line-height: 1.35; }
+.site-content .expedition-card .expedition-card-meta { font-size: 14px; line-height: 1.4; }
+
+/* Portrait directory cards share the base type system. */
+.reference-site .expedition-card .directory-card-title { font-size: clamp(19px,1.5vw,24px); line-height: 1.02; font-weight: 650; letter-spacing: -.035em; }
+.reference-site .expedition-card .directory-card-description { font-size: 12px; line-height: 1.4; font-weight: 400; letter-spacing: -.01em; }
+.reference-site .expedition-card .directory-card-topline { font-size: 8px; line-height: 1.4; font-weight: 500; letter-spacing: .08em; }
+.reference-site .expedition-card .directory-card-facts li { font-size: 12px; line-height: 1.4; font-weight: 400; }
+.reference-site .expedition-card .directory-card-action { font-size: 13px; line-height: 1.3; font-weight: 550; }
+@media(max-width:600px) { .reference-site .expedition-card .directory-card-title { font-size: 28px; } }
+
+/* Image-led package card labels and tags, shared with homepage packages. */
+.reference-site .expedition-card .directory-card-topline { font-size: 9px; line-height: 1.4; font-weight: 500; letter-spacing: .05em; }
+.reference-site .expedition-card .directory-card-tags { font-size: 10px; line-height: 1.25; font-weight: 400; letter-spacing: 0; }
+.reference-site .expedition-card .directory-card-facts li { font-size: 10px; line-height: 1.4; font-weight: 400; }
+.reference-site .expedition-card .directory-card-action { font-size: 13px; font-weight: 650; line-height: 1.3; }

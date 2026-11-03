@@ -1,0 +1,32 @@
+- id: 8000
+  label: 8000m Mountains
+  enquiry: true
+  mountains:
+    - name: Everest
+    - name: Lhotse
+    - name: Makalu
+    - name: Manaslu
+    - name: Cho Oyu
+    - name: Dhaulagiri
+    - name: Annapurna
+    - name: Kanchenjunga
+- id: 7000
+  label: 7000m Mountains
+  enquiry: true
+  mountains:
+    - name: Himlung Himal
+    - name: Baruntse
+    - name: Pumori
+- id: 6000
+  label: 6000m Mountains
+  mountains:
+    - name: Ama Dablam
+      path: /activities/peak-climbing/ama-dablam/
+    - name: Mera Peak
+      path: /activities/peak-climbing/mera-peak/
+    - name: Lobuche Peak
+      path: /activities/peak-climbing/lobuche-peak/
+    - name: Island Peak
+      path: /activities/peak-climbing/island-peak/
+    - name: Pisang Peak
+      path: /activities/peak-climbing/pisang-peak/

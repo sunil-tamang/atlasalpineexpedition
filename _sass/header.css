@@ -25,10 +25,10 @@
 }
 
 .header__logo {
-  font-size: 1.3em;
+  
   margin: 0.5em auto;
-  font-family: "ANTON", sans-serif;
-  letter-spacing: 0.2em;
+  
+  
 }
 
 .header__nav {
@@ -50,13 +50,13 @@
 }
 
 .nav__li {
-  font-size: 1em;
+  
 }
 
 .nav__li a {
-  font-size: 0.84em;
-  font-weight: bold;
-  letter-spacing: 0.18em;
+  
+  
+  
   padding: 1.2em;
   background: transparent;
   padding-left: 0;
@@ -70,7 +70,7 @@
   border-bottom: 5px solid #cacaca;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  font-size: 0;
+  
   transform: rotate(180deg) translateY(-4px);
 }
 
@@ -132,7 +132,7 @@ li.nav__dropdown--item a {
   transition: all 0.3s ease;
   /*	color: #444;*/
   color: #000000;
-  font-weight: bold;
+  
 }
 
 li.nav__dropdown--item a:hover {

@@ -1,16 +1,17 @@
 ---
 ---
+
 /* External CSS */
-@import "ladda/ladda";
-@import "slick/slick";
-@import "slick/slicktheme";
+@use "ladda/ladda";
+@use "slick/slick";
+@use "slick/slicktheme";
 
 /* Internal CSS */
-@import "reset";
-@import "base";
-@import "layout";
-@import "header";
-@import "blogpost";
-@import "style";
-@import "form";
-@import "trek";
+@use "reset";
+@use "../../assets/css/base.css";
+@use "../../_sass/layout.scss";
+@use "../../_sass/header.scss";
+@use "../../_sass/blogpost.scss";
+@use "../../_sass/style.scss";
+@use "../../_sass/form.scss";
+@use "../../_sass/trek.scss";

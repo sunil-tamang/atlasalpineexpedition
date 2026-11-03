@@ -23,13 +23,13 @@
 }
 
 .product__detail{
-	font-family: Montserrat, sans-serif; 
-	line-height: 1.5em; 
-	font-size: 1em; 
+	 
+	 
+	 
 	background: none; 
 	color: #fff; 
 	padding:0 0 1.4em 0; 
-	font-weight: 800; 
+	 
 	text-transform: uppercase; 
 	border-bottom: 1px solid #444;
 }
@@ -70,8 +70,8 @@
 	display: inline-block;
     width: 40px;
     height: 60px;
-    font-size: 1.1em;
-    font-weight: 600;
+    
+    
     padding-left: 5px;
     margin: 0 5px;
     border: 0;
@@ -95,7 +95,7 @@
 	background:#333;
 	color:#cacaca;
 	border:0;
-	font-size:20px;
+	
 	width: 1.9em;
 	height:1.5em;
 	cursor: pointer;
@@ -121,9 +121,9 @@
 	border-radius: 360px;
 	width: 32px;
 	height: 32px;
-	font-weight: bolder;
+	
 	text-align: center;
-	font-size: 1.25em;
+	
 }
 
 .productRemove{
@@ -138,15 +138,15 @@
 	float: right;
 }
 .cart__total .cart__total-name{
-	font-weight: 800;
-    font-size: 1.5em;
+	
+    
     display: inline-block;
     width: auto;
     float: left;
     text-align: right;
 }
-.cart__total .cart__total-amount{font-weight: 800;
-    font-size: 1.5em;
+.cart__total .cart__total-amount{
+    
     display: inline-block;
     width: 180px;
     float: right;
@@ -250,13 +250,13 @@
     bottom: 1em;
     padding: 0.8em 1.4em;
     background: rgba(42, 151, 34, 0.8);
-	font-weight: bolder;
+	
 	border-radius: 2px;
 	max-width:320px;
 	overflow: hidden;
-	font-size: 1em;
-	line-height: 1.3em;
-	font-variant: normal;
+	
+	
+	
 	z-index: 0;
 	transition: all 0.3s ease;
 	display: block;
@@ -287,7 +287,7 @@
 		width: 25%;
 	}
 	.wopper__info-cart{
-		font-size: 1.8em;
+		
 	}
 	.product__detail-wrapper{
 		text-align: left; width:75%; padding-left:2em;display: inline-block;
@@ -320,11 +320,11 @@
 		margin-top: 1em;
 		position: relative;
 		text-align: center;
-		font-size: 1em;
+		
 	}
 	.productRemove{
 		transform: translate(-23px, -25px);
-		font-size: 1.5em;
+		
 	}
 	.cart__checkout{
 		text-align: right;

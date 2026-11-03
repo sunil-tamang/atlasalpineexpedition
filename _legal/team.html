@@ -27,7 +27,7 @@ keywords: "trekking guides Nepal, expedition leaders, adventure team, experience
             </p>
         </div>
         <span class="banner__skip">
-            <a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); font-size: 1em;"></i></a>
+            <a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); "></i></a>
         </span>
     </div>
 
@@ -69,7 +69,7 @@ keywords: "trekking guides Nepal, expedition leaders, adventure team, experience
                 <h1 class="content__title content__title-white no-underline">Our Team?</h1> <br />
                 
             
-                <p class="content__pg-black" style="">&quot;A Himalayan Based Trekking Company that deals with the adventurous
+                <p class="content__pg-black" >&quot;A Himalayan Based Trekking Company that deals with the adventurous
                   activities like trekking, camping ,white water rafting ,paragliding . Being born in the Himalayas we have the better experience and knowledge of mountains terrain than any other travel company .
                 
             </p>
@@ -95,7 +95,7 @@ keywords: "trekking guides Nepal, expedition leaders, adventure team, experience
           <div class="team-members">
             {% for member in site.data.team %}
             <!-- <a href="{{ site.baseurl }}{{ member.link }}" data-role="{{ member.role }}"> -->
-            <a class="team-members_link" href="{{ site.baseurl }}{{ member.slug }}" data-role="{{ member.role }}">
+            <a class="team-members_link" href="{{ '/team/' | append: member.slug | append: '/' | relative_url }}" data-role="{{ member.role }}">
                 <div class="team-member" data-role="{{ member.role }}" style="background-image: url('{{ site.baseurl }}/{{ member.photos }}');">
                 <div class="member-content">
                     <h3>{{ member.name }}</h3>
