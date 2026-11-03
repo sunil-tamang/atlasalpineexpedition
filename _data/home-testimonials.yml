@@ -1,0 +1,22 @@
+# Layout samples, not verified customer endorsements.
+# Replace names/text/trips with approved guest feedback and set sample: false.
+- name: Sample guest 01
+  trip: Everest Base Camp
+  sample: true
+  text: From the first briefing to the last day on the trail, we felt looked after. The small details made all the difference.
+- name: Sample guest 02
+  trip: Lobuche East
+  sample: true
+  text: Our guide knew when to encourage us and when to slow things down. That patience meant everything.
+- name: Sample guest 03
+  trip: Annapurna Circuit
+  sample: true
+  text: The mountains were extraordinary. Sharing the journey with such a thoughtful team made it unforgettable.
+- name: Sample guest 04
+  trip: Mera Peak
+  sample: true
+  text: A journey made memorable by the people beside us, the quiet mornings, and the steady support along the way.
+- name: Sample guest 05
+  trip: Langtang Valley
+  sample: true
+  text: We came for the mountain views and left with a deeper connection to the places and people we met on the trail.

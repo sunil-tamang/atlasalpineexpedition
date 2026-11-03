@@ -1,0 +1,13 @@
+# Existing logo assets used on the Atlas Alpine website.
+- name: GetYourGuide
+  image: /assets/css/images/getyourguide.png
+- name: Tourist Israel
+  image: /assets/css/images/israel.jpg
+- name: Leave No Trace
+  image: /assets/css/images/lnt.svg
+- name: Adventure Travel Trade Association
+  image: /assets/css/images/ATTA.svg
+- name: RECCO
+  image: /assets/css/images/recco.png
+- name: Civitatis
+  image: /assets/css/images/civitatis.png

@@ -1,7 +1,6 @@
 ---
 layout: default
 homepage: true
-custom_css: expeditions.css
 title: "Atlas Alpine Expedition | Guided Expeditions in the Himalaya"
 description: "A Nepal-based expedition company leading thoughtful climbs, treks, and wilderness journeys across the Himalaya. Meet our team and explore our climbing expeditions."
 keywords: "Himalayan expeditions, Nepal climbing, guided expeditions, Ama Dablam expedition, Atlas Alpine Expedition"
@@ -24,31 +23,71 @@ keywords: "Himalayan expeditions, Nepal climbing, guided expeditions, Ama Dablam
     </div>
   </section>
 
-  <section class="home-about home-wrap home-section" aria-labelledby="home-about-title">
-    <div><p class="home-label">ABOUT ATLAS ALPINE</p><h2 id="home-about-title">A Nepal-based<br>expedition company<br>for the world’s<br>highest mountains.</h2><p>Atlas Alpine Expedition brings together local mountain knowledge and a deep respect for the Himalaya. We lead climbs, treks, and alpine journeys shaped by the mountains, the people, and the places that make Nepal extraordinary.</p><a class="home-text-link" href="{% link about.html %}">Our Story</a></div>
-    <img src="{{ '/assets/css/images/peak-climbing/ama-dablam/banner.jpg' | relative_url }}" alt="The snow-covered slopes of Ama Dablam" loading="lazy" width="1000" height="700">
-  </section>
-
-  <section class="home-expeditions home-wrap home-section" id="expeditions" aria-labelledby="expedition-heading">
-    <div class="home-section-heading"><h2 class="home-label" id="expedition-heading">OUR EXPEDITION PACKAGES</h2><div class="home-slider-controls" aria-label="Expedition carousel controls"><button type="button" data-slide="-1" aria-label="Previous expeditions" aria-controls="home-expedition-track">←</button><button type="button" data-slide="1" aria-label="Next expeditions" aria-controls="home-expedition-track">→</button></div></div>
-    <div class="home-expedition-track" id="home-expedition-track" tabindex="0" aria-label="Climbing expedition packages">
-      {% assign expedition_keys = 'ama-dablam,mera-peak,lobuche-peak,island-peak' | split: ',' %}
-      {% for key in expedition_keys %}
-        {% assign expedition = site.data.peak-data[key] %}
-        {% assign expedition_page = site.peaks | where: 'title-slug', key | first %}
-        <a class="home-expedition-card expedition-card" href="{{ expedition_page.url | relative_url }}">
-          {% include directory-card.html trip=expedition kind="Expeditions" index=forloop.index total=expedition_keys.size fallback="/assets/css/images/bg/peakbg.jpg" %}
-        </a>
-      {% endfor %}
+  <section class="home-ground home-wrap" aria-labelledby="home-ground-title">
+    <div class="home-ground-heading">
+      <div class="home-ground-index"><p>ATLAS / 001</p><svg viewBox="0 0 100 90" aria-hidden="true"><path d="M12 41C17 26 20 8 39 9c14 0 21 10 34 15 19 9 17 24 5 34-10 8-26 7-36 17C23 93 5 66 12 41Z"/><path d="M23 42c6-12 7-25 20-23 11 2 13 9 25 13 14 5 12 16 3 21-12 6-22 5-30 15-12 12-25-10-18-26Z"/><path d="M34 43c5-8 7-15 14-12 7 4 7 8 15 10 7 3 5 10-3 11-10 0-13 10-18 9-7-1-13-9-8-18Z"/></svg></div>
+      <h2 id="home-ground-title">Closer to the mountains.<br>Closer to the people.</h2>
+      <div class="home-ground-summary"><p>We live here. We guide here. Discover the Himalaya with the people who call it home.</p><a href="{% link about.html %}">The Atlas story</a></div>
+    </div>
+    <figure class="home-ground-photo">
+      <img src="{{ '/assets/css/images/treks/three-passes/1.jpg' | relative_url }}" alt="Mountain scenery from the Three Passes trek in Nepal" loading="lazy" width="2000" height="1200">
+      <figcaption class="home-ground-photo-label">NEPAL / OUR HOME GROUND</figcaption>
+      <div class="home-ground-photo-note"><span>LOCAL ROOTS.<br>WIDER HORIZONS.</span><svg viewBox="0 0 70 70" aria-hidden="true"><circle cx="35" cy="35" r="25"/><path d="M35 5v9m0 42v9M5 35h9m42 0h9"/><path class="home-ground-compass" d="m35 19-4 16h8Z"/></svg></div>
+    </figure>
+    <div class="home-ground-route">
+      <svg class="home-ground-route-line" viewBox="0 0 1200 140" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90 100 70C160 70 230 95 300 90S420 70 500 60c95-14 145 8 130 15-55 18-3 38 70 25s125-16 200-45 135-5 200-10l100-25"/><path class="home-ground-route-secondary" d="M0 120c100-25 190 10 300-1s150-15 220 4 130-30 210-4 147-20 240-27 160-31 230-40"/></svg>
+      <ol class="home-ground-milestones">
+        <li><div><strong>Nepal</strong><span>Our home ground</span></div><span class="home-ground-marker" aria-hidden="true">01</span></li>
+        <li><div><strong>Local team</strong><span>Mountain knowledge</span></div><span class="home-ground-marker" aria-hidden="true">02</span></li>
+        <li><div><strong>Climbing</strong><span>Guided expeditions</span></div><span class="home-ground-marker" aria-hidden="true">03</span></li>
+        <li><div><strong>Trekking</strong><span>Himalayan trails</span></div><span class="home-ground-marker" aria-hidden="true">04</span></li>
+        <li><div><strong>Personal</strong><span>Journey planning</span></div><span class="home-ground-marker" aria-hidden="true">05</span></li>
+        <li><div><strong>Respect</strong><span>People and places</span></div><span class="home-ground-marker" aria-hidden="true">06</span></li>
+      </ol>
     </div>
   </section>
 
-  {% assign home_guide = site.data.team | where: 'slug', 'sunil-ghalan' | first %}
-  <section class="home-team home-wrap home-section" aria-labelledby="home-team-title">
-    <img class="home-team-image" src="{{ home_guide.photos | relative_url }}" alt="{{ home_guide.name | escape }}, climbing guide at Atlas Alpine" loading="lazy" width="600" height="700">
-    <div class="home-team-copy"><p class="home-label">THE PEOPLE BEHIND ATLAS ALPINE</p><h2 id="home-team-title">Led by climbers,<br>guides and storytellers.</h2><p>Meet the people who bring each journey to life. Our Nepal-based team combines experience on Himalayan peaks with a personal connection to the landscapes we call home.</p><a class="home-text-link" href="{% link _legal/team.html %}">Meet the Team <span aria-hidden="true">→</span></a></div>
-    <div class="home-team-values"><div><span aria-hidden="true">△</span><p><strong>Mountain knowledge</strong><span>Local guides with experience on Himalayan peaks.</span></p></div><div><span aria-hidden="true">◎</span><p><strong>A personal approach</strong><span>Thoughtfully planned journeys, from your first enquiry onward.</span></p></div><div><span aria-hidden="true">◇</span><p><strong>Expedition planning</strong><span>Support with the details that bring your mountain journey together.</span></p></div></div>
+
+
+  <section class="home-journeys home-wrap home-section" id="expeditions" aria-labelledby="journey-heading">
+    <div class="home-journeys-heading"><p class="home-journeys-label">FIND YOUR<br>NEXT ASCENT</p><h2 id="journey-heading">Different paths.<br>One Himalaya.</h2><div><p>From Himalayan trails to the world’s highest summits. Find the journey that moves you.</p><a href="{% link _activities/peak-climbing.html %}">Explore all journeys</a></div></div>
+    <div class="home-journeys-track" id="home-journeys-track" tabindex="0" aria-label="Himalayan journey categories">
+      <a class="home-journey-card" href="{% link _activities/peak-climbing.html %}?altitude=8000"><img src="{{ '/assets/css/images/treks/everest_base_min.jpg' | relative_url }}" alt="" loading="lazy" width="700" height="1000"><span class="home-journey-number">01 / 04</span><div class="home-journey-copy"><p class="home-journeys-label">HIGH ALTITUDE</p><h3>8000m Expeditions</h3><p>Beyond the ordinary. Above the clouds.</p><span class="home-journey-action">View expeditions</span></div></a>
+      <a class="home-journey-card" href="{% link _activities/peak-climbing.html %}?altitude=7000"><img src="{{ '/assets/css/images/bg/peakbg.jpg' | relative_url }}" alt="" loading="lazy" width="700" height="1000"><span class="home-journey-number">02 / 04</span><div class="home-journey-copy"><p class="home-journeys-label">HIMALAYAN EXPEDITIONS</p><h3>7000m Peaks</h3><p>A greater challenge. A higher perspective.</p><span class="home-journey-action">View 7000m peaks</span></div></a>
+      <a class="home-journey-card" href="{% link _activities/peak-climbing.html %}?altitude=6000"><img src="{{ '/assets/css/images/peak-climbing/ama-dablam/banner.jpg' | relative_url }}" alt="" loading="lazy" width="700" height="1000"><span class="home-journey-number">03 / 04</span><div class="home-journey-copy"><p class="home-journeys-label">HIMALAYAN CLIMBING</p><h3>6000m Peaks</h3><p>Build experience. Reach higher.</p><span class="home-journey-action">View 6000m peaks</span></div></a>
+      <a class="home-journey-card" href="{% link _activities/trekking.html %}"><img src="{{ '/assets/css/images/treks/three_passes_min.jpg' | relative_url }}" alt="" loading="lazy" width="700" height="1000"><span class="home-journey-number">04 / 04</span><div class="home-journey-copy"><p class="home-journeys-label">ON FOOT</p><h3>Trekking in Nepal</h3><p>Closer to the land. Further from everyday.</p><span class="home-journey-action">Explore treks</span></div></a>
+    </div>
+    <div class="home-journeys-controls"><div class="home-journeys-dots" aria-label="Select a journey">{% assign journey_labels = '8000m expeditions,7000m peaks,6000m peaks,Trekking in Nepal' | split: ',' %}{% for label in journey_labels %}<button type="button" data-journey-index="{{ forloop.index0 }}" aria-label="Select {{ label }}" aria-controls="home-journeys-track"{% if forloop.first %} aria-current="true"{% endif %}></button>{% endfor %}</div><div class="home-journeys-arrows"><button type="button" data-journey-step="-1" aria-label="Previous journey" aria-controls="home-journeys-track"><span aria-hidden="true">‹</span></button><button type="button" data-journey-step="1" aria-label="Next journey" aria-controls="home-journeys-track"><span aria-hidden="true">›</span></button></div></div>
   </section>
+
+
+
+
+   {% assign lead_guide = site.data.team | where: 'slug', 'sunil-ghalan' | first %}
+  {% assign second_guide = site.data.team | where: 'slug', 'sonam-lama' | first %}
+  <section class="home-guides home-wrap home-section" aria-labelledby="home-guides-title">
+    <div class="home-guide-portraits">
+      <a class="home-guide-small home-guide-left" href="{{ '/team/' | append: second_guide.slug | append: '/' | relative_url }}"><img src="{{ second_guide.photos | relative_url }}" alt="{{ second_guide.name | escape }}, {{ second_guide.role | escape }}" loading="lazy" width="450" height="600"><span>{{ second_guide.name }}</span></a>
+      <a class="home-guide-feature" href="{{ '/team/' | append: lead_guide.slug | append: '/' | relative_url }}"><img src="{{ lead_guide.photos | relative_url }}" alt="{{ lead_guide.name | escape }}" loading="lazy" width="600" height="800"><span><strong>{{ lead_guide.name }}</strong><span>{{ lead_guide.role }}</span></span></a>
+    </div>
+    <div class="home-guides-copy"><p class="home-label">OUR PEOPLE, YOUR TEAM</p><h2 id="home-guides-title">Good hands.<br>Higher ground.</h2><p>From the first steps to the final descent, meet the people who make the journey.</p><div class="home-guides-values"><span>Local knowledge</span><span>Personal guidance</span></div><a class="home-guides-link" href="{% link _legal/team.html %}">Meet our guides</a></div>
+  </section>
+
+
+
+  
+  <section class="home-reviews home-wrap home-section" aria-labelledby="home-reviews-title" aria-roledescription="carousel">
+    <header class="home-reviews-heading"><div><p class="home-label">THE ATLAS EXPERIENCE</p><h2 id="home-reviews-title">Good company.<br>Lasting memories.</h2></div><p>Words from the trail.</p></header>
+    <div class="home-reviews-track" id="home-reviews-track">
+     {% for review in site.data.home-testimonials %}<figure class="home-review" data-review-index="{{ forloop.index0 }}"{% if forloop.index > 3 %} hidden{% endif %}>
+      <span class="home-review-mark" aria-hidden="true">“</span><blockquote>{{ review.text }}</blockquote><figcaption><span class="home-review-avatar" aria-hidden="true">{{ review.name | slice: 0 | upcase }}</span><span><strong>{{ review.name }}</strong><span>{{ review.trip }}</span>{% if review.sample %}<small>Sample review</small>{% endif %}</span></figcaption>
+     </figure>{% endfor %}
+    </div>
+    <div class="home-reviews-bottom"><p class="home-review-notice">{% assign sample_reviews = site.data.home-testimonials | where: 'sample', true %}{% if sample_reviews.size > 0 %}Illustrative reviews — replace with verified guest feedback.{% endif %}</p><div class="home-reviews-controls"><button type="button" data-review-step="-1" aria-label="Previous reviews" aria-controls="home-reviews-track">←</button><button type="button" class="home-reviews-pause" aria-pressed="false" aria-controls="home-reviews-track">Pause slideshow</button><button type="button" data-review-step="1" aria-label="Next reviews" aria-controls="home-reviews-track">→</button></div></div>
+    <div class="home-reviews-dots" aria-label="Select a review">{% for review in site.data.home-testimonials %}<button type="button" data-review-select="{{ forloop.index0 }}" aria-label="Show review {{ forloop.index }}"{% if forloop.first %} aria-current="true"{% endif %} aria-controls="home-reviews-track"></button>{% endfor %}</div>
+  </section>
+
+
 
   <section class="home-quote home-wrap" aria-label="Our mountain philosophy">
     <img src="{{ '/assets/css/images/peak-climbing/ama-dablam/banner.jpg' | relative_url }}" alt="" loading="lazy" width="1400" height="600">
@@ -57,11 +96,23 @@ keywords: "Himalayan expeditions, Nepal climbing, guided expeditions, Ama Dablam
 
 
 
-  <section class="home-journal home-wrap home-section" id="journal" aria-labelledby="home-journal-title">
-    <div class="home-journal-intro"><p class="home-label">FROM THE JOURNAL</p><h2 id="home-journal-title">Latest Stories<br>from Nepal.</h2><p>Expedition reports, trekking guides, and stories from the Himalaya—written by our team in the field.</p><a class="home-text-link" href="{% link news.html %}">View All Articles <span aria-hidden="true">→</span></a></div>
-    {% for post in site.posts limit:3 %}
-    <article class="home-journal-card"><a href="{{ post.url | relative_url }}"><img src="{{ '/assets/css/images/' | append: post.custom_bg | relative_url }}" alt="{{ post.alt | default: post.title | escape }}" loading="lazy" width="600" height="400"><div><p class="home-label">FIELD NOTES</p><h3>{{ post.title }}</h3><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' }}</time></div></a></article>
-    {% endfor %}
+  <section class="home-journal home-journal-index home-wrap home-section" id="journal" aria-labelledby="home-journal-title">
+    <div class="home-journal-lead"><p class="home-label">FROM THE JOURNAL</p><h2 id="home-journal-title">Life above<br>the everyday.</h2><a class="home-journal-all" href="{% link news.html %}">View all articles</a>
+      <figure class="home-journal-landscape"><img src="{{ '/assets/css/images/treks/annapurna_base_camp_north_min.jpg' | relative_url }}" alt="Mountain scenery in the Annapurna region of Nepal" loading="lazy" width="2000" height="1400"><figcaption><span>Annapurna, Nepal</span><span>FIELD NOTES</span></figcaption></figure>
+    </div>
+    <ol class="home-journal-entries">
+     {% for post in site.posts limit:3 %}
+      <li><span class="home-journal-number" aria-hidden="true">{{ forloop.index | prepend: '0' }}</span><article><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' | upcase }}</time><h3><a href="{{ post.url | relative_url }}">{% if post.title contains 'Pemba Gelje' %}A new speed record<br>on Manaslu{% elsif post.title contains 'missing for 3 days' %}Three days missing.<br>A rescue from the ice.{% elsif post.title contains 'Noel Hanna' %}Remembering<br>Noel Hanna{% else %}{{ post.title }}{% endif %}</a></h3>{% if forloop.first %}<p>{% if post.title contains 'Pemba Gelje' %}Pemba Gelje Sherpa’s ascent. Tyler Andrews’ decision to turn back.{% else %}{{ post.description | strip_html | truncate: 150 }}{% endif %}</p>{% endif %}</article></li>
+     {% endfor %}
+    </ol>
+  </section>
+  <section class="home-brands home-wrap home-section" aria-label="Brand logos">
+    <div class="home-brands-window"><div class="home-brands-track">
+      {% for copy in (1..2) %}<div class="home-brands-group"{% if copy == 2 %} aria-hidden="true"{% endif %}>
+       {% for brand in site.data.brands %}<div class="home-brand"><img src="{{ brand.image | relative_url }}" alt="{% if copy == 1 %}{{ brand.name | escape }}{% endif %}" loading="lazy" width="150" height="60"></div>{% endfor %}
+      </div>{% endfor %}
+    </div></div>
+    <div class="home-brands-note"><p>Atlas Alpine Expedition.<br><span>Nepal-based expeditions, trekking, and alpine journeys.</span></p><button class="home-brands-toggle" type="button" aria-pressed="false">Pause logos</button></div>
   </section>
 </main>
 

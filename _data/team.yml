@@ -1,47 +1,47 @@
 # Climbing Guide
 
-# - name: Gelmu Sherpa
-#   slug: gelmu-sherpa
-#   role: Climbing Guide
-#   photos: "assets/css/images/team/2.jpg"
-#   description: "Gelmu Sherpa is a distinguished mountaineer from Nepal, widely recognized for her exceptional achievements in high-altitude climbing. With a career spanning numerous peaks like Mount Everest, Ama Dablam, and Lhotse, she has earned her place among the most respected climbers in the region. <br/><br/> Starting her journey at a young age, Gelmu's passion for exploring the highest mountains drove her to master technical climbing, ice climbing, and high-altitude navigation. Her extensive training and experience have made her a highly skilled guide and a trusted leader on expeditions. <br/><br/> As a professional guide, Gelmu is known for her meticulous planning and ability to make critical decisions in extreme conditions. Her dedication to safety and her deep knowledge of the mountains have earned her the respect of clients and fellow climbers. <br/><br/> Beyond her climbing achievements, Gelmu is an advocate for empowering women in mountaineering. She mentors aspiring climbers, promotes ethical climbing practices, and serves as a role model in the adventure community. "
-#   mountains:
-#     - name: Everest
-#       summited: 1
-#       years: [2025]
-#     - name: Mera Peak
-#       summited: 12
-#       years: [2019, 2020, 2021, 2022]
-#     - name: Lobuche Peak
-#       summited: 8
-#       years: [2019, 2020, 2021, 2022]
-#     - name: Island Peak
-#       summited: 7
-#       years: [2019, 2020, 2021, 2022]
-#     - name: Ama Dablam
-#       summited: 1
-#       years: [2023]
-#   trainings:
-#     - course: Introductory Rock Climbing Training
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2022
-#     - course: Basic Mountain Rescue Training
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2022
-#     - course: Rock Level-1
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2023
-#     - course: ICE Level-1
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2023
+- name: lama sherpa
+  slug: gelmu-sherpa
+  role: Climbing Guide
+  photos: "assets/css/images/team/9.jpg"
+  description: "Gelmu Sherpa is a distinguished mountaineer from Nepal, widely recognized for her exceptional achievements in high-altitude climbing. With a career spanning numerous peaks like Mount Everest, Ama Dablam, and Lhotse, she has earned her place among the most respected climbers in the region. <br/><br/> Starting her journey at a young age, Gelmu's passion for exploring the highest mountains drove her to master technical climbing, ice climbing, and high-altitude navigation. Her extensive training and experience have made her a highly skilled guide and a trusted leader on expeditions. <br/><br/> As a professional guide, Gelmu is known for her meticulous planning and ability to make critical decisions in extreme conditions. Her dedication to safety and her deep knowledge of the mountains have earned her the respect of clients and fellow climbers. <br/><br/> Beyond her climbing achievements, Gelmu is an advocate for empowering women in mountaineering. She mentors aspiring climbers, promotes ethical climbing practices, and serves as a role model in the adventure community. "
+  mountains:
+    - name: Everest
+      summited: 1
+      years: [2025]
+    - name: Mera Peak
+      summited: 12
+      years: [2019, 2020, 2021, 2022]
+    - name: Lobuche Peak
+      summited: 8
+      years: [2019, 2020, 2021, 2022]
+    - name: Island Peak
+      summited: 7
+      years: [2019, 2020, 2021, 2022]
+    - name: Ama Dablam
+      summited: 1
+      years: [2023]
+  trainings:
+    - course: Introductory Rock Climbing Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2022
+    - course: Basic Mountain Rescue Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2022
+    - course: Rock Level-1
+      institution: Nepal Mountaineering Instructors Association
+      year: 2023
+    - course: ICE Level-1
+      institution: Nepal Mountaineering Instructors Association
+      year: 2023
 
-#     - course: High Mountain Rescue Training
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2025
+    - course: High Mountain Rescue Training
+      institution: Nepal Mountaineering Instructors Association
+      year: 2025
 
-#     - course: First-Aid
-#       institution: Himalyan Medics
-#       year: 2022
+    - course: First-Aid
+      institution: Himalyan Medics
+      year: 2022
 
 # - name: Gelmo Sherpa
 #   role: Climbing Guide
@@ -171,40 +171,40 @@
 #       institution: Nepal Mountaineering Instructors Association
 #       year: 2025
 
-- name: Singi Lama
-  role: Managing Director
-  photos: "assets/css/images/team/8.jpg"
-  description: Singi Lama is the Managing Director of Atlas Alpine Expedition, responsible for overall expedition planning, logistics, and operational leadership. With extensive experience in high-altitude expedition management, Singi ensures that every climb is professionally organized, safety-focused, and ethically guided. His deep knowledge of Himalayan routes, permits, and team coordination plays a crucial role in delivering seamless and successful expeditions across Nepal.
-  mountains:
-    - name: Everest
-      summited: 1
-      years: [2011]
-    - name: Lobuche
-      summited: 7
-      years: [From 2005, To 2019]
-    - name: Island Peak
-      summited: 109
-      years: [From 1999, To 2019]
-    - name: Kanchanjunga
-      summited: 1
-      years: [2004]
-    - name: Makalu
-      summited: 1
-      years: [2009]
-    - name: DhaulagiriDhaulagiri
-      summited: 1
-      years: [2008]
-    - name: Muztagh Ata
-      summited: 2
-      years: [2014, 2015]
-    - name: Kokodak Dome
-      summited: 2
-      years: [2014, 2015]
-    - name: Nun Kun peak
-      summited: 1
-      years: [2004]
-  slug: singi-lama
-  trainings:
+# - name: Singi Lama
+#   role: Managing Director
+#   photos: "assets/css/images/team/8.jpg"
+#   description: Singi Lama is the Managing Director of Atlas Alpine Expedition, responsible for overall expedition planning, logistics, and operational leadership. With extensive experience in high-altitude expedition management, Singi ensures that every climb is professionally organized, safety-focused, and ethically guided. His deep knowledge of Himalayan routes, permits, and team coordination plays a crucial role in delivering seamless and successful expeditions across Nepal.
+#   mountains:
+#     - name: Everest
+#       summited: 1
+#       years: [2011]
+#     - name: Lobuche
+#       summited: 7
+#       years: [From 2005, To 2019]
+#     - name: Island Peak
+#       summited: 109
+#       years: [From 1999, To 2019]
+#     - name: Kanchanjunga
+#       summited: 1
+#       years: [2004]
+#     - name: Makalu
+#       summited: 1
+#       years: [2009]
+#     - name: DhaulagiriDhaulagiri
+#       summited: 1
+#       years: [2008]
+#     - name: Muztagh Ata
+#       summited: 2
+#       years: [2014, 2015]
+#     - name: Kokodak Dome
+#       summited: 2
+#       years: [2014, 2015]
+#     - name: Nun Kun peak
+#       summited: 1
+#       years: [2004]
+#   slug: singi-lama
+#   trainings:
     # - course: Introductory Rock Climbing Training
     #   institution: Nepal Mountaineering Instructors Association
     #   year: 2022
@@ -271,7 +271,7 @@
       institution: Himalayan Medics
       year: 2024
 
-- name: Sunil Tamang
+- name: Dawa Sherpa
   role: Climbing Guide
   photos: "assets/css/images/team/7.jpg"
   description: Sunil Tamang is a highly skilled and ambitious climbing guide at Above 8000, with a strong passion for leading expeditions in the Himalayas. With a impressive climbing resume, Sunil has successfully summited several notable peaks, including Bauntse, Island Peak, and Mera Peak."

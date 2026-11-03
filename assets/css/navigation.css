@@ -1,5 +1,5 @@
 /* Navigation layout and surfaces only; typography is owned by base.css. */
-.reference-site .atlas-header { --nav-width: min(88%,1440px); --nav-bar-height: 90px; --nav-panel-height: 440px; --nav-surface: #101112; --nav-contours: url("images/k2-topography.jpeg"); position: absolute; inset: 0 0 auto; z-index: 1000; color: #111; background: transparent; }
+.reference-site .atlas-header { --nav-width: min(88%,1440px); --nav-bar-height: 90px; --nav-panel-height: 440px; --nav-surface: #101112; position: absolute; inset: 0 0 auto; z-index: 1000; color: #111; background: transparent; }
 .atlas-header *, .atlas-header *::before, .atlas-header *::after { box-sizing: border-box; }
 .atlas-header a { color: inherit; text-decoration: none; }
 .atlas-header button { appearance: none; color: inherit; background: transparent; border: 0; border-radius: 0; cursor: pointer; }
@@ -128,15 +128,7 @@
  .atlas-all { border-top-color: #ffffff1f; padding-top: 16px; }
 }
 
-/* Supplied K2 map: crop to its linework and invert only the decorative layer. */
-.atlas-header.is-menu-open::before,
-.atlas-header.is-mobile-open::before,
-.atlas-mega::before {
- content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
- background-image: var(--nav-contours); background-repeat: no-repeat;
- background-size: max(120%,1000px) auto; background-position: 50% 38%;
- filter: invert(1); mix-blend-mode: screen; opacity: .09;
-}
+
 .atlas-nav-bar, .atlas-mega-inner, .atlas-mobile-screen { position: relative; z-index: 1; }
 .atlas-mega { z-index: 1; }
 

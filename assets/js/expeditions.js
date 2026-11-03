@@ -33,6 +33,9 @@
  form.addEventListener('submit',event => { event.preventDefault(); apply(); });
  form.addEventListener('reset',() => { setTimeout(() => apply(),0); });
  const params = new URLSearchParams(location.search);
- inputs.forEach(input => { input.checked = !input.disabled && params.getAll(input.name).includes(input.value); });
+ inputs.forEach(input => {
+  input.checked = params.getAll(input.name).includes(input.value);
+  if (input.checked) input.disabled = false;
+ });
  apply(false);
 })();
