@@ -278,7 +278,10 @@ blockquote {
 .home-main .home-team-values p { font-size: 13px; line-height: 1.35; }
 .home-team-values strong { font-size: 14px; font-weight: 700; }
 .home-team-values > div > span { font-size: 27px; line-height: 1; }
-.home-quote blockquote { font-size: clamp(25px,2.5vw,36px); line-height: 1.12; font-weight: 650; letter-spacing: -.025em; }
+.home-main .home-quote h2 { font-size: clamp(15px,1.4vw,21px); line-height: 1.4; font-weight: 550; letter-spacing: -.02em; }
+.home-main .home-quote blockquote { font-size: clamp(30px,3.8vw,62px); line-height: 1.38; font-weight: 650; letter-spacing: -.04em; }
+.home-quote blockquote strong { font-weight: inherit; }
+.home-main .home-quote-signature { font-size: clamp(10px,1vw,15px); line-height: 1.5; font-weight: 600; letter-spacing: .09em; }
 .home-main .home-journal-card h3 { font-size: 17px; line-height: 1.15; }
 .home-journal-card time { font-size: 11px; }
 .home-footer { font-size: 12px; line-height: 1.5; }
@@ -386,17 +389,17 @@ blockquote {
  .reference-site .atlas-header .atlas-all { font-size: 12px; letter-spacing: .025em; }
 }
 
-/* Homepage editorial hero typography, scoped away from the navigation. */
-.home-main .home-landing h1 { font-family: var(--aa-font); font-size: clamp(68px,9.2vw,156px); font-weight: 300; line-height: .91; letter-spacing: -.045em; }
-.home-main .home-landing-kicker { font-size: 10px; line-height: 1.5; font-weight: 400; letter-spacing: .25em; }
-.home-landing-details dt { font-size: 9px; line-height: 1.5; font-weight: 400; letter-spacing: .25em; }
-.home-landing-details dd { font-size: 11px; line-height: 1.65; font-weight: 400; letter-spacing: .08em; }
-.home-landing-explore, .home-landing-contact { font-size: 10px; line-height: 1.5; font-weight: 400; letter-spacing: .2em; }
-.home-landing-explore span { font-size: 21px; line-height: 1; }
+/* Homepage mountain-film typography uses the shared Inter family. */
+.home-main .home-landing h1 { font-family:var(--aa-font); font-size:clamp(44px,4.7vw,80px); font-weight:300; line-height:1.08; letter-spacing:-.035em; }
+.home-main .home-landing-kicker { font-family:var(--aa-font); font-size:10px; line-height:1.5; font-weight:400; letter-spacing:.22em; }
+.home-landing-explore { font-family:var(--aa-font); font-size:15px; line-height:1.5; font-weight:450; letter-spacing:0; }
+.home-landing-film-toggle { font-family:var(--aa-font); font-size:12px; font-weight:400; line-height:1.4; }
+.home-film-icon { font-size:18px; line-height:1; }
 @media(max-width:600px) {
- .home-main .home-landing h1 { font-size: clamp(38px,11.6vw,68px); line-height: .97; }
- .home-main .home-landing-kicker { font-size: 9px; letter-spacing: .15em; }
- .home-landing-details dd { font-size: 10px; }
+ .home-main .home-landing h1 { font-size:clamp(29px,7.3vw,44px); }
+ .home-main .home-landing-kicker { font-size:9px; letter-spacing:.15em; }
+ .home-landing-explore { font-size:12px; }
+ .home-landing-film-toggle { font-size:11px; }
 }
 
 /* Home-ground introduction typography. */
@@ -442,15 +445,21 @@ blockquote {
 .home-guides-values, .home-guides-link { font-size: 16px; font-weight: 550; line-height: 1.5; }
 @media(max-width:640px) { .home-guide-feature strong { font-size: 14px; } .home-guide-feature span > span { font-size: 10px; } }
 
-/* Editorial journal index typography, scoped to the homepage. */
-.home-main .home-journal-index .home-label { font-size: 11px; font-weight: 650; line-height: 1.4; letter-spacing: .08em; }
-.home-main .home-journal-index h2 { font-size: clamp(37px,4.3vw,64px); font-weight: 650; line-height: 1.06; letter-spacing: -.045em; }
-.home-main .home-journal-entries h3 { font-size: clamp(24px,2.65vw,38px); font-weight: 650; line-height: 1.1; letter-spacing: -.04em; }
-.home-main .home-journal-entries article > p { font-size: 15px; line-height: 1.5; letter-spacing: -.015em; }
-.home-journal-all { font-size: 17px; line-height: 1.4; }
-.home-journal-entries time, .home-journal-number { font-size: 13px; line-height: 1.4; font-weight: 400; letter-spacing: .025em; }
-.home-journal-landscape figcaption { font-size: 13px; line-height: 1.45; }
-.home-journal-landscape figcaption span:last-child { font-size: 11px; letter-spacing: .09em; }
+/* Monospace expedition-journal typography; other sections retain Inter. */
+.home-main .home-journal-editorial, .home-main .home-journal-editorial :is(h2,h3,p,a,time,span,figcaption) { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-weight:400; letter-spacing:.015em; }
+.home-main .home-journal-editorial .journal-eyebrow { font-size:16px; line-height:1.5; }
+.home-main .home-journal-editorial h2 { font-size:clamp(26px,2.8vw,40px); line-height:1.25; }
+.home-main .journal-editorial-heading > div > p:not(.journal-eyebrow), .journal-editorial-heading > a { font-size:18px; line-height:1.5; }
+.home-main .journal-editorial-copy h3 { font-size:clamp(20px,1.9vw,28px); line-height:1.2; }
+.home-main .journal-editorial-copy :is(p,time), .journal-story-action { font-size:14px; line-height:1.5; }
+.home-main .journal-affiliations > p { font-size:17px; line-height:1.4; }
+.journal-affiliations figcaption { font-size:11px; line-height:1.35; }
+.journal-editorial-foot { font-size:12px; line-height:1.5; }
+@media(max-width:640px) {
+ .home-main .journal-editorial-heading > div > p:not(.journal-eyebrow), .journal-editorial-heading > a { font-size:15px; }
+ .home-main .journal-editorial-copy h3 { font-size:19px; }
+ .home-main .journal-editorial-copy :is(p,time), .journal-story-action { font-size:11px; }
+}
 
 /* Homepage brand-ribbon typography. */
 .home-main .home-brands-note p { font-size: 13px; line-height: 1.65; font-weight: 450; letter-spacing: -.015em; }

@@ -7,19 +7,11 @@ keywords: "Himalayan expeditions, Nepal climbing, guided expeditions, Ama Dablam
 ---
 <main class="home-main" id="main-content">
   <section class="home-landing" aria-labelledby="home-title">
-    <img class="home-landing-image" src="{{ '/assets/css/images/home.jpg' | relative_url }}" alt="Himalayan mountain peaks rising above the clouds" fetchpriority="high" width="4176" height="3654">
+    <img class="home-landing-image" src="{{ '/assets/css/images/bg/peakbg.jpg' | relative_url }}" alt="" fetchpriority="high" width="2000" height="1333">
+    <video class="home-landing-video" id="home-banner-film" muted loop playsinline preload="none" poster="{{ '/assets/css/images/bg/peakbg.jpg' | relative_url }}" aria-hidden="true" tabindex="-1"><source src="{{ '/assets/css/video/banner5.mp4' | relative_url }}" type="video/mp4"></video>
     <div class="home-landing-content home-wrap">
-      <p class="home-landing-kicker">NEPAL BASED. HIMALAYA BOUND.</p>
-      <h1 id="home-title">EXPEDITIONS<br>IN THE<br>HIMALAYA.</h1>
-      <div class="home-landing-bottom">
-        <dl class="home-landing-details">
-          <div><dt>DISCIPLINE</dt><dd>GUIDED CLIMBS · HIMALAYAN TREKS</dd></div>
-          <div><dt>TERRAIN</dt><dd>NEPAL · HIGH ALTITUDE · ALPINE</dd></div>
-          <div><dt>OUR APPROACH</dt><dd>LOCAL KNOWLEDGE · PERSONAL JOURNEYS</dd></div>
-        </dl>
-        <a class="home-landing-explore" href="#expeditions">EXPLORE EXPEDITIONS<span aria-hidden="true">↓</span></a>
-      </div>
-      <a class="home-landing-contact" href="{% link contact.html %}">GET IN TOUCH</a>
+      <div class="home-landing-heading"><p class="home-landing-kicker">NEPAL BASED. HIMALAYA BOUND.</p><h1 id="home-title">EXPEDITIONS<br>IN THE HIMALAYA.</h1></div>
+      <div class="home-landing-bottom"><a class="home-landing-explore" href="#expeditions"><span>Explore expeditions</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></a><button class="home-landing-film-toggle" type="button" aria-controls="home-banner-film" aria-label="Play background film" hidden><span class="home-film-icon" aria-hidden="true">▷</span><span class="home-film-label">Play film</span></button></div>
     </div>
   </section>
 
@@ -47,7 +39,14 @@ keywords: "Himalayan expeditions, Nepal climbing, guided expeditions, Ama Dablam
     </div>
   </section>
 
-
+  <section class="home-brands home-wrap home-section" aria-label="Brand logos">
+    <div class="home-brands-window"><div class="home-brands-track">
+      {% for copy in (1..2) %}<div class="home-brands-group"{% if copy == 2 %} aria-hidden="true"{% endif %}>
+       {% for brand in site.data.brands %}<div class="home-brand"><img src="{{ brand.image | relative_url }}" alt="{% if copy == 1 %}{{ brand.name | escape }}{% endif %}" loading="lazy" width="150" height="60"></div>{% endfor %}
+      </div>{% endfor %}
+    </div></div>
+    <div class="home-brands-note"><p>Atlas Alpine Expedition.<br><span>Nepal-based expeditions, trekking, and alpine journeys.</span></p><button class="home-brands-toggle" type="button" aria-pressed="false">Pause logos</button></div>
+  </section>
 
   <section class="home-journeys home-wrap home-section" id="expeditions" aria-labelledby="journey-heading">
     <div class="home-journeys-heading"><p class="home-journeys-label">FIND YOUR<br>NEXT ASCENT</p><h2 id="journey-heading">Different paths.<br>One Himalaya.</h2><div><p>From Himalayan trails to the world’s highest summits. Find the journey that moves you.</p><a href="{% link _activities/peak-climbing.html %}">Explore all journeys</a></div></div>
@@ -63,6 +62,7 @@ keywords: "Himalayan expeditions, Nepal climbing, guided expeditions, Ama Dablam
 
 
 
+  <div class="home-people-landscape">
    {% assign lead_guide = site.data.team | where: 'slug', 'sunil-ghalan' | first %}
   {% assign second_guide = site.data.team | where: 'slug', 'sonam-lama' | first %}
   <section class="home-guides home-wrap home-section" aria-labelledby="home-guides-title">
@@ -89,31 +89,37 @@ keywords: "Himalayan expeditions, Nepal climbing, guided expeditions, Ama Dablam
 
 
 
-  <section class="home-quote home-wrap" aria-label="Our mountain philosophy">
-    <img src="{{ '/assets/css/images/peak-climbing/ama-dablam/banner.jpg' | relative_url }}" alt="" loading="lazy" width="1400" height="600">
-    <div><blockquote>“The mountains are not just<br>places to climb, but places<br>to understand ourselves.”</blockquote><p class="home-label">— ATLAS ALPINE EXPEDITION</p></div>
+  </div>
+
+  <section class="home-quote home-wrap" aria-labelledby="home-quote-label">
+    <h2 id="home-quote-label">A thought for the trail</h2>
+    <blockquote>Up here, <strong>the world gets quieter</strong>. You notice your breath, <strong>the next foothold</strong>, <strong>the person beside you</strong>. And for a while, <strong>being here is enough</strong>.</blockquote>
+    <p class="home-quote-signature">ATLAS ALPINE / NEPAL</p>
   </section>
 
 
 
-  <section class="home-journal home-journal-index home-wrap home-section" id="journal" aria-labelledby="home-journal-title">
-    <div class="home-journal-lead"><p class="home-label">FROM THE JOURNAL</p><h2 id="home-journal-title">Life above<br>the everyday.</h2><a class="home-journal-all" href="{% link news.html %}">View all articles</a>
-      <figure class="home-journal-landscape"><img src="{{ '/assets/css/images/treks/annapurna_base_camp_north_min.jpg' | relative_url }}" alt="Mountain scenery in the Annapurna region of Nepal" loading="lazy" width="2000" height="1400"><figcaption><span>Annapurna, Nepal</span><span>FIELD NOTES</span></figcaption></figure>
+  <section class="home-journal home-journal-editorial home-wrap home-section" id="journal" aria-labelledby="home-journal-title">
+    <header class="journal-editorial-heading"><div><p class="journal-eyebrow">THE JOURNAL</p><h2 id="home-journal-title">From our side of the mountains.</h2><p>Expedition updates, stories and notes from Nepal.</p></div><a href="{% link news.html %}">All articles</a></header>
+    <div class="journal-editorial-cards">
+      {% for post in site.posts limit:3 %}
+      {% assign journal_image = '/assets/css/images/' | append: post.custom_bg %}
+      {% if forloop.first %}{% assign journal_image = '/assets/css/images/treks/three-passes/1.jpg' %}{% elsif forloop.index == 3 %}{% assign journal_image = '/assets/css/images/treks/annapurna_base_camp_north_min.jpg' %}{% endif %}
+      <article class="journal-editorial-card{% if forloop.first %} journal-editorial-feature{% endif %}">
+        <a href="{{ post.url | relative_url }}" aria-labelledby="journal-story-{{ forloop.index }}"><img src="{{ journal_image | relative_url }}" alt="" loading="lazy" width="1200" height="1200"><div class="journal-editorial-copy"><p class="journal-story-meta">{{ forloop.index | prepend: '0' }} / {% if forloop.first %}<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' | upcase }}</time>{% elsif post.title contains 'Noel Hanna' %}IN MEMORY{% else %}NEWS{% endif %}</p><h3 id="journal-story-{{ forloop.index }}">{% if post.title contains 'Pemba Gelje' %}A new speed record on Manaslu{% elsif post.title contains 'missing for 3 days' %}Rescued after three days{% elsif post.title contains 'Noel Hanna' %}Remembering Noel Hanna{% else %}{{ post.title }}{% endif %}</h3>{% if forloop.first %}<p class="journal-story-summary">{% if post.title contains 'Pemba Gelje' %}Pemba Gelje Sherpa on Manaslu.{% else %}{{ post.description | strip_html | truncate: 100 }}{% endif %}</p><span class="journal-story-action">Read story</span>{% else %}<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' | upcase }}</time>{% endif %}</div></a>
+      </article>
+      {% endfor %}
     </div>
-    <ol class="home-journal-entries">
-     {% for post in site.posts limit:3 %}
-      <li><span class="home-journal-number" aria-hidden="true">{{ forloop.index | prepend: '0' }}</span><article><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' | upcase }}</time><h3><a href="{{ post.url | relative_url }}">{% if post.title contains 'Pemba Gelje' %}A new speed record<br>on Manaslu{% elsif post.title contains 'missing for 3 days' %}Three days missing.<br>A rescue from the ice.{% elsif post.title contains 'Noel Hanna' %}Remembering<br>Noel Hanna{% else %}{{ post.title }}{% endif %}</a></h3>{% if forloop.first %}<p>{% if post.title contains 'Pemba Gelje' %}Pemba Gelje Sherpa’s ascent. Tyler Andrews’ decision to turn back.{% else %}{{ post.description | strip_html | truncate: 150 }}{% endif %}</p>{% endif %}</article></li>
-     {% endfor %}
-    </ol>
-  </section>
-  <section class="home-brands home-wrap home-section" aria-label="Brand logos">
-    <div class="home-brands-window"><div class="home-brands-track">
-      {% for copy in (1..2) %}<div class="home-brands-group"{% if copy == 2 %} aria-hidden="true"{% endif %}>
-       {% for brand in site.data.brands %}<div class="home-brand"><img src="{{ brand.image | relative_url }}" alt="{% if copy == 1 %}{{ brand.name | escape }}{% endif %}" loading="lazy" width="150" height="60"></div>{% endfor %}
-      </div>{% endfor %}
+    <div class="journal-affiliations"><p>Affiliated with</p><div class="journal-affiliations-logos">
+      {% assign affiliation_keys = 'gon-,nma-,ntb-,taan-' | split: ',' %}
+      {% assign affiliation_names = 'Government of Nepal — Ministry of Culture, Tourism and Civil Aviation|Nepal Mountaineering Association|Nepal Tourism Board|Trekking Agencies’ Association of Nepal' | split: '|' %}
+      {% for key in affiliation_keys %}{% assign affiliation_index = forloop.index0 %}{% for file in site.static_files %}{% if file.path contains '/images/affil/' and file.name contains key %}<figure><img src="{{ file.path | relative_url }}" alt="" loading="lazy" width="110" height="90"><figcaption>{{ affiliation_names[affiliation_index] }}</figcaption></figure>{% endif %}{% endfor %}{% endfor %}
     </div></div>
-    <div class="home-brands-note"><p>Atlas Alpine Expedition.<br><span>Nepal-based expeditions, trekking, and alpine journeys.</span></p><button class="home-brands-toggle" type="button" aria-pressed="false">Pause logos</button></div>
+    <div class="journal-editorial-foot"><span>ATLAS ALPINE / NEPAL</span><span aria-hidden="true"></span></div>
   </section>
+
+
+
 </main>
 
 

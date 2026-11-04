@@ -93,3 +93,29 @@
  document.addEventListener('visibilitychange',update);
  update();
 })();
+
+// Decorative hero film: explicit pause control and a still image for reduced motion.
+(() => {
+ const video = document.getElementById('home-banner-film');
+ const button = document.querySelector('.home-landing-film-toggle');
+ if (!video || !button) return;
+ const reduce = matchMedia('(prefers-reduced-motion:reduce)');
+ let userPaused = reduce.matches;
+ function sync() {
+  const playing = !video.paused;
+  button.querySelector('.home-film-label').textContent = playing ? 'Pause film' : 'Play film';
+  button.querySelector('.home-film-icon').textContent = playing ? 'Ⅱ' : '▷';
+  button.setAttribute('aria-label', playing ? 'Pause background film' : 'Play background film');
+ }
+ function play() { video.muted = true; const attempt = video.play(); if (attempt) attempt.catch(sync); }
+ video.addEventListener('playing', () => { video.classList.add('is-playing'); sync(); });
+ video.addEventListener('pause', sync);
+ function unavailable() { video.classList.remove('is-playing'); button.hidden = true; }
+ video.addEventListener('error', unavailable);
+ video.querySelector('source').addEventListener('error', unavailable);
+ button.hidden = false;
+ button.addEventListener('click', () => { userPaused = !video.paused; if (userPaused) video.pause(); else play(); });
+ document.addEventListener('visibilitychange', () => { if (document.hidden) video.pause(); else if (!userPaused) play(); });
+ reduce.addEventListener('change', () => { if (reduce.matches) { userPaused = true; video.pause(); video.classList.remove('is-playing'); } });
+ if (!userPaused) play();
+})();
