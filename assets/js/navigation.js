@@ -159,7 +159,12 @@
    if (!header.contains(document.activeElement) && !(desktop.matches && hover.matches && pointerInside)) dismiss(false);
   }, 0);
  });
- document.addEventListener('click', event => { if (!header.contains(event.target)) { dismiss(); closeMobile(); } });
+ // A submenu render can detach the tapped row before this event bubbles here.
+ // Use the original event path so an internal tap never becomes an outside click.
+ document.addEventListener('click', event => {
+  const inside = event.composedPath().includes(header);
+  if (!inside) { dismiss(); closeMobile(); }
+ });
  mobile.addEventListener('click', () => {
   const open = mobile.getAttribute('aria-expanded') !== 'true';
   if (!open) { dismiss(false); closeMobile(); return; }
