@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% assign profile_member = site.data.team | where: 'slug', page.slug | first %}
+{% if profile_member %}
+<article class="guide-portfolio" aria-labelledby="guide-profile-name">
+ <div class="guide-portfolio-intro">
+  <div class="guide-identity"><a class="guide-back" href="{% link _legal/team.html %}">← Our guides</a><div><p class="guide-kicker">{{ profile_member.role | escape }} / NEPAL</p><h1 id="guide-profile-name">{{ profile_member.name | escape }}</h1></div></div>
+  <figure class="guide-portrait"><img src="{{ profile_member.photos | relative_url }}" alt="{{ profile_member.name | escape }}" width="900" height="1200" fetchpriority="high"><figcaption>ATLAS ALPINE / OUR PEOPLE</figcaption></figure>
+  <div class="guide-about"><h2 class="guide-kicker">ABOUT {{ profile_member.name | split: ' ' | first | upcase }}</h2><p>{{ profile_member.description | strip_html | truncate: 220 }}</p>{% assign profile_description = profile_member.description | strip_html %}{% if profile_description.size > 220 %}<details class="guide-biography"><summary>Read full biography</summary><div>{{ profile_member.description }}</div></details>{% endif %}<a class="guide-plan" href="{{ '/enquiry/' | relative_url }}?guide={{ profile_member.slug | url_encode }}">Plan a climb</a></div>
+ </div>
+ <div class="guide-portfolio-records">
+ {% if profile_member.mountains.size > 0 %}<section class="guide-summits" aria-labelledby="guide-summits-heading"><h2 class="guide-kicker" id="guide-summits-heading">01 / SELECTED SUMMITS</h2><ul>{% for mountain in profile_member.mountains %}<li><h3>{{ mountain.name | escape }}</h3><p>{{ mountain.summited }} {% if mountain.summited == 1 %}ascent{% else %}ascents{% endif %}{% if mountain.years.size > 0 %} · {{ mountain.years | join: ', ' }}{% endif %}</p></li>{% endfor %}</ul></section>{% endif %}
+ {% if profile_member.trainings.size > 0 %}<section class="guide-training" aria-labelledby="guide-training-heading"><h2 class="guide-kicker" id="guide-training-heading">02 / TRAINING</h2><ul>{% for training in profile_member.trainings %}<li><h3>{{ training.course | escape }}</h3>{% if training.institution or training.year %}<p>{{ training.institution | escape }}{% if training.institution and training.year %} · {% endif %}{{ training.year }}</p>{% endif %}</li>{% endfor %}</ul></section>{% endif %}
+ </div>
+ <div class="guide-profile-signoff"><span>Atlas Alpine Expedition</span><a href="{% link _legal/team.html %}">All guides</a></div>
+</article>
+{% endif %}

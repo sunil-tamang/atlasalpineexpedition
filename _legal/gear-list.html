@@ -8,54 +8,7 @@ custom_bg: bg/about0.jpg
 description: "Prepare for your adventure with our comprehensive gear list for trekking, camping, and peak climbing in Nepal. Find essential equipment recommendations for your Himalayan journey."
 keywords: "trekking gear list Nepal, camping equipment, peak climbing gear, outdoor gear recommendations"
 
+page_class: editorial-directory directory-gear
+custom_css: editorial-directories.css
 ---
-
-
-
-
- <!----------Gear List -------->
-
- <div class="slider-wrapper" style="height: 50% !important; ">
-      
-    <div class="slide banner-slide teamBanner">
-            
-        <div class="slide-tagline">
-                <span class="tagline-text">
-        
-                    <div class="banner_logo" style="position: absolute; left: 0; top:-75%; width: 100%; text-align: center;">
-        
-                        <h1 class="trippy-name">Gear List</h1>
-
-                    </div>
-                </span>
-
-            </div>
-    </div>
-
-    <span class="banner__skip">
-        <a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); "></i></a>
-    </span>
-
-</div>
-
-
-
-<div class="row row--padding-medium container-wide ">
-
-    <div class="parent-div">
-        <a href="{{ site.baseurl }}/gear-list/gear-list-for-8000ers.html" class="child-div child-1">
-          <span>Gear List For 8000ers</span>
-        </a>
-        <a href="{{ site.baseurl }}/gear-list/gear-list-for-7000ers.html" class="child-div child-2">
-          <span>Gear List For 7000'ers</span>
-        </a>
-        <a href="{{ site.baseurl }}/gear-list/gear-list-for-6000ers.html" class="child-div child-3">
-          <span>Gear List For 6000'ers</span>
-        </a>
-        <a href="{{ site.baseurl }}/gear-list/gear-list-for-trekking-in-nepal.html" class="child-div child-4">
-            <span>Gear List For Trekking in Nepal</span>
-        </a>
-        
-      </div>
-
-</div>
+<article class="editorial-page"><header class="editorial-heading"><p class="editorial-kicker">GEAR LISTS</p><h1>Pack for the mountain.</h1><p>Choose your trip type to find the right equipment list.</p></header><div class="editorial-directory-layout gear-directory-layout"><figure class="gear-directory-photo"><img src="{{ '/assets/css/images/blog/trekking-gear-blog/backpack.jpg' | relative_url }}" alt="Trekking backpack and equipment" width="700" height="900" loading="lazy"></figure><div class="gear-directory-rows">{% assign gear_titles = 'Trekking|6,000m peaks|7,000m expeditions|8,000m expeditions' | split: '|' %}{% for title in gear_titles %}<article class="gear-directory-row"><span>{{ forloop.index | prepend: '0' }}</span><div><h2>{{ title }}</h2><p>{% if forloop.index == 2 or forloop.index == 3 %}Ask our team for the equipment checklist{% else %}View the equipment checklist{% endif %}</p></div>{% if forloop.first %}<a href="{{ '/gear-list/gear-list-for-trekking-in-nepal.html' | relative_url }}">View list <span aria-hidden="true">→</span></a>{% elsif forloop.last %}<a href="{{ '/gear-list/gear-list-for-8000ers.html' | relative_url }}">View list <span aria-hidden="true">→</span></a>{% else %}<a href="{% link contact.html %}?gear={{ title | url_encode }}">Request list <span aria-hidden="true">→</span></a>{% endif %}</article>{% endfor %}</div></div><div class="editorial-help"><div><h2>Every trip is different.</h2><p>Confirm the final gear list with our team before departure.</p></div><nav aria-label="Gear planning links"><a class="editorial-link" href="{% link contact.html %}">Ask about gear</a><a class="editorial-link" href="{% link _legal/travel-advisory.html %}">Travel advisory</a><a class="editorial-link" href="{% link _legal/faq.html %}">FAQs</a></nav></div></article>

@@ -22,25 +22,17 @@
 .expedition-results { min-width: 0; }
 
 .expedition-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px; }
-.reference-site .expedition-card { position: relative; display: block; min-width: 0; height: auto; min-height: 480px; overflow: hidden; border-radius: 20px; background: #0b2839; color: white; isolation: isolate; }
-.reference-site .expedition-card > img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 220ms ease; }
-.reference-site .expedition-card:hover > img { transform: scale(1.035); }
-.reference-site .expedition-card::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg,#031b3233 0%,#06192300 28%,#06192340 42%,#07171ced 70%,#020d10 100%); }
-.directory-card-content { position: relative; z-index: 1; display: flex; flex-direction: column; height: 100%; min-height: inherit; padding: 17px; color: #fff; }
-.directory-card-topline { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 110px; }
-.directory-card-brand { display: flex; align-items: center; gap: 8px; }
-.directory-card-brand::before { content: ''; display: block; width: 20px; height: 1px; background: #fff; flex-shrink: 0; }
-.directory-card-intro { margin-top: auto; margin-bottom: 16px; }
-.directory-card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
-.directory-card-tags > span { display: inline-block; padding: 4px 8px; border: 1px solid #ffffff88; border-radius: 30px; background: #ffffff0d; }
-.directory-card-title { margin: 0 0 10px; color: #fff; }
-.directory-card-description { margin: 0; color: #eee; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
-.directory-card-facts { display: flex; flex-wrap: wrap; gap: 8px 0; margin: 0 0 18px; padding: 0; list-style: none; }
-.directory-card-facts li { display: flex; align-items: center; gap: 5px; padding-right: 9px; margin-right: 9px; color: #fff; border-right: 1px solid #ffffff66; }
-.directory-card-facts li:last-child { border-right: 0; padding-right: 0; margin-right: 0; }
-.directory-card-facts svg { width: 15px; height: 15px; flex: 0 0 15px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-.directory-card-action { display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%; padding: 12px 14px; border: 1px solid #f6f3ed; border-radius: 40px; background: #f6f3ed; color: #111; }
-.directory-card-action > span { flex-shrink: 0; }
+.reference-site .expedition-card { position:relative; display:block; min-width:0; height:auto; min-height:480px; overflow:hidden; border-radius:0; background:#122532; color:#fff; isolation:isolate; }
+.reference-site .expedition-card > img { position:absolute; inset:0; z-index:-2; width:100%; height:100%; object-fit:cover; object-position:center; transition:transform 220ms ease; }
+.reference-site .expedition-card:hover > img { transform:scale(1.025); }
+.reference-site .expedition-card::after { content:''; position:absolute; inset:0; z-index:-1; background:linear-gradient(180deg,transparent 35%,#0003 50%,#000a 75%,#000e 100%); }
+.directory-card-content { position:relative; z-index:1; display:flex; flex-direction:column; justify-content:flex-end; height:100%; min-height:inherit; padding:22px; color:#fff; }
+.directory-card-intro { margin-top:auto; }
+.directory-card-category { margin:0 0 12px; color:#eee; }
+.directory-card-title { margin:0 0 14px; color:#fff; overflow-wrap:anywhere; }
+.directory-card-description { margin:0; color:#eee; }
+.directory-card-action { display:block; margin-top:26px; color:#fff; }
+.expedition-card:hover .directory-card-action { opacity:.8; }
 .expedition-empty { padding: 40px; border: 1px solid #e5e7eb; border-radius: 16px; background: #fff; }
 .expedition-empty h3 { margin-bottom: 12px; }
 .expedition-empty a { display: inline-block; border-bottom: 1px solid #111; }
@@ -53,7 +45,6 @@
  .expedition-filters { padding: 18px; }
  .expedition-grid { gap: 12px; }
  .directory-card-content { padding: 13px; }
- .directory-card-brand::before { display: none; }
 }
 @media(max-width:1023px) {
  .expeditions-listing { grid-template-columns: 1fr; }

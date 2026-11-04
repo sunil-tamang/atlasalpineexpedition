@@ -5,52 +5,7 @@ permalink: /legal-documents/
 description: "Explore our certifications and accreditations at The Alpine Expeditions, ensuring safety, professionalism, and quality in every adventure we offer."
 keywords: "trekking certificates Nepal, adventure tour certifications, safety standards, expedition qualifications"
 
+page_class: editorial-directory directory-documents
+custom_css: editorial-directories.css
 ---
-
-
-
-
-
-<div class="slider-wrapper" style="height: 50% !important; ">
-       
-       
-    <div class="slide banner-slide slideBlog">
-           
-        <div class="slide-tagline">
-               
-                <span class="tagline-text">
-               
-                    <div class="banner_logo" style="position: absolute; left: 0; top:-75%; width: 100%; text-align: center;">
-                    <!-- <h2 class="trippy-name">OUR BL<i class="far fa-compass title-o"></i>G -->
-                    <h1 class="trippy-name">Legal Documents
-
-                        <!-- <p class="headline--detail" style="padding: 0; margin: 0;  ">Understand more about the Himalayas and Himachal Pradesh!</p> -->
-                    </h1>
-                     </div>
-                </span>
-
-         </div>
-    </div>
-
-
-    <span class="banner__skip">
-            <a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); "></i></a>
-    </span>
-
-
-</div>
-
-
-<div class="row row--padding-medium container-wide ">
-    <ul class="legal-docs-list">
-        {% for doc in site.data.documents %}
-           <li>
-              <a href="{{ doc.link | relative_url }}" target="_blank" style="background-image: url('{{ doc.image | relative_url }}');">
-                 <span class="doc-title">{{ doc.title }}</span>
-              </a>
-           </li>
-        {% endfor %}
-    </ul>
-</div>
-
-
+<article class="editorial-page"><header class="editorial-heading"><p class="editorial-kicker">LEGAL DOCUMENTS</p><h1>Company documents.</h1><p>Browse our registration and membership documents.</p></header><div class="editorial-directory-layout"><aside class="directory-side-note"><h2>ATLAS ALPINE EXPEDITION</h2><p>Kathmandu, Nepal</p><p>Need a copy or have a question?<br><a class="editorial-link" href="{% link contact.html %}">Contact our team.</a></p></aside><div><div class="document-rows">{% for doc in site.data.documents %}{% assign document_asset = site.static_files | where: 'path', doc.link | first %}<article class="document-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 2h10l5 5v15H5ZM14 2v6h6M8 12h9m-9 4h9"/></svg><div><h2>{{ doc.title | escape }}</h2><p>{% if document_asset %}Document preview{% else %}Request a copy from our team{% endif %}</p></div>{% if document_asset %}<a class="editorial-link" href="{{ doc.link | relative_url }}" target="_blank" rel="noopener">View document</a>{% else %}<a class="editorial-link" href="{% link contact.html %}?document={{ doc.title | url_encode }}">Request document</a>{% endif %}</article>{% endfor %}</div><p class="directory-footnote">For questions about a document, please <a class="editorial-link" href="{% link contact.html %}">contact our team</a>.</p></div></div></article>

@@ -364,19 +364,12 @@ blockquote {
 .site-content .expedition-card .expedition-altitude { font-size: 16px; line-height: 1.35; }
 .site-content .expedition-card .expedition-card-meta { font-size: 14px; line-height: 1.4; }
 
-/* Portrait directory cards share the base type system. */
-.reference-site .expedition-card .directory-card-title { font-size: clamp(19px,1.5vw,24px); line-height: 1.02; font-weight: 650; letter-spacing: -.035em; }
-.reference-site .expedition-card .directory-card-description { font-size: 12px; line-height: 1.4; font-weight: 400; letter-spacing: -.01em; }
-.reference-site .expedition-card .directory-card-topline { font-size: 8px; line-height: 1.4; font-weight: 500; letter-spacing: .08em; }
-.reference-site .expedition-card .directory-card-facts li { font-size: 12px; line-height: 1.4; font-weight: 400; }
-.reference-site .expedition-card .directory-card-action { font-size: 13px; line-height: 1.3; font-weight: 550; }
-@media(max-width:600px) { .reference-site .expedition-card .directory-card-title { font-size: 28px; } }
-
-/* Image-led package card labels and tags, shared with homepage packages. */
-.reference-site .expedition-card .directory-card-topline { font-size: 9px; line-height: 1.4; font-weight: 500; letter-spacing: .05em; }
-.reference-site .expedition-card .directory-card-tags { font-size: 10px; line-height: 1.25; font-weight: 400; letter-spacing: 0; }
-.reference-site .expedition-card .directory-card-facts li { font-size: 10px; line-height: 1.4; font-weight: 400; }
-.reference-site .expedition-card .directory-card-action { font-size: 13px; font-weight: 650; line-height: 1.3; }
+/* Editorial directory cards use the shared Inter type system. */
+.reference-site .expedition-card .directory-card-title { font-family:var(--aa-font); font-size:clamp(21px,1.8vw,28px); line-height:1.12; font-weight:600; letter-spacing:-.03em; }
+.reference-site .expedition-card .directory-card-category { font-size:10px; line-height:1.4; font-weight:550; letter-spacing:.08em; }
+.reference-site .expedition-card .directory-card-description { font-size:12px; line-height:1.5; font-weight:400; letter-spacing:-.01em; }
+.reference-site .expedition-card .directory-card-action { font-size:15px; line-height:1.4; font-weight:400; letter-spacing:-.015em; }
+@media(max-width:600px) { .reference-site .expedition-card .directory-card-title { font-size:28px; } }
 
 /* Navigation-only editorial category hierarchy; other page typography is unchanged. */
 @media(min-width:1024px) {
@@ -469,3 +462,136 @@ blockquote {
 .footer-landscape-social a { font-size: 16px; line-height: 1; }
 .footer-landscape-brand > a:not(.footer-atlas-logo), .home-footer.footer-landscape .footer-landscape-address { font-size: 11px; line-height: 1.5; }
 .footer-landscape-bottom { font-size: 11px; line-height: 1.5; }
+
+/* Detail-page typography stays in the shared base font definitions. */
+.trip-detail { font-family:var(--aa-font); }
+.trip-detail .trip-summary dt { font-size:11px; font-weight:500; line-height:1.5; letter-spacing:.08em; text-transform:uppercase; }
+.trip-detail .trip-summary dd { font-size:18px; font-weight:500; line-height:1.4; }
+.trip-section-nav a { font-size:13px; font-weight:500; line-height:1.5; }
+.site-page-content .trip-detail .content__sub-title { font-size:clamp(23px,2.4vw,34px); font-weight:550; line-height:1.2; letter-spacing:-.035em; text-transform:none; }
+.trip-detail :is(.content--detail,.content__list-item,.panel p) { font-size:15px; font-weight:400; line-height:1.85; letter-spacing:0; }
+.trip-detail .trek-itinerary .itinerary-subtitle { font-size:18px; font-weight:550; line-height:1.45; text-transform:none; letter-spacing:-.02em; }
+.trip-detail .trek-itinerary > li::before { font-size:11px; font-weight:500; }
+.trip-detail .trip-sidebar-title { font-size:20px; font-weight:550; line-height:1.3; letter-spacing:-.025em; }
+.trip-detail .trek-overview { font-size:13px; font-weight:400; line-height:1.6; }
+.trip-detail .content__sub-title_faq { font-size:16px; font-weight:500; line-height:1.5; text-transform:none; letter-spacing:-.015em; }
+.trip-detail .book_btn { font-family:var(--aa-font); font-size:13px; font-weight:500; letter-spacing:.02em; }
+
+/* Enquiry-page typography uses the shared Inter family. */
+.enquiry-editorial, .enquiry-form :is(input,select,textarea,button) { font-family:var(--aa-font); }
+.enquiry-breadcrumb { font-size:13px; line-height:1.5; }
+.enquiry-breadcrumb [aria-current] { font-weight:600; }
+.enquiry-heading h1 { font-size:clamp(32px,3.6vw,52px); font-weight:500; line-height:1.15; letter-spacing:-.045em; }
+.enquiry-heading p { font-size:clamp(16px,1.6vw,21px); line-height:1.5; }
+.enquiry-trip-photo figcaption p { font-size:11px; font-weight:600; letter-spacing:.1em; line-height:1.4; }
+.enquiry-trip-photo h2 { font-size:clamp(23px,2vw,29px); font-weight:600; line-height:1.2; letter-spacing:-.025em; }
+.enquiry-trip-meta, .enquiry-fields label, .enquiry-whatsapp { font-size:14px; font-weight:400; line-height:1.5; }
+.enquiry-trip-meta > span:first-child { font-weight:600; }
+.enquiry-form legend { font-size:23px; font-weight:600; line-height:1.3; letter-spacing:-.03em; }
+.enquiry-form :is(input,select,textarea) { font-size:14px; font-weight:400; line-height:1.5; }
+.enquiry-reassurance, .enquiry-signoff { font-size:13px; line-height:1.5; }
+.enquiry-submit { font-size:18px; font-weight:550; line-height:1.3; letter-spacing:-.015em; }
+
+/* Split trip-page typography. */
+.trip-breadcrumb { font-size:13px; line-height:1.5; }
+.trip-location, .trip-day-label { font-size:11px; font-weight:600; line-height:1.5; letter-spacing:.07em; }
+.trip-intro-copy h1 { font-size:clamp(32px,3.5vw,49px); font-weight:650; line-height:1.08; letter-spacing:-.04em; }
+.trip-intro-description { font-size:17px; line-height:1.5; letter-spacing:-.015em; }
+.trip-intro-facts { font-size:15px; line-height:1.4; font-weight:550; }
+.trip-intro-actions, .trip-reference-tabs a { font-size:14px; line-height:1.4; }
+.trip-reference-tabs a[aria-selected=true] { font-weight:650; }
+.trip-photo-trigger span, .trip-photo-close { font-family:var(--aa-font); font-size:13px; line-height:1.4; }
+.trip-day-heading h2 { font-size:clamp(27px,3vw,38px); line-height:1.15; font-weight:650; letter-spacing:-.035em; }
+.trip-day-controls, .trip-day-list button, .trip-days-expand { font-family:var(--aa-font); font-size:14px; line-height:1.5; }
+.trip-day-controls button { font-family:var(--aa-font); font-size:27px; line-height:1; }
+.trip-day-panel h3 { font-size:clamp(24px,2.6vw,34px); font-weight:650; line-height:1.15; letter-spacing:-.035em; }
+.trip-day-panel .trip-day-description { font-size:16px; line-height:1.6; }
+.trip-day-facts { font-size:14px; line-height:1.5; }
+.trip-availability h2 { font-size:23px; line-height:1.25; font-weight:650; letter-spacing:-.03em; }
+.trip-availability p, .trip-availability > a { font-size:14px; line-height:1.5; }
+
+/* Team portfolio typography uses the shared Inter family. */
+.guide-portfolio { font-family:var(--aa-font); }
+.guide-back, .guide-profile-signoff { font-size:17px; font-weight:400; line-height:1.5; letter-spacing:-.02em; }
+.guide-portfolio .guide-kicker { font-size:12px; font-weight:500; line-height:1.5; letter-spacing:.16em; text-transform:uppercase; }
+.guide-identity h1 { font-size:clamp(44px,5vw,76px); font-weight:350; line-height:1.08; letter-spacing:-.055em; }
+.guide-portrait figcaption { font-size:9px; line-height:1.4; font-weight:600; letter-spacing:.16em; }
+.guide-about > p { font-size:clamp(18px,1.7vw,25px); font-weight:400; line-height:1.5; letter-spacing:-.025em; }
+.guide-plan { font-size:21px; line-height:1.5; font-weight:400; letter-spacing:-.02em; }
+.guide-biography { font-size:13px; line-height:1.7; font-weight:400; }
+.guide-summits h3 { font-size:23px; line-height:1.2; font-weight:600; letter-spacing:-.025em; }
+.guide-summits p { font-size:16px; line-height:1.4; font-weight:400; }
+.guide-training h3 { font-size:19px; line-height:1.4; font-weight:400; letter-spacing:-.02em; }
+.guide-training p { font-size:11px; line-height:1.5; font-weight:400; }
+@media(max-width:767px) { .guide-identity h1 { font-size:clamp(35px,6.5vw,55px); } }
+@media(max-width:480px) { .guide-identity h1 { font-size:48px; } .guide-summits h3 { font-size:20px; } .guide-summits p { font-size:14px; } }
+
+/* Contact, FAQ, advisory and terms typography, scoped to these resource pages. */
+.resource-page, .resource-page :is(input,select,textarea,button) { font-family:var(--aa-font); }
+.resource-breadcrumb, .resource-small, .faq-hero figcaption { font-size:13px; line-height:1.5; }
+.resource-heading h1, .faq-hero h1 { font-size:clamp(32px,3.8vw,54px); font-weight:650; line-height:1.1; letter-spacing:-.045em; }
+.resource-heading p, .faq-hero > div > p:not(.resource-kicker) { font-size:19px; line-height:1.5; }
+.resource-heading .resource-small { font-size:13px; }
+.resource-heading .resource-muted { font-size:15px; }
+.resource-kicker { font-size:11px; font-weight:600; line-height:1.5; letter-spacing:.1em; }
+.resource-button { font-size:15px; font-weight:550; line-height:1.4; }
+.resource-help h2 { font-size:24px; font-weight:600; line-height:1.3; letter-spacing:-.025em; }
+.resource-page :is(.resource-underlined,.resource-text-button) { font-size:15px; line-height:1.5; }
+.resource-toc { font-size:15px; line-height:1.5; }
+.resource-toc nav a.is-current { font-weight:600; }
+.resource-toc-help { font-size:14px; line-height:1.8; }
+.resource-policy h2 { font-size:29px; line-height:1.25; font-weight:600; letter-spacing:-.025em; }
+.resource-policy h2 > span { font-size:20px; font-weight:500; }
+.resource-policy h3 { font-size:18px; line-height:1.5; font-weight:550; }
+.resource-policy :is(p,li) { font-size:16px; font-weight:400; line-height:1.75; }
+.resource-policy strong { font-weight:500; }
+.resource-contact-info h2 { font-size:18px; font-weight:600; line-height:1.4; }
+.resource-contact-info dl, .resource-socials, .resource-contact-form label { font-size:14px; line-height:1.5; }
+.resource-contact-info dt, .resource-contact-form label { font-weight:550; }
+.resource-contact-info figcaption { font-size:12px; font-style:italic; line-height:1.5; }
+.resource-contact-form :is(input,select,textarea), .resource-contact-form > p { font-size:14px; line-height:1.5; }
+.resource-contact-form > p.resource-small { font-size:12px; }
+.resource-filter-tabs button { font-size:14px; line-height:1.5; }
+.resource-filter-tabs button[aria-pressed=true] { font-weight:600; }
+.resource-faq-layout h2, .resource-advisory-content h2 { font-size:30px; font-weight:650; line-height:1.2; letter-spacing:-.03em; }
+.resource-question summary { font-size:18px; line-height:1.5; font-weight:450; letter-spacing:-.015em; }
+.resource-question summary > span:first-child { font-size:13px; }
+.resource-question summary::after, .advisory-expand summary::after { font-size:24px; line-height:1; }
+.resource-answer { font-size:15px; line-height:1.6; }
+.resource-faq-aside h2 { font-size:26px; }
+.resource-faq-aside p { font-size:16px; line-height:1.5; }
+.resource-faq-aside p.resource-kicker { font-size:11px; }
+.resource-faq-aside h3 { font-size:20px; line-height:1.5; font-weight:600; }
+.resource-advisory-content p, .advisory-provider-panel li, .advisory-existing summary { font-size:15px; line-height:1.6; }
+.advisory-checklist h3, .advisory-policy-note h3, .advisory-provider-panel h3 { font-size:18px; font-weight:600; line-height:1.3; letter-spacing:-.02em; }
+.advisory-expand summary { font-size:17px; line-height:1.5; font-weight:500; }
+@media(max-width:480px) { .resource-question summary { font-size:16px; } .resource-policy :is(p,li) { font-size:15px; } .resource-policy h2 { font-size:25px; } }
+
+/* Team, story, document and gear directory type definitions. */
+.editorial-page, .editorial-page button { font-family:var(--aa-font); }
+.editorial-heading h1 { font-size:clamp(36px,4.4vw,62px); font-weight:650; line-height:1.1; letter-spacing:-.045em; }
+.editorial-heading > p { font-size:21px; line-height:1.5; letter-spacing:-.02em; }
+.editorial-page .editorial-kicker { font-size:12px; font-weight:600; line-height:1.5; letter-spacing:.1em; }
+.editorial-link, .people-filters, .people-filters button { font-size:15px; line-height:1.5; font-weight:400; }
+.people-filters button[aria-pressed=true] { font-weight:550; }
+.people-caption h2 { font-size:clamp(21px,2vw,29px); font-weight:600; line-height:1.2; letter-spacing:-.03em; }
+.people-caption p { font-size:17px; line-height:1.4; }
+.people-number { font-size:13px; line-height:1.5; }
+.editorial-signoff { font-size:14px; line-height:1.5; }
+.directory-people .editorial-signoff > p:first-child { font-size:12px; font-style:italic; }
+.editorial-breadcrumb, .story-photo figcaption { font-size:13px; line-height:1.5; }
+.story-title h1 { font-size:clamp(38px,4vw,57px); font-weight:350; line-height:1.15; letter-spacing:-.04em; }
+.story-copy h2 { font-size:clamp(24px,2.5vw,35px); font-weight:550; line-height:1.25; letter-spacing:-.03em; }
+.story-copy > p { font-size:21px; line-height:1.5; letter-spacing:-.02em; }
+.story-more { font-size:13px; line-height:1.7; }
+.story-activities > p { font-size:24px; line-height:1.4; letter-spacing:-.025em; }
+.directory-side-note h2 { font-size:18px; font-weight:650; line-height:1.4; }
+.directory-side-note p { font-size:16px; line-height:1.6; }
+.document-row h2 { font-size:21px; font-weight:600; line-height:1.3; letter-spacing:-.02em; }
+.document-row p, .directory-footnote { font-size:14px; line-height:1.5; }
+.gear-directory-row > span { font-size:30px; font-weight:600; line-height:1.2; letter-spacing:-.04em; }
+.gear-directory-row h2 { font-size:clamp(23px,2.5vw,34px); font-weight:600; line-height:1.2; letter-spacing:-.035em; }
+.gear-directory-row p, .gear-directory-row > a { font-size:15px; line-height:1.5; }
+.editorial-help h2 { font-size:22px; font-weight:600; line-height:1.3; letter-spacing:-.025em; }
+.editorial-help p { font-size:16px; line-height:1.5; }
+@media(max-width:480px) { .people-caption p { font-size:14px; } .people-caption h2 { font-size:20px; } .people-caption .editorial-link { font-size:13px; } }

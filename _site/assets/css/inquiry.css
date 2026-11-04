@@ -1,183 +1,57 @@
-/* Base Styles */
-html {
-  
-  overflow-x: hidden;
+/* Enquiry page layout only; typography is centralized in base.css. */
+.page-enquiry .site-intro { display:none; }
+.page-enquiry .site-content { padding-top:175px; }
+.enquiry-editorial { color:#111; }
+.enquiry-breadcrumb { display:flex; flex-wrap:wrap; gap:8px; align-items:center; color:#666; margin-bottom:26px; }
+.enquiry-breadcrumb a { color:inherit; }
+.enquiry-breadcrumb [aria-current] { color:#111; }
+.enquiry-heading { margin-bottom:36px; }
+.enquiry-heading h1 { margin:0 0 12px; }
+.enquiry-heading p { margin:0; color:#555; }
+.enquiry-layout { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); gap:clamp(35px,5vw,70px); align-items:start; }
+.enquiry-trip { min-width:0; }
+.enquiry-trip-photo { position:relative; margin:0; background:#24445b; overflow:hidden; }
+.enquiry-trip-photo::after { content:''; position:absolute; inset:50% 0 0; background:linear-gradient(transparent,#061524b3); pointer-events:none; }
+.enquiry-trip-photo > img { display:block; width:100%; height:570px; object-fit:cover; }
+.enquiry-trip-photo figcaption { position:absolute; inset:auto 24px 24px; z-index:1; color:#fff; }
+.enquiry-trip-photo figcaption p { margin:0 0 8px; }
+.enquiry-trip-photo h2 { color:inherit; margin:0; }
+.enquiry-trip-meta { display:flex; flex-wrap:wrap; align-items:center; gap:14px; border-top:1px solid #ccc; padding-top:18px; margin-top:14px; }
+.enquiry-trip-meta a { margin-left:auto; color:#111; text-decoration:underline; text-underline-offset:4px; }
+.enquiry-trip-meta > span:not([hidden]) + span { padding-left:15px; border-left:1px solid #ccc; }
+.enquiry-form { min-width:0; }
+.enquiry-form fieldset { border:0; padding:0; margin:0 0 32px; min-width:0; }
+.enquiry-form legend { padding:0; margin-bottom:24px; }
+.enquiry-fields { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; }
+.enquiry-fields > div { min-width:0; }
+.enquiry-field-wide { grid-column:1 / -1; }
+.enquiry-fields label { display:block; margin-bottom:8px; }
+.site-page-content .enquiry-form :is(input:not([type=hidden]),select,textarea) { width:100%; min-width:0; min-height:44px; box-sizing:border-box; border:1px solid #bbb; border-radius:4px; padding:11px 13px; color:#111; background:#fff; box-shadow:none; }
+.site-page-content .enquiry-form textarea { min-height:125px; resize:vertical; }
+.enquiry-form :is(input,textarea)::placeholder { color:#888; opacity:1; }
+.enquiry-reassurance { color:#666; margin:0 0 20px; }
+.enquiry-submit { display:flex; align-items:center; justify-content:center; gap:18px; width:280px; max-width:100%; min-height:48px; padding:12px 24px; border:1px solid #111; border-radius:3px; background:#111; color:#fff; cursor:pointer; }
+.enquiry-submit svg { width:23px; height:23px; fill:none; stroke:currentColor; stroke-width:1.5; }
+.enquiry-submit:hover { background:#333; }
+.enquiry-whatsapp { margin:16px 0 0; }
+.enquiry-whatsapp a { color:#111; text-decoration:underline; text-underline-offset:3px; }
+.enquiry-signoff { margin-top:48px; padding-top:18px; border-top:1px solid #ccc; display:flex; justify-content:space-between; gap:20px; }
+.enquiry-editorial [hidden] { display:none !important; }
+.enquiry-editorial :focus-visible { outline:2px solid #111; outline-offset:4px; }
+@media(max-width:1023px) {
+ .page-enquiry .site-content { padding-top:125px; }
+ .enquiry-layout { gap:30px; }
+ .enquiry-trip-photo > img { height:520px; }
+ .enquiry-fields { gap:18px; }
 }
-
-body, html {
-  
-  height: 100%;
-  
+@media(max-width:767px) {
+ .enquiry-layout { grid-template-columns:1fr; gap:35px; }
+ .enquiry-trip-photo > img { height:390px; }
+ .enquiry-heading { margin-bottom:28px; }
 }
-
-h1, h2, h3 {
-  
+@media(max-width:480px) {
+ .enquiry-fields { grid-template-columns:1fr; }
+ .enquiry-trip-photo > img { height:330px; }
+ .enquiry-trip-meta { gap:10px; }
+ .enquiry-trip-meta a { margin-left:0; }
 }
-
-p, label, .ar-floating-label,
-.ar-input-set input,
-.ar-input-set select,
-.ar-input-set textarea {
-  
-}
-
-/* Container */
-.inquiry__container {
-  width: 100%;
-  max-width: 1450px;
-  margin: 17em auto 2em auto;
-  padding: 1rem 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  /* Allow content height to grow naturally */
-  min-height: 100vh;
-  box-sizing: border-box;
-}
-
-#sidebar-tour-name {
-  padding: 0em 0 1em 0;
-}
-
-/* Make sure form doesn't overflow on smaller devices */
-@media (max-width: 768px) {
-  .inquiry__container {
-    padding: 1rem;
-    margin-top: 6em;
-    min-height: auto;
-    flex-direction: column;
-    align-items: stretch;
-  }
-}
-/* Flex Layout */
-.inquiry__row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 40px;
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
-/* Form Section */
-.form-section {
-  flex: 2;
-  min-width: 300px;
-}
-
-/* Sidebar Section */
-.sidebar-section {
-  flex: 1;
-  min-width: 300px;
-}
-
-/* Booking Sidebar Styling */
-#booking-details-sidebar {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-}
-
-#booking-details-sidebar img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 15px;
-  border-radius: 4px;
-}
-
-.price-row {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 0;
-}
-
-#sidebar-highlights-list {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 10px;
-}
-
-#sidebar-highlights-list li {
-  
-  
-}
-
-/* Input Styles */
-.ar-input-set {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.ar-input-set input,
-.ar-input-set select,
-.ar-input-set textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 4px;
-  border: 1px solid #8a8c8f;
-  
-  outline: none;
-  transition: border 0.3s;
-}
-
-.ar-input-set input:focus,
-.ar-input-set select:focus,
-.ar-input-set textarea:focus {
-  border-color: #e5e7eb;
-}
-
-.ar-input-set input::-moz-placeholder, .ar-input-set textarea::-moz-placeholder {
-  color: #aaa;
-  
-}
-
-.ar-input-set input::placeholder,
-.ar-input-set textarea::placeholder {
-  color: #aaa;
-  
-}
-
-/* Floating Labels */
-.ar-floating-label {
-  position: absolute;
-  left: 12px;
-  top: -10px;
-  background: white;
-  padding: 0 5px;
-  color: #555;
-  
-  
-}
-
-/* Form Grid */
-.form-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-/* Submit Button */
-.book_btn {
-  color: #444;
-  background: #ffce00;
-  border-radius: 5px;
-  padding: 0.5em 1em;
-  
-  outline: 0;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  
-  
-}
-
-.book_btn:hover {
-  background-color: #e69500;
-}
-
-/* Responsive: Sidebar on top */
-@media (max-width: 768px) {
-  .form-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}/*# sourceMappingURL=inquiry.css.map */

@@ -50,6 +50,7 @@ tags: "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek,
 
 <!-- VARIABLES -->
 {% assign trek = site.data.trek-data[page.title-slug] %}
+{% if page.title-slug == 'dhaulagiri-circuit' %}{% assign trek = site.data.trek-data.dhaulagiri-circuit-trek %}{% endif %}
 
     <!-- <div class="popup_form_wrapper">
         <div class="popup_form">
@@ -107,62 +108,9 @@ tags: "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek,
     </div> -->
 
 
-<div class="container-wide row--padding-wide">
+<div class="container-wide row--padding-wide trip-detail trip-reference">
 
-{% if page.custom_bg %}
-    {% for img in page.custom_bg %}
-        {% assign path = 'assets/css/images/' | append: img | relative_url%}
-        <div class=" banner__trek parallax" style="background-image:url('{{ path }}');">
-    {% endfor %}
-{% else %}
-    {% assign path = 'assets/css/images/welcome.jpeg' | relative_url%}
-        <div class="banner__trek parallax" style="background-image: url('{{ path }}')">
-{% endif %}
-		<span class="banner__overlay"></span>
-			
-		<div class="banner__trek-overview">
-				<!-- <h1 class="trek-name" >{{ page.title }}</h1> -->
-				<h1 class="trek-name" >{{ page.alt }}</h1>
-
-				<p class="trek-time">
-					{% if trek.days %}
-					<span class="trek-time--part1">
-						<span class="trek-span"><span class="counter">{{ trek.days }}</span><span>&nbsp;Days</span></span>
-					</span>
-					<span class="trek-time--part2">
-						<span class="trek-span"><span class="counter">{{ trek.nights }}</span><span>&nbsp;Nights</span></span>
-					</span><br />
-					{% endif %}
-					
-					
-					<span class="trek-slide--price trek-price"><span >From</span> <i class="fa fa-dollar-sign"></i> {{ trek.price }}/-</span>
-					
-				</p>
-
-				
-
-			</div>
-
-
-
-			<!-- <div class="banner__trek-book">
-				<p class="trek-book">
-					<span class="trek-book--btn">
-							<button class="trippy_btn more-trippy_btn" type="submit" name="sendMsg" onclick="imPop();">
-								<span class="trippy_btn-left"></span>Book Now<span class="trippy_btn-right"></span>
-							</button>
-					</span>
-				</p>
-			</div> -->
-
-			<span class="banner__skip">
-					<a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); "></i></a>
-			</span>
-		</div>
-
-
-
-<!-- Trek related content here -->
+{% include trip-intro.html trip=trek kind="trekking" %}
 <div class="two-col-layout" id="twoCol">
 
 
@@ -199,7 +147,7 @@ tags: "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek,
 
 
 
-			<div class="trek--section" style="text-align: left;">
+			<div class="trek--section" id="trip-overview" style="text-align: left;">
 
 				{{ trek.video }}
 
@@ -219,51 +167,29 @@ tags: "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek,
 			</div>
 
 
-			<!-- ITINERARY -->
-			<div class="trek--section" style="text-align: left;">
-				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-map-marked-alt"></i>&nbsp;Itinerary</h2>
+{% include trip-day-viewer.html trip=trek %}
 
-				<ul class="trek-itinerary">
-
-					{% for i in trek.itinerary %}
-					<li>
-						<h2 class="itinerary-subtitle">
-							{{ i.title }}
-						</h2>
-						<p class="content--detail itinerary-detail">
-							{{ i.content }}
-						</p>
-						{% if i.img %}
-							<img style="width: 100%; margin-left: 1em; padding: 1em 0; border-radius: 8px;" src="{{ i.img }}" alt="{{ i.title }}">
-						{% endif %}
-					</li>
-					{% endfor %}
-
-					<li>
-						<h3 class="itinerary-subtitle">TRIP ENDS HERE!</h3>
-					</li>
-				</ul>
-
-			</div>
-
-					
 			{{ content }}
 						
 				
 			<!--GALLERY-->
-			<div class="row row--padding-medium"style="text-align: left;">
+			<div class="row row--padding-medium trip-gallery" id="trip-gallery" style="text-align: left;">
 				<h2 class="content__sub-title">TREK GALLERY&nbsp;<i class="fas fa-camera"></i></h2>
 				<section class="img-gallery-magnific">
 
 				{% for i in (1..10) %}
 					{% assign subPath = page.alt | remove: "Trek" | slugify | append: "/" %}
-					{% assign path = 'assets/css/images/treks/' | append: subPath | relative_url %}
+					{% assign gallery_file = '/assets/css/images/treks/' | append: subPath | append: i | append: '.jpg' %}
+                    {% assign gallery_asset = site.static_files | where: 'path', gallery_file | first %}
+                    {% assign path = 'assets/css/images/treks/' | append: subPath | relative_url %}
+                    {% if gallery_asset %}
 					<div class="magnific-img">
 						<a class="image-popup-vertical-fit" href="{{ path }}{{i}}.jpg" title="{{ page.title }}">
 							<img src="{{ path }}{{i}}.jpg" alt="{{ page.title }}" title="{{page.title}}" />
 						</a>
 					</div>
-				{% endfor %}
+				{% endif %}
+                    {% endfor %}
 
 				</section>
 				<div class="clear"></div>
@@ -274,14 +200,14 @@ tags: "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek,
 					
 		
 			<!-- MAP -->
-			<div class="trek--section" style="text-align: left;">
+			<div class="trek--section" id="trip-map" style="text-align: left;">
 				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-tasks"></i>&nbsp;{{ trek.name }} Map</h2>
 				<img  class="map1" src="{{ trek.map }}" alt=""> 
 			</div>
 
 
 			<!-- What We Provide -->
-			<div class="trek--section" style="text-align: left;">
+			<div class="trek--section" style="text-align: left;" id="trip-inclusions">
 				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-tasks"></i>&nbsp;What's Included</h2>
 				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp; ACCOMMODATION IN KATHMANDU : sharing a twin bedroom at the hotel (3 Star category) in Kathmandu on a bed & breakfast basis  	<br /></p>
 				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp; AIRPORT PICK-UP & DROP : Airport - Hotel transfer – Airport (Pick Up and Drop).   	<br /></p>
@@ -345,7 +271,7 @@ tags: "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek,
 			
 			
 			<!-- Frequently Asked Questions -->
-			<div class="trek--section list-light" style="text-align: left;">
+			<div class="trek--section list-light" id="trip-faq" style="text-align: left;">
 				<h2 class="content__sub-title" style="padding-bottom: 0;">
 					<i class="fa fa-question-circle"></i>&nbsp;Frequently Asked Questions
 				</h2>
@@ -436,7 +362,7 @@ tags: "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek,
 		
 		<!--SideBar-->
 		<div class="content__right" id="scroll-to">
-			<div class="floater" style="z-index:999;">
+			<div class="floater" style="z-index:999;"><h2 class="trip-sidebar-title">Your journey at a glance</h2>
 				<div class="row" style="text-align: left;" >
 					
 
@@ -668,3 +594,6 @@ tags: "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek,
 
 
 
+
+<div class="trip-availability"><div><h2>Have a date in mind?</h2><p>Tell us your plans. We’ll take it from there.</p></div><a href="{{ '/enquiry/' | relative_url }}?tour_slug={{ page.title-slug | url_encode }}">Ask about availability</a></div>
+<script src="{{ '/assets/js/trip-detail.js' | relative_url }}" defer></script>

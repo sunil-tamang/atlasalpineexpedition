@@ -1,226 +1,47 @@
 ---
 layout: default
-title: Send an Enquiry
+title: Plan your journey
 permalink: /enquiry/
-custom_css: "inquiry.css"
+page_class: page-enquiry
+custom_css: inquiry.css
 ---
-
-<div class="inquiry__container">
-  <div class="inquiry__row">
-    
-    <!-- Sidebar (Right on desktop, top on mobile) -->
-    <div class="sidebar-section">
-      <div id="booking-details-sidebar">
-        <h2 id="sidebar-tour-name">Tour Name</h2>
-        <img id="sidebar-tour-image" src="" alt="Tour Image" />
-        <div class="price-row">
-          <span>Total</span>
-          <span id="sidebar-tour-price">$0.00</span>
-        </div>
-        <h4>Highlights</h4>
-        <div id="sidebar-highlights-list">
-        </div>
-      </div>
-    </div>
-
-    <!-- Form (Left on desktop, below on mobile) -->
-    <div class="form-section">
-      <form autocomplete="off" action="https://formsubmit.co/above8000expeditions@gmail.com" method="POST" name="contact_form">
-        <div class="text">
-          <!-- <h1 id="enquiry-title-header">Enquiry Details</h1> -->
-          <!-- <p>Thank you for your interest. Please complete the form below and we’ll get back to you as soon as possible.</p> -->
-        </div>
-
-        <fieldset>
-          <div class="ar-input-set">
-            <input type="text" name="tour_name" required id="id_tour_name" placeholder="Tour Name" />
-          </div>
-
-          <div class="form-grid">
-            <div class="ar-input-set">
-              <input type="text" name="first_name" required id="id_first_name" placeholder="John" />
-              <span class="ar-floating-label">First Name</span>
-            </div>
-
-            <div class="ar-input-set">
-              <input type="text" name="middle_name" id="id_middle_name" placeholder="Brad" />
-              <span class="ar-floating-label">Middle Name</span>
-            </div>
-
-            <div class="ar-input-set">
-              <input type="text" name="last_name" required id="id_last_name" placeholder="Doe" />
-              <span class="ar-floating-label">Last Name</span>
-            </div>
-
-            <div class="ar-input-set">
-              <input type="date" name="date_of_birth" required id="id_date_of_birth" />
-              <span class="ar-floating-label">Date of Birth</span>
-            </div>
-
-            <div class="ar-input-set">
-              <select name="gender" id="id_gender" required>
-                <option value="">Select Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="non-binary">Non-binary</option>
-                <option value="prefer-not-to-say">Prefer Not to Say</option>
-              </select>
-              <span class="ar-floating-label">Gender</span>
-            </div>
-
-            <div class="ar-input-set">
-              <input type="text" name="phone" required id="id_phone" placeholder="+977 123-456-7890" />
-              <span class="ar-floating-label">Contact Number</span>
-            </div>
-
-            <div class="ar-input-set">
-              <input type="email" name="email" id="id_email" required placeholder="youremail@example.com" />
-              <span class="ar-floating-label">E-Mail Address</span>
-            </div>
-
-            <div class="ar-input-set">
-              <textarea rows="1" id="id_user_remarks" name="user_remarks" placeholder="User Remarks"></textarea>
-              <span class="ar-floating-label">Remarks</span>
-            </div>
-          </div>
-
-          <div class="text">
-            <p>Don't worry, we won’t spam you.</p>
-          </div>
-
-          <input type="hidden" name="_next" value="https://above8000.com/thanks">
-          <input type="hidden" name="_captcha" value="false">
-
-          <div class="ar-form-btn-span">
-            <button class="book_btn" type="submit" name="sendMsg">
-              <span class="trippy_btn-left"></span>Send An Enquiry<span></span>
-            </button>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-
-  </div>
+<div class="enquiry-editorial">
+ <nav class="enquiry-breadcrumb" aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Home</a><span aria-hidden="true">/</span><a id="enquiry-trip-breadcrumb" hidden></a><span id="enquiry-trip-divider" aria-hidden="true" hidden>/</span><span aria-current="page">Enquiry</span></nav>
+ <header class="enquiry-heading"><h1 id="enquiry-heading">Let’s plan your journey.</h1><p>Tell us when you’d like to go and who’s coming.</p></header>
+ <div class="enquiry-layout">
+  <aside class="enquiry-trip" aria-label="Your trip">
+   <figure class="enquiry-trip-photo"><img id="sidebar-tour-image" src="{{ '/assets/css/images/bg/peakbg.jpg' | relative_url }}" alt="Himalayan mountains and a high-altitude camp" width="1000" height="1300"><figcaption><p>YOUR TRIP</p><h2 id="sidebar-tour-name">Your Himalayan journey</h2></figcaption></figure>
+   <div class="enquiry-trip-meta"><span id="enquiry-trip-duration" hidden></span><span id="enquiry-trip-category">Nepal</span><a id="enquiry-trip-link" href="{% link _activities/peak-climbing.html %}">Explore journeys</a></div>
+  </aside>
+  <form class="enquiry-form" action="https://formsubmit.co/atlasalpineexpedition@gmail.com" method="POST" name="contact_form">
+   <fieldset><legend>01 / About you</legend><div class="enquiry-fields">
+    <div><label for="id_full_name">Full name</label><input id="id_full_name" name="full_name" type="text" placeholder="Your full name" autocomplete="name" required></div>
+    <div><label for="id_email">Email address</label><input id="id_email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
+    <div><label for="id_country">Country / region</label><input id="id_country" name="country" type="text" placeholder="e.g. Nepal, United Kingdom, Australia" autocomplete="country-name" required></div>
+    <div><label for="id_phone">Phone / WhatsApp (optional)</label><input id="id_phone" name="phone" type="tel" placeholder="e.g. +977 98XXXXXXXX" autocomplete="tel"></div>
+   </div></fieldset>
+   <fieldset><legend>02 / Your plans</legend><div class="enquiry-fields">
+    <div class="enquiry-field-wide" id="enquiry-tour-field"><label for="id_tour_name">Trip or mountain</label><input id="id_tour_name" name="tour_name" type="text" placeholder="Where would you like to go?" required></div>
+    <div><label for="id_month">Preferred month</label><select id="id_month" name="preferred_month" required><option value="">Select a month</option>{% assign months = 'January,February,March,April,May,June,July,August,September,October,November,December' | split: ',' %}{% for month in months %}<option>{{ month }}</option>{% endfor %}<option>Flexible / not sure yet</option></select></div>
+    <div><label for="id_group_size">Group size</label><select id="id_group_size" name="group_size" required><option value="">Select group size</option><option value="1">Solo traveller</option><option value="2">2 people</option><option value="3-4">3–4 people</option><option value="5-8">5–8 people</option><option value="9+">9+ people</option><option>Not sure yet</option></select></div>
+    <div class="enquiry-field-wide"><label for="id_user_remarks">Anything you’d like us to know?</label><textarea id="id_user_remarks" name="user_remarks" rows="5" placeholder="Your experience, questions or plans…"></textarea></div>
+   </div></fieldset>
+   <input type="hidden" name="_next" value="{{ '/thanks/' | absolute_url }}"><input type="hidden" name="_captcha" value="false">
+   <p class="enquiry-reassurance">This is an enquiry. No payment is required.</p>
+   <button class="enquiry-submit" type="submit">Send enquiry<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></button>
+   <p class="enquiry-whatsapp">Prefer to talk? <a href="https://wa.me/9779863683851">Chat on WhatsApp</a></p>
+  </form>
+ </div>
+ <div class="enquiry-signoff"><span>Atlas Alpine Expedition</span><span>Nepal</span></div>
 </div>
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const urlSlug = urlParams.get('tour_slug');
-    const fallbackSlug = "{{ page.title-slug | default: page.slug | default: page.permalink | split: '/' | last }}";
-    const tourSlug = urlSlug || fallbackSlug;
-
-    const trekData = {
-      {% for slug_key in site.data.trek-data %}
-        "{{ slug_key[0] }}": {
-          slug: "{{ slug_key[0] }}",
-          title: "{{ slug_key[1].name }}",
-          image: "/{{ slug_key[1].photos }}",
-          price: "{{ slug_key[1].price }}",
-          highlights: [
-            "Days: {{ slug_key[1].days }}",
-            "Difficulty: {{ slug_key[1].difficulty }}",
-            "Distance: {{ slug_key[1].distance | default: 'N/A' }}",
-          ]
-        },
-      {% endfor %}
-    };
-
-    const peakData = {
-      {% for slug_key in site.data.peak-data %}
-        "{{ slug_key[0] }}": {
-          slug: "{{ slug_key[0] }}",
-          title: "{{ slug_key[1].name }}",
-          image: "/{{ slug_key[1].photos }}",
-          price: "{{ slug_key[1].price }}",
-          highlights: [
-            "Days: {{ slug_key[1].days }}",
-            "Altitude: {{ slug_key[1].height }} m",
-            "Difficulty: {{ slug_key[1].difficulty }}",
-          ]
-        },
-      {% endfor %}
-    };
-
-    const bikeData = {
-      {% for slug_key in site.data.bike-data %}
-        "{{ slug_key[0] }}": {
-          slug: "{{ slug_key[0] }}",
-          title: "{{ slug_key[1].name }}",
-          image: "/{{ slug_key[1].photos }}",
-          price: "{{ slug_key[1].price }}",
-          highlights: [
-            "Days: {{ slug_key[1].days }}",
-            "Region: {{ slug_key[1].region }}",
-            "Difficulty: {{ slug_key[1].difficulty | default: 'Moderate' }}",
-          ]
-        },
-      {% endfor %}
-    };
-
-    const rockData = {
-      {% for slug_key in site.data.rock-data %}
-        "{{ slug_key[0] }}": {
-          slug: "{{ slug_key[0] }}",
-          title: "{{ slug_key[1].name }}",
-          image: "/{{ slug_key[1].photos }}",
-          price: "{{ slug_key[1].price }}",
-          highlights: [
-            "Location: {{ slug_key[1].location }}",
-            "Duration: {{ slug_key[1].duration }}",
-            "Difficulty: {{ slug_key[1].difficulty | default: 'Moderate' }}",
-          ]
-        },
-      {% endfor %}
-    };
-
-    const raftingData = {
-      {% for slug_key in site.data.rafting-data %}
-        "{{ slug_key[0] }}": {
-          slug: "{{ slug_key[0] }}",
-          title: "{{ slug_key[1].name }}",
-          image: "/{{ slug_key[1].photos }}",
-          price: "{{ slug_key[1].price }}",
-          highlights: [
-            "River: {{ slug_key[1].river }}",
-            "Days: {{ slug_key[1].days }}",
-            "Grade: {{ slug_key[1].grade | default: 'Class III' }}",
-          ]
-        },
-      {% endfor %}
-    };
-
-    const allTours = {
-      ...trekData,
-      ...peakData,
-      ...bikeData,
-      ...rockData,
-      ...raftingData,
-    };
-
-    const requestedMountain = urlParams.get('mountain');
-    const currentTour = allTours[tourSlug];
-
-    if (currentTour) {
-      document.getElementById('id_tour_name').value = currentTour.title;
-      document.getElementById('sidebar-tour-name').innerText = currentTour.title;
-      document.getElementById('sidebar-tour-image').src = currentTour.image;
-      document.getElementById('sidebar-tour-price').innerText = `$ ${currentTour.price}`;
-
-      const highlightsList = document.getElementById('sidebar-highlights-list');
-      highlightsList.innerHTML = '';
-      currentTour.highlights.forEach(item => {
-        const p = document.createElement('p');
-        p.textContent = item;
-        highlightsList.appendChild(p);
-      });
-    } else if (requestedMountain) {
-      document.getElementById('id_tour_name').value = requestedMountain + ' Expedition';
-      document.getElementById('sidebar-tour-name').textContent = requestedMountain + ' Expedition';
-      document.getElementById('sidebar-tour-price').textContent = 'Contact us for details';
-      document.getElementById('sidebar-tour-image').hidden = true;
-      document.getElementById('id_user_remarks').value = 'I would like to enquire about an expedition to ' + requestedMountain + '.';
-    }
-  });
+<script id="enquiry-tour-data" type="application/json">[
+{% assign enquiry_groups = 'trek-data,peak-data,bike-data,rock-data,rafting-data' | split: ',' %}
+{% assign enquiry_first = true %}
+{% for group in enquiry_groups %}{% for entry in site.data[group] %}{% unless enquiry_first %},{% endunless %}{% assign enquiry_first = false %}
+{% assign tour = entry[1] %}{% assign tour_slug = entry[0] %}{% assign tour_url = '' %}
+{% for doc in site.documents %}{% if doc.title-slug == tour_slug %}{% assign tour_url = doc.url %}{% endif %}{% if tour_slug == 'dhaulagiri-circuit-trek' and doc.title-slug == 'dhaulagiri-circuit' %}{% assign tour_url = doc.url %}{% endif %}{% endfor %}
+{% assign tour_image = tour.photos | default: '/assets/css/images/bg/peakbg.jpg' %}
+{"slug":{{ tour_slug | jsonify }},"title":{{ tour.name | jsonify }},"image":{{ tour_image | relative_url | jsonify }},"days":{{ tour.days | default: '' | jsonify }},"url":{{ tour_url | relative_url | jsonify }},"group":{{ group | jsonify }}}
+{% endfor %}{% endfor %}]
 </script>
+<script src="{{ '/assets/js/enquiry.js' | relative_url }}" defer></script>
