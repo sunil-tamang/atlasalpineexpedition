@@ -83,7 +83,7 @@
 .site-page-content .legal-docs-list a { color: #111; }
 .site-page-content table { width: 100%; border-collapse: collapse; background: #fff; }
 .site-page-content td, .site-page-content th { padding: 14px; border: 1px solid #0002; text-align: left; }
-.site-page-content a:not([class]):hover { text-decoration: underline; text-underline-offset: 4px; }
+/* .site-page-content a:not([class]):hover { text-decoration: underline; text-underline-offset: 4px; } */
 .reference-site .home-footer-grid h2 { color: #111; }
 .reference-site .home-footer p { margin-top: 0; padding-block: 0; }
 .reference-site .home-footer a { color: inherit; }
@@ -256,7 +256,7 @@
 .trip-dialog-grid { display:grid; gap:20px; }
 .trip-dialog-grid figure { margin:0; }
 .trip-dialog-grid img { display:block; width:100%; height:auto; }
-.trip-reference-tabs { display:flex; align-items:stretch; justify-content:space-between; gap:20px; margin-top:35px; border-bottom:1px solid #aeb1b4; overflow-x:auto; }
+.trip-reference-tabs { display:flex; align-items:stretch; justify-content:flex-start; gap:50px; margin-top:35px; border-bottom:1px solid #aeb1b4; overflow-x:auto; }
 .trip-reference-tabs a { flex-shrink:0; padding:18px 2px; border-bottom:3px solid transparent; color:#111; }
 .trip-reference-tabs a[aria-selected=true] { border-bottom-color:#111; }
 .site-page-content .trip-reference .two-col-layout { display:block; margin:40px 0 0; }
@@ -318,3 +318,10 @@
 .trip-reference:not(.is-enhanced) .trip-day-panel { margin-bottom:40px; }
 
 .trip-day-facts:empty { display:none; }
+
+/* Thumbnail selection changes only image state, not gallery dimensions. */
+.trip-intro-main-image { transition:opacity 180ms ease; }
+.trip-intro-main-image.is-image-changing { opacity:.3; }
+.trip-intro-main-image[role=button] { cursor:zoom-in; }
+.trip-photo-trigger[aria-pressed=true] { outline:2px solid #111; outline-offset:3px; }
+@media(prefers-reduced-motion:reduce) { .trip-intro-main-image { transition:none; } }

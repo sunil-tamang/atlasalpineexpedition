@@ -1404,7 +1404,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 				if(products[i].stock > 0){
 						content+= '<div class="row row--padding-medium">'
 						content+= '<div class="wrapper col-medium" data-aos="zoom-in" data-aos-easing="ease-in-out-quad">'
-						content+= '<a href="/activities/peak-climbing/'+ products[i].urlName +'" class="wopper wopper--trek" style="display: flex; justify-content: center; background-image: url(\'/'+products[i].img+'\')">'
+						content+= '<a href="/activities/expeditions/'+ products[i].urlName +'" class="wopper wopper--trek" style="display: flex; justify-content: center; background-image: url(\'/'+products[i].img+'\')">'
 						content+= '<span class="banner__overlay">'
 						content+= '</span>'
 						content+= '<span class="trek__title">'
@@ -1429,7 +1429,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 						content+= '<span>'+ products[i].descShort +' </span>'
 						content+= '</p>'
 						content+= '<p class="trippy_btn-wrapper">'
-						content+= '<a href="/activities/peak-climbing/'+ products[i].urlName +'"><button class="book_btn"><span class="trippy_btn-left"></span>Book Now<span class="trippy_btn-right"></span></button>'
+						content+= '<a href="/activities/expeditions/'+ products[i].urlName +'"><button class="book_btn"><span class="trippy_btn-left"></span>Book Now<span class="trippy_btn-right"></span></button>'
 						content+= '</a><br />'
 						content+= '</p>'
 						content+= '</div>'

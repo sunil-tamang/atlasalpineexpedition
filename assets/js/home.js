@@ -119,3 +119,123 @@
  reduce.addEventListener('change', () => { if (reduce.matches) { userPaused = true; video.pause(); video.classList.remove('is-playing'); } });
  if (!userPaused) play();
 })();
+// Homepage guides: circular portrait selection, pointer gestures and horizontal trackpads.
+(() => {
+ const section = document.querySelector('.home-guides-carousel');
+ if (!section) return;
+ const viewport = section.querySelector('.home-guide-carousel');
+ const track = section.querySelector('.home-guide-track');
+ const cards = [...track.querySelectorAll('[data-guide-card]')];
+ if (!cards.length) return;
+ const controls = [...section.querySelectorAll('[data-guide-step]')];
+ const status = section.querySelector('#home-guide-status');
+ let active = Math.max(0,cards.findIndex(card => card.hasAttribute('data-guide-featured')));
+ let pointer = null, suppressClickUntil = 0, wheelTotal = 0, lastWheel = 0, wheelLockUntil = 0;
+ const wrap = index => (index % cards.length + cards.length) % cards.length;
+ function draw(announce = true) {
+  const width = cards[active].offsetWidth;
+  const gap = width < 350 ? 10 : 12;
+  cards.forEach((card,index) => {
+   let offset = wrap(index - active);
+   if (offset > cards.length / 2) offset -= cards.length;
+   const distance = Math.abs(offset);
+   const scale = distance === 0 ? 1 : distance === 1 ? .76 : .6;
+   const x = distance === 0 ? 0 : Math.sign(offset) * (distance === 1 ? width * .88 + gap : width * (1.56 + (distance - 2) * .62) + gap * distance);
+   card.style.setProperty('--guide-x',`${x}px`);
+   card.style.setProperty('--guide-scale',String(scale));
+   card.style.setProperty('--guide-opacity',distance > 2 ? '0' : distance === 0 ? '1' : distance === 1 ? '.72' : '.38');
+   card.inert = distance > 2;
+   card.setAttribute('aria-hidden',String(distance > 2));
+   card.style.setProperty('--guide-layer',String(5 - Math.min(distance,4)));
+   card.classList.toggle('is-active',index === active);
+   card.tabIndex = index === active ? 0 : -1;
+   card.setAttribute('aria-label',index === active ? (card.dataset.guidePlaceholder ? `View team directory — ${card.dataset.guideName}, sample profile` : `View ${card.dataset.guideName}’s profile`) : `Feature ${card.dataset.guideName}${card.dataset.guidePlaceholder ? ', sample profile' : ''}`);
+   if (index === active) card.setAttribute('aria-current','true'); else card.removeAttribute('aria-current');
+   const caption = card.querySelector('.home-guide-caption');
+   caption.setAttribute('aria-hidden',String(index !== active));
+  });
+  if (announce) status.textContent = `${cards[active].dataset.guideName}, ${cards[active].dataset.guideRole}${cards[active].dataset.guidePlaceholder ? ", sample profile" : ""}. Guide ${active + 1} of ${cards.length}.`;
+ }
+ function select(index, focus = false) {
+  active = wrap(index);
+  track.style.setProperty('--guide-drag','0px');
+  draw();
+  if (focus) cards[active].focus({preventScroll:true});
+ }
+ cards.forEach((card,index) => card.addEventListener('click',event => {
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  if (index !== active) { event.preventDefault(); select(index); }
+ }));
+ controls.forEach(button => {
+  button.hidden = cards.length < 2;
+  button.addEventListener('click',() => select(active + Number(button.dataset.guideStep)));
+ });
+ viewport.addEventListener('keydown',event => {
+  if (!['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
+  event.preventDefault();
+  const next = event.key === 'Home' ? 0 : event.key === 'End' ? cards.length - 1 : active + (event.key === 'ArrowRight' ? 1 : -1);
+  select(next,!!event.target.closest('[data-guide-card]'));
+ });
+ track.addEventListener('dragstart',event => event.preventDefault());
+ track.addEventListener('click',event => {
+  if (performance.now() < suppressClickUntil) { event.preventDefault(); event.stopPropagation(); }
+ },true);
+ track.addEventListener('pointerdown',event => {
+  if (!event.isPrimary || (event.pointerType === 'mouse' && event.button !== 0)) return;
+  pointer = {id:event.pointerId,x:event.clientX,y:event.clientY,delta:0,dragging:false};
+ });
+ track.addEventListener('pointermove',event => {
+  if (!pointer || pointer.id !== event.pointerId) return;
+  const dx = event.clientX - pointer.x, dy = event.clientY - pointer.y;
+  if (!pointer.dragging) {
+   if (Math.abs(dy) > 10 && Math.abs(dy) > Math.abs(dx)) { pointer = null; return; }
+   if (Math.abs(dx) < 9 || Math.abs(dx) <= Math.abs(dy)) return;
+   pointer.dragging = true;
+   track.setPointerCapture(event.pointerId);
+   track.classList.add('is-dragging');
+  }
+  pointer.delta = dx;
+  const limit = cards[active].offsetWidth * .6;
+  track.style.setProperty('--guide-drag',`${Math.max(-limit,Math.min(limit,dx))}px`);
+ });
+ function finishPointer(event,cancelled = false) {
+  if (!pointer || pointer.id !== event.pointerId) return;
+  const gesture = pointer; pointer = null;
+  track.classList.remove('is-dragging');
+  if (track.hasPointerCapture(event.pointerId)) track.releasePointerCapture(event.pointerId);
+  if (gesture.dragging) {
+   suppressClickUntil = performance.now() + 350;
+   const step = !cancelled && Math.abs(gesture.delta) > 35 ? (gesture.delta < 0 ? 1 : -1) : 0;
+   select(active + step);
+  }
+ }
+ track.addEventListener('pointerup',event => finishPointer(event));
+ track.addEventListener('pointercancel',event => finishPointer(event,true));
+ track.addEventListener('lostpointercapture',event => finishPointer(event,true));
+ track.addEventListener('pointerleave',event => { if (pointer && pointer.id === event.pointerId && !pointer.dragging) pointer = null; });
+ track.addEventListener('wheel',event => {
+  const dx = event.deltaX || (event.shiftKey ? event.deltaY : 0);
+  const dy = event.shiftKey ? 0 : event.deltaY;
+  if (!dx || Math.abs(dx) <= Math.abs(dy) || cards.length < 2) return;
+  event.preventDefault();
+  const now = performance.now();
+  if (now < wheelLockUntil) return;
+  if (now - lastWheel > 160) wheelTotal = 0;
+  lastWheel = now;
+  wheelTotal += dx * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? track.clientWidth : 1);
+  if (Math.abs(wheelTotal) >= 45) {
+   select(active + (wheelTotal > 0 ? 1 : -1));
+   wheelTotal = 0; wheelLockUntil = now + 450;
+  }
+ },{passive:false});
+ function resize() {
+  track.classList.add('is-initializing');
+  draw(false);
+  requestAnimationFrame(() => track.classList.remove('is-initializing'));
+ }
+ track.classList.add('is-initializing','is-ready');
+ draw();
+ requestAnimationFrame(() => track.classList.remove('is-initializing'));
+ if ('ResizeObserver' in window) new ResizeObserver(resize).observe(track);
+ else window.addEventListener('resize',resize);
+})();

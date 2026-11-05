@@ -1,411 +1,831 @@
-# Climbing Guide
-
 - name: lama sherpa
+
   slug: gelmu-sherpa
+
+  category: field-staff
+
+  subcategory: climbing-guides
+
+  placeholder: false
+
   role: Climbing Guide
-  photos: "assets/css/images/team/9.jpg"
+
+  photos: "assets/css/images/team/01.jpeg"
+
   description: "Gelmu Sherpa is a distinguished mountaineer from Nepal, widely recognized for her exceptional achievements in high-altitude climbing. With a career spanning numerous peaks like Mount Everest, Ama Dablam, and Lhotse, she has earned her place among the most respected climbers in the region. <br/><br/> Starting her journey at a young age, Gelmu's passion for exploring the highest mountains drove her to master technical climbing, ice climbing, and high-altitude navigation. Her extensive training and experience have made her a highly skilled guide and a trusted leader on expeditions. <br/><br/> As a professional guide, Gelmu is known for her meticulous planning and ability to make critical decisions in extreme conditions. Her dedication to safety and her deep knowledge of the mountains have earned her the respect of clients and fellow climbers. <br/><br/> Beyond her climbing achievements, Gelmu is an advocate for empowering women in mountaineering. She mentors aspiring climbers, promotes ethical climbing practices, and serves as a role model in the adventure community. "
+
   mountains:
+
     - name: Everest
+
       summited: 1
+
       years: [2025]
+
     - name: Mera Peak
+
       summited: 12
+
       years: [2019, 2020, 2021, 2022]
+
     - name: Lobuche Peak
+
       summited: 8
+
       years: [2019, 2020, 2021, 2022]
+
     - name: Island Peak
+
       summited: 7
+
       years: [2019, 2020, 2021, 2022]
+
     - name: Ama Dablam
+
       summited: 1
+
       years: [2023]
+
   trainings:
+
     - course: Introductory Rock Climbing Training
+
       institution: Nepal Mountaineering Instructors Association
+
       year: 2022
+
     - course: Basic Mountain Rescue Training
+
       institution: Nepal Mountaineering Instructors Association
+
       year: 2022
+
     - course: Rock Level-1
+
       institution: Nepal Mountaineering Instructors Association
+
       year: 2023
+
     - course: ICE Level-1
+
       institution: Nepal Mountaineering Instructors Association
+
       year: 2023
 
     - course: High Mountain Rescue Training
+
       institution: Nepal Mountaineering Instructors Association
+
       year: 2025
 
     - course: First-Aid
+
       institution: Himalyan Medics
+
       year: 2022
 
-# - name: Gelmo Sherpa
-#   role: Climbing Guide
-#   photos: "assets/css/images/team/2.jpg"
-#   description: Gelmo Sherpa is a distinguished climber from Nepal, renowned for her remarkable achievements in the world of mountaineering. With a career spanning numerous peaks and mountain ranges, Gelmu has made her mark as one of the most accomplished climbers in the region. Her extensive experience and unwavering dedication have solidified her reputation as a leading guide and mountaineering expert.
-#   mountains:
-#     - name: Mera Peak
-#       summited: 4
-#       years: [2019, 2020, 2021, 2022]
-#     - name: Ama Dablam
-#       summited: 1
-#       years: [2018]
-#   slug: gelmu-sherpa
-
-# - name: Gelu Sherpa
-#   role: Climbing Guide
-#   photos: "assets/css/images/team/01.jpg"
-#   phone: "123-456-7890"
-#   email: "john.doe@email.com"
-#   facebook: "https://facebook.com/johndoe"
-#   instagram: "https://instagram.com/johndoe"
-#   description: Gelu Sherpa is a seasoned climber from Nepal with a unique and inspiring background. Before dedicating his life to the mountains, Gelu was a monk at a monastery, where he cultivated a deep sense of discipline, spirituality, and inner strength. However, his love for the majestic peaks of the Himalayas drew him away from the monastic life and onto the challenging trails that lead to the world’s highest summits. <br /> <br/>  Gelu’s journey from the serene environment of the monastery to the rugged and demanding world of mountaineering has shaped him into a climber with exceptional resilience and a profound respect for nature. His spiritual background brings a unique perspective to his expeditions, allowing him to navigate the mountains with a calm and focused mind, even in the most trying conditions. <br /> <br /> As a member of The Above 8000 team, Gelu’s experience as both a monk and a mountaineer makes him a valuable guide. He has led numerous successful expeditions, where his combination of physical endurance and mental clarity has earned him the trust and admiration of climbers from around the world. <br/>
-#   mountains:
-#     - name: Everest
-#       summited: 1
-#       years: [2025]
-#     - name: Ama Dablam
-#       summited: 1
-#       years: [2024]
-#     - name: Lobuche
-#       summited: 1
-#       years: [2024]
-#     - name: Island Peak
-#       summited: 1
-#       years: [2024]
-#     - name: Mera Peak
-#       summited: 1
-#       years: [2021]
-
-#   slug: gelu-sherpa
-#   trainings:
-#     - course: Introductory Rock Climbing Training
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2022
-#     - course: Basic Mountain Rescue Training
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2022
-#     - course: Rock Level-1
-#       institution: Khumbu Climbing Center
-#       year: 2023
-#     - course: ICE Level-1
-#       institution: Khumbu Climbing Center
-#       year: 2023
-#     - course: High Mountain Rescue Training
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2025
-#     - course: First-Aid
-#       institution: Himalyan Medics
-#       year: 2022
-
-# - name: Sensai Pema Waiba
-#   role: Climbing Guide
-#   photos: "assets/css/images/team/sensai.jpg"
-#   phone: "123-456-7890"
-#   email: "john.doe@email.com"
-#   facebook: "https://facebook.com/johndoe"
-#   instagram: "https://instagram.com/johndoe"
-#   description: Sensai Pema Waiba is a seasoned climber and filmmaker who has conquered some of the highest peaks in the Himalayas. With a passion for storytelling and adventure, Pema has successfully climbed Mount Everest not once, but twice, and has also stood atop Lobuche, a formidable mountain in the Khumbu region. As a filmmaker, Pema brings a unique perspective to the world of mountaineering, capturing the beauty and drama of the high mountains through his lens. His experience and expertise make him an invaluable asset to our team at Above 8000.
-#   mountains:
-#     - name: Everest
-#       summited: 2
-#       years: [2023,2024]
-#     - name: Lobuche Peak
-#       summited: 2
-#       years: [2023,2024]
-#     - name:  Manaslu
-#       summited: 1
-#       years: [2024]
-#     - name: Sishapangma
-#       summited: 1
-#       years: [2024]
-#   slug: sensai-pema-waiba
-#   trainings:
-#     - course: Introductory Rock Climbing Training
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2022
-#     - course: Basic Mountain Rescue Training
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2022
-#     - course: First-Aid
-#       institution: Himalyan Medics
-#       year: 2024
-
-# - name: Lakpa Tenjen Sherpa
-#   role: Climbing Guide
-#   photos: "assets/css/images/team/11.jpg"
-#   description:
-#   mountains:
-#     - name: Makalu
-#       summited: 1
-#       years: [2024]
-#   slug: lakpa-tenjen-sherpa
-
-# - name: Prem Mamba
-#   role: Climbing Guide
-#   photos: "assets/css/images/team/4.jpg"
-#   description: Prem Mamba is the legendary force behind Above 8000s’ most daring climbs. With the Himalayas as his playground, Prem has mastered the art of summiting the world's highest peaks, including Everest, Lhotse, Ama Dablam, and Lobuche. His name is synonymous with resilience, precision, and an unyielding passion for mountaineering. As our chief mountaineer, Prem doesn’t just lead expeditions—he crafts unforgettable experiences, pushing the boundaries of adventure while ensuring the utmost safety and success for our clients. At The Above 8000, Prem Mamaba isn’t just a guide; he’s the embodiment of the spirit of exploration that drives us to new heights.
-#   mountains:
-#     - name: Mount Everest
-#       summited: 1
-#       years: [2024]
-#     - name: Lhotse
-#       summited: 1
-#       years: [2023]
-#     - name: Ama Dablam
-#       summited: 1
-#       years: [2023]
-#   slug: prem-mamba
-#   trainings:
-#     - course: Introductory Rock Climbing Training
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2022
-#     - course: Basic Mountain Rescue Training
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2022
-#     - course: Rock Level 1
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2025
-
-# - name: Singi Lama
-#   role: Managing Director
-#   photos: "assets/css/images/team/8.jpg"
-#   description: Singi Lama is the Managing Director of Atlas Alpine Expedition, responsible for overall expedition planning, logistics, and operational leadership. With extensive experience in high-altitude expedition management, Singi ensures that every climb is professionally organized, safety-focused, and ethically guided. His deep knowledge of Himalayan routes, permits, and team coordination plays a crucial role in delivering seamless and successful expeditions across Nepal.
-#   mountains:
-#     - name: Everest
-#       summited: 1
-#       years: [2011]
-#     - name: Lobuche
-#       summited: 7
-#       years: [From 2005, To 2019]
-#     - name: Island Peak
-#       summited: 109
-#       years: [From 1999, To 2019]
-#     - name: Kanchanjunga
-#       summited: 1
-#       years: [2004]
-#     - name: Makalu
-#       summited: 1
-#       years: [2009]
-#     - name: DhaulagiriDhaulagiri
-#       summited: 1
-#       years: [2008]
-#     - name: Muztagh Ata
-#       summited: 2
-#       years: [2014, 2015]
-#     - name: Kokodak Dome
-#       summited: 2
-#       years: [2014, 2015]
-#     - name: Nun Kun peak
-#       summited: 1
-#       years: [2004]
-#   slug: singi-lama
-#   trainings:
-    # - course: Introductory Rock Climbing Training
-    #   institution: Nepal Mountaineering Instructors Association
-    #   year: 2022
-    # - course: Basic Mountain Rescue Training
-    #   institution: Nepal Mountaineering Instructors Association
-    #   year: 2022
-    # - course: Rock Level-1
-    #   institution: Khumbu Climbing Center
-    #   year: 2024
-    # - course: High Mountain Rescue Training
-    #   institution: Nepal Mountaineering Instructors Association
-    #   year: 2025
-    # - course: First-Aid
-    #   institution: Himalyan Medics
-    #   year: 2024
-
 - name: Sonam Tshering Lama
+
   role: Climbing Guide
-  photos: "assets/css/images/team/9.jpg"
+
+  photos: "assets/css/images/team/02.jpeg"
+
   description: Sonam Tshering Lama is a professional climbing guide at Atlas Alpine Expedition with strong experience guiding clients on trekking peaks and high-altitude expeditions. He is known for his technical rope skills, safe guiding practices, and calm approach in challenging mountain environments. Sonam actively supports route preparation, summit coordination, and client safety, making him a dependable guide on both technical climbs and expedition-style ascents.
+
   mountains:
+
     - name: Everest
+
       summited: 2
+
       years: [2024, 2025]
+
     - name: Ama Dablam
+
       summited: 3
+
       years: [2020, 2021, 2025]
+
     - name: Lobuche
+
       summited: 2
+
       years: [2024, 2025]
+
     - name: Island Peak
+
       summited: 1
+
       years: [2024]
+
     - name: Pisang Peak
+
       summited: 1
+
       years: [2023]
 
   slug: sonam-lama
 
+  category: field-staff
+
+  subcategory: climbing-guides
+
+  placeholder: false
+
   trainings:
+
     - course: Introductory Rock Climbing Training
+
       institution: Nepal Mountaineering Instructors Association
+
       year: 2022
+
     - course: Basic Mountain Rescue Training
+
       institution: Nepal Mountaineering Instructors Association
+
       year: 2022
+
     - course: Rock Level-1
+
       institution: Nepal Mountaineering Instructors Association
+
       year: 2022
+
     - course: High Mountain Rescue Training
+
       institution: Nepal Mountaineering Instructors Association
+
       year: 2023
+
     - course: Aspirant Mountain Guide – Component 1
+
       institution: Nepal National Mountain Guide Association (NNMGA)
+
       year: 2024
+
     - course: Aspirant Mountain Guide – Component 2
+
       institution: Nepal National Mountain Guide Association (NNMGA)
+
       year: 2024
+
     - course: Aspirant Mountain Guide – Component 3
+
       institution: Nepal National Mountain Guide Association (NNMGA)
+
       year: 2024
 
     - course: First-Aid
+
       institution: Himalayan Medics
+
       year: 2024
 
 - name: Dawa Sherpa
+
   role: Climbing Guide
-  photos: "assets/css/images/team/7.jpg"
+
+  photos: "assets/css/images/team/03.jpeg"
+
   description: Sunil Tamang is a highly skilled and ambitious climbing guide at Above 8000, with a strong passion for leading expeditions in the Himalayas. With a impressive climbing resume, Sunil has successfully summited several notable peaks, including Bauntse, Island Peak, and Mera Peak."
+
   mountains:
+
     - name: Everest
+
       summited: 1
+
       years: [2025]
+
     - name: Baruntse
+
       summited: 1
+
       years: [2024]
+
     - name: Lobuche
+
       summited: 1
+
       years: [2024]
+
     - name: Island Peak
+
       summited: 1
+
       years: [2024]
+
   slug: sunil-ghalan
+
+  category: field-staff
+
+  subcategory: climbing-guides
+
+  placeholder: false
+
   trainings:
+
     - course: Introductory Rock Climbing Training
+
       institution: Nepal Mountaineering Instructors Association
+
       year: 2022
+
     - course: Basic Mountain Rescue Training
+
       institution: Nepal Mountaineering Instructors Association
+
       year: 2022
+
     - course: Rock Level-1
+
       institution: Khumbu Climbing Center
+
       year: 2024
+
     - course: High Mountain Rescue Training
+
       institution: Nepal Mountaineering Instructors Association
+
       year: 2025
+
     - course: First-Aid
+
       institution: Himalyan Medics
+
       year: 2024
-# - name: Pema Sherpa
-#   role: Climbing Guide
-#   photos: "assets/css/images/team/8.jpg"
-#   description:
-#   mountains:
-#     - name: Lobuche Peak
-#       summited: 1
-#       years: [2023]
-#   slug: pema-sherpa
 
-# Support Climbers
-# - name: Jane Smith
-#   role: Support Climbers
-#   photos: "assets/css/images/team/1.jpg"
-#   mountains:
-#     - name: Mount Everest
-#       summited: 3
-#       years: [2019, 2020, 2021]
-#     - name: K2
-#       summited: 2
-#       years: [2018, 2020]
-#   slug: jane-smith
+# SAMPLE / PLACEHOLDER — Managing Director*
 
-# - name: Emily Blue
-#   role: Support Climbers
-#   photos: "assets/css/images/team/5.jpg"
-#   mountains:
-#     - name:
-#       summited:
-#       years: []
+- name: "Nima Dorje Sherpa"
 
-# - name: Charlotte Grey
-#   role: Support Climbers
-#   photos: "assets/css/images/team/9.jpg"
-#   mountains:
-#     - name:
-#       summited:
-#       years: []
+  slug: "placeholder-nima-dorje-sherpa"
 
-# Trekking guide
+  role: "Managing Director"
 
-# - name: Neema Lhamu Sherpa
-#   role: Trekking Guide
-#   photos: "assets/css/images/team/12.jpg"
-#   description: "Neema Sherpa is a distinguished mountaineer from Nepal, widely recognized for her exceptional achievements in high-altitude climbing. With a career spanning numerous peaks like Mount Everest, Ama Dablam, and Lhotse, she has earned her place among the most respected climbers in the region. <br/><br/> Starting her journey at a young age, Gelmu's passion for exploring the highest mountains drove her to master technical climbing, ice climbing, and high-altitude navigation. Her extensive training and experience have made her a highly skilled guide and a trusted leader on expeditions. <br/><br/> As a professional guide, Gelmu is known for her meticulous planning and ability to make critical decisions in extreme conditions. Her dedication to safety and her deep knowledge of the mountains have earned her the respect of clients and fellow climbers. <br/><br/> Beyond her climbing achievements, Gelmu is an advocate for empowering women in mountaineering. She mentors aspiring climbers, promotes ethical climbing practices, and serves as a role model in the adventure community. "
-#   mountains:
-#     - name: Mera Peak
-#       summited: 12
-#       years: [2019, 2020, 2021, 2022]
-#   trainings:
-#     - course: Introductory Rock Climbing Training
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2022
-#     - course: Basic Mountain Rescue Training
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2022
-#     - course: Rock Level-1
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2023
-#     - course: ICE Level-1
-#       institution: Nepal Mountaineering Instructors Association
-#       year: 2023
-#     - course: First-Aid
-#       institution: Himalyan Medics
-#       year: 2022
-#   slug: neema-sherpa
+  category: "board-of-directors"
 
-# - name: Srijana Tamang
-#   role: Trekking Guide
-#   photos: "assets/css/images/team/13.jpg"
-#   mountains:
-#     - name: Mount Everest
-#       summited: 3
-#       years: [2019, 2020, 2021]
-#     - name: K2
-#       summited: 2
-#       years: [2018, 2020]
-#   slug: alice-brown
+  placeholder: true
 
-# - name: Baju Ram Gurung
-#   role: Trekking Guide
-#   photos: "assets/css/images/team/14.jpg"
-#   mountains:
-#     - name: Mount Everest
-#       summited: 3
-#       years: [2019, 2020, 2021]
-#     - name: K2
-#       summited: 2
-#       years: [2018, 2020]
-#   slug: alice-brown
+  photos: "assets/css/images/team/04.jpeg"
 
-# High Altitude Cook
-# - name: Michael Red
-#   role: High Altitude Cook
-#   photos: "assets/css/images/team/6.jpg"
-#   mountains:
-#     - name: Mount Everest
-#       summited: 3
-#       years: [2019, 2020, 2021]
-#     - name: K2
-#       summited: 2
-#       years: [2018, 2020]
-#       slug: alice-brown
+  description: "Nima is a sample director profile focused on planning, local partnerships and thoughtful expedition operations."
 
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Operations Director*
+
+- name: "Pema Lhamo Tamang"
+
+  slug: "placeholder-pema-lhamo-tamang"
+
+  role: "Operations Director"
+
+  category: "board-of-directors"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/05.jpeg"
+
+  description: "Pema is a sample director profile coordinating office teams, field logistics and guest support."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Finance Director*
+
+- name: "Tashi Norbu Lama"
+
+  slug: "placeholder-tashi-norbu-lama"
+
+  role: "Finance Director"
+
+  category: "board-of-directors"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/06.jpeg"
+
+  description: "Tashi is a sample director profile overseeing budgets, financial planning and company administration."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Strategy Director*
+
+- name: "Dawa Dolma Gurung"
+
+  slug: "placeholder-dawa-dolma-gurung"
+
+  role: "Strategy Director"
+
+  category: "board-of-directors"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/07.jpeg"
+
+  description: "Dawa is a sample director profile developing journeys, team processes and long-term planning."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — International Expedition Leader*
+
+- name: "James Walker"
+
+  slug: "placeholder-james-walker"
+
+  role: "International Expedition Leader"
+
+  category: "international-leaders"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/08.jpeg"
+
+  description: "James is a sample leader profile supporting expedition preparation, team communication and international guests."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — International Trek Leader*
+
+- name: "Sofia Martin"
+
+  slug: "placeholder-sofia-martin"
+
+  role: "International Trek Leader"
+
+  category: "international-leaders"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/09.jpeg"
+
+  description: "Sofia is a sample leader profile working with local guides to prepare guests for trekking journeys."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — International Expedition Coordinator*
+
+- name: "Luca Moretti"
+
+  slug: "placeholder-luca-moretti"
+
+  role: "International Expedition Coordinator"
+
+  category: "international-leaders"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/010.jpeg"
+
+  description: "Luca is a sample leader profile coordinating trip briefings, equipment planning and travel arrangements."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — International Journey Leader*
+
+- name: "Emma Thompson"
+
+  slug: "placeholder-emma-thompson"
+
+  role: "International Journey Leader"
+
+  category: "international-leaders"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/011.jpeg"
+
+  description: "Emma is a sample leader profile connecting guest expectations with local trip planning and support."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Finance Manager*
+
+- name: "Suman Adhikari"
+
+  slug: "placeholder-suman-adhikari"
+
+  role: "Finance Manager"
+
+  category: "office-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/012.jpeg"
+
+  description: "Suman is a sample finance manager profile supporting the office team and the preparation of Himalayan journeys."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Legal Documentation Officer*
+
+- name: "Pratima Shrestha"
+
+  slug: "placeholder-pratima-shrestha"
+
+  role: "Legal Documentation Officer"
+
+  category: "office-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/013.jpeg"
+
+  description: "Pratima is a sample legal documentation officer profile supporting the office team and the preparation of Himalayan journeys."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Permit Coordinator*
+
+- name: "Bikash Rai"
+
+  slug: "placeholder-bikash-rai"
+
+  role: "Permit Coordinator"
+
+  category: "office-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/014.jpeg"
+
+  description: "Bikash is a sample permit coordinator profile supporting the office team and the preparation of Himalayan journeys."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Insurance / Helicopter Coordinator*
+
+- name: "Anita Gurung"
+
+  slug: "placeholder-anita-gurung"
+
+  role: "Insurance / Helicopter Coordinator"
+
+  category: "office-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/01.jpeg"
+
+  description: "Anita is a sample insurance / helicopter coordinator profile supporting the office team and the preparation of Himalayan journeys."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Research & Development Head*
+
+- name: "Kiran Joshi"
+
+  slug: "placeholder-kiran-joshi"
+
+  role: "Research & Development Head"
+
+  category: "office-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/02.jpeg"
+
+  description: "Kiran is a sample research & development head profile supporting the office team and the preparation of Himalayan journeys."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Data Manager*
+
+- name: "Sabina Thapa"
+
+  slug: "placeholder-sabina-thapa"
+
+  role: "Data Manager"
+
+  category: "office-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/03.jpeg"
+
+  description: "Sabina is a sample data manager profile supporting the office team and the preparation of Himalayan journeys."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — IT Head*
+
+- name: "Rohan Karki"
+
+  slug: "placeholder-rohan-karki"
+
+  role: "IT Head"
+
+  category: "office-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/04.jpeg"
+
+  description: "Rohan is a sample it head profile supporting the office team and the preparation of Himalayan journeys."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Graphic Designer*
+
+- name: "Nisha Maharjan"
+
+  slug: "placeholder-nisha-maharjan"
+
+  role: "Graphic Designer"
+
+  category: "office-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/05.jpeg"
+
+  description: "Nisha is a sample graphic designer profile supporting the office team and the preparation of Himalayan journeys."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Finance Officer*
+
+- name: "Prakash Bhandari"
+
+  slug: "placeholder-prakash-bhandari"
+
+  role: "Finance Officer"
+
+  category: "office-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/06.jpeg"
+
+  description: "Prakash is a sample finance officer profile supporting the office team and the preparation of Himalayan journeys."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Operations Coordinator*
+
+- name: "Maya Tamang"
+
+  slug: "placeholder-maya-tamang"
+
+  role: "Operations Coordinator"
+
+  category: "office-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/07.jpeg"
+
+  description: "Maya is a sample operations coordinator profile supporting the office team and the preparation of Himalayan journeys."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Airport Representative*
+
+- name: "Deepak Lama"
+
+  slug: "placeholder-deepak-lama"
+
+  role: "Airport Representative"
+
+  category: "office-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/08.jpeg"
+
+  description: "Deepak is a sample airport representative profile supporting the office team and the preparation of Himalayan journeys."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Administrative Assistant*
+
+- name: "Srijana Basnet"
+
+  slug: "placeholder-srijana-basnet"
+
+  role: "Administrative Assistant"
+
+  category: "office-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/09.jpeg"
+
+  description: "Srijana is a sample administrative assistant profile supporting the office team and the preparation of Himalayan journeys."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Logistics Coordinator*
+
+- name: "Rajan Magar"
+
+  slug: "placeholder-rajan-magar"
+
+  role: "Logistics Coordinator"
+
+  category: "office-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/010.jpeg"
+
+  description: "Rajan is a sample logistics coordinator profile supporting the office team and the preparation of Himalayan journeys."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Client Travel Coordinator*
+
+- name: "Alina Shrestha"
+
+  slug: "placeholder-alina-shrestha"
+
+  role: "Client Travel Coordinator"
+
+  category: "office-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/011.jpeg"
+
+  description: "Alina is a sample client travel coordinator profile supporting the office team and the preparation of Himalayan journeys."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — Office Cook*
+
+- name: "Hari Bahadur Rai"
+
+  slug: "placeholder-hari-bahadur-rai"
+
+  role: "Office Cook"
+
+  category: "office-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/012.jpeg"
+
+  description: "Hari is a sample office cook profile supporting the office team and the preparation of Himalayan journeys."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+# SAMPLE / PLACEHOLDER — IFMGA Guide*
+
+- name: "Pasang Norbu Sherpa"
+
+  slug: "placeholder-pasang-norbu-sherpa"
+
+  role: "IFMGA Guide"
+
+  category: "field-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/013.jpeg"
+
+  description: "Pasang is a fictional sample ifmga guide profile for the Field Staff directory. Biography, experience and any qualifications must be replaced with verified information."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+  subcategory: "ifmga-guides"
+
+# SAMPLE / PLACEHOLDER — IFMGA Guide*
+
+- name: "Mingma Tsering Lama"
+
+  slug: "placeholder-mingma-tsering-lama"
+
+  role: "IFMGA Guide"
+
+  category: "field-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/014.jpeg"
+
+  description: "Mingma is a fictional sample ifmga guide profile for the Field Staff directory. Biography, experience and any qualifications must be replaced with verified information."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+  subcategory: "ifmga-guides"
+
+# SAMPLE / PLACEHOLDER — High Altitude Cook*
+
+- name: "Dorje Wangchu Sherpa"
+
+  slug: "placeholder-dorje-wangchu-sherpa"
+
+  role: "High Altitude Cook"
+
+  category: "field-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/01.jpeg"
+
+  description: "Dorje is a fictional sample high altitude cook profile for the Field Staff directory. Biography, experience and any qualifications must be replaced with verified information."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+  subcategory: "high-altitude-cooks"
+
+# SAMPLE / PLACEHOLDER — High Altitude Cook*
+
+- name: "Lhakpa Dolma Tamang"
+
+  slug: "placeholder-lhakpa-dolma-tamang"
+
+  role: "High Altitude Cook"
+
+  category: "field-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/02.jpeg"
+
+  description: "Lhakpa is a fictional sample high altitude cook profile for the Field Staff directory. Biography, experience and any qualifications must be replaced with verified information."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+  subcategory: "high-altitude-cooks"
+
+# SAMPLE / PLACEHOLDER — Trekking Guide*
+
+- name: "Bishal Gurung"
+
+  slug: "placeholder-bishal-gurung"
+
+  role: "Trekking Guide"
+
+  category: "field-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/03.jpeg"
+
+  description: "Bishal is a fictional sample trekking guide profile for the Field Staff directory. Biography, experience and any qualifications must be replaced with verified information."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+  subcategory: "trekking-guides"
+
+# SAMPLE / PLACEHOLDER — Trekking Guide*
+
+- name: "Sita Rai"
+
+  slug: "placeholder-sita-rai"
+
+  role: "Trekking Guide"
+
+  category: "field-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/04.jpeg"
+
+  description: "Sita is a fictional sample trekking guide profile for the Field Staff directory. Biography, experience and any qualifications must be replaced with verified information."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+  subcategory: "trekking-guides"
+
+# SAMPLE / PLACEHOLDER — Filmmaker*
+
+- name: "Aakash Shrestha"
+
+  slug: "placeholder-aakash-shrestha"
+
+  role: "Filmmaker"
+
+  category: "field-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/05.jpeg"
+
+  description: "Aakash is a fictional sample filmmaker profile for the Field Staff directory. Biography, experience and any qualifications must be replaced with verified information."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+  subcategory: "filmmakers-photographers"
+
+# SAMPLE / PLACEHOLDER — Photographer*
+
+- name: "Rinchen Lama"
+
+  slug: "placeholder-rinchen-lama"
+
+  role: "Photographer"
+
+  category: "field-staff"
+
+  placeholder: true
+
+  photos: "assets/css/images/team/06.jpeg"
+
+  description: "Rinchen is a fictional sample photographer profile for the Field Staff directory. Biography, experience and any qualifications must be replaced with verified information."
+
+  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+
+  subcategory: "filmmakers-photographers"

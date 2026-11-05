@@ -65,14 +65,23 @@ keywords: "Himalayan expeditions, Nepal climbing, guided expeditions, Ama Dablam
 
 
   <div class="home-people-landscape">
-   {% assign lead_guide = site.data.team | where: 'slug', 'sunil-ghalan' | first %}
-  {% assign second_guide = site.data.team | where: 'slug', 'sonam-lama' | first %}
-  <section class="home-guides home-wrap home-section" aria-labelledby="home-guides-title">
-    <div class="home-guide-portraits">
-      <a class="home-guide-small home-guide-left" href="{{ '/team/' | append: second_guide.slug | append: '/' | relative_url }}"><img src="{{ second_guide.photos | relative_url }}" alt="{{ second_guide.name | escape }}, {{ second_guide.role | escape }}" loading="lazy" width="450" height="600"><span>{{ second_guide.name }}</span></a>
-      <a class="home-guide-feature" href="{{ '/team/' | append: lead_guide.slug | append: '/' | relative_url }}"><img src="{{ lead_guide.photos | relative_url }}" alt="{{ lead_guide.name | escape }}" loading="lazy" width="600" height="800"><span><strong>{{ lead_guide.name }}</strong><span>{{ lead_guide.role }}</span></span></a>
+  <section class="home-guides home-guides-carousel home-wrap home-section" aria-labelledby="home-guides-title">
+    <p class="home-guides-eyebrow">OUR PEOPLE, YOUR TEAM<span aria-hidden="true"></span></p>
+    <div class="home-guides-heading"><h2 id="home-guides-title">Good hands.<br>Higher ground.</h2><p>From the first steps to the final descent, meet the people who make the journey.</p><ul class="home-guides-features">
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M25 12c0 8-9 16-9 16S7 20 7 12a9 9 0 1 1 18 0Z"/><circle cx="16" cy="12" r="3"/></svg><span>Local<br>Knowledge</span></li>
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m2 27 9-19 5 8 5-12 10 23H2Zm7-15 3 5 3-3m4-5 3 6 3-3"/></svg><span>Field<br>Experience</span></li>
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3c4 3 8 4 11 4v10c0 6-6 10-11 13C11 27 5 23 5 17V7c3 0 7-1 11-4Z"/></svg><span>Safety<br>First</span></li>
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="10" r="4"/><path d="M8 28v-4a8 8 0 0 1 16 0v4H8ZM6 6a4 4 0 0 0 0 8m20-8a4 4 0 0 1 0 8M6 18a6 6 0 0 0-4 6v3m24-9a6 6 0 0 1 4 6v3"/></svg><span>Personal<br>Guidance</span></li>
+    </ul></div>
+    <div class="home-guide-carousel" role="region" aria-roledescription="carousel" aria-label="Meet our guides">
+      <button type="button" class="home-guide-control home-guide-previous" data-guide-step="-1" aria-label="Previous guide" aria-controls="home-guide-track" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4-8 8 8 8"/></svg></button>
+      <div class="home-guide-track" id="home-guide-track" tabindex="0" aria-label="Guide portraits. Use left and right arrow keys to choose a guide.">
+       {% assign home_carousel_guides = site.data.team | where_exp: 'member', 'member.subcategory == "climbing-guides" or member.subcategory == "ifmga-guides" or member.subcategory == "filmmakers-photographers"' %}{% for guide in home_carousel_guides %}{% assign home_guide_photo = guide.photos %}{% assign home_guide_path = '/' | append: home_guide_photo | replace: '//', '/' %}{% assign home_guide_asset = site.static_files | where: 'path', home_guide_path | first %}{% unless home_guide_asset %}{% if forloop.last %}{% assign home_guide_photo = '/assets/css/images/team/File 5.jpeg' %}{% else %}{% assign home_guide_photo = '/assets/css/images/team/File 4.jpeg' %}{% endif %}{% endunless %}<a class="home-guide-card{% if guide.slug == 'sunil-ghalan' %} is-active{% endif %}" href="{% if guide.placeholder %}{{ '/team/' | relative_url }}{% else %}{{ '/team/' | append: guide.slug | append: '/' | relative_url }}{% endif %}" data-guide-card{% if guide.placeholder %} data-guide-placeholder="true"{% endif %} data-guide-name="{{ guide.name | escape }}" data-guide-role="{{ guide.role | escape }}"{% if guide.slug == 'sunil-ghalan' %} data-guide-featured{% endif %}><img src="{{ home_guide_photo | relative_url }}" alt="{% if guide.placeholder %}Sample portrait: {% endif %}{{ guide.name | escape }}" loading="lazy" draggable="false" width="800" height="900"><span class="home-guide-caption"><strong>{{ guide.name }}</strong><span>{{ guide.role }}</span></span></a>{% endfor %}
+      </div>
+      <button type="button" class="home-guide-control home-guide-next" data-guide-step="1" aria-label="Next guide" aria-controls="home-guide-track" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8"/></svg></button>
     </div>
-    <div class="home-guides-copy"><p class="home-label">OUR PEOPLE, YOUR TEAM</p><h2 id="home-guides-title">Good hands.<br>Higher ground.</h2><p>From the first steps to the final descent, meet the people who make the journey.</p><div class="home-guides-values"><span>Local knowledge</span><span>Personal guidance</span></div><a class="home-guides-link" href="{% link _legal/team.html %}">Meet our guides</a></div>
+    <p class="visually-hidden" id="home-guide-status" aria-live="polite" aria-atomic="true"></p>
+    <a class="home-guides-team-link" href="{% link _legal/team.html %}">Meet our team</a>
   </section>
 
 

@@ -61,11 +61,53 @@
   selectDay(0);
  }
  const dialog = root.querySelector('.trip-photo-dialog');
- if (dialog) {
-  let photoTrigger;
-  root.querySelectorAll('.trip-photo-trigger').forEach(button => button.addEventListener('click',() => { photoTrigger=button;dialog.showModal();dialog.querySelector(`#trip-photo-${button.dataset.photoIndex}`).scrollIntoView({block:'nearest'}); }));
+ const mainImage = root.querySelector('.trip-intro-main-image');
+ const thumbs = [...root.querySelectorAll('.trip-photo-trigger')];
+ if (mainImage && thumbs.length) {
+  const reduce = matchMedia('(prefers-reduced-motion:reduce)');
+  let request = 0, swapTimer;
+  function markSelected(source) {
+   thumbs.forEach(button => button.setAttribute('aria-pressed',String(button.querySelector('img').src === source)));
+  }
+  function selectPhoto(button) {
+   const photo = button.querySelector('img');
+   const token = ++request;
+   clearTimeout(swapTimer);
+   mainImage.classList.remove('is-image-changing');
+   mainImage.setAttribute('aria-busy','false');
+   if (mainImage.src === photo.src) { markSelected(photo.src); return; }
+   mainImage.setAttribute('aria-busy','true');
+   const preload = new Image();
+   preload.onload = () => {
+    if (token !== request) return;
+    mainImage.classList.add('is-image-changing');
+    swapTimer = setTimeout(() => {
+     if (token !== request) return;
+     mainImage.src = photo.src;
+     const fullPhoto = dialog?.querySelector(`#trip-photo-${button.dataset.photoIndex} img`);
+     mainImage.alt = fullPhoto?.alt || button.getAttribute('aria-label');
+     markSelected(photo.src);
+     mainImage.setAttribute('aria-busy','false');
+     requestAnimationFrame(() => { if (token === request) mainImage.classList.remove('is-image-changing'); });
+    },reduce.matches ? 0 : 140);
+   };
+   preload.onerror = () => { if (token === request) mainImage.setAttribute('aria-busy','false'); };
+   preload.src = photo.src;
+  }
+  thumbs.forEach(button => button.addEventListener('click',() => selectPhoto(button)));
+  markSelected(mainImage.src);
+ }
+ // The large image still opens the existing full-gallery dialog.
+ if (dialog && mainImage) {
+  const openGallery = () => {
+   dialog.showModal();
+   const photo = [...dialog.querySelectorAll('.trip-dialog-grid img')].find(image => image.src === mainImage.src);
+   photo?.closest('figure').scrollIntoView({block:'nearest'});
+  };
+  mainImage.addEventListener('click',openGallery);
+  mainImage.addEventListener('keydown',event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openGallery(); } });
   dialog.querySelector('.trip-photo-close').addEventListener('click',() => dialog.close());
-  dialog.addEventListener('click',event => { if(event.target===dialog)dialog.close(); });
-  dialog.addEventListener('close',() => photoTrigger?.focus());
+  dialog.addEventListener('click',event => { if (event.target !== dialog) return; const rect = dialog.getBoundingClientRect(); if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close(); });
+  dialog.addEventListener('close',() => mainImage.focus());
  }
 })();

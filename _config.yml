@@ -69,7 +69,7 @@ collections:
 
   peaks:
     output: true
-    permalink: /peaks/:name/
+    permalink: /activities/expeditions/:name/
 
 # Defaults
 defaults:

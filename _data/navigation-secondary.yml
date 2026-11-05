@@ -12,7 +12,7 @@ about:
       links:
         - {label: Meet the Team, url: /team/}
   cards:
-    - {label: THE DIRECTOR, title: Singi Lama, image: /assets/css/images/team/8.jpg, url: /team/singi-lama/}
+    - {label: THE DIRECTOR, title: Singi Lama, image: /assets/css/images/team/04.jpeg, url: /team/singi-lama/}
 resources:
   label: Resources
   groups:

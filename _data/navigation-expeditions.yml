@@ -21,12 +21,12 @@
   label: 6000m Mountains
   mountains:
     - name: Ama Dablam
-      path: /activities/peak-climbing/ama-dablam/
+      path: /activities/expeditions/ama-dablam/
     - name: Mera Peak
-      path: /activities/peak-climbing/mera-peak/
+      path: /activities/expeditions/mera-peak/
     - name: Lobuche Peak
-      path: /activities/peak-climbing/lobuche-peak/
+      path: /activities/expeditions/lobuche-peak/
     - name: Island Peak
-      path: /activities/peak-climbing/island-peak/
+      path: /activities/expeditions/island-peak/
     - name: Pisang Peak
-      path: /activities/peak-climbing/pisang-peak/
+      path: /activities/expeditions/pisang-peak/
