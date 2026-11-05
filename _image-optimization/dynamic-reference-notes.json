@@ -1,0 +1,147 @@
+[
+  {
+    "file": "index.html",
+    "line": 79,
+    "text": "{% assign home_carousel_guides = site.data.team | where_exp: 'member', 'member.subcategory == \"climbing-guides\" or member.subcategory == \"ifmga-guides\" or member.subcategory == \"filmmakers-photographers\"' %}{% for guide in home_carousel_guides %}{% assign home_guide_photo = guide.photos %}{% assign home_guide_path = '/' | append: home_guide_photo | replace: '//', '/' %}{% assign home_guide_asset = site.static_files | where: 'path', home_guide_path | first %}{% unless home_guide_asset %}{% if forloop.last %}{% assign home_guide_photo = '/assets/css/images/team/File 5.jpeg' %}{% else %}{% assign home_guide_photo = '/assets/css/images/team/File 4.jpeg' %}{% endif %}{% endunless %}<a class=\"home-guide-card{% if guide.slug == 'sunil-ghalan' %} is-active{% endif %}\" href=\"{% if guide.placeholder %}{{ '/team/' | relative_url }}{% else %}{{ '/team/' | append: guide.slug | append: '/' | relative_url }}{% endif %}\" data-guide-card{% if guide.placeholder %} data-guide-placeholder=\"true\"{% endif %} data-guide-name=\"{{ guide.name | escape }}\" data-guide-role=\"{{ guide.role | escape }}\"{% if guide.slug == 'sunil-ghalan' %} data-guide-featured{% endif %}><img src=\"{{ home_guide_photo | relative_url }}\" alt=\"{% if guide.placeholder %}Sample portrait: {% endif %}{{ guide.name | escape }}\" loading=\"lazy\" draggable=\"false\" width=\"800\" height=\"900\"><span class=\"home-guide-caption\"><strong>{{ guide.name }}</strong><span>{{ guide.role }}</span></span></a>{% endfor %}"
+  },
+  {
+    "file": "index.html",
+    "line": 117,
+    "text": "{% assign journal_image = '/assets/css/images/' | append: post.custom_bg %}"
+  },
+  {
+    "file": "index.html",
+    "line": 127,
+    "text": "{% for key in affiliation_keys %}{% assign affiliation_index = forloop.index0 %}{% for file in site.static_files %}{% if file.path contains '/images/affil/' and file.name contains key %}<figure><img src=\"{{ file.path | relative_url }}\" alt=\"\" loading=\"lazy\" width=\"110\" height=\"90\"><figcaption>{{ affiliation_names[affiliation_index] }}</figcaption></figure>{% endif %}{% endfor %}{% endfor %}"
+  },
+  {
+    "file": "news.html",
+    "line": 22,
+    "text": "<a class=\"news-card-image\" href=\"{{ post.url | relative_url }}\" aria-label=\"{{ post.title | escape }}\">{% assign news_image = post.custom_bg | default: 'bg/blogbg.jpg' %}<img src=\"{{ '/assets/css/images/' | append: news_image | relative_url }}\" alt=\"{{ post.alt | default: post.title | escape }}\" width=\"640\" height=\"410\" loading=\"lazy\"></a>"
+  },
+  {
+    "file": "_includes/trip-intro.html",
+    "line": 2,
+    "text": "{% assign td_fallback = '/assets/css/images/' | append: page.custom_bg %}"
+  },
+  {
+    "file": "_includes/trip-intro.html",
+    "line": 4,
+    "text": "{% if include.kind == 'trekking' %}{% assign td_category = 'Trekking' %}{% assign td_directory = '/activities/trekking/' %}{% assign td_slug = page.alt | remove : 'Trek' | slugify %}{% assign td_folder = '/assets/css/images/treks/' | append: td_slug | append : '/' %}"
+  },
+  {
+    "file": "_includes/trip-intro.html",
+    "line": 5,
+    "text": "{% elsif include.kind == 'rock-climbing' %}{% assign td_category = 'Rock Climbing' %}{% assign td_directory = '/activities/rock-climbing/' %}{% assign td_folder = '/assets/css/images/' | append: page.custom_bg | split: '/' | pop | join: '/' | append: '/' %}"
+  },
+  {
+    "file": "_includes/trip-intro.html",
+    "line": 6,
+    "text": "{% elsif include.kind == 'rafting' %}{% assign td_category = 'Rafting Tours' %}{% assign td_directory = '/activities/rafting/' %}{% assign td_folder = '/assets/css/images/' | append: page.custom_bg | split: '/' | pop | join: '/' | append: '/' %}"
+  },
+  {
+    "file": "_includes/trip-intro.html",
+    "line": 7,
+    "text": "{% elsif include.kind == 'bike-tours' %}{% assign td_category = 'Bike Tours' %}{% assign td_directory = '/activities/bike-tours/' %}{% assign td_folder = '/assets/css/images/' | append: page.custom_bg | split: '/' | pop | join: '/' | append: '/' %}"
+  },
+  {
+    "file": "_includes/trip-intro.html",
+    "line": 8,
+    "text": "{% else %}{% assign td_category = 'Expeditions' %}{% assign td_directory = '/activities/expeditions/' %}{% assign td_folder = '/assets/css/images/peak-climbing/' | append: page.title-slug | append: '/' %}"
+  },
+  {
+    "file": "_includes/trip-intro.html",
+    "line": 10,
+    "text": "{% assign td_image_path = td_image | prepend: '/' | replace: '//', '/' %}{% assign td_image_asset = site.static_files | where: 'path', td_image_path | first %}{% unless td_image_asset %}{% assign td_image = td_fallback %}{% assign td_fallback_asset = site.static_files | where: 'path', td_fallback | first %}{% unless td_fallback_asset %}{% assign td_image = '/assets/css/images/bg/peakbg.jpg' %}{% endunless %}{% endunless %}"
+  },
+  {
+    "file": "_includes/activity-listing.html",
+    "line": 7,
+    "text": "{% assign activity_image = activity.photos | default: doc.custom_bg %}{% assign activity_prefix = activity_image | slice: 0, 7 %}{% unless activity_prefix == 'assets/' %}{% assign activity_image = '/assets/css/images/' | append: activity_image %}{% endunless %}{% assign activity_path = activity_image | prepend: '/' | replace: '//', '/' %}{% assign activity_asset = site.static_files | where: 'path', activity_path | first %}{% unless activity_asset %}{% assign activity_image = include.fallback %}{% endunless %}"
+  },
+  {
+    "file": "_includes/trip-day-viewer.html",
+    "line": 6,
+    "text": "{% assign day_photo = day.img | default: day_trip.photos | default: '/assets/css/images/bg/peakbg.jpg' %}{% assign day_asset_path = day_photo | prepend: '/' | replace: '//', '/' %}{% assign day_asset = site.static_files | where: 'path', day_asset_path | first %}{% unless day_asset %}{% assign day_photo = day_trip.photos | default: '/assets/css/images/bg/peakbg.jpg' %}{% endunless %}"
+  },
+  {
+    "file": "_layouts/activities.html",
+    "line": 44,
+    "text": "{% assign path = 'assets/css/images/' | append: img | relative_url%}"
+  },
+  {
+    "file": "_layouts/old-rafting.html",
+    "line": 47,
+    "text": "{% assign path = 'assets/css/images/' | append: img | relative_url%}"
+  },
+  {
+    "file": "_layouts/old-rafting.html",
+    "line": 101,
+    "text": "{% assign path = 'assets/css/images/rafting/' | append: subPath | relative_url %}"
+  },
+  {
+    "file": "_layouts/camp.html",
+    "line": 49,
+    "text": "{% assign path = 'assets/css/images/' | append: img | relative_url%}"
+  },
+  {
+    "file": "_layouts/camp.html",
+    "line": 103,
+    "text": "{% assign path = 'assets/css/images/camping/' | append: subPath | relative_url %}"
+  },
+  {
+    "file": "_layouts/para.html",
+    "line": 49,
+    "text": "{% assign path = 'assets/css/images/' | append: img | relative_url%}"
+  },
+  {
+    "file": "_layouts/para.html",
+    "line": 103,
+    "text": "{% assign path = 'assets/css/images/camping/' | append: subPath | relative_url %}"
+  },
+  {
+    "file": "_layouts/peak.html",
+    "line": 163,
+    "text": "{% assign path = 'assets/css/images/peak-climbing/' | append: subPath | relative_url %}"
+  },
+  {
+    "file": "_layouts/template.html",
+    "line": 107,
+    "text": "{% assign path = 'assets/css/images/' | append: img | relative_url%}"
+  },
+  {
+    "file": "_layouts/template.html",
+    "line": 222,
+    "text": "{% assign path = 'assets/css/images/treks/' | append: subPath | relative_url %}"
+  },
+  {
+    "file": "_layouts/india.html",
+    "line": 107,
+    "text": "{% assign path = 'assets/css/images/' | append: img | relative_url%}"
+  },
+  {
+    "file": "_layouts/india.html",
+    "line": 222,
+    "text": "{% assign path = 'assets/css/images/treks/' | append: subPath | relative_url %}"
+  },
+  {
+    "file": "_layouts/trek.html",
+    "line": 167,
+    "text": "{% assign gallery_file = '/assets/css/images/treks/' | append: subPath | append: i | append: '.jpg' %}"
+  },
+  {
+    "file": "_layouts/trek.html",
+    "line": 169,
+    "text": "{% assign path = 'assets/css/images/treks/' | append: subPath | relative_url %}"
+  },
+  {
+    "file": "_layouts/trip.html",
+    "line": 44,
+    "text": "{% assign path = 'assets/css/images/' | append: img | relative_url%}"
+  },
+  {
+    "file": "_legal/gear-list.html",
+    "line": 14,
+    "text": "<article class=\"editorial-page\"><header class=\"editorial-heading\"><p class=\"editorial-kicker\">GEAR LISTS</p><h1>Pack for the mountain.</h1><p>Choose your trip type to find the right equipment list.</p></header><div class=\"editorial-directory-layout gear-directory-layout\"><figure class=\"gear-directory-photo\"><img src=\"{{ '/assets/css/images/blog/trekking-gear-blog/backpack.jpg' | relative_url }}\" alt=\"Trekking backpack and equipment\" width=\"700\" height=\"900\" loading=\"lazy\"></figure><div class=\"gear-directory-rows\">{% assign gear_titles = 'Trekking|6,000m peaks|7,000m expeditions|8,000m expeditions' | split: '|' %}{% assign gear_pdfs = 'trekking-gears-nepal.pdf|6000m_Checklist.pdf|7000m_Checklist.pdf|8000m_Checklist.pdf' | split: '|' %}{% for title in gear_titles %}<article class=\"gear-directory-row\"><span>{{ forloop.index | prepend: '0' }}</span><div><h2>{{ title }}</h2><p>Download the equipment checklist</p></div><a href=\"{{ '/assets/docs/' | append: gear_pdfs[forloop.index0] | relative_url }}\" download>Download PDF</a></article>{% endfor %}</div></div><div class=\"editorial-help\"><div><h2>Every trip is different.</h2><p>Confirm the final gear list with our team before departure.</p></div><nav aria-label=\"Gear planning links\"><a class=\"editorial-link\" href=\"{% link contact.html %}\">Ask about gear</a><a class=\"editorial-link\" href=\"{% link _legal/travel-advisory.html %}\">Travel advisory</a><a class=\"editorial-link\" href=\"{% link _legal/faq.html %}\">FAQs</a></nav></div></article>"
+  }
+]

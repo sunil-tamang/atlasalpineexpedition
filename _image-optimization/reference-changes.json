@@ -1,0 +1,3243 @@
+[
+  {
+    "old": "assets/css/images/11home.jpg",
+    "proposed": "assets/css/images/11home.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/1home.jpg",
+    "proposed": "assets/css/images/1home.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/DSC04729.JPG",
+    "proposed": "assets/css/images/DSC04729.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/DSC04871.JPG",
+    "proposed": "assets/css/images/DSC04871.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bg/himalayan-people-mist.jpg",
+    "proposed": "assets/css/images/bg/himalayan-people-mist.webp",
+    "references": [
+      {
+        "file": "about.html",
+        "line": 19,
+        "text": "<div class=\"story-panorama\" aria-hidden=\"true\"><img src=\"{{ '/assets/css/images/bg/himalayan-people-mist.jpg' | relative_url }}\" alt=\"\" width=\"1536\" height=\"1024\" fetchpriority=\"high\"></div>",
+        "confidence": "literal"
+      },
+      {
+        "file": "about.html",
+        "line": 31,
+        "text": "<div class=\"story-panorama story-panorama-secondary\" aria-hidden=\"true\"><img src=\"{{ '/assets/css/images/bg/himalayan-people-mist.jpg' | relative_url }}\" alt=\"\" width=\"1536\" height=\"1024\" loading=\"lazy\"></div>",
+        "confidence": "literal"
+      },
+      {
+        "file": "about.html",
+        "line": 41,
+        "text": "<section class=\"story-plan\" aria-labelledby=\"story-plan-title\"><div class=\"story-plan-image\" aria-hidden=\"true\"><img src=\"{{ '/assets/css/images/bg/himalayan-people-mist.jpg' | relative_url }}\" alt=\"\" width=\"1536\" height=\"1024\" loading=\"lazy\"></div><div><h2 id=\"story-plan-title\">Plan your journey.</h2><p>Tell us your ideas and we\u2019ll help you shape the right Himalayan experience.</p><a class=\"story-button\" href=\"{% link contact.html %}\">Talk to us</a></div></section>",
+        "confidence": "literal"
+      },
+      {
+        "file": "_includes/activity-directory-hero.html",
+        "line": 1,
+        "text": "<header class=\"activity-directory-hero\"><div><p class=\"activity-directory-eyebrow\">{% if page.title == 'Expeditions' %}HIMALAYAN EXPEDITIONS{% else %}HIMALAYAN JOURNEYS{% endif %}</p><h1>{{ page.title | escape }}</h1><p class=\"activity-directory-description\">{{ page.description | escape }}</p></div><img src=\"{{ '/assets/css/images/bg/himalayan-people-mist.jpg' | relative_url }}\" alt=\"\" width=\"1536\" height=\"1024\" aria-hidden=\"true\" fetchpriority=\"high\"></header>",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/css/home.css",
+        "line": 232,
+        "text": "background: url('images/bg/himalayan-people-mist.jpg') center / 100% 100% no-repeat;",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bg/peakbg.jpg",
+    "proposed": "assets/css/images/bg/peakbg.webp",
+    "references": [
+      {
+        "file": "index.html",
+        "line": 10,
+        "text": "<img class=\"home-landing-image\" src=\"{{ '/assets/css/images/bg/peakbg.jpg' | relative_url }}\" alt=\"\" fetchpriority=\"high\" width=\"2000\" height=\"1333\">",
+        "confidence": "literal"
+      },
+      {
+        "file": "index.html",
+        "line": 11,
+        "text": "<video class=\"home-landing-video\" id=\"home-banner-film\" muted loop playsinline preload=\"none\" poster=\"{{ '/assets/css/images/bg/peakbg.jpg' | relative_url }}\" aria-hidden=\"true\" tabindex=\"-1\"><source src=\"{{ '/assets/css/video/banner5.mp4' | relative_url }}\" type=\"video/mp4\"></video>",
+        "confidence": "literal"
+      },
+      {
+        "file": "index.html",
+        "line": 57,
+        "text": "<a class=\"home-journey-card\" href=\"{% link _activities/peak-climbing.html %}?altitude=7000\"><img src=\"{{ '/assets/css/images/bg/peakbg.jpg' | relative_url }}\" alt=\"\" loading=\"lazy\" width=\"700\" height=\"1000\"><span class=\"home-journey-number\">02 / 04</span><div class=\"home-journey-copy\"><p class=\"home-journeys-label\">HIMALAYAN EXPEDITIONS</p><h3>7000m Peaks</h3><p>A greater challenge. A higher perspective.</p><span class=\"home-journey-action\">View 7000m peaks</span></div></a>",
+        "confidence": "literal"
+      },
+      {
+        "file": "enquiry.html",
+        "line": 13,
+        "text": "<figure class=\"enquiry-trip-photo\"><img id=\"sidebar-tour-image\" src=\"{{ '/assets/css/images/bg/peakbg.jpg' | relative_url }}\" alt=\"Himalayan mountains and a high-altitude camp\" width=\"1000\" height=\"1300\"><figcaption><p>YOUR TRIP</p><h2 id=\"sidebar-tour-name\">Your Himalayan journey</h2></figcaption></figure>",
+        "confidence": "literal"
+      },
+      {
+        "file": "enquiry.html",
+        "line": 43,
+        "text": "{% assign tour_image = tour.photos | default: '/assets/css/images/bg/peakbg.jpg' %}",
+        "confidence": "literal"
+      },
+      {
+        "file": "_includes/trip-intro.html",
+        "line": 10,
+        "text": "{% assign td_image_path = td_image | prepend: '/' | replace: '//', '/' %}{% assign td_image_asset = site.static_files | where: 'path', td_image_path | first %}{% unless td_image_asset %}{% assign td_image = td_fallback %}{% assign td_fallback_asset = site.static_files | where: 'path', td_fallback | first %}{% unless td_fallback_asset %}{% assign td_image = '/assets/css/images/bg/peakbg.jpg' %}{% endunless %}{% endunless %}",
+        "confidence": "literal"
+      },
+      {
+        "file": "_includes/trip-day-viewer.html",
+        "line": 6,
+        "text": "{% assign day_photo = day.img | default: day_trip.photos | default: '/assets/css/images/bg/peakbg.jpg' %}{% assign day_asset_path = day_photo | prepend: '/' | replace: '//', '/' %}{% assign day_asset = site.static_files | where: 'path', day_asset_path | first %}{% unless day_asset %}{% assign day_photo = day_trip.photos | default: '/assets/css/images/bg/peakbg.jpg' %}{% endunless %}",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/pumori.html",
+        "line": 8,
+        "text": "custom_bg: bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/dhaulagiri.html",
+        "line": 8,
+        "text": "custom_bg: bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/cho-oyu.html",
+        "line": 8,
+        "text": "custom_bg: bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/himlung-himal.html",
+        "line": 8,
+        "text": "custom_bg: bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/baruntse.html",
+        "line": 8,
+        "text": "custom_bg: bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/annapurna.html",
+        "line": 8,
+        "text": "custom_bg: bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/makalu.html",
+        "line": 8,
+        "text": "custom_bg: bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/lhotse.html",
+        "line": 8,
+        "text": "custom_bg: bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/manaslu.html",
+        "line": 8,
+        "text": "custom_bg: bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/kanchenjunga.html",
+        "line": 8,
+        "text": "custom_bg: bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/everest.html",
+        "line": 8,
+        "text": "custom_bg: bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_activities/peak-climbing.html",
+        "line": 23,
+        "text": "{% include directory-card.html trip=trip kind=\"Expeditions\" index=forloop.index total=site.data.peak-data.size fallback=\"/assets/css/images/bg/peakbg.jpg\" %}",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/7000m-data.yml",
+        "line": 9,
+        "text": "photos: \"assets/css/images/bg/peakbg.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/7000m-data.yml",
+        "line": 22,
+        "text": "photos: \"assets/css/images/bg/peakbg.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/7000m-data.yml",
+        "line": 35,
+        "text": "photos: \"assets/css/images/bg/peakbg.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/8000m-ddata.yml",
+        "line": 9,
+        "text": "photos: \"assets/css/images/bg/peakbg.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/8000m-ddata.yml",
+        "line": 22,
+        "text": "photos: \"assets/css/images/bg/peakbg.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/8000m-ddata.yml",
+        "line": 35,
+        "text": "photos: \"assets/css/images/bg/peakbg.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/8000m-ddata.yml",
+        "line": 48,
+        "text": "photos: \"assets/css/images/bg/peakbg.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/8000m-ddata.yml",
+        "line": 61,
+        "text": "photos: \"assets/css/images/bg/peakbg.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/8000m-ddata.yml",
+        "line": 74,
+        "text": "photos: \"assets/css/images/bg/peakbg.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/8000m-ddata.yml",
+        "line": 87,
+        "text": "photos: \"assets/css/images/bg/peakbg.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/8000m-ddata.yml",
+        "line": 100,
+        "text": "photos: \"assets/css/images/bg/peakbg.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/8000m-data.yml",
+        "line": 29,
+        "text": "photos: assets/css/images/bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/8000m-data.yml",
+        "line": 119,
+        "text": "photos: assets/css/images/bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/8000m-data.yml",
+        "line": 208,
+        "text": "photos: assets/css/images/bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/8000m-data.yml",
+        "line": 301,
+        "text": "photos: assets/css/images/bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/8000m-data.yml",
+        "line": 387,
+        "text": "photos: assets/css/images/bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/8000m-data.yml",
+        "line": 468,
+        "text": "photos: assets/css/images/bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/8000m-data.yml",
+        "line": 551,
+        "text": "photos: assets/css/images/bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/8000m-data.yml",
+        "line": 625,
+        "text": "photos: assets/css/images/bg/peakbg.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 332,
+        "text": "background-image: url('images/bg/peakbg.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 300,
+        "text": "background-image: url(\"images/bg/peakbg.jpg\");",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bg/peakbg1.jpg",
+    "proposed": "assets/css/images/bg/peakbg1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bg/rafting_bg.jpg",
+    "proposed": "assets/css/images/bg/rafting_bg.webp",
+    "references": [
+      {
+        "file": "_activities/old-rafting.html",
+        "line": 10,
+        "text": "custom_bg: \"bg/rafting_bg.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_activities/rafting.html",
+        "line": 5,
+        "text": "custom_thumb: \"bg/rafting_bg.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_activities/rafting.html",
+        "line": 6,
+        "text": "custom_bg: \"bg/rafting_bg.jpg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bg/rafting_booners.jpg",
+    "proposed": "assets/css/images/bg/rafting_booners.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/annapurna-circuit-mtb-tour/banner1.jpg",
+    "proposed": "assets/css/images/bike-tours/annapurna-circuit-mtb-tour/banner1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/annapurna-circuit-mtb-tour/leh-manali_banner.jpg",
+    "proposed": "assets/css/images/bike-tours/annapurna-circuit-mtb-tour/leh-manali_banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/chitwan-safari-mtb-tour/Mountain-bike-tour-Nepal-Milner-33.jpg",
+    "proposed": "assets/css/images/bike-tours/chitwan-safari-mtb-tour/Mountain-bike-tour-Nepal-Milner-33.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/chitwan-safari-mtb-tour/Mountain-bike-tour-Nepal-Milner-34.jpg",
+    "proposed": "assets/css/images/bike-tours/chitwan-safari-mtb-tour/Mountain-bike-tour-Nepal-Milner-34.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/chitwan-safari-mtb-tour/banner1.jpg",
+    "proposed": "assets/css/images/bike-tours/chitwan-safari-mtb-tour/banner1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/chitwan-safari-mtb-tour/leh-manali_banner.jpg",
+    "proposed": "assets/css/images/bike-tours/chitwan-safari-mtb-tour/leh-manali_banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/chitwan-safari-mtb-tour/leh-manali_min.jpg",
+    "proposed": "assets/css/images/bike-tours/chitwan-safari-mtb-tour/leh-manali_min.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/kathmandu-valley-mtb-tour/Mountain-bike-tour-Nepal-Milner-33.jpg",
+    "proposed": "assets/css/images/bike-tours/kathmandu-valley-mtb-tour/Mountain-bike-tour-Nepal-Milner-33.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/kathmandu-valley-mtb-tour/Mountain-bike-tour-Nepal-Milner-34.jpg",
+    "proposed": "assets/css/images/bike-tours/kathmandu-valley-mtb-tour/Mountain-bike-tour-Nepal-Milner-34.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/kathmandu-valley-mtb-tour/banner1.jpg",
+    "proposed": "assets/css/images/bike-tours/kathmandu-valley-mtb-tour/banner1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/kathmandu-valley-mtb-tour/leh-manali_banner.jpg",
+    "proposed": "assets/css/images/bike-tours/kathmandu-valley-mtb-tour/leh-manali_banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/kathmandu-valley-mtb-tour/leh-manali_min.jpg",
+    "proposed": "assets/css/images/bike-tours/kathmandu-valley-mtb-tour/leh-manali_min.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/leh-manali/Mountain-bike-tour-Nepal-Milner-33.jpg",
+    "proposed": "assets/css/images/bike-tours/leh-manali/Mountain-bike-tour-Nepal-Milner-33.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/leh-manali/Mountain-bike-tour-Nepal-Milner-34.jpg",
+    "proposed": "assets/css/images/bike-tours/leh-manali/Mountain-bike-tour-Nepal-Milner-34.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/leh-manali/banner1.jpg",
+    "proposed": "assets/css/images/bike-tours/leh-manali/banner1.webp",
+    "references": [
+      {
+        "file": "assets/js/cart.js",
+        "line": 952,
+        "text": "img : 'assets/css/images/bike-tours/leh-manali/banner1.jpg',",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 983,
+        "text": "img : 'assets/css/images/bike-tours/leh-manali/banner1.jpg',",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 1080,
+        "text": "img : 'assets/css/images/bike-tours/leh-manali/banner1.jpg',",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 1096,
+        "text": "img : 'assets/css/images/bike-tours/leh-manali/banner1.jpg',",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 1112,
+        "text": "img : 'assets/css/images/bike-tours/leh-manali/banner1.jpg',",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 1127,
+        "text": "img : 'assets/css/images/bike-tours/leh-manali/banner1.jpg',",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 1143,
+        "text": "img : 'assets/css/images/bike-tours/leh-manali/banner1.jpg',",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/leh-manali/leh-manali_banner.jpg",
+    "proposed": "assets/css/images/bike-tours/leh-manali/leh-manali_banner.webp",
+    "references": [
+      {
+        "file": "_bike-tours/leh-manali-bike-tour.html",
+        "line": 9,
+        "text": "custom_bg: \"bike-tours/leh-manali/leh-manali_banner.jpg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/leh-manali/leh-manali_min.jpg",
+    "proposed": "assets/css/images/bike-tours/leh-manali/leh-manali_min.webp",
+    "references": [
+      {
+        "file": "_treks/assets/js/cart.js",
+        "line": 730,
+        "text": "img : 'assets/css/images/bike-tours/leh-manali/leh-manali_min.jpg',",
+        "confidence": "literal"
+      },
+      {
+        "file": "_bike-tours/leh-manali-bike-tour.html",
+        "line": 8,
+        "text": "custom_thumb: \"bike-tours/leh-manali/leh-manali_min.jpg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/manaslu-circuit-mtb-tour/Mountain-bike-tour-Nepal-Milner-33.jpg",
+    "proposed": "assets/css/images/bike-tours/manaslu-circuit-mtb-tour/Mountain-bike-tour-Nepal-Milner-33.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/manaslu-circuit-mtb-tour/banner01.jpg",
+    "proposed": "assets/css/images/bike-tours/manaslu-circuit-mtb-tour/banner01.webp",
+    "references": [
+      {
+        "file": "_data/bike-data.yml",
+        "line": 269,
+        "text": "photos: \"assets/css/images/bike-tours/manaslu-circuit-mtb-tour/banner01.jpg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/manaslu-circuit-mtb-tour/banner1.jpg",
+    "proposed": "assets/css/images/bike-tours/manaslu-circuit-mtb-tour/banner1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/manaslu-circuit-mtb-tour/leh-manali_banner.jpg",
+    "proposed": "assets/css/images/bike-tours/manaslu-circuit-mtb-tour/leh-manali_banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/manaslu-circuit-mtb-tour/leh-manali_min.jpg",
+    "proposed": "assets/css/images/bike-tours/manaslu-circuit-mtb-tour/leh-manali_min.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/mtb/Annapurna-Circuit-Trek-Route-Farawayistan-27-1536x1024.jpg",
+    "proposed": "assets/css/images/bike-tours/mtb/Annapurna-Circuit-Trek-Route-Farawayistan-27-1536x1024.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/mtb/Annapurna-Circuit-Trek-Route-Farawayistan-29.jpg",
+    "proposed": "assets/css/images/bike-tours/mtb/Annapurna-Circuit-Trek-Route-Farawayistan-29.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/nagarkot-mtb-tour/Mountain-bike-tour-Nepal-Milner-33.jpg",
+    "proposed": "assets/css/images/bike-tours/nagarkot-mtb-tour/Mountain-bike-tour-Nepal-Milner-33.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/nagarkot-mtb-tour/Mountain-bike-tour-Nepal-Milner-34.jpg",
+    "proposed": "assets/css/images/bike-tours/nagarkot-mtb-tour/Mountain-bike-tour-Nepal-Milner-34.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/nagarkot-mtb-tour/banner1.jpg",
+    "proposed": "assets/css/images/bike-tours/nagarkot-mtb-tour/banner1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/nagarkot-mtb-tour/leh-manali_banner.jpg",
+    "proposed": "assets/css/images/bike-tours/nagarkot-mtb-tour/leh-manali_banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/nagarkot-mtb-tour/leh-manali_min.jpg",
+    "proposed": "assets/css/images/bike-tours/nagarkot-mtb-tour/leh-manali_min.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/pokhara-valley-mtb-tour/Mountain-bike-tour-Nepal-Milner-33.jpg",
+    "proposed": "assets/css/images/bike-tours/pokhara-valley-mtb-tour/Mountain-bike-tour-Nepal-Milner-33.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/pokhara-valley-mtb-tour/Mountain-bike-tour-Nepal-Milner-34.jpg",
+    "proposed": "assets/css/images/bike-tours/pokhara-valley-mtb-tour/Mountain-bike-tour-Nepal-Milner-34.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/pokhara-valley-mtb-tour/banner.jpg",
+    "proposed": "assets/css/images/bike-tours/pokhara-valley-mtb-tour/banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/pokhara-valley-mtb-tour/leh-manali_banner.jpg",
+    "proposed": "assets/css/images/bike-tours/pokhara-valley-mtb-tour/leh-manali_banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/pokhara-valley-mtb-tour/leh-manali_min.jpg",
+    "proposed": "assets/css/images/bike-tours/pokhara-valley-mtb-tour/leh-manali_min.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/shivapuri-national-park-mtb-tour/Mountain-bike-tour-Nepal-Milner-33.jpg",
+    "proposed": "assets/css/images/bike-tours/shivapuri-national-park-mtb-tour/Mountain-bike-tour-Nepal-Milner-33.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/shivapuri-national-park-mtb-tour/Mountain-bike-tour-Nepal-Milner-34.jpg",
+    "proposed": "assets/css/images/bike-tours/shivapuri-national-park-mtb-tour/Mountain-bike-tour-Nepal-Milner-34.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/shivapuri-national-park-mtb-tour/banner1.jpg",
+    "proposed": "assets/css/images/bike-tours/shivapuri-national-park-mtb-tour/banner1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/shivapuri-national-park-mtb-tour/leh-manali_banner.jpg",
+    "proposed": "assets/css/images/bike-tours/shivapuri-national-park-mtb-tour/leh-manali_banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/shivapuri-national-park-mtb-tour/leh-manali_min.jpg",
+    "proposed": "assets/css/images/bike-tours/shivapuri-national-park-mtb-tour/leh-manali_min.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/spiti/spiti_min.jpg",
+    "proposed": "assets/css/images/bike-tours/spiti/spiti_min.webp",
+    "references": [
+      {
+        "file": "_treks/assets/js/cart.js",
+        "line": 639,
+        "text": "img : 'assets/css/images/escape-trips/spiti-valley-escape/spiti_min.jpg',",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_treks/assets/js/cart.js",
+        "line": 743,
+        "text": "img : 'assets/css/images/bike-tours/spiti/spiti_min.jpg',",
+        "confidence": "literal"
+      },
+      {
+        "file": "_escape-trips/spiti-valley-escape.html",
+        "line": 9,
+        "text": "custom_thumb: \"escape-trips/spiti-valley-escape/spiti_min.jpg\"",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_escape-trips/spiti-valley-escape.html",
+        "line": 10,
+        "text": "custom_bg: \"escape-trips/spiti-valley-escape/spiti_min.jpg\"",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 759,
+        "text": "img : 'assets/css/images/escape-trips/spiti-valley-escape/spiti_min.jpg',",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 910,
+        "text": "img : 'assets/css/images/bike-tours/spiti/spiti_min.jpg',",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 924,
+        "text": "img : 'assets/css/images/bike-tours/spiti/spiti_min.jpg',",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 938,
+        "text": "img : 'assets/css/images/bike-tours/spiti/spiti_min.jpg',",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/upper-mustang-mtb-tour/2.jpg",
+    "proposed": "assets/css/images/bike-tours/upper-mustang-mtb-tour/2.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/upper-mustang-mtb-tour/5.jpg",
+    "proposed": "assets/css/images/bike-tours/upper-mustang-mtb-tour/5.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/upper-mustang-mtb-tour/6.jpg",
+    "proposed": "assets/css/images/bike-tours/upper-mustang-mtb-tour/6.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/upper-mustang-mtb-tour/leh-manali_banner.jpg",
+    "proposed": "assets/css/images/bike-tours/upper-mustang-mtb-tour/leh-manali_banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/bike-tours/upper-mustang-mtb-tour/leh-manali_min.jpg",
+    "proposed": "assets/css/images/bike-tours/upper-mustang-mtb-tour/leh-manali_min.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/banner(1).jpg",
+    "proposed": "assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/banner(1).webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/banner.jpg",
+    "proposed": "assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/civitatis.png",
+    "proposed": "assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/civitatis.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/getyourguide.png",
+    "proposed": "assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/getyourguide.webp",
+    "references": [
+      {
+        "file": "_data/brands.yml",
+        "line": 3,
+        "text": "image: /assets/css/images/getyourguide.png",
+        "confidence": "unique filename; review context"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/imagine.jpeg",
+    "proposed": "assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/imagine.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/recco.png",
+    "proposed": "assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/recco.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/tripadvisor.png",
+    "proposed": "assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/tripadvisor.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/wildcone.png",
+    "proposed": "assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/wildcone.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/annapurna/annapurna.jpeg",
+    "proposed": "assets/css/images/blog/annapurna/annapurna.webp",
+    "references": [
+      {
+        "file": "_posts/2023-04-17-annapurna-has-kicked-off-the-season-with-a-triumphant-first-ascent.html",
+        "line": 7,
+        "text": "custom_bg: blog/annapurna/annapurna.jpeg",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/blog.jpg",
+    "proposed": "assets/css/images/blog/blog.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/chandrakhani-pass/banner.jpg",
+    "proposed": "assets/css/images/blog/chandrakhani-pass/banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/everest-base/banner.jpg",
+    "proposed": "assets/css/images/blog/everest-base/banner.webp",
+    "references": [
+      {
+        "file": "_posts/2023-01-15-everest-base-camp-trek.html",
+        "line": 5,
+        "text": "custom_bg: blog/everest-base/banner.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/navigation-secondary.yml",
+        "line": 37,
+        "text": "- {label: JOURNAL, title: Stories from the Himalaya, image: /assets/css/images/blog/everest-base/banner.jpg, url: /news/}",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/everest-base/image1.jpg",
+    "proposed": "assets/css/images/blog/everest-base/image1.webp",
+    "references": [
+      {
+        "file": "_posts/2023-04-17-annapurna-has-kicked-off-the-season-with-a-triumphant-first-ascent.html",
+        "line": 9,
+        "text": "image1: /assets/css/images/blog/everest-base/image1.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_posts/2023-01-15-everest-base-camp-trek.html",
+        "line": 6,
+        "text": "image1: /assets/css/images/blog/everest-base/image1.jpg",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/everest-base/recco.jpg",
+    "proposed": "assets/css/images/blog/everest-base/recco.webp",
+    "references": [
+      {
+        "file": "_posts/2023-04-17-annapurna-has-kicked-off-the-season-with-a-triumphant-first-ascent.html",
+        "line": 10,
+        "text": "image4: /assets/css/images/blog/everest-base/recco.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_posts/2023-01-15-everest-base-camp-trek.html",
+        "line": 7,
+        "text": "image4: /assets/css/images/blog/everest-base/recco.jpg",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/everest-base/reccoo.jpg",
+    "proposed": "assets/css/images/blog/everest-base/reccoo.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/fishing-blog/fishingbg.jpg",
+    "proposed": "assets/css/images/blog/fishing-blog/fishingbg.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/food-blog/foodbg.jpg",
+    "proposed": "assets/css/images/blog/food-blog/foodbg.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/kufri-blog/kufri_camp.jpg",
+    "proposed": "assets/css/images/blog/kufri-blog/kufri_camp.webp",
+    "references": [
+      {
+        "file": "_sass/style.scss",
+        "line": 470,
+        "text": "background-image: url('images/blog/kufri-blog/kufri_camp.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 453,
+        "text": "background-image: url(\"images/blog/kufri-blog/kufri_camp.jpg\");",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/kufri-blog/kufri_snow_camp.jpg",
+    "proposed": "assets/css/images/blog/kufri-blog/kufri_snow_camp.webp",
+    "references": [
+      {
+        "file": "_sass/style.scss",
+        "line": 473,
+        "text": "background-image: url('images/blog/kufri-blog/kufri_snow_camp.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 457,
+        "text": "background-image: url(\"images/blog/kufri-blog/kufri_snow_camp.jpg\");",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/kufri-blog/kufribg.jpg",
+    "proposed": "assets/css/images/blog/kufri-blog/kufribg.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/kufri-blog/skiing.jpg",
+    "proposed": "assets/css/images/blog/kufri-blog/skiing.webp",
+    "references": [
+      {
+        "file": "_sass/style.scss",
+        "line": 476,
+        "text": "background-image: url('images/blog/kufri-blog/skiing.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 461,
+        "text": "background-image: url(\"images/blog/kufri-blog/skiing.jpg\");",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/kullu-dussehra-blog/dussehrabg.jpg",
+    "proposed": "assets/css/images/blog/kullu-dussehra-blog/dussehrabg.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/missing/anurag.jpg",
+    "proposed": "assets/css/images/blog/missing/anurag.webp",
+    "references": [
+      {
+        "file": "_posts/2024-09-20-After-being-missing-for-3-days-an-Indian-climber-was-rescued-from-a-crevasse.html",
+        "line": 6,
+        "text": "custom_bg: blog/missing/anurag.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_posts/2023-04-18-There-is-a-missing-climber-on-Annapurna.html",
+        "line": 7,
+        "text": "custom_bg: blog/missing/anurag.jpg",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/missing/bartek-skiing.jpeg",
+    "proposed": "assets/css/images/blog/missing/bartek-skiing.webp",
+    "references": [
+      {
+        "file": "_posts/2023-04-18-There-is-a-missing-climber-on-Annapurna.html",
+        "line": 10,
+        "text": "image2: /assets/css/images/blog/missing/bartek-skiing.jpeg",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/missing/lamy.jpeg",
+    "proposed": "assets/css/images/blog/missing/lamy.webp",
+    "references": [
+      {
+        "file": "_posts/2023-04-18-There-is-a-missing-climber-on-Annapurna.html",
+        "line": 9,
+        "text": "image1: /assets/css/images/blog/missing/lamy.jpeg",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/monastry-blog/dhankar-monastry.jpg",
+    "proposed": "assets/css/images/blog/monastry-blog/dhankar-monastry.webp",
+    "references": [
+      {
+        "file": "_sass/style.scss",
+        "line": 527,
+        "text": "background-image: url('images/blog/monastry-blog/dhankar-monastry.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 521,
+        "text": "background-image: url(\"images/blog/monastry-blog/dhankar-monastry.jpg\");",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/monastry-blog/key-monastry.jpg",
+    "proposed": "assets/css/images/blog/monastry-blog/key-monastry.webp",
+    "references": [
+      {
+        "file": "_sass/style.scss",
+        "line": 530,
+        "text": "background-image: url('images/blog/monastry-blog/key-monastry.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 525,
+        "text": "background-image: url(\"images/blog/monastry-blog/key-monastry.jpg\");",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/monastry-blog/monastrybg.jpg",
+    "proposed": "assets/css/images/blog/monastry-blog/monastrybg.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/monastry-blog/namgyal-monastry.jpg",
+    "proposed": "assets/css/images/blog/monastry-blog/namgyal-monastry.webp",
+    "references": [
+      {
+        "file": "_sass/style.scss",
+        "line": 533,
+        "text": "background-image: url('images/blog/monastry-blog/namgyal-monastry.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 529,
+        "text": "background-image: url(\"images/blog/monastry-blog/namgyal-monastry.jpg\");",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/monastry-blog/tayul-monastry.jpg",
+    "proposed": "assets/css/images/blog/monastry-blog/tayul-monastry.webp",
+    "references": [
+      {
+        "file": "_sass/style.scss",
+        "line": 536,
+        "text": "background-image: url('images/blog/monastry-blog/tayul-monastry.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 533,
+        "text": "background-image: url(\"images/blog/monastry-blog/tayul-monastry.jpg\");",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/monkey-temple/banner.jpg",
+    "proposed": "assets/css/images/blog/monkey-temple/banner.webp",
+    "references": [
+      {
+        "file": "about.html",
+        "line": 22,
+        "text": "<figure class=\"story-nepal-photo\"><img src=\"{{ '/assets/css/images/blog/monkey-temple/banner.jpg' | relative_url }}\" alt=\"Swayambhunath and the Kathmandu valley, Nepal\" width=\"950\" height=\"1250\" loading=\"lazy\"><figcaption>Kathmandu / Nepal</figcaption></figure>",
+        "confidence": "literal"
+      },
+      {
+        "file": "_posts/2023-01-18-Swayambhunath-Stupa-Discover-the-Spiritual-Hub-of-Nepal.html",
+        "line": 5,
+        "text": "custom_bg: blog/monkey-temple/banner.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_legal/faq.html",
+        "line": 14,
+        "text": "<header class=\"faq-hero\"><div><p class=\"resource-kicker\">BEFORE YOU GO</p><h1>Good questions. Clear answers.</h1><p>A few things to know before your trip.</p><label class=\"resource-search\" for=\"faq-search\"><span class=\"visually-hidden\">Search questions</span><input id=\"faq-search\" type=\"search\" placeholder=\"Search questions\u2026\" autocomplete=\"off\"></label></div><figure><img src=\"{{ '/assets/css/images/blog/monkey-temple/banner.jpg' | relative_url }}\" alt=\"Kathmandu, Nepal\" width=\"800\" height=\"450\"><figcaption>Kathmandu, Nepal</figcaption></figure></header>",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/monkey-temple/image1.jpg",
+    "proposed": "assets/css/images/blog/monkey-temple/image1.webp",
+    "references": [
+      {
+        "file": "_posts/2024-09-20-After-being-missing-for-3-days-an-Indian-climber-was-rescued-from-a-crevasse.html",
+        "line": 8,
+        "text": "image1: /assets/css/images/blog/monkey-temple/image1.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_posts/2023-01-18-Swayambhunath-Stupa-Discover-the-Spiritual-Hub-of-Nepal.html",
+        "line": 6,
+        "text": "image1: /assets/css/images/blog/monkey-temple/image1.jpg",
+        "confidence": "literal"
+      },
+      {
+        "file": "_posts/2023-04-13-massive-avalanche-on-mount-everest-results-in-three-missing-climbers.html",
+        "line": 8,
+        "text": "image1: /assets/css/images/blog/monkey-temple/image1.jpg",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/noel-hanna/noel.jpeg",
+    "proposed": "assets/css/images/blog/noel-hanna/noel.webp",
+    "references": [
+      {
+        "file": "_posts/2024-04-18-Tragic-News-Famous-Climber-Noel-Hanna-Passes-Away-on-Annapurna.html",
+        "line": 7,
+        "text": "custom_bg: blog/noel-hanna/noel.jpeg",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/noel-hanna/noel1.jpeg",
+    "proposed": "assets/css/images/blog/noel-hanna/noel1.webp",
+    "references": [
+      {
+        "file": "_posts/2024-04-18-Tragic-News-Famous-Climber-Noel-Hanna-Passes-Away-on-Annapurna.html",
+        "line": 9,
+        "text": "image1: /assets/css/images/blog/noel-hanna/noel1.jpeg",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/panchpokhari-blog/Panch-pokhari.jpg",
+    "proposed": "assets/css/images/blog/panchpokhari-blog/Panch-pokhari.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/pasang/donation.jpg",
+    "proposed": "assets/css/images/blog/pasang/donation.webp",
+    "references": [
+      {
+        "file": "_posts/2023-04-18-Mourning-Pasang-Lama-Seru-the-Khumbu-Trail-Builder.html",
+        "line": 10,
+        "text": "image2: /assets/css/images/blog/pasang/donation.jpg",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/pasang/pasang1.jpeg",
+    "proposed": "assets/css/images/blog/pasang/pasang1.webp",
+    "references": [
+      {
+        "file": "_posts/2023-04-18-Mourning-Pasang-Lama-Seru-the-Khumbu-Trail-Builder.html",
+        "line": 7,
+        "text": "custom_bg: blog/pasang/pasang1.jpeg",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/pemba-gelje/Tyler-track.jpg",
+    "proposed": "assets/css/images/blog/pemba-gelje/Tyler-track.webp",
+    "references": [
+      {
+        "file": "_posts/2025-01-27-Pemba-Gelje-Sherpa-Sets-New-Speed-Record-on-Manaslu-Tyler-Andrews-Forced-to-Turn-Back.html",
+        "line": 10,
+        "text": "image2: /assets/css/images/blog/pemba-gelje/Tyler-track.jpg",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/pemba-gelje/banner.jpeg",
+    "proposed": "assets/css/images/blog/pemba-gelje/banner.webp",
+    "references": [
+      {
+        "file": "_posts/2025-01-27-Pemba-Gelje-Sherpa-Sets-New-Speed-Record-on-Manaslu-Tyler-Andrews-Forced-to-Turn-Back.html",
+        "line": 7,
+        "text": "custom_bg: blog/pemba-gelje/banner.jpeg",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/pemba-gelje/insta.jpg",
+    "proposed": "assets/css/images/blog/pemba-gelje/insta.webp",
+    "references": [
+      {
+        "file": "_posts/2025-01-27-Pemba-Gelje-Sherpa-Sets-New-Speed-Record-on-Manaslu-Tyler-Andrews-Forced-to-Turn-Back.html",
+        "line": 9,
+        "text": "image1: /assets/css/images/blog/pemba-gelje/insta.jpg",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/rafting-blog/image1.jpg",
+    "proposed": "assets/css/images/blog/rafting-blog/image1.webp",
+    "references": [
+      {
+        "file": "_sass/style.scss",
+        "line": 541,
+        "text": "background-image: url('images/blog/rafting-blog/image1.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 547,
+        "text": "background-image: url('images/blog/rafting-blog/image1.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 538,
+        "text": "background-image: url(\"images/blog/rafting-blog/image1.jpg\");",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 546,
+        "text": "background-image: url(\"images/blog/rafting-blog/image1.jpg\");",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/rafting-blog/image2.jpg",
+    "proposed": "assets/css/images/blog/rafting-blog/image2.webp",
+    "references": [
+      {
+        "file": "_sass/style.scss",
+        "line": 544,
+        "text": "background-image: url('images/blog/rafting-blog/image2.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 542,
+        "text": "background-image: url(\"images/blog/rafting-blog/image2.jpg\");",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/rafting-blog/raftingbg.jpg",
+    "proposed": "assets/css/images/blog/rafting-blog/raftingbg.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/things-to-do/paragliding.jpg",
+    "proposed": "assets/css/images/blog/things-to-do/paragliding.webp",
+    "references": [
+      {
+        "file": "_sass/style.scss",
+        "line": 301,
+        "text": "/*\tbackground-image: url('images/paragliding.jpg');*/",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 342,
+        "text": "/*\tbackground-image: url('images/paragliding.jpg');*/",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 512,
+        "text": "background-image: url('images/blog/things-to-do/paragliding.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 263,
+        "text": "/*\tbackground-image: url('images/paragliding.jpg');*/",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 312,
+        "text": "/*\tbackground-image: url('images/paragliding.jpg');*/",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 504,
+        "text": "background-image: url(\"images/blog/things-to-do/paragliding.jpg\");",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/things-to-do/rafting.jpg",
+    "proposed": "assets/css/images/blog/things-to-do/rafting.webp",
+    "references": [
+      {
+        "file": "_treks/assets/css/recreation.css",
+        "line": 849,
+        "text": ".rafting-1{background: url(images/rafting.jpg) center no-repeat; background-size: 100%;}",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 509,
+        "text": "background-image: url('images/blog/things-to-do/rafting.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 1564,
+        "text": ".wopper--rafting{background: url(thumbs/rafting.jpg) center no-repeat; background-size: cover;}",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 1593,
+        "text": ".wopper--trip-rafting{background: url(thumbs/trip_activities/rafting.jpg) center no-repeat; background-size: 100%;}",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 1605,
+        "text": ".wopper--trip-rafting{background: url(images/escape-trips/weekend-escape/rafting.jpg) center no-repeat; background-size: 100%;}",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 1611,
+        "text": ".wopper--trip-rafting{background: url(images/escape-trips/shimla-manali-escape/rafting.jpg) center no-repeat; background-size: 100%;}",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 1617,
+        "text": ".wopper--trip-rafting{background: url(images/escape-trips/tirthan-valley/rafting.jpg) center no-repeat; background-size: 100%;}",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 500,
+        "text": "background-image: url(\"images/blog/things-to-do/rafting.jpg\");",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 1513,
+        "text": "background: url(thumbs/rafting.jpg) center no-repeat;",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 1625,
+        "text": "background: url(thumbs/trip_activities/rafting.jpg) center no-repeat;",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 1667,
+        "text": "background: url(images/escape-trips/weekend-escape/rafting.jpg) center no-repeat;",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 1688,
+        "text": "background: url(images/escape-trips/shimla-manali-escape/rafting.jpg) center no-repeat;",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 1709,
+        "text": "background: url(images/escape-trips/tirthan-valley/rafting.jpg) center no-repeat;",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "assets/css/recreation.css",
+        "line": 819,
+        "text": ".rafting-1{background: url(images/rafting.jpg) center no-repeat; background-size: 100%;}",
+        "confidence": "unique filename; review context"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/things-to-do/thingsbg.jpg",
+    "proposed": "assets/css/images/blog/things-to-do/thingsbg.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/top-5-trek/bhrigu_min.jpg",
+    "proposed": "assets/css/images/blog/top-5-trek/bhrigu_min.webp",
+    "references": [
+      {
+        "file": "_treks/bhrigu-lake.html",
+        "line": 9,
+        "text": "custom_thumb: \"treks/bhrigu_min.jpg\"",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_treks/bhrigu-lake.html",
+        "line": 10,
+        "text": "custom_bg: \"treks/bhrigu_min.jpg\"",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_treks/assets/js/cart.js",
+        "line": 374,
+        "text": "img : 'assets/css/images/treks/bhrigu_min.jpg',",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 498,
+        "text": "background-image: url('images/blog/top-5-trek/bhrigu_min.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 487,
+        "text": "background-image: url(\"images/blog/top-5-trek/bhrigu_min.jpg\");",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 501,
+        "text": "img : 'assets/css/images/treks/bhrigu_min.jpg',",
+        "confidence": "unique filename; review context"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/top-5-trek/fungni_min.jpg",
+    "proposed": "assets/css/images/blog/top-5-trek/fungni_min.webp",
+    "references": [
+      {
+        "file": "_treks/fungni-top.html",
+        "line": 10,
+        "text": "custom_thumb: \"treks/fungni_min.jpg\"",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_treks/fungni-top.html",
+        "line": 11,
+        "text": "custom_bg: \"treks/fungni_min.jpg\"",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_treks/assets/js/cart.js",
+        "line": 446,
+        "text": "img : 'assets/css/images/treks/fungni_min.jpg',",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 501,
+        "text": "background-image: url('images/blog/top-5-trek/fungni_min.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 491,
+        "text": "background-image: url(\"images/blog/top-5-trek/fungni_min.jpg\");",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 573,
+        "text": "img : 'assets/css/images/treks/fungni_min.jpg',",
+        "confidence": "unique filename; review context"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/top-5-trek/hampta_min.jpg",
+    "proposed": "assets/css/images/blog/top-5-trek/hampta_min.webp",
+    "references": [
+      {
+        "file": "_treks/hampta-pass.html",
+        "line": 11,
+        "text": "custom_thumb: \"treks/hampta_min.jpg\"",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_treks/hampta-pass.html",
+        "line": 12,
+        "text": "custom_bg: \"treks/hampta_min.jpg\"",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_treks/assets/js/cart.js",
+        "line": 561,
+        "text": "img : 'assets/css/images/treks/hampta_min.jpg',",
+        "confidence": "unique filename; review context"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 492,
+        "text": "background-image: url('images/blog/top-5-trek/hampta_min.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 479,
+        "text": "background-image: url(\"images/blog/top-5-trek/hampta_min.jpg\");",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 674,
+        "text": "img : 'assets/css/images/treks/hampta_min.jpg',",
+        "confidence": "unique filename; review context"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/top-5-trek/top-5-placesbg.jpg",
+    "proposed": "assets/css/images/blog/top-5-trek/top-5-placesbg.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/top-places/top-placesbg.jpg",
+    "proposed": "assets/css/images/blog/top-places/top-placesbg.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/trekking-gear-blog/backpack.jpg",
+    "proposed": "assets/css/images/blog/trekking-gear-blog/backpack.webp",
+    "references": [
+      {
+        "file": "_legal/gear-list.html",
+        "line": 14,
+        "text": "<article class=\"editorial-page\"><header class=\"editorial-heading\"><p class=\"editorial-kicker\">GEAR LISTS</p><h1>Pack for the mountain.</h1><p>Choose your trip type to find the right equipment list.</p></header><div class=\"editorial-directory-layout gear-directory-layout\"><figure class=\"gear-directory-photo\"><img src=\"{{ '/assets/css/images/blog/trekking-gear-blog/backpack.jpg' | relative_url }}\" alt=\"Trekking backpack and equipment\" width=\"700\" height=\"900\" loading=\"lazy\"></figure><div class=\"gear-directory-rows\">{% assign gear_titles = 'Trekking|6,000m peaks|7,000m expeditions|8,000m expeditions' | split: '|' %}{% assign gear_pdfs = 'trekking-gears-nepal.pdf|6000m_Checklist.pdf|7000m_Checklist.pdf|8000m_Checklist.pdf' | split: '|' %}{% for title in gear_titles %}<article class=\"gear-directory-row\"><span>{{ forloop.index | prepend: '0' }}</span><div><h2>{{ title }}</h2><p>Download the equipment checklist</p></div><a href=\"{{ '/assets/docs/' | append: gear_pdfs[forloop.index0] | relative_url }}\" download>Download PDF</a></article>{% endfor %}</div></div><div class=\"editorial-help\"><div><h2>Every trip is different.</h2><p>Confirm the final gear list with our team before departure.</p></div><nav aria-label=\"Gear planning links\"><a class=\"editorial-link\" href=\"{% link contact.html %}\">Ask about gear</a><a class=\"editorial-link\" href=\"{% link _legal/travel-advisory.html %}\">Travel advisory</a><a class=\"editorial-link\" href=\"{% link _legal/faq.html %}\">FAQs</a></nav></div></article>",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/trekking-gear-blog/backpack1.jpg",
+    "proposed": "assets/css/images/blog/trekking-gear-blog/backpack1.webp",
+    "references": [
+      {
+        "file": "_sass/style.scss",
+        "line": 484,
+        "text": "background-image: url('images/blog/trekking-gear-blog/backpack1.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 470,
+        "text": "background-image: url(\"images/blog/trekking-gear-blog/backpack1.jpg\");",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/trekking-gear-blog/gearbg.jpg",
+    "proposed": "assets/css/images/blog/trekking-gear-blog/gearbg.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/blog/trekking-gear-blog/shoes.jpg",
+    "proposed": "assets/css/images/blog/trekking-gear-blog/shoes.webp",
+    "references": [
+      {
+        "file": "_sass/style.scss",
+        "line": 487,
+        "text": "background-image: url('images/blog/trekking-gear-blog/shoes.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 474,
+        "text": "background-image: url(\"images/blog/trekking-gear-blog/shoes.jpg\");",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/civitatis.png",
+    "proposed": "assets/css/images/civitatis.webp",
+    "references": [
+      {
+        "file": "_data/brands.yml",
+        "line": 13,
+        "text": "image: /assets/css/images/civitatis.png",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/footer.png",
+    "proposed": "assets/css/images/footer.webp",
+    "references": [
+      {
+        "file": "_includes/site-footer.html",
+        "line": 2,
+        "text": "<img class=\"footer-mountain-image\" src=\"{{ '/assets/css/images/footer.png' | relative_url }}\" alt=\"\" loading=\"lazy\" width=\"4176\" height=\"3654\">",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/home.jpg",
+    "proposed": "assets/css/images/home.webp",
+    "references": [
+      {
+        "file": "_data/navigation-secondary.yml",
+        "line": 57,
+        "text": "- {label: CONTACT, title: Talk to our team, image: /assets/css/images/home.jpg, url: /contact/}",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 294,
+        "text": "background-image: url('images/home.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 254,
+        "text": "background-image: url(\"images/home.jpg\");",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/home1.jpg",
+    "proposed": "assets/css/images/home1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/homer.jpg",
+    "proposed": "assets/css/images/homer.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/logo.png",
+    "proposed": "assets/css/images/logo.webp",
+    "references": [
+      {
+        "file": "_layouts/default.html",
+        "line": 167,
+        "text": "<a class=\"atlas-wordmark\" href=\"{{ '/' | relative_url }}\" aria-label=\"Atlas Alpine Expedition home\"><img src=\"{{ '/assets/css/images/logo.png' | relative_url }}\" alt=\"Atlas Alpine Expedition\" width=\"901\" height=\"901\"></a>",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/madeira-prints-0222-nnVg3QXxc3OTZ8XUbCs1dZ40CMNDZkqcpNLSTz1W.jpg",
+    "proposed": "assets/css/images/madeira-prints-0222-nnVg3QXxc3OTZ8XUbCs1dZ40CMNDZkqcpNLSTz1W.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/ama-dablam/1.jpg",
+    "proposed": "assets/css/images/peak-climbing/ama-dablam/1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/ama-dablam/10.jpg",
+    "proposed": "assets/css/images/peak-climbing/ama-dablam/10.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/ama-dablam/11.jpg",
+    "proposed": "assets/css/images/peak-climbing/ama-dablam/11.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/ama-dablam/2.jpg",
+    "proposed": "assets/css/images/peak-climbing/ama-dablam/2.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/ama-dablam/3.jpg",
+    "proposed": "assets/css/images/peak-climbing/ama-dablam/3.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/ama-dablam/4.jpg",
+    "proposed": "assets/css/images/peak-climbing/ama-dablam/4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/ama-dablam/5.jpg",
+    "proposed": "assets/css/images/peak-climbing/ama-dablam/5.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/ama-dablam/6.jpg",
+    "proposed": "assets/css/images/peak-climbing/ama-dablam/6.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/ama-dablam/7.jpg",
+    "proposed": "assets/css/images/peak-climbing/ama-dablam/7.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/ama-dablam/8.jpg",
+    "proposed": "assets/css/images/peak-climbing/ama-dablam/8.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/ama-dablam/9.jpg",
+    "proposed": "assets/css/images/peak-climbing/ama-dablam/9.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/ama-dablam/AMAbanner.JPG",
+    "proposed": "assets/css/images/peak-climbing/ama-dablam/AMAbanner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/ama-dablam/banner.jpg",
+    "proposed": "assets/css/images/peak-climbing/ama-dablam/banner.webp",
+    "references": [
+      {
+        "file": "index.html",
+        "line": 58,
+        "text": "<a class=\"home-journey-card\" href=\"{% link _activities/peak-climbing.html %}?altitude=6000\"><img src=\"{{ '/assets/css/images/peak-climbing/ama-dablam/banner.jpg' | relative_url }}\" alt=\"\" loading=\"lazy\" width=\"700\" height=\"1000\"><span class=\"home-journey-number\">03 / 04</span><div class=\"home-journey-copy\"><p class=\"home-journeys-label\">HIMALAYAN CLIMBING</p><h3>6000m Peaks</h3><p>Build experience. Reach higher.</p><span class=\"home-journey-action\">View 6000m peaks</span></div></a>",
+        "confidence": "literal"
+      },
+      {
+        "file": "_layouts/default.html",
+        "line": 219,
+        "text": "<a class=\"atlas-card\" href=\"{% link _peaks/ama-dablam.html %}\"><img src=\"{{ '/assets/css/images/peak-climbing/ama-dablam/banner.jpg' | relative_url }}\" alt=\"\" loading=\"lazy\"><div><span class=\"atlas-eyebrow\">EXPEDITION</span><h3>Ama Dablam</h3></div></a>",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/ama-dablam.html",
+        "line": 9,
+        "text": "custom_thumb: \"peak-climbing/ama-dablam/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/ama-dablam.html",
+        "line": 10,
+        "text": "custom_bg: \"peak-climbing/ama-dablam/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/navigation-secondary.yml",
+        "line": 58,
+        "text": "- {label: ENQUIRE, title: Plan your journey, image: /assets/css/images/peak-climbing/ama-dablam/banner.jpg, url: /enquiry/}",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/peak-data.yml",
+        "line": 180,
+        "text": "photos: \"assets/css/images/peak-climbing/ama-dablam/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 1016,
+        "text": "img : 'assets/css/images/peak-climbing/ama-dablam/banner.jpg',",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/island-peak/1.jpg",
+    "proposed": "assets/css/images/peak-climbing/island-peak/1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/island-peak/2.jpg",
+    "proposed": "assets/css/images/peak-climbing/island-peak/2.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/island-peak/4.jpg",
+    "proposed": "assets/css/images/peak-climbing/island-peak/4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/island-peak/5.jpg",
+    "proposed": "assets/css/images/peak-climbing/island-peak/5.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/island-peak/6.jpg",
+    "proposed": "assets/css/images/peak-climbing/island-peak/6.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/island-peak/banner.jpg",
+    "proposed": "assets/css/images/peak-climbing/island-peak/banner.webp",
+    "references": [
+      {
+        "file": "_peaks/island-peak.html",
+        "line": 10,
+        "text": "custom_thumb: \"peak-climbing/island-peak/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/island-peak.html",
+        "line": 11,
+        "text": "custom_bg: \"peak-climbing/island-peak/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/peak-data.yml",
+        "line": 266,
+        "text": "photos: \"assets/css/images/peak-climbing/island-peak/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 1032,
+        "text": "img : 'assets/css/images/peak-climbing/island-peak/banner.jpg',",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/lobuche-peak/10.jpg",
+    "proposed": "assets/css/images/peak-climbing/lobuche-peak/10.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/lobuche-peak/2.jpg",
+    "proposed": "assets/css/images/peak-climbing/lobuche-peak/2.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/lobuche-peak/3.jpg",
+    "proposed": "assets/css/images/peak-climbing/lobuche-peak/3.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/lobuche-peak/5.jpg",
+    "proposed": "assets/css/images/peak-climbing/lobuche-peak/5.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/lobuche-peak/7.jpg",
+    "proposed": "assets/css/images/peak-climbing/lobuche-peak/7.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/lobuche-peak/8.jpg",
+    "proposed": "assets/css/images/peak-climbing/lobuche-peak/8.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/lobuche-peak/9.jpg",
+    "proposed": "assets/css/images/peak-climbing/lobuche-peak/9.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/lobuche-peak/banner.jpg",
+    "proposed": "assets/css/images/peak-climbing/lobuche-peak/banner.webp",
+    "references": [
+      {
+        "file": "_data/peak-data.yml",
+        "line": 19,
+        "text": "photos: \"assets/css/images/peak-climbing/lobuche-peak/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 1048,
+        "text": "img : 'assets/css/images/peak-climbing/lobuche-peak/banner.jpg',",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/lobuche-peak/banner1.jpg",
+    "proposed": "assets/css/images/peak-climbing/lobuche-peak/banner1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/lobuche-peak/bannerrr.jpg",
+    "proposed": "assets/css/images/peak-climbing/lobuche-peak/bannerrr.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/lobuche-peak/lobuche.jpg",
+    "proposed": "assets/css/images/peak-climbing/lobuche-peak/lobuche.webp",
+    "references": [
+      {
+        "file": "_peaks/lobuche-peak.html",
+        "line": 10,
+        "text": "custom_thumb: \"peak-climbing/lobuche-peak/lobuche.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/lobuche-peak.html",
+        "line": 11,
+        "text": "custom_bg: \"peak-climbing/lobuche-peak/lobuche.jpg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/mera-peak/1.jpg",
+    "proposed": "assets/css/images/peak-climbing/mera-peak/1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/mera-peak/2.jpg",
+    "proposed": "assets/css/images/peak-climbing/mera-peak/2.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/mera-peak/3.jpg",
+    "proposed": "assets/css/images/peak-climbing/mera-peak/3.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/mera-peak/banner.jpg",
+    "proposed": "assets/css/images/peak-climbing/mera-peak/banner.webp",
+    "references": [
+      {
+        "file": "_layouts/default.html",
+        "line": 220,
+        "text": "<a class=\"atlas-card\" href=\"{% link _peaks/mera-peak.html %}\"><img src=\"{{ '/assets/css/images/peak-climbing/mera-peak/banner.jpg' | relative_url }}\" alt=\"\" loading=\"lazy\"><div><span class=\"atlas-eyebrow\">EXPEDITION</span><h3>Mera Peak</h3></div></a>",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/mera-peak.html",
+        "line": 10,
+        "text": "custom_thumb: \"peak-climbing/mera-peak/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/mera-peak.html",
+        "line": 11,
+        "text": "custom_bg: \"peak-climbing/mera-peak/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/tharpu-peak.html",
+        "line": 10,
+        "text": "custom_thumb: \"peak-climbing/mera-peak/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_peaks/tharpu-peak.html",
+        "line": 11,
+        "text": "custom_bg: \"peak-climbing/mera-peak/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/peak-data.yml",
+        "line": 98,
+        "text": "photos: \"assets/css/images/peak-climbing/mera-peak/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 1000,
+        "text": "img : 'assets/css/images/peak-climbing/mera-peak/banner.jpg',",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/mera-peak/banner1.jpg",
+    "proposed": "assets/css/images/peak-climbing/mera-peak/banner1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/mera-peak/bannerrrr.jpg",
+    "proposed": "assets/css/images/peak-climbing/mera-peak/bannerrrr.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/mera-peak/qqbanner.JPG",
+    "proposed": "assets/css/images/peak-climbing/mera-peak/qqbanner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/peak-climbing/pisang-peak/Pisangbanner.jpg",
+    "proposed": "assets/css/images/peak-climbing/pisang-peak/Pisangbanner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/banner.jpg",
+    "proposed": "assets/css/images/rafting/banner.webp",
+    "references": [
+      {
+        "file": "_activities/rafting.html",
+        "line": 17,
+        "text": "{% assign activity_collection = site[\"rafting\"] %}{% assign activity_dataset = site.data[\"rafting-data\"] %}{% include activity-listing.html collection=activity_collection dataset=activity_dataset kind=\"Rafting Tours\" fallback=\"/assets/css/images/rafting/banner.jpg\" %}",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/rafting-data.yml",
+        "line": 36,
+        "text": "photos: \"assets/css/images/rafting/trishuli-river-rafting/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/rafting-data.yml",
+        "line": 197,
+        "text": "photos: \"assets/css/images/rafting/trishuli-river-rafting/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/rafting-data.yml",
+        "line": 412,
+        "text": "photos: \"assets/css/images/rafting/trishuli-river-rafting/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_rafting/trishuli-river-rafting.html",
+        "line": 7,
+        "text": "custom_thumb: \"rafting/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_rafting/trishuli-river-rafting.html",
+        "line": 8,
+        "text": "custom_bg: \"rafting/banner.jpg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/banner01.jpg",
+    "proposed": "assets/css/images/rafting/banner01.webp",
+    "references": [
+      {
+        "file": "_data/rafting-data.yml",
+        "line": 330,
+        "text": "photos: \"assets/css/images/rafting/tamur-river-rafting/banner01.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_rafting/tamur-river-rafting.html",
+        "line": 10,
+        "text": "custom_thumb: \"rafting/tamur-river-rafting/banner01.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_rafting/tamur-river-rafting.html",
+        "line": 11,
+        "text": "custom_bg: \"rafting/tamur-river-rafting/banner01.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 53,
+        "text": "img : 'assets/css/images/rafting/banner01.jpg',",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/banner4.jpg",
+    "proposed": "assets/css/images/rafting/banner4.webp",
+    "references": [
+      {
+        "file": "assets/js/cart.js",
+        "line": 111,
+        "text": "img : 'assets/css/images/rafting/banner4.jpg',",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/bheri-river-rafting/banner.jpg",
+    "proposed": "assets/css/images/rafting/bheri-river-rafting/banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/bheri-river-rafting/banner01.jpg",
+    "proposed": "assets/css/images/rafting/bheri-river-rafting/banner01.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/bheri-river-rafting/banner4.jpg",
+    "proposed": "assets/css/images/rafting/bheri-river-rafting/banner4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/bhote-koshi-river-rafting/banner.jpg",
+    "proposed": "assets/css/images/rafting/bhote-koshi-river-rafting/banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/bhote-koshi-river-rafting/banner01.jpg",
+    "proposed": "assets/css/images/rafting/bhote-koshi-river-rafting/banner01.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/bhote-koshi-river-rafting/banner4.jpg",
+    "proposed": "assets/css/images/rafting/bhote-koshi-river-rafting/banner4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/kali-gandaki-river-rafting/banner.jpg",
+    "proposed": "assets/css/images/rafting/kali-gandaki-river-rafting/banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/kali-gandaki-river-rafting/banner01.jpg",
+    "proposed": "assets/css/images/rafting/kali-gandaki-river-rafting/banner01.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/kali-gandaki-river-rafting/banner4.jpg",
+    "proposed": "assets/css/images/rafting/kali-gandaki-river-rafting/banner4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/karnali-river-rafting/banner.jpg",
+    "proposed": "assets/css/images/rafting/karnali-river-rafting/banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/karnali-river-rafting/banner01.jpg",
+    "proposed": "assets/css/images/rafting/karnali-river-rafting/banner01.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/karnali-river-rafting/banner4.jpg",
+    "proposed": "assets/css/images/rafting/karnali-river-rafting/banner4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/marshyangdi-river-rafting/banner.jpg",
+    "proposed": "assets/css/images/rafting/marshyangdi-river-rafting/banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/marshyangdi-river-rafting/banner01.jpg",
+    "proposed": "assets/css/images/rafting/marshyangdi-river-rafting/banner01.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/marshyangdi-river-rafting/banner4.jpg",
+    "proposed": "assets/css/images/rafting/marshyangdi-river-rafting/banner4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/rafting-in-kullu-manali/1.jpg",
+    "proposed": "assets/css/images/rafting/rafting-in-kullu-manali/1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/rafting-in-kullu-manali.jpg",
+    "proposed": "assets/css/images/rafting/rafting-in-kullu-manali.webp",
+    "references": [
+      {
+        "file": "_rafting/rafting-in-kullu-manali.html",
+        "line": 6,
+        "text": "custom_thumb: \"rafting/rafting-in-kullu-manali.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_rafting/rafting-in-kullu-manali.html",
+        "line": 7,
+        "text": "custom_bg: \"rafting/rafting-in-kullu-manali.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_rafting/beas-river-rafting.html",
+        "line": 6,
+        "text": "custom_thumb: \"rafting/rafting-in-kullu-manali.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_rafting/beas-river-rafting.html",
+        "line": 7,
+        "text": "custom_bg: \"rafting/rafting-in-kullu-manali.jpg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/seti-river-rafting/banner.jpg",
+    "proposed": "assets/css/images/rafting/seti-river-rafting/banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/seti-river-rafting/banner01.jpg",
+    "proposed": "assets/css/images/rafting/seti-river-rafting/banner01.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/seti-river-rafting/banner4.jpg",
+    "proposed": "assets/css/images/rafting/seti-river-rafting/banner4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/tamur-river-rafting/banner.jpg",
+    "proposed": "assets/css/images/rafting/tamur-river-rafting/banner.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/tamur-river-rafting/banner01.jpg",
+    "proposed": "assets/css/images/rafting/tamur-river-rafting/banner01.webp",
+    "references": [
+      {
+        "file": "_data/rafting-data.yml",
+        "line": 330,
+        "text": "photos: \"assets/css/images/rafting/tamur-river-rafting/banner01.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_rafting/tamur-river-rafting.html",
+        "line": 10,
+        "text": "custom_thumb: \"rafting/tamur-river-rafting/banner01.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_rafting/tamur-river-rafting.html",
+        "line": 11,
+        "text": "custom_bg: \"rafting/tamur-river-rafting/banner01.jpg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/tamur-river-rafting/banner4.jpg",
+    "proposed": "assets/css/images/rafting/tamur-river-rafting/banner4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/trishuli-river-rafting/banner.jpg",
+    "proposed": "assets/css/images/rafting/trishuli-river-rafting/banner.webp",
+    "references": [
+      {
+        "file": "_data/rafting-data.yml",
+        "line": 36,
+        "text": "photos: \"assets/css/images/rafting/trishuli-river-rafting/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/rafting-data.yml",
+        "line": 197,
+        "text": "photos: \"assets/css/images/rafting/trishuli-river-rafting/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/rafting-data.yml",
+        "line": 412,
+        "text": "photos: \"assets/css/images/rafting/trishuli-river-rafting/banner.jpg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/trishuli-river-rafting/banner01.jpg",
+    "proposed": "assets/css/images/rafting/trishuli-river-rafting/banner01.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rafting/trishuli-river-rafting/banner4.jpg",
+    "proposed": "assets/css/images/rafting/trishuli-river-rafting/banner4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/recco.png",
+    "proposed": "assets/css/images/recco.webp",
+    "references": [
+      {
+        "file": "_data/brands.yml",
+        "line": 11,
+        "text": "image: /assets/css/images/recco.png",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rock-climbing/1bg.jpg",
+    "proposed": "assets/css/images/rock-climbing/1bg.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rock-climbing/bg.jpg",
+    "proposed": "assets/css/images/rock-climbing/bg.webp",
+    "references": [
+      {
+        "file": "_activities/rock-climbing.html",
+        "line": 17,
+        "text": "{% assign activity_collection = site[\"rock-climbing\"] %}{% assign activity_dataset = site.data[\"rock-data\"] %}{% include activity-listing.html collection=activity_collection dataset=activity_dataset kind=\"Rock Climbing\" fallback=\"/assets/css/images/rock-climbing/bg.jpg\" %}",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/rock-data.yml",
+        "line": 17,
+        "text": "photos: \"assets/css/images/rock-climbing/bg.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 314,
+        "text": "background-image: url('/assets/css/images/rock-climbing/bg.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 280,
+        "text": "background-image: url(\"/assets/css/images/rock-climbing/bg.jpg\");",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rock-climbing/hattiban-rock-climbing/1.jpg",
+    "proposed": "assets/css/images/rock-climbing/hattiban-rock-climbing/1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rock-climbing/hattiban-rock-climbing/10.jpg",
+    "proposed": "assets/css/images/rock-climbing/hattiban-rock-climbing/10.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rock-climbing/hattiban-rock-climbing/2.jpg",
+    "proposed": "assets/css/images/rock-climbing/hattiban-rock-climbing/2.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rock-climbing/hattiban-rock-climbing/3.jpg",
+    "proposed": "assets/css/images/rock-climbing/hattiban-rock-climbing/3.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rock-climbing/hattiban-rock-climbing/4.jpg",
+    "proposed": "assets/css/images/rock-climbing/hattiban-rock-climbing/4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rock-climbing/hattiban-rock-climbing/5.jpg",
+    "proposed": "assets/css/images/rock-climbing/hattiban-rock-climbing/5.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rock-climbing/hattiban-rock-climbing/6.jpg",
+    "proposed": "assets/css/images/rock-climbing/hattiban-rock-climbing/6.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rock-climbing/hattiban-rock-climbing/7.jpg",
+    "proposed": "assets/css/images/rock-climbing/hattiban-rock-climbing/7.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rock-climbing/hattiban-rock-climbing/8.jpg",
+    "proposed": "assets/css/images/rock-climbing/hattiban-rock-climbing/8.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rock-climbing/hattiban-rock-climbing/9.jpg",
+    "proposed": "assets/css/images/rock-climbing/hattiban-rock-climbing/9.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rock-climbing/hattiban-rock-climbing/banner.jpg",
+    "proposed": "assets/css/images/rock-climbing/hattiban-rock-climbing/banner.webp",
+    "references": [
+      {
+        "file": "_rock-climbing/hattiban.html",
+        "line": 10,
+        "text": "custom_thumb: \"rock-climbing/hattiban-rock-climbing/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_rock-climbing/hattiban.html",
+        "line": 11,
+        "text": "custom_bg: \"rock-climbing/hattiban-rock-climbing/banner.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 967,
+        "text": "img : 'assets/css/images/rock-climbing/hattiban-rock-climbing/banner.jpg',",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/rock-climbing/hattiban-rock-climbing/bg.jpg",
+    "proposed": "assets/css/images/rock-climbing/hattiban-rock-climbing/bg.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/team/01.jpeg",
+    "proposed": "assets/css/images/team/01.webp",
+    "references": [
+      {
+        "file": "_data/team.yml",
+        "line": 13,
+        "text": "photos: \"assets/css/images/team/01.jpeg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/team.yml",
+        "line": 509,
+        "text": "photos: \"assets/css/images/team/01.jpeg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/team.yml",
+        "line": 765,
+        "text": "photos: \"assets/css/images/team/01.jpeg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/team/010.jpeg",
+    "proposed": "assets/css/images/team/010.webp",
+    "references": [
+      {
+        "file": "_data/team.yml",
+        "line": 419,
+        "text": "photos: \"assets/css/images/team/010.jpeg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/team.yml",
+        "line": 671,
+        "text": "photos: \"assets/css/images/team/010.jpeg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/team/011.jpeg",
+    "proposed": "assets/css/images/team/011.webp",
+    "references": [
+      {
+        "file": "_data/team.yml",
+        "line": 437,
+        "text": "photos: \"assets/css/images/team/011.jpeg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/team.yml",
+        "line": 689,
+        "text": "photos: \"assets/css/images/team/011.jpeg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/team/02.jpeg",
+    "proposed": "assets/css/images/team/02.webp",
+    "references": [
+      {
+        "file": "_data/team.yml",
+        "line": 91,
+        "text": "photos: \"assets/css/images/team/02.jpeg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/team.yml",
+        "line": 527,
+        "text": "photos: \"assets/css/images/team/02.jpeg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/team.yml",
+        "line": 785,
+        "text": "photos: \"assets/css/images/team/02.jpeg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/team/06.jpeg",
+    "proposed": "assets/css/images/team/06.webp",
+    "references": [
+      {
+        "file": "_data/team.yml",
+        "line": 347,
+        "text": "photos: \"assets/css/images/team/06.jpeg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/team.yml",
+        "line": 599,
+        "text": "photos: \"assets/css/images/team/06.jpeg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/team.yml",
+        "line": 865,
+        "text": "photos: \"assets/css/images/team/06.jpeg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/team/08.jpeg",
+    "proposed": "assets/css/images/team/08.webp",
+    "references": [
+      {
+        "file": "_data/team.yml",
+        "line": 383,
+        "text": "photos: \"assets/css/images/team/08.jpeg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/team.yml",
+        "line": 635,
+        "text": "photos: \"assets/css/images/team/08.jpeg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/team/09.jpeg",
+    "proposed": "assets/css/images/team/09.webp",
+    "references": [
+      {
+        "file": "_data/team.yml",
+        "line": 401,
+        "text": "photos: \"assets/css/images/team/09.jpeg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/team.yml",
+        "line": 653,
+        "text": "photos: \"assets/css/images/team/09.jpeg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/annapurna-circuit/1.jpg",
+    "proposed": "assets/css/images/treks/annapurna-circuit/1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/annapurna-circuit/10.jpg",
+    "proposed": "assets/css/images/treks/annapurna-circuit/10.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/annapurna-circuit/4.jpg",
+    "proposed": "assets/css/images/treks/annapurna-circuit/4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/annapurna-circuit/5.jpg",
+    "proposed": "assets/css/images/treks/annapurna-circuit/5.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/annapurna-circuit/6.jpg",
+    "proposed": "assets/css/images/treks/annapurna-circuit/6.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/annapurna-circuit/7.jpg",
+    "proposed": "assets/css/images/treks/annapurna-circuit/7.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/annapurna-circuit/8.jpg",
+    "proposed": "assets/css/images/treks/annapurna-circuit/8.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/annapurna-circuit/9.jpg",
+    "proposed": "assets/css/images/treks/annapurna-circuit/9.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/everest-base-camp/1.jpg",
+    "proposed": "assets/css/images/treks/everest-base-camp/1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/everest-base-camp/10.jpg",
+    "proposed": "assets/css/images/treks/everest-base-camp/10.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/everest-base-camp/2.jpg",
+    "proposed": "assets/css/images/treks/everest-base-camp/2.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/everest-base-camp/3.jpg",
+    "proposed": "assets/css/images/treks/everest-base-camp/3.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/everest-base-camp/4.jpg",
+    "proposed": "assets/css/images/treks/everest-base-camp/4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/everest-base-camp/5.jpg",
+    "proposed": "assets/css/images/treks/everest-base-camp/5.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/everest-base-camp/6.jpg",
+    "proposed": "assets/css/images/treks/everest-base-camp/6.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/everest-base-camp/7.jpg",
+    "proposed": "assets/css/images/treks/everest-base-camp/7.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/everest-base-camp/8.jpg",
+    "proposed": "assets/css/images/treks/everest-base-camp/8.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/everest-base-camp/9.jpg",
+    "proposed": "assets/css/images/treks/everest-base-camp/9.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/everest_base_min.jpg",
+    "proposed": "assets/css/images/treks/everest_base_min.webp",
+    "references": [
+      {
+        "file": "index.html",
+        "line": 56,
+        "text": "<a class=\"home-journey-card\" href=\"{% link _activities/peak-climbing.html %}?altitude=8000\"><img src=\"{{ '/assets/css/images/treks/everest_base_min.jpg' | relative_url }}\" alt=\"\" loading=\"lazy\" width=\"700\" height=\"1000\"><span class=\"home-journey-number\">01 / 04</span><div class=\"home-journey-copy\"><p class=\"home-journeys-label\">HIGH ALTITUDE</p><h3>8000m Expeditions</h3><p>Beyond the ordinary. Above the clouds.</p><span class=\"home-journey-action\">View expeditions</span></div></a>",
+        "confidence": "literal"
+      },
+      {
+        "file": "somthing.html",
+        "line": 29,
+        "text": "<img  class=\"trek-slide--img\" src=\"/assets/css/images/treks/everest_base_min.jpg\" alt=\"Everest Base Camp Trek\" title=\"Everest Base Camp Trek\">",
+        "confidence": "literal"
+      },
+      {
+        "file": "_treks/luxury-everest-base-camp.html",
+        "line": 8,
+        "text": "custom_thumb: \"treks/everest_base_min.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_treks/luxury-everest-base-camp.html",
+        "line": 9,
+        "text": "custom_bg: \"treks/everest_base_min.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_treks/everest-base-camp.html",
+        "line": 9,
+        "text": "custom_thumb: \"treks/everest_base_min.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_treks/everest-base-camp.html",
+        "line": 10,
+        "text": "custom_bg: \"treks/everest_base_min.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_treks/assets/js/cart.js",
+        "line": 102,
+        "text": "img : 'assets/css/images/treks/everest_base_min.jpg',",
+        "confidence": "literal"
+      },
+      {
+        "file": "_layouts/default.html",
+        "line": 196,
+        "text": "</div><div class=\"atlas-cards\"><a class=\"atlas-card\" href=\"{% link _treks/everest-base-camp.html %}\"><img src=\"{{ '/assets/css/images/treks/everest_base_min.jpg' | relative_url }}\" alt=\"\" loading=\"lazy\"><div><span class=\"atlas-eyebrow\">TREK</span><h3>Everest Base Camp</h3></div></a><a class=\"atlas-card\" href=\"{% link _treks/three-pass.html %}\"><img src=\"{{ '/assets/css/images/treks/three_passes_min.jpg' | relative_url }}\" alt=\"\" loading=\"lazy\"><div><span class=\"atlas-eyebrow\">TREK</span><h3>Three Passes Trek</h3></div></a></div></div></section>",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/trek-data.yml",
+        "line": 20,
+        "text": "photos: \"assets/css/images/treks/everest_base_min.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/trek-data.yml",
+        "line": 583,
+        "text": "# photos: \"assets/css/images/treks/everest_base_min.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/navigation-secondary.yml",
+        "line": 38,
+        "text": "- {label: FAQ, title: Frequently Asked Questions, image: /assets/css/images/treks/everest_base_min.jpg, url: /faq/}",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 336,
+        "text": "background-image: url('images/treks/everest_base_min.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 304,
+        "text": "background-image: url(\"images/treks/everest_base_min.jpg\");",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 206,
+        "text": "img : 'assets/css/images/treks/everest_base_min.jpg',",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/langtang-card.jpg",
+    "proposed": "assets/css/images/treks/langtang-card.webp",
+    "references": [
+      {
+        "file": "_data/trek-data.yml",
+        "line": 227,
+        "text": "card: assets/css/images/treks/langtang-card.jpg\"",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/langtang-valley/1.jpg",
+    "proposed": "assets/css/images/treks/langtang-valley/1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/langtang-valley/2.jpg",
+    "proposed": "assets/css/images/treks/langtang-valley/2.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/langtang-valley/3.jpg",
+    "proposed": "assets/css/images/treks/langtang-valley/3.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manasalu_min.jpg",
+    "proposed": "assets/css/images/treks/manasalu_min.webp",
+    "references": [
+      {
+        "file": "somthing.html",
+        "line": 100,
+        "text": "<img  class=\"trek-slide--img\" src=\"/assets/css/images/treks/manasalu_min.jpg\" alt=\"Manaslu Base Camp Trek \" title=\"Manaslu Base Camp Trek \">",
+        "confidence": "literal"
+      },
+      {
+        "file": "_treks/manaslu-base-camp.html",
+        "line": 11,
+        "text": "custom_thumb: \"treks/manasalu_min.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_treks/manaslu-base-camp.html",
+        "line": 12,
+        "text": "custom_bg: \"treks/manasalu_min.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_treks/assets/js/cart.js",
+        "line": 131,
+        "text": "img : 'assets/css/images/treks/manasalu_min.jpg',",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/trek-data.yml",
+        "line": 584,
+        "text": "photos: \"assets/css/images/treks/manasalu_min.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.scss",
+        "line": 343,
+        "text": "background-image: url('images/treks/manasalu_min.jpg');",
+        "confidence": "literal"
+      },
+      {
+        "file": "_sass/style.css",
+        "line": 313,
+        "text": "background-image: url(\"images/treks/manasalu_min.jpg\");",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 235,
+        "text": "img : 'assets/css/images/treks/manasalu_min.jpg',",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manasalu_minoo.jpg",
+    "proposed": "assets/css/images/treks/manasalu_minoo.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manaslu-base-camp/1.jpg",
+    "proposed": "assets/css/images/treks/manaslu-base-camp/1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manaslu-base-camp/2.jpg",
+    "proposed": "assets/css/images/treks/manaslu-base-camp/2.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manaslu-base-camp/3.jpg",
+    "proposed": "assets/css/images/treks/manaslu-base-camp/3.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manaslu-base-camp/4.jpg",
+    "proposed": "assets/css/images/treks/manaslu-base-camp/4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manaslu-base-camp/5.jpg",
+    "proposed": "assets/css/images/treks/manaslu-base-camp/5.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manaslu-base-camp/6.jpg",
+    "proposed": "assets/css/images/treks/manaslu-base-camp/6.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manaslu-circuit/1.jpg",
+    "proposed": "assets/css/images/treks/manaslu-circuit/1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manaslu-circuit/10.jpg",
+    "proposed": "assets/css/images/treks/manaslu-circuit/10.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manaslu-circuit/2.jpg",
+    "proposed": "assets/css/images/treks/manaslu-circuit/2.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manaslu-circuit/3.jpg",
+    "proposed": "assets/css/images/treks/manaslu-circuit/3.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manaslu-circuit/4.jpg",
+    "proposed": "assets/css/images/treks/manaslu-circuit/4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manaslu-circuit/5.jpg",
+    "proposed": "assets/css/images/treks/manaslu-circuit/5.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manaslu-circuit/6.jpg",
+    "proposed": "assets/css/images/treks/manaslu-circuit/6.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manaslu-circuit/7.jpg",
+    "proposed": "assets/css/images/treks/manaslu-circuit/7.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manaslu-circuit/8.jpg",
+    "proposed": "assets/css/images/treks/manaslu-circuit/8.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/manaslu-circuit/9.jpg",
+    "proposed": "assets/css/images/treks/manaslu-circuit/9.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/panch-pokhari/1.JPG",
+    "proposed": "assets/css/images/treks/panch-pokhari/1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/panch-pokhari/12.JPG",
+    "proposed": "assets/css/images/treks/panch-pokhari/12.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/panch-pokhari/2.jpg",
+    "proposed": "assets/css/images/treks/panch-pokhari/2.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/panch-pokhari/3.jpg",
+    "proposed": "assets/css/images/treks/panch-pokhari/3.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/panch-pokhari/4.jpg",
+    "proposed": "assets/css/images/treks/panch-pokhari/4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/panch-pokhari/5.jpg",
+    "proposed": "assets/css/images/treks/panch-pokhari/5.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/panch-pokhari/6.jpg",
+    "proposed": "assets/css/images/treks/panch-pokhari/6.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/panch_min.jpg",
+    "proposed": "assets/css/images/treks/panch_min.webp",
+    "references": [
+      {
+        "file": "somthing.html",
+        "line": 78,
+        "text": "<img class=\"trek-slide--img\" src=\"/assets/css/images/treks/panch_min.jpg\" alt=\"Panch Pokhari Trekk\" title=\"Panch Pokhari Trek\">",
+        "confidence": "literal"
+      },
+      {
+        "file": "_treks/panch-pokhari.html",
+        "line": 10,
+        "text": "custom_thumb: \"treks/panch_min.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_treks/panch-pokhari.html",
+        "line": 11,
+        "text": "custom_bg: \"treks/panch_min.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/trek-data.yml",
+        "line": 1749,
+        "text": "photos: \"assets/css/images/treks/panch_min.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 396,
+        "text": "img : 'assets/css/images/treks/panch_min.jpg',",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/pikey-peak/1.jpg",
+    "proposed": "assets/css/images/treks/pikey-peak/1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/pikey-peak/2.jpg",
+    "proposed": "assets/css/images/treks/pikey-peak/2.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/pikey-peak/3.jpg",
+    "proposed": "assets/css/images/treks/pikey-peak/3.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/pikey-peak/4.jpg",
+    "proposed": "assets/css/images/treks/pikey-peak/4.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/pikey-peak/IMG-20240712-WA0019.jpg",
+    "proposed": "assets/css/images/treks/pikey-peak/IMG-20240712-WA0019.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/pikey-peak.jpg",
+    "proposed": "assets/css/images/treks/pikey-peak.webp",
+    "references": [
+      {
+        "file": "_treks/pikey-peak.html",
+        "line": 8,
+        "text": "custom_thumb: \"treks/pikey-peak.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_treks/pikey-peak.html",
+        "line": 9,
+        "text": "custom_bg: \"treks/pikey-peak.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/trek-data.yml",
+        "line": 294,
+        "text": "photos: \"assets/css/images/treks/pikey-peak.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "_data/trek-data.yml",
+        "line": 295,
+        "text": "photoo: \"assets/css/images/treks/pikey-peak.jpg\"",
+        "confidence": "literal"
+      },
+      {
+        "file": "assets/js/cart.js",
+        "line": 380,
+        "text": "img : 'assets/css/images/treks/pikey-peak.jpg',",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/pikey-peak1.jpg",
+    "proposed": "assets/css/images/treks/pikey-peak1.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/treks/three-passes/1.jpg",
+    "proposed": "assets/css/images/treks/three-passes/1.webp",
+    "references": [
+      {
+        "file": "index.html",
+        "line": 27,
+        "text": "<img src=\"{{ '/assets/css/images/treks/three-passes/1.jpg' | relative_url }}\" alt=\"Mountain scenery from the Three Passes trek in Nepal\" loading=\"lazy\" width=\"2000\" height=\"1200\">",
+        "confidence": "literal"
+      },
+      {
+        "file": "index.html",
+        "line": 118,
+        "text": "{% if forloop.first %}{% assign journal_image = '/assets/css/images/treks/three-passes/1.jpg' %}{% elsif forloop.index == 3 %}{% assign journal_image = '/assets/css/images/treks/annapurna_base_camp_north_min.jpg' %}{% endif %}",
+        "confidence": "literal"
+      }
+    ],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/tripadvisor.png",
+    "proposed": "assets/css/images/tripadvisor.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  },
+  {
+    "old": "assets/css/images/why.jpg",
+    "proposed": "assets/css/images/why.webp",
+    "references": [],
+    "note": "Review dynamic gallery .jpg construction and front-matter prefixes before applying. No references were changed."
+  }
+]
