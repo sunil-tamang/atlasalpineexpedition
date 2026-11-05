@@ -26,7 +26,7 @@ everest:
   region: Khumbu
   country: Nepal
   filter_region: Everest Regions
-  photos: assets/css/images/bg/peakbg.jpg
+  photos: assets/css/images/bg/peakbg.webp
   popular: Y
   price: null
   bookLink: null
@@ -116,7 +116,7 @@ lhotse:
   region: Khumbu
   country: Nepal
   filter_region: Everest Regions
-  photos: assets/css/images/bg/peakbg.jpg
+  photos: assets/css/images/bg/peakbg.webp
   popular: N
   price: null
   bookLink: null
@@ -205,7 +205,7 @@ makalu:
   region: Makalu-Barun
   country: Nepal
   filter_region: Makalu
-  photos: assets/css/images/bg/peakbg.jpg
+  photos: assets/css/images/bg/peakbg.webp
   popular: N
   price: null
   bookLink: null
@@ -298,7 +298,7 @@ manaslu:
   region: Manaslu
   country: Nepal
   filter_region: Manaslu
-  photos: assets/css/images/bg/peakbg.jpg
+  photos: assets/css/images/bg/peakbg.webp
   popular: Y
   price: null
   bookLink: null
@@ -384,7 +384,7 @@ cho-oyu:
   region: Tibet
   country: China
   filter_region: Tibet
-  photos: assets/css/images/bg/peakbg.jpg
+  photos: assets/css/images/bg/peakbg.webp
   popular: N
   price: null
   bookLink: null
@@ -465,7 +465,7 @@ dhaulagiri:
   region: Dhaulagiri
   country: Nepal
   filter_region: Dhaulagiri
-  photos: assets/css/images/bg/peakbg.jpg
+  photos: assets/css/images/bg/peakbg.webp
   popular: N
   price: null
   bookLink: null
@@ -548,7 +548,7 @@ annapurna:
   region: Annapurna
   country: Nepal
   filter_region: Annapurna
-  photos: assets/css/images/bg/peakbg.jpg
+  photos: assets/css/images/bg/peakbg.webp
   popular: N
   price: null
   bookLink: null
@@ -622,7 +622,7 @@ kanchenjunga:
   region: Kanchenjunga
   country: Nepal
   filter_region: Kanchenjunga
-  photos: assets/css/images/bg/peakbg.jpg
+  photos: assets/css/images/bg/peakbg.webp
   popular: N
   price: null
   bookLink: null

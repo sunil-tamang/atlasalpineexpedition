@@ -20,7 +20,7 @@ keywords: "Himalayan expeditions, guided climbing Nepal, Ama Dablam, Mera Peak, 
     {% assign altitude_group = 'below6000' %}{% if altitude >= 8000 %}{% assign altitude_group = '8000' %}{% elsif altitude >= 7000 %}{% assign altitude_group = '7000' %}{% elsif altitude >= 6000 %}{% assign altitude_group = '6000' %}{% endif %}
     {% assign country = trip.country | default: 'Nepal' %}{% assign region = trip.filter_region | default: trip.region %}{% if region == 'Everest Regions' %}{% assign region = 'Everest' %}{% endif %}
     <a class="expedition-card" href="{{ expedition_url | relative_url }}" data-altitude="{{ altitude_group }}" data-country="{{ country | slugify }}" data-region="{{ region | slugify }}" data-region-label="{{ region | escape }}" data-days="{{ trip.days | default: 0 }}">
-     {% include directory-card.html trip=trip kind="Expeditions" index=forloop.index total=site.data.peak-data.size fallback="/assets/css/images/bg/peakbg.jpg" %}
+     {% include directory-card.html trip=trip kind="Expeditions" index=forloop.index total=site.data.peak-data.size fallback="/assets/css/images/bg/peakbg.webp" %}
     </a>
    {% endfor %}{% endfor %}
   </div>

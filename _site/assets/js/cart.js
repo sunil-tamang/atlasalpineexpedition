@@ -50,7 +50,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 1,
 				name : 'Trishuli River Rafting Tour ',
-				img : 'assets/css/images/rafting/banner01.jpg',
+				img : 'assets/css/images/rafting/banner01.webp',
 				oldprice: 1200.00,
 				price : 1000.00,
 				prodType : 'rafting',
@@ -108,7 +108,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 5,
 				name : 'Tamur River Rafting Tour ',
-				img : 'assets/css/images/rafting/banner4.jpg',
+				img : 'assets/css/images/rafting/banner4.webp',
 				oldprice: 1200.00,
 				price : 1000.00,
 				prodType : 'rafting',
@@ -203,7 +203,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 12,
 				name : 'Everest Base Camp Trek',
-				img : 'assets/css/images/treks/everest_base_min.jpg',
+				img : 'assets/css/images/treks/everest_base_min.webp',
 				price : 12000.00,
 				prodType :    'trekking',
 				descShort :   'The Everest Base Camp Trek is a bucket-list adventure that takes you through the stunning Khumbu region of Nepal, providing trekkers with the opportunity to experience the worlds highest mountain range up close. The trek begins in Lukla, a small mountain town, and passes through charming Sherpa villages, where trekkers can experience the unique culture and way of life of the local people.',
@@ -232,7 +232,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 14,
 				name : 'Manaslu Base Camp Trek',
-				img : 'assets/css/images/treks/manasalu_min.jpg',
+				img : 'assets/css/images/treks/manasalu_min.webp',
 				price : 1787,
 				prodType : 'trekking',
 				descShort :   ' Manaslu Base Camp Trek is a magnificent trek that takes you through the remote regions of the Himalayas in Nepal. This trek is gaining popularity due to its stunning landscapes, diverse cultures and pristine natural beauty. ',
@@ -377,7 +377,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 24,
 				name : 'Pikey Peak Trek',
-				img : 'assets/css/images/treks/pikey-peak.jpg',
+				img : 'assets/css/images/treks/pikey-peak.webp',
 				price : 1100.00,
 				prodType :    'trekking',
 				descShort :   ' Pikey Peak is a hidden gem in the Solu region of Nepal, known for its breathtaking views of Everest, Kanchenjunga, and several other Himalayan giants. This trek is perfect for those seeking a short, relatively easy adventure with stunning vistas. Below is a suggested 8-day itinerary for the Pikey Peak trek: ',
@@ -393,7 +393,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 26,
 				name : 'Panch Pokhari Trek',
-				img : 'assets/css/images/treks/panch_min.jpg',
+				img : 'assets/css/images/treks/panch_min.webp',
 				price : 12000.00,
 				prodType :    'trekking',
 				descShort :   ' Nestled in the heart of the Annapurna region lies a trek that is as diverse in its scenery as it is in its cultural experiences. The Annapurna Base Camp Trek from North is a journey that takes you through charming villages, lush forests, and towering mountains that have captivated adventurers for generations ...',
@@ -498,7 +498,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 33,
 				name : 'Bhrigu Lake Trek',
-				img : 'assets/css/images/treks/bhrigu_min.jpg',
+				img : 'assets/css/images/blog/top-5-trek/bhrigu_min.webp',
 				price : 7500.00,
 				prodType : 'trekking',
 				descShort : 'Brighu Lake Is An High Altitude Alpine Lake Near Manali Town At Altitude Of 14,009 Ft .It Is One Of The Most Beautiful Lake Named After Saint Maharishi Bhrigu One Of The Seven Great Sages Of Hindu Puranas .',
@@ -526,7 +526,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 35,
 				name : 'Kufri Trek',
-				img : 'assets/css/images/treks/kufri_min.jpg',
+				img : 'assets/css/images/blog/kufri-blog/kufri_min.jpg',
 				price : 5000.00,
 				prodType : 'trekking',
 				descShort : 'Kufri One Of The Most Beautiful And Virgin Place In the Lap Of Himalayas . Kufri Trek Was Also Our First Ever Trek 5 Friends On A Quest To Discover The Nature Beauty Which Lies At Top Of The Mountain ....',
@@ -541,7 +541,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 36,
 				name : 'Beas Kund Trek',
-				img : 'assets/css/images/treks/beas_min.jpg',
+				img : 'assets/css/images/blog/top-5-trek/beas_min.jpg',
 				price : 8500.00,
 				prodType : 'trekking',
 				descShort : 'Beas Kund Is The Origin Of Mighty Beas River Its A Beautiful Glacial Lake Forming The Beas River Which Gives Life To Millions Of People In the Himalayas ...',
@@ -570,7 +570,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 38,
 				name : 'Fungni Top Trek',
-				img : 'assets/css/images/treks/fungni_min.jpg',
+				img : 'assets/css/images/blog/top-5-trek/fungni_min.webp',
 				price : 6000.00,
 				prodType : 'trekking',
 				descShort : 'Fungni Top Is One Of The Most beautiful virgin Trek Only Few have explored. Locals Have Named This Mountain After Goddess Fungani who They Believe Resides At The Top Of This Mountain.',
@@ -671,7 +671,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 45,
 				name : 'Hampta Pass Trek',
-				img : 'assets/css/images/treks/hampta_min.jpg',
+				img : 'assets/css/images/blog/top-5-trek/hampta_min.webp',
 				price : 8500.00,
 				prodType : 'trekking',
 				descShort :   'Nestled in the beautiful state of Himachal Pradesh, Hampta Pass Trek is a fantastic adventure that takes you on a journey through stunning landscapes, dense forests, and high-altitude terrain. The trek is named after the Hampta Pass, a natural divide that separates the Kullu Valley from the Lahaul Valley.',
@@ -756,7 +756,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 50,
 				name : 'Spiti Valley Escape',
-				img : 'assets/css/images/escape-trips/spiti-valley-escape/spiti_min.jpg',
+				img : 'assets/css/images/bike-tours/spiti/spiti_min.webp',
 				price : 9999,
 				prodType : 'escape-trips',
 				stock : 1,
@@ -907,7 +907,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 59,
 				name : 'Nagarkot MTB Tour',
-				img : 'assets/css/images/bike-tours/spiti/spiti_min.jpg',
+				img : 'assets/css/images/bike-tours/spiti/spiti_min.webp',
 				price : 8500.00,
 				prodType : 'bike-tour',
 				descShort : 'Chandrakhani pass is a beautiful & calm pass at altitude of 12,007 Ft located in kullu valley of himachal pradesh . the top of ChandraKhani pass offers the fabulous  view of Deo Tibba , Pir Panjal and parvati valley ..',
@@ -921,7 +921,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 60,
 				name : 'Shivapuri National Park MTB Tour',
-				img : 'assets/css/images/bike-tours/spiti/spiti_min.jpg',
+				img : 'assets/css/images/bike-tours/spiti/spiti_min.webp',
 				price : 8500.00,
 				prodType : 'bike-tour',
 				descShort : 'Chandrakhani pass is a beautiful & calm pass at altitude of 12,007 Ft located in kullu valley of himachal pradesh . the top of ChandraKhani pass offers the fabulous  view of Deo Tibba , Pir Panjal and parvati valley ..',
@@ -935,7 +935,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 61,
 				name : 'Chitwan Safari MTB Tour',
-				img : 'assets/css/images/bike-tours/spiti/spiti_min.jpg',
+				img : 'assets/css/images/bike-tours/spiti/spiti_min.webp',
 				price : 8500.00,
 				prodType : 'bike-tour',
 				descShort : 'Chandrakhani pass is a beautiful & calm pass at altitude of 12,007 Ft located in kullu valley of himachal pradesh . the top of ChandraKhani pass offers the fabulous  view of Deo Tibba , Pir Panjal and parvati valley ..',
@@ -949,7 +949,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 62,
 				name : 'Pokhara MTB Tour',
-				img : 'assets/css/images/bike-tours/leh-manali/banner1.jpg',
+				img : 'assets/css/images/bike-tours/leh-manali/banner1.webp',
 				price : 36000.00,
 				prodType : 'bike-tour',
 				descShort : 'Chandrakhani pass is a beautiful & calm pass at altitude of 12,007 Ft located in kullu valley of himachal pradesh . the top of ChandraKhani pass offers the fabulous  view of Deo Tibba , Pir Panjal and parvati valley ..',
@@ -964,7 +964,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 63,
 				name : 'Hattiban Rock Climbing',
-				img : 'assets/css/images/rock-climbing/hattiban-rock-climbing/banner.jpg',
+				img : 'assets/css/images/rock-climbing/hattiban-rock-climbing/banner.webp',
 				price : 36000.00,
 				prodType : 'rock',
 				descShort :   "Discover the thrill of rock climbing at Hattiban, one of Nepal’s most iconic climbing destinations, located near the serene village of Pharping. Surrounded by breathtaking landscapes and rich cultural heritage, Hattiban is the perfect getaway for adventure enthusiasts.",
@@ -980,7 +980,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 64,
 				name : 'Nagarjun Rock Climbing',
-				img : 'assets/css/images/bike-tours/leh-manali/banner1.jpg',
+				img : 'assets/css/images/bike-tours/leh-manali/banner1.webp',
 				price : 36000.00,
 				prodType : 'rock',
 				descShort : 'Chandrakhani pass is a beautiful & calm pass at altitude of 12,007 Ft located in kullu valley of himachal pradesh . the top of ChandraKhani pass offers the fabulous  view of Deo Tibba , Pir Panjal and parvati valley ..',
@@ -997,7 +997,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 65,
 				name : 'Mera Peak Climbing',
-				img : 'assets/css/images/peak-climbing/mera-peak/banner.jpg',
+				img : 'assets/css/images/peak-climbing/mera-peak/banner.webp',
 				price : 36000.00,
 				prodType : 'peak-climbing',
 				descShort : 'Mera Peak, standing at an impressive altitude of 6,476 meters (21,247 feet), is the highest trekking peak in Nepal. Nestled in the stunning Everest region, it offers adventurous climbers an exhilarating experience combined with breathtaking views of the Himalayas. This peak is a perfect choice for those looking to take their mountaineering skills to the next level while enjoying the natural beauty of Nepal.',
@@ -1013,7 +1013,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 66,
 				name : 'Ama Dablam Peak Climbing',
-				img : 'assets/css/images/peak-climbing/ama-dablam/banner.jpg',
+				img : 'assets/css/images/peak-climbing/ama-dablam/banner.webp',
 				price : 36000.00,
 				prodType : 'peak-climbing',
 				descShort : "Ama Dablam, often referred to as the 'Matterhorn of the Himalayas,' is one of Nepal's most iconic peaks, standing majestically at 6,812 meters (22,349 feet). Located in the Khumbu region, near Mount Everest, Ama Dablam is renowned for its stunning beauty and technical climbing challenges. The name Ama Dablam means 'Mother's Necklace,' and it reflects the mountain's unique appearance, with its long ridges on each side resembling the arms of a mother protecting her child, and a hanging glacier (the 'Dablam') that resembles a sacred pendant worn by Sherpa women.",
@@ -1029,7 +1029,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 67,
 				name : 'Island Peak Climbing',
-				img : 'assets/css/images/peak-climbing/island-peak/banner.jpg',
+				img : 'assets/css/images/peak-climbing/island-peak/banner.webp',
 				price : 36000.00,
 				prodType : 'peak-climbing',
 				descShort : 'Island Peak, standing at an altitude of 6,160 meters (20,210 feet), is one of Nepals most popular trekking peaks. Located in the Khumbu region, it offers climbers an exhilarating experience combined with stunning views of the Himalayas.',
@@ -1045,7 +1045,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 68,
 				name : 'Lobuche Peak Climbing',
-				img : 'assets/css/images/peak-climbing/lobuche-peak/banner.jpg',
+				img : 'assets/css/images/peak-climbing/lobuche-peak/banner.webp',
 				price : 36000.00,
 				prodType : 'peak-climbing',
 				descShort : 'Lobuche East Peak, standing at an altitude of 6,119 meters (20,075 feet), is a more challenging trekking peak located in the Khumbu region of Nepal. It requires professional mountaineering skills and offers climbers an exhilarating and demanding adventure.',
@@ -1077,7 +1077,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 70,
 				name : 'Tharpu Chuli Peak Climbing',
-				img : 'assets/css/images/bike-tours/leh-manali/banner1.jpg',
+				img : 'assets/css/images/bike-tours/leh-manali/banner1.webp',
 				price : 36000.00,
 				prodType : 'peak-climbing',
 				descShort : 'Tharpu Chuli, also known as Tent Peak, is situated in the Annapurna Region. The base of this peak is a short walk through the stunningly beautiful route to Annapurna Base Camp. The climb involves navigating relatively easy routes that require basic climbing techniques, offering climbers an exhilarating adventure combined with stunning views of the surrounding Annapurna massif.',
@@ -1093,7 +1093,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 71,
 				name : 'Chulu East Peak Climbing',
-				img : 'assets/css/images/bike-tours/leh-manali/banner1.jpg',
+				img : 'assets/css/images/bike-tours/leh-manali/banner1.webp',
 				price : 36000.00,
 				prodType : 'peak-climbing',
 				descShort : 'Chandrakhani pass is a beautiful & calm pass at altitude of 12,007 Ft located in kullu valley of himachal pradesh . the top of ChandraKhani pass offers the fabulous  view of Deo Tibba , Pir Panjal and parvati valley ..',
@@ -1109,7 +1109,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 72,
 				name : 'Chulu West Peak Climbing',
-				img : 'assets/css/images/bike-tours/leh-manali/banner1.jpg',
+				img : 'assets/css/images/bike-tours/leh-manali/banner1.webp',
 				price : 36000.00,
 				prodType : 'peak-climbing',
 				descShort : 'Chandrakhani pass is a beautiful & calm pass at altitude of 12,007 Ft located in kullu valley of himachal pradesh . the top of ChandraKhani pass offers the fabulous  view of Deo Tibba , Pir Panjal and parvati valley ..',
@@ -1124,7 +1124,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 73,
 				name : 'Naya Kanga Peak Climbing',
-				img : 'assets/css/images/bike-tours/leh-manali/banner1.jpg',
+				img : 'assets/css/images/bike-tours/leh-manali/banner1.webp',
 				price : 36000.00,
 				prodType : 'peak-climbing',
 				descShort : 'Chandrakhani pass is a beautiful & calm pass at altitude of 12,007 Ft located in kullu valley of himachal pradesh . the top of ChandraKhani pass offers the fabulous  view of Deo Tibba , Pir Panjal and parvati valley ..',
@@ -1140,7 +1140,7 @@ business_paypal = 'jondoe@gmail.com'; // here goes your paypal email
 			{
 				id : 74,
 				name : 'Yala Peak Climbing',
-				img : 'assets/css/images/bike-tours/leh-manali/banner1.jpg',
+				img : 'assets/css/images/bike-tours/leh-manali/banner1.webp',
 				price : 36000.00,
 				prodType : 'peak-climbing',
 				descShort : 'Chandrakhani pass is a beautiful & calm pass at altitude of 12,007 Ft located in kullu valley of himachal pradesh . the top of ChandraKhani pass offers the fabulous  view of Deo Tibba , Pir Panjal and parvati valley ..',

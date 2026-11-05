@@ -6,7 +6,7 @@ himlung-himal:
   region: "Manaslu"
   country: "Nepal"
   filter_region: "Manaslu"
-  photos: "assets/css/images/bg/peakbg.jpg"
+  photos: "assets/css/images/bg/peakbg.webp"
   excerpt: "Explore Himlung Himal with our Nepal-based expedition team."
   description: "Plan a guided Himlung Himal expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
   enquiry_only: true
@@ -19,7 +19,7 @@ baruntse:
   region: "Khumbu"
   country: "Nepal"
   filter_region: "Everest Regions"
-  photos: "assets/css/images/bg/peakbg.jpg"
+  photos: "assets/css/images/bg/peakbg.webp"
   excerpt: "Explore Baruntse with our Nepal-based expedition team."
   description: "Plan a guided Baruntse expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
   enquiry_only: true
@@ -32,7 +32,7 @@ pumori:
   region: "Khumbu"
   country: "Nepal"
   filter_region: "Everest Regions"
-  photos: "assets/css/images/bg/peakbg.jpg"
+  photos: "assets/css/images/bg/peakbg.webp"
   excerpt: "Explore Pumori with our Nepal-based expedition team."
   description: "Plan a guided Pumori expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
   enquiry_only: true

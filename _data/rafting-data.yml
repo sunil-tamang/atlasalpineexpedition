@@ -33,7 +33,7 @@ trishuli-river-rafting:
     # image: "<img class='map1'>"
 
     photoo: "assets/css/images/bg/rafting_booner.jpg"
-    photos: "assets/css/images/rafting/trishuli-river-rafting/banner.jpg"
+    photos: "assets/css/images/rafting/trishuli-river-rafting/banner.webp"
 
 
 
@@ -194,7 +194,7 @@ karnali-river-rafting:
     # popular: "Y"
     price: "1400"
  
-    photos: "assets/css/images/rafting/trishuli-river-rafting/banner.jpg"
+    photos: "assets/css/images/rafting/trishuli-river-rafting/banner.webp"
 
     
     bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
@@ -327,7 +327,7 @@ tamur-river-rafting:
     popular: "Y"
     price: "1600"
     
-    photos: "assets/css/images/rafting/tamur-river-rafting/banner01.jpg"
+    photos: "assets/css/images/rafting/tamur-river-rafting/banner01.webp"
     
     bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
 
@@ -409,7 +409,7 @@ seti-river-rafting:
     # popular: "Y"
     price: "100"
     
-    photos: "assets/css/images/rafting/trishuli-river-rafting/banner.jpg"
+    photos: "assets/css/images/rafting/trishuli-river-rafting/banner.webp"
     
     bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
 

@@ -17,7 +17,7 @@ everest-base-camp-trek:
     difficulty: "Challenging"
     popular: "Y"
     price: "2,500.00"
-    photos: "assets/css/images/treks/everest_base_min.jpg"
+    photos: "assets/css/images/treks/everest_base_min.webp"
 
     
     bookLink: "https://imojo.in/STuatw/"
@@ -224,7 +224,7 @@ langtang-valley-trek:
     popular: "Y"
     price: "1,300.00"
     photos: "assets/css/images/treks/langtang_valley_min.jpg"
-    card: assets/css/images/treks/langtang-card.jpg"
+    card: assets/css/images/treks/langtang-card.webp"
     
     bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
 
@@ -291,8 +291,8 @@ pikey-peak-trek:
     region: "Solukhumbu"
     popular: "Y"
     price: "1200"
-    photos: "assets/css/images/treks/pikey-peak.jpg"
-    photoo: "assets/css/images/treks/pikey-peak.jpg"
+    photos: "assets/css/images/treks/pikey-peak.webp"
+    photoo: "assets/css/images/treks/pikey-peak.webp"
     url: ""
     
     bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
@@ -580,8 +580,8 @@ manaslu-base-camp-trek:
     region: "Manaslu"
     # popular: "Y"
     price: "1787"
-    # photos: "assets/css/images/treks/everest_base_min.jpg"
-    photos: "assets/css/images/treks/manasalu_min.jpg"
+    # photos: "assets/css/images/treks/everest_base_min.webp"
+    photos: "assets/css/images/treks/manasalu_min.webp"
     url: ""
     
     bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
@@ -1746,7 +1746,7 @@ panch-pokhari-trek:
     region: "Sindhupalchowk"
     popular: "Y"
     price: "500"
-    photos: "assets/css/images/treks/panch_min.jpg"
+    photos: "assets/css/images/treks/panch_min.webp"
 
     
     bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"

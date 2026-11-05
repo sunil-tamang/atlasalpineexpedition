@@ -229,7 +229,7 @@
  inset: 0;
  z-index: -1;
  pointer-events: none;
- background: url('images/bg/himalayan-people-mist.jpg') center / 100% 100% no-repeat;
+ background: url('images/bg/himalayan-people-mist.webp') center / 100% 100% no-repeat;
  opacity: .85;
  -webkit-mask-image: linear-gradient(to bottom,transparent 5%,#000 32%,#000 78%,transparent 100%);
  mask-image: linear-gradient(to bottom,transparent 5%,#000 32%,#000 78%,transparent 100%);

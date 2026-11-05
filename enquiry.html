@@ -10,7 +10,7 @@ custom_css: inquiry.css
  <header class="enquiry-heading"><h1 id="enquiry-heading">Let’s plan your journey.</h1><p>Tell us when you’d like to go and who’s coming.</p></header>
  <div class="enquiry-layout">
   <aside class="enquiry-trip" aria-label="Your trip">
-   <figure class="enquiry-trip-photo"><img id="sidebar-tour-image" src="{{ '/assets/css/images/bg/peakbg.jpg' | relative_url }}" alt="Himalayan mountains and a high-altitude camp" width="1000" height="1300"><figcaption><p>YOUR TRIP</p><h2 id="sidebar-tour-name">Your Himalayan journey</h2></figcaption></figure>
+   <figure class="enquiry-trip-photo"><img id="sidebar-tour-image" src="{{ '/assets/css/images/bg/peakbg.webp' | relative_url }}" alt="Himalayan mountains and a high-altitude camp" width="1000" height="1300"><figcaption><p>YOUR TRIP</p><h2 id="sidebar-tour-name">Your Himalayan journey</h2></figcaption></figure>
    <div class="enquiry-trip-meta"><span id="enquiry-trip-duration" hidden></span><span id="enquiry-trip-category">Nepal</span><a id="enquiry-trip-link" href="{% link _activities/peak-climbing.html %}">Explore journeys</a></div>
   </aside>
   <form class="enquiry-form" action="https://formsubmit.co/atlasalpineexpedition@gmail.com" method="POST" name="contact_form">
@@ -40,7 +40,7 @@ custom_css: inquiry.css
 {% for group in enquiry_groups %}{% for entry in site.data[group] %}{% unless enquiry_first %},{% endunless %}{% assign enquiry_first = false %}
 {% assign tour = entry[1] %}{% assign tour_slug = entry[0] %}{% assign tour_url = '' %}
 {% for doc in site.documents %}{% if doc.title-slug == tour_slug %}{% assign tour_url = doc.url %}{% endif %}{% if tour_slug == 'dhaulagiri-circuit-trek' and doc.title-slug == 'dhaulagiri-circuit' %}{% assign tour_url = doc.url %}{% endif %}{% endfor %}
-{% assign tour_image = tour.photos | default: '/assets/css/images/bg/peakbg.jpg' %}
+{% assign tour_image = tour.photos | default: '/assets/css/images/bg/peakbg.webp' %}
 {"slug":{{ tour_slug | jsonify }},"title":{{ tour.name | jsonify }},"image":{{ tour_image | relative_url | jsonify }},"days":{{ tour.days | default: '' | jsonify }},"url":{{ tour_url | relative_url | jsonify }},"group":{{ group | jsonify }}}
 {% endfor %}{% endfor %}]
 </script>

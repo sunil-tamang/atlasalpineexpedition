@@ -10,7 +10,7 @@
 
   role: Climbing Guide
 
-  photos: "assets/css/images/team/01.jpeg"
+  photos: "assets/css/images/team/01.webp"
 
   description: "Gelmu Sherpa is a distinguished mountaineer from Nepal, widely recognized for her exceptional achievements in high-altitude climbing. With a career spanning numerous peaks like Mount Everest, Ama Dablam, and Lhotse, she has earned her place among the most respected climbers in the region. <br/><br/> Starting her journey at a young age, Gelmu's passion for exploring the highest mountains drove her to master technical climbing, ice climbing, and high-altitude navigation. Her extensive training and experience have made her a highly skilled guide and a trusted leader on expeditions. <br/><br/> As a professional guide, Gelmu is known for her meticulous planning and ability to make critical decisions in extreme conditions. Her dedication to safety and her deep knowledge of the mountains have earned her the respect of clients and fellow climbers. <br/><br/> Beyond her climbing achievements, Gelmu is an advocate for empowering women in mountaineering. She mentors aspiring climbers, promotes ethical climbing practices, and serves as a role model in the adventure community. "
 
@@ -88,7 +88,7 @@
 
   role: Climbing Guide
 
-  photos: "assets/css/images/team/02.jpeg"
+  photos: "assets/css/images/team/02.webp"
 
   description: Sonam Tshering Lama is a professional climbing guide at Atlas Alpine Expedition with strong experience guiding clients on trekking peaks and high-altitude expeditions. He is known for his technical rope skills, safe guiding practices, and calm approach in challenging mountain environments. Sonam actively supports route preparation, summit coordination, and client safety, making him a dependable guide on both technical climbs and expedition-style ascents.
 
@@ -344,7 +344,7 @@
 
   placeholder: true
 
-  photos: "assets/css/images/team/06.jpeg"
+  photos: "assets/css/images/team/06.webp"
 
   description: "Tashi is a sample director profile overseeing budgets, financial planning and company administration."
 
@@ -380,7 +380,7 @@
 
   placeholder: true
 
-  photos: "assets/css/images/team/08.jpeg"
+  photos: "assets/css/images/team/08.webp"
 
   description: "James is a sample leader profile supporting expedition preparation, team communication and international guests."
 
@@ -398,7 +398,7 @@
 
   placeholder: true
 
-  photos: "assets/css/images/team/09.jpeg"
+  photos: "assets/css/images/team/09.webp"
 
   description: "Sofia is a sample leader profile working with local guides to prepare guests for trekking journeys."
 
@@ -416,7 +416,7 @@
 
   placeholder: true
 
-  photos: "assets/css/images/team/010.jpeg"
+  photos: "assets/css/images/team/010.webp"
 
   description: "Luca is a sample leader profile coordinating trip briefings, equipment planning and travel arrangements."
 
@@ -434,7 +434,7 @@
 
   placeholder: true
 
-  photos: "assets/css/images/team/011.jpeg"
+  photos: "assets/css/images/team/011.webp"
 
   description: "Emma is a sample leader profile connecting guest expectations with local trip planning and support."
 
@@ -506,7 +506,7 @@
 
   placeholder: true
 
-  photos: "assets/css/images/team/01.jpeg"
+  photos: "assets/css/images/team/01.webp"
 
   description: "Anita is a sample insurance / helicopter coordinator profile supporting the office team and the preparation of Himalayan journeys."
 
@@ -524,7 +524,7 @@
 
   placeholder: true
 
-  photos: "assets/css/images/team/02.jpeg"
+  photos: "assets/css/images/team/02.webp"
 
   description: "Kiran is a sample research & development head profile supporting the office team and the preparation of Himalayan journeys."
 
@@ -596,7 +596,7 @@
 
   placeholder: true
 
-  photos: "assets/css/images/team/06.jpeg"
+  photos: "assets/css/images/team/06.webp"
 
   description: "Prakash is a sample finance officer profile supporting the office team and the preparation of Himalayan journeys."
 
@@ -632,7 +632,7 @@
 
   placeholder: true
 
-  photos: "assets/css/images/team/08.jpeg"
+  photos: "assets/css/images/team/08.webp"
 
   description: "Deepak is a sample airport representative profile supporting the office team and the preparation of Himalayan journeys."
 
@@ -650,7 +650,7 @@
 
   placeholder: true
 
-  photos: "assets/css/images/team/09.jpeg"
+  photos: "assets/css/images/team/09.webp"
 
   description: "Srijana is a sample administrative assistant profile supporting the office team and the preparation of Himalayan journeys."
 
@@ -668,7 +668,7 @@
 
   placeholder: true
 
-  photos: "assets/css/images/team/010.jpeg"
+  photos: "assets/css/images/team/010.webp"
 
   description: "Rajan is a sample logistics coordinator profile supporting the office team and the preparation of Himalayan journeys."
 
@@ -686,7 +686,7 @@
 
   placeholder: true
 
-  photos: "assets/css/images/team/011.jpeg"
+  photos: "assets/css/images/team/011.webp"
 
   description: "Alina is a sample client travel coordinator profile supporting the office team and the preparation of Himalayan journeys."
 
@@ -762,7 +762,7 @@
 
   placeholder: true
 
-  photos: "assets/css/images/team/01.jpeg"
+  photos: "assets/css/images/team/01.webp"
 
   description: "Dorje is a fictional sample high altitude cook profile for the Field Staff directory. Biography, experience and any qualifications must be replaced with verified information."
 
@@ -782,7 +782,7 @@
 
   placeholder: true
 
-  photos: "assets/css/images/team/02.jpeg"
+  photos: "assets/css/images/team/02.webp"
 
   description: "Lhakpa is a fictional sample high altitude cook profile for the Field Staff directory. Biography, experience and any qualifications must be replaced with verified information."
 
@@ -862,7 +862,7 @@
 
   placeholder: true
 
-  photos: "assets/css/images/team/06.jpeg"
+  photos: "assets/css/images/team/06.webp"
 
   description: "Rinchen is a fictional sample photographer profile for the Field Staff directory. Biography, experience and any qualifications must be replaced with verified information."
 

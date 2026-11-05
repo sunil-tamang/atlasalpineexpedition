@@ -251,7 +251,7 @@ body {
 }
 
 .slide0 {
-  background-image: url("images/home.jpg");
+  background-image: url("images/home.webp");
   background-position: 28% center;
 }
 
@@ -277,7 +277,7 @@ body {
 }
 
 .slide6 {
-  background-image: url("/assets/css/images/rock-climbing/bg.jpg");
+  background-image: url("/assets/css/images/rock-climbing/bg.webp");
 }
 
 .slideBlog {
@@ -297,11 +297,11 @@ body {
 }
 
 .peakClimbing {
-  background-image: url("images/bg/peakbg.jpg");
+  background-image: url("images/bg/peakbg.webp");
 }
 
 .trek-slide0 {
-  background-image: url("images/treks/everest_base_min.jpg");
+  background-image: url("images/treks/everest_base_min.webp");
 }
 
 .trek-slide1 {
@@ -310,7 +310,7 @@ body {
 
 .trek-slide2 {
   /*	background-image: url('images/paragliding.jpg');*/
-  background-image: url("images/treks/manasalu_min.jpg");
+  background-image: url("images/treks/manasalu_min.webp");
 }
 
 .trek-slide3 {
@@ -450,15 +450,15 @@ body {
 
 /* KUFRI BLOG (Short Name - 'kufri-blog') */
 .kufri-blog-image1 {
-  background-image: url("images/blog/kufri-blog/kufri_camp.jpg");
+  background-image: url("images/blog/kufri-blog/kufri_camp.webp");
 }
 
 .kufri-blog-image2 {
-  background-image: url("images/blog/kufri-blog/kufri_snow_camp.jpg");
+  background-image: url("images/blog/kufri-blog/kufri_snow_camp.webp");
 }
 
 .kufri-blog-image3 {
-  background-image: url("images/blog/kufri-blog/skiing.jpg");
+  background-image: url("images/blog/kufri-blog/skiing.webp");
 }
 
 .kufri-blog-image4 {
@@ -467,16 +467,16 @@ body {
 
 /* trekking-gear-blog*/
 .trekking-gears-image1 {
-  background-image: url("images/blog/trekking-gear-blog/backpack1.jpg");
+  background-image: url("images/blog/trekking-gear-blog/backpack1.webp");
 }
 
 .trekking-gears-image2 {
-  background-image: url("images/blog/trekking-gear-blog/shoes.jpg");
+  background-image: url("images/blog/trekking-gear-blog/shoes.webp");
 }
 
 /* Top 5 Treks BLOG (Short Name - 'top-5-trek-blog') */
 .top-5-trek-blog-image1 {
-  background-image: url("images/blog/top-5-trek/hampta_min.jpg");
+  background-image: url("images/blog/top-5-trek/hampta_min.webp");
 }
 
 .top-5-trek-blog-image2 {
@@ -484,11 +484,11 @@ body {
 }
 
 .top-5-trek-blog-image3 {
-  background-image: url("images/blog/top-5-trek/bhrigu_min.jpg");
+  background-image: url("images/blog/top-5-trek/bhrigu_min.webp");
 }
 
 .top-5-trek-blog-image4 {
-  background-image: url("images/blog/top-5-trek/fungni_min.jpg");
+  background-image: url("images/blog/top-5-trek/fungni_min.webp");
 }
 
 .top-5-trek-blog-image5 {
@@ -497,11 +497,11 @@ body {
 
 /* Top 5 Things To Do BLOG (Short Name - 'things-to-do-blog') */
 .things-to-do-blog-image1 {
-  background-image: url("images/blog/things-to-do/rafting.jpg");
+  background-image: url("images/blog/things-to-do/rafting.webp");
 }
 
 .things-to-do-blog-image2 {
-  background-image: url("images/blog/things-to-do/paragliding.jpg");
+  background-image: url("images/blog/things-to-do/paragliding.webp");
 }
 
 .things-to-do-blog-image3 {
@@ -518,32 +518,32 @@ body {
 }
 
 .monastry-blog-image2 {
-  background-image: url("images/blog/monastry-blog/dhankar-monastry.jpg");
+  background-image: url("images/blog/monastry-blog/dhankar-monastry.webp");
 }
 
 .monastry-blog-image3 {
-  background-image: url("images/blog/monastry-blog/key-monastry.jpg");
+  background-image: url("images/blog/monastry-blog/key-monastry.webp");
 }
 
 .monastry-blog-image4 {
-  background-image: url("images/blog/monastry-blog/namgyal-monastry.jpg");
+  background-image: url("images/blog/monastry-blog/namgyal-monastry.webp");
 }
 
 .monastry-blog-image5 {
-  background-image: url("images/blog/monastry-blog/tayul-monastry.jpg");
+  background-image: url("images/blog/monastry-blog/tayul-monastry.webp");
 }
 
 /* rafting BLOG (Short Name - 'rafting-blog') */
 .rafting-blog-image1 {
-  background-image: url("images/blog/rafting-blog/image1.jpg");
+  background-image: url("images/blog/rafting-blog/image1.webp");
 }
 
 .rafting-blog-image2 {
-  background-image: url("images/blog/rafting-blog/image2.jpg");
+  background-image: url("images/blog/rafting-blog/image2.webp");
 }
 
 .rafting-blog-image3 {
-  background-image: url("images/blog/rafting-blog/image1.jpg");
+  background-image: url("images/blog/rafting-blog/image1.webp");
 }
 
 i {
@@ -1586,7 +1586,7 @@ p.content__pg:not(:last-child) {
 
 /* Treks */
 .wopper--kufri {
-  background: url(images/treks/kufri_min.jpg) center no-repeat;
+  background: url(images/blog/kufri-blog/kufri_min.jpg) center no-repeat;
   background-size: 100%;
 }
 

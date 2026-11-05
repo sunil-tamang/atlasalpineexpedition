@@ -16,7 +16,7 @@ lobuche-peak:
   region: "Khumbu"
   country: "Nepal"
   filter_region: "Everest Regions"
-  photos: "assets/css/images/peak-climbing/lobuche-peak/banner.jpg"
+  photos: "assets/css/images/peak-climbing/lobuche-peak/banner.webp"
   popular: "Y"
   price: "3,150.00"
   bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
@@ -95,7 +95,7 @@ mera-peak:
   region: "Hinku Valley"
   country: "Nepal"
   filter_region: "Everest Regions"
-  photos: "assets/css/images/peak-climbing/mera-peak/banner.jpg"
+  photos: "assets/css/images/peak-climbing/mera-peak/banner.webp"
   popular: "Y"
   price: "3,100.00"
   bookLink: "https://www.instamojo.com/thetrippyfrog/beas-kund-trek-ab0ba/"
@@ -177,7 +177,7 @@ ama-dablam:
 
     popular: "Y"
     price: "7,500.00"
-    photos: "assets/css/images/peak-climbing/ama-dablam/banner.jpg"
+    photos: "assets/css/images/peak-climbing/ama-dablam/banner.webp"
 
     bookLink: "https://www.instamojo.com/thetrippyfrog/ama-dablam-expedition/"
 
@@ -263,7 +263,7 @@ island-peak:
   country: "Nepal"
   filter_region: "Everest Regions"
 
-  photos: "assets/css/images/peak-climbing/island-peak/banner.jpg"
+  photos: "assets/css/images/peak-climbing/island-peak/banner.webp"
 
   popular: "Y"
   price: "3,150.00"

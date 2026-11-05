@@ -1,13 +1,13 @@
 # Existing logo assets used on the Atlas Alpine website.
 - name: GetYourGuide
-  image: /assets/css/images/getyourguide.png
+  image: /assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/getyourguide.webp
 - name: Tourist Israel
-  image: /assets/css/images/israel.jpg
+  image: /assets/css/images/blog/The Trippy Frog _ Adventures & Tours in the Himalayas_files/israel.jpg
 - name: Leave No Trace
   image: /assets/css/images/lnt.svg
 - name: Adventure Travel Trade Association
   image: /assets/css/images/ATTA.svg
 - name: RECCO
-  image: /assets/css/images/recco.png
+  image: /assets/css/images/recco.webp
 - name: Civitatis
-  image: /assets/css/images/civitatis.png
+  image: /assets/css/images/civitatis.webp

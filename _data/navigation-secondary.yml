@@ -34,8 +34,8 @@ resources:
         - {label: Rock Climbing, url: /activities/rock-climbing/}
         - {label: River Rafting, url: /activities/rafting/}
   cards:
-    - {label: JOURNAL, title: Stories from the Himalaya, image: /assets/css/images/blog/everest-base/banner.jpg, url: /news/}
-    - {label: FAQ, title: Frequently Asked Questions, image: /assets/css/images/treks/everest_base_min.jpg, url: /faq/}
+    - {label: JOURNAL, title: Stories from the Himalaya, image: /assets/css/images/blog/everest-base/banner.webp, url: /news/}
+    - {label: FAQ, title: Frequently Asked Questions, image: /assets/css/images/treks/everest_base_min.webp, url: /faq/}
 contact:
   label: Contact
   groups:
@@ -54,5 +54,5 @@ contact:
         - {label: Plan Your Trek, url: /enquiry/}
         - {label: Explore Trekking, url: /activities/trekking/}
   cards:
-    - {label: CONTACT, title: Talk to our team, image: /assets/css/images/home.jpg, url: /contact/}
-    - {label: ENQUIRE, title: Plan your journey, image: /assets/css/images/peak-climbing/ama-dablam/banner.jpg, url: /enquiry/}
+    - {label: CONTACT, title: Talk to our team, image: /assets/css/images/home.webp, url: /contact/}
+    - {label: ENQUIRE, title: Plan your journey, image: /assets/css/images/peak-climbing/ama-dablam/banner.webp, url: /enquiry/}

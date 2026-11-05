@@ -6,7 +6,7 @@ everest:
   region: "Khumbu"
   country: "Nepal"
   filter_region: "Everest Regions"
-  photos: "assets/css/images/bg/peakbg.jpg"
+  photos: "assets/css/images/bg/peakbg.webp"
   excerpt: "Explore Everest with our Nepal-based expedition team."
   description: "Plan a guided Everest expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
   enquiry_only: true
@@ -19,7 +19,7 @@ lhotse:
   region: "Khumbu"
   country: "Nepal"
   filter_region: "Everest Regions"
-  photos: "assets/css/images/bg/peakbg.jpg"
+  photos: "assets/css/images/bg/peakbg.webp"
   excerpt: "Explore Lhotse with our Nepal-based expedition team."
   description: "Plan a guided Lhotse expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
   enquiry_only: true
@@ -32,7 +32,7 @@ makalu:
   region: "Makalu"
   country: "Nepal"
   filter_region: "Makalu"
-  photos: "assets/css/images/bg/peakbg.jpg"
+  photos: "assets/css/images/bg/peakbg.webp"
   excerpt: "Explore Makalu with our Nepal-based expedition team."
   description: "Plan a guided Makalu expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
   enquiry_only: true
@@ -45,7 +45,7 @@ manaslu:
   region: "Manaslu"
   country: "Nepal"
   filter_region: "Manaslu"
-  photos: "assets/css/images/bg/peakbg.jpg"
+  photos: "assets/css/images/bg/peakbg.webp"
   excerpt: "Explore Manaslu with our Nepal-based expedition team."
   description: "Plan a guided Manaslu expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
   enquiry_only: true
@@ -58,7 +58,7 @@ cho-oyu:
   region: "Khumbu"
   country: "China"
   filter_region: "Tibet"
-  photos: "assets/css/images/bg/peakbg.jpg"
+  photos: "assets/css/images/bg/peakbg.webp"
   excerpt: "Explore Cho Oyu with our Nepal-based expedition team."
   description: "Plan a guided Cho Oyu expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
   enquiry_only: true
@@ -71,7 +71,7 @@ dhaulagiri:
   region: "Dhaulagiri"
   country: "Nepal"
   filter_region: "Dhaulagiri"
-  photos: "assets/css/images/bg/peakbg.jpg"
+  photos: "assets/css/images/bg/peakbg.webp"
   excerpt: "Explore Dhaulagiri with our Nepal-based expedition team."
   description: "Plan a guided Dhaulagiri expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
   enquiry_only: true
@@ -84,7 +84,7 @@ annapurna:
   region: "Annapurna"
   country: "Nepal"
   filter_region: "Annapurna"
-  photos: "assets/css/images/bg/peakbg.jpg"
+  photos: "assets/css/images/bg/peakbg.webp"
   excerpt: "Explore Annapurna with our Nepal-based expedition team."
   description: "Plan a guided Annapurna expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
   enquiry_only: true
@@ -97,7 +97,7 @@ kanchenjunga:
   region: "Kanchenjunga"
   country: "Nepal"
   filter_region: "Kanchenjunga"
-  photos: "assets/css/images/bg/peakbg.jpg"
+  photos: "assets/css/images/bg/peakbg.webp"
   excerpt: "Explore Kanchenjunga with our Nepal-based expedition team."
   description: "Plan a guided Kanchenjunga expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
   enquiry_only: true

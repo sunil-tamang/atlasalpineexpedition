@@ -221,8 +221,8 @@ tags: "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek,
 						{% assign subPath = page.title | remove: "Trek" | slugify | append: "/" %}
 						{% assign path = 'assets/css/images/treks/' | append: subPath | relative_url %}
 						<div class="magnific-img">
-							<a class="image-popup-vertical-fit" href="{{ path }}{{i}}.jpg" title="{{ page.title }}">
-								<img src="{{ path }}{{i}}.jpg" alt="{{ page.title }}" title="{{page.title}}" />
+							<a class="image-popup-vertical-fit" href="{% capture numbered_photo %}{{ path }}{{ i }}.jpg{% endcapture %}{% assign numbered_photo_key = numbered_photo | prepend: '/' | replace: '//', '/' %}{{ site.data.optimized-images[numbered_photo_key] | default: numbered_photo | relative_url }}" title="{{ page.title }}">
+								<img src="{% capture numbered_photo %}{{ path }}{{ i }}.jpg{% endcapture %}{% assign numbered_photo_key = numbered_photo | prepend: '/' | replace: '//', '/' %}{{ site.data.optimized-images[numbered_photo_key] | default: numbered_photo | relative_url }}" alt="{{ page.title }}" title="{{page.title}}" />
 							</a>
 						</div>
 					{% endfor %}

@@ -7,12 +7,12 @@
 {% elsif include.kind == 'bike-tours' %}{% assign td_category = 'Bike Tours' %}{% assign td_directory = '/activities/bike-tours/' %}{% assign td_folder = '/assets/css/images/' | append: page.custom_bg | split: '/' | pop | join: '/' | append: '/' %}
 {% else %}{% assign td_category = 'Expeditions' %}{% assign td_directory = '/activities/expeditions/' %}{% assign td_folder = '/assets/css/images/peak-climbing/' | append: page.title-slug | append: '/' %}
 {% endif %}
-{% assign td_image_path = td_image | prepend: '/' | replace: '//', '/' %}{% assign td_image_asset = site.static_files | where: 'path', td_image_path | first %}{% unless td_image_asset %}{% assign td_image = td_fallback %}{% assign td_fallback_asset = site.static_files | where: 'path', td_fallback | first %}{% unless td_fallback_asset %}{% assign td_image = '/assets/css/images/bg/peakbg.jpg' %}{% endunless %}{% endunless %}
+{% assign td_image_path = td_image | prepend: '/' | replace: '//', '/' %}{% assign td_image_asset = site.static_files | where: 'path', td_image_path | first %}{% unless td_image_asset %}{% assign td_image = td_fallback %}{% assign td_fallback_asset = site.static_files | where: 'path', td_fallback | first %}{% unless td_fallback_asset %}{% assign td_image = '/assets/css/images/bg/peakbg.webp' %}{% endunless %}{% endunless %}
 {% assign td_gallery = '' | split : ',' %}
 {% for td_file in site.static_files %}{% assign td_prefix = td_file.path | slice : 0,
     td_folder.size %}
-    {% if td_prefix == td_folder %}
-        {% if td_file.extname == '.jpg' or td_file.extname == '.jpeg' or td_file.extname == '.JPG' or td_file.extname == '.png' %}{% assign td_gallery = td_gallery | push: td_file %}
+    {% if td_prefix == td_folder %}{% assign td_optimized = site.data.optimized-images[td_file.path] %}
+        {% if td_file.extname == '.jpg' or td_file.extname == '.jpeg' or td_file.extname == '.JPG' or td_file.extname == '.png' or td_file.extname == '.webp' %}{% unless td_optimized %}{% assign td_gallery = td_gallery | push: td_file %}{% endunless %}
         {% endif %}
     {% endif %}
 {% endfor %}
