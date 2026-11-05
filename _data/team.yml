@@ -256,23 +256,63 @@
 
       year: 2024
 
-# SAMPLE / PLACEHOLDER — Managing Director*
+# Managing Director — links to the existing individual profile.
 
-- name: "Nima Dorje Sherpa"
 
-  slug: "placeholder-nima-dorje-sherpa"
 
+# SAMPLE / PLACEHOLDER — Managing Director
+# Mountain summits and years below are fictional.
+
+- name: "Singi Lama"
+  slug: "singi-lama"
   role: "Managing Director"
-
   category: "board-of-directors"
-
-  placeholder: true
-
+  placeholder: false
   photos: "assets/css/images/team/04.jpeg"
 
-  description: "Nima is a sample director profile focused on planning, local partnerships and thoughtful expedition operations."
+  description: >-
+    Singi Lama serves as the Managing Director of Atlas Alpine
+    Expedition, overseeing company operations, expedition planning,
+    and team coordination. With a background in mountaineering
+    and experience in Nepal's Himalayan tourism industry, he works
+    closely with mountain guides, local partners, and expedition
+    teams to deliver well-organized and professionally managed
+    journeys. His focus is on safety, reliable operations,
+    and meaningful mountain experiences.
 
-  placeholder_note: "Fictional sample profile. Local portrait reused for layout only; replace name, role, biography and photograph before publication."
+  mountains:
+    - name: Everest
+      summited: 2
+      years: [2018, 2022]
+
+    - name: Manaslu
+      summited: 1
+      years: [2019]
+
+    - name: Ama Dablam
+      summited: 3
+      years: [2017, 2020, 2023]
+
+    - name: Himlung Himal
+      summited: 1
+      years: [2021]
+
+    - name: Lobuche
+      summited: 4
+      years: [2016, 2018, 2021, 2024]
+
+    - name: Island Peak
+      summited: 3
+      years: [2015, 2019, 2022]
+
+    - name: Mera Peak
+      summited: 2
+      years: [2017, 2023]
+
+  trainings:
+    - course: "Basic Mountaineering Course"
+      institution: "Nepal Mountaineering Association"
+      year: 2015
 
 # SAMPLE / PLACEHOLDER — Operations Director*
 

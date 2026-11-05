@@ -1,0 +1,106 @@
+# Mountain records use the same keyed structure as peak-data.yml.
+# Detailed itineraries, dates and prices are confirmed on enquiry.
+everest:
+  name: "Everest Expedition"
+  altitude: "8,000m+"
+  region: "Khumbu"
+  country: "Nepal"
+  filter_region: "Everest Regions"
+  photos: "assets/css/images/bg/peakbg.jpg"
+  excerpt: "Explore Everest with our Nepal-based expedition team."
+  description: "Plan a guided Everest expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+  enquiry_only: true
+  overview:
+    - content: "Plan a guided Everest expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+
+lhotse:
+  name: "Lhotse Expedition"
+  altitude: "8,000m+"
+  region: "Khumbu"
+  country: "Nepal"
+  filter_region: "Everest Regions"
+  photos: "assets/css/images/bg/peakbg.jpg"
+  excerpt: "Explore Lhotse with our Nepal-based expedition team."
+  description: "Plan a guided Lhotse expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+  enquiry_only: true
+  overview:
+    - content: "Plan a guided Lhotse expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+
+makalu:
+  name: "Makalu Expedition"
+  altitude: "8,000m+"
+  region: "Makalu"
+  country: "Nepal"
+  filter_region: "Makalu"
+  photos: "assets/css/images/bg/peakbg.jpg"
+  excerpt: "Explore Makalu with our Nepal-based expedition team."
+  description: "Plan a guided Makalu expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+  enquiry_only: true
+  overview:
+    - content: "Plan a guided Makalu expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+
+manaslu:
+  name: "Manaslu Expedition"
+  altitude: "8,000m+"
+  region: "Manaslu"
+  country: "Nepal"
+  filter_region: "Manaslu"
+  photos: "assets/css/images/bg/peakbg.jpg"
+  excerpt: "Explore Manaslu with our Nepal-based expedition team."
+  description: "Plan a guided Manaslu expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+  enquiry_only: true
+  overview:
+    - content: "Plan a guided Manaslu expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+
+cho-oyu:
+  name: "Cho Oyu Expedition"
+  altitude: "8,000m+"
+  region: "Khumbu"
+  country: "China"
+  filter_region: "Tibet"
+  photos: "assets/css/images/bg/peakbg.jpg"
+  excerpt: "Explore Cho Oyu with our Nepal-based expedition team."
+  description: "Plan a guided Cho Oyu expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+  enquiry_only: true
+  overview:
+    - content: "Plan a guided Cho Oyu expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+
+dhaulagiri:
+  name: "Dhaulagiri Expedition"
+  altitude: "8,000m+"
+  region: "Dhaulagiri"
+  country: "Nepal"
+  filter_region: "Dhaulagiri"
+  photos: "assets/css/images/bg/peakbg.jpg"
+  excerpt: "Explore Dhaulagiri with our Nepal-based expedition team."
+  description: "Plan a guided Dhaulagiri expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+  enquiry_only: true
+  overview:
+    - content: "Plan a guided Dhaulagiri expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+
+annapurna:
+  name: "Annapurna Expedition"
+  altitude: "8,000m+"
+  region: "Annapurna"
+  country: "Nepal"
+  filter_region: "Annapurna"
+  photos: "assets/css/images/bg/peakbg.jpg"
+  excerpt: "Explore Annapurna with our Nepal-based expedition team."
+  description: "Plan a guided Annapurna expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+  enquiry_only: true
+  overview:
+    - content: "Plan a guided Annapurna expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+
+kanchenjunga:
+  name: "Kanchenjunga Expedition"
+  altitude: "8,000m+"
+  region: "Kanchenjunga"
+  country: "Nepal"
+  filter_region: "Kanchenjunga"
+  photos: "assets/css/images/bg/peakbg.jpg"
+  excerpt: "Explore Kanchenjunga with our Nepal-based expedition team."
+  description: "Plan a guided Kanchenjunga expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+  enquiry_only: true
+  overview:
+    - content: "Plan a guided Kanchenjunga expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+

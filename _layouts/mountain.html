@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{% assign mountain = site.data[page.data_source][page.title-slug] %}
+<div class="trip-detail trip-reference mountain-detail">
+ {% include trip-intro.html trip=mountain kind="expeditions" overview_only=true %}
+ <div class="two-col-layout"><div class="content__left"><div class="material"><section class="trek--section" id="trip-overview"><h2 class="content__sub-title">{{ mountain.name | escape }}</h2>{% for item in mountain.overview %}<p>{{ item.content }}</p>{% endfor %}<p>Contact our team for the current itinerary, dates, equipment requirements and availability.</p></section></div></div></div>
+ <div class="trip-availability"><div><h2>Plan your expedition.</h2><p>Tell us about your experience and preferred dates.</p></div><a href="{{ '/enquiry/' | relative_url }}?tour_slug={{ page.title-slug | url_encode }}">Enquire about this expedition</a></div>
+</div>
+<script src="{{ '/assets/js/trip-detail.js' | relative_url }}" defer></script>

@@ -1,0 +1,41 @@
+# Mountain records use the same keyed structure as peak-data.yml.
+# Detailed itineraries, dates and prices are confirmed on enquiry.
+himlung-himal:
+  name: "Himlung Himal Expedition"
+  altitude: "7,000m+"
+  region: "Manaslu"
+  country: "Nepal"
+  filter_region: "Manaslu"
+  photos: "assets/css/images/bg/peakbg.jpg"
+  excerpt: "Explore Himlung Himal with our Nepal-based expedition team."
+  description: "Plan a guided Himlung Himal expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+  enquiry_only: true
+  overview:
+    - content: "Plan a guided Himlung Himal expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+
+baruntse:
+  name: "Baruntse Expedition"
+  altitude: "7,000m+"
+  region: "Khumbu"
+  country: "Nepal"
+  filter_region: "Everest Regions"
+  photos: "assets/css/images/bg/peakbg.jpg"
+  excerpt: "Explore Baruntse with our Nepal-based expedition team."
+  description: "Plan a guided Baruntse expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+  enquiry_only: true
+  overview:
+    - content: "Plan a guided Baruntse expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+
+pumori:
+  name: "Pumori Expedition"
+  altitude: "7,000m+"
+  region: "Khumbu"
+  country: "Nepal"
+  filter_region: "Everest Regions"
+  photos: "assets/css/images/bg/peakbg.jpg"
+  excerpt: "Explore Pumori with our Nepal-based expedition team."
+  description: "Plan a guided Pumori expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+  enquiry_only: true
+  overview:
+    - content: "Plan a guided Pumori expedition with Atlas Alpine Expedition. Contact our team to discuss the route, preparation and expedition arrangements."
+

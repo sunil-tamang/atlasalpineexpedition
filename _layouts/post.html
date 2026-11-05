@@ -1,11 +1,6 @@
 ---
-layout: 'default'
-author_name : " THE ALPINE EXPEDITIONS "
-
-description: "Stay updated with The Alpine Expeditions blog. Read about trekking, expeditions, and travel tips in Nepal. Subscribe for the latest updates."
-keywords: "Alpine Expeditions blog, trekking blog Nepal, Nepal travel tips, expedition stories, adventure travel blog, subscribe travel blog"
-
-tags : ""
+layout: default
+custom_css: news.css
 ---
 <script type="application/ld+json">
 {
@@ -54,69 +49,12 @@ tags : ""
 ]
 }
 </script>
-
-
-<!--<div class="container--white">-->
-<div class="row row--padding-wide container-wide content__pg content__pg-black"  >
-	<!--Main Posts-->
-	<div class="row--pading-medium col--post">
-		{% if page.custom_bg %}
-			{% for img in page.custom_bg %}
-				{% assign path = 'assets/css/images/' | append: img | relative_url%}
-				<img class="post-banner" src="{{ path }}" style="background-image:url('{{ path }}');" alt="{{page.alt}}" title="{{page.title}}">
-			{% endfor %}
-		{% else %}
-			{% assign path = 'assets/css/images/welcome.jpeg' | relative_url%}
-				<img class="post-banner" src="{{ path }}" style="background-image:url('{{ path }}');" alt="{{page.alt}}" title="{{page.title}}" >
-		{% endif %}
-
-		<div class="post">
-			<div class="post-categories-list">
-				{% if post %}
-					{% assign categories = post.categories %}
-				{% else %}
-					{% assign categories = page.categories %}
-				{% endif %}
-				{% for category in categories %}
-<!--					<a class="post-tags" href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>-->
-					<a class="post-tags">{{category}}</a>
-				{% unless forloop.last %}&nbsp;{% endunless %}
-				{% endfor %}
-			</div>
-
-			<h2 class="content__sub-title post-title">{{ page.title }}</h2>
-			<p class="post-meta">{{ page.date | date_to_string }} - {{ page.author }}</p>
-			<br />
-			<hr />
-			<div class="post-content row--padding-medium">
-				{{ content }}
-			</div>
-		</div>
-	</div>
-
-	<!--Recent Posts-->
-	<div class="row--pading-medium col--recent-post" style="padding: 0 1em; text-align: justify;">
-		<h2 class="content__sub-title" style="padding-top: 0; padding-bottom: 0; margin-bottom: 0; color: #333;">RECENT POSTS</h2>
-		{% for post in site.posts offset:0 limit:5 %}
-			{% if post.url != page.url %}
-				{% if post %}
-				<h2 class="content__sub-title blogpost-title" style="  color: #333; opacity: .85;">
-					<a href="{{ post.url }}">
-						<img  src="/assets/css/images/{{ post.custom_bg }}" style="width: 100%; height: 100%;"alt="{{post.alt}}" title="{{post.title}}">
-					</a><br />
-					
-					<a href="{{ post.url }}">{{ post.title }}</a>
-
-					<p>{{ post.description }}</p>
-					<span><a class="blog-read-btn" href="{{ post.url}}" title="READ">Read</a></span>
-			  	</h2>
-				{% endif %}
-			{% endif %}
-		{% endfor %}
-	</div>
-</div>
-
-
-<script>
- 		document.getElementById("header").className += ' headerBlack';
-</script>
+<article class="news-article" aria-labelledby="news-article-title">
+ <header class="news-heading news-article-heading"><div><p class="news-eyebrow">ATLAS ALPINE EXPEDITION · BLOG</p><h1 id="news-article-title">{{ page.title | escape }}</h1><p class="news-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%d %b %Y' }}</time>{% if page.author %}<span>By {{ page.author | escape }}</span>{% endif %}</p></div><p>{{ page.description | strip_html }}</p></header>
+ {% if page.categories.size > 0 %}<ul class="news-categories" aria-label="Article topics">{% for category in page.categories %}<li>{{ category | escape }}</li>{% endfor %}</ul>{% endif %}
+ <div class="news-article-grid">
+  <div class="news-body">{{ content }}</div>
+  <aside class="news-recent" aria-labelledby="news-recent-title"><h2 class="news-eyebrow" id="news-recent-title">Recent posts</h2><ol>{% assign recent_count = 0 %}{% for post in site.posts %}{% if post.url != page.url %}{% assign recent_count = recent_count | plus: 1 %}<li><span class="news-recent-number">{% if recent_count < 10 %}0{% endif %}{{ recent_count }}</span><div><h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %b %Y' }}</time></div></li>{% if recent_count == 4 %}{% break %}{% endif %}{% endif %}{% endfor %}</ol></aside>
+ </div>
+ <a class="news-back" href="{% link news.html %}">All news</a>
+</article>

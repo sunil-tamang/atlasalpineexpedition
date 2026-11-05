@@ -6,9 +6,6 @@ layout: compress
 ---
 
 
-
-
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -16,9 +13,7 @@ layout: compress
 <head>
 
 
-
     {% assign trek = site.data.trek-data[page.title-slug] %}
-
 
 
     <meta charset="utf-8">
@@ -76,25 +71,12 @@ layout: compress
 <!-- <title>{% if page.title %}{{ page.title }}  | {{ site.name }} {% else %} {{ site.title }} {% endif %}</title> -->
 
 
-
-
-
     <link rel="icon" href="{{ '/favicon.png' | relative_url }}" sizes="32x32">
 
     <style>
 
-        
-
-
-
-        
-
-        
-
-
 
     </style>
-
 
 
 <!-- SLICK -->
@@ -103,22 +85,11 @@ layout: compress
 
 <!-- these two were commented -->
 
-<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet"/>
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet"/> -->
 
     {% endif %}
 
 
-
-
-
-
-
-
-
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-
 
 
     {% assign stylesheets = page.custom_css | default: layout.custom_css %}
@@ -133,11 +104,6 @@ layout: compress
        <link rel="stylesheet" href="{{ stylesheet_path | relative_url }}" media="screen" type="text/css">
      {% endif %}
    {% endif %}
-
-
-
-
-
 
 
     <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
@@ -163,49 +129,7 @@ layout: compress
 {% endcapture %}
 
 
-
     <meta name="keywords" content="{{ keywords | strip_html }}">
-
-<!-- <meta name="keywords" content=" Trekking in Nepal,Trekking company,Hiking in Nepal,Nepal trekking adventures,Himalayan treks,Nepal trekking packages,Ghorepani Poon Hill trek,Gokyo lakes trek  ,Nepal trekking guides ,Experienced trekking company,Sustainable tourism in Nepal,Adventure travel in Nepal ,Trekking safety ,Best trekking routes in Nepal,Himalayan mountain views,Authentic Nepalese culture,Personalized trekking itineraries,Budget-friendly trekking options, trekking experiences ,Off-the-beaten-path trekking options,Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek, Langtang Valley Trek, Upper Mustang Trek, Manaslu Circuit Trek, Ghorepani Poon Hill Trek ,Gokyo Lakes Trek ,Kanchenjunga Base Camp Trek, Makalu Base Camp Trek" /> -->
-
-<!-- <meta name="trustpilot-one-time-domain-verification-id" content="503d5835-da9a-4f34-9a48-72aeccfe4302"/>
-
-    Global site tag (gtag.js) - Google Analytics
-
-    <script defer async src="https://www.googletagmanager.com/gtag/js?id=UA-118645201-1"></script>
-
-    <meta name="google-site-verification" content="Yg3QqMeB_mIx-XR_wS4rWRxbm0-LvIQMFv9Tg6Yjjv8" />
-
-Google tag (gtag.js)
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNMREZC3H2"></script>
-
-    <script>
-
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag(){dataLayer.push(arguments);}
-
-    gtag('js', new Date());
-
-
-
-    gtag('config', 'G-NNMREZC3H2');
-
-    </script>
-
-
-
-
-
-    <script>
-
-    gtag('event', 'form_submit', {
-
-    });
-
-    </script> -->
-
 
 
     {% if page.ext_js %}
@@ -219,9 +143,6 @@ Google tag (gtag.js)
     {% endif %}
 
 
-
-
-
 <!-- {% if page.contains_ads %}
 
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9732857020850411"
@@ -231,33 +152,12 @@ Google tag (gtag.js)
     {% endif %} -->
 
 
-
-
-
 <!-- Google tag (gtag.js) -->
 
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PL3F2PMGEZ"></script>
-
-    <script>
-
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag(){dataLayer.push(arguments);}
-
-    gtag('js', new Date());
-
-
-
-    gtag('config', 'G-PL3F2PMGEZ');
-
-    </script>
-
-        -->
 
     <script *async* src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-qmKO6Tv8fN1cjXiYJsbYcPwiJyJU0YbFbPmWu6Z30WJbT5g+pT7DzqvVWbEwf8ZvGmNaBHJ1zdDT9D/FvO ..." crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
-
 
 
 <body class="reference-site {{ page.page_class | escape }} {% if page.homepage %}home-page{% else %}interior-page page-{{ page.layout | slugify }}{% endif %}">
@@ -278,15 +178,22 @@ Google tag (gtag.js)
  <div class="atlas-mega-inner">
   
   <div class="atlas-regions"><p class="atlas-eyebrow">REGIONS</p><div role="tablist" aria-label="Trekking regions" aria-orientation="vertical">
-<button role="tab" id="atlas-tab-0" aria-controls="atlas-region-0" aria-selected="true" tabindex="0">Everest Region </button>
-<button role="tab" id="atlas-tab-1" aria-controls="atlas-region-1" aria-selected="false" tabindex="-1">Annapurna Region </button>
-<button role="tab" id="atlas-tab-2" aria-controls="atlas-region-2" aria-selected="false" tabindex="-1">Manaslu Region </button>
-<button role="tab" id="atlas-tab-3" aria-controls="atlas-region-3" aria-selected="false" tabindex="-1">Langtang Region </button>
-<button role="tab" id="atlas-tab-4" aria-controls="atlas-region-4" aria-selected="false" tabindex="-1">Mustang Region </button>
-<button role="tab" id="atlas-tab-5" aria-controls="atlas-region-5" aria-selected="false" tabindex="-1">Kanchenjunga Region </button>
-<button role="tab" id="atlas-tab-6" aria-controls="atlas-region-6" aria-selected="false" tabindex="-1">Makalu Region </button>
-<button role="tab" id="atlas-tab-7" aria-controls="atlas-region-7" aria-selected="false" tabindex="-1">Dhaulagiri Region </button>
-</div></div><div class="atlas-treks"><div role="tabpanel" id="atlas-region-0" aria-labelledby="atlas-tab-0"><p class="atlas-eyebrow">IN EVEREST REGION</p><div class="atlas-trek-links"><a href="{% link _treks/everest-base-camp.html %}">Everest Base Camp Trek</a><a href="{% link _treks/gokyo-chola-pass.html %}">Gokyo Chola Pass Trek</a><a href="{% link _treks/three-pass.html %}">Three Passes Trek</a><a href="{% link _treks/luxury-everest-base-camp.html %}">Luxury Everest Base Camp Trek</a></div></div><div role="tabpanel" id="atlas-region-1" aria-labelledby="atlas-tab-1" hidden><p class="atlas-eyebrow">IN ANNAPURNA REGION</p><div class="atlas-trek-links"><a href="{% link _treks/annapurna-base-camp.html %}">Annapurna Base Camp Trek</a><a href="{% link _treks/annapurna-circuit.html %}">Annapurna Circuit Trek</a><a href="{% link _treks/mardi-himal.html %}">Mardi Himal Trek</a><a href="{% link _treks/annapurna-base-camp-north.html %}">Annapurna Base Camp Trek North</a></div></div><div role="tabpanel" id="atlas-region-2" aria-labelledby="atlas-tab-2" hidden><p class="atlas-eyebrow">IN MANASLU REGION</p><div class="atlas-trek-links"><a href="{% link _treks/manaslu-circuit.html %}">Manaslu Circuit Trek</a><a href="{% link _treks/manaslu-base-camp.html %}">Manaslu Base Camp Trek</a></div></div><div role="tabpanel" id="atlas-region-3" aria-labelledby="atlas-tab-3" hidden><p class="atlas-eyebrow">IN LANGTANG REGION</p><div class="atlas-trek-links"><a href="{% link _treks/langtang-valley.html %}">Langtang Valley Trekking – Guided Tours in the Heart of the Himalayas</a><a href="{% link _treks/gosai-kunda.html %}">Gosai Kunda Trek</a><a href="{% link _treks/tamang-heritage-trail.html %}">Tamang Heritage Trail</a></div></div><div role="tabpanel" id="atlas-region-4" aria-labelledby="atlas-tab-4" hidden><p class="atlas-eyebrow">IN MUSTANG REGION</p><div class="atlas-trek-links"><a href="{% link _treks/upper-mustang.html %}">Upper Mustang Trek</a></div></div><div role="tabpanel" id="atlas-region-5" aria-labelledby="atlas-tab-5" hidden><p class="atlas-eyebrow">IN KANCHENJUNGA REGION</p><div class="atlas-trek-links"><a href="{% link _treks/kanchenjunga-circuit.html %}">Kanchenjunga Circuit Trek</a></div></div><div role="tabpanel" id="atlas-region-6" aria-labelledby="atlas-tab-6" hidden><p class="atlas-eyebrow">IN MAKALU REGION</p><div class="atlas-trek-links"><a href="{% link _treks/makalu-base-camp.html %}">Makalu Base Camp Trek</a><a href="{% link _treks/makalu-sherpani-col-pass.html %}">Makalu Sherpani Col Pass Trek</a></div></div><div role="tabpanel" id="atlas-region-7" aria-labelledby="atlas-tab-7" hidden><p class="atlas-eyebrow">IN DHAULAGIRI REGION</p><div class="atlas-trek-links"><a href="{% link _treks/dhaulagiri-circuit.html %}">Dhaulagiri Circuit Trek</a></div></div><a class="atlas-all" href="{% link _activities/trekking.html %}">View all trekking </a></div><div class="atlas-cards"><a class="atlas-card" href="{% link _treks/everest-base-camp.html %}"><img src="{{ '/assets/css/images/treks/everest_base_min.jpg' | relative_url }}" alt="" loading="lazy"><div><span class="atlas-eyebrow">TREK</span><h3>Everest Base Camp</h3></div></a><a class="atlas-card" href="{% link _treks/three-pass.html %}"><img src="{{ '/assets/css/images/treks/three_passes_min.jpg' | relative_url }}" alt="" loading="lazy"><div><span class="atlas-eyebrow">TREK</span><h3>Three Passes Trek</h3></div></a></div></div></section>
+   {% for group in site.data.navigation-trekking %}
+   <button role="tab" id="atlas-tab-{{ forloop.index0 }}" aria-controls="atlas-region-{{ forloop.index0 }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" tabindex="{% if forloop.first %}0{% else %}-1{% endif %}">{{ group.label }}</button>
+   {% endfor %}
+  </div></div>
+  <div class="atlas-treks">
+   {% for group in site.data.navigation-trekking %}
+   <div role="tabpanel" id="atlas-region-{{ forloop.index0 }}" aria-labelledby="atlas-tab-{{ forloop.index0 }}"{% unless forloop.first %} hidden{% endunless %}>
+    <p class="atlas-eyebrow">IN {{ group.label | upcase }}</p><div class="atlas-trek-links">
+     {% for slug in group.trips limit:5 %}{% assign trek_page = site.treks | where: 'title-slug', slug | first %}{% assign trek = site.data.trek-data[slug] %}
+     {% if trek_page %}<a href="{{ trek_page.url | relative_url }}">{{ trek.name | default: trek_page.title | escape }}</a>{% endif %}
+     {% endfor %}
+    </div>
+   </div>
+   {% endfor %}
+   <a class="atlas-all" href="{% link _activities/trekking.html %}">View all trekking</a>
+  </div><div class="atlas-cards"><a class="atlas-card" href="{% link _treks/everest-base-camp.html %}"><img src="{{ '/assets/css/images/treks/everest_base_min.jpg' | relative_url }}" alt="" loading="lazy"><div><span class="atlas-eyebrow">TREK</span><h3>Everest Base Camp</h3></div></a><a class="atlas-card" href="{% link _treks/three-pass.html %}"><img src="{{ '/assets/css/images/treks/three_passes_min.jpg' | relative_url }}" alt="" loading="lazy"><div><span class="atlas-eyebrow">TREK</span><h3>Three Passes Trek</h3></div></a></div></div></section>
 {% include navigation-secondary.html key="about" %}
 <section class="atlas-mega" id="atlas-expeditions" aria-label="Explore expeditions" hidden>
  <div class="atlas-mega-inner">
@@ -301,12 +208,12 @@ Google tag (gtag.js)
     <div role="tabpanel" id="atlas-altitude-{{ group.id }}" aria-labelledby="atlas-altitude-tab-{{ group.id }}"{% unless forloop.first %} hidden{% endunless %}>
       <p class="atlas-eyebrow">{{ group.label | upcase }}</p>
       
-      <div class="atlas-trek-links">{% for mountain in group.mountains limit:4 %}
-       {% if mountain.path %}<a href="{{ mountain.path | relative_url }}">{{ mountain.name }}</a>{% else %}<a href="{% link enquiry.html %}?mountain={{ mountain.name | url_encode }}" aria-label="Enquire about {{ mountain.name }}">{{ mountain.name }} </a>{% endif %}
+      <div class="atlas-trek-links">{% assign shown_mountains = 0 %}{% for entry in site.data[group.data_source] %}{% assign mountain = entry[1] %}{% assign expedition_page = site.peaks | where: 'title-slug', entry[0] | first %}{% assign mountain_altitude = mountain.altitude | remove: ',' | plus: 0 %}
+       {% if expedition_page %}{% if group.id != 6000 or mountain_altitude >= 6000 %}<a href="{{ expedition_page.url | relative_url }}">{{ mountain.name | remove: ' Expedition' | remove: ' Climbing' | escape }}</a>{% assign shown_mountains = shown_mountains | plus: 1 %}{% if shown_mountains >= 5 %}{% break %}{% endif %}{% endif %}{% endif %}
       {% endfor %}</div>
     </div>
    {% endfor %}
-   <a class="atlas-all" href="{% link _activities/peak-climbing.html %}">View all expeditions </a>
+   <a class="atlas-all" href="{% link _activities/peak-climbing.html %}">All Expeditions</a>
   </div>
   <div class="atlas-cards">
    <a class="atlas-card" href="{% link _peaks/ama-dablam.html %}"><img src="{{ '/assets/css/images/peak-climbing/ama-dablam/banner.jpg' | relative_url }}" alt="" loading="lazy"><div><span class="atlas-eyebrow">EXPEDITION</span><h3>Ama Dablam</h3></div></a>
@@ -318,15 +225,7 @@ Google tag (gtag.js)
 {% include navigation-secondary.html key="contact" %}
 
 
-
-
 </header>
-
-
-
-
-
-
 
 
     {% if page.homepage %}
@@ -342,10 +241,8 @@ Google tag (gtag.js)
     {% endif %}
     {% include site-footer.html %}
 
-<!-- <a class="backToTop"></a> -->
 
 <!-- <a class="cart_mob" href="{% link cart.html %}"><i class="fa fa-shopping-cart"></i> <span class="totalItems_wrapper"><span class="totalItems">0</span></span></a> -->
-
 
 
 <!----------CART MESSAGES ALERT---------->
@@ -353,15 +250,10 @@ Google tag (gtag.js)
     <div class="cart-alert--wrapper">
 
 
-
     </div>
 
 
-
-
-
 <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
-
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -376,15 +268,11 @@ Google tag (gtag.js)
 <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
 
-
 {% if page.custom_js %}
 
     <script src="{{ '/assets/js/gallery.js' | relative_url }}"></script>
 
 {% endif %}
-
-
-
 
 
 <!--Handles the bug in IE for "background-attachment: fixed;" css property-->
@@ -410,7 +298,6 @@ if(navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/
 </script>
 
 
-
 {% if page.counter %}
 
 <!--Counter-up-->
@@ -434,7 +321,6 @@ if(navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/
 </script>
 
 
-
 <script>
 
     $(document).ready(function($) {
@@ -455,7 +341,6 @@ if(navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/
 
 <!--Shopping Cart-->
 
-<!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script> -->
 
 <!-- <script defer src="{{ 'assets/js/cart.js' | absolute_url }}"></script> -->
 
@@ -476,41 +361,10 @@ if(navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/
 <!--End Shopping Cart-->
 
 
-
 <!--Start of Tawk.to Script-->
 
 
-
-<!-- <script type="text/javascript">
-
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-
-(function(){
-
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-
-s1.async=true;
-
-s1.src='https://embed.tawk.to/5c7983d13341d22d9ce6dceb/default';
-
-s1.charset='UTF-8';
-
-s1.setAttribute('crossorigin','*');
-
-s0.parentNode.insertBefore(s1,s0);
-
-})();
-
-</script> -->
-
-
-
-
-
-
-
 <!--End of Tawk.to Script-->
-
 
 
 </body>

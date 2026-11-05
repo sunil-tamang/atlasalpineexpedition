@@ -1,7 +1,0 @@
-{% assign summary_trip = include.trip %}
-<dl class="trip-summary" aria-label="Trip overview">
- {% if summary_trip.days %}<div><dt>Duration</dt><dd>{{ summary_trip.days }} days</dd></div>{% endif %}
- {% if summary_trip.region %}<div><dt>Region</dt><dd>{{ summary_trip.region }}</dd></div>{% endif %}
- {% assign summary_grade = summary_trip.grade | default: summary_trip.difficulty %}{% if summary_grade %}<div><dt>Difficulty</dt><dd>{{ summary_grade }}</dd></div>{% endif %}
- {% if summary_trip.season %}<div><dt>Best season</dt><dd>{{ summary_trip.season }}</dd></div>{% endif %}
-</dl>

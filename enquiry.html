@@ -35,7 +35,7 @@ custom_css: inquiry.css
  <div class="enquiry-signoff"><span>Atlas Alpine Expedition</span><span>Nepal</span></div>
 </div>
 <script id="enquiry-tour-data" type="application/json">[
-{% assign enquiry_groups = 'trek-data,peak-data,bike-data,rock-data,rafting-data' | split: ',' %}
+{% assign enquiry_groups = 'trek-data,peak-data,7000m-data,8000m-data,bike-data,rock-data,rafting-data' | split: ',' %}
 {% assign enquiry_first = true %}
 {% for group in enquiry_groups %}{% for entry in site.data[group] %}{% unless enquiry_first %},{% endunless %}{% assign enquiry_first = false %}
 {% assign tour = entry[1] %}{% assign tour_slug = entry[0] %}{% assign tour_url = '' %}

@@ -22,10 +22,7 @@
 }
 
 .post-tags {
-  
-  
   text-transform: uppercase;
-  
   padding: 0.2em 0.4em;
   background: #ffb300;
   border-radius: 0.2em;
@@ -41,14 +38,12 @@
 }
 
 .post-meta {
-  
   color: #888;
 }
 
 .post-title,
 .post-meta {
   text-align: left !important;
-  
 }
 
 .post-content {
@@ -82,15 +77,12 @@
 
 .blog-read-btn {
   color: greenyellow;
-  
   background: #333;
   padding: 0 8px;
-  
 }
 
 @media (min-width: 48em) {
   .post-tags {
-    
     padding: 0.6em 0.8em;
     border-radius: 0.2em;
     margin-bottom: 0.8em;

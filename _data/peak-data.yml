@@ -14,6 +14,8 @@ lobuche-peak:
   groupSize: "2-15 pax"
   season: "Sep-Dec | Mar-May"
   region: "Khumbu"
+  country: "Nepal"
+  filter_region: "Everest Regions"
   photos: "assets/css/images/peak-climbing/lobuche-peak/banner.jpg"
   popular: "Y"
   price: "3,150.00"
@@ -91,6 +93,8 @@ mera-peak:
   groupSize: "2-15 pax"
   season: "Sep-Dec | Mar-May"
   region: "Hinku Valley"
+  country: "Nepal"
+  filter_region: "Everest Regions"
   photos: "assets/css/images/peak-climbing/mera-peak/banner.jpg"
   popular: "Y"
   price: "3,100.00"
@@ -168,6 +172,8 @@ ama-dablam:
     groupSize: "2-10 pax"
     season: "Sep-Dec | Mar-May"
     region: "Khumbu Region"
+    country: "Nepal"
+    filter_region: "Everest Regions"
 
     popular: "Y"
     price: "7,500.00"
@@ -254,6 +260,8 @@ island-peak:
   groupSize: "2-15 pax"
   season: "Sep-Dec | Mar-May"
   region: "Khumbu"
+  country: "Nepal"
+  filter_region: "Everest Regions"
 
   photos: "assets/css/images/peak-climbing/island-peak/banner.jpg"
 
@@ -365,6 +373,8 @@ pisang-peak:
     groupSize: "2-15 pax"
     season: "Sep-Dec | Mar-May"
     region: "Annapurna"
+    country: "Nepal"
+    filter_region: "Annapurna"
     photos: "assets/css/images/peak-climbing/pisang-peak/banner.jpg"
     popular: "Y"
     price: "3,500.00"
@@ -476,6 +486,8 @@ tharpu-peak:
     groupSize: "2-15 pax"
     season: "Sep-Dec | Mar-May"
     region: "Annapurna"
+    country: "Nepal"
+    filter_region: "Annapurna"
 
     # popular: "Y"
     price: "2200"

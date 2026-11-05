@@ -249,53 +249,26 @@ blockquote {
 */
 
         /* Navigation typography: component styles supply layout and colors only. */
-            
-        @media(max-width : 1200px) {
-        }
-        @media(max-width : 1023px) {
-        }
 
 /* Homepage typography: the component stylesheet contains layout only. */
 .home-page { font-family: var(--aa-font); }
-
 
 
 .home-main h1 { font-size: clamp(48px,6.25vw,92px); font-weight: 800; line-height: .96; letter-spacing: -.065em; }
 .home-main h2 { font-size: clamp(28px,3vw,44px); font-weight: 700; line-height: 1.05; letter-spacing: -.045em; }
 .home-main h3 { font-size: 23px; font-weight: 650; line-height: 1.08; letter-spacing: -.035em; }
 .home-main p { font-size: 16px; line-height: 1.45; font-weight: 400; letter-spacing: -.015em; }
-.home-main .home-hero-description { font-size: clamp(17px,1.5vw,21px); line-height: 1.3; }
 .home-main .home-label, .home-footer .home-label { font-size: 10px; font-weight: 600; letter-spacing: .12em; line-height: 1.4; }
-.home-main .home-section-heading .home-label { font-size: 13px; letter-spacing: .1em; }
-.home-button, .home-text-link { font-size: 13px; font-weight: 600; letter-spacing: -.015em; line-height: 1.3; }
-.home-symbol { font-size: 36px; line-height: 1; }
-.home-facts strong { font-size: 17px; font-weight: 700; letter-spacing: -.035em; }
-.home-facts p span { font-size: 12px; line-height: 1.4; }
-.home-slider-controls button { font-size: 23px; }
-.home-main .home-package-copy p { font-size: 14px; line-height: 1.35; }
-.home-package-tag { font-size: 10px; letter-spacing: .04em; font-weight: 600; }
-.home-package-meta { font-size: 10px; font-weight: 500; line-height: 1.3; }
-.home-main .home-team-values p { font-size: 13px; line-height: 1.35; }
-.home-team-values strong { font-size: 14px; font-weight: 700; }
-.home-team-values > div > span { font-size: 27px; line-height: 1; }
 .home-main .home-quote h2 { font-size: clamp(15px,1.4vw,21px); line-height: 1.4; font-weight: 550; letter-spacing: -.02em; }
 .home-main .home-quote blockquote { font-size: clamp(30px,3.8vw,62px); line-height: 1.38; font-weight: 650; letter-spacing: -.04em; }
 .home-quote blockquote strong { font-weight: inherit; }
 .home-main .home-quote-signature { font-size: clamp(10px,1vw,15px); line-height: 1.5; font-weight: 600; letter-spacing: .09em; }
-.home-main .home-journal-card h3 { font-size: 17px; line-height: 1.15; }
-.home-journal-card time { font-size: 11px; }
 .home-footer { font-size: 12px; line-height: 1.5; }
 .home-footer p { font-size: 12px; line-height: 1.5; }
 .home-footer h2 { font-size: 13px; font-weight: 700; letter-spacing: -.02em; }
-.home-footer .home-wordmark { font-size: 28px; font-weight: 800; line-height: 1; letter-spacing: .12em; }
-.home-wordmark span { font-size: 12px; letter-spacing: .55em; line-height: 1.8; }
-.home-footer .home-footer-plan h2 { font-size: 30px; line-height: .95; font-weight: 750; letter-spacing: -.045em; }
-.home-footer-bottom { font-size: 10px; }
 @media(max-width:640px) {
  .home-main h1 { font-size: clamp(44px,10.5vw,64px); }
  .home-main h2 { font-size: 32px; }
- .home-facts strong { font-size: 14px; } .home-facts p span { font-size: 10px; }
- .home-symbol { font-size: 27px; }
  
  
 }
@@ -341,24 +314,21 @@ blockquote {
 .reference-site .atlas-header .atlas-card-detail { font-size: 12px; line-height: 1.4; }
 .reference-site .atlas-header .atlas-all { font-weight: var(--nav-weight-medium); }
 
-/* Mobile navigation list typography. */
+/* Mobile menu hierarchy shares Inter while mixing case, size and weight. */
 @media(max-width:1023px) {
- .reference-site .atlas-header .atlas-navigation > .atlas-menu-toggle,
- .reference-site .atlas-header .atlas-mobile-back { font-size: 18px; line-height: 1.35; font-weight: var(--nav-weight-medium); letter-spacing: .025em; text-transform: uppercase; }
+ .reference-site .atlas-header .atlas-navigation > .atlas-menu-toggle { font-size: 22px; line-height: 1.35; font-weight: var(--nav-weight-medium); letter-spacing: -.02em; text-transform: none; }
+ .reference-site .atlas-header .atlas-mobile-title { font-family: var(--nav-font-family); font-size: 26px; line-height: 1.3; font-weight: var(--nav-weight-semibold); letter-spacing: -.025em; text-transform: none; }
+ .reference-site .atlas-header .atlas-mobile-back { font-size: 13px; font-weight: var(--nav-weight-regular); letter-spacing: 0; }
  .reference-site .atlas-header .atlas-mobile-row,
- .reference-site .atlas-header .atlas-mobile-rows > a { font-size: 16px; line-height: 1.45; letter-spacing: .02em; text-transform: uppercase; }
- .reference-site .atlas-header .atlas-mobile-all { font-size: 15px; line-height: 1.4; text-transform: uppercase; }
- .reference-site .atlas-header .atlas-whatsapp { font-size: 15px; }
+ .reference-site .atlas-header .atlas-mobile-rows > a { font-size: 20px; font-weight: var(--nav-weight-regular); line-height: 1.4; letter-spacing: -.015em; text-transform: none; }
+ .reference-site .atlas-header .atlas-mobile-all { font-size: 20px; line-height: 1.4; font-weight: var(--nav-weight-medium); text-transform: none; }
+ .reference-site .atlas-header .atlas-whatsapp { font-size: 17px; font-weight: var(--nav-weight-semibold); }
 }
 
 /* Expedition directory typography. */
 .page-expeditions .site-intro h1 { font-size: clamp(44px,5.5vw,82px); font-weight: 800; line-height: 1.02; letter-spacing: -.055em; }
 .page-expeditions .site-intro-description { font-size: clamp(16px,1.5vw,21px); line-height: 1.5; }
 .site-content .expeditions-listing h2 { font-size: 25px; font-weight: 700; line-height: 1.2; letter-spacing: -.035em; }
-.site-content .expedition-filters h2 { font-size: 22px; }
-.site-content .expedition-filters legend { font-size: 17px; font-weight: 700; line-height: 1.3; letter-spacing: -.025em; }
-.site-content .expedition-filters label { font-size: 14px; line-height: 1.5; }
-.site-content .expedition-filters button { font-family: var(--aa-font); font-size: 15px; line-height: 1.4; }
 .site-content .expedition-apply { font-weight: 650; }
 .site-content .expedition-card h3 { font-size: clamp(22px,1.8vw,29px); font-weight: 700; line-height: 1.1; letter-spacing: -.035em; }
 .site-content .expedition-card .expedition-altitude { font-size: 16px; line-height: 1.35; }
@@ -373,8 +343,8 @@ blockquote {
 
 /* Navigation-only editorial category hierarchy; other page typography is unchanged. */
 @media(min-width:1024px) {
- .reference-site .atlas-header .atlas-regions [role=tab] { font-size: 12px; font-weight: var(--nav-weight-medium); line-height: 1.5; letter-spacing: .015em; }
- .reference-site .atlas-header .atlas-trek-links a { font-size: var(--nav-link-size); font-weight: var(--nav-weight-regular); line-height: 1.5; }
+ .reference-site .atlas-header .atlas-regions [role=tab] { font-size: 12px; font-weight: var(--nav-weight-medium); line-height: 1.45; letter-spacing: 0; }
+ .reference-site .atlas-header .atlas-trek-links a { font-size: 12px; font-weight: var(--nav-weight-regular); line-height: 1.45; }
  .reference-site .atlas-header .atlas-eyebrow { font-weight: var(--nav-weight-medium); letter-spacing: .13em; }
  .reference-site .atlas-header .atlas-all { font-size: 12px; letter-spacing: .025em; }
 }
@@ -427,13 +397,7 @@ blockquote {
 .home-review figcaption small { font-size: 10px; line-height: 1.3; }
 .home-main .home-review-notice { font-size: 11px; line-height: 1.45; }
 .home-reviews-controls button { font: inherit; font-size: 12px; }
-.home-main .home-guides-copy h2 { font-size: clamp(35px,4vw,58px); font-weight: 500; line-height: 1.12; letter-spacing: -.04em; }
 .home-main .home-guides-copy > p:not(.home-label) { font-size: 19px; line-height: 1.45; }
-.home-guide-feature strong { font-size: 17px; font-weight: 600; line-height: 1.4; }
-.home-guide-feature span > span { font-size: 12px; line-height: 1.4; }
-.home-guide-small > span { font-size: 10px; line-height: 1.4; }
-.home-guides-values, .home-guides-link { font-size: 16px; font-weight: 550; line-height: 1.5; }
-@media(max-width:640px) { .home-guide-feature strong { font-size: 14px; } .home-guide-feature span > span { font-size: 10px; } }
 
 /* Monospace expedition-journal typography; other sections retain Inter. */
 .home-main .home-journal-editorial, .home-main .home-journal-editorial :is(h2,h3,p,a,time,span,figcaption) { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-weight:400; letter-spacing:.015em; }
@@ -510,21 +474,17 @@ blockquote {
 .trip-availability h2 { font-size:23px; line-height:1.25; font-weight:650; letter-spacing:-.03em; }
 .trip-availability p, .trip-availability > a { font-size:14px; line-height:1.5; }
 
-/* Team portfolio typography uses the shared Inter family. */
-.guide-portfolio { font-family:var(--aa-font); }
-.guide-back, .guide-profile-signoff { font-size:17px; font-weight:400; line-height:1.5; letter-spacing:-.02em; }
-.guide-portfolio .guide-kicker { font-size:12px; font-weight:500; line-height:1.5; letter-spacing:.16em; text-transform:uppercase; }
-.guide-identity h1 { font-size:clamp(44px,5vw,76px); font-weight:350; line-height:1.08; letter-spacing:-.055em; }
-.guide-portrait figcaption { font-size:9px; line-height:1.4; font-weight:600; letter-spacing:.16em; }
-.guide-about > p { font-size:clamp(18px,1.7vw,25px); font-weight:400; line-height:1.5; letter-spacing:-.025em; }
-.guide-plan { font-size:21px; line-height:1.5; font-weight:400; letter-spacing:-.02em; }
-.guide-biography { font-size:13px; line-height:1.7; font-weight:400; }
-.guide-summits h3 { font-size:23px; line-height:1.2; font-weight:600; letter-spacing:-.025em; }
-.guide-summits p { font-size:16px; line-height:1.4; font-weight:400; }
-.guide-training h3 { font-size:19px; line-height:1.4; font-weight:400; letter-spacing:-.02em; }
-.guide-training p { font-size:11px; line-height:1.5; font-weight:400; }
-@media(max-width:767px) { .guide-identity h1 { font-size:clamp(35px,6.5vw,55px); } }
-@media(max-width:480px) { .guide-identity h1 { font-size:48px; } .guide-summits h3 { font-size:20px; } .guide-summits p { font-size:14px; } }
+/* Team CV typography uses the shared Inter family. */
+.guide-portfolio { font-family:var(--aa-font); font-size:14px; line-height:1.6; font-weight:400; }
+.guide-cv .guide-cv-brand, .guide-cv .guide-kicker { font-size:11px; font-weight:600; line-height:1.5; letter-spacing:.2em; text-transform:uppercase; }
+.guide-cv .guide-identity h1 { font-family:var(--aa-font); font-size:clamp(30px,2.5vw,38px); font-weight:400; line-height:1.2; letter-spacing:-.03em; }
+.guide-cv-bio, .guide-cv-meta { font-size:15px; line-height:1.75; font-weight:400; }
+.guide-cv-list h3 { font-family:var(--aa-font); font-size:14px; font-weight:600; line-height:1.5; letter-spacing:-.015em; }
+.guide-cv-list p { font-size:13px; line-height:1.5; font-weight:400; }
+.guide-credentials figcaption { font-size:11px; line-height:1.4; }
+.guide-profile-signoff, .guide-plan { font-size:14px; line-height:1.5; }
+@media(max-width:600px) { .guide-cv .guide-identity h1 { font-size:34px; } }
+
 
 /* Contact, FAQ, advisory and terms typography, scoped to these resource pages. */
 .resource-page, .resource-page :is(input,select,textarea,button) { font-family:var(--aa-font); }
@@ -573,12 +533,7 @@ blockquote {
 .editorial-heading > p { font-size:21px; line-height:1.5; letter-spacing:-.02em; }
 .editorial-page .editorial-kicker { font-size:12px; font-weight:600; line-height:1.5; letter-spacing:.1em; }
 .editorial-link, .people-filters, .people-filters button { font-size:15px; line-height:1.5; font-weight:400; }
-.people-filters button[aria-pressed=true] { font-weight:550; }
-.people-caption h2 { font-size:clamp(21px,2vw,29px); font-weight:600; line-height:1.2; letter-spacing:-.03em; }
-.people-caption p { font-size:17px; line-height:1.4; }
-.people-number { font-size:13px; line-height:1.5; }
 .editorial-signoff { font-size:14px; line-height:1.5; }
-.directory-people .editorial-signoff > p:first-child { font-size:12px; font-style:italic; }
 .editorial-breadcrumb, .story-photo figcaption { font-size:13px; line-height:1.5; }
 .story-title h1 { font-size:clamp(38px,4vw,57px); font-weight:350; line-height:1.15; letter-spacing:-.04em; }
 .story-copy h2 { font-size:clamp(24px,2.5vw,35px); font-weight:550; line-height:1.25; letter-spacing:-.03em; }
@@ -594,7 +549,6 @@ blockquote {
 .gear-directory-row p, .gear-directory-row > a { font-size:15px; line-height:1.5; }
 .editorial-help h2 { font-size:22px; font-weight:600; line-height:1.3; letter-spacing:-.025em; }
 .editorial-help p { font-size:16px; line-height:1.5; }
-@media(max-width:480px) { .people-caption p { font-size:14px; } .people-caption h2 { font-size:20px; } .people-caption .editorial-link { font-size:13px; } }
 
 /* Categorized Team directory typography; isolated from homepage/profile type. */
 .team-page, .team-page :is(button,a) { font-family:var(--aa-font); }
@@ -625,3 +579,59 @@ blockquote {
 .home-guides-team-link { font-family:var(--aa-font); font-size:15px; line-height:1.4; font-weight:500; }
 @media(max-width:767px) { .home-guides-features { font-size:11px; } .home-guides-carousel .home-guide-caption strong { font-size:21px; } .home-guides-carousel .home-guide-caption > span { font-size:14px; } }
 
+
+/* News typography, scoped to the listing and article templates. */
+.news-index, .news-article { font-family:var(--aa-font); font-weight:400; line-height:1.5; }
+.news-heading h1 { font-family:var(--aa-font); font-size:clamp(42px,4.7vw,68px); font-weight:650; line-height:1.03; letter-spacing:-.045em; }
+.news-heading > p { font-size:16px; line-height:1.55; }
+.news-index .news-eyebrow, .news-article .news-eyebrow, .news-categories { font-size:10px; line-height:1.5; font-weight:650; letter-spacing:.17em; text-transform:uppercase; }
+.news-card h2 { font-family:var(--aa-font); font-size:19px; font-weight:650; line-height:1.18; letter-spacing:-.025em; }
+.news-card p { font-size:14px; line-height:1.45; }
+.news-read { font-size:14px; font-weight:600; }
+.news-article-heading h1 { font-size:clamp(34px,4.1vw,58px); }
+.news-heading .news-meta { font-size:13px; line-height:1.5; font-weight:400; letter-spacing:0; }
+.news-body { font-size:17px; line-height:1.6; }
+.news-body :is(h2,h3) { font-family:var(--aa-font); font-size:26px; font-weight:600; line-height:1.25; letter-spacing:-.025em; }
+.news-recent h3 { font-family:var(--aa-font); font-size:14px; line-height:1.45; font-weight:600; letter-spacing:-.02em; }
+.news-recent time, .news-recent-number { font-size:12px; line-height:1.5; }
+.news-back { font-size:14px; line-height:1.5; }
+@media(max-width:650px) { .news-heading h1 { font-size:44px; } .news-article-heading h1 { font-size:36px; } .news-body { font-size:16px; } }
+
+.home-footer.footer-landscape .footer-credentials-title { font-size:12px; font-weight:500; line-height:1.4; letter-spacing:.02em; text-transform:uppercase; }
+
+/* Expedition filter and mega-menu typography only. */
+@media(min-width:1024px) {
+ .reference-site .atlas-header #atlas-expeditions .atlas-regions [role=tab], .reference-site .atlas-header #atlas-expeditions .atlas-trek-links a { font-size:12px; line-height:1.45; }
+ .reference-site .atlas-header .atlas-mega .atlas-eyebrow { font-size:10px; }
+ .reference-site .atlas-header .atlas-mega .atlas-card h3 { font-size:17px; }
+ .reference-site .atlas-header #atlas-expeditions .atlas-all { font-size:12px; }
+}
+
+/* Our Story editorial typography, isolated from other pages. */
+.atlas-story { font-family:var(--aa-font); font-weight:400; line-height:1.5; }
+.story-breadcrumb, .story-nepal-photo figcaption { font-size:14px; line-height:1.5; }
+.atlas-story .story-eyebrow { font-size:12px; font-weight:650; line-height:1.5; letter-spacing:.14em; }
+.story-hero h1 { font-family:var(--aa-font); font-size:clamp(66px,7.5vw,106px); font-weight:650; line-height:1.05; letter-spacing:-.055em; }
+.story-hero p, .story-roots-copy > p:not(.story-eyebrow), .story-section-heading > p { font-size:clamp(18px,1.65vw,23px); line-height:1.5; letter-spacing:-.02em; }
+.atlas-story h2 { font-family:var(--aa-font); font-size:clamp(35px,3.8vw,55px); font-weight:650; line-height:1.08; letter-spacing:-.04em; }
+.atlas-story .story-roots-copy h2 { font-size:clamp(48px,5.5vw,78px); }
+.atlas-story h3 { font-family:var(--aa-font); font-size:clamp(23px,2.1vw,30px); font-weight:600; line-height:1.15; letter-spacing:-.03em; }
+.story-process p, .story-values p { font-size:clamp(17px,1.5vw,21px); line-height:1.5; letter-spacing:-.015em; }
+.story-process span { font-size:18px; font-weight:600; }
+.story-journey-cards p, .story-support-grid p, .story-plan p { font-size:17px; line-height:1.5; }
+.story-support-grid h3 { font-size:23px; }
+.story-button, .story-text-link { font-size:16px; line-height:1.5; font-weight:500; }
+@media(max-width:650px) { .story-hero h1 { font-size:60px; } .atlas-story h2 { font-size:36px; } .atlas-story .story-roots-copy h2 { font-size:52px; } .story-hero p, .story-roots-copy > p:not(.story-eyebrow), .story-section-heading > p { font-size:18px; } .story-process p, .story-values p, .story-journey-cards p, .story-support-grid p { font-size:16px; } }
+
+/* Activity listing headers and horizontal filter controls only. */
+.activity-directory-eyebrow { font-size:12px; font-weight:650; line-height:1.4; letter-spacing:.18em; }
+.activity-directory-hero h1 { font-family:var(--aa-font); font-size:clamp(45px,5vw,76px); line-height:1.05; font-weight:650; letter-spacing:-.045em; }
+.activity-directory-description { font-size:17px; line-height:1.5; }
+.activity-filter-bar, .activity-filter-bar :is(select,button,label) { font-family:var(--aa-font); font-size:14px; font-weight:500; line-height:1.4; }
+.activity-result-count { font-size:13px; line-height:1.5; }
+@media(max-width:600px) { .activity-directory-hero h1 { font-size:43px; } .activity-directory-description { font-size:15px; } .activity-filter-bar, .activity-filter-bar :is(select,button,label) { font-size:13px; } }
+
+/* Activity option menus inherit the site's shared Inter typography. */
+.activity-filter-options, .activity-filter-option { font-family:var(--aa-font); font-size:14px; font-weight:400; line-height:1.4; letter-spacing:0; }
+.activity-filter-option[aria-selected=true] { font-weight:500; }
+.activity-show-all { font-family:var(--aa-font); font-size:13px; font-weight:400; line-height:1.5; }

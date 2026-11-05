@@ -2,17 +2,35 @@
 layout: default
 ---
 {% assign profile_member = site.data.team | where: 'slug', page.slug | first %}
-{% if profile_member %}
-<article class="guide-portfolio" aria-labelledby="guide-profile-name">
- <div class="guide-portfolio-intro">
-  <div class="guide-identity"><a class="guide-back" href="{% link _legal/team.html %}">← Our guides</a><div><p class="guide-kicker">{{ profile_member.role | escape }} / NEPAL</p><h1 id="guide-profile-name">{{ profile_member.name | escape }}</h1></div></div>
-  <figure class="guide-portrait"><img src="{{ profile_member.photos | relative_url }}" alt="{{ profile_member.name | escape }}" width="900" height="1200" fetchpriority="high"><figcaption>ATLAS ALPINE / OUR PEOPLE</figcaption></figure>
-  <div class="guide-about"><h2 class="guide-kicker">ABOUT {{ profile_member.name | split: ' ' | first | upcase }}</h2><p>{{ profile_member.description | strip_html | truncate: 220 }}</p>{% assign profile_description = profile_member.description | strip_html %}{% if profile_description.size > 220 %}<details class="guide-biography"><summary>Read full biography</summary><div>{{ profile_member.description }}</div></details>{% endif %}<a class="guide-plan" href="{{ '/enquiry/' | relative_url }}?guide={{ profile_member.slug | url_encode }}">Plan a climb</a></div>
+{% assign profile_name = profile_member.name | default: page.profile_name | default: page.title | split: ' - ' | first %}
+{% assign profile_role = profile_member.role | default: page.profile_role | default: 'Our team' %}
+{% assign profile_photo = profile_member.photos | default: page.profile_photo %}
+{% assign profile_bio = profile_member.description | default: page.profile_bio %}
+{% assign profile_role_lower = profile_role | downcase %}
+{% assign profile_trainings = profile_member.trainings | map: 'institution' | join: ' ' | downcase %}
+<article class="guide-portfolio guide-cv" aria-labelledby="guide-profile-name">
+ <p class="guide-cv-brand">ATLAS ALPINE EXPEDITION · NEPAL</p>
+ <div class="guide-cv-grid">
+  {% if profile_photo %}<figure class="guide-portrait"><img src="{{ profile_photo | relative_url }}" alt="{{ profile_name | escape }}" width="900" height="1200" fetchpriority="high"></figure>{% endif %}
+  <section class="guide-identity">
+   <p class="guide-kicker">{{ profile_role | escape }}</p>
+   <h1 id="guide-profile-name">{{ profile_name | escape }}</h1>
+   {% if profile_bio %}<div class="guide-cv-bio">{{ profile_bio }}</div>{% endif %}
+   {% if profile_member.email or profile_member.phone %}<div class="guide-cv-meta"><h2 class="guide-kicker">Contact</h2>{% if profile_member.email %}<a href="mailto:{{ profile_member.email | escape }}">{{ profile_member.email | escape }}</a>{% endif %}{% if profile_member.phone %}<a href="tel:{{ profile_member.phone | remove: ' ' | escape }}">{{ profile_member.phone | escape }}</a>{% endif %}</div>{% endif %}
+   {% if profile_member.base %}<div class="guide-cv-meta"><h2 class="guide-kicker">Base</h2><p>{{ profile_member.base | escape }}</p></div>{% endif %}
+   {% if profile_member.languages.size > 0 %}<div class="guide-cv-meta"><h2 class="guide-kicker">Languages</h2><p>{{ profile_member.languages | join: ', ' | escape }}</p></div>{% endif %}
+   {% if profile_role_lower contains 'ifmga' or profile_role_lower contains 'nnmga' or profile_trainings contains 'nnmga' %}
+   <div class="guide-credentials" aria-label="Guide associations">
+    {% if profile_role_lower contains 'ifmga' %}<figure><img src="{{ '/assets/css/images/affil/guida-pzzsiowyaiol6je3bbrohv1sdiae3vvcc3hd8k5a-A2Clu.webp' | relative_url }}" alt="IFMGA" width="90" height="90"><figcaption>IFMGA</figcaption></figure>{% endif %}
+    {% if profile_role_lower contains 'nnmga' or profile_trainings contains 'nnmga' %}<figure><img src="{{ '/assets/css/images/affil/images-69282cd525287-gQxRP.webp' | relative_url }}" alt="Nepal National Mountain Guide Association" width="90" height="90"><figcaption>{% if profile_role_lower contains 'nnmga' %}NNMGA{% else %}Training with NNMGA{% endif %}</figcaption></figure>{% endif %}
+   </div>{% endif %}
+  </section>
+  <div class="guide-cv-records">
+   {% if profile_member.experience.size > 0 %}<section><h2 class="guide-kicker">Experience</h2><ul class="guide-cv-list">{% for item in profile_member.experience %}<li><p class="guide-cv-date">{{ item.years | default: item.year | escape }}</p><div><h3>{{ item.role | escape }}</h3><p>{{ item.description | escape }}</p></div></li>{% endfor %}</ul></section>{% endif %}
+   {% if profile_member.mountains.size > 0 %}<section><h2 class="guide-kicker">Selected summits</h2><ul class="guide-cv-list">{% for mountain in profile_member.mountains %}<li><p class="guide-cv-date">{{ mountain.years | join: ', ' }}</p><div><h3>{{ mountain.name | escape }}</h3><p>{{ mountain.summited }} {% if mountain.summited == 1 %}ascent{% else %}ascents{% endif %}</p></div></li>{% endfor %}</ul></section>{% endif %}
+   {% if profile_member.trainings.size > 0 %}<section><h2 class="guide-kicker">Education &amp; training</h2><ul class="guide-cv-list">{% for training in profile_member.trainings %}<li><p class="guide-cv-date">{{ training.year }}</p><div><h3>{{ training.course | escape }}</h3>{% if training.institution %}<p>{{ training.institution | escape }}</p>{% endif %}</div></li>{% endfor %}</ul></section>{% endif %}
+   {% unless profile_member.experience.size > 0 or profile_member.mountains.size > 0 or profile_member.trainings.size > 0 %}<a class="guide-plan" href="{{ '/contact/' | relative_url }}">Contact our team</a>{% endunless %}
+  </div>
  </div>
- <div class="guide-portfolio-records">
- {% if profile_member.mountains.size > 0 %}<section class="guide-summits" aria-labelledby="guide-summits-heading"><h2 class="guide-kicker" id="guide-summits-heading">01 / SELECTED SUMMITS</h2><ul>{% for mountain in profile_member.mountains %}<li><h3>{{ mountain.name | escape }}</h3><p>{{ mountain.summited }} {% if mountain.summited == 1 %}ascent{% else %}ascents{% endif %}{% if mountain.years.size > 0 %} · {{ mountain.years | join: ', ' }}{% endif %}</p></li>{% endfor %}</ul></section>{% endif %}
- {% if profile_member.trainings.size > 0 %}<section class="guide-training" aria-labelledby="guide-training-heading"><h2 class="guide-kicker" id="guide-training-heading">02 / TRAINING</h2><ul>{% for training in profile_member.trainings %}<li><h3>{{ training.course | escape }}</h3>{% if training.institution or training.year %}<p>{{ training.institution | escape }}{% if training.institution and training.year %} · {% endif %}{{ training.year }}</p>{% endif %}</li>{% endfor %}</ul></section>{% endif %}
- </div>
- <div class="guide-profile-signoff"><span>Atlas Alpine Expedition</span><a href="{% link _legal/team.html %}">All guides</a></div>
+ <div class="guide-profile-signoff"><a href="{% link _legal/team.html %}">Our team</a><a href="{{ '/enquiry/' | relative_url }}?guide={{ page.slug | url_encode }}">Plan your journey</a></div>
 </article>
-{% endif %}

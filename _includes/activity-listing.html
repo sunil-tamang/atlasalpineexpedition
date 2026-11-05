@@ -1,0 +1,14 @@
+{% include activity-directory-hero.html %}
+<section class="expeditions-listing activity-horizontal-listing" aria-label="Find your {{ include.kind | downcase }} trip">
+ {% assign default_region = 'annapurna' %}{% if include.kind == 'Rafting Tours' %}{% assign default_region = 'manaslu' %}{% elsif include.kind == 'Rock Climbing' %}{% assign default_region = 'dollu' %}{% endif %}
+ {% include activity-filters.html region=default_region %}
+ <div class="expedition-results"><p class="activity-result-count" id="expedition-result-count" role="status" aria-live="polite">Trips</p><div class="expedition-grid" id="expedition-grid">
+ {% for doc in include.collection %}{% assign activity = include.dataset[doc.title-slug] %}{% assign region = activity.region | default: 'Other' | slugify %}
+ {% assign activity_image = activity.photos | default: doc.custom_bg %}{% assign activity_prefix = activity_image | slice: 0, 7 %}{% unless activity_prefix == 'assets/' %}{% assign activity_image = '/assets/css/images/' | append: activity_image %}{% endunless %}{% assign activity_path = activity_image | prepend: '/' | replace: '//', '/' %}{% assign activity_asset = site.static_files | where: 'path', activity_path | first %}{% unless activity_asset %}{% assign activity_image = include.fallback %}{% endunless %}
+ {% assign activity_title = activity.name | default: doc.alt | default: doc.title %}
+ {% assign activity_url = doc.url %}{% assign activity_url_end = activity_url | slice: -1 %}{% unless activity_url_end == '/' or activity_url contains '.html' %}{% assign activity_url = activity_url | append: '.html' %}{% endunless %}
+ <a class="expedition-card" href="{{ activity_url | relative_url }}" data-region="{{ region }}" data-days="{{ activity.days | default: doc.days | default: 0 }}" data-region-label="{{ activity.region | default: 'Other' | escape }}">{% include directory-card.html trip=activity kind=include.kind image=activity_image title=activity_title description=doc.description fallback=include.fallback %}</a>
+ {% endfor %}</div><div class="expedition-empty" id="expedition-empty" hidden><h3>No trips match these filters.</h3><p>Try another selection or clear your filters.</p></div><noscript><p>All trips are shown. Enable JavaScript to use filters.</p></noscript></div>
+</section><script src="{{ '/assets/js/expeditions.js' | relative_url }}" defer></script>
+
+<script src="{{ '/assets/js/activity-filter-options.js' | relative_url }}" defer></script>

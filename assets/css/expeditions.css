@@ -1,24 +1,10 @@
 /* Expedition directory layout; typography is defined in base.css. */
 .page-expeditions .site-content, .page-expeditions .home-footer { width: min(88%,1440px); }
 .reference-site.page-expeditions .atlas-header { --nav-width: min(88%,1440px); }
-.page-expeditions .site-intro { display: block; padding: 25px 0 48px; }
+.page-expeditions .site-intro { display: none; }
 .page-expeditions .site-intro h1 { max-width: none; margin-bottom: 16px; }
 .page-expeditions .site-intro .site-eyebrow { display: none; }
 .page-expeditions .site-intro-description { max-width: none; margin: 0; color: #52565b; }
-.expeditions-listing { display: grid; grid-template-columns: 230px minmax(0,1fr); gap: 24px; align-items: start; }
-.expedition-filters { position: sticky; top: 25px; padding: 26px; border: 1px solid #e5e7eb; border-radius: 18px; background: #fffffff0; box-shadow: 0 7px 18px #00000008; }
-.expedition-filters h2 { margin: 0; padding-bottom: 22px; border-bottom: 1px solid #e8e8e8; }
-.expedition-filters fieldset { min-width: 0; border: 0; border-bottom: 1px solid #e8e8e8; padding: 22px 0; margin: 0; }
-.expedition-filters fieldset:last-of-type { border: 0; }
-.expedition-filters legend { float: left; width: 100%; padding: 0 0 12px; color: #111; }
-.expedition-filters label { clear: both; display: flex; align-items: flex-start; gap: 11px; padding: 6px 0; color: #303030; cursor: pointer; }
-.expedition-filters input[type=checkbox] { width: 18px; height: 18px; flex-shrink: 0; margin: 2px 0 0; accent-color: #111; }
-.expedition-filters label:has(input:disabled) { opacity: .45; cursor: default; }
-.expedition-filters button { width: 100%; min-height: 46px; cursor: pointer; }
-
-
-.expedition-clear { border: 0; background: transparent; color: #74787f; margin-top: 10px; }
-.expedition-clear:hover { color: #111; }
 .expedition-results { min-width: 0; }
 
 .expedition-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px; }
@@ -41,17 +27,10 @@
 .expeditions-listing [hidden] { display: none !important; }
 
 @media(max-width:1200px) and (min-width:1024px) {
- .expeditions-listing { grid-template-columns: 205px minmax(0,1fr); gap: 20px; }
- .expedition-filters { padding: 18px; }
  .expedition-grid { gap: 12px; }
  .directory-card-content { padding: 13px; }
 }
 @media(max-width:1023px) {
- .expeditions-listing { grid-template-columns: 1fr; }
- .expedition-filters { position: static; }
- .expedition-filters fieldset { display: flex; flex-wrap: wrap; gap: 4px 22px; }
- .expedition-filters legend { float: none; }
- .expedition-filters label { clear: none; }
  .expedition-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px; }
  .directory-card-content { padding: 22px; }
 }
@@ -62,6 +41,63 @@
 @media(max-width:600px) { .expedition-grid { grid-template-columns: 1fr; } .reference-site .expedition-card { min-height: 480px; } }
 @media(prefers-reduced-motion:reduce) { .expedition-card img { transition: none; } }
 
-/* Altitude options use one aligned row per checkbox, label, and count. */
-.expedition-filters .altitude-filter-label { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; width: 100%; min-width: 0; white-space: nowrap; }
-.expedition-filters .altitude-filter-label [data-filter-count] { margin-left: auto; flex-shrink: 0; }
+
+/* Horizontal activity filters inspired by the expedition collection reference. */
+.page-expeditions .site-content { padding-top:180px; }
+.activity-directory-hero { position:relative; min-height:290px; display:flex; align-items:center; isolation:isolate; margin-bottom:35px; }
+.activity-directory-hero > div { max-width:640px; position:relative; z-index:1; }
+.activity-directory-hero img { position:absolute; z-index:-1; top:-30px; right:-6%; width:66%; height:340px; object-fit:cover; object-position:center 65%; filter:grayscale(1); mask-image:linear-gradient(90deg,transparent,#000 45%),linear-gradient(180deg,transparent,#000 25%,#000 70%,transparent); mask-composite:intersect; }
+.activity-directory-eyebrow { margin:0 0 25px; }
+.activity-directory-hero h1 { margin:0 0 24px; }
+.activity-directory-description { max-width:570px; margin:0; }
+.activity-horizontal-listing { display:block; }
+.activity-filter-bar { display:flex; align-items:center; flex-wrap:nowrap; width:100%; max-width:none; gap:16px; margin:0 0 20px; padding:12px 0 20px; overflow-x:auto; overscroll-behavior-x:contain; scrollbar-width:thin; }
+.activity-altitude-pills { display:flex; flex-wrap:nowrap; flex:0 0 auto; width:auto; align-items:center; gap:10px; padding:0; margin:0 auto 0 0; border:0; min-width:0; }
+.activity-altitude-pills label { position:relative; display:block; cursor:pointer; }
+.activity-altitude-pills input { position:absolute; width:1px; height:1px; clip-path:inset(50%); overflow:hidden; }
+.activity-altitude-pills span { display:block; padding:10px 18px; border-radius:28px; background:#f6f6f5; color:#111; white-space:nowrap; }
+.activity-altitude-pills input:checked + span { background:#101112; color:#fff; }
+.activity-altitude-pills input:focus-visible + span { outline:2px solid #0075ba; outline-offset:3px; }
+.activity-filter-dropdown { position:relative; flex:0 1 145px; min-width:130px; max-width:180px; }
+.site-page-content .activity-filter-dropdown select { width:100%; min-height:42px; height:42px; max-width:100%; padding:9px 27px 9px 12px; border:0; border-radius:24px; background:transparent; color:#111; cursor:pointer; }
+.activity-duration-dropdown { min-width:170px; border:1px solid #e7e7e7; border-radius:24px; }
+.activity-duration-dropdown :is(i,svg) { position:absolute; left:14px; top:50%; transform:translateY(-50%); width:16px; height:16px; pointer-events:none; }
+.site-page-content .activity-duration-dropdown select { padding-left:39px; }
+.activity-filter-clear { flex:0 0 auto; white-space:nowrap; padding:10px 0; margin-left:auto; border:0; background:none; color:#666; cursor:pointer; }
+.activity-filter-clear:hover { color:#111; }
+.activity-result-count { margin:0 0 18px; color:#60656a; }
+.activity-filter-bar :focus-visible { outline:2px solid #0075ba; outline-offset:4px; }
+@media(max-width:1023px) {
+ .page-expeditions .site-content { padding-top:130px; }
+ .activity-directory-hero { min-height:260px; }
+ .activity-directory-hero > div { max-width:70%; }
+ .activity-directory-hero img { width:75%; }
+}
+@media(max-width:600px) {
+ .activity-directory-hero { min-height:300px; align-items:flex-start; padding-top:25px; margin-bottom:20px; }
+ .activity-directory-hero > div { max-width:100%; }
+ .activity-directory-hero img { top:85px; right:-5%; height:260px; width:100%; opacity:.45; }
+ .activity-directory-description { max-width:95%; }
+ .activity-filter-bar { gap:12px; }
+ .activity-altitude-pills { gap:8px; }
+ .activity-altitude-pills span { padding:9px 13px; }
+ .activity-filter-dropdown { flex:0 0 145px; }
+ .activity-filter-dropdown select { max-width:none; }
+ .activity-filter-clear { flex:0 0 auto; }
+}
+
+/* Custom option menus sit outside the scrolling filter bar so they cannot be clipped. */
+.activity-filter-bar select[hidden] { display:none; }
+.activity-select-button { position:relative; width:100%; min-height:42px; padding:9px 30px 9px 12px; border:0; border-radius:24px; background:transparent; color:#111; text-align:left; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; cursor:pointer; }
+.activity-select-button::after { content:''; position:absolute; right:13px; top:17px; width:6px; height:6px; border-right:1px solid currentColor; border-bottom:1px solid currentColor; transform:rotate(45deg); }
+.activity-duration-dropdown .activity-select-button { padding-left:39px; }
+.activity-filter-options { position:fixed; z-index:2000; box-sizing:border-box; overflow-y:auto; overscroll-behavior:contain; padding:7px; background:#fff; color:#17191b; border:1px solid #e6e7e8; border-radius:12px; box-shadow:0 12px 35px #00000018; scrollbar-width:thin; }
+.activity-filter-options[hidden] { display:none; }
+.activity-filter-option { position:relative; display:block; width:100%; padding:11px 34px 11px 13px; border:0; border-radius:6px; background:transparent; color:inherit; text-align:left; cursor:pointer; }
+.activity-filter-option:hover, .activity-filter-option:focus-visible { background:#f3f4f5; color:#0075ba; outline:none; }
+.activity-filter-option[aria-selected=true] { background:#101112; color:#fff; }
+.activity-filter-option[aria-selected=true]::after { content:'✓'; position:absolute; right:13px; }
+.activity-filter-option:disabled { opacity:.4; cursor:default; }
+.activity-result-count { display:inline-block; margin-right:16px; }
+.activity-show-all { padding:0; border:0; background:none; color:#555; cursor:pointer; text-decoration:underline; text-underline-offset:3px; }
+.activity-show-all:hover { color:#0075ba; }

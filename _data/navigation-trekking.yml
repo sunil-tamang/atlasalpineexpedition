@@ -1,0 +1,24 @@
+# Curated existing routes; shared by desktop tabs and mobile drill-down lists.
+# Regions with fewer than four published routes show only available trips.
+- label: Everest Region
+  trips:
+    - everest-base-camp-trek
+    - gokyo-chola-pass-trek
+    - three-pass-trek
+    - luxury-everest-base-camp-trek
+- label: Annapurna Region
+  trips:
+    - annapurna-base-camp-trek
+    - annapurna-circuit-trek
+    - mardi-himal-trek
+    - annapurna-base-camp-north-trek
+- label: Langtang Region
+  trips:
+    - langtang-valley-trek
+    - gosai-kunda-trek
+    - tamang-heritage-trail-trek
+    - yala-peak-trek
+- label: Manaslu Region
+  trips:
+    - manaslu-circuit-trek
+    - manaslu-base-camp-trek

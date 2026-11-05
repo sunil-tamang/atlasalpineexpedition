@@ -9,6 +9,7 @@
   else if (section.id === 'trip-map') section.dataset.tripPanel = 'map';
   else { if (section.id === 'trip-inclusions') group = 'inclusions'; if (section.id === 'trip-faq') group = 'faq'; section.dataset.tripPanel = group; }
  });
+ tabs.forEach(tab => { if (!root.querySelector(tab.hash)) tab.hidden = true; });
  const map = root.querySelector('#trip-map');
  const hasMap = !!map?.querySelector('img[src]:not([src=""]),iframe[src]');
  const mapTab = tabs.find(tab => tab.dataset.tripTab === 'map');
@@ -34,7 +35,7 @@
  root.classList.add('is-enhanced');
  const hasDays = !!root.querySelector('.trip-day-panel');
  const itineraryTab = tabs.find(tab => tab.dataset.tripTab === 'itinerary');
- if (!hasDays) itineraryTab.hidden = true;
+ if (!hasDays && itineraryTab) itineraryTab.hidden = true;
  const initial = tabs.find(tab => tab.hash === location.hash && !tab.hidden);
  selectTab(initial?.dataset.tripTab || (hasDays ? 'itinerary' : 'overview'));
  window.addEventListener('hashchange',() => { const tab = tabs.find(item => item.hash === location.hash);if(tab)selectTab(tab.dataset.tripTab); });

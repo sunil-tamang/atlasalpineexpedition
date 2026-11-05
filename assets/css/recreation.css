@@ -56,11 +56,6 @@ body{
 	flex-wrap: wrap;
 }
 
-.banner_quote .container-wide{
-/*	width:100%;*/
-/*	display: inline-block;*/
-}
-
 /*Trekking Layout*/
 .banner__trek{
 	height: 100%;
@@ -212,9 +207,6 @@ body{
     text-transform: uppercase;
     
 }
-.sub-tagline{
-    
-}
 .sub-tagline--part1{
 	padding: .4em .2em;
 	background:#cacaca;
@@ -326,8 +318,6 @@ body{
 .nav__ul, .nav__li, .nav__li a { display: block; }
 .nav__ul{margin-top: .5em; border-top: 1px solid #cacaca;}
 
-.nav__li{  }
-
 .nav__li a{
     
     
@@ -349,11 +339,7 @@ body{
 .nav__li a:hover{
     color:#fdfdfd;
 }
-/*
-.nav__li a:hover> span{
-    border-bottom: 5px solid #fdfdfd;
-}
-*/
+
 
 .nav__dropdown{
     padding-left: 1em;
@@ -634,19 +620,6 @@ button.close span{
     margin-bottom: 1em;
     
 }
-
-.content__title{
-    
-}
-.clearlist .content__title{
-    
-}
-.content__sub-title{
-    
-}
-.clearlist .content__sub-title{
-    
-}
 .content__title-white{color:#fff;}
 .content__title-red{color:#fb4a4a; color:#c12b21;}
 
@@ -744,11 +717,8 @@ p.content__pg:not(:last-child){
 .container--white-legal .content__list,
 .container--white-legal .content__list-item{
  	text-transform: none;
-    
-    
-    
-    
-	
+
+
 }
 
 .quote{
@@ -860,9 +830,8 @@ p.content__pg:not(:last-child){
     display: block;
     vertical-align: middle;
     opacity: 0.9;
-    
-    
-    
+
+
     padding: 1em;
     
     text-transform: uppercase;
@@ -913,19 +882,13 @@ p.content__pg:not(:last-child){
 .wopper__act-name{
 	padding: .5em; display: block; text-align: center; background-color: #e6e6e6;
 }
-.wopper__act-name span{
-	 
-}
 
 
 /* --------------------T-E-S-T-I-M-O-N-I-A-L-S--------------------- */
-
-.testimonial{}
 .testimonial div:focus{outline: 0;}
 .testimonial-content{
-    
-    
-    
+
+
     cursor:pointer;
     color: rgba(0, 0, 0, 0.95);
 /*    color: #eee;*/
@@ -936,10 +899,10 @@ p.content__pg:not(:last-child){
 .review-from{
     color:rgba(0,0,0,0.95);
 }
-/*.slick-next:before, .slick-prev:before{color:#fb4a4a;, color:#c12b21;}*/
+
 .slick-next:before, .slick-prev:before{color:#666;}
-/*.slick-dots li button::before{color:#cacaca;}*/
-/*.slick-dots li.slick-active button:before{color:#fff;}*/
+
+
 /* --------------------F-O-O-T-E-R--------------------- */
 
 .footer{
@@ -981,11 +944,6 @@ p.content__pg:not(:last-child){
     padding: 0.5em 0;
     
     
-}
-
-
-.footer__content .footer__content-item{
-	
 }
 
 .copyright{
@@ -1128,15 +1086,13 @@ p.content__pg:not(:last-child){
 }
 
 
-
 /* Special Reusable Things */
 /* Trippy Button */
 .trippy_btn{
     color: #000000;
     background: #fff;
-    
-    
-    
+
+
     padding: 15px 40px;
     border: 0;
     outline: 0;
@@ -1184,19 +1140,7 @@ p.content__pg:not(:last-child){
     border-bottom: 1px solid black;
 }
 
-.quote{
-	
-}
-
 /*-----------------------W-I-D-E-------------------------*/
-@media screen and (max-width:50em) and (min-width:48em){
-	.header__logo{
-		
-	}
-	.nav__li a{
-		
-	}
-}
 
 @media(min-width:48em)
 {
@@ -1208,25 +1152,9 @@ p.content__pg:not(:last-child){
 	.col-half{
 		width: 50%;
 	}
-    .tagline{
-        
-	}
-	.banner_logo{
-
-	}
 	.banner_logo-img{
 		width: 250px;
 		height: 250px;
-	}
-    .sub-tagline{
-        
-    }
-	
-	.para__title{
-		
-	}
-	.para__title-cart{
-		
 	}
 	
 	/*Trekking Layout*/
@@ -1250,10 +1178,6 @@ p.content__pg:not(:last-child){
 	}
 	.trek-time--part1{margin-left: 0;}
 	.trek-time--part2{margin-right: 0;}
-	.accordion{
-		
-    	
-	}
 	.panel{
 		padding: 0 2em;
 	}
@@ -1264,15 +1188,6 @@ p.content__pg:not(:last-child){
         
         padding-top: 0;
     }
-    .content__sub-title{
-        
-    }
-	.clearlist .content__title{
-		
-	}
-	.clearlist .content__sub-title{
-		
-	}
 	
     .header__nav{
         display: block;
@@ -1314,20 +1229,9 @@ p.content__pg:not(:last-child){
         display: flex;
         flex-direction: row-reverse;
     }
-    
-    .wopper__title span{
-        
-        
-    }
     .wopper__title span{
 		
 		padding: 1em;
-	}
-	
-	
-	.footer__content .footer__content-item{
-		
-		
 	}
 	
 	.one__item{
@@ -1371,9 +1275,6 @@ p.content__pg:not(:last-child){
 	.wopper__act-name{
 		padding: 1em;
 	}
-	.wopper__act-name span{
-		 
-	}
 	.call_now,.call_now.show,.call_now.hide{
 		visibility: hidden;
 	}
@@ -1381,17 +1282,8 @@ p.content__pg:not(:last-child){
 
 /* Mobile View */
 @media(max-width:375px){
-    .wopper__info-detail {
-        
-    }
     .wopper__info-cart {
         
         padding: .05em 0.2em;
-    }
-}
-
-@media(max-width:320px){
-    .wopper__info-detail {
-        
     }
 }

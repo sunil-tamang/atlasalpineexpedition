@@ -1,0 +1,693 @@
+# 8000m-data.yml — SAMPLE CONTENT FOR ATLAS ALPINE EXPEDITION
+# Eight internationally recognized 8000m peaks in Nepal / on its borders.
+# Cho Oyu is classified as China because this listing assumes the usual Tibet-side route.
+# All itineraries are illustrative planning outlines, not confirmed departures.
+# Prices, permits, staffing, oxygen services, PDF links and exact dates must be confirmed.
+# Fields intentionally left blank should not render a button or embedded asset.
+# Dates/itinerary segments may shift significantly with weather, permits and conditions.
+# Mountain heights may differ slightly across published Nepalese and international sources.
+
+everest:
+  name: Everest Expedition
+  days: '60'
+  nights: '59'
+  startPoint: Kathmandu
+  endPoint: Kathmandu
+  distance: Varies by route and season
+  difficulty: Extreme
+  altitude: 8,848.86m / 29,031.7ft
+  altitude_band: 8000m
+  skill: Prior high-altitude mountaineering experience required
+  grade: Serious high-altitude expedition
+  walking: Varies by approach and climbing phase
+  accommodation: Hotel + Lodge + Expedition Camping
+  groupSize: On enquiry
+  season: Apr-May (main summit season)
+  region: Khumbu
+  country: Nepal
+  filter_region: Everest Regions
+  photos: assets/css/images/bg/peakbg.jpg
+  popular: Y
+  price: null
+  bookLink: null
+  enquiry_only: true
+  description: Everest rises above the Khumbu at 8,848.86 metres. Our proposed Nepal-side expedition follows
+    the South Col and Southeast Ridge, beginning with the trek through Sherpa villages to Everest Base Camp.
+    Acclimatization rotations, the Khumbu Icefall, the Lhotse Face and the final summit bid require a long
+    weather window, a trained team and careful decisions throughout.
+  excerpt: A Nepal-side Everest expedition by the South Col route, with a full Khumbu approach, staged acclimatization
+    and a carefully managed summit window.
+  video: null
+  download: null
+  image: null
+  highlights:
+  - content: Trek through Namche, Tengboche and the upper Khumbu to Everest Base Camp
+  - content: Acclimatize progressively before moving through the Khumbu Icefall
+  - content: Climb through the Western Cwm and onto the Lhotse Face
+  - content: Follow the South Col and Southeast Ridge during a suitable summit window
+  - content: Work with an experienced climbing team focused on preparation, communication and safe descent
+  overview:
+  - content: Mount Everest stands on the Nepal-China border and is approached from Nepal through the Khumbu
+      Valley. The usual commercial Nepal-side line reaches the summit by the South Col and Southeast Ridge.
+  - content: After reaching base camp, climbers spend several weeks training and completing rotations between
+      established high camps. The schedule must remain flexible as icefall conditions, weather, acclimatization
+      and team health govern progress.
+  - content: The itinerary is a sample outline. Route support, oxygen arrangements, final dates and expedition
+      services are confirmed directly with our team.
+  itinerary:
+  - title: Day 1 - Arrive in Kathmandu
+    content: Airport reception, hotel transfer and introduction to the expedition team.
+  - title: Days 2-3 - Briefings and final preparation
+    content: Check personal equipment, review the route and complete permit and expedition briefings.
+  - title: Day 4 - Fly to Lukla and trek to Phakding
+    content: Travel to the Khumbu trailhead, subject to flight and weather conditions.
+  - title: Day 5 - Trek to Namche Bazaar
+    content: Follow the Dudh Koshi valley and ascend to the region’s main trading centre.
+  - title: Day 6 - Acclimatization in Namche
+    content: Rest and make a short acclimatization hike above the village.
+  - title: Day 7 - Trek to Tengboche or Deboche
+    content: Continue through the Khumbu with views of Everest, Lhotse and Ama Dablam.
+  - title: Day 8 - Trek to Dingboche
+    content: Move higher into the Imja valley and settle in for further acclimatization.
+  - title: Day 9 - Acclimatization in Dingboche
+    content: An active rest day, with a walk to a suitable viewpoint if conditions permit.
+  - title: Day 10 - Trek to Lobuche
+    content: Follow the upper Khumbu valley towards the glacier.
+  - title: Day 11 - Arrive at Everest Base Camp
+    content: Move to base camp, meet the mountain support team and settle into camp routines.
+  - title: Days 12-18 - Base camp preparation
+    content: Medical and equipment checks, rope systems practice and initial acclimatization.
+  - title: Days 19-35 - High-camp rotations
+    content: Make staged carries and acclimatization climbs via the Khumbu Icefall and Western Cwm; return
+      to base camp between rotations.
+  - title: Days 36-50 - Summit-weather window
+    content: Subject to conditions, climb via Camp II, the Lhotse Face, Camp III and the South Col before the
+      Southeast Ridge summit attempt and descent.
+  - title: Days 51-53 - Recovery and camp clearing
+    content: Return to base camp, recover and remove expedition equipment. Days may shift with weather.
+  - title: Day 54 - Descend to Pheriche
+    content: Leave base camp and walk down the Khumbu valley.
+  - title: Day 55 - Trek to Namche Bazaar
+    content: Continue through Pangboche and Tengboche towards Namche.
+  - title: Day 56 - Trek to Lukla
+    content: Finish the trail portion of the expedition.
+  - title: Day 57 - Fly to Kathmandu
+    content: Return to Kathmandu if mountain flight conditions permit.
+  - title: Days 58-59 - Contingency and debriefing
+    content: Allow time for flight delays, equipment sorting and expedition debriefing.
+  - title: Day 60 - International departure
+    content: Transfer to the airport for onward travel.
+lhotse:
+  name: Lhotse Expedition
+  days: '54'
+  nights: '53'
+  startPoint: Kathmandu
+  endPoint: Kathmandu
+  distance: Varies by route and season
+  difficulty: Extreme
+  altitude: 8,516m / 27,940ft
+  altitude_band: 8000m
+  skill: Prior high-altitude mountaineering experience required
+  grade: Serious high-altitude expedition
+  walking: Varies by approach and climbing phase
+  accommodation: Hotel + Lodge + Expedition Camping
+  groupSize: On enquiry
+  season: Apr-May (main season)
+  region: Khumbu
+  country: Nepal
+  filter_region: Everest Regions
+  photos: assets/css/images/bg/peakbg.jpg
+  popular: N
+  price: null
+  bookLink: null
+  enquiry_only: true
+  description: Lhotse shares Everest Base Camp and much of the lower climbing route, but leaves the Everest
+    line high on the Lhotse Face. Above the shared camps, its steep summit couloir makes the final ascent a
+    distinct and demanding climb. The expedition includes an approach through the Khumbu, planned acclimatization
+    rotations and an extended weather allowance.
+  excerpt: Climb Lhotse from the Nepal side, sharing the lower Everest route before tackling the mountain’s
+    steep upper face and summit couloir.
+  video: null
+  download: null
+  image: null
+  highlights:
+  - content: Follow the Khumbu trail to Everest and Lhotse Base Camp
+  - content: Share the Khumbu Icefall and Western Cwm approach with the Everest route
+  - content: Climb fixed lines on the Lhotse Face during acclimatization rotations
+  - content: Make a summit attempt through the Lhotse Couloir when conditions permit
+  - content: Descend the mountain with the same care and resources used for the ascent
+  overview:
+  - content: At 8,516 metres, Lhotse is the fourth-highest mountain in the world. It sits immediately south
+      of Everest, with commercial expeditions generally approaching from the Nepal-side Everest Base Camp.
+  - content: Above the lower camps the line breaks away from the Everest route and rises toward the narrow
+      Lhotse Couloir. Snow, ice, mixed terrain and extreme altitude make route conditions and weather decisive.
+  - content: The sample plan allows time for progressive acclimatization and a flexible summit window; the
+      final expedition schedule is confirmed on enquiry.
+  itinerary:
+  - title: Day 1 - Arrive in Kathmandu
+    content: Meet the team and transfer to the expedition hotel.
+  - title: Days 2-3 - Equipment and expedition briefing
+    content: Review documents, equipment, oxygen plans and route logistics.
+  - title: Day 4 - Fly to Lukla and trek to Phakding
+    content: Begin the approach to the upper Khumbu.
+  - title: Day 5 - Trek to Namche Bazaar
+    content: Ascend from the Dudh Koshi valley to Namche.
+  - title: Day 6 - Acclimatization in Namche
+    content: Rest and walk higher before returning to sleep.
+  - title: Day 7 - Trek to Tengboche or Deboche
+    content: Continue past forests and monasteries beneath Ama Dablam.
+  - title: Day 8 - Trek to Dingboche
+    content: Follow the valley towards the high mountains.
+  - title: Day 9 - Acclimatization in Dingboche
+    content: Allow another day for adjustment to altitude.
+  - title: Day 10 - Trek to Lobuche
+    content: Continue along the Khumbu moraine.
+  - title: Day 11 - Reach Everest and Lhotse Base Camp
+    content: Settle into the shared base-camp area and review the climbing plan.
+  - title: Days 12-18 - Base-camp training
+    content: Prepare for fixed ropes, crevasse travel and high-camp rotations.
+  - title: Days 19-34 - Acclimatization rotations
+    content: Climb through the Icefall and Western Cwm towards the Lhotse Face, returning to recover between
+      rotations.
+  - title: Days 35-45 - Summit-weather window
+    content: Advance through established camps, climb the upper Lhotse Face and attempt the summit couloir
+      if conditions are safe.
+  - title: Days 46-48 - Descend and clear base camp
+    content: Return from the mountain, recover and pack the expedition camp.
+  - title: Day 49 - Descend to Pheriche
+    content: Begin the trek out of the upper Khumbu.
+  - title: Day 50 - Trek to Namche Bazaar
+    content: Continue downhill through Khumbu villages.
+  - title: Day 51 - Trek to Lukla
+    content: Complete the trail section.
+  - title: Day 52 - Fly to Kathmandu
+    content: Weather-dependent return flight and hotel transfer.
+  - title: Day 53 - Contingency and debriefing
+    content: Reserve time for delays and expedition debriefing.
+  - title: Day 54 - International departure
+    content: Airport transfer and onward journey.
+makalu:
+  name: Makalu Expedition
+  days: '50'
+  nights: '49'
+  startPoint: Kathmandu
+  endPoint: Kathmandu
+  distance: Varies by route and season
+  difficulty: Extreme
+  altitude: 8,485m / 27,838ft
+  altitude_band: 8000m
+  skill: Prior high-altitude mountaineering experience required
+  grade: Serious high-altitude expedition
+  walking: Varies by approach and climbing phase
+  accommodation: Hotel + Lodge + Expedition Camping
+  groupSize: On enquiry
+  season: Apr-May (main season)
+  region: Makalu-Barun
+  country: Nepal
+  filter_region: Makalu
+  photos: assets/css/images/bg/peakbg.jpg
+  popular: N
+  price: null
+  bookLink: null
+  enquiry_only: true
+  description: Makalu’s immense pyramid rises above the remote Barun Valley of eastern Nepal. A typical expedition
+    approaches through Tumlingtar, Tashigaon, Khongma and the high Barun valley before establishing a base
+    camp below the mountain. The usual northwest-side climbing line demands sustained work on steep snow, ice
+    and exposed upper terrain.
+  excerpt: A remote eastern Nepal expedition to Makalu, combining a long Barun Valley approach with a serious
+    climb on one of the Himalaya’s great pyramids.
+  video: null
+  download: null
+  image: null
+  highlights:
+  - content: Travel through the Arun and Barun valleys to the Makalu base-camp area
+  - content: Cross high passes near Khongma on the trekking approach
+  - content: Acclimatize with staged carries and high-camp rotations
+  - content: Attempt the mountain by a northwest-side route when conditions permit
+  - content: Experience an expedition setting far quieter than the Everest corridor
+  overview:
+  - content: Makalu stands on the Nepal-China border to the east of Everest and rises above Makalu-Barun National
+      Park. The mountain is known for its sharp ridges and exposed upper slopes.
+  - content: The journey to base camp crosses remote valleys and high passes, creating a substantial approach
+      before the technical climbing begins. The precise high-camp plan varies with seasonal conditions.
+  - content: The sample itinerary is a planning framework. The climbing window, approach logistics and team
+      arrangements must be confirmed before booking.
+  itinerary:
+  - title: Day 1 - Arrive in Kathmandu
+    content: Hotel transfer and first meeting with expedition staff.
+  - title: Day 2 - Expedition briefing
+    content: Complete permits, technical gear checks and final preparation.
+  - title: Day 3 - Fly to Tumlingtar and drive to Num
+    content: Travel east to the Arun Valley and the start of the approach trek.
+  - title: Day 4 - Trek to Seduwa
+    content: Cross into the Makalu-Barun approach valley.
+  - title: Day 5 - Trek to Tashigaon
+    content: Climb past cultivated hillsides to the last major settlement on the route.
+  - title: Day 6 - Acclimatization in Tashigaon
+    content: Rest and prepare for the higher trail.
+  - title: Day 7 - Trek to Khongma Danda
+    content: Ascend through forest towards the ridge.
+  - title: Day 8 - Cross high passes towards Dobato
+    content: Follow the high route over the Khongma area passes.
+  - title: Day 9 - Trek to Yangle Kharka
+    content: Descend into the upper Barun Valley.
+  - title: Day 10 - Trek to Langmale Kharka
+    content: Continue towards the head of the valley.
+  - title: Day 11 - Reach lower Makalu Base Camp
+    content: Set up camp and begin adjusting to higher altitude.
+  - title: Days 12-13 - Acclimatization at lower base camp
+    content: Rest, train and prepare loads for the higher camp.
+  - title: Day 14 - Establish main expedition base camp
+    content: Move to the main base-camp location selected by the expedition leader.
+  - title: Days 15-30 - High-camp rotations
+    content: Progressively establish higher camps and return to base camp between acclimatization climbs.
+  - title: Days 31-42 - Summit-weather window
+    content: Attempt the northwest-side summit route only when snow, weather and team readiness permit.
+  - title: Day 43 - Clear base camp
+    content: Recover equipment and prepare for the trek out.
+  - title: Day 44 - Trek to Yangle Kharka
+    content: Descend through the upper Barun Valley.
+  - title: Day 45 - Trek to Khongma
+    content: Return towards the ridge crossing.
+  - title: Day 46 - Trek to Seduwa
+    content: Continue the descent through Makalu-Barun.
+  - title: Day 47 - Return towards Num and Tumlingtar
+    content: Walk to road access and transfer by road as conditions allow.
+  - title: Day 48 - Return to Kathmandu
+    content: Flight or overland connection, subject to availability and weather.
+  - title: Day 49 - Contingency day
+    content: Allow time for travel delays and a final debriefing.
+  - title: Day 50 - International departure
+    content: Airport transfer for onward travel.
+manaslu:
+  name: Manaslu Expedition
+  days: '43'
+  nights: '42'
+  startPoint: Kathmandu
+  endPoint: Kathmandu
+  distance: Varies by route and season
+  difficulty: Extreme
+  altitude: 8,163m / 26,781ft
+  altitude_band: 8000m
+  skill: Prior high-altitude mountaineering experience required
+  grade: Serious high-altitude expedition
+  walking: Varies by approach and climbing phase
+  accommodation: Hotel + Lodge + Expedition Camping
+  groupSize: On enquiry
+  season: Sep-Oct (main season)
+  region: Manaslu
+  country: Nepal
+  filter_region: Manaslu
+  photos: assets/css/images/bg/peakbg.jpg
+  popular: Y
+  price: null
+  bookLink: null
+  enquiry_only: true
+  description: Manaslu rises above the Budhi Gandaki valley in central Nepal. The standard Nepal-side expedition
+    typically approaches through the villages of the Manaslu Circuit before climbing from a base camp above
+    Sama Gaun. Crevassed glaciers, exposed snow slopes and changing weather require a careful acclimatization
+    plan and conservative summit decisions.
+  excerpt: A Manaslu expedition with a cultural approach through the Budhi Gandaki valley and a high-altitude
+    summit attempt above Sama Gaun.
+  video: null
+  download: null
+  image: null
+  highlights:
+  - content: Trek the lower Manaslu valley through traditional villages
+  - content: Acclimatize around Sama Gaun before moving to base camp
+  - content: Prepare for glacier travel, fixed ropes and exposed high camps
+  - content: Choose the summit window according to snow stability and weather
+  - content: Complete a controlled descent and clear all expedition camps
+  overview:
+  - content: Manaslu, at 8,163 metres, is one of Nepal’s principal 8,000-metre expedition peaks. The approach
+      passes through the Budhi Gandaki valley and leads to base camp above Sama Gaun.
+  - content: The upper mountain includes glacier crossings, fixed-rope terrain and avalanche exposure. Rotations
+      and weather days are essential parts of the plan, not optional extras.
+  - content: The outline below is indicative; route conditions, road access, permits and support services are
+      established for each departure.
+  itinerary:
+  - title: Day 1 - Arrive in Kathmandu
+    content: Meet the team and check into the hotel.
+  - title: Day 2 - Preparation and briefings
+    content: Review mountaineering equipment, permits and expedition logistics.
+  - title: Day 3 - Drive towards Machha Khola
+    content: Travel towards the Budhi Gandaki trailhead; road conditions determine final access.
+  - title: Day 4 - Trek to Jagat
+    content: Enter the steeper valley and follow the river trail.
+  - title: Day 5 - Trek to Deng
+    content: Continue through forests and villages.
+  - title: Day 6 - Trek to Namrung
+    content: Gain elevation and enter the upper Manaslu region.
+  - title: Day 7 - Trek to Lho
+    content: Continue towards the high mountain settlements.
+  - title: Day 8 - Trek to Sama Gaun
+    content: Arrive beneath Manaslu and settle in for acclimatization.
+  - title: Day 9 - Acclimatization in Sama Gaun
+    content: Rest, make a gradual ascent and review the base-camp route.
+  - title: Day 10 - Trek to Manaslu Base Camp
+    content: Move up to the main expedition camp.
+  - title: Days 11-22 - Rotations and camp establishment
+    content: Practice glacier travel and establish high camps with recovery periods at base camp.
+  - title: Days 23-34 - Summit-weather window
+    content: Attempt the upper mountain using established camps, with progress controlled by weather and snow
+      conditions.
+  - title: Days 35-37 - Return and camp cleanup
+    content: Return to base camp, recover and remove equipment.
+  - title: Day 38 - Descend to Sama Gaun
+    content: Leave the climbing route and rejoin the trekking trail.
+  - title: Day 39 - Trek towards Namrung
+    content: Descend through the upper valley.
+  - title: Day 40 - Continue to Jagat or the available roadhead
+    content: Progress towards vehicle access as trail and road conditions allow.
+  - title: Day 41 - Return towards Kathmandu
+    content: Complete the road journey in stages if necessary.
+  - title: Day 42 - Reserve day and debriefing
+    content: Allow for transit delays and expedition debriefing.
+  - title: Day 43 - International departure
+    content: Airport transfer for onward travel.
+cho-oyu:
+  name: Cho Oyu Expedition
+  days: '40'
+  nights: '39'
+  startPoint: Kathmandu
+  endPoint: Kathmandu
+  distance: Varies by route and season
+  difficulty: Extreme
+  altitude: 8,188m / 26,864ft
+  altitude_band: 8000m
+  skill: Prior high-altitude mountaineering experience required
+  grade: Serious high-altitude expedition
+  walking: Varies by approach and climbing phase
+  accommodation: Hotel + Guesthouse + Expedition Camping
+  groupSize: On enquiry
+  season: Sep-Oct (subject to Tibet permits)
+  region: Tibet
+  country: China
+  filter_region: Tibet
+  photos: assets/css/images/bg/peakbg.jpg
+  popular: N
+  price: null
+  bookLink: null
+  enquiry_only: true
+  description: Cho Oyu sits on the Nepal-Tibet border. The usual guided route approaches from the Tibetan side
+    and climbs towards the northwest ridge, requiring Chinese permits and access approvals. Although often
+    described as one of the more approachable 8,000-metre climbs, its altitude, crevasses and changing weather
+    still demand proven expedition experience.
+  excerpt: An enquiry-only Cho Oyu expedition via Tibet’s northwest-side route, dependent on current access,
+    permits and local regulations.
+  video: null
+  download: null
+  image: null
+  highlights:
+  - content: Travel through Tibet and acclimatize gradually before reaching base camp
+  - content: Establish an advanced base camp and a staged high-camp system
+  - content: Climb glaciated terrain on the standard northwest-side route
+  - content: Allow a flexible summit period and a conservative descent
+  - content: Confirm all Chinese permits and access before accepting a departure
+  overview:
+  - content: Cho Oyu is a border mountain between Nepal and the Tibet Autonomous Region of China. The standard
+      commercial approach uses Tibet, so the country filter for this itinerary is China.
+  - content: Permits for foreign expeditions to Tibet can change without much notice. A Nepal-side technical
+      route is not a direct substitute for the Tibetan normal route.
+  - content: The example below assumes lawful Tibetan access. Availability, routing, transfer arrangements
+      and the expedition schedule must be verified before a booking is offered.
+  itinerary:
+  - title: Day 1 - Arrive in Kathmandu
+    content: Meet the expedition team and review the proposed programme.
+  - title: Day 2 - Permit and equipment briefing
+    content: Confirm that all Tibetan access permissions, travel documents and permits are in place.
+  - title: Day 3 - Travel to Lhasa via an authorized connection
+    content: Enter Tibet using approved transport arrangements; the routing can change.
+  - title: Days 4-5 - Acclimatization in Lhasa
+    content: Adjust gradually to altitude and complete local formalities.
+  - title: Day 6 - Overland transfer towards Shigatse
+    content: Travel west across the Tibetan plateau.
+  - title: Day 7 - Continue towards Tingri
+    content: Stage the approach to the mountain.
+  - title: Day 8 - Travel to the Chinese base-camp area
+    content: Meet expedition logistics staff and settle into camp.
+  - title: Day 9 - Acclimatization at base camp
+    content: Rest and prepare climbing loads.
+  - title: Day 10 - Approach advanced base camp
+    content: Move towards the glacier-side advanced base camp when conditions permit.
+  - title: Days 11-14 - Advanced base-camp preparation
+    content: Rest, train and prepare equipment for rotations.
+  - title: Days 15-26 - Acclimatization rotations
+    content: Carry loads and climb between established high camps, returning for recovery.
+  - title: Days 27-34 - Summit-weather window
+    content: Attempt the northwest-side route only with suitable permits, conditions and team readiness.
+  - title: Days 35-36 - Descend and pack camps
+    content: Return to the lower camps and remove expedition equipment.
+  - title: Day 37 - Return towards Tingri
+    content: Begin the overland journey away from the mountain.
+  - title: Day 38 - Travel towards Lhasa
+    content: Continue through Tibet as authorized.
+  - title: Day 39 - Return to Kathmandu
+    content: Travel by a permitted international connection; schedules may differ.
+  - title: Day 40 - International departure
+    content: Onward travel after the expedition debriefing.
+dhaulagiri:
+  name: Dhaulagiri I Expedition
+  days: '49'
+  nights: '48'
+  startPoint: Kathmandu
+  endPoint: Kathmandu
+  distance: Varies by route and season
+  difficulty: Extreme
+  altitude: 8,167m / 26,795ft
+  altitude_band: 8000m
+  skill: Prior high-altitude mountaineering experience required
+  grade: Serious high-altitude expedition
+  walking: Varies by approach and climbing phase
+  accommodation: Hotel + Lodge + Expedition Camping
+  groupSize: On enquiry
+  season: Apr-May | Sep-Oct (conditions permitting)
+  region: Dhaulagiri
+  country: Nepal
+  filter_region: Dhaulagiri
+  photos: assets/css/images/bg/peakbg.jpg
+  popular: N
+  price: null
+  bookLink: null
+  enquiry_only: true
+  description: Dhaulagiri I towers above the Kali Gandaki and Myagdi valleys in western Nepal. Traditional
+    trekking approaches pass through remote settlements and the Italian Base Camp before moving onto glacial
+    terrain below the mountain. Its exposed climbing route, isolation and unstable weather call for strong
+    previous high-altitude experience.
+  excerpt: A remote Dhaulagiri I expedition through the Myagdi valley to a demanding 8,167-metre ascent.
+  video: null
+  download: null
+  image: null
+  highlights:
+  - content: Approach through the remote Myagdi valley and Italian Base Camp area
+  - content: Cross glaciated terrain towards the main Dhaulagiri Base Camp
+  - content: Use progressive acclimatization and high-camp rotations
+  - content: Attempt the northeast-side route only within a suitable weather window
+  - content: Return with a focus on safe descent and minimal mountain impact
+  overview:
+  - content: Dhaulagiri I is the seventh-highest of the internationally recognised fourteen 8,000-metre peaks.
+      Its western Nepal setting is remote and access can be affected by road and weather conditions.
+  - content: The normal expedition approach often uses the Myagdi valley and Italian Base Camp before reaching
+      the mountain’s main climbing base. The route above involves glacier travel, high camps and exposed snow
+      and ice.
+  - content: This outline is adaptable, and may change with seasonal access, weather and the expedition leader’s
+      decisions.
+  itinerary:
+  - title: Day 1 - Arrive in Kathmandu
+    content: Airport transfer and introduction to the expedition.
+  - title: Day 2 - Expedition preparation
+    content: Final checks of permits, equipment, personnel and freight.
+  - title: Day 3 - Travel to Pokhara
+    content: Move west towards the Dhaulagiri approach.
+  - title: Day 4 - Drive to the accessible Myagdi valley trailhead
+    content: Continue by road towards Darbang or another practical starting point.
+  - title: Day 5 - Trek towards Bagar
+    content: Enter the Myagdi Khola valley.
+  - title: Day 6 - Trek to Doban
+    content: Continue through forest and river valley terrain.
+  - title: Day 7 - Trek to Italian Base Camp
+    content: Ascend into the glacier approach zone.
+  - title: Day 8 - Acclimatization at Italian Base Camp
+    content: Rest and prepare for the higher route.
+  - title: Day 9 - Continue via the Japanese Camp area
+    content: Move across more rugged glacial terrain.
+  - title: Day 10 - Reach Dhaulagiri Base Camp
+    content: Establish the main expedition camp.
+  - title: Day 11 - Acclimatization at base camp
+    content: Check equipment and review the high-camp plan.
+  - title: Days 12-28 - Acclimatization and camp rotations
+    content: Build the climbing route progressively, with recovery between rotations.
+  - title: Days 29-39 - Summit-weather window
+    content: Attempt Dhaulagiri I from the established camp system when conditions permit.
+  - title: Day 40 - Camp cleanup
+    content: Remove waste and equipment before leaving base camp.
+  - title: Days 41-45 - Descend the Myagdi valley
+    content: Return through the lower camps and the trailhead area; exact stages depend on conditions.
+  - title: Day 46 - Return to Kathmandu
+    content: Travel by road or a suitable domestic flight connection.
+  - title: Days 47-48 - Contingency and debriefing
+    content: Allow for delays, equipment sorting and expedition closure.
+  - title: Day 49 - International departure
+    content: Transfer for onward flight.
+annapurna:
+  name: Annapurna I Expedition
+  days: '45'
+  nights: '44'
+  startPoint: Kathmandu
+  endPoint: Kathmandu
+  distance: Varies by route and season
+  difficulty: Extreme
+  altitude: 8,091m / 26,545ft
+  altitude_band: 8000m
+  skill: Prior high-altitude mountaineering experience required
+  grade: Serious high-altitude expedition
+  walking: Varies by approach and climbing phase
+  accommodation: Hotel + Lodge + Expedition Camping
+  groupSize: On enquiry
+  season: Mar-Apr (main season)
+  region: Annapurna
+  country: Nepal
+  filter_region: Annapurna
+  photos: assets/css/images/bg/peakbg.jpg
+  popular: N
+  price: null
+  bookLink: null
+  enquiry_only: true
+  description: Annapurna I rises above the Kali Gandaki and the Annapurna massif. Modern expeditions often
+    access the north-side climbing route from the Kali Gandaki and Miristi Khola side, rather than the popular
+    Annapurna Sanctuary trekking trail. Complex terrain, avalanche exposure and rapidly changing mountain conditions
+    make this a highly committing expedition.
+  excerpt: A serious Annapurna I expedition with a north-side approach and a carefully managed climbing window
+    on a mountain known for difficult conditions.
+  video: null
+  download: null
+  image: null
+  highlights:
+  - content: Approach from the Kali Gandaki and Miristi Khola side
+  - content: Establish a remote base camp beneath Annapurna I
+  - content: Train and acclimatize on exposed glacier and snow terrain
+  - content: Attempt the upper mountain within a carefully selected weather window
+  - content: Prioritize conservative decision-making and a controlled descent
+  overview:
+  - content: Annapurna I was the first 8,000-metre mountain to be climbed, in 1950. It remains a serious objective
+      because of technical terrain and frequent avalanche hazard.
+  - content: The north-side expedition route should not be confused with the Annapurna Base Camp trek used
+      by most hikers in the Annapurna Sanctuary. Access and camp locations vary between operators and seasons.
+  - content: This is an illustrative itinerary for an experienced, well-supported climbing team; actual logistics
+      and expedition duration need detailed review.
+  itinerary:
+  - title: Day 1 - Arrive in Kathmandu
+    content: Meet the expedition team and transfer to the hotel.
+  - title: Day 2 - Final expedition briefing
+    content: Check permits, equipment and proposed route logistics.
+  - title: Day 3 - Travel to Pokhara
+    content: Move west to the expedition staging area.
+  - title: Days 4-7 - North-side approach via the Kali Gandaki area
+    content: Travel by the route approved for the season and approach the Miristi Khola side on foot where
+      required.
+  - title: Day 8 - Establish Annapurna north-side Base Camp
+    content: Settle into the mountain camp and prepare for acclimatization.
+  - title: Days 9-12 - Acclimatization and camp preparation
+    content: Review route conditions and complete essential mountain training.
+  - title: Days 13-25 - High-camp rotations
+    content: Move between established camps with frequent weather and snow-stability checks.
+  - title: Days 26-36 - Summit-weather window
+    content: Attempt the planned north-side route only if mountain conditions support safe progress.
+  - title: Days 37-39 - Descent and base-camp cleanup
+    content: Return from high camps, clear the route and recover equipment.
+  - title: Days 40-42 - Exit the valley
+    content: Return towards Pokhara using suitable walking and road stages.
+  - title: Day 43 - Return to Kathmandu
+    content: Transfer back to the capital.
+  - title: Day 44 - Reserve and debriefing
+    content: Allow time for unexpected delays and final team review.
+  - title: Day 45 - International departure
+    content: Airport transfer for onward travel.
+kanchenjunga:
+  name: Kanchenjunga Expedition
+  days: '55'
+  nights: '54'
+  startPoint: Kathmandu
+  endPoint: Kathmandu
+  distance: Varies by route and season
+  difficulty: Extreme
+  altitude: 8,586m / 28,169ft
+  altitude_band: 8000m
+  skill: Prior high-altitude mountaineering experience required
+  grade: Serious high-altitude expedition
+  walking: Varies by approach and climbing phase
+  accommodation: Hotel + Lodge + Expedition Camping
+  groupSize: On enquiry
+  season: Apr-May (main season)
+  region: Kanchenjunga
+  country: Nepal
+  filter_region: Kanchenjunga
+  photos: assets/css/images/bg/peakbg.jpg
+  popular: N
+  price: null
+  bookLink: null
+  enquiry_only: true
+  description: Kanchenjunga stands on Nepal’s eastern border with India and is the world’s third-highest mountain.
+    Nepal-side expeditions often climb from the southwest, approaching the Yalung side through the remote eastern
+    foothills. Its long approach, complex upper mountain and exposed terrain call for an experienced and self-reliant
+    expedition team.
+  excerpt: A remote eastern Nepal expedition to Kanchenjunga, with a southwest-side approach, staged acclimatization
+    and a flexible summit window.
+  video: null
+  download: null
+  image: null
+  highlights:
+  - content: Travel through the far-eastern Nepal foothills to the Yalung side
+  - content: Experience a remote approach far from the main Khumbu trekking corridor
+  - content: Establish base camp and progress through staged high camps
+  - content: Attempt the Southwest Face route when conditions permit
+  - content: Leave sufficient reserve days for the mountain’s difficult weather
+  overview:
+  - content: Kanchenjunga reaches 8,586 metres at the Nepal-India border. The Nepal-side Southwest Face is
+      one of the commonly used expedition routes, reached through remote settlements and the Yalung approach
+      valley.
+  - content: The mountain demands a long supply chain, careful acclimatization and a conservatively planned
+      summit push. Sections of steep snow, ice and mixed terrain can be serious at this altitude.
+  - content: This itinerary is a sample planning outline. Approach access, camp placements, permits and operational
+      dates are agreed for a specific departure.
+  itinerary:
+  - title: Day 1 - Arrive in Kathmandu
+    content: Transfer to the hotel and meet expedition staff.
+  - title: Day 2 - Expedition preparations
+    content: Review route, climbing equipment, permits and freight.
+  - title: Day 3 - Travel to Bhadrapur and onwards towards Taplejung
+    content: Fly east and continue by road as conditions permit.
+  - title: Days 4-5 - Reach the southwest approach trailhead
+    content: Continue by road or on foot towards the Yamphudin route.
+  - title: Day 6 - Trek towards Tortong
+    content: Begin ascending the forested mountain approach.
+  - title: Day 7 - Trek to Tseram
+    content: Climb into the higher valley towards the Yalung Glacier.
+  - title: Day 8 - Acclimatization in the Tseram area
+    content: Rest and make a controlled acclimatization walk.
+  - title: Day 9 - Trek towards Ramche
+    content: Continue into the high alpine valley.
+  - title: Day 10 - Move to Yalung-side Base Camp
+    content: Establish the camp used for the southwest-side expedition.
+  - title: Day 11 - Acclimatization and camp briefing
+    content: Train and inspect the initial climbing route.
+  - title: Days 12-28 - High-camp establishment and rotations
+    content: Make gradual carries and acclimatization climbs with recovery at base camp.
+  - title: Days 29-44 - Summit-weather window
+    content: Attempt the southwest-side climbing route when weather, conditions and team readiness allow.
+  - title: Days 45-47 - Return and clear base camp
+    content: Pack equipment and begin the trek out.
+  - title: Day 48 - Descend towards Tseram
+    content: Return to the lower valley.
+  - title: Day 49 - Trek towards Tortong
+    content: Continue downhill from the high mountain area.
+  - title: Day 50 - Trek towards Yamphudin
+    content: Rejoin the lower approach route.
+  - title: Day 51 - Return towards Taplejung or Bhadrapur
+    content: Use available road transport and an appropriate overnight stop.
+  - title: Day 52 - Return to Kathmandu
+    content: Fly or travel overland according to operational logistics.
+  - title: Days 53-54 - Contingency and debriefing
+    content: Allow for travel delays and expedition closure.
+  - title: Day 55 - International departure
+    content: Transfer for onward flight.

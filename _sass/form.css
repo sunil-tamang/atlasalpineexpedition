@@ -12,20 +12,12 @@ fieldset {
 
 legend {
   width: 100%;
-  
-  
   -webkit-user-select: none;
-  
   -moz-user-select: none;
   user-select: none;
   padding: 0 0 0.2em;
   border-bottom: 1px solid #dcdcdc;
   color: #777;
-}
-
-legend i {
-  
-  
 }
 
 .ar-input-set {
@@ -41,12 +33,6 @@ legend i {
 
 .two-in-one_1 {
   float: left;
-}
-
-input, textarea, select {
-  
-  
-  
 }
 
 /* General styles for all form fields */
@@ -98,10 +84,6 @@ textarea {
   resize: vertical;
 }
 
-.ar-form-input {
-  /* This class seems unused but kept for compatibility */
-}
-
 .line-and-text {
   position: relative;
   display: block;
@@ -116,7 +98,6 @@ textarea {
   padding: 1rem;
   z-index: 1000;
   background: #fdfdfd;
-  
 }
 
 .line-and-text:before {

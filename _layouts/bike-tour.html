@@ -1,9 +1,5 @@
 ---
-layout: 'default'
-slick_css: 'Yes'
-slick_js: 'Yes'
-author_name: "THE ALPINE EXPEDITIONS "
-tags: "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek, Langtang Valley Trek, Upper Mustang Trek, Manaslu Circuit Trek, Ghorepani Poon Hill Trek ,Gokyo Lakes Trek ,Kanchenjunga Base Camp Trek, Makalu Base Camp Trek"
+layout: default
 ---
 <script type="application/ld+json">
 	{
@@ -38,273 +34,78 @@ tags: "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek,
 	  ]
 	}
 	</script>
-
-<style>
-	body{
-		height: 100% !important;
-	}
-</style>
+{% assign activity = site.data["bike-data"][page.title-slug] | default: page %}
+<div class="container-wide row--padding-wide trip-detail trip-reference activity-detail">
+{% include trip-intro.html trip=activity kind="bike-tours" %}
+<div class="two-col-layout"><div class="content__left" id="content"><div class="material"><section class="trek--section"><p>Safety first: Always wear appropriate safety gear, including a helmet, gloves, and protective clothing.</p></section>
 
 
-<!-- VARIABLES -->
-{% assign bike = site.data.bike-data[page.title-slug] %}
+			<div class="trek--section" style="text-align: left;" id="trip-overview">
 
-    <!-- <div class="popup_form_wrapper">
-        <div class="popup_form">
-
-
-            <div class="popup_close_btn_wrapper">
-                <svg class="popup_close_btn">
-                    <path d="M35.707,16.293c-0.391-0.391-1.023-0.391-1.414,0L26,24.586l-8.293-8.293c-0.391-0.391-1.023-0.391-1.414,0   s-0.391,1.023,0,1.414L24.586,26l-8.293,8.293c-0.391,0.391-0.391,1.023,0,1.414C16.488,35.902,16.744,36,17,36   s0.512-0.098,0.707-0.293L26,27.414l8.293,8.293C34.488,35.902,34.744,36,35,36s0.512-0.098,0.707-0.293   c0.391-0.391,0.391-1.023,0-1.414L27.414,26l8.293-8.293C36.098,17.316,36.098,16.684,35.707,16.293z" fill="#ffd600"/>
-               </svg>
-            </div>
-
-
-            <div class="popup_background">
-
-             </div>
-
-
-            <div class="form_wrapper">
-
-                <div class="text">
-                    <h2>Enter Your Email Below To Get 20% Off</h2>
-                    <p>Fill the form and get flat 20% Off on your {{ page.title }} + Beas River Rafting Trip.</p>
-                </div>
-
-                <form  action="https://formspree.io/thetrippyfrog@gmail.com" method="POST" name="contact_form">
-
-                <div class="textfield_wrapper">
-                    <input  class="input_box" type="text" placeholder="Your Name" name="name" autocomplete="off" required >
-                </div>
-                <div class="textfield_wrapper">
-                    <input  class="input_box" type="email" placeholder="Email" name="email" autocomplete="off" required>
-                </div>
-                <div class="textfield_wrapper">
-                    <input class="input_box"  type="text" placeholder="Phone Number" autocomplete="off" name="phone" required>
-                </div>
-
-                <div class="textfield_wrapper">
-                    <button class="trippy_btn" type="submit" name=""> SEND </button>
-                </div>
-
-              <br/>  <div class="text">
-                    <p>Don't Worry, We won't spam you..</p>
-                </div>
-
-                </form>
-
-
-
-            </div>
-
-    </div>
-
-    </div> -->
-
-
-	
-<div class="container-wide row--padding-wide">
-
-{% if page.custom_bg %}
-    {% for img in page.custom_bg %}
-        {% assign path = 'assets/css/images/' | append: img | relative_url%}
-        <div class="banner__trek parallax" style="background-image:url('{{ path }}');">
-    {% endfor %}
-{% else %}
-    {% assign path = 'assets/css/images/welcome.jpeg' | relative_url%}
-        <div class="banner__trek parallax" style="background-image: url('{{ path }}')">
-{% endif %}
-		<span class="banner__overlay"></span>
-			<div class="banner__trek-overview">
-				<h1 class="trek-name" >{{ page.title }}</h1>
-				<p class="trek-time">
-					{% if bike.days %}
-					<span class="trek-time--part1">
-						<span class="trek-span"><span class="counter">{{ bike.days }}</span><span>&nbsp;Days</span></span>
-					</span>
-					<span class="trek-time--part2">
-						<span class="trek-span"><span class="counter">{{ bike.nights }}</span><span>&nbsp;Nights</span></span>
-					</span><br />
-					{% endif %}
-					
-					
-					<!-- <span class="trek-slide--price trek-price"><span >From</span> <i class="fa fa-dollar-sign"></i> {{ bike.price }}/-</span> -->
-			
-				</p>
-
-			</div>
-
-			<!-- <div class="banner__trek-book">
-				<p class="trek-book">
-					<span class="trek-book--btn">
-							<button class="trippy_btn more-trippy_btn" type="submit" name="sendMsg" onclick="imPop();">
-								<span class="trippy_btn-left"></span>Book Now<span class="trippy_btn-right"></span>
-							</button>
-					</span>
-				</p>
-			</div> -->
-
-			<span class="banner__skip">
-					<a class="skipToContent-trigger" href="#content" style="padding: 1em 1.08em; background: rgba(0,0,0,.4); color:#39ff41; border-radius: 360px;"><i class="fas fa-leaf" style="transform: rotate(135deg); "></i></a>
-			</span>
-		</div>
-
-
-<!-- Trek related content here -->
-<div class="two-col-layout" id="twoCol">
-	
-	<div class="row row--padding-medium content container--white content__left" id="content">
-	<span style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('{{ 'assets/css/images/static.gif' | absolute_url }}') repeat center; opacity: .05; z-index: -1;"></span>
-
-		<div style="max-width: 50em; margin: auto;">
-			<!-- TREK OVERVIEW -->
-			<div class="row container-wide" style="padding-bottom: 3em; text-align: left; " >
-
-				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="far fa-file-alt"></i>&nbsp;Highlights</h2>
-				
-				{% for high in bike.highlights %}
-			  		
-							<p><i class="fas fa-check-circle"></i>&nbsp;&nbsp;<span class="holo" > {{  high.content }}</span>  </p>
-				
-						{% endfor %}
-				
-				<!-- <p><i class="fas fa-check-circle"></i>&nbsp;&nbsp;<span class="holo"> </span>  </p>
-				<p><i class="fas fa-check-circle"></i>&nbsp;&nbsp;<span class="holo">  </span>  </p> -->
-
-				<br />
-				<br />
-			</div>
-
-			<div class="material">
-
-
-
-			<!-- <h2 class="content__title content__title-white no-underline" style="padding: 0; margin: 0;"><i class="fas fa-hiking"></i> </h2><br />
-			<h2 class="content__sub-title content__title-white no-underline" style="padding-top: 0; margin-bottom: 0; padding-bottom: 1em;">About The Trek
-			</h2> -->
-
-
-
-			<div class="trek--section" style="text-align: left;">
-
-				{{ bike.video }}
+				{{ activity.video }}
 
 				<br />
 				<br />
 				<br />
 
-				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="far fa-file-alt"></i>&nbsp;The Complete Guide to {{ bike.name }}</h2>
-				{% for overview in bike.overview %}
+				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="far fa-file-alt"></i>&nbsp;The Complete Guide to {{ activity.name }}</h2>
+				{% if activity.overview.size == 0 %}<p>{{ activity.description | default: page.description }}</p>{% endif %}{% if activity.highlights.size > 0 %}<h3>Highlights</h3><ul>{% for highlight in activity.highlights %}<li>{{ highlight.content }}</li>{% endfor %}</ul>{% endif %}{% for overview in activity.overview %}
 					<p class="content--detail">
 						{{ overview.content }}
 					</p>
 				{% endfor %}
-				
+
+
+			</div>
+
 
 			
-			</div>
-
-
-			<!-- ITINERARY -->
-			<div class="trek--section" style="text-align: left;">
-				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-map-marked-alt"></i>&nbsp;Itinerary</h2>
-
-				<ul class="trek-itinerary">
-
-					{% for i in bike.itinerary %}
-						<li>
-							<h2 class="itinerary-subtitle">
-								{{ i.title }}
-							</h2>
-							<p class="content--detail itinerary-detail">
-								{{ i.content }}
-							</p>
-						</li>
-					{% endfor %}
-
-					<li>
-						<h3 class="itinerary-subtitle">TRIP ENDS HERE!</h3>
-					</li>
-				</ul>
-
-			</div>
+			{% if activity.itinerary.size > 0 %}{% include trip-day-viewer.html trip=activity %}{% endif %}
 
 				
 			{{ content }}
 					
-			<!--GALLERY-->
 			
 			
-			<div class="row row--padding-medium"style="text-align: left;">
-					<h2 class="content__sub-title"><i class="fas fa-camera"></i>&nbsp;GALLERY</h2>
-					<section class="img-gallery-magnific">
-
-					{% for i in (1..6) %}
-						{% assign subPath = page.title | remove: "Trek" | slugify | append: "/" %}
-						{% assign path = 'assets/css/images/bike-tours/' | append: subPath | relative_url %}
-						<div class="magnific-img">
-							<a class="image-popup-vertical-fit" href="{{ path }}{{i}}.jpg" title="{{ page.title }}">
-								<img src="{{ path }}{{i}}.jpg" alt="{{ page.title }}" />
-							</a>
-						</div>
-					{% endfor %}
-
-					</section>
-					<div class="clear"></div>
-				</div>
+			
+			
 				<br /><br />
            
 	
-			<!-- MAP -->
-			<div class="trek--section" style="text-align: left;">
+			
+			<div class="trek--section" style="text-align: left;" id="trip-map">
 				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-tasks"></i>&nbsp;Map</h2>
-					{{ bike.image }}	
+					{{ activity.image }}	
 			</div>
 
+
 			
-
-			<!-- Person's Inclusions -->
-			<div class="trek--section" style="text-align: left; ">
+			<div class="trek--section" style="text-align: left; " id="trip-inclusions">
 				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-user" style="transform: translateY(-2px);"></i>&nbsp;What's Included</h2>
-				<!-- <p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;PFD (Life Jacket)	<br /></p>
-				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Helmet <br /></p>
-				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Paddles <br /></p>
-				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Dry bag <br /></p>
-				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;WetSuit (When Necessary)<br /></p> -->
-
-				<!-- <p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Other Protective Gears <br /></p> -->
 
 
 				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;All land transport in private vehicles including airport transfers, Support Vehicle.</p>
-				<!-- <p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Accomodation in Kathmandu/Pokhara as per itinerary..</p> -->
+				
 				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;All meals as per itinerary.</p>
 				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Professional and experienced guides with relevant qualifications</p>
 				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;All permits and entry fees.</p>
 				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Porters for carrying your bags .</p>
-				<!-- <p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbxsp;Welcome dinner and traditional Dance..</p> -->
+				
 				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Comfortable accommodation during the adventure</p>
 				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Comprehensive support for all aspects of the trip</p>
-				<!-- <p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Transportation to and from key locations</p> -->
+				
 				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;A detailed adventure information pack</p>
 				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Knowledgeable advisors to assist with trip planning</p>
 				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Regular updates about the adventure itinerary</p>
 				<p class="content__list-item"><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Emphasis on safety and risk management</p>
 
 			</div>
-				
 
 
-			<!-- What We Don't Provide -->
+			
 			<div class="trek--section list-light" style="text-align: left;">
 				<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-times"></i>&nbsp;What's Not Included</h2>
-                <!-- <p class="content__list-item"><i class="fas fa-times-circle"></i>&nbsp;&nbsp;<br /></p> -->
-<!-- 
-                <p class="content__list-item"><i class="fas fa-times-circle"></i>&nbsp;&nbsp;Drinks, snacks and other personal expenses. <br /></p>
-                <p class="content__list-item"><i class="fas fa-times-circle"></i>&nbsp;&nbsp;Sleeping Bags <br /></p>
 
-                <p class="content__list-item"><i class="fas fa-times-circle"></i>&nbsp;&nbsp;Personal Travel and Evacuation Insurance (Compulsory) <br /></p>
-                <p class="content__list-item"><i class="fas fa-times-circle"></i>&nbsp;&nbsp;Mountain Bikes (WE CAN HIRE  BIKES- EXTRA CHARGES APPLY) <br /></p> -->
 
 			<p class="content__list-item"><i class="fas fa-times-circle"></i>&nbsp;&nbsp;Fees for visas to enter or exit the country</p>
 			<p class="content__list-item"><i class="fas fa-times-circle"></i>&nbsp;&nbsp;Travel & Medical insurance (compulsory and must include helicopter evacuation)</p>
@@ -319,36 +120,21 @@ tags: "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek,
 
 			</div>
 
-            <!-- Things To Pack -->
-            <!-- <div class="trek--section list-light" style="text-align: left;">
-                <h2 class="content__sub-title" style="padding-bottom: 0;"><i class="fas fa-suitcase"></i>&nbsp;Things To Pack</h2>
+            
+            
 
-                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span > </span>Swimsuit or shorts<br /></p>
-                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span > </span>Extra T-shirts<br /></p>
-                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span > </span>Sunglasses with a strap<br /></p>
-                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span > </span>river sandals that attach securely to your feet<br /></p>
-                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span > </span>Sunscreen<br /></p>
-                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span > </span> You might want to bring along rain gear and a sweater or jacket.<br /></p>
-                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span > </span>Extra Cash is handy for souvenirs and refreshments.<br /></p>
-                <p class="content__list-item"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<span > </span>Small Towel<br /></p>
-
-                <p class="content__list-item" style="text-indent: 2em; padding-top: 1em;">
-
-                </p>
-            </div> -->
-
-		<!-- Mandatory Documents -->
+		
 		<div class="trek--section" style="text-align: left;">
 			<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="far fa-file-alt"></i>&nbsp;Mandatory Documents</h2>
 			<p class="content__list-item"><i class="far fa-list-alt"></i>&nbsp;&nbsp;Identification document<br /></p>
-			<!-- <p class="content__list-item"><i class="far fa-list-alt"></i>&nbsp;&nbsp;Driving Licence<br /></p> -->
-			<!-- <p class="content__list-item"><i class="far fa-list-alt"></i>&nbsp;&nbsp;Medical Certificate -->
-			<!-- <a target="_blank" href="{{ site.url }}//assets/docs/certificate.pdf" class="button"><i class="fa fa-download"></i></a> <br /></p> -->
+			
+			
+			
 			<p class="content__list-item"><i class="far fa-list-alt"></i>&nbsp;&nbsp;Booking Receipt, if Booked Online (PDF will work)<br /></p>
 			<p class="content__list-item" style="text-indent: 2em; padding-top: 1em;"></p>
 		</div>
 
-        <!-- Cancellation Policy -->
+        
         <div class="trek--section" style="text-align: left;">
             <h2 class="content__sub-title" style="padding-bottom: 0;"><i class="far fa-file-alt"></i>&nbsp;Cancellation Policy</h2>
             <p class="content__list-item"><i class="far fa-list-alt"></i>&nbsp;&nbsp;More than 30-days prior to departure - 50% refund.<br /></p>
@@ -358,10 +144,10 @@ tags: "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek,
         </div>
 			
 		
-		<!-- Frequently Asked Questions -->
 		
-		<!-- Frequently Asked Questions -->
-		<div class="trek--section list-light" style="text-align: left;">
+		
+		
+		<div class="trek--section list-light" style="text-align: left;" id="trip-faq">
 			<h2 class="content__sub-title" style="padding-bottom: 0;"><i class="fa fa-question-circle"></i>&nbsp;Frequently Asked Questions</h2>
 
 			<button class="accordion">
@@ -422,186 +208,6 @@ tags: "Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek,
 		</div>
 
 
-			</div>
-    	</div>
-	</div>
-
-
-		<!--SideBar-->
-	<div class="content__right" id="scroll-to">
-		<div class="floater" style="z-index:999;">
-			<div class="row container-wide" style=" padding :0 !important; padding-bottom: 0em; text-align: left;" >
-				
-
-				<div class="">
-                    <p class="trek-overview">
-                        <i class="fas fa-map-marker"></i>&nbsp; <span class="holo">Start Point :</span> {{ bike.startPoint }}
-                    </p>
-                </div>
-
-				<div class="">
-					<p class="trek-overview">
-						<i class="fas fa-globe"></i>&nbsp; <span class="holo">End Point:</span> {{ bike.endPoint }}
-					</p>
-				</div>
-
-				<div class="">
-					<p class="trek-overview">
-						<i class="fa fa-user"></i>&nbsp; <span class="holo">Distance :</span> {{ bike.distance }}
-					</p>
-				</div>
-
-
-				<div class="">
-					<p class="trek-overview">
-						<i class="fa fa-users"></i>&nbsp; <span class="holo">Group Size : </span>{{ bike.groupSize }} 
-					</p>
-				</div>
-
-				<div class="">
-                    <p class="trek-overview">
-                        <i class="fas fa-map-marker"></i>&nbsp; <span class="holo">Max Altitude :</span> {{ bike.altitude }}
-                    </p>
-                </div>
-
-
-				<div class="">
-					<p class="trek-overview">
-						<i class="fas fa-campground"></i>&nbsp;<span class="holo">Difficulty :</span>  {{ bike.dificulty }}
-					</p>
-				</div>
-
-
-				<div class="">
-					<p class="trek-overview">
-						<i class="fas fa-globe"></i>&nbsp; <span class="holo">Skill Level:</span> {{ bike.skill }}
-					</p>
-				</div>
-
-
-                <div class="">
-					<p class="trek-overview">
-						<i class="fas fa-calendar"></i>&nbsp; <span class="holo">Best Season :</span> {{ bike.season }}
-					</p>
-				</div>
-
-				<div class="">
-					<p class="trek-overview">
-						<i class="fa fa-user"></i>&nbsp; <span class="holo">Region :</span> {{ bike.region }}
-					</p>
-				</div>
-
-
-				<div class="" style="cursor:pointer;">
-					<a target='_blank' href='{{ site.url }}{{ bike.download }}' class='button'>
-						<p class="trek-overview holo"  ><i class='fa fa-download'></i>&nbsp;&nbsp;Download Pdf Itinerary 	</p>
-						 </a> <br />
-				</div>
-			</div>
-				<!-- <span class="priceTag">FROM Rs.<i class="fa fa-rupee-sign"></i>{{ page.price }}</span> -->
-				<!-- <button class="book_btn" onclick="imPop();" type="submit" style="width: 100%;   box-shadow: 0 0 13px #2f2f2f; ">BOOK NOW</button> -->
-				<!-- <br /><br /> -->
-				<!-- <button class="book_btn enquiry" onclick="javascript:alert('Contact Form NOT Found!');" type="submit" style="width: 100%;   border-radius: 360px;">SEND ENQUIRY</button>
-				<br /><br /> -->
-
-
-									
-				<div class="" id="trigger1">
-                    <button id="enquiry-button" class="book_btn enquiry" type="button" style="width: 100%;  text-align: center; display: block; padding: 10px 20px;">SEND AN ENQUIRY</button>
-                </div>
-
-                <script>
-                    document.addEventListener('DOMContentLoaded', function() {
-                        const enquiryButton = document.getElementById('enquiry-button');
-                        if (enquiryButton) {
-                            enquiryButton.addEventListener('click', function() {
-                                const tourSlug = "{{ page.title-slug | uri_escape }}"; 
-                                const newUrl = `/enquiry/?tour_slug=${tourSlug}`;
-                                window.location.href = newUrl;
-                            });
-                        }
-                    });
-                </script>
-
-		</div>
-	</div>
-       
-    	
-		</div>
-
-	</div>
-
-
-
-	<div class="row row--padding-medium container-wide" style="margin: 1em 0; border: 1px solid #cacaca; border-left: 0; border-right: 0;">
-		<p class="content__pg" style="clear: both; padding-bottom: 0em; background: red;"><strong style=" color: #fff;padding-left: 1.5em;">NOTE <i class="fas fa-bullhorn"></i> </strong></p><br />
-		<ul class="content__list">
-
-					<li class="content__list-item">
-						Safety first: Always wear appropriate safety gear, including a helmet, gloves, and protective clothing.
-					</li>
-
-					
-					
-		</ul>
-	</div>
-
-
-
-
-		<!-- <div class=" row--pading-medium col--recent-post" style="padding: 0 1em; text-align: justify;" >
-			
-				
-			<div class="content__right" id="scroll-to">
-				<div class="floater">
-						<span class="priceTag">FROM $.{{ bike.price }}</span>
-						<span class="priceTag">FROM $.<i class="fa fa-rupee-sign"></i>{{ bike.price }}</span>
-						<button class="book_btn" onclick="imPop();" type="submit" style="width: 100%;   box-shadow: 0 0 13px #2f2f2f; border-radius: 360px;">BOOK NOW</button>
-						<br /><br />
-						<button class="book_btn enquiry" onclick="javascript:alert('please contact us through Contact Page!');" type="submit" style="width: 100%;   border-radius: 360px;">ENQUIRY</button>
-						<br /><br />
-				</div>
-			</div>
-
-
-
-			</div> -->
-</div>
-
-
-</div>
-
-
-
-
-
-
-        <!--<script src="https://js.instamojo.com/v1/button.js"></script>-->
-<!-- 
-    <script src="https://js.instamojo.com/v1/checkout.js"></script>
-
-    <script>
-	function imPop(){
-		Instamojo.open('{{ bike.bookLink}}');
-	}
-
-
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight){
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      });
-    }
-
-    </script> -->
-
-
-
+			</div></div></div>
+<div class="trip-availability"><div><h2>Have a date in mind?</h2><p>Tell us your plans. We’ll take it from there.</p></div><a href="{{ '/enquiry/' | relative_url }}?tour_slug={{ page.title-slug | default: page.slug | url_encode }}&amp;trip_name={{ page.alt | default: page.title | url_encode }}&amp;trip_kind=bike-tours">Ask about availability</a></div></div>
+<script src="{{ '/assets/js/trip-detail.js' | relative_url }}" defer></script>

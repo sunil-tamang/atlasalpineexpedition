@@ -9,6 +9,23 @@
  const reduce = matchMedia('(prefers-reduced-motion:reduce)');
  const panels = triggers.map(t => document.getElementById(t.getAttribute('aria-controls')));
  function panelFor(trigger) { return panels[triggers.indexOf(trigger)]; }
+ // Decorative root icons have no text, preserving trigger names and menu routing.
+ const iconPaths = [
+  '<path d="m2 21 7-13 4 7 4-10 9 16H2Z M6 14l3 2 2-3 M14 11l3 3 3-3"/>',
+  '<path d="M6 26V3m0 1c6-4 10 4 18 0l-3 7 3 5c-8 4-12-4-18 0"/>',
+  '<circle cx="16" cy="4" r="2.5"/><path d="m13 9 5 2 3 7m-8-9-4 8 5 3-4 9m7-18-2 9 5 9 M7 11l-3 18 M25 11v18"/>',
+  '<path d="m2 10 14-7 14 7-14 7-14-7Zm0 7 14 7 14-7 M2 24l14 7 14-7"/>',
+  '<path d="M3 7h26v19H3V7Zm0 0 13 11L29 7"/>'
+ ];
+ triggers.forEach((trigger,index) => {
+  const icon = document.createElementNS('http://www.w3.org/2000/svg','svg');
+  icon.setAttribute('viewBox','0 0 32 32');
+  icon.setAttribute('aria-hidden','true');
+  icon.setAttribute('focusable','false');
+  icon.classList.add('atlas-mobile-menu-icon');
+  icon.innerHTML = iconPaths[index] || iconPaths[0];
+  trigger.prepend(icon);
+ });
  const mobileScreen = document.createElement('div');
  mobileScreen.id = 'atlas-mobile-screen';
  mobileScreen.className = 'atlas-mobile-screen';
@@ -25,8 +42,11 @@
   mobileScreen.replaceChildren();
   const back = document.createElement('button');
   back.type = 'button'; back.className = 'atlas-mobile-back';
-  back.textContent = mobileCategory ? mobileCategory.textContent.trim() : mobileTrigger.textContent.trim();
-  back.setAttribute('aria-label','Back from ' + back.textContent);
+  const title = document.createElement('h2');
+  title.className = 'atlas-mobile-title';
+  title.textContent = mobileCategory ? mobileCategory.textContent.trim() : mobileTrigger.textContent.trim();
+  back.textContent = 'Back';
+  back.setAttribute('aria-label','Back from ' + title.textContent);
   back.addEventListener('click', () => {
    if (mobileCategory) { mobileCategory = null; renderMobileLevel(); return; }
    const previous = mobileTrigger;
@@ -35,7 +55,7 @@
    header.classList.remove('is-mobile-submenu','is-menu-open'); mobileScreen.hidden = true;
    previous.focus();
   });
-  mobileScreen.append(back);
+  mobileScreen.append(back,title);
   const rows = document.createElement('div'); rows.className = 'atlas-mobile-rows';
   const panel = panelFor(mobileTrigger);
   if (mobileCategory) {
@@ -119,7 +139,8 @@
   trigger.addEventListener('click', event => {
    if (!desktop.matches) { event.preventDefault(); openMobileLevel(trigger); return; }
    if (trigger.tagName === 'A' && active === trigger) return;
-   event.preventDefault(); active === trigger ? dismiss() : show(trigger);
+   // Hover may already have opened this panel before the click arrives.
+   event.preventDefault(); show(trigger);
   });
   trigger.addEventListener('keydown', event => {
    if (event.key === 'ArrowDown' || event.key === ' ') {

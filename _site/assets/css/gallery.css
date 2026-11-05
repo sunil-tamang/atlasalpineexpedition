@@ -1,18 +1,5 @@
 /*@import url('https://fonts.googleapis.com/css?family=Abel');*/
-/*
-h1{
-  
-  
-  
-  text-align:center;
-}
-*/
-/*
-.container{
-  width:80%;
-  margin:0 auto;
-}
-*/
+
 
 a{
 	outline: 0 !important;
@@ -21,9 +8,6 @@ a{
     width: 100%;
     height: auto;
 	vertical-align: top;
-}
-.mfp-bottom-bar,*{
-   
 }
 .magnific-img {
   display: inline-block;
@@ -326,8 +310,6 @@ img.mfp-img {
   margin: 0 auto; }
 
 /* The shadow behind the image */
-.mfp-figure {
-   }
   .mfp-figure:after {
     content: '';
     position: absolute;

@@ -23,9 +23,8 @@
 }
 
 .product__detail{
-	 
-	 
-	 
+
+
 	background: none; 
 	color: #fff; 
 	padding:0 0 1.4em 0; 
@@ -168,7 +167,6 @@
 .cart__checkout{
 	padding:3em 1em 2em; text-align:center;
 }
-.cart__checkout a{}
 
 
 .wopper__info-cart {
@@ -254,9 +252,8 @@
 	border-radius: 2px;
 	max-width:320px;
 	overflow: hidden;
-	
-	
-	
+
+
 	z-index: 0;
 	transition: all 0.3s ease;
 	display: block;
@@ -285,9 +282,6 @@
 {
 	.wrapper.col-narrow.product__image{
 		width: 25%;
-	}
-	.wopper__info-cart{
-		
 	}
 	.product__detail-wrapper{
 		text-align: left; width:75%; padding-left:2em;display: inline-block;

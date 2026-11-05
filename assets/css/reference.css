@@ -2,11 +2,6 @@
 .reference-site { color: #111; background-color: #fff; }
 
 
-
-
-
-
-
 .reference-site .home-footer { background: transparent; border: 0; }
 .site-content { width: min(88%,1440px); margin-inline: auto; padding-top: 125px; padding-bottom: 30px; min-height: 65vh; }
 .site-intro { display: grid; grid-template-columns: 1.35fr 1fr; gap: clamp(35px,6vw,100px); align-items: center; padding: 30px 20px 45px; }
@@ -83,7 +78,7 @@
 .site-page-content .legal-docs-list a { color: #111; }
 .site-page-content table { width: 100%; border-collapse: collapse; background: #fff; }
 .site-page-content td, .site-page-content th { padding: 14px; border: 1px solid #0002; text-align: left; }
-/* .site-page-content a:not([class]):hover { text-decoration: underline; text-underline-offset: 4px; } */
+
 .reference-site .home-footer-grid h2 { color: #111; }
 .reference-site .home-footer p { margin-top: 0; padding-block: 0; }
 .reference-site .home-footer a { color: inherit; }
@@ -149,19 +144,6 @@
 }
 
 /* One alignment and surface for the top navigation and its active panel. */
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width:1200px) and (min-width:1024px) {  }
 
 /* Trekking and expedition detail pages only; existing rounded banners are retained. */
 .trip-detail { --trip-rule:#e1e3e5; --trip-muted:#656b70; }
@@ -229,8 +211,8 @@
 }
 
 /* Reference trip pages: split introduction, image gallery and day-by-day workspace. */
-:is(.page-trek,.page-peak) .site-intro { display:none; }
-:is(.page-trek,.page-peak) .site-content { padding-top:180px; }
+:is(.page-trek,.page-peak,.page-mountain,.page-rock,.page-rafting,.page-bike-tour) .site-intro { display:none; }
+:is(.page-trek,.page-peak,.page-mountain,.page-rock,.page-rafting,.page-bike-tour) .site-content { padding-top:180px; }
 .trip-split-intro { display:grid; grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr); gap:clamp(30px,4vw,65px); align-items:start; }
 .trip-breadcrumb { display:flex; flex-wrap:wrap; gap:8px; margin:10px 0 35px; }
 .trip-breadcrumb a { color:inherit; }
@@ -292,7 +274,7 @@
 .trip-availability > a { flex-shrink:0; padding:14px 24px; background:#111; color:#fff; }
 .trip-reference .trip-day-panel:focus-visible { outline-offset:5px; }
 @media(max-width:1023px) {
- :is(.page-trek,.page-peak) .site-content { padding-top:125px; }
+ :is(.page-trek,.page-peak,.page-mountain,.page-rock,.page-rafting,.page-bike-tour) .site-content { padding-top:125px; }
  .trip-split-intro { gap:28px; grid-template-columns:1fr 1.1fr; }
  .trip-breadcrumb { margin-bottom:25px; }
  .trip-intro-facts li { padding-inline:12px; }
@@ -325,3 +307,7 @@
 .trip-intro-main-image[role=button] { cursor:zoom-in; }
 .trip-photo-trigger[aria-pressed=true] { outline:2px solid #111; outline-offset:3px; }
 @media(prefers-reduced-motion:reduce) { .trip-intro-main-image { transition:none; } }
+
+/* The activity detail shell uses the same editorial spacing as Expeditions. */
+.activity-detail .material > div { max-width:none; }
+.activity-detail .material > br { display:none; }

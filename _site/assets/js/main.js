@@ -20,15 +20,6 @@ function checkScrollTop() {
 }
 
 
-
-
-
-
-
-
-
-
-
 	$(document).ready(function(){
 		// Gallery
 		if($('.image-popup-vertical-fit').length){
@@ -54,171 +45,8 @@ function checkScrollTop() {
 	}
 
 
-
-
-
-// Homepage Trek Slider
-	// if($('.slidejs').length){
-	// 		$('.slidejs').slick({
-	// 			touchMove:true,
-	// 			adaptiveHeight: false,
-	// 			loop:true,
-	// 			swipe:true,
-	// 			infinite: true,
-	// 			autoplay:true,
-	// 			autoplaySpeed:2000,
-	// 			centerMode: true,
-	// 			centerPadding: '40px',
-	// 			responsive:true,
-	// 			slidesToShow:4,
-	// 			prevArrow: $(".slide-center-prev"),
-	// 			nextArrow: $(".slide-center-next"),
-	// 			responsive: [
-	// 			 {
-	// 			   breakpoint: 1024,
-	// 			   settings: {
-	// 				 arrows: false,
-	// 				 centerMode: true,
-	// 				 centerPadding: '40px',
-	// 				 slidesToShow: 2
-	// 			   }
-	// 			 },
-	// 		     {
-	// 			   breakpoint: 768,
-	// 			   settings: {
-	// 				 arrows: false,
-	// 				 centerMode: true,
-	// 				 centerPadding: '80px',
-	// 				 slidesToShow: 1
-	// 			   }
-	// 			 },
-	// 		     {
-	// 			   breakpoint: 640,
-	// 			   settings: {
-	// 				 arrows: false,
-	// 				 centerMode: true,
-	// 				 centerPadding: '50px',
-	// 				 slidesToShow: 1
-	// 			   }
-	// 			 },
-	// 		     {
-	// 			   breakpoint: 425,
-	// 			   settings: {
-	// 				 arrows: false,
-	// 				 centerMode: true,
-	// 				 centerPadding: '20px',
-	// 				 slidesToShow: 1
-	// 			   }
-	// 			 },
-	// 		     {
-	// 			   breakpoint: 375,
-	// 			   settings: {
-	// 				 arrows: false,
-	// 				 centerMode: true,
-	// 				 centerPadding: '15px',
-	// 				 slidesToShow: 1
-	// 			   }
-	// 			 }
-	// 		   ]
-	// 		 });
-	// }
-
-	
-
-
-// Related Trek Slider
-// 	if($('.sliderelated').length){
-// 		$('.sliderelated').slick({
-// 			touchMove:true,
-// 			adaptiveHeight: false,
-// 			loop:true,
-// 			swipe:true,
-// 			infinite: true,
-// 			autoplay:true,
-// 			autoplaySpeed:2000,
-// 			centerMode: true,
-// 			centerPadding: '40px',
-// 			responsive:true,
-// 			slidesToShow:3,
-// 			prevArrow: $(".slide-center-prev"),
-// 			nextArrow: $(".slide-center-next"),
-// 			responsive: [
-// 			 {
-// 			   breakpoint: 1024,
-// 			   settings: {
-// 				 arrows: false,
-// 				 centerMode: true,
-// 				 centerPadding: '40px',
-// 				 slidesToShow: 2
-// 			   }
-// 			 },
-// 			 {
-// 			   breakpoint: 768,
-// 			   settings: {
-// 				 arrows: false,
-// 				 centerMode: true,
-// 				 centerPadding: '80px',
-// 				 slidesToShow: 1
-// 			   }
-// 			 },
-// 			 {
-// 			   breakpoint: 640,
-// 			   settings: {
-// 				 arrows: false,
-// 				 centerMode: true,
-// 				 centerPadding: '50px',
-// 				 slidesToShow: 1
-// 			   }
-// 			 },
-// 			 {
-// 			   breakpoint: 425,
-// 			   settings: {
-// 				 arrows: false,
-// 				 centerMode: true,
-// 				 centerPadding: '20px',
-// 				 slidesToShow: 1
-// 			   }
-// 			 },
-// 			 {
-// 			   breakpoint: 375,
-// 			   settings: {
-// 				 arrows: false,
-// 				 centerMode: true,
-// 				 centerPadding: '15px',
-// 				 slidesToShow: 1
-// 			   }
-// 			 }
-// 		   ]
-// 		 });
-// }
-
-
-
-
-// Banner Slider
-	// if($('.bannerslider').length){
-	// 	$('.bannerslider').slick({
-	// 		dots:false,
-	// 		infinite: true,
-	// 		slidesToShow: 1,
-	// 		slidesToScroll: 1,
-	// 		autoplay: false,
-	// 		autoplaySpeed:50000,
-	// 		responsive:true,
-	// 		loop:true,
-	// 		swipe:true,
-	// 		prevArrow: $(".slide-prev"),
-	// 		nextArrow: $(".slide-next"),
-	// 		// prevArrow: $(".slide-center-prev"),
-	// 		// 	nextArrow: $(".slide-center-next"),
-	// 		touchMove:true,
-	// 		adaptiveHeight: false
-	// 	  });
-	// }
-
 	// Hide Call Now btn if the input is focused
 	hideCallNow();
-
 
 
 	// Testimonials
@@ -267,37 +95,7 @@ function checkScrollTop() {
 	}
 
 
-
-
-    //----------------------Numeric validation----------------------------
-    // $("#id_phone").keydown(function (e) {
-    //     // Allow: backspace, delete, tab, escape, enter and .
-    //     if ($.inArray(e.keyCode, [127, 46, 8, 9, 27, 13, 110, 190]) !== -1 ||
-    //          // Allow: Ctrl+A, Command+A
-    //         (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
-    //          // Allow: home, end, left, right, down, up
-    //         (e.keyCode >= 35 && e.keyCode <= 40)) {
-    //              // let it happen, don't do anything
-    //              return;
-    //     }
-    //     // Ensure that it is a number and stop the keypress
-    //     if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105 || e.keyCode == 62)) {
-    //         e.preventDefault();
-    //     }
-    // });
-
     // if( $('#id_email').length > 0 ) float();
-
-    // function float(){
-    //     var email = $('#id_email');
-    //     checkVal(email);
-    //     email.on('change keyup', function(){
-    //         checkVal(email);
-    //     });
-    // }
-    // function checkVal(email) {
-    //     ( email.val() == '' ) ? email.parent('div').removeClass('floating-label') : email.parent('div').addClass('floating-label');
-    // }
 
 
     // Checking the position of scrolling in terms of Top position.
@@ -313,9 +111,6 @@ function checkScrollTop() {
     });
 
 
-
-
-
 /************************STICKY ELEMENT START***************************/
 
 	toggleFixed();
@@ -325,28 +120,7 @@ function checkScrollTop() {
 	});
 
 
-
-
-
 /************************STICKY ELEMENT END***************************/
-
-    // $('.backToTop').click(function(){
-    //     $("html, body").animate({ scrollTop: 0 }, 1000, "easeInOutQuint");
-    //     return false;
-    // });
-
-
-
-// //    $('.banner__skip-trigger').click(function(e){
-//     $('.skipToContent-trigger,.banner__skip-trigger').click(function(e){
-// //        scrollTop: scrollTop +
-//         var scrollPosition = $('#content').offset().top;
-//         $("html, body").animate({ scrollTop: scrollPosition }, 1000, "easeInOutQuint");
-//         return false;
-//     });
-
-
-
 
 
 	$('#copyright__year').html(function(){
@@ -355,14 +129,6 @@ function checkScrollTop() {
 	});
 
 
-
-
-
-
-
-
-
-	
     //--------------------Popup YouTube Video------------------
 
     $('#popupTrigger').click(function(event){
@@ -389,17 +155,7 @@ function checkScrollTop() {
 });
 
 
-
-// $(window).on('load', function(){
-// 	if($(".slider").length)
-// 	{
-// 			$(".slider").slick('slickPlay');
-// 	}
-
 // });
-
-
-
 
 
 //--------------------Popup YouTube Video------------------
@@ -418,23 +174,6 @@ function hideModal(){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // POPUP FORM DIV
 
 
@@ -449,7 +188,6 @@ $(document).ready(function() {
          $('.frame').attr('src', $('.frame').attr('src'));
      });
 });
-
 
 
 $(document).ready(function() {
@@ -469,15 +207,6 @@ $(document).ready(function() {
         $('.popup_form, .popup_form_wrapper').fadeOut();
     });
 });
-
-
-
-
-
-
-
-
-
 
 
 /* Call Now BTN */
@@ -503,11 +232,6 @@ function hideCallNowAdd(){
 }
 
 
-
-
-
-
-
 /************************STICKY ELEMENT START***************************/
 function stickElement(){
 	var twoCol = $("#twoCol");
@@ -525,63 +249,10 @@ function stickElement(){
 }
 
 
-
-
-
-// Inherit the parent's width, when child's position is set to fixed
-// Only work on Desktop
-// function toggleFixed() {
-// 	adjustWidth();
-// 	$(".floater").toggleClass("fixed");
-// }
-// function adjustWidth() {
-// 	var parentwidth = $(".content__right").width();
-// 	$(".floater").width(parentwidth);
-// }
-
-
-
-
-
-
-
-
-
-
 /************************STICKY ELEMENT END***************************/
 
 // document.addEventListener("DOMContentLoaded", function() {
 //     const searchBox = document.getElementById('search-box');
-    
-//     searchBox.addEventListener('keyup', function(e) {
-//         const searchText = e.target.value.toLowerCase();
-//         const treks = document.querySelectorAll('.trek');
-        
-//         treks.forEach(function(trek) {
-//             if (trek.textContent.toLowerCase().includes(searchText)) {
-//                 trek.style.display = '';
-//             } else {
-//                 trek.style.display = 'none';
-//             }
-//         });
-//     });
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Teams Filter Button  */
@@ -619,14 +290,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
-
-
-
-
-
-
 // Treks Filter
 
   $(document).ready(function() {
@@ -650,60 +313,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
 //Video Banner
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     let options = {
-//         root: null,
-//         rootMargins: '0px',
-//         threshold: 0.1
-//     };
 
 //     let observer = new IntersectionObserver(handleIntersect, options);
 //     observer.observe(document.querySelector("#bannerVideo"));
-
-//     function handleIntersect(entries, observer) {
-//         entries.forEach((entry) => {
-//             if (entry.isIntersecting) {
-//                 let video = entry.target;
-//                 video.setAttribute('autoplay', 'autoplay');
-//                 video.play();
-                
-//                 let source = video.querySelector('source');
-//                 source.setAttribute('src', source.getAttribute('data-src'));
-//                 video.load();
-//             }
-//         });
-//     }
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // FAQ JS CODE 
@@ -728,8 +342,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
     var acc = document.getElementsByClassName("accordion");
 
@@ -746,72 +358,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
-
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     var readMoreButtons = document.querySelectorAll('.read-more');
-//     var testimonialPopup = document.getElementById('testimonial-popup');
-//     var popupReviewText = document.getElementById('popup-review-text');
-//     var closePopupButton = document.querySelector('.close-popup');
-
-//     for (let i = 0; i < readMoreButtons.length; i++) {
-//         readMoreButtons[i].addEventListener('click', function() {
-// 			var fullReview = this.closest('.testimonial-slide').getAttribute('data-full-review');
-// 			popupReviewText.textContent = fullReview;
-//             testimonialPopup.style.display = "block";
-//         });
-//     }
-
-//     closePopupButton.addEventListener('click', function() {
-//         testimonialPopup.style.display = "none";
-//     });
-// });
-
-
-
-
-
-
-
-// $(document).ready(function(){
-//     $('.testimonial-slideshows').slick({
-//         infinite: true,
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         dots: true,
-//         arrows: true
-//     });
-// });
-
-
-
-
-
-
-
-function showSection(sectionId) {
-	var sections = document.querySelectorAll('.content-section');
-	sections.forEach(function(section) {
-		section.classList.remove('active');
-	});
-	
-	var buttons = document.querySelectorAll('.toggle-button');
-	buttons.forEach(function(button) {
-		button.classList.remove('active');
-	});
-	
-	document.getElementById(sectionId).classList.add('active');
-	document.querySelector('button[onclick="showSection(\'' + sectionId + '\')"]').classList.add('active');
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-	showSection('peaks');
-});
-
-
-
-
 
 
 // New Filter

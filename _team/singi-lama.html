@@ -1,79 +1,28 @@
 ---
-layout: default
+layout: guide-profile
 title: Singi Lama - Managing Director
-description: Detailed profile of John Doe, our experienced Climbing Guide.
-permalink: /team/:slug/
-excerpt: "Your custom excerpt here..."
+description: Meet Singi Lama, Managing Director of Atlas Alpine Expedition.
+permalink: /team/singi-lama/
+excerpt: "Meet the person behind the planning, partnerships, and daily work at Atlas Alpine Expedition."
 
+page_class: page-guide-profile
+custom_css: guide-profile.css
+profile_name: Singi Lama
+profile_role: Managing Director
+profile_photo: /assets/css/images/team/04.jpeg
 ---
 
-<div class="container-wide row--padding-wide member-container">
+Singi Lama oversees the daily running of Atlas Alpine Expedition, working closely with our guides, local partners, and guests to bring each journey together.
 
-    <div class="member-banner">
-      {% for member in site.data.team %}
-        {% if member.slug == page.slug %}
-          <!-- <div class="banner-background" style="background-image: url('{{ site.baseurl }}/{{ member.photos }}')"></div> -->
-    
-          <div class="member-profile">
-            <img src="{{ site.baseurl }}/{{ member.photos }}" alt="{{ member.name }}" class="profile-image">
-            <h2 class="member-title">{{ member.name }}</h2>
-            <p>{{ member.role }}</p>
-          </div>
-    
-        {% endif %}
-      {% endfor %}
-    </div>
-    
-    
-    
-       
-         <div class="member-details">
-              
-                {% for member in site.data.team %}
-                    {% if member.slug == page.slug %}
-    
-                        <p class="content__pg-black">{{ member.description }}</p>
-    
-                        <h2 class="content__sub-title">Mountains Summitted by:
-                            {{ member.name }}</h2>
-    
-                        <div class="mountains-cards">
-                            {% for mountain in member.mountains %}
-                                <div class="mountain-card">
-                                    <h1 class="mountain-name content__sub-title">{{ mountain.name }}</h1>
-                                    <p class="mountain-summited">
-                                        <strong>Total Summited:</strong>
-                                        {{ mountain.summited }}
-                                        times</p>
-                                    <p class="mountain-years">
-                                        <strong>Summitted Year(s):</strong>
-                                        {{ mountain.years | join: ', ' }}</p>
-                                </div>
-                            {% endfor %}
-                        </div>
-    
-    
-                  <h2 class="content__sub-title">Training Completed by:
-                      {{ member.name }}</h2>
-                  <div class="training-cards">
-                      {% for training in member.trainings %}
-                          <div class="training-card">
-                              <h1 class="training-course content__sub-title">{{ training.course }}</h1>
-                              <p class="training-institution">
-                                  <strong>Institution:</strong>
-                                  {{ training.institution }}</p>
-                              <p class="training-year">
-                                  <strong>Year Completed:</strong>
-                                  {{ training.year }}</p>
-                          </div>
-    
-                      {% endfor %}
-               
-    
-    
-            </div>
-                {% endif %}
-              {% endfor %}
-            </div>
-        
-        </div>
+His work starts well before a team reaches the trail. From reviewing itineraries and coordinating logistics to answering guests’ questions, Singi helps make sure everyone knows what to expect.
+
+He believes a good expedition depends on honest communication, careful preparation, and people who look after one another. He stays involved throughout the planning process and supports the field team as plans develop.
+
+Away from the office, Singi enjoys walking, visiting mountain communities, and spending time with family.
+
+## At Atlas Alpine
+
+- Expedition planning and operations
+- Guest communication and trip coordination
+- Team support and local partnerships
+- Company development and direction

@@ -9,6 +9,8 @@
 .atlas-nav-bar { width: var(--nav-width); height: var(--nav-bar-height); margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
 .atlas-wordmark { flex-shrink: 0; display: block; width: 76px; height: 76px; }
 .atlas-wordmark img { display: block; width: 100%; height: 100%; object-fit: contain; }
+/* Keep the original logo asset legible on dark and hero navigation surfaces. */
+.atlas-header:is(.is-menu-open,.is-mobile-open) .atlas-wordmark img, .home-page .atlas-header .atlas-wordmark img { filter: brightness(0) invert(1); }
 @media(max-width:1023px) { .atlas-wordmark { width: 66px; height: 66px; } }
 .atlas-navigation { display: flex; align-items: center; gap: clamp(20px,2.6vw,44px); }
 .atlas-navigation > :is(a,button) { display: flex; align-items: center; min-height: 44px; padding: 0; white-space: nowrap; }
@@ -91,29 +93,33 @@
 .atlas-editorial-mega .atlas-card .atlas-eyebrow { margin-bottom: 8px; }
 
 @media(min-width:1024px) {
- .atlas-header .atlas-menu-toggle::after { content: ''; position: absolute; bottom: -23px; left: 0; right: 0; height: 1px; background: currentColor; opacity: 0; }
- .atlas-header .atlas-menu-toggle[aria-expanded=true]::after { opacity: .7; }
+ .atlas-header .atlas-menu-toggle::after { content: ''; position: absolute; bottom: -23px; left: 0; right: 0; height: 3px; background: #0099e8; opacity: 0; }
+ .atlas-header .atlas-menu-toggle[aria-expanded=true]::after { opacity: 1; }
 }
 @media(prefers-reduced-motion:reduce) { .atlas-header.is-opening .atlas-mega { animation: none !important; } }
 
 /* Mobile navigation uses separate list levels; desktop panels stay untouched. */
-.atlas-mobile-screen { display: none; }
+.atlas-mobile-screen, .atlas-mobile-menu-icon { display: none; }
 @media(max-width:1023px) {
  body.atlas-mobile-menu-open { overflow: hidden; }
  .reference-site .atlas-header.is-mobile-open { inset: 0; height: 100dvh; max-height: 100dvh; overflow-y: auto; overscroll-behavior: contain; }
- .is-mobile-open .atlas-nav-bar { align-content: flex-start; padding-top: 22px; }
- .is-mobile-open .atlas-navigation { min-height: calc(100dvh - 110px); padding-top: 42px; padding-bottom: 30px; }
- .is-mobile-open .atlas-navigation > .atlas-menu-toggle { justify-content: space-between; padding: 18px 0; }
- .is-mobile-open .atlas-navigation > .atlas-menu-toggle::after, .atlas-mobile-row::after { content: ''; display: block; width: 10px; height: 10px; flex-shrink: 0; border-right: 2px solid currentColor; border-top: 2px solid currentColor; transform: rotate(45deg); margin-right: 5px; }
+ .is-mobile-open .atlas-nav-bar { align-content: flex-start; align-items: flex-start; padding-top: 26px; }
+ .is-mobile-open .atlas-wordmark { width: 142px; height: 142px; }
+ .is-mobile-open .atlas-mobile-toggle { margin-top: 8px; }
+ .is-mobile-open .atlas-navigation { min-height: max(440px,calc(100dvh - 168px)); padding-top: 40px; padding-bottom: max(28px,env(safe-area-inset-bottom)); }
+ .is-mobile-open .atlas-navigation > .atlas-menu-toggle { justify-content: flex-start; gap: 22px; padding: 15px 8px; min-height: 60px; opacity: 1; }
+ .is-mobile-open .atlas-mobile-menu-icon { display: block; width: 28px; height: 28px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+ .is-mobile-open .atlas-menu-toggle:is(:hover,:focus-visible) { color: #3db5ff; }
+
  .atlas-navigation > .atlas-whatsapp { width: 100%; justify-content: center; margin-top: auto; padding: 16px 20px; }
  .atlas-header.is-mobile-submenu .atlas-navigation { display: none; }
  .atlas-header .atlas-mega, .atlas-header .atlas-cards, .atlas-header .atlas-card, .atlas-header img:not(.atlas-wordmark img) { display: none !important; }
- .atlas-mobile-screen:not([hidden]) { display: flex; flex-direction: column; width: var(--nav-width); max-height: calc(100dvh - 140px); margin: 24px auto 0; padding-bottom: 20px; box-sizing: border-box; }
- .atlas-mobile-back { flex-shrink: 0; display: flex; align-items: center; gap: 15px; width: 100%; text-align: left; padding: 12px 0 25px; margin-bottom: 22px; border-bottom: 1px solid #ffffff40 !important; }
- .atlas-mobile-back::before { content: ''; width: 10px; height: 10px; flex-shrink: 0; border-left: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); }
+ .atlas-mobile-screen:not([hidden]) { display: flex; flex-direction: column; width: var(--nav-width); max-height: calc(100dvh - 208px); margin: 34px auto 0; padding-bottom: max(24px,env(safe-area-inset-bottom)); box-sizing: border-box; }
+ .atlas-mobile-back { flex-shrink: 0; align-self: flex-start; min-height: 44px; text-align: left; padding: 8px 0; margin-bottom: 8px; color: #a9abad; }
+ .atlas-mobile-title { flex-shrink: 0; margin: 0 0 22px; color: #fff; }
  .atlas-mobile-rows { display: flex; flex-direction: column; min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
  .atlas-header .atlas-mobile-row, .atlas-mobile-rows > a { display: flex; justify-content: space-between; align-items: center; gap: 18px; width: 100%; min-height: 48px; flex-shrink: 0; padding: 12px 0; text-align: left; color: #eee; }
- .atlas-mobile-all { flex-shrink: 0; margin-top: 18px; padding-block: 12px; }
+ .atlas-mobile-all { flex-shrink: 0; margin-top: 22px; padding-block: 12px; border: 0; }
  .atlas-mobile-toggle[aria-expanded=true] { border-color: transparent; position: relative; }
  .atlas-mobile-toggle[aria-expanded=true] span:first-child { transform: translateY(6px) rotate(45deg); }
  .atlas-mobile-toggle[aria-expanded=true] span:last-child { transform: translateY(-6px) rotate(-45deg); }
@@ -125,8 +131,33 @@
  .atlas-header.is-menu-open .atlas-menu-toggle:hover,
  .atlas-header.is-menu-open .atlas-menu-toggle[aria-expanded=true] { color: #fff; opacity: 1; }
  .atlas-header .atlas-menu-toggle::after { bottom: -23px; }
- .atlas-treks { padding-right: 12px; }
- .atlas-all { border-top-color: #ffffff1f; padding-top: 16px; }
+ .atlas-mega { isolation: isolate; border-bottom: 1px solid #ffffff1f; }
+ /* The local contour asset is already dark: preserve its light contour lines. */
+ .atlas-header.is-menu-open::before { content: ''; position: absolute; inset: 0 0 auto; height: calc(var(--nav-bar-height) + var(--nav-panel-height)); z-index: 0; pointer-events: none; background: linear-gradient(#101112b3,#101112b3), url("images/contour2.jpeg") center / cover no-repeat; }
+ .atlas-header.is-menu-open .atlas-mega { background-color: transparent; }
+ .atlas-mega-inner { grid-template-columns: minmax(180px,.95fr) minmax(220px,1.6fr) minmax(0,1.45fr); gap: 44px; padding: 26px 0; }
+ .atlas-regions { padding: 12px 30px 12px 0; }
+ .atlas-regions [role=tablist] { display: grid; align-content: start; gap: 6px; padding: 0; }
+ .atlas-regions [role=tab] { padding: 7px 0; border: 0; border-radius: 0; background: none; color: #d1d4d6; transition: color 140ms ease; }
+ .atlas-regions [role=tab]:is(:hover,:focus-visible) { background: none; color: #3db5ff; }
+ .atlas-regions [role=tab][aria-selected=true] { background: none; color: #3db5ff; }
+ .atlas-regions [role=tab][aria-selected=true]:is(:hover,:focus-visible) { color: #3db5ff; }
+ .atlas-treks { padding: 15px 12px 0 0; }
+ .atlas-trek-links a { padding: 7px 0; border-radius: 0; background: none; color: #e2e4e5; }
+ .atlas-trek-links a:is(:hover,:focus-visible), .atlas-all:is(:hover,:focus-visible) { color: #3db5ff; }
+ .atlas-card:is(:hover,:focus-visible) h3 { color: #3db5ff; }
+ .atlas-all { border-top-color: #ffffff1f; margin-top: 12px; padding-top: 12px; }
+ .atlas-card { border-radius: 10px; }
+ .atlas-card img { transform: none; object-position: center 35%; filter: saturate(.65) brightness(.72); }
+ .atlas-card::after { background: linear-gradient(rgba(12,16,20,.08) 25%,rgba(12,16,20,.35) 58%,rgba(12,16,20,.95)); }
+ .atlas-card > div { bottom: 22px; left: 20px; right: 20px; }
+ #atlas-about .atlas-cards { grid-template-columns: minmax(0,1fr); width: min(100%,280px); justify-self: center; }
+ #atlas-about .atlas-card img { filter: grayscale(1) brightness(.72); }
+}
+@media(min-width:1024px) and (max-width:1200px) {
+ .atlas-mega-inner { grid-template-columns: minmax(160px,.9fr) minmax(200px,1.2fr) minmax(0,1.3fr); gap: 24px; }
+ .atlas-regions { padding-right: 18px; }
+ .atlas-card > div { left: 14px; right: 14px; }
 }
 
 
@@ -136,3 +167,23 @@
 /* Homepage navigation overlays the full-bleed mountain hero. */
 .reference-site.home-page .atlas-header { color: #fff; }
 .reference-site.home-page .atlas-header:not(.is-menu-open):not(.is-mobile-open) { background: transparent; }
+
+/* Compact expedition menu; other menus keep their existing presentation. */
+@media(min-width:1024px) {
+ #atlas-expeditions .atlas-mega-inner { grid-template-columns:minmax(135px,.6fr) minmax(0,1.65fr) minmax(0,1.35fr); gap:28px; }
+ #atlas-expeditions .atlas-regions { padding:12px 22px 12px 0; }
+ #atlas-expeditions .atlas-regions [role=tablist] { gap:6px; padding:0; }
+ #atlas-expeditions .atlas-regions [role=tab] { padding:7px 0; border:0; border-radius:0; background:none; }
+ #atlas-expeditions .atlas-regions [role=tab]:is(:hover,:focus-visible,[aria-selected=true]) { color:#3db5ff; background:none; }
+ #atlas-expeditions .atlas-eyebrow { margin-bottom:14px; }
+ #atlas-expeditions .atlas-treks { padding-top:12px; padding-right:0; }
+ #atlas-expeditions .atlas-trek-links { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); align-content:start; column-gap:22px; row-gap:2px; }
+ #atlas-expeditions .atlas-trek-links a { padding:7px 0; background:none; border-radius:0; }
+ #atlas-expeditions .atlas-all { margin-top:12px; padding-top:12px; }
+}
+
+/* Mobile submenu links use the same text-only feedback with accessible tap targets. */
+@media(max-width:1023px) {
+ .atlas-header .atlas-mobile-row, .atlas-mobile-rows > a { min-height:54px; padding:13px 0; border-radius:0; background:none; transition:color 140ms ease; }
+ .atlas-header .atlas-mobile-row:is(:hover,:focus-visible), .atlas-mobile-rows > a:is(:hover,:focus-visible), .atlas-mobile-all:is(:hover,:focus-visible), .atlas-mobile-rows > a[aria-current=page] { color:#3db5ff; background:none; }
+}

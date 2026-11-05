@@ -1,10 +1,10 @@
 {% assign card_trip = include.trip %}
-<img src="{{ card_trip.photos | default: include.fallback | relative_url }}" alt="" loading="lazy" width="700" height="1000">
+<img src="{{ include.image | default: card_trip.photos | default: include.fallback | relative_url }}" alt="" loading="lazy" width="700" height="1000">
 <div class="directory-card-content">
  <div class="directory-card-intro">
-  <p class="directory-card-category">{% if include.kind == 'Expeditions' %}HIMALAYAN CLIMBING{% else %}ON FOOT{% endif %}</p>
-  <h3 class="directory-card-title">{{ card_trip.name }}</h3>
-  <p class="directory-card-description">{{ card_trip.excerpt | default: card_trip.description | strip_html | truncate: 115 }}</p>
+  <p class="directory-card-category">{% if include.kind == 'Expeditions' %}HIMALAYAN CLIMBING{% elsif include.kind == 'Trekking' %}ON FOOT{% else %}{{ include.kind | upcase }}{% endif %}</p>
+  <h3 class="directory-card-title">{{ include.title | default: card_trip.name }}</h3>
+  <p class="directory-card-description">{{ card_trip.excerpt | default: card_trip.description | default: include.description | strip_html | truncate: 115 }}</p>
  </div>
- <span class="directory-card-action">{% if include.kind == 'Expeditions' %}View expedition{% else %}Explore trek{% endif %}</span>
+ <span class="directory-card-action">{% if include.kind == 'Expeditions' %}View expedition{% elsif include.kind == 'Trekking' %}Explore trek{% else %}Explore trip{% endif %}</span>
 </div>

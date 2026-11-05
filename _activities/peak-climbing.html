@@ -4,46 +4,30 @@ title: Expeditions
 permalink: /activities/expeditions/
 page_class: page-expeditions
 custom_css: expeditions.css
-description: "High-altitude expeditions in the Himalaya. Explore our guided climbing journeys and find your mountain by altitude, region, and duration."
+description: "High-altitude expeditions in the Himalaya. Explore our guided climbing journeys and find your mountain by altitude, country, and region."
 keywords: "Himalayan expeditions, guided climbing Nepal, Ama Dablam, Mera Peak, Island Peak, Lobuche Peak"
 ---
-<section class="expeditions-listing" aria-label="Find your expedition">
- <form class="expedition-filters" id="expedition-filters">
-  <h2>Filter Expeditions</h2>
-  <fieldset><legend>Expedition Altitude</legend>
-   <label><input type="checkbox" name="altitude" value="8000"> <span class="altitude-filter-label">8,000m <span data-filter-count="altitude:8000"></span></span></label>
-   <label><input type="checkbox" name="altitude" value="7000"> <span class="altitude-filter-label">7,000m <span data-filter-count="altitude:7000"></span></span></label>
-   <label><input type="checkbox" name="altitude" value="6000"> <span class="altitude-filter-label">6,000m <span data-filter-count="altitude:6000"></span></span></label>
-   <label><input type="checkbox" name="altitude" value="below6000"> <span class="altitude-filter-label">Below 6,000m <span data-filter-count="altitude:below6000"></span></span></label>
-  </fieldset>
-  <fieldset><legend>Region</legend>
-   <label><input type="checkbox" name="region" value="khumbu"> <span>Everest / Khumbu</span></label>
-   <label><input type="checkbox" name="region" value="annapurna"> <span>Annapurna</span></label>
-   <label><input type="checkbox" name="region" value="hinku"> <span>Hinku Valley</span></label>
-  </fieldset>
-  <fieldset><legend>Duration</legend>
-   <label><input type="checkbox" name="duration" value="under20"> <span>Under 20 days</span></label>
-   <label><input type="checkbox" name="duration" value="20plus"> <span>20 days or more</span></label>
-  </fieldset>
-  <button class="expedition-clear" type="reset">Clear All</button>
- </form>
+{% include activity-directory-hero.html %}
+<section class="expeditions-listing activity-horizontal-listing" aria-label="Find your expedition">
+ {% include activity-filters.html expeditions=true region="everest" singular="Expedition" plural="Expeditions" %}
  <div class="expedition-results">
-  <p class="visually-hidden" id="expedition-result-count" role="status" aria-live="polite">{{ site.data.peak-data.size }} Expeditions</p>
+  <p class="activity-result-count" id="expedition-result-count" role="status" aria-live="polite">Expeditions</p><button type="button" class="activity-show-all" data-show-all-activities>Show all expeditions</button>
   <div class="expedition-grid" id="expedition-grid">
-   {% for entry in site.data.peak-data %}
+   {% assign expedition_sources = '8000m-data,7000m-data,peak-data' | split: ',' %}{% for source in expedition_sources %}{% for entry in site.data[source] %}
     {% assign key = entry[0] %}{% assign trip = entry[1] %}
-    {% assign peak_page = site.peaks | where: 'title-slug', key | first %}
+    {% assign peak_page = site.peaks | where: 'title-slug', key | first %}{% assign expedition_url = peak_page.url %}{% unless expedition_url %}{% assign expedition_slug = key | url_encode %}{% assign expedition_url = '/enquiry/?tour_slug=' | append: expedition_slug %}{% endunless %}
     {% assign altitude = trip.altitude | split: '/' | first | remove: ',' | remove: 'm' | strip | plus: 0 %}
     {% assign altitude_group = 'below6000' %}{% if altitude >= 8000 %}{% assign altitude_group = '8000' %}{% elsif altitude >= 7000 %}{% assign altitude_group = '7000' %}{% elsif altitude >= 6000 %}{% assign altitude_group = '6000' %}{% endif %}
-    {% assign region = 'khumbu' %}{% if trip.region contains 'Annapurna' %}{% assign region = 'annapurna' %}{% elsif trip.region contains 'Hinku' %}{% assign region = 'hinku' %}{% endif %}
-    {% assign duration = 'under20' %}{% assign days = trip.days | plus: 0 %}{% if days >= 20 %}{% assign duration = '20plus' %}{% endif %}
-    <a class="expedition-card" href="{{ peak_page.url | relative_url }}" data-altitude="{{ altitude_group }}" data-region="{{ region }}" data-duration="{{ duration }}">
+    {% assign country = trip.country | default: 'Nepal' %}{% assign region = trip.filter_region | default: trip.region %}{% if region == 'Everest Regions' %}{% assign region = 'Everest' %}{% endif %}
+    <a class="expedition-card" href="{{ expedition_url | relative_url }}" data-altitude="{{ altitude_group }}" data-country="{{ country | slugify }}" data-region="{{ region | slugify }}" data-region-label="{{ region | escape }}" data-days="{{ trip.days | default: 0 }}">
      {% include directory-card.html trip=trip kind="Expeditions" index=forloop.index total=site.data.peak-data.size fallback="/assets/css/images/bg/peakbg.jpg" %}
     </a>
-   {% endfor %}
+   {% endfor %}{% endfor %}
   </div>
-  <div class="expedition-empty" id="expedition-empty" hidden><h3>No expeditions match these filters.</h3><p>Try another combination or clear your filters to see all expeditions.</p><a href="{% link enquiry.html %}">Contact our team about another mountain</a></div>
+  <div class="expedition-empty" id="expedition-empty" hidden><h3>No expeditions match these filters.</h3><p>Try another combination or restore the default filters.</p><a href="{% link enquiry.html %}">Contact our team about another mountain</a></div>
   <noscript><p>All expeditions are shown. Enable JavaScript to use the filters.</p></noscript>
  </div>
 </section>
 <script src="{{ '/assets/js/expeditions.js' | relative_url }}" defer></script>
+
+<script src="{{ '/assets/js/activity-filter-options.js' | relative_url }}" defer></script>

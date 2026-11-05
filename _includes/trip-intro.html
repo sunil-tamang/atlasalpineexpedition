@@ -1,9 +1,13 @@
-{% assign td_trip = include.trip %}
+{% assign td_trip = include.trip %}{% assign td_tour_slug = page.title-slug | default: page.slug %}
 {% assign td_fallback = '/assets/css/images/' | append: page.custom_bg %}
 {% assign td_image = td_trip.photos | default: td_fallback %}
 {% if include.kind == 'trekking' %}{% assign td_category = 'Trekking' %}{% assign td_directory = '/activities/trekking/' %}{% assign td_slug = page.alt | remove : 'Trek' | slugify %}{% assign td_folder = '/assets/css/images/treks/' | append: td_slug | append : '/' %}
+{% elsif include.kind == 'rock-climbing' %}{% assign td_category = 'Rock Climbing' %}{% assign td_directory = '/activities/rock-climbing/' %}{% assign td_folder = '/assets/css/images/' | append: page.custom_bg | split: '/' | pop | join: '/' | append: '/' %}
+{% elsif include.kind == 'rafting' %}{% assign td_category = 'Rafting Tours' %}{% assign td_directory = '/activities/rafting/' %}{% assign td_folder = '/assets/css/images/' | append: page.custom_bg | split: '/' | pop | join: '/' | append: '/' %}
+{% elsif include.kind == 'bike-tours' %}{% assign td_category = 'Bike Tours' %}{% assign td_directory = '/activities/bike-tours/' %}{% assign td_folder = '/assets/css/images/' | append: page.custom_bg | split: '/' | pop | join: '/' | append: '/' %}
 {% else %}{% assign td_category = 'Expeditions' %}{% assign td_directory = '/activities/expeditions/' %}{% assign td_folder = '/assets/css/images/peak-climbing/' | append: page.title-slug | append: '/' %}
 {% endif %}
+{% assign td_image_path = td_image | prepend: '/' | replace: '//', '/' %}{% assign td_image_asset = site.static_files | where: 'path', td_image_path | first %}{% unless td_image_asset %}{% assign td_image = td_fallback %}{% assign td_fallback_asset = site.static_files | where: 'path', td_fallback | first %}{% unless td_fallback_asset %}{% assign td_image = '/assets/css/images/bg/peakbg.jpg' %}{% endunless %}{% endunless %}
 {% assign td_gallery = '' | split : ',' %}
 {% for td_file in site.static_files %}{% assign td_prefix = td_file.path | slice : 0,
     td_folder.size %}
@@ -25,7 +29,7 @@
                 {{ td_trip.region | upcase }}
             {% endif %}
         </p>
-        <h1>{{ page.alt | default: td_trip.name }}</h1>
+        <h1>{{ page.alt | default: td_trip.name | default: page.title }}</h1>
         <p class="trip-intro-description">{{ td_trip.excerpt | default: td_trip.description | default: page.description | strip_html | truncate: 190 }}</p>
         <ul class="trip-intro-facts">
             {% if td_trip.days %}
@@ -40,10 +44,10 @@
         <div class="trip-intro-actions">
             <a
                 class="trip-primary-action"
-                href="{{ '/enquiry/' | relative_url }}?tour_slug={{ page.title-slug | url_encode }}">Enquire about this
-                {% if include.kind == 'trekking' %}trek{% else %}climb{% endif %}
+                href="{{ '/enquiry/' | relative_url }}?tour_slug={{ td_tour_slug | url_encode }}&amp;trip_name={{ page.alt | default: page.title | url_encode }}&amp;trip_kind={{ include.kind | url_encode }}">Enquire about this
+                {% if include.kind == 'trekking' %}trek{% elsif include.kind == 'expeditions' %}climb{% else %}trip{% endif %}
             </a>
-            {% if td_trip.download %}
+            {% assign td_download_path = td_trip.download | replace: '//assets/', '/assets/' %}{% assign td_download = site.static_files | where: 'path', td_download_path | first %}{% if td_download %}
                 <a
                     class="trip-download"
                     href="{{ td_trip.download | replace: '//assets/', '/assets/' | relative_url }}">Download itinerary</a>
@@ -98,8 +102,8 @@
 </div>
 <nav class="trip-reference-tabs" aria-label="Trip sections">
     <a href="#trip-overview" data-trip-tab="overview">Overview</a>
-    <a href="#trip-itinerary" data-trip-tab="itinerary">Day by day</a>
+    {% unless include.overview_only %}<a href="#trip-itinerary" data-trip-tab="itinerary">Day by day</a>
     <a href="#trip-map" data-trip-tab="map">Route map</a>
     <a href="#trip-inclusions" data-trip-tab="inclusions">What’s included</a>
-    <a href="#trip-faq" data-trip-tab="faq">FAQs</a>
+    <a href="#trip-faq" data-trip-tab="faq">FAQs</a>{% endunless %}
 </nav>

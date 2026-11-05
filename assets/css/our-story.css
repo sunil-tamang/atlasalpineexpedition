@@ -1,0 +1,81 @@
+/* Our Story only. Whitespace separates sections; no decorative lines. */
+.page-our-story .site-intro { display:none; }
+.page-our-story .site-content { padding-top:180px; padding-bottom:20px; }
+.atlas-story { color:#111; }
+.story-breadcrumb { display:flex; flex-wrap:wrap; gap:14px; margin-bottom:55px; }
+.story-hero { display:grid; grid-template-columns:1fr 1fr; gap:clamp(35px,7vw,110px); align-items:center; min-height:200px; }
+.story-hero h1, .story-hero p { margin:0; }
+.story-hero p { max-width:560px; }
+.story-panorama { position:relative; height:clamp(240px,25vw,390px); margin:35px -6% 0; overflow:hidden; }
+.story-panorama img { display:block; width:100%; height:100%; object-fit:cover; object-position:center 69%; filter:grayscale(1) contrast(1.15); mask-image:linear-gradient(transparent,#000 15%,#000 72%,transparent); }
+.story-section { padding-block:clamp(95px,10vw,155px); }
+.story-roots { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.1fr); gap:clamp(45px,8vw,120px); align-items:center; padding-top:90px; }
+.story-eyebrow { margin:0 0 36px; }
+.story-roots-copy h2 { margin:0 0 45px; }
+.story-roots-copy > p:not(.story-eyebrow) { margin:0 0 24px; max-width:550px; }
+.story-text-link { display:inline-block; margin-top:12px; color:inherit; }
+.story-nepal-photo { margin:0; }
+.story-nepal-photo img { display:block; width:100%; height:clamp(540px,53vw,800px); object-fit:cover; object-position:center; }
+.story-nepal-photo figcaption { margin-top:12px; }
+.story-section-heading { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(45px,7vw,105px); align-items:center; margin-bottom:65px; }
+.story-section-heading h2 { margin:0; }
+.story-section-heading > p { margin:30px 0 0; max-width:560px; }
+.story-process { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:clamp(25px,4vw,60px); list-style:none; margin:0; padding:55px 45px; border-radius:18px; background:#f5f4f2; }
+.story-process li { padding:0; }
+.story-process span { display:block; margin-bottom:15px; }
+.story-process h3 { margin:0 0 20px; }
+.story-process p { margin:0; }
+.story-values { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(35px,6vw,90px); padding-top:35px; }
+.story-values h3 { margin:20px 0 20px; }
+.story-values p { margin:0; max-width:290px; }
+.story-values :is(i,svg), .story-journey-cards :is(i,svg), .story-support-grid :is(i,svg) { display:block; width:38px; height:38px; color:#111; }
+.story-panorama-secondary { margin-top:100px; margin-bottom:-120px; height:290px; }
+.story-journey-cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.story-journey-cards > a { display:block; padding:38px 32px; border-radius:14px; background:#f5f4f2; color:inherit; }
+.story-journey-cards h3 { margin:24px 0 12px; }
+.story-journey-cards p { margin:0; }
+.story-support-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:clamp(25px,4vw,60px); padding-top:25px; }
+.story-support-grid h3 { margin:22px 0 12px; }
+.story-support-grid p { margin:0; }
+.story-plan { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.1fr); gap:55px; align-items:center; min-height:320px; margin-top:50px; padding:40px 50px 40px 0; border-radius:18px; overflow:hidden; background:#f5f4f2; }
+.story-plan-image { height:270px; }
+.story-plan-image img { width:100%; height:100%; object-fit:cover; object-position:center 75%; mix-blend-mode:multiply; filter:grayscale(1); }
+.story-plan h2 { margin:0 0 18px; }
+.story-plan p { margin:0 0 25px; max-width:500px; }
+.story-button { display:inline-block; padding:14px 32px; background:#111; color:#fff; border-radius:5px; }
+.atlas-story a:hover { color:#0075ba; }
+.atlas-story .story-button:hover { color:#fff; background:#303030; }
+.atlas-story :focus-visible { outline:2px solid #0075ba; outline-offset:5px; }
+@media(max-width:1023px) {
+ .page-our-story .site-content { padding-top:130px; }
+ .story-section { padding-block:85px; }
+ .story-roots, .story-section-heading { gap:40px; }
+ .story-process { grid-template-columns:repeat(2,minmax(0,1fr)); gap:40px; padding:40px; }
+ .story-nepal-photo img { height:580px; }
+ .story-support-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:45px; }
+ .story-journey-cards > a { padding:28px 22px; }
+ .story-panorama-secondary { margin-bottom:-70px; }
+ .story-plan { gap:25px; padding-right:30px; }
+}
+@media(max-width:650px) {
+ .story-breadcrumb { margin-bottom:35px; }
+ .story-hero, .story-roots, .story-section-heading, .story-values, .story-journey-cards, .story-plan { grid-template-columns:minmax(0,1fr); }
+ .story-hero { gap:28px; min-height:0; }
+ .story-panorama { height:240px; margin-top:25px; }
+ .story-section { padding-block:65px; }
+ .story-roots { gap:40px; padding-top:35px; }
+ .story-eyebrow { margin-bottom:25px; }
+ .story-roots-copy h2 { margin-bottom:30px; }
+ .story-nepal-photo img { height:auto; aspect-ratio:4/5; }
+ .story-section-heading { gap:25px; margin-bottom:40px; }
+ .story-section-heading > p { margin:0; }
+ .story-values { gap:45px; padding-top:10px; }
+ .story-values p { max-width:none; }
+ .story-process { padding:30px 25px; gap:35px 25px; }
+ .story-panorama-secondary { margin-top:45px; margin-bottom:-65px; height:200px; }
+ .story-journey-cards { gap:20px; }
+ .story-plan { gap:10px; padding:0 25px 35px; margin-top:25px; }
+ .story-plan-image { height:180px; margin-inline:-25px; }
+ .story-support-grid { gap:35px 25px; }
+}
+@media(max-width:380px) { .story-process, .story-support-grid { grid-template-columns:minmax(0,1fr); } }
