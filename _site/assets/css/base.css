@@ -597,7 +597,6 @@ blockquote {
 .news-back { font-size:14px; line-height:1.5; }
 @media(max-width:650px) { .news-heading h1 { font-size:44px; } .news-article-heading h1 { font-size:36px; } .news-body { font-size:16px; } }
 
-.home-footer.footer-landscape .footer-credentials-title { font-size:12px; font-weight:500; line-height:1.4; letter-spacing:.02em; text-transform:uppercase; }
 
 /* Expedition filter and mega-menu typography only. */
 @media(min-width:1024px) {
