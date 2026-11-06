@@ -7,13 +7,26 @@ description: "A Nepal-based expedition company leading thoughtful climbs, treks,
 keywords: "Himalayan expeditions, Nepal climbing, guided expeditions, Ama Dablam expedition, Atlas Alpine Expedition"
 ---
 <main class="home-main" id="main-content">
-  <section class="home-landing" aria-labelledby="home-title">
-    <img class="home-landing-image" src="{{ '/assets/css/images/bg/peakbg.webp' | relative_url }}" alt="" fetchpriority="high" width="2000" height="1333">
-    <video class="home-landing-video" id="home-banner-film" muted loop playsinline preload="none" poster="{{ '/assets/css/images/bg/peakbg.webp' | relative_url }}" aria-hidden="true" tabindex="-1"><source src="{{ '/assets/css/video/banner5.mp4' | relative_url }}" type="video/mp4"></video>
-    <div class="home-landing-content home-wrap">
-      <div class="home-landing-heading"><p class="home-landing-kicker">NEPAL BASED. HIMALAYA BOUND.</p><h1 id="home-title">EXPEDITIONS<br>IN THE HIMALAYA.</h1></div>
-      <div class="home-landing-bottom"><a class="home-landing-explore" href="#expeditions"><span>Explore expeditions</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></a><button class="home-landing-film-toggle" type="button" aria-controls="home-banner-film" aria-label="Play background film" hidden><span class="home-film-icon" aria-hidden="true">▷</span><span class="home-film-label">Play film</span></button></div>
+  <section class="home-landing" aria-labelledby="home-title" aria-roledescription="carousel" aria-label="Himalayan journeys">
+    {% for slide in site.data.home-hero %}
+    <div class="home-hero-slide{% if forloop.first %} is-active{% endif %}" data-hero-slide role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ forloop.length }}: {{ slide.label | escape }}" aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}"{% unless forloop.first %} inert{% endunless %}>
+      <img class="home-hero-image" src="{{ slide.image | relative_url }}" alt="" width="2000" height="1333" {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
+      {% if slide.video %}<video class="home-hero-film" id="home-banner-film" muted loop playsinline preload="none" poster="{{ slide.image | relative_url }}" aria-hidden="true" tabindex="-1"><source src="{{ slide.video | relative_url }}" type="video/mp4"></video>{% endif %}
+      <div class="home-hero-overlay" aria-hidden="true"></div>
+      <div class="home-landing-content home-wrap">
+        <p class="home-hero-label">{{ forloop.index | prepend: '0' }} / {{ slide.label }}</p>
+        <div class="home-landing-heading"><p class="home-landing-kicker">{{ slide.kicker }}</p>
+          {% if forloop.first %}<h1 id="home-title">{% else %}<h2 class="home-hero-title">{% endif %}<span>{{ slide.title }}</span><span>{{ slide.subtitle }}</span>{% if forloop.first %}</h1>{% else %}</h2>{% endif %}
+          <dl class="home-hero-facts">{% for fact in slide.facts %}<div><dt>{{ fact.title }}</dt><dd>{{ fact.caption }}</dd></div>{% endfor %}</dl>
+        </div>
+      </div>
     </div>
+    {% endfor %}
+    <div class="home-hero-controls home-wrap" hidden>
+      <div class="home-hero-dots" aria-label="Choose banner slide">{% for slide in site.data.home-hero %}<button type="button" data-hero-select="{{ forloop.index0 }}" aria-label="Show {{ slide.label | downcase }}"{% if forloop.first %} aria-current="true"{% endif %}><span></span></button>{% endfor %}</div>
+      <button class="home-landing-film-toggle" type="button" aria-label="Pause slideshow and film" aria-pressed="false"><span class="home-film-icon" aria-hidden="true">Ⅱ</span><span class="home-film-label">Pause film</span></button>
+    </div>
+    <span class="home-hero-status home-visually-hidden" aria-live="polite" aria-atomic="true"></span>
   </section>
 
 

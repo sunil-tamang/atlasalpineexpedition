@@ -1,0 +1,37 @@
+- label: HIMALAYAN EXPEDITIONS
+  kicker: NEPAL BASED. HIMALAYA BOUND.
+  title: EXPEDITIONS
+  subtitle: IN THE HIMALAYA.
+  image: /assets/css/images/bg/peakbg.webp
+  video: /assets/css/video/banner5.mp4
+  facts:
+    - title: 8,000m+
+      caption: HIGH-ALTITUDE CLIMBING
+    - title: Nepal
+      caption: BASED IN THE HIMALAYA
+    - title: Certified
+      caption: MOUNTAIN GUIDES
+- label: TREKKING JOURNEYS
+  kicker: TRAILS ACROSS NEPAL.
+  title: TREKS THROUGH
+  subtitle: THE HIMALAYA.
+  image: /assets/css/images/treks/three_passes_min.jpg
+  facts:
+    - title: Everest
+      caption: ICONIC TRAILS
+    - title: Annapurna
+      caption: CLASSIC ROUTES
+    - title: Remote
+      caption: QUIET VALLEYS
+- label: PEAK CLIMBING
+  kicker: A STEP HIGHER.
+  title: CLIMB HIGHER
+  subtitle: IN NEPAL.
+  image: /assets/css/images/peak-climbing/lobuche-peak/bannerrr.webp
+  facts:
+    - title: 6000m+
+      caption: ALPINE PEAKS
+    - title: Nepal
+      caption: LOCAL SUPPORT
+    - title: Small Teams
+      caption: EXPERIENCED GUIDES

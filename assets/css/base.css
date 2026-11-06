@@ -349,17 +349,20 @@ blockquote {
  .reference-site .atlas-header .atlas-all { font-size: 12px; letter-spacing: .025em; }
 }
 
-/* Homepage mountain-film typography uses the shared Inter family. */
-.home-main .home-landing h1 { font-family:var(--aa-font); font-size:clamp(44px,4.7vw,80px); font-weight:300; line-height:1.08; letter-spacing:-.035em; }
-.home-main .home-landing-kicker { font-family:var(--aa-font); font-size:10px; line-height:1.5; font-weight:400; letter-spacing:.22em; }
-.home-landing-explore { font-family:var(--aa-font); font-size:15px; line-height:1.5; font-weight:450; letter-spacing:0; }
+/* Homepage cinematic hero: typography remains in the shared font definitions. */
+.home-main .home-landing :is(h1,.home-hero-title) { font-family:var(--aa-font); font-size:clamp(44px,5.4vw,90px); font-weight:400; line-height:1.08; letter-spacing:-.035em; }
+.home-main .home-landing :is(h1,.home-hero-title) > span:last-child { font-size:.84em; font-weight:350; }
+.home-main .home-landing-kicker, .home-main .home-hero-label { font-family:var(--aa-font); font-size:12px; line-height:1.5; font-weight:500; letter-spacing:.18em; }
+.home-main .home-hero-facts dt { font-size:clamp(21px,1.7vw,29px); font-weight:450; line-height:1.2; letter-spacing:-.02em; }
+.home-main .home-hero-facts dd { font-size:11px; line-height:1.4; font-weight:400; }
 .home-landing-film-toggle { font-family:var(--aa-font); font-size:12px; font-weight:400; line-height:1.4; }
 .home-film-icon { font-size:18px; line-height:1; }
 @media(max-width:600px) {
- .home-main .home-landing h1 { font-size:clamp(29px,7.3vw,44px); }
- .home-main .home-landing-kicker { font-size:9px; letter-spacing:.15em; }
- .home-landing-explore { font-size:12px; }
- .home-landing-film-toggle { font-size:11px; }
+ .home-main .home-landing :is(h1,.home-hero-title) { font-size:clamp(34px,8vw,48px); }
+ .home-main .home-landing-kicker, .home-main .home-hero-label { font-size:9px; letter-spacing:.13em; }
+ .home-main .home-hero-facts dt { font-size:19px; }
+ .home-main .home-hero-facts dd { font-size:8px; }
+ .home-landing-film-toggle { font-size:10px; }
 }
 
 /* Home-ground introduction typography. */

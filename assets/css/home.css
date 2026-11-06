@@ -40,34 +40,60 @@
 @media(prefers-reduced-motion:reduce) { .reference-site *, .reference-site *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; } }
 
 /* Full-bleed mountain film; the navigation is unchanged. */
-.home-landing { position:relative; isolation:isolate; min-height:100svh; width:100%; color:#fff; background:#102734; overflow:hidden; }
-.home-landing-image, .home-landing-video { position:absolute; inset:0; z-index:-2; width:100%; height:100%; object-fit:cover; object-position:center; }
-.home-landing-video { opacity:0; }
-.home-landing-video.is-playing { opacity:1; }
-.home-landing::before { content:''; position:absolute; inset:0; z-index:-1; background:linear-gradient(90deg,#061b304d,transparent 75%),linear-gradient(180deg,#00101e4d,transparent 30%,#00101e19 65%,#00101e99); }
-.home-landing-content { position:relative; min-height:inherit; display:flex; flex-direction:column; justify-content:center; padding:130px 0 110px; box-sizing:border-box; }
-.home-landing-heading { margin-top:-25px; }
+.home-landing { position:relative; isolation:isolate; height:100svh; min-height:640px; width:100%; color:#fff; background:#092b49; overflow:hidden; }
+.home-hero-slide { position:absolute; inset:0; opacity:0; visibility:hidden; pointer-events:none; transition:opacity 800ms ease,visibility 0s linear 800ms; }
+.home-hero-slide.is-active { opacity:1; visibility:visible; pointer-events:auto; transition:opacity 800ms ease,visibility 0s; }
+.home-hero-image, .home-hero-film { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; }
+.home-hero-film { opacity:0; transition:opacity 800ms ease; }
+.home-hero-film.is-playing { opacity:1; }
+.home-hero-overlay { position:absolute; inset:0; background:linear-gradient(90deg,#052a4dd9 0%,#07396380 40%,#00335c14 75%),linear-gradient(180deg,#04274673,transparent 40%,#001a3380); }
+.home-landing::after { content:''; position:absolute; z-index:1; left:0; top:0; width:38%; height:35%; opacity:.07; background:url('images/contour2.jpeg') center/cover; mix-blend-mode:screen; pointer-events:none; mask-image:linear-gradient(135deg,#000,transparent 80%); }
+.home-landing-content { position:relative; z-index:2; height:100%; display:flex; align-items:center; padding:150px 0 130px; box-sizing:border-box; }
+.home-landing-heading { width:100%; margin:0; }
 .home-landing-kicker { margin:0 0 28px; color:#fff; }
-.home-landing h1 { margin:0; color:#fff; }
-.home-landing-bottom { position:absolute; bottom:42px; left:0; right:0; display:flex; align-items:center; justify-content:space-between; gap:25px; }
-.home-landing-explore { display:inline-flex; align-items:center; gap:22px; color:#fff; }
-.home-landing-explore > span { border-bottom:1px solid #fff; padding-bottom:4px; }
-.home-landing-explore svg { width:24px; height:24px; fill:none; stroke:currentColor; stroke-width:1.5; }
+.home-landing :is(h1,.home-hero-title) { margin:0; color:#fff; }
+.home-landing :is(h1,.home-hero-title) > span { display:block; }
+.home-landing :is(h1,.home-hero-title) > span:last-child { color:#c5d9e8; margin-top:8px; }
+.home-hero-label { position:absolute; top:170px; right:0; margin:0; padding:10px 0 10px 20px; border-left:1px solid #fff9; color:#fff; }
+.home-hero-facts { display:flex; gap:0; margin:32px 0 0; padding-top:32px; position:relative; }
+.home-hero-facts::before { content:''; position:absolute; left:0; top:0; width:46px; height:2px; background:#fff; }
+.home-hero-facts > div { padding:0 24px; border-left:1px solid #ffffff9c; }
+.home-hero-facts > div:first-child { padding-left:0; border:0; }
+.home-hero-facts dt { margin:0 0 5px; }
+.home-hero-facts dd { margin:0; }
+.home-hero-controls { position:absolute; z-index:3; left:0; right:0; bottom:42px; display:flex; justify-content:flex-end; align-items:center; min-height:44px; }
+.home-hero-controls[hidden] { display:none; }
+.home-hero-status { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+.home-hero-dots { position:absolute; left:50%; transform:translateX(-50%); display:flex; gap:12px; }
+.home-hero-dots button { display:grid; place-items:center; width:76px; min-height:44px; padding:0; border:0; background:none; cursor:pointer; }
+.home-hero-dots span { display:block; width:100%; height:3px; border-radius:3px; background:#ffffff50; transition:background 300ms ease; }
+.home-hero-dots [aria-current=true] span { background:#fff; }
 .home-landing-film-toggle { display:flex; align-items:center; gap:12px; padding:0; color:#fff; background:none; border:0; cursor:pointer; }
-.home-landing-film-toggle[hidden] { display:none; }
-.home-film-icon { width:42px; height:42px; border:1px solid #fff; border-radius:50%; display:grid; place-items:center; }
-.home-landing a:hover, .home-landing-film-toggle:hover { opacity:.8; }
-.home-landing :focus-visible { outline:2px solid #fff; outline-offset:6px; }
-@media(max-width:600px) {
- .home-landing-content { padding:120px 0 110px; }
- .home-landing-heading { margin-top:0; }
- .home-landing-kicker { margin-bottom:22px; }
- .home-landing-image, .home-landing-video { object-position:58% center; }
- .home-landing-bottom { bottom:28px; gap:12px; }
- .home-landing-explore { gap:10px; }
- .home-film-icon { width:34px; height:34px; }
- .home-landing-film-toggle { gap:8px; }
+.home-film-icon { width:44px; height:44px; border:1px solid #fff; border-radius:50%; display:grid; place-items:center; }
+.home-landing :focus-visible { outline:2px solid #fff; outline-offset:5px; }
+@media(max-width:900px) {
+ .home-landing { min-height:620px; }
+ .home-hero-label { top:130px; }
+ .home-hero-facts > div { padding-inline:18px; }
+ .home-hero-dots button { width:52px; }
+ .home-hero-dots { left:0; transform:none; }
+ .home-hero-image, .home-hero-film { object-position:60% center; }
 }
+@media(max-width:600px) {
+ .home-landing { min-height:590px; }
+ .home-landing-content { padding:170px 0 130px; }
+ .home-hero-label { top:115px; padding:6px 0 6px 12px; }
+ .home-landing-kicker { margin-bottom:22px; }
+ .home-hero-facts { margin-top:26px; padding-top:25px; }
+ .home-hero-facts > div { padding-inline:12px; }
+ .home-hero-controls { bottom:24px; }
+ .home-hero-dots { gap:8px; }
+ .home-hero-dots button { width:32px; }
+ .home-landing-film-toggle { gap:7px; }
+ .home-film-icon { width:36px; height:36px; }
+}
+@media(prefers-reduced-motion:reduce) { .home-hero-slide,.home-hero-film,.home-hero-dots span { transition:none; } }
+
 
 /* Survey-inspired introduction directly beneath the landing banner. */
 .home-ground { padding-block: clamp(55px,6vw,95px) 10px; color: #111; }
