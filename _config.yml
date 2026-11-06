@@ -2,12 +2,12 @@
 # Atlas Alpine Expedition — Jekyll 4.4.x
 
 title: "Atlas Alpine Expedition | Adventures and Tours in the Himalayas"
-name: "Above 8000"
+name: "Atlas Alpine Expedition"
 email: atlasalpineexpedition@gmail.com
 
 description: >-
-  An official mountaineering company based in Nepal, organizing trekking
-  and climbing expeditions in the majestic Himalayas.
+  Nepal-based trekking, peak climbing, and Himalayan expeditions.
+  Plan your mountain journey with Atlas Alpine Expedition.
 
 url: "https://atlasalpineexpedition.com"
 baseurl: ""
@@ -93,6 +93,8 @@ exclude:
   - CNAME
   - packages.html
   - _treks/assets
+  - scripts
+  - AGENTS.md
 
 # Plugins
 plugins:

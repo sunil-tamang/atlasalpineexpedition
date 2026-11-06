@@ -18,58 +18,9 @@ layout: compress
 
     <meta charset="utf-8">
 
-    <link rel="canonical" href="{{page.url | absolute_url }}" hreflang="en-us" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="author" content="Atlas Alpine Expedition" />
-
-    <meta name="robots" content="index, follow">
-
-    <meta name="p:domain_verify" content="feaccbe4b9a14f1486fe38713afb1e08"/>
-
-    {% capture description %}
-
-        {% if page.description %}
-
-            {{ page.description | strip_html }}
-
-        {% elsif trek.description %}
-
-            {{ trek.description | strip_html }}
-
-        {% else %}
-
-            {{ site.description }}
-
-        {% endif %}
-
-    {% endcapture %}
-
-    <meta name="description" content="{{ description }}">
-
-    <meta property="og:type" content="website">
-
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-
-    <meta property="og:url" content="{{ page.url | absolute_url }}">
-
-    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% endif %}">
-
-    <meta property="og:image" content="">
-
-    <meta name="x-build-time" content="{{ site.time | date_to_rfc822 }}">
-
-    {% if page.no-index %}
-
-    <meta name="robots" content="noindex, follow">
-
-    {% endif %}
-
-    <title>{% if page.title %}{{ page.title }}  {% else %} {{ site.title }} {% endif %}</title>
-
-<!-- <title>{% if page.title %}{{ page.title }}  | {{ site.name }} {% else %} {{ site.title }} {% endif %}</title> -->
-
+    {% include seo-head.html %}
+    <meta name="p:domain_verify" content="feaccbe4b9a14f1486fe38713afb1e08">
 
     <link rel="icon" href="{{ '/favicon.png' | relative_url }}" sizes="32x32">
 
@@ -110,28 +61,6 @@ layout: compress
     <link rel="stylesheet" href="{{ '/assets/css/reference.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/navigation.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/editorial-motion.css' | relative_url }}">
-
-    {% capture keywords %}
-
-    {% if page.keywords %}
-
-        {{ page.keywords }}
-
-    {% elsif trek.keywords %}
-
-        {{ trek.keywords }}
-
-    {% else %}
-
-        Trekking in Nepal, Trekking company, Hiking in Nepal, Nepal trekking adventures, Himalayan treks, Nepal trekking packages, Ghorepani Poon Hill trek, Gokyo lakes trek, Nepal trekking guides, Experienced trekking company, Sustainable tourism in Nepal, Adventure travel in Nepal, Trekking safety, Best trekking routes in Nepal, Himalayan mountain views, Authentic Nepalese culture, Personalized trekking itineraries, Budget-friendly trekking options, Trekking experiences, Off-the-beaten-path trekking options, Everest Base Camp Trek, Annapurna Circuit Trek, Annapurna Base Camp Trek, Langtang Valley Trek, Upper Mustang Trek, Manaslu Circuit Trek, Ghorepani Poon Hill Trek, Gokyo Lakes Trek, Kanchenjunga Base Camp Trek, Makalu Base Camp Trek
-
-    {% endif %}
-
-{% endcapture %}
-
-
-    <meta name="keywords" content="{{ keywords | strip_html }}">
-
 
     {% if page.ext_js %}
 

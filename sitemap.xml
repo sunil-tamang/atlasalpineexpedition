@@ -1,0 +1,21 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- assign sitemap_items = site.pages | concat: site.documents | sort: 'url' -%}
+{%- assign sitemap_seen = '' | split: ',' -%}
+{%- for item in sitemap_items -%}
+ {%- assign sitemap_extension = item.url | split: '.' | last -%}
+ {%- assign sitemap_member = nil -%}
+ {%- assign sitemap_collection = site.collections | where: 'label', item.collection | first -%}
+ {%- if item.collection == 'team' -%}{%- assign sitemap_member = site.data.team | where: 'slug', item.slug | first -%}{%- endif -%}
+ {%- unless sitemap_collection.output == false or item.sitemap == false or item.no-index or item.redirect_to or item.layout == 'expedition-redirect' or sitemap_member.placeholder or item.url contains '/assets/' or item.url contains '.xml' or item.url contains '.json' or item.url == '/robots.txt' or sitemap_seen contains item.url -%}
+ {%- if item.url contains '.html' or sitemap_extension contains '/' -%}
+ <url><loc>{{ item.url | absolute_url | xml_escape }}</loc>{% if item.last_modified_at %}<lastmod>{{ item.last_modified_at | date_to_xmlschema }}</lastmod>{% endif %}</url>
+ {%- assign sitemap_seen = sitemap_seen | push: item.url -%}
+ {%- endif -%}
+ {%- endunless -%}
+{%- endfor -%}
+</urlset>

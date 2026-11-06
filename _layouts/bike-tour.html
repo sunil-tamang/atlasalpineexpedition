@@ -1,39 +1,7 @@
 ---
 layout: default
 ---
-<script type="application/ld+json">
-	{
-	  "@context": "https://schema.org",
-	  "@type": "TouristInformationCenter",
-	  "name": "The Alpine Expeditions",
-	  "image": "{{ site.url }}/assets/css/images/{{ page.custom_bg | default: site.img }}",
-	  "url": "{{ site.url }}{{ page.url }}",
-	  "telephone": "+977-9863683851",
-	  "priceRange": "$1000 - $10000",
-	  "address": {
-		"@type": "PostalAddress",
-		"streetAddress": "Makalbari",
-		"addressLocality": "Kathmandu",
-		"postalCode": "44600",
-		"addressCountry": "NP"
-	  },
-	  "geo": {
-		"@type": "GeoCoordinates",
-		"latitude": 27.7172,  
-		"longitude": 85.3240 
-	  },
-	  "hasMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13525.534262300927!2d85.3240!3d27.7172!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c9c798dbeb6e498!2sTHE%20ALPINE%20EXPEDITIONS!5e0!3m2!1sen!2snp!4v1579107517725!5m2!1sen!2snp",
-	  "sameAs": [
-		"{{ site.url }}/activities/bike-tours/",
-		"https://www.facebook.com/thealpineexpeditions/",
-		"https://twitter.com/thealpineexpeditions",
-		"https://www.instagram.com/thealpineexpeditions/",
-		"https://www.linkedin.com/in/thealpineexpeditions/",
-		"https://www.pinterest.com/thealpineexpeditions/",
-		"{{ site.url }}/"
-	  ]
-	}
-	</script>
+
 {% assign activity = site.data["bike-data"][page.title-slug] | default: page %}
 <div class="container-wide row--padding-wide trip-detail trip-reference activity-detail">
 {% include trip-intro.html trip=activity kind="bike-tours" %}
