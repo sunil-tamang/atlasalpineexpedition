@@ -287,13 +287,13 @@
 }
 @media(prefers-reduced-motion:reduce) { .journal-editorial-card img { transition:none; } }
 
-/* Muted logo ribbon after the journal; both groups have identical fixed geometry. */
+/* Full-color logo ribbon after the journal; both groups have identical fixed geometry. */
 .home-brands { display: grid; grid-template-columns: minmax(0,1fr) 260px; align-items: center; gap: 50px; padding-block: 30px; }
 .home-brands-window { min-width: 0; overflow: hidden; mask-image: linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent); }
 .home-brands-track { display: flex; width: max-content; animation: home-brand-travel 32s linear infinite; }
 .home-brands-group { display: flex; align-items: center; gap: 40px; padding-right: 40px; flex-shrink: 0; }
 .home-brand { display: grid; place-items: center; width: 145px; height: 72px; flex-shrink: 0; }
-.home-brand img { width: 145px; height: 60px; object-fit: contain; filter: grayscale(1); opacity: .42; mix-blend-mode: multiply; }
+.home-brand img { width: 145px; height: 60px; object-fit: contain; filter: none; opacity: 1; mix-blend-mode: normal; }
 .home-brands-note p { margin: 0; }
 .home-brands-note p > span { color: #777; }
 .home-brands-toggle { margin-top: 12px; padding: 5px 0; background: transparent; border: 0; color: #666; cursor: pointer; }
@@ -314,12 +314,15 @@
 .footer-landscape::after { content: ''; position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg,#fff 0%,#fff 40%,rgba(255,255,255,.95) 55%,rgba(255,255,255,.65) 70%,rgba(255,255,255,.12) 100%); pointer-events: none; }
 .footer-landscape-grid { display: grid; grid-template-columns: minmax(250px,1.8fr) repeat(4,minmax(0,1fr)); gap: clamp(25px,4vw,65px); align-items: start; }
 .footer-atlas-logo { display:block; width:140px; margin-bottom:20px; }
-.footer-atlas-logo img { display:block; width:100%; height:auto; object-fit:contain; }
+.footer-atlas-logo img { display:block; width:100%; height:auto; object-fit:contain; filter:none; opacity:1; }
 .footer-landscape-brand > p { max-width: 280px; margin: 0 0 20px; color: #555c63; }
 .footer-landscape-brand > a:not(.footer-atlas-logo) { display: block; margin-bottom: 7px; overflow-wrap: anywhere; color: #50575e; }
 .footer-landscape .footer-landscape-address { margin: 8px 0 0; }
 .footer-landscape-social { display: flex; gap: 9px; margin: 0 0 22px; }
 .footer-landscape-social a { display: grid; place-items: center; width: 31px; height: 31px; border: 1px solid #bfc3c6; border-radius: 5px; }
+.footer-landscape-social a[aria-label="Atlas Alpine on Instagram"] { color:#c13584; }
+.footer-landscape-social a[aria-label="Atlas Alpine on Facebook"] { color:#1877f2; }
+.footer-landscape-social a[aria-label="Chat with Atlas Alpine on WhatsApp"] { color:#128c7e; }
 .footer-landscape-social a:hover { background: #fff; border-color: #111; }
 .footer-landscape-links { padding-top: 9px; }
 .footer-landscape-links h2 { margin: 0 0 23px; color: #111; }

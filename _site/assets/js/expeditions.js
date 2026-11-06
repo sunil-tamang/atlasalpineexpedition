@@ -32,6 +32,8 @@
  }
  function state() { return {altitude:altitudes.find(input => input.checked)?.value || 'all',country:country?.value || 'all',region:region.value,duration:duration.value}; }
  function apply(updateUrl = true) {
+  const previous = new Map();
+  if (updateUrl && window.AtlasMotion?.enabled()) cards.filter(card => !card.hidden).forEach(card => previous.set(card,card.getBoundingClientRect()));
   const values = state();let total = 0;
   cards.forEach(card => {
    const match = (values.altitude === 'all' || card.dataset.altitude === values.altitude) && (values.country === 'all' || card.dataset.country === values.country) && (values.region === 'all' || card.dataset.region === values.region) && durationMatches(card,values.duration);
@@ -39,6 +41,7 @@
   });
   count.textContent = `${total} of ${cards.length} ${cards.length === 1 ? singular : plural}`;empty.hidden = total !== 0;
   if (updateUrl) {
+   document.dispatchEvent(new CustomEvent('atlas:results-updated',{detail:{cards,previous}}));
    const url = new URL(location.href);
    Object.entries(values).forEach(([key,value]) => { url.searchParams.delete(key);if (value !== defaults[key]) url.searchParams.set(key,value); });
    history.replaceState(null,'',url.pathname + url.search + url.hash);

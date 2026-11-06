@@ -183,6 +183,8 @@
  track.addEventListener('pointerdown',event => {
   if (!event.isPrimary || (event.pointerType === 'mouse' && event.button !== 0)) return;
   pointer = {id:event.pointerId,x:event.clientX,y:event.clientY,delta:0,dragging:false};
+  // Capture at gesture start: touch links otherwise retain implicit capture.
+  track.setPointerCapture(event.pointerId);
  });
  track.addEventListener('pointermove',event => {
   if (!pointer || pointer.id !== event.pointerId) return;
@@ -211,8 +213,10 @@
  }
  track.addEventListener('pointerup',event => finishPointer(event));
  track.addEventListener('pointercancel',event => finishPointer(event,true));
- track.addEventListener('lostpointercapture',event => finishPointer(event,true));
- track.addEventListener('pointerleave',event => { if (pointer && pointer.id === event.pointerId && !pointer.dragging) pointer = null; });
+ track.addEventListener('lostpointercapture',event => {
+  if (event.target === track) finishPointer(event,true);
+ });
+ track.addEventListener('pointerleave',event => { if (event.pointerType === 'mouse' && pointer && pointer.id === event.pointerId && !pointer.dragging && !track.hasPointerCapture(event.pointerId)) pointer = null; });
  track.addEventListener('wheel',event => {
   const dx = event.deltaX || (event.shiftKey ? event.deltaY : 0);
   const dy = event.shiftKey ? 0 : event.deltaY;

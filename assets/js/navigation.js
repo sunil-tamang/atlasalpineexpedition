@@ -38,7 +38,7 @@
   row.type = 'button'; row.className = 'atlas-mobile-row'; row.textContent = label;
   row.addEventListener('click',action); return row;
  }
- function renderMobileLevel() {
+ function renderMobileLevel(direction = 1) {
   mobileScreen.replaceChildren();
   const back = document.createElement('button');
   back.type = 'button'; back.className = 'atlas-mobile-back';
@@ -48,12 +48,13 @@
   back.textContent = 'Back';
   back.setAttribute('aria-label','Back from ' + title.textContent);
   back.addEventListener('click', () => {
-   if (mobileCategory) { mobileCategory = null; renderMobileLevel(); return; }
+   if (mobileCategory) { mobileCategory = null; renderMobileLevel(-1); return; }
    const previous = mobileTrigger;
    mobileTrigger = null; active = null;
    triggers.forEach(t => t.setAttribute('aria-expanded','false'));
    header.classList.remove('is-mobile-submenu','is-menu-open'); mobileScreen.hidden = true;
    previous.focus();
+   window.AtlasMotion?.menu(nav,-1);
   });
   mobileScreen.append(back,title);
   const rows = document.createElement('div'); rows.className = 'atlas-mobile-rows';
@@ -73,6 +74,7 @@
   header.classList.add('is-mobile-submenu');
   back.focus({preventScroll:true});
   header.scrollTop = 0;
+  window.AtlasMotion?.menu(mobileScreen,direction);
  }
  function openMobileLevel(trigger) {
   dismiss(false);
